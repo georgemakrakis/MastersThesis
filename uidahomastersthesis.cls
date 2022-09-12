@@ -28,6 +28,7 @@
 \RequirePackage{gensymb}
 \RequirePackage{url}
 \RequirePackage{mypythonhighlight}
+\RequirePackage{hyperref}
 \RequirePackage[acronym,nomain,nonumberlist]{glossaries}
 \RequirePackage[inline]{enumitem}
 \RequirePackage{xargs}

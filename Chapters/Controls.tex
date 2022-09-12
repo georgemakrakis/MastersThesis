@@ -9,6 +9,17 @@ There are two main goals in process control engineering:
 This is usually achieved by a controller which detects the process variable using a sensor/transmitter and controls the process variable by manipulating an actuator. 
 
 \section{Feedback}
+The most common type of controller is a feedback controller. The controller takes action based on the `error' ($e$) between the set-point ($SP$) and process-variable ($PV$) (Eqn. \ref{error}).
+
+\begin{equation}\label{error}
+    e(t) = PV(t) - SP(t)
+\end{equation}
+
+The action, or controller output ($u$) is often determined by a \acf{pid} equation (Eqn. \ref{pid}), which considers the instantaneous, cumulative, and predictive error in determining the proper actuation. 
+
+\begin{equation}\label{pid}
+    u(t) = K_P e(t) + K_I \int_0^t e(t)dt + K_D \frac{de(t)}{dt}
+\end{equation}
 
 \section{Feedforward}
 The term `Feedforward' can be used to refer to any element in the control block diagram that exists outside of the feedback loop.
