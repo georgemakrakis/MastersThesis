@@ -41,14 +41,14 @@
 
 
 % Configure the PDF output (Most of this is optional, it just adds metadata to the PDF)
-\usepackage[% pdftex
+\hypersetup{% pdftex
 pdfauthor=Sam J. Root,
 pdftitle=MsNB Control System,
 pdfsubject={Controls},
 pdfkeywords={Molten Salt Reactor;Molten Salt Nuclear Battery;Microreactor;Process Control},
 pdfproducer={ShareLatex},  % e.g ShareLatex
 pdfcreator={pdflatex},
-pdfprintscaling={AppDefault}]{hyperref}
+pdfprintscaling={AppDefault}}
 
 % Configure hyperlinks
 \hypersetup{
@@ -58,6 +58,7 @@ pdfprintscaling={AppDefault}]{hyperref}
 	citecolor=black,
 	urlcolor=black,
 }
+
 
 % Changes default indenting in list of figures to 0
 %\makeatletter

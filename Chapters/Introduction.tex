@@ -7,13 +7,13 @@ Microreactors, as the name suggests, are small nuclear reactors which are design
 
 The goal is to be able to deliver a prefabricated microreactor to a site, integrate it to the necessary power cycles and process heat applications, and meet the needs of the site for a long period of time - up to a decade - without the need for refueling or significant maintenance. This would be quite convenient compared to building a pipeline to deliver fossil fuels to the site or scheduling regular delivery. One of the biggest challenges in implementing microreactors is the transients that these applications often require. Engines handle these quite well, simply adjusting the flow rates of fuel and combustion air. Nuclear reactor load following is a bit more complicated, as the reactor must be made supercritical to ramp up power or subcritical to decrease power. This necessitates valid characterization of the reactor's criticality control \& actuation system and reactivity feedback mechanisms, so the controller can be designed and tuned to effectively and safely match power generation to consumption.
 
-\section{Molten Salt Reactors}
+\section{\texorpdfstring{\aclp{msr}}{Molten Salt Reactors}}
 Molten salts are highly desirable in high temperature applications due to their excellent thermophysical properties \cite{RoperReview}. Salt mixtures have been developed to have very wide liquid temperature ranges (i.e. low melting point and high vaporization point). They also have very high volumetric heat capacities compared to other high temperature coolants (which tend to be gaseous), and are able to operate at or slightly above ambient pressure. These properties combine to make molten salts excellent choices in heat transfer and thermal storage applications. Furthermore, they are extremely strong electrolytes which cn be useful as solvents, catalysts, or reagents in certain chemical reactions including a pyrometallurgical method for reprocessing spent nuclear fuel \cite{Simpson}.
 
-\acfp{msr} are a family of nuclear reactor in which a fuel salt (containing fissile and/or fertile nuclides) is dissolved in a coolant salt \cite{RoperOverview}. The concept was proven by the \acf{msre} at \acf{oak} in the 1960s \cite{MSRE}. It has yet to take off beyond the research reactor sector, but it has re-emerged as a Gen-IV reactor concept, with a team at the Shangai Institute of Applied Physics gaining approval to operate a now fully constructed thorium breeding \acs{msr} \cite{china}. Some of the benefits of \acsp{msr} over more conventional \acsp{lwr} include:
+\acfp{msr} are a family of nuclear reactor in which a fuel salt (containing fissile and/or fertile nuclides) is dissolved in a coolant salt \cite{RoperOverview}. The concept was proven by the \acf{msre} at \acf{oak} in the 1960s \cite{MSRE}. It has yet to take off beyond the research reactor sector, but it has re-emerged as a Gen-IV reactor concept, with a team at the Shanghai Institute of Applied Physics gaining approval to operate a now fully constructed thorium breeding \acs{msr} \cite{china}. Some of the benefits of \acsp{msr} over more conventional \acsp{lwr} include:
 \begin{itemize}
     \item Higher operating temperatures allow for use in applications requiring high-grade process heat, and yield higher thermal efficiency \cite{RoperOverview};
-    \item Lower pressure operating pressure lends itself to inherant safety, and less expensive (thinner) components \cite{RoperReview};
+    \item Lower pressure operating pressure lends itself to inherent safety, and less expensive (thinner) components \cite{RoperReview};
     \item The ability to burn minor actinides supports the goal of reducing global stockpiles of high-level waste \cite{RoperReview};
     \item Natural circulation of the fuel introduces an additional feedback mechanism that presents the possibility of autonomous load following of certain power demand transients \cite{CarterNumerical};
     \item There is no concern of core melt-down as the reactor is designed for liquid fuel;
@@ -24,10 +24,10 @@ They also carry some demerits:
 \begin{itemize}
     \item Molten salts are very corrosive \cite{RoperRedox};
     \item The chemistry of the coolant (not only the fuel) is constantly changing due to fission, transmutation, and impurities from corrosion;
-    \item Lithium is commonplace, so tritium production is unavoidable. Off-gas systems need to be robust to handle tritium as well as radionuclide noble gasses, halides, and interhalides \cite{HolcombOffgas};
+    \item Lithium is commonplace, so tritium production is unavoidable. Off-gas systems need to be robust to handle tritium as well as radionuclide noble gasses, halides, and inter-halides \cite{HolcombOffgas};
 \end{itemize}
 
-\section{\acl{msnb}}
+\section{\texorpdfstring{\acl{msnb}}{Molten Salt Nuclear Battery}}
 The \acf{msnb} is a self contained design for a liquid fueled molten salt microreactor \cite{CarterPHD,PetersonMS}. It is fueled by an inorganic form of uranium, \UF, dissolved in a coolant salt such as \flinak (a eutectic mixture of three alkali fluorides) or \flibe  (a mixture of $LiF$ and $BeF_2$) \cite{RoperOverview}. Heat is generated in the core by fission, is transported by the natural circulation of the coolant/fuel salt, and rejected to a secondary working fluid in an integrated heat exchanger. Criticality is manipulated using axial control drums, which may be rotated to aim either a neutron reflecting material or a neutron absorbing material towards the core. The design studied in this work is intended to produce up to 1 MWth, although larger designs of up to 50 MWth also exist.
 
 
