@@ -31,6 +31,8 @@
 \RequirePackage{hyperref}
 \RequirePackage[acronym,nomain,nonumberlist]{glossaries}
 \RequirePackage[inline]{enumitem}
+\setlist[enumerate]{label=\arabic*)}
+\setlist[itemize]{label=\textbullet}
 \RequirePackage{xargs}
 
 
