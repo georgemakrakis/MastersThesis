@@ -9,13 +9,13 @@ There are two main goals in process control engineering:
 This is usually achieved by a controller which detects the process variable using a sensor/transmitter and controls the process variable by manipulating an actuator. 
 
 \section{Feedback}
-The most common type of controller is a feedback controller. The controller takes action based on the `error' ($e$) between the set-point ($SP$) and process-variable ($PV$) (Eqn. \ref{eqn:error}).
+The most common type of controller is a feedback controller. The controller takes action based on the `error' ($e$) between the set-point ($SP$) and process-variable ($PV$) (\ref{eqn:error}).
 
 \begin{equation}\label{eqn:error}
     e(t) = PV(t) - SP(t)
 \end{equation}
 
-The action, or controller output ($u$) is often determined by a \acf{pid} equation (Eqn. \ref{pid}), which considers the instantaneous, cumulative, and predictive error in determining the proper actuation \cite{Bequette}. 
+The action, or controller output ($u$) is often determined by a \acf{pid} equation (\ref{eqn:pid}), which considers the instantaneous, cumulative, and predictive error in determining the proper actuation \cite{Bequette}. 
 
 \begin{equation}\label{eqn:pid}
     u(t) = K_P e(t) + K_I \int_0^t e(t)dt + K_D \frac{de(t)}{dt}
@@ -32,7 +32,7 @@ Instead of using three different gain constants, it is common for controllers to
     \item The integral time constant ($\tau_I$); and
     \item The derivative time constant ($\tau_D$);
 \end{enumerate*}
-In this case, Equation \ref{eqn:pid} is rewritten as:
+In this case, \ref{eqn:pid} is rewritten as:
 \begin{equation}\label{eqn:pid-tau}
     u(t) = K_C \left( e(t) + \tau_I^{-1} \int_0^t e(t)dt + \tau_D \frac{de(t)}{dt}\right)
 \end{equation}

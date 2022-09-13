@@ -48,13 +48,13 @@
 \fancyfoot{}
 \fancyhead{}
 \renewcommand{\headrulewidth}{0pt}
-\fancyhead[R]{\thepage}
+\fancyhead[R]{Pg. \thepage}
 
 \fancypagestyle{plain}{\fancyhf{}
 \fancyfoot{}
 \fancyhead{}
 \renewcommand{\headrulewidth}{0pt}
-\fancyhead[R]{\thepage}}
+\fancyhead[R]{Pg. \thepage}}
 
 
 \makeatletter  % DO NOT REMOVE THIS (unless you know what you are doing)

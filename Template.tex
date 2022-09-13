@@ -68,6 +68,18 @@ pdfprintscaling={AppDefault}}
 
 % ------------------------------------------------------------
 % ------------------------------------------------------------
+%Adding "Eqn." before the equation number
+\renewcommand{\theequation}{Eqn. \thechapter.\arabic{equation}}
+%Adding new equation environment for reactions
+\newcounter{chemequation}
+\renewcommand{\thechemequation}{Rxn. \thechapter.\arabic{chemequation}}
+\newenvironment{reaction}{%
+\stepcounter{chemequation}%
+\begin{equation}}%
+{\tag{\thechemequation}%
+\end{equation}}
+
+
 % ------------------------------------------------------------
 \begin{document}
 
