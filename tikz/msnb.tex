@@ -1,0 +1,16 @@
+\begin{tikzpicture}
+    %Core
+    \draw node at (1.5,1.5) {Core};
+    \draw[red, very thick] (0,0) rectangle (3,3);
+    \filldraw[red,opacity=0.2] (0,0) rectangle (3,3) ;
+    %Riser/Chimney
+    \draw[->] (1.5,3) -- (1.5,3.5);
+    %HEX
+    \draw node at (1.5,4) {Heat Exchanger};
+    \draw[blue, very thick] (0,3.5) rectangle (3,4.5);
+    \filldraw[blue,opacity=0.2] (0,3.5) rectangle (3,4.5) ;
+    %Downcomer
+    \draw[->] (3,4) -- (3.5,4) -- (3.5,-0.5)  -- (1.5,-0.5);
+    \draw[->] (0,4) -- (-0.5,4) -- (-0.5,-0.5)  -- (1.5,-0.5);
+    \draw[->] (1.5,-0.5) -- (1.5,0);
+\end{tikzpicture}

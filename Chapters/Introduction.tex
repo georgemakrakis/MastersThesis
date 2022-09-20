@@ -32,8 +32,14 @@ They also carry some demerits:
 \end{reaction}
 
 \section{\texorpdfstring{\acl{msnb}}{Molten Salt Nuclear Battery}}
-The \acf{msnb} is a self contained design for a liquid fueled molten salt microreactor \cite{CarterPHD,PetersonMS}. It is fueled by an inorganic form of uranium, \UF, dissolved in a coolant salt such as \flinak (a eutectic mixture of three alkali fluorides) or \flibe  (a mixture of $LiF$ and $BeF_2$) \cite{RoperOverview}. Heat is generated in the core by fission, is transported by the natural circulation of the coolant/fuel salt, and rejected to a secondary working fluid in an integrated heat exchanger. Criticality is manipulated using axial control drums, which may be rotated to aim either a neutron reflecting material or a neutron absorbing material towards the core. The design studied in this work is intended to produce up to 1 MWth, although larger designs of up to 50 MWth also exist.
+The \acf{msnb} is a self contained design for a liquid fueled molten salt microreactor \cite{CarterPHD,PetersonMS}. It is fueled by an inorganic form of uranium, \UF, dissolved in a coolant salt such as \flinak (a eutectic mixture of three alkali fluorides) or \flibe  (a mixture of $LiF$ and $BeF_2$) \cite{RoperOverview}. Heat is generated in the core by fission and is rejected in an integrated heat exchanger (Fig. \ref{fig:tikz_msnb}). Criticality is manipulated using axial control drums, which may be rotated to aim either a neutron reflecting material or a neutron absorbing material towards the core. The design studied in this work is intended to produce up to 1 MWth, although larger designs of up to 50 MWth also exist.
 
+\begin{figure}[h!]
+    \centering
+    \input{tikz/msnb}
+    \caption[Simplified schematic drawing of an \acs{msnb}]{Simplified schematic drawing of an \acs{msnb}. Heat is generated in the core by fission, is transported by natural circulation of the coolant/fuel salt, and rejected to a secondary working fluid in the heat exchanger before returning to the inlet plenum through the downcomer.}
+    \label{fig:tikz_msnb}
+\end{figure}
 
 \section{Scope}
 As a developing design, work has been done on neutronics \cite{PetersonMS}, thermal-hydraulics and autonomous load following \cite{CarterPHD}, and corrosion concerns \cite{RoperPHD}. However, until now, little to no work has been done on the control system. First and foremost, this work details a multiphysics characterization of the \acs{msnb} required to design a feedback controller capable of matching the core power generation to the secondary power demand. In addition to the main control mode of following power transients during normal operation, specific discussion is centered around more dynamic time periods, namely: 
