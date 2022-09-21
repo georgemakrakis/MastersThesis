@@ -79,6 +79,15 @@ Pre-filters are another type of feedforward mechanism common in control systems.
 
 By braking instantaneous set-point changes, or step functions, the pre-filter minimizes the instantaneous error during transients and minimizes overshoot by reducing over-actuation or actuator saturation.  This is particularly useful in a control system such as the one designed in this report where the set-point is coupled to some other value. In this case, the core power generation needs to match the demand of the secondary system (\eg power cycle). This method allows the secondary system to immediately change to its necessary value while giving the reactor core time to safely and effectively respond. 
 
+\begin{figure}[h!]
+    \centering
+    \subfloat[\centering Step-function]{{\resizebox{0.47\textwidth}{!}{\input{pgf/prefilter_step}}}}
+    \qquad
+    \subfloat[\centering Ramp-function]{\resizebox{0.47\textwidth}{!}{\input{pgf/prefilter_ramp}}}
+    \caption[Pre-filter on step-function and ramp-function]{Pre-filter on step-function and ramp-function.}
+    \label{fig:pgf_prefilter}
+\end{figure}
+
 \section{Time Variance}
 Fissile depletion - time function parameters or look-up table to gain-schedule and turn the time variant system into a shift invariant system.
 
@@ -100,7 +109,4 @@ Decay heat and keeping the salt liquid for restart
 \subsection{Re-start}
 \Xe stripper
 
-
-\input{tikz/prefilter_step}\\
-\input{tikz/prefilter_ramp}
 

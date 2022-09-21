@@ -17,15 +17,19 @@ scale only axis,
 xmin=0,
 xmax=10,
 xtick={ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10},
-xlabel style={font=\color{white!15!black}},
-xlabel={Time},
-ymin=-0.1,
-ymax=1.1,
-ylabel style={font=\color{white!15!black}},
-ylabel={Value},
+xticklabel style={font=\sansmath\sffamily},
+xlabel style={font=\sansmath\sffamily},
+xlabel={Time Constants, $\tau_F$},
+ymin=-0.05,
+ymax=1.05,
+ylabel style={font=\sansmath\sffamily},
+ylabel={Normalized Value},
+yticklabel style={font=\sansmath\sffamily},
+ytick={0,0.632,0.865,0.95,1},
 axis background/.style={fill=white},
-legend style={at={(0.711,0.171)}, anchor=south west, legend cell align=left, align=left, draw=white!15!black}
+legend style={at={(0.711,0.171)}, anchor=south west, legend cell align=left, align=left, font=\sansmath\sffamily}
 ]
+
 \addplot [color=mycolor1]
   table[row sep=crcr]{%
 0	0\\
