@@ -35,6 +35,7 @@
 \setlist[enumerate]{label=\arabic*)}
 \setlist[itemize]{label=\textbullet}
 \RequirePackage{xargs}
+\RequirePackage{verbatim}
 
 
 % Set margins
@@ -277,3 +278,4 @@ This thesis of \@author, submitted for the degree of \@degree\ with a Major in \
 \newacronym{inl}{INL}{Idaho National Laboratory}
 \newacronym{nrel}{NREL}{National Renewable Energy Laboratory}
 \newacronym{oak}{ORNL}{Oak Ridge National Laboratory}
+\newacronym{lti}{LTI}{Linear Time-Invariant}

@@ -71,24 +71,28 @@ Disturbance feedforward will not be utilized in the design of the controller out
     \label{fig:tikz_prefilter}
 \end{figure}
 
-Pre-filters are another type of feedforward mechanism common in control systems. They are typically first-order transfer functions such as \ref{eqn:prefilter} function used to improve the performance of the associated feedback controller (as depicted by Figure \ref{fig:tikz_prefilter} by `slowing down' the rate of change of the set-point. The gain (numerator) for a pre-filter is always unity because the desire is only to reshape the input, not resize it. The time-constant ($\tau_F$) describes how quickly the output equilibrates with the input. 
+The control loop for a feedback system with a pre-filter is included as Figure \ref{fig:tikz_prefilter}. Pre-filters are another type of feedforward mechanism common in control systems. They are typically first-order transfer functions such as \ref{eqn:prefilter} function used to improve the performance of the associated feedback controller (as depicted by Figure \ref{fig:pgf_prefilter}) by `slowing down' the rate of change of the set-point. The gain (numerator) for a pre-filter is always unity because the desire is only to reshape the input, not resize it. The time-constant ($\tau_F$) describes how quickly the output equilibrates with the input. 
 
 \begin{equation}\label{eqn:prefilter}
     F(s)=\frac{1}{\tau_F s+1}    
 \end{equation}
 
-By braking instantaneous set-point changes, or step functions, the pre-filter minimizes the instantaneous error during transients and minimizes overshoot by reducing over-actuation or actuator saturation.  This is particularly useful in a control system such as the one designed in this report where the set-point is coupled to some other value. In this case, the core power generation needs to match the demand of the secondary system (\eg power cycle). This method allows the secondary system to immediately change to its necessary value while giving the reactor core time to safely and effectively respond. 
+By resisting instantaneous set-point changes, or step functions, the pre-filter minimizes the instantaneous error during transients and minimizes overshoot by reducing over-actuation or actuator saturation.  This is particularly useful in a control system such as the one designed in this report where the set-point is coupled to some other value. In this case, the core power generation needs to match the demand of the secondary system (\eg power cycle). This method allows the secondary system to immediately change to its necessary value while giving the reactor core time to safely and effectively respond. 
 
 \begin{figure}[h!]
     \centering
     \subfloat[\centering Step-function]{{\resizebox{0.47\textwidth}{!}{\input{pgf/prefilter_step}}}}
     \qquad
     \subfloat[\centering Ramp-function]{\resizebox{0.47\textwidth}{!}{\input{pgf/prefilter_ramp}}}
-    \caption[Pre-filter on (a) step-function and (b) ramp-function]{Pre-filter on step-function and ramp-function. When the pre-filter acts on a step-function, it follows an exponential curve, reaching 63.2\% of the magnitude of the step in 1 time constant, 86.5\% in 2 time constants, 95.0\% in 3 time constants and so on. The ramp-function exhibits similar but more complicated dynamics.}
+    \caption[Pre-filter on (a) step-function and (b) ramp-function]{Pre-filter on step-function and ramp-function. When the pre-filter acts on a step-function, it follows an exponential curve, reaching 63.2\% of the magnitude of the step in 1 time constant, 86.5\% in 2 time constants, 95.0\% in 3 time constants and so on. The ramp-function exhibits similar but more complicated dynamics due to the changing input.}
     \label{fig:pgf_prefilter}
 \end{figure}
 
-\section{Time Variance}
+\section{Transport Delay Problem}\note{Discussing the transport of cold salt and how it effects the global (flow) and local (temperature) feedback mechanism. Why we want to use a pre-filter and an actuation threshold of sorts.}
+
+\section{Time-Variance and Non-Linearity}\note{Control Drum Angle vs. Reactivity Curve - non-linearity, Fissile depletion - time variance, the fact that we are actually controlling the criticality and not the power directly - ??}
+In control systems, it is typically preferred to work with \acf{lti} systems
+
 Fissile depletion - time function parameters or look-up table to gain-schedule and turn the time variant system into a shift invariant system.
 
 In addition to the relatively slow time variance of fissile fuel depletion during steady-state critical operation, there are specific times in a \acs{msnb}'s expected operational life-cycle that exhibit a higher degree of time variance: 
