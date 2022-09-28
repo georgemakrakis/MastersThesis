@@ -101,7 +101,45 @@ In addition to the relatively slow time variance of fissile fuel depletion durin
 \end{enumerate*}
 
 \subsection{Start-up}
-Black-start may need to deal with thawing salt - main concern is fission product neutron poison build-up (discuss the burnable poison stuff)
+Because microreactors are meant to be delivered in a fully or mostly assembled state, it is likely that the \acs{msnb} will be shipped with the molten fuel/coolant salt mixture frozen \textit{in-situ}. The salt will need to be melted before initial start-up, and the heat source for melting the cannot be fission, as the \acs{msnb} requires advective heat removal caused by natural circulation; this is not possible if the flow channels between the core and heat exchanger are frozen. One possible method for salt thawing involves passing low-voltage high-current electricity through the pipes in contact with the salt, similar to how frozen water pipes are thawed \cite{Thawing};
+
+Initial start-up will also require a neutron source as a seed for the nuclear chain reaction \cite{DH}. \U[235] undergoes spontaneous fission \cite{Faw}, and at high enrichment may be used as the only neutron seed simply by putting the control actuators in a supercritical orientation. More commonly, a dedicated source is used, such as \Ca[252], which undergoes spontaneous fission much more rapidly, or a composite of a strong alpha-emitter (\eg \Pu[238], \Am[241], \Po[210], or \Ra[226]) and \Be[9] which emits a neutron according to \ref{rxn:Be-n} \cite{Handbook}.
+
+\begin{reaction}\label{rxn:Be-n}
+    ^{9}Be + \alpha \to ^{12}C + n + \gamma
+\end{reaction}
+
+Each of these systems are important considerations for the design of the \acs{msnb} and warrant further investigation, but are out of scope for this work. The main start-up consideration regarding the control system is the build-up of fission product neutron poisons.
+
+\subsubsection{Xenon Poisoning}
+\Xe is the strongest known neutron poison, with a microscopic neutron capture cross-section of 2.65 Mb \cite{Lamarsh}. The concentration of \Xe is described by a system of differential equations which quantifies the generation, consumption, and decay of itself and its beta-precursor \I. Equations \ref{eqn:diffI} and \ref{eqn:diffXe} can be used to track the concentrations of iodine-135 and xenon-135 during start-up, steady-state operation, power transients, shut-down, and dead-time \cite{Lamarsh}.
+\begin{equation}\label{eqn:diffI}
+    \frac{dI}{dt} =
+    \underbrace{\gamma_{I}\Sigma_{f}^{F}{\phi}(t)}_{\text{Fission Yield}}
+    -\underbrace{\lambda_{I}I(t)}_{\text{Beta Decay}}
+\end{equation}
+\begin{equation}\label{eqn:diffXe}
+        \frac{dXe}{dt} =
+        \underbrace{\gamma_{Xe}\Sigma_{f}^{F}{\phi}(t)}_{\text{Fission Yield}}
+        +
+        \underbrace{\lambda_{I}I(t)}_{\text{Precursor Decay}}
+        -\underbrace{\lambda_{Xe}Xe(t)}_{\text{Beta Decay}}
+        -\underbrace{Xe(t)\sigma_{a}^{Xe}{\phi}(t)}_{\text{Radiative Capture}}
+\end{equation}
+
+Each nuclide is formed by \U[235] fission, and removed by beta-decay. Additionally, \Xe is formed by the beta-decay of \I and removed by radiative neutron capture \footnotemark. Each nuclide builds-up in the reactor until the formation terms, i.e. fission yield and precursor decay, equilibrate with the removal terms, beta decay and radiative capture. By setting the time derivatives to zero, the neutron flux dependent equilibrium concentrations (\ref{eqn:eqI} and \ref{eqn:eqXe}) may be derived algebraically \cite{Lamarsh} and can contribute over 2000 pcm of negative poison reactivity to the core. 
+
+\footnotetext{In reality, the decay chain is a bit more complicated than this. $^{135}Te$, the direct beta-precursor to \I is formed by \U[235] fission \cite{Roberson}. It's half-life is orders of magnitude shorter than \I, so it is common to neglect its formation and instead lump its fission yield with \I. \Xe[135m] is also formed by \I beta-decay and is neglected for similar reasons.}
+ 
+\begin{equation}\label{eqn:eqI}
+    I_{\infty}(\phi) = \frac{\gamma_I \Sigma_f^F }{\lambda_I}\phi
+\end{equation}
+\begin{equation}\label{eqn:eqXe}
+    Xe_{\infty}(\phi) = \frac{(\gamma_I+\gamma_{Xe}) \Sigma_f^F }{\lambda_I+\sigma_a^{Xe}\phi}\phi
+\end{equation}
+
+\subsubsection{Samarium Poisoning}
+\subsubsection{Burnable Poison Control}
 
 \subsection{Shut-down}
 Planned shut-down

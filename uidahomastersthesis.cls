@@ -247,11 +247,16 @@ This thesis of \@author, submitted for the degree of \@degree\ with a Major in \
 %Nuclides!
 %\newcommand{\<call>}[<mass number (optional)>][default]{$^{#1}A$}
 \newcommand{\B}[1][]{$^{#1}B$ }
+\newcommand{\Be}[1][]{$^{#1}Be$ }
 \newcommand{\I}[1][135]{$^{#1}I$ }
 \newcommand{\Xe}[1][135]{$^{#1}Xe$ }
-\newcommand{\Sa}[1][149]{$^{#1}Xe$ }
+\newcommand{\Sa}[1][149]{$^{#1}Sa$ }
 \newcommand{\U}[1][]{$^{#1}U$ }
 \newcommand{\Pu}[1][239]{$^{#1}Pu$ }
+\newcommand{\Ca}[1][]{$^{#1}Ca$ }
+\newcommand{\Am}[1][]{$^{#1}Am$ }
+\newcommand{\Po}[1][]{$^{#1}Po$ }
+\newcommand{\Ra}[1][]{$^{#1}Ra$ }
 
 \newcommand{\UF}[1][4]{$UF_{#1}$}
 \newcommand{\flinak}{$FLiNaK$ }
