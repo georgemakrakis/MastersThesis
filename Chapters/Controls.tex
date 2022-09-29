@@ -112,7 +112,11 @@ Initial start-up will also require a neutron source as a seed for the fission ch
 Each of these systems are important considerations for the design of the \acs{msnb} and warrant further investigation, but are out of scope for this work. The main start-up consideration regarding the control system is the build-up of fission product neutron poisons.
 
 \subsubsection{Xenon Poisoning}
+<<<<<<< HEAD
 \Xe is the strongest known neutron poison, with a microscopic neutron capture cross-section of 2.65 Mb \cite[Table II.2]{Lamarsh}. The concentration of \Xe is described by a system of differential equations which quantifies the generation, consumption, and decay of itself and its beta-precursor \I. Equations \ref{eqn:diffI} and \ref{eqn:diffXe} can be used to track the concentrations of iodine-135 and xenon-135 during start-up, steady-state operation, power transients, shut-down, and dead-time \cite[Ch. 7]{Lamarsh}.
+=======
+\Xe is the strongest known neutron poison, with a microscopic neutron capture cross-section of 2.65 Mb \cite{Lamarsh}. The concentration of \Xe is described by a system of differential equations which quantifies the generation, consumption, and decay of itself and its beta-precursor \I. \ref{eqn:diffI} and \ref{eqn:diffXe} can be used to track the concentrations of iodine-135 and xenon-135 during start-up, steady-state operation, power transients, shut-down, and dead-time \cite{Lamarsh}.
+>>>>>>> cc3e57bf4c8fe8715b2ae05dd4a78cd525dc13db
 \begin{equation}\label{eqn:diffI}
     \frac{dI}{dt} =
     \underbrace{\gamma_{I}\Sigma_{f}^{F}{\phi}(t)}_{\text{Fission Yield}}
@@ -129,7 +133,11 @@ Each of these systems are important considerations for the design of the \acs{ms
         \underbrace{Xe(t)\sigma_{a}^{Xe}{\phi}(t)}_{\text{Radiative Capture}}
 \end{equation}
 
+<<<<<<< HEAD
 Each nuclide is formed by \U[235] fission, and removed by beta-decay. Additionally, \Xe is formed by the beta-decay of \I and removed by radiative neutron capture \footnotemark. Each nuclide builds-up in the reactor until the formation terms, i.e. fission yield and precursor decay, equilibrate with the removal terms, beta decay and radiative capture. By setting the time derivatives to zero, the neutron flux dependent equilibrium concentrations (\ref{eqn:eqI} and \ref{eqn:eqXe}) may be derived algebraically \cite[Ch. 7]{Lamarsh} and can contribute over 2000 pcm of negative poison reactivity to the core. 
+=======
+Each nuclide is formed by \U[235] fission, and removed by beta-decay. Additionally, \Xe is formed by the beta-decay of \I and removed by radiative neutron capture \footnotemark. Each nuclide builds-up in the reactor until the formation terms, i.e. fission yield and precursor decay, equilibrate with the removal terms, beta decay and radiative capture. By setting the time derivatives to zero, the neutron flux dependent equilibrium concentrations (\ref{eqn:eqI} and \ref{eqn:eqXe}) may be derived algebraically \cite{Lamarsh} and can contribute over 2000 pcm of poison reactivity to the core. 
+>>>>>>> cc3e57bf4c8fe8715b2ae05dd4a78cd525dc13db
 
 \footnotetext{In reality, the decay chain is a bit more complicated than this. $^{135}Te$, the direct beta-precursor to \I is formed by \U[235] fission \cite{Roberson}. It's half-life is orders of magnitude shorter than \I, so it is common to neglect its formation and instead lump its fission yield with \I. \Xe[135m] is also formed by \I beta-decay and is neglected for similar reasons.}
  
@@ -147,11 +155,26 @@ Each nuclide is formed by \U[235] fission, and removed by beta-decay. Additional
 
 
 \subsection{Shut-down}
+<<<<<<< HEAD
 Planned shut-down, either for scheduled maintenance or due to a lack of demand, is quite simple. The heat exchanger load is brought to zero or very low power, and the core set-point gradually follows. Careful selection of the pre-filter time constant can alleviate potential thermal hydraulic(\eg stagnation or reverse-flow) and thermophysical (\eg salt precipitation, freezing, or vaporization) concerns \cite{CarterNumerical}. The emergency shutdown (\ie SCRAM) system must be passive. In \acsp{lwr}, this is achieved by including large control rods which are actively held out of the core, so that a loss of power results in automatic insertion. Larger \acs{msr} designs may include a SCRAM tank into which the fuel/coolant salt drains in the event of power failure. These systems are often actuated by a freeze plug \cite{FreezePlug} and put the salt in a subcritical orientation by the inclusion of neutron control materials \cite[Ch. 1]{Charit} and high geometric buckling \cite[Ch. 6]{Lamarsh}.
+=======
+Planned shut-down, either for scheduled maintenance or due to a lack of demand, is quite simple. The heat exchanger load is brought to zero or very low power, and the core set-point gradually follows. Careful selection of the pre-filter time constant can alleviate potential thermal hydraulic(\eg stagnation or reverse-flow) and thermophysical (\eg salt precipitation, freezing, or vaporization) concerns \cite{CarterNumerical}. 
+>>>>>>> cc3e57bf4c8fe8715b2ae05dd4a78cd525dc13db
 
-Decay heat and keeping the salt liquid for restart
+The emergency shutdown (\ie SCRAM) system must be passive. In \acsp{lwr}, this is achieved by including large control rods which are actively held out of the core, so that a loss of power results in automatic insertion. Larger \acs{msr} designs may include a SCRAM tank into which the fuel/coolant salt drains in the event of power failure. These systems are often actuated by a freeze plug \cite{FreezePlug} and put the salt in a subcritical orientation by the inclusion of neutron control materials \cite{Charit} and high geometric buckling \cite{Lamarsh}. If the \acs{msnb} plans to use the control drums in its SCRAM system, the drums will need to have sufficient worth to quickly end the fission chain reaction, and the actuation will need to be designed such that the drums fail to a position where the neutron absorbing material is facing the core. 
+
+Whether the reactor is shut down for planned purposes or in an emergency, a decay heat \cite{TodreasKazimi1} removal system will need to be designed to keep the salt from vaporizing. The same heat exchanger used for the secondary loop could be used for this purpose, but there should also be a passive system that rejects decay heat in the event of total power failure, such as a direct contact system which removes heat through the vaporization of sodium \cite{DecayHeat}. This latent heat driven system is ideal because it minimizes the possibility of the salt freezing due to over-cooling.
 
 \subsection{Re-start}
-\Xe stripper
+Compound dynamics in the \Xe decay chain result in the generation of a large poison reactivity in the hours following a shut-down. This can make restarting the reactor difficult or impossible for a period of approximately two days. When the reactor is shut down, each flux-containing term in the system of ODEs (\ref{eqn:diffI} and \ref{eqn:diffXe}) goes to zero, and the concentrations of the two nuclides are described by the Bateman equations \cite{Bateman}, which have a readily available solution (\ref{eqn:I_inf} and \ref{eqn:Xe_inf}), given some initial condition \cite{Lamarsh}. \I follows simple exponential decay. \Xe has a longer half-life than \I, as well as a lower equilibrium concentration (owing to its huge radiative capture cross-section). This causes an inverse response, where the \Xe concentration initially spikes before its population grows and the \I population shrinks to the point that the rate of \Xe decay exceeds its formation. 
 
+\begin{equation}\label{eqn:I_inf}
+    I(t) = I_0e^{-\lambda_I t}
+\end{equation}
+\begin{equation}\label{eqn:Xe_inf}
+    Xe(t) = Xe_0e^{-\lambda_{Xe} t}+\frac{\lambda_I I_0}{\lambda_I - \lambda_{Xe}}(e^{\lambda_{Xe}t}-e^{\lambda_{I}t})
+\end{equation}
 
+This system of equations is not ideal, as it results in mandatory reactor dead time. Most nuclear reactors are not designed with enough excess control reactivity to overcome the iodine pit, so they must wait for the xenon to decay. Even if the control system does have the ability to restart during the xenon peak, it can be very unsafe to do so. When the fission chain reaction is restarted, the neutron flux increases and begins transmuting \Xe. The removal of poisons is akin to positive reactivity insertion \cite{Roberson}. Decreasing poison concentration increases the neutron population and therefore the rate of poison removal. This is a positive feedback system which could run away quickly if control reactivity is not removed to match. 
+
+The duration of the xenon spike may be shortened by adding an additional negative term to \ref{eqn:diffXe}. This is not physically realizable in cladded solid fuel reactors. It is however possible to remove a gaseous solvent from a liquid (such as \acs{msr} fuel) through a process called stripping \cite{Geankoplis}. Helium may be bubbled through the molten salt in a sparge tube, and the xenon (as well as any other fission gasses \cite{Offgas}) would preferentially transport into the gaseous phase which would later be separated in a cyclone or similar apparatus \cite{ORNL-masstransport}. This advective removal of \Xe would allow the \acs{msnb} to be restarted without having to wait for the poison to decay. \Sa is stable and strongly dissolved in the molten salt, so it is always `burnt off' during restart \cite{Lamarsh}.
