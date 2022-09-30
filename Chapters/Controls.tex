@@ -59,7 +59,7 @@ The term `Feedforward' can be used to refer to any element in the control block 
 
 In many processes, the process variable is effected by phenomena other than the actuator. These other phenomena are defined as disturbances. A well-tuned feedback controller is capable of disturbance rejection, but only after the disturbance causes error. In some cases, a disturbance feedforward controller may be added to the feedback controller to cause the actuator to counteract the effect of the disturbance before it occurs \cite[Ch. 10]{Bequette}.
 
-The most prevalent disturbances that would effect the power output of the core of a \acs{msnb} are the temperature reactivity feedback effect common to all nuclear reactors and the flow reactivity specific to natural circulation driven  liquid fueled \acsp{msr} \cite{CarterNumerical}. Temperature reactivity feedback is dominated by Doppler Broadening, where the microscopic radiative capture cross section resonance peaks of nuclides such as \U[238] are depressed to cover a wider epithermal neutron spectrum \cite[Ch. 6]{DH}. This results in a smaller core neutron population and less fission events, so there is a negative correlation between fuel temperature and fuel reactivity. Flow reactivity is driven by the advection of delayed neutron precursors. Not all fission neutrons are released promptly; sometimes an unstable nuclide which decays by neutron emission produced instead. These unstable nuclides are called delayed neutron precursors and have half-lives ranging from less than a second to over a minute \cite[Ch. 7]{Lamarsh}. Since the fuel in a \acs{msnb} is flowing, there is a statistical probability that a delayed neutron precursor may leave the core by advection before the neutron is emitted in a much less reactive part of the reactor. When the temperature differential between the thermal center of the core and primary heat exchanger is increased, so too does the natural circulation flow rate. This decreases the likelihood of delayed neutrons being emitted in the core, and negatively contributes to core reactivity. Devices meant to elongate the in-core flow path may minimize delayed neutron losses \cite{CarterPHD}.
+The most prevalent disturbances that would effect the power output of the core of a \acs{msnb} are the temperature reactivity feedback effect common to all nuclear reactors and the flow reactivity specific to natural circulation driven  liquid fueled \acsp{msr} \cite{CarterNumerical}. Temperature reactivity feedback is dominated by Doppler Broadening, where the microscopic radiative capture cross section resonance peaks of nuclides such as \U[238] are depressed to cover a wider epithermal neutron spectrum \cite[Ch. 6]{DH}. This results in a smaller core neutron population and less fission events, so there is a negative correlation between fuel temperature and fuel reactivity. Flow reactivity is driven by the advection of delayed neutron precursors \cite[Ch. 3]{Kerlin}. Not all fission neutrons are released promptly; sometimes an unstable nuclide which decays by neutron emission produced instead. These unstable nuclides are called delayed neutron precursors and have half-lives ranging from less than a second to over a minute \cite[Ch. 7]{Lamarsh}. Since the fuel in a \acs{msnb} is flowing, there is a statistical probability that a delayed neutron precursor may leave the core by advection before the neutron is emitted in a much less reactive part of the reactor. When the temperature differential between the thermal center of the core and primary heat exchanger is increased, so too does the natural circulation flow rate. This decreases the likelihood of delayed neutrons being emitted in the core, and negatively contributes to core reactivity. Devices meant to elongate the in-core flow path may minimize delayed neutron losses \cite{CarterPHD}.
 
 Disturbance feedforward will not be utilized in the design of the controller outlined in this work. When the outlet temperature of the heat exchanger is decreased, it takes time for the cooler salt to reach the core. The disturbance transport delay is on the order of minutes. Contrastly, Doppler Broadening has a nearly instantaneous effect, so disturbance dynamics are on the order of milliseconds, governed by the mean neutron lifetime \cite[Ch. 7]{Lamarsh}. The effect of control actuation are similarly prompt. Even with a temperature sensor just at the inlet of the core it would be nearly impossible to reliably predict the exact moment that control reactivity would be need to be inserted to counteract the temperature reactivity. 
 
@@ -130,7 +130,6 @@ Each of these systems are important considerations for the design of the \acs{ms
 \end{equation}
 
 Each nuclide is formed by \U[235] fission, and removed by beta-decay. Additionally, \Xe is formed by the beta-decay of \I and removed by radiative neutron capture \footnotemark. Each nuclide builds-up in the reactor until the formation terms, i.e. fission yield and precursor decay, equilibrate with the removal terms, beta decay and radiative capture. By setting the time derivatives to zero, the neutron flux dependent equilibrium concentrations (\ref{eqn:eqI} and \ref{eqn:eqXe}) may be derived algebraically \cite[Ch. 7]{Lamarsh} and can contribute over 2000 pcm of negative poison reactivity to the core. 
-Each nuclide is formed by \U[235] fission, and removed by beta-decay. Additionally, \Xe is formed by the beta-decay of \I and removed by radiative neutron capture \footnotemark. Each nuclide builds-up in the reactor until the formation terms, i.e. fission yield and precursor decay, equilibrate with the removal terms, beta decay and radiative capture. By setting the time derivatives to zero, the neutron flux dependent equilibrium concentrations (\ref{eqn:eqI} and \ref{eqn:eqXe}) may be derived algebraically \cite{Lamarsh} and can contribute over 2000 pcm of poison reactivity to the core. 
 
 \footnotetext{In reality, the decay chain is a bit more complicated than this. $^{135}Te$, the direct beta-precursor to \I is formed by \U[235] fission \cite{Roberson}. It's half-life is orders of magnitude shorter than \I, so it is common to neglect its formation and instead lump its fission yield with \I. \Xe[135m] is also formed by \I beta-decay and is neglected for similar reasons.}
  
@@ -142,10 +141,38 @@ Each nuclide is formed by \U[235] fission, and removed by beta-decay. Additional
 \end{equation}
 
 \subsubsection{Samarium Poisoning}
-The second most important
+The second most important neutron poison to consider after \Xe is \Sa. \Pm is formed by fission\footnotemark and decays to \Sa, which is stable, and has a large neutron capture cross-section \cite[Ch. 7]{Lamarsh}. \ref{eqn:diffPm} looks identical to \ref{eqn:diffI}, but \ref{eqn:diffSa} is simpler than \ref{eqn:diffXe} as \Sa is stable and is not a direct fission product.
+
+\footnotetext{As with \I, \Pm actually comes from the decay of a much shorter lived nuclide \Nd. Because neither \Pm nor \Nd are strong neutron absorbers, the presence of \Nd may be neglected in favor of its longer lived daughter product.}
+
+\begin{equation}\label{eqn:diffPm}
+    \frac{dPm}{dt} =
+    \underbrace{\gamma_{Pm}\Sigma_{f}^{F}{\phi}(t)}_{\text{Fission Yield}}
+    -\underbrace{\lambda_{Pm}Pm(t)}_{\text{Beta Decay}}
+\end{equation}
+\begin{equation}\label{eqn:diffSa}
+        \frac{dSa}{dt} =
+        \underbrace{\lambda_{Pm}Pm(t)}_{\text{Precursor Decay}}
+        -
+        \underbrace{Sa(t)\sigma_{a}^{Sa}{\phi}(t)}_{\text{Radiative Capture}}
+\end{equation}
+
+This system too reaches an equilibrium which may be found algebraically where the time derivatives are null. \ref{eqn:eqPm} is of the same form as \ref{eqn:eqI}. Interestingly \ref{eqn:eqSa} is independent of the neutron flux in the core. Because it is stable, it is only removed by the same neutron flux that forms it, and contributes a relatively constant 442 pcm of poison reactivity. 
+
+\begin{equation}\label{eqn:eqPm}
+    Pm_{\infty}(\phi) = \frac{\gamma_Pm \Sigma_f^F }{\lambda_{Pm}}\phi
+\end{equation}
+\begin{equation}\label{eqn:eqSa}
+    Sa_{\infty}(\phi) = \frac{\gamma_{Pm} \Sigma_f^F }{\sigma_a^{Sa}}
+\end{equation}
 
 \subsubsection{Burnable Poison Control}
-
+\acsp{lwr} are commonly controlled using neutron absorbing materials in two ways \cite[Ch. 8]{Kerlin}:
+\begin{enumerate*}
+    \item Burnable poisons (typically poisons who's daughter are neutron-transparent \cite[Ch. 14]{DH}) placed in certain fuel rods to flatten the power profile; and 
+    \item Soluble poisons (\ie Chemical Shim) dissolved in the moderator/coolant to account for long term fission product poison build-up and fissile material depletion.
+\end{enumerate*}
+In \acsp{msr}, these two concepts may be combined by adding a neutron absorber such as \B[10] to the molten salt mixture to counter-act the poison reactivity built-up by equilibrium poisons like \Xe and \Sa. Boron could be added to the salt by dissolving $BF_3$ gas \cite{BF3} or sodium fluoroborates such as $NaBF_4$ \cite{ORNL-BoronHastelloy}, either of which could be natural composition or enriched in \B[10] As the concentration of the fission product poisons build up, the concentration of \B[10] depletes; unlike chemical shimming, the consumed \B[10] would not be replenished. Making the average core reactivity equivalent upon cold-clean start-up and equilibrium would allow gain and bias scheduling to be more simple early in the fuel lifetime.
 
 \subsection{Shut-down}
 Planned shut-down, either for scheduled maintenance or due to a lack of demand, is quite simple. The heat exchanger load is brought to zero or very low power, and the core set-point gradually follows. Careful selection of the pre-filter time constant can alleviate potential thermal hydraulic(\eg stagnation or reverse-flow) and thermophysical (\eg salt precipitation, freezing, or vaporization) concerns \cite{CarterNumerical}. The emergency shutdown (\ie SCRAM) system must be passive. In \acsp{lwr}, this is achieved by including large control rods which are actively held out of the core, so that a loss of power results in automatic insertion. Larger \acs{msr} designs may include a SCRAM tank into which the fuel/coolant salt drains in the event of power failure. These systems are often actuated by a freeze plug \cite{FreezePlug} and put the salt in a subcritical orientation by the inclusion of neutron control materials \cite[Ch. 1]{Charit} and high geometric buckling \cite[Ch. 6]{Lamarsh}.
