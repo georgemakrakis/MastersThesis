@@ -286,3 +286,5 @@ This thesis of \@author, submitted for the degree of \@degree\ with a Major in \
 \newacronym{nrel}{NREL}{National Renewable Energy Laboratory}
 \newacronym{oak}{ORNL}{Oak Ridge National Laboratory}
 \newacronym{lti}{LTI}{Linear Time-Invariant}
+\newacronym{mm}{MIMO}{Multi-Input Multi-Output}
+\newacronym{ss}{SISO}{Single-Input Single-Output}
