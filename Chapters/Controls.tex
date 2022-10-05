@@ -9,7 +9,7 @@ There are two main goals in process control engineering:
 This is usually achieved by a controller which detects the process variable using a sensor/transmitter and controls the process variable by manipulating an actuator. 
 
 \section{Feedback}
-\begin{figure}[h!]
+\begin{figure}[!ht]
     \centering
     \input{tikz/feedback}
     \caption[Feedback control loop]{Feedback control loop. The output ($PV$) is measured by the transducer ($H$) and compared to the set-point ($SP$). The controller ($C$) uses the actuator ($A$) to control the process ($P$) based on the error ($e$).}
@@ -50,7 +50,7 @@ In this case, \ref{eqn:pid} is rewritten as:
 The term `Feedforward' can be used to refer to any element in the control block diagram that exists outside of the feedback loop. In process control, feedforward controllers are almost always implemented alongside, not instead of feedback controllers because a standalone feedforward controller is not guaranteed to reach the set-point.  
 
 \subsection{Disturbance Feedforward}
-\begin{figure}[h!]
+\begin{figure}[!ht]
     \centering
     \input{tikz/feedforward}
     \caption[Feedback control loop with disturbance feedforward]{Feedback control loop with disturbance feedforward. It is identical to Fig. \ref{fig:tikz_feedback} with the addition of a disturbance ($D$) which effects the process variable ($PV$) according to the disturbance dynamics ($P_D$), and is measured by the disturbance transducer ($H_D$). The signal from $H_D$ is sent to the disturbance feedforward controller ($C_D$) who's output ($u_D$) is combined with ($u$) to form the total control output ($u^*$).}
@@ -64,7 +64,7 @@ The most prevalent disturbances that would effect the power output of the core o
 Disturbance feedforward will not be utilized in the design of the controller outlined in this work. When the outlet temperature of the heat exchanger is decreased, it takes time for the cooler salt to reach the core. The disturbance transport delay is on the order of minutes. Contrastly, Doppler Broadening has a nearly instantaneous effect, so disturbance dynamics are on the order of milliseconds, governed by the mean neutron lifetime \cite[Ch. 7]{Lamarsh}. The effect of control actuation are similarly prompt. Even with a temperature sensor just at the inlet of the core it would be nearly impossible to reliably predict the exact moment that control reactivity would be need to be inserted to counteract the temperature reactivity. 
 
 \subsection{Pre-Filter}
-\begin{figure}[h!]
+\begin{figure}[!ht]
     \centering
     \input{tikz/prefilter}
     \caption[Feedback control loop with pre-filter]{Feedback control loop with pre-filter. It is identical to Fig. \ref{fig:tikz_feedback} with the addition of the pre-filter ($F$) which reshapes changes to the set-point ($SP$) before calculating the error ($e$).}
@@ -79,7 +79,7 @@ The control loop for a feedback system with a pre-filter is included as Figure \
 
 By resisting instantaneous set-point changes, or step functions, the pre-filter minimizes the instantaneous error during transients and minimizes overshoot by reducing over-actuation or actuator saturation.  This is particularly useful in a control system such as the one designed in this report where the set-point is coupled to some other value. In this case, the core power generation needs to match the demand of the secondary system (\eg power cycle). This method allows the secondary system to immediately change to its necessary value while giving the reactor core time to safely and effectively respond. 
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
     \centering
     \subfloat[\centering Step-function]{{\resizebox{0.47\textwidth}{!}{\input{pgf/prefilter_step}}}}
     \qquad
