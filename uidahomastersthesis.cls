@@ -27,7 +27,7 @@
 \RequirePackage{fmtcount}
 \RequirePackage{textcomp}
 \RequirePackage{gensymb}
-\RequirePackage{url}
+\RequirePackage{url,xurl}
 \RequirePackage{mypythonhighlight}
 \RequirePackage{hyperref}
 \RequirePackage[acronym,nomain,nonumberlist]{glossaries}
