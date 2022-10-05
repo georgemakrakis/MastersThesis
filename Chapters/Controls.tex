@@ -26,7 +26,7 @@ The action, or controller output ($u$) is often determined by a \acf{pid} equati
 \begin{enumerate}
 \item Proportional control term. The control output is manipulated in proportion to the error defined by the proportional gain constant ($K_P$). A high gain yields an aggressive controller that is prone to overshooting the set-point, while a low gain may result in steady-state offset.  
 \item Integral control term, which considers the historical cumulative error (calculated by taking the time integral of the error) in an effort to eliminate steady-state offset that a P-Only controller may exhibit. As the process variable settles around the set-point, the cumulative error approaches a constant value and the effect of the integral controller diminishes.
-\item Derivative control term \note{Derivative control will be important because the controller manipulates criticality to control power generation, a highly time dependent system.}, which estimates the time rate of change of the error to dampen overshoot. This mechanism, sometimes referred to as anticipatory control, slightly reduces the proportional response to the error when the error is changing rapidly. This results in reducing the peak overshoot. A well tuned anticipatory gain can allow a more aggressive proportional gain to be used without the large overshoot.
+\item Derivative control term, which estimates the time rate of change of the error to dampen overshoot. This mechanism, sometimes referred to as anticipatory control, slightly reduces the proportional response to the error when the error is changing rapidly. This results in reducing the peak overshoot. A well tuned anticipatory gain can allow a more aggressive proportional gain to be used without the large overshoot.
 \end{enumerate}
 
 \begin{equation}\label{eqn:pid}
@@ -90,8 +90,7 @@ By resisting instantaneous set-point changes, or step functions, the pre-filter 
 
 The area between the solid blue and dashed orange curves corresponds the net amount of energy expelled from the molten salt loop following the transient. This manifests as a drop in the average salt temperature. If the reactor begins to operate near thermophysical boundaries, it may be necessary for the core to over-produce in order to bring the temperature back up. This is one example of how this controller is really a \acf{mm} system, though it may be treated as \acf{ss} during the preliminary design phase. An alternative approach could be to use a slightly under-damped second-order pre-filter so the core power generation briefly overshoots the heat exchanger power consumption to balance the energy inequality.
 
-\section{Transport Delay Problem}\note{Discussing the transport of cold salt and how it effects the global (flow) and local (temperature) feedback mechanism. Why we want to use a pre-filter and an actuation threshold of sorts.}
-
+\section{Transport Delay Problem}
 A good place to start in the design of this controller is discussing the dynamics associated with anticipated transients. The prominent factors here are the natural circulation flow mode and the transport delay separating the heat exchanger and core. Consider a step-increase in power demand to a steady-state critical \acs{msnb} where the core power generation set-point is instantaneously equal to the heat exchanger power consumption. For this thought experiment, consider an ideal controller which produces rapid load following with minimal overshoot.
 
 \subsection{Immediate Response}
@@ -107,10 +106,15 @@ The next event occurs when the cold edge reaches the core inlet, $\theta_{downco
 
 A pre-filter that reshapes the core set-point will make the initial hot edge more gradual. Proper tuning of the pre-filter time-constant will allow the reactivity oscillations to decay more quickly. Previous work \cite{CarterNumerical} has shown that the passive feedback mechanisms (temperature and flow reactivity) are capable of autonomous load following for small transient, though not at the level of performance that may be required in certain applications. Still, this provides the opportunity to minimize fine and rapid actuation while dampening oscillations by using a dead-band; the `ringing out' of minor perturbations could be left to the passive feedback mechanisms after the active feedback controls the bulk of the power change.
 
-\section{Time-Variance and Non-Linearity}\note{Control Drum Angle vs. Reactivity Curve - non-linearity, Fissile depletion - time variance, the fact that we are actually controlling the criticality and not the power directly - ??}
-In control systems, it is typically preferred to work with \acf{lti} systems
+\section{Time-Variance and Non-Linearity}
+In control systems, it is typically preferred to work with \acf{lti} systems. There are a number of non-linearities and time variances at play in the control of the \acs{msnb} which must be handled:
 
-Fissile depletion - time function parameters or look-up table to gain-schedule and turn the time variant system into a shift invariant system.
+\begin{itemize}
+    \item The Control Drum Angle vs. Reactivity Curve, which describes the relationship between control actuation and system response, is not linear, but sinusoidal \cite{PetersonMS}. Over small changes to the control drum angle, the curve may be linearized using Taylor Series approximation \cite[Ch. 2]{Bequette};
+    \item The core reactivity decreases over the course of months and years due to the depletion of fissile nuclides and the build-up of non-equilibrium neutron poisons \cite[Ch. 7]{Lamarsh}. This means that the bias-point (or unity point) of the control drums will drift away from the absorber shield as the core life evolves. The bias-point, controller gain, and time constants will need to change with time. These parameters may be fit to time functions or, or gain-scheduled using a look-up table, similarly to how autopilot systems for high-altitude aircraft account for the different air properties and mach-number at different altitudes \cite{GainSchedule};
+    \item The control drums manipulate the criticality of the core, making it supercritical to increase the power, and subcritical to decrease. This is a highly time dependant exponential control mechanism. The derivative control time constant will need to be carefully tuned to minimize the likelihood of significant overshoot following a power transient; 
+\end{itemize}
+
 
 In addition to the relatively slow time variance of fissile fuel depletion during steady-state critical operation, there are specific times in a \acs{msnb}'s expected operational life-cycle that exhibit a higher degree of time variance: 
 \begin{enumerate*}
