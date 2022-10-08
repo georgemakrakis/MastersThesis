@@ -59,7 +59,7 @@
 \newcommand{\fn}[1]{\footnote{#1}} %shortcut for footnote tag
 \newcommand*\sq{\mathbin{\vcenter{\hbox{\rule{.3ex}{.3ex}}}}} %makes a small square as a separator $\sq$
 \newcommand{\sk}[1]{\sout{#1}} %shortcut for strikethrough
-\newcommand{\x}{\cellcolor{lightgray}} %use to shade in table cell
+\newcommand{\x}{\cellcolor{lightgray}\textbf{X}} %use to shade in table cell
 
 \newcommand{\acf}{\acrfull} %full acronym
 \newcommand{\acl}{\acrlong} %long acronym
@@ -72,6 +72,7 @@
 
 \newacronym{pid}{PID}{Proportional-Integral-Derivative}
 \newacronym{msnb}{MSNB}{Molten Salt Nuclear Battery}
+\newacronym{nrc}{NRC}{Nuclear Regulatory Commission}
 
 %%%%%
 
@@ -96,301 +97,129 @@
 
 \date{2022.10.13}
     
+
+\AtBeginSection[]{
+    \begin{frame}
+        \vfill
+        \centering
+        \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
+            \usebeamerfont{title}\insertsectionhead\par
+        \end{beamercolorbox}
+        
+        \vfill
+        
+    \end{frame}
+}
+
 \begin{document}
-
-
-\nobibliography*
-
-
+    \nobibliography*
 {    \setbeamertemplate{footline}{} 
     \begin{frame}
         \titlepage
     \end{frame}
 } 
 
-\begin{frame}{Xenon-135 Decay Chain}
-    \only<1>{
-    \begin{itemize} 
-        \item Xenon-135 has a neutron capture cross-section of more than $2Mb$;
-        \item Iodine-135 is a common products of Uranium-235 fission;
-        \item $^{135}Xe$ is formed by $^{135}I$ $\beta$-decay ($t_{\nicefrac{1}{2}}\approx 7 \; hrs$);
-    \end{itemize}}
-    \vspace{1cm}
+\begin{frame}{Outline}
+    \tableofcontents
+\end{frame}
 
-    \only<2>{
+\section{Scope}
+\begin{frame}{\acf{msnb}}
+    Molten Salt Microreactor...Goals... Blah... tikz figure would be good
+\end{frame}
 
-    \begin{table}[h!]
-    \caption{Relevant nuclear constants \cite[Ch. 7]{Lamarsh}}
-    \centering\begin{tabular}{c|cccc}
-     & $\gamma \;(\%)$ & $\lambda \; (hr^{-1})$ & $t^{\nicefrac{1}{2}} (hr)$ & $\sigma \; (Mb)$ \\ \hline
-     $^{135}I$ & 6.39 & 0.1035 & 6.57 & - \\
-     $^{135}Xe$ & 0.237 & 0.0753 & 9.14 & 2.65
-    \end{tabular}
-    \label{params}
-    \end{table}}
-
-
+\begin{frame}{Background on \acs{msnb}}
+    \begin{block}{Neutronics}
+        \cite{PetersonMS}
+    \end{block}
     
-    \blfootnote{\tiny\cite{Lamarsh}\tiny\bibentry{Lamarsh}}
+    \begin{block}{Thermal Hydraulics}
+        \cite{CarterPHD}
+    \end{block}
     
-    \begin{equation*}\label{diffI}
-        \frac{dI}{dt} =
-        \underbrace{\gamma_{I}\Sigma_{f}^{F}{\phi}(t)}_{\text{Fission Yield}}
-        -\underbrace{\lambda_{I}I(t)}_{\text{Beta Decay}}
-    \end{equation*}
-    \begin{equation*}\label{diffXe}
-        \frac{dXe}{dt} =
-        \underbrace{\gamma_{Xe}\Sigma_{f}^{F}{\phi}(t)}_{\text{Fission Yield}}
-        +\underbrace{\lambda_{I}I(t)}_{\text{Precursor Decay}}
-        -\underbrace{\lambda_{Xe}Xe(t)}_{\text{Beta Decay}}
-        -\underbrace{Xe(t)\sigma_{a}^{Xe}{\phi}(t)}_{\text{Radiative Capture}}
-    \end{equation*}
+    \begin{block}{Process Control}
+        Me
+    \end{block}
 
+    \blfootnote{\tiny\cite{CarterPHD} \tiny\bibentry{CarterPHD}}
+    \blfootnote{\tiny\cite{PetersonMS} \tiny\bibentry{PetersonMS}}
 \end{frame}
 
-\begin{frame}{Numerical Solver (Euler's Method)}
-    \begin{equation*}
-        I[t+dt]=I[t]+\frac{dI}{dt}[t]
-    \end{equation*}
-    \begin{equation*}
-        Xe[t+dt]=Xe[t]+\frac{dXe}{dt}[t]
-    \end{equation*}
-
-    \only<2>{\vspace{1cm}\begin{itemize}
-        \item 1 second time steps;
-        \item Able to change neutron flux (i.e. scram) at any time step;
-        \item Tracks absolute concentration as well as the contribution to the overall rate of change by each term in the differential equations vs. time;
-    \end{itemize}}
+\begin{frame}{\acs{msnb} design}
+    Figures from plotter (neutronics paper?), with a focus on control actuation
 \end{frame}
 
-\begin{frame}{Xenon-135 Decay Chain: Start-up}
-    \begin{columns}
-    %Column 1
-    \begin{column}{0.5\textwidth}
-    \only<1> {
-    \begin{figure}
-        %\animategraphics[width=0.99\textwidth, controls]{2}{../img/equilibrium/bar-}{1}{48}
-        \caption{Nuclide Concentration Rates of Change - Reactor Start-up}
-    \end{figure}
-    }
+\section{Applied Literature Review}
 
-    \only<2> {
-    \addtocounter{figure}{1}
-   
-    \begin{equation*}
-        I_{\infty}(\phi) = \frac{\gamma_I \Sigma_f^F }{\lambda_I}\phi
-    \end{equation*}
-    \begin{equation*}
-        Xe_{\infty}(\phi) = \frac{(\gamma_I+\gamma_{Xe}) \Sigma_f^F }{\lambda_I+\sigma_a^{Xe}\phi}\phi
-    \end{equation*}
-    }
-    \end{column}
-    %Column 2
-    \begin{column}{0.5\textwidth}
-    \begin{figure}
-        %\includegraphics[width=0.99\textwidth]{start-up}
-        \caption{Nuclide Concentration - Reactor Start-up}
-    \end{figure}
-
-    \end{column}
-    \end{columns}
-    \only<2>{\blfootnote{\tiny\cite{Lamarsh}\tiny\bibentry{Lamarsh}}}
-\end{frame}
-
-\begin{frame}{Xenon-135 Decay Chain: Scram}
-    \only<1>{
-    \begin{equation*}
-    \frac{dI}{dt} =
-    \cancelto{0}{\underbrace{\gamma_{I}\Sigma_{f}^{F}{\phi}(t)}_{\text{Fission Yield}}}
-    -\underbrace{\lambda_{I}I(t)}_{\text{Beta Decay}}
-    \end{equation*}
-    \begin{equation*}
-    \frac{dXe}{dt} =
-    \cancelto{0}{\underbrace{\gamma_{Xe}\Sigma_{f}^{F}{\phi}(t)}_{\text{Fission Yield}}}
-    +\underbrace{\lambda_{I}I(t)}_{\text{Precursor Decay}}
-    -\underbrace{\lambda_{Xe}Xe(t)}_{\text{Beta Decay}}
-    -\cancelto{0}{\underbrace{Xe(t)\sigma_{a}^{Xe}{\phi}(t)}_{\text{Radiative Capture}}}
-    \end{equation*} 
-    }
-
-    \only<2>{
-    \begin{equation*}
-    \frac{dI}{dt} =
-    -\underbrace{\lambda_{I}I(t)}_{\text{Beta Decay}}
-    \end{equation*}
-    \begin{equation*}
-    \frac{dXe}{dt} =
-    \underbrace{\lambda_{I}I(t)}_{\text{Precursor Decay}}
-    -\underbrace{\lambda_{Xe}Xe(t)}_{\text{Beta Decay}}
-    \end{equation*} 
-    }
-
-    \begin{columns}
-        %Column 1
-        \begin{column}{0.5\textwidth}
-
-        \only<3>{\begin{figure}
-            %\animategraphics[width=0.99\textwidth, controls]{2}{../img/scram/bar-}{200}{248}
-            \caption{Nuclide Concentration Rates of Change - Reactor Scram}
-        \end{figure}}
-
-        \only<4>{   \addtocounter{figure}{1} 
-            \centering Bateman Equations \cite{Bateman}
-            \begin{align*}
-                I(t) &= I_0e^{-\lambda_I t}\\
-            \begin{split}
-                Xe(t) &= Xe_0e^{-\lambda_{Xe} t}\\&+\frac{\lambda_I I_0}{\lambda_I - \lambda_{Xe}}(e^{\lambda_{Xe}t}-e^{\lambda_{I}t})
-            \end{split}\end{align*}
-        }
-        \only<5>{
-            \begin{itemize}
-                \item Restarting may be impossible during peak if reactor does not have enough excess control reactivity;
-                \item Burn-off during premature restart is akin to positive reactivity insertion \cite{Roberson}
-            \end{itemize}
-        }
-
-        \end{column}
-        %Column 2
-        \begin{column}{0.5\textwidth}
-        \only<3->{\begin{figure}
-            %%\includegraphics[width=0.99\textwidth]{../img/noHe}
-            \caption{Nuclide Concentration - Reactor Scram}
-        \end{figure}}
-
-        \end{column}
-    \end{columns}
-    \only<4>{\blfootnote{\tiny\cite{Bateman}\tiny\bibentry{Bateman}}}
-    \only<5>{\blfootnote{\tiny\cite{Roberson}\tiny\bibentry{Roberson}}}
-\end{frame}
-
-\begin{frame}{Molten Salt Reactor}
-    \begin{figure}[h]\centering
-    %\resizebox{0.42\textwidth}{!}{%\input{tikz_bfd}}
-    \caption{Molten Salt Microreactor with Xenon Stripping Module}
-    \label{BFD}
-    \end{figure}
-
-   \blfootnote{\tiny\cite{CarterPHD}\tiny\bibentry{CarterPHD}}
-   \blfootnote{\tiny\cite{Peterson}\tiny\bibentry{Peterson}}
-   \blfootnote{\tiny\cite{ORNL-masstransport}\tiny\bibentry{ORNL-masstransport}}
-\end{frame}
-
-\begin{frame}{Henry's Law}
-    \only<1>{
-    \begin{itemize}
-        \item Applies to dissolved gasses at low concentration
-        \item Temperature dependent relationship between the concentration of the solute in the liquid phase and the partial pressure of the solute in the cover gas.
-    \end{itemize}
-
-    \begin{equation*}
-        c = Hp
-    \end{equation*}}
-
-    \only<2>{By considering total pressure of the cover gas and assuming an equation of state, Henry's law can be modified to be expressed in terms of gas phase concentration instead of partial pressure.
-
-    \begin{equation*}
-        c_{\ell} = H^{*}c_g
-    \end{equation*}}
-
-    \blfootnote{\tiny\cite{ORNL-solubility}\tiny\bibentry{ORNL-solubility}}
-\end{frame}
-
-\begin{frame}{Xenon Stripping Module}
-    \begin{columns}[T]
-    \begin{column}{0.5\textwidth}
-    \begin{figure}[h!]\centering
-    %\input{tikz_stripper}
-    \caption{Schematic Drawing of Xenon Stripping Module} \label{strip}
-    \end{figure}\end{column}
-    \begin{column}{0.5\textwidth}
-
-    \onslide<2->{
-    \begin{equation*}
-        C_{salt}^{out}=C_{salt}^{in}\left( 1+\frac{1}{H^*}\frac{\dot{V}_{He}}{\dot{V}_{salt}}  \right)^{-1}
-    \end{equation*}
-    }
-
-    \onslide<3>{
-    \begin{equation*}\begin{split}
-    \frac{dC_{salt}}{dt} &=
-    C_{He}^{out}\frac{\dot{V}_{He}}{\dot{V}_{salt}}
-    =\frac{C_{salt}^{out}}{H^*}\frac{\dot{V}_{He}}{\dot{V}_{salt}}\\
-    &= C_{salt}^{in}\left( H^*\frac{\dot{V}_{salt}}{\dot{V}_{He}}+1 \right)^{-1}
-    \end{split}\end{equation*}
-    }\end{column}\end{columns}
-\end{frame}
-
-\begin{frame}{Xenon-135 Decay Chain: With Stripping}
-    \begin{equation*}\label{diffI}
-        \frac{dI}{dt} =
-        \underbrace{\gamma_{I}\Sigma_{f}^{F}{\phi}(t)}_{\text{Fission Yield}}
-        -\underbrace{\lambda_{I}I(t)}_{\text{Beta Decay}}
-        -\underbrace{I(t)\sigma_{a}^{I}{\phi}(t)}_{\text{Radiative Capture}}
-    \end{equation*}
-    \begin{equation*}\label{diffXe_strip}
-        \begin{split}
-        \frac{dXe}{dt} =
-        &\underbrace{\gamma_{Xe}\Sigma_{f}^{F}{\phi}(t)}_{\text{Fission Yield}}
-        +\underbrace{\lambda_{Xe}Xe(t)}_{\text{Precursor Decay}}
-        -\underbrace{\lambda_{Xe}Xe(t)}_{\text{Beta Decay}}\\
-        -&\underbrace{Xe(t)\sigma_{a}^{Xe}{\phi}(t)}_{\text{Radiative Capture}}
-        -\underbrace{ \frac{Xe(t)}{\tau_{salt}}\left( H^*\frac{\dot{V}_{salt}}{\dot{V}_{He}}+1 \right)^{-1}}_{\text{Stripping}}
-        \end{split}
-    \end{equation*}
-\end{frame}
-
-\begin{frame}{Results and Discussion}
-    \begin{columns}
-        \begin{column}{0.5\textwidth}
-            \begin{itemize}
-                \only<1-2>{
-                \item<1> Cold Clean Start
-                \item<1> 12-hr restart
-                \item<1> $8.26 \; L/s$, $\tau_{salt} \approx 130 \; s$
-                \item<1> $10^{14} n/cm^2 \cdot s$
-                \item<2> Flowrate Ratio $1.1\times10^{-6}$
-                \item<2> $33 \; mL/hr$ Helium, $392 \; mL$ total
-                \item<2> Such a small amount, it may be more practical to release a higher flow rate in a shorter amount of time - \textit{On-Demand}
-                }
-                \only<3-4>{
-                \item<3> Call for restart at peak ($10.3 hrs$ after scram)
-                \item<3> Start-up in 260 seconds, or two flow periods - on par with natural gas peaking generators 
-                \item<4> $2.64 \; mL/s$ Helium, or $687 \; mL$ total
-                \item<4> 30 moles (modestly sized cylinder) over entire decade if restarted in this manner every day
-                }
-            \end{itemize}
-        \end{column}
-        \begin{column}{0.5\textwidth}
-            \only<1-2>{
-                \begin{figure}
-                %\includegraphics[width=0.99\textwidth]{../img/12hr_restart}
-                \caption{Nuclide Concentration - 12-hr Restart}
-            \end{figure}
-            }
-            \only<3-4>{
-                \begin{figure}
-                %\includegraphics[width=0.99\textwidth]{../img/standby_restart.png}
-                \caption{Nuclide Concentration - Standby Restart}
-            \end{figure}
-            }
-        \end{column}
-    \end{columns}
-\end{frame}
-
-\begin{frame}{Final Remarks}
+\begin{frame}{Passive Feedback}
     
+\end{frame}
+
+\begin{frame}{Main Operational Control Problem - Transport Delay}
+    
+\end{frame}
+
+\begin{frame}{Time-Variance and Non-Linearity}
+    
+\end{frame}
+
+\section{Future Work}
+
+\begin{frame}{Control Drum Characterization}{MCNP}
+    
+\end{frame}
+
+\begin{frame}{Process Simulation}{Python}
+    
+\end{frame}
+
+\begin{frame}{Controller Tuning}{MATLAB-Simulink}
+    
+\end{frame}
+
+\begin{frame}{Implementation and Testing}{Python}
+    
+\end{frame}
+
+\begin{frame}{Timeline}
+
+    \begin{table}
+        \centering
+        \caption{Timeframe for Execution of Project}
+        \begin{tabular}{c|c|c|c|c|c|c|c}
+            \textbf{Tasks} & Oct. & Nov. & Dec. & Jan. & Feb. & Mar. & Apr.\\\hline
+            \textbf{Control Drums} & \x & \x & \x &  &  &  & \\\hline
+            \textbf{Process Simulation} &  & \x & \x & \x &  &  & \\\hline
+            \textbf{Controller Tuning} &  &  &  & \x & \x &  & \\\hline
+            \textbf{Implementation} &  &  &  &  & \x & \x & \\\hline
+            \textbf{Cross-Cutting} &  &  &  &  &  & \x & \x\\\hline
+            \textbf{Defend} &  &  &  &  &  &  & \x \\
+
+        \end{tabular}
+    \end{table}
+        
+
+\end{frame}
+
+\section{Final Remarks}
+\begin{frame}{Other Considerations}
+    
+\end{frame}
+
+\begin{frame}{Discussion}
+
 \end{frame}
 
 \begin{frame}{Acknowledgements}
     \centering
-    The first author is funded by the Nuclear Regulatory Commission (NRC) in pursuit of an M.S. in Nuclear Engineering.
+    This work and my coursework is being completed under a Graduate Fellowship funded by \acf{nrc}
 \end{frame}
 
 
 \begin{frame}{References}
     \bibliographystyle{neup}
     \footnotesize
-    \bibliography{References}
+    \bibliography{../References}
 \end{frame}
 
 
