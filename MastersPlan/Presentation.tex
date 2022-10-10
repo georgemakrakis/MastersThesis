@@ -132,8 +132,8 @@
     %Column 1
     \begin{column}{0.5\textwidth}
         \begin{itemize}
-            \item<1-> Self-Contained liquid fueled molten salt micro-reactor
-            \item<2-> 1 MW design using \UF dissolved in \flinak
+            \item<1-> Self-Contained liquid fueled molten salt micro-reactor - 10 year design
+            \item<2-> 1 MW design using HALEU \UF  dissolved in \flinak
             \item <3-> Criticality is manipulated using axial control drums \begin{itemize}
                 \item Neutron absorber plate covering cylinders of neutron reflector
                 \item Drums are rotated to point more absorber towards the core to insert negative control reactivity
@@ -152,7 +152,7 @@
         }
         \only<3>{
             \begin{figure}
-                \animategraphics[width=0.8\textwidth, controls, loop, trim={12cm 1.5cm 2cm 2.5cm},clip]{1}{../img/Plotter/XY-}{0}{12}
+                \animategraphics[width=0.8\textwidth, controls, loop, trim=12cm 1.5cm 2cm 2.5cm]{1}{../img/Plotter/XY-}{0}{12}
                 \caption{MsNB Control Drums}
             \end{figure}
         }
@@ -161,24 +161,37 @@
 \end{frame}
 
 \begin{frame}{Background on \acs{msnb}}
-    \begin{block}{Neutronics}
-        \cite{PetersonMS}
+    \begin{block}{Neutronics \cite{PetersonMS}}
+        \only<1>{
+        \begin{itemize}
+            \item Control drums give a uniform axial and radial flux profile for all reactivity insertions
+            \item Fission product poisoning is the biggest challenge to reach the desired 10-year lifespan
+            \item Control drum vs. reactivity curve is sinusoidal
+        \end{itemize}    
+        }
     \end{block}
     
-    \begin{block}{Thermal Hydraulics}
-        \cite{CarterPHD}
+    \begin{block}{Thermal Hydraulics \cite{CarterPHD}}
+        \only<2>{
+            \begin{itemize}
+                \item The counteracting passive feedback effects of temperature reactivity and flow reactivity produce stable autonomous load following for relatively small ramp function power demand transients
+                \item An in-core helix device can be used to manipulate temperature and power profiles in the core, as well as minimize advective loss of delayed-neutron precursors
+            \end{itemize}    
+            }
     \end{block}
     
     \begin{block}{Process Control}
-        Me
+        \only<3>{
+            \begin{itemize}
+                \item Design controller \textit{compliment} the autonomous capabilities provided by the passive feedback mechanisms
+                \item Allow larger faster, more aggressive power changes
+                \item Additional focus on time periods with a high degree of time variance (start-up, shut-down, re-start)
+            \end{itemize}    
+            }
     \end{block}
 
-    \blfootnote{\tiny\cite{CarterPHD} \tiny\bibentry{CarterPHD}}
     \blfootnote{\tiny\cite{PetersonMS} \tiny\bibentry{PetersonMS}}
-\end{frame}
-
-\begin{frame}{\acs{msnb} design}
-    Figures from plotter (neutronics paper?), with a focus on control actuation
+    \blfootnote{\tiny\cite{CarterPHD} \tiny\bibentry{CarterPHD}}
 \end{frame}
 
 \section{Applied Literature Review}
@@ -198,19 +211,49 @@
 \section{Future Work}
 
 \begin{frame}{Control Drum Characterization}{MCNP}
-    
+    \begin{itemize}
+        \item Use KCODE to develop control drum vs. reactivity curve at various points in the core lifespan
+        \item Use Burn-up routine to study how the core criticality at different conditions effects the control drum vs. reactivity
+        \begin{itemize}
+            \item Cold/clean start-up
+            \item Burnable poison start-up
+            \item Equilibrium poisoning
+            \item Long-term depletion of fissile isotopes
+        \end{itemize} 
+        \item Develop bias/unity point schedule 
+        \item Will to use HPC or Falcon
+    \end{itemize}
 \end{frame}
 
 \begin{frame}{Process Simulation}{Python}
-    
+    \begin{itemize}
+        \item 1D+time finite element model that accounts for passive feedback mechanisms during unsteady state subcritical, critical, and supercritical modes to calculate the core power and flow loop temperature profile over time
+        \item Simulate system response to:
+        \begin{itemize}
+            \item Control actuation
+            \item Heat exchanger transients
+        \end{itemize}
+        \item Empirical fitting of reactor transfer function
+        \item Studies can be conducted locally or with cluster resources
+    \end{itemize}
 \end{frame}
 
 \begin{frame}{Controller Tuning}{MATLAB-Simulink}
-    
+    \begin{itemize}
+        \item Model control loop in Simulink
+        \item Investigate system stability using frequency response tests
+        \item Use built-in numerical methods to implement a PID controller tuning method
+        \item Repeat for different core conditions to develop gain-schedule and/or look-up table for the controller parameters
+    \end{itemize}
 \end{frame}
 
 \begin{frame}{Implementation and Testing}{Python}
-    
+    \begin{itemize}
+        \item Implement control drum reactivity, pre-filter, and PID controller into the process simulation
+        \item Test autonomous response to heat exchanger power demand transients
+        \item Repeat with controller active
+        \item Quantitatively compare response using settling time, dampening ratio, peak overshoot ratio etc.
+    \end{itemize}
 \end{frame}
 
 \begin{frame}{Timeline}
@@ -235,11 +278,22 @@
 
 \section{Final Remarks}
 \begin{frame}{Other Considerations}
-    
+    \begin{itemize}
+        \item Poison perturbations following power transients \cite{Roberson}
+        \item Melting of \textit{in-situ} frozen salt
+        \item Decay heat system \cite{DecayHeat}
+        \item Flow rate control
+    \end{itemize}
+
+    \blfootnote{\tiny\cite{Roberson} \tiny\bibentry{Roberson}}
+    \blfootnote{\tiny\cite{DecayHeat} \tiny\bibentry{DecayHeat}}
 \end{frame}
 
 \begin{frame}{Discussion}
-
+    \begin{itemize}
+        \item Non-Linearity vs. Time-Variance
+        \item Control Loop
+    \end{itemize}
 \end{frame}
 
 \begin{frame}{Acknowledgements}
