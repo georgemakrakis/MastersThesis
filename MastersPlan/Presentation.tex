@@ -74,6 +74,9 @@
 \newacronym{msnb}{MSNB}{Molten Salt Nuclear Battery}
 \newacronym{nrc}{NRC}{Nuclear Regulatory Commission}
 
+\newcommand{\UF}[1][4]{$UF_{#1}$}
+\newcommand{\flinak}{$FLiNaK$ }
+
 %%%%%
 
 %%%%%
@@ -125,7 +128,33 @@
 
 \section{Scope}
 \begin{frame}{\acf{msnb}}
-    Molten Salt Microreactor...Goals... Blah... tikz figure would be good
+\begin{columns}
+    %Column 1
+    \begin{column}{0.5\textwidth}
+        \begin{itemize}
+            \item<1-> Self-Contained liquid fueled molten salt micro-reactor
+            \item<2-> 1 MW design using \UF dissolved in \flinak
+            \item <3-> Criticality is manipulated using axial control drums \begin{itemize}
+                \item Neutron absorber plate covering cylinders of neutron reflector
+                \item Drums are rotated to point more absorber towards the core to insert negative control reactivity
+            \end{itemize}
+        \end{itemize}
+    \end{column}
+    %Column 2
+    \begin{column}{0.5\textwidth}
+        \only<1-2>{
+        \begin{figure}[!ht]
+            \centering
+            \input{../tikz/msnb}
+            \caption{Simplified schematic drawing of an \acs{msnb}}
+            \label{fig:tikz_msnb}
+        \end{figure}
+        }
+        \only<3>{
+
+        }
+    \end{column}
+\end{columns}
 \end{frame}
 
 \begin{frame}{Background on \acs{msnb}}
