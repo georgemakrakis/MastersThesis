@@ -263,7 +263,7 @@
     }
 \end{frame}
 
-\begin{frame}{Main Operational Control Problem - Transport Delay}{\only<3-4>{Immediate Response}\only<5-6>{Heat Exchanger Perturbation}}
+\begin{frame}{Main Operational Control Problem - Transport Delay}{\only<3>{Immediate Response}\only<4>{Heat Exchanger Perturbation}\only<5>{Core Perturbation}}
     \only<1>{
         \begin{itemize}
             \item Start design process by discussing dynamics associated with anticipated transients
@@ -467,11 +467,15 @@
     \blfootnote{\tiny\cite{DecayHeat} \tiny\bibentry{DecayHeat}}
 \end{frame}
 
-\begin{frame}{Discussion}
-    \begin{itemize}
-        \item Non-Linearity vs. Time-Variance
-        \item Control Loop
-    \end{itemize}
+\begin{frame}{Discussion}{Control Loop}
+
+        \begin{figure}[!ht]
+            \centering
+            \input{../tikz/SimpleControlLoop}
+            \caption{Simplified control loop of a natural circulation \acs{msnb}}
+            \label{fig:SimpleControlLoop}
+        \end{figure}
+    
 \end{frame}
 
 \begin{frame}{Acknowledgements}
