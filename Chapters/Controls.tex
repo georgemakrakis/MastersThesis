@@ -16,7 +16,7 @@ This is usually achieved by a controller which measures the system inputs \andor
     \label{fig:tikz_feedback}
 \end{figure}
 
-The most common type of controller is a feedback controller. Figure \ref{fig:tikz_feedback} shows a simple feedback control loop with an output sensor/transmitter (\ie transducer), controller, and actuator working together to control a process. The controller takes action (u) based on the `error' ($e$) between the set-point ($SP$) and process-variable ($PV$) (\ref{eqn:error}). These systems are typically modeled using transfer functions in the Laplace (or `s') domain.
+The most common type of controller is a feedback controller. Fig. \ref{fig:tikz_feedback} shows a simple feedback control loop with an output sensor/transmitter (\ie transducer), controller, and actuator working together to control a process. The controller takes action (u) based on the `error' ($e$) between the set-point ($SP$) and process-variable ($PV$) (\ref{eqn:error}). These systems are typically modeled using transfer functions in the Laplace (or `s') domain.
 
 \begin{equation}\label{eqn:error}
     e(t) = PV(t) - SP(t)
@@ -57,7 +57,7 @@ The term `Feedforward' can be used to refer to any element in the control block 
     \label{fig:tikz_feedforward}
 \end{figure}
 
-In many processes, the process variable is effected by phenomena other than the actuator. These other phenomena are defined as disturbances. A well-tuned feedback controller is capable of disturbance rejection, but only after the disturbance causes error. In some cases, a disturbance feedforward controller may be added to the feedback controller to cause the actuator to counteract the effect of the disturbance before it occurs \cite[Ch. 10]{Bequette}. Figure \ref{fig:tikz_feedforward} shows a feedback control loop with the addition of a disturbance feedforward controller.
+In many processes, the process variable is effected by phenomena other than the actuator. These other phenomena are defined as disturbances. A well-tuned feedback controller is capable of disturbance rejection, but only after the disturbance causes error. In some cases, a disturbance feedforward controller may be added to the feedback controller to cause the actuator to counteract the effect of the disturbance before it occurs \cite[Ch. 10]{Bequette}. Fig. \ref{fig:tikz_feedforward} shows a feedback control loop with the addition of a disturbance feedforward controller.
 
 The most prevalent disturbances that would effect the power output of the core of a \acs{msnb} are the temperature reactivity feedback effect common to all nuclear reactors and the flow reactivity specific to natural circulation driven  liquid fueled \acsp{msr} \cite{CarterNumerical}. 
 
@@ -81,13 +81,11 @@ Disturbance feedforward will not be utilized in the design of the controller out
     \label{fig:tikz_prefilter}
 \end{figure}
 
-The control loop for a feedback system with a pre-filter is included as Figure \ref{fig:tikz_prefilter}. Pre-filters are another type of feedforward mechanism common in control systems. They are typically first-order transfer functions such as \ref{eqn:prefilter} function used to improve the performance of the associated feedback controller (as depicted by Figure \ref{fig:pgf_prefilter}) by `slowing down' the rate of change of the set-point. The gain (numerator) for a pre-filter is always unity because the desire is only to reshape the input, not resize it. The time-constant ($\tau_F$) describes how quickly the output equilibrates with the input. 
+The control loop for a feedback system with a pre-filter is included as Fig. \ref{fig:tikz_prefilter}. Pre-filters are another type of feedforward mechanism common in control systems. They are typically first-order transfer functions such as \ref{eqn:prefilter} function used to improve the performance of the associated feedback controller (as depicted by Fig. \ref{fig:pgf_prefilter}) by `slowing down' the rate of change of the set-point. The gain (numerator) for a pre-filter is always unity because the desire is only to reshape the input, not resize it. The time-constant ($\tau_F$) describes how quickly the output equilibrates with the input. 
 
 \begin{equation}\label{eqn:prefilter}
     F(s)=\frac{1}{\tau_F s+1}    
 \end{equation}
-
-By resisting instantaneous set-point changes, or step functions, the pre-filter minimizes the instantaneous error during transients and minimizes overshoot by reducing over-actuation or actuator saturation.  This is particularly useful in a control system such as the one designed in this report where the set-point is coupled to some other value. In this case, the core power generation needs to match the demand of the secondary system (\eg power cycle). This method allows the secondary system to immediately change to its necessary value while giving the reactor core time to safely and effectively respond. 
 
 \begin{figure}[!ht]
     \centering
@@ -98,7 +96,9 @@ By resisting instantaneous set-point changes, or step functions, the pre-filter 
     \label{fig:pgf_prefilter}
 \end{figure}
 
-The area between the solid blue and dashed orange curves corresponds the net amount of energy expelled from the molten salt loop following the transient. This manifests as a drop in the average salt temperature. If the reactor begins to operate near thermophysical boundaries, it may be necessary for the core to over-produce in order to bring the temperature back up. This is one example of how this controller is really a \acf{mm} system, though it may be treated as \acf{ss} during the preliminary design phase. An alternative approach could be to use a slightly under-damped second-order pre-filter so the core power generation briefly overshoots the heat exchanger power consumption to balance the energy inequality.
+By resisting instantaneous set-point changes, or step functions, the pre-filter minimizes the instantaneous error during transients and minimizes overshoot by reducing over-actuation or actuator saturation.  This is particularly useful in a control system such as the one designed in this report where the set-point is coupled to some other value. In this case, the core power generation needs to match the demand of the secondary system (\eg power cycle). This method allows the secondary system to immediately change to its necessary value while giving the reactor core time to safely and effectively respond. 
+
+The area between the solid blue and dashed orange curves corresponds the net amount of energy expelled from the molten salt loop following the transient. This manifests as a drop in the average salt temperature. If the reactor begins to operate near thermophysical boundaries, it may be necessary for the core to over-produce in order to bring the temperature back up. An alternative approach could be to use a slightly under-damped second-order pre-filter so the core power generation briefly overshoots the heat exchanger power consumption to balance the energy inequality.
 
 \section{Transport Delay Problem}
 A good place to start in the design of this controller is discussing the dynamics associated with anticipated transients. The prominent factors here are the natural circulation flow mode and the transport delay separating the heat exchanger and core. Consider a step-increase in power demand to a steady-state critical \acs{msnb} where the core power generation set-point is instantaneously equal to the heat exchanger power consumption. For this thought experiment, consider an ideal controller which produces rapid load following with minimal overshoot.
