@@ -1,11 +1,11 @@
 \chapter{Introduction}
 \label{Chapter:Introduction}
-The world is working to move away from fossil fuel as its main energy source \cite{ValluriPHD}. \acf{nrel} has partnered with over 700 organizations, including large manufacturing companies, to de-carbonize supply chains \cite{NREL-partner}. Nuclear power has been well established as an alternative for base-load electrical generation with 93 facilities in the United States and 435 globally which generate on the order of 1 GWe, but there remains a need for smaller reactors to be deployed in more dynamic applications such as small remote grids (including military bases \cite{AirForce}), manufacturing, and power-peaking \cite{DoD-remote}. These small energy utilizers could turn to microreactors to fill their needs; to make this a reality, a robust control system for microreactors must be designed that is capable of ramping production up and down to meet demand.
+The world is working to move away from fossil fuel as its main energy source \cite{ValluriPHD}. \acf{nrel} has partnered with over 700 organizations, including large manufacturing companies, to de-carbonize supply chains \cite{NREL-partner}. Nuclear power has been well established as an alternative for base-load electrical generation with 93 facilities in the United States and 435 globally which each generate on the order of 1 GWe, but there remains a need for smaller reactors to be deployed in more dynamic applications such as small remote grids (including military bases \cite{AirForce}), manufacturing, and power-peaking \cite{DoD-remote}. These small energy utilizers could turn to microreactors to fill their needs; to make this a reality, a robust control system for microreactors must be designed that is capable of ramping production up and down to meet demand.
 
 \section{Microreactors}
-Microreactors, as the name suggests, are small nuclear reactors which are designed to be fully assembled when shipped, rather than constructed on site. This is a hot area of research in the private sector as companies are working to capitalize on the growing need for clean and dependable small scale electrical generation \cite{PetersonMS}. They aim not to replace the utility scale \acfp{npp} which handle base-load electrical generation, but the diesel or natural gas engines that are found at countless manufacturing facilities, peaking stations, military bases, islands, and other locations where on-site generation is the primary or only source of electricity. 
+Microreactors, as the name suggests, are small nuclear reactors which are designed to be fully assembled when shipped, rather than constructed on site. This is a hot area of research in the private sector as companies are working to capitalize on the growing need for clean and dependable small scale electrical generation \cite{PetersonMS}. They aim not to replace the utility scale \acfp{npp} which handle base-load electrical generation, but the diesel or natural gas engines that are found at countless manufacturing facilities, peaking stations, military bases, islands, and other locations where on-site generation is the primary or only source of power. 
 
-The goal is to deliver a prefabricated microreactor to a site, integrate it to the necessary power cycles and process heat applications, and meet the needs of the site for a long period of time - up to a decade - without the need for refueling or significant maintenance. One of the biggest challenges in implementing microreactors is the transients that these applications often require. Engines handle these quite well, simply adjusting the flow rates of fuel and combustion air. Nuclear reactor load following is a bit more complicated, as the reactor must be made supercritical to ramp up power or subcritical to decrease power. This necessitates valid characterization of the reactor's criticality control \& actuation system and reactivity feedback mechanisms, so an effective `reactor-following-turbine' controller can be tuned \cite[Ch. 8]{Kerlin}.
+The goal is to deliver a prefabricated microreactor to a site, integrate it to the necessary power cycles and process heat applications, and meet the needs of the site for a long period of time - up to a decade - without the need for refueling or significant maintenance. One of the biggest challenges in implementing microreactors is the transients that these applications often require. Engines handle these quite well, simply adjusting the flow rates of fuel and combustion air. Nuclear reactor load following is a bit more complicated, as the reactor must be made supercritical to ramp up power or subcritical to decrease power. This necessitates characterization of the reactor's criticality control \& actuation system and reactivity feedback mechanisms, so an effective `reactor-following-turbine' controller can be tuned \cite[Ch. 8]{Kerlin}.
 
 \section{\texorpdfstring{\aclp{msr}}{Molten Salt Reactors}}
 Molten salts are highly desirable in high temperature applications due to their excellent thermophysical properties \cite{RoperReview}. Salt mixtures have been developed to have very wide liquid temperature ranges (i.e. low melting point and high vaporization point). They also have very high volumetric heat capacities compared to other high temperature coolants (which tend to be gaseous), and are able to operate at or slightly above ambient pressure. These properties combine to make molten salts excellent choices in heat transfer and thermal storage applications. Furthermore, they are extremely strong electrolytes which cn be useful as solvents, catalysts, or reagents in certain chemical reactions including a pyrometallurgical method for reprocessing spent nuclear fuel \cite{Simpson}.
@@ -13,7 +13,7 @@ Molten salts are highly desirable in high temperature applications due to their 
 \acfp{msr} are a family of nuclear reactor in which a fuel salt (containing fissile and/or fertile nuclides) is dissolved in a coolant salt \cite{RoperOverview}. The concept was proven by the \acf{msre} at \acf{oak} in the 1960s \cite{MSRE}. It has yet to take off beyond the research reactor sector, but it has re-emerged as a Gen-IV reactor concept, with a team at the Shanghai Institute of Applied Physics gaining approval to operate a now fully constructed thorium breeding \acs{msr} \cite{china}. Some of the benefits of \acsp{msr} over more conventional \acsp{lwr} include:
 \begin{itemize}
     \item Higher operating temperatures allow for use in applications requiring high-grade process heat, and yield higher thermal efficiency \cite{RoperOverview};
-    \item Lower pressure operating pressure lends itself to inherent safety, and less expensive components \cite{RoperReview};
+    \item Lower operating pressures contribute to inherent safety, and permit less expensive components \cite{RoperReview};
     \item The ability to burn minor actinides supports the goal of reducing global stockpiles of high-level waste \cite{RoperReview};
     \item Natural circulation of the fuel introduces an additional feedback mechanism that presents the possibility of autonomous load following of certain power demand transients \cite{CarterNumerical};
     \item There is no concern of core melt-down as the reactor is designed for liquid fuel;
@@ -22,9 +22,9 @@ Molten salts are highly desirable in high temperature applications due to their 
 
 They also carry some demerits:
 \begin{itemize}
-    \item Molten salts are very corrosive, often requiring thicker or more expensive materials \cite{RoperRedox};
+    \item Molten salts are very corrosive, often requiring more expensive materials \cite{RoperRedox};
     \item The chemistry of the coolant (not only the fuel) is constantly changing due to fission, transmutation, and impurities from corrosion;
-    \item Lithium is commonplace in molten salts, so tritium production is unavoidable (\ref{rxn:tritium}). Off-gas systems need to be robust to handle tritium as well as radionuclide noble gasses, halides, and inter-halides \cite{HolcombOffgas};
+    \item Lithium is commonplace in molten salts, so tritium production is unavoidable, being formed by both the $^{6}Li(n,\alpha){^{3}H}$ (\ref{rxn:tritium}) and $^{7}Li(n,n\alpha){^{3}H}$ reaction . Off-gas systems need to be robust to handle tritium as well as radionuclide noble gasses, halides, and inter-halides \cite{HolcombOffgas};
 \end{itemize}
 
 \begin{reaction} \label{rxn:tritium}
@@ -48,6 +48,14 @@ As a developing design, work has been done on neutronics \cite{PetersonMS}, ther
     \item shutdown, both planned and emergency; and
     \item restart;
 \end{enumerate*}
+
+This work is focused on the operational control system. There are a number of related systems that will also need to be considered, such as: 
+\begin{enumerate*}
+    \item \textit{in-situ} melting of salt immediately following delivery and installation;
+    \item neutron seed for initial start-up; and
+    \item decay heat removal for both planned and emergency shut-down;
+\end{enumerate*}
+These are important systems but are out of scope for this project.
 
 \begin{comment}
 \section{Outline}
