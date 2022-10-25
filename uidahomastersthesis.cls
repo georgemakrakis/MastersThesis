@@ -232,6 +232,7 @@ This thesis of \@author, submitted for the degree of \@degree\ with a Major in \
 \newcommand{\etal}{\textit{et al}.\ }
 \newcommand{\ie}{\textit{i}.\textit{e}.\ }
 \newcommand{\eg}{\textit{e}.\textit{g}.\ }
+\newcommand{\andor}{\nicefrac{and}{or}}
 
 \newcommand{\node}[1]{\texttt{#1}}
 \newcommand{\tbf}[1]{\textbf{#1}}

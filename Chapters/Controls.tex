@@ -6,17 +6,17 @@ There are two main goals in process control engineering:
     \item Reference tracking, where a process variable is matched to a set-point which may be changed over time; and 
     \item Disturbance rejection, where the process variable is held to the set-point despite outside influence upsetting it;
 \end{enumerate*}
-This is usually achieved by a controller which detects the process variable using a sensor/transmitter and controls the process variable by manipulating an actuator. 
+This is usually achieved by a controller which measures the system inputs \andor outputs using a sensor/transmitter and controls the process variable by manipulating an actuator. 
 
 \section{Feedback}
 \begin{figure}[!ht]
     \centering
     \input{tikz/feedback}
-    \caption[Feedback control loop]{Feedback control loop. The output ($PV$) is measured by the transducer ($H$) and compared to the set-point ($SP$). The controller ($C$) uses the actuator ($A$) to control the process ($P$) based on the error ($e$).}
+    \caption[Feedback control loop]{Feedback control loop. The process-variable ($PV$) is measured by the transducer ($H$) and compared to the set-point ($SP$). The controller ($C$) uses the actuator ($A$) to control the process ($P$) based on the error ($e$).}
     \label{fig:tikz_feedback}
 \end{figure}
 
-The most common type of controller is a feedback controller. Figure \ref{fig:tikz_feedback} shows a simple feedback control loop with a sensor/transmitter (\ie transducer), controller, and actuator working together to control a process. The controller takes action based on the `error' ($e$) between the set-point ($SP$) and process-variable ($PV$) (\ref{eqn:error}).
+The most common type of controller is a feedback controller. Figure \ref{fig:tikz_feedback} shows a simple feedback control loop with an output sensor/transmitter (\ie transducer), controller, and actuator working together to control a process. The controller takes action (u) based on the `error' ($e$) between the set-point ($SP$) and process-variable ($PV$) (\ref{eqn:error}). These systems are typically modeled using transfer functions in the Laplace (or `s') domain.
 
 \begin{equation}\label{eqn:error}
     e(t) = PV(t) - SP(t)
@@ -57,9 +57,19 @@ The term `Feedforward' can be used to refer to any element in the control block 
     \label{fig:tikz_feedforward}
 \end{figure}
 
-In many processes, the process variable is effected by phenomena other than the actuator. These other phenomena are defined as disturbances. A well-tuned feedback controller is capable of disturbance rejection, but only after the disturbance causes error. In some cases, a disturbance feedforward controller may be added to the feedback controller to cause the actuator to counteract the effect of the disturbance before it occurs \cite[Ch. 10]{Bequette}.
+In many processes, the process variable is effected by phenomena other than the actuator. These other phenomena are defined as disturbances. A well-tuned feedback controller is capable of disturbance rejection, but only after the disturbance causes error. In some cases, a disturbance feedforward controller may be added to the feedback controller to cause the actuator to counteract the effect of the disturbance before it occurs \cite[Ch. 10]{Bequette}. Figure \ref{fig:tikz_feedforward} shows a feedback control loop with the addition of a disturbance feedforward controller.
 
-The most prevalent disturbances that would effect the power output of the core of a \acs{msnb} are the temperature reactivity feedback effect common to all nuclear reactors and the flow reactivity specific to natural circulation driven  liquid fueled \acsp{msr} \cite{CarterNumerical}. Temperature reactivity feedback is dominated by Doppler Broadening, where the microscopic radiative capture cross section resonance peaks of nuclides such as \U[238] are depressed to cover a wider epithermal neutron spectrum \cite[Ch. 6]{DH}. This results in a smaller core neutron population and less fission events, so there is a negative correlation between fuel temperature and fuel reactivity. Liquid fuels also have a high thermal-expansion coefficient, so higher core temperatures lead to lower heavy metal density and lower macroscopic fission cross-section in the core \cite{PetersonMS}. This is somewhat similar to the moderator temperature reactivity found in \acsp{lwr}. Flow reactivity is driven by the advection of delayed neutron precursors \cite[Ch. 3]{Kerlin}. Not all fission neutrons are released promptly; sometimes an unstable nuclide which decays by neutron emission produced instead. These unstable nuclides are called delayed neutron precursors and have half-lives ranging from less than a second to over a minute \cite[Ch. 7]{Lamarsh}. Since the fuel in a \acs{msnb} is flowing, there is a statistical probability that a delayed neutron precursor may leave the core by advection before the neutron is emitted in a much less reactive part of the reactor. When the temperature differential between the thermal center of the core and primary heat exchanger is increased, so too does the natural circulation flow rate. This decreases the likelihood of delayed neutrons being emitted in the core, and negatively contributes to core reactivity. Devices meant to elongate the in-core flow path may minimize delayed neutron losses \cite{CarterPHD}.
+The most prevalent disturbances that would effect the power output of the core of a \acs{msnb} are the temperature reactivity feedback effect common to all nuclear reactors and the flow reactivity specific to natural circulation driven  liquid fueled \acsp{msr} \cite{CarterNumerical}. 
+
+Temperature reactivity feedback is dominated by Doppler Broadening, where the microscopic radiative capture cross section resonance peaks of nuclides such as \U[238] are depressed to cover a wider epithermal neutron spectrum \cite[Ch. 2]{DH}. This results in a lower resonance escape probability \cite[Ch. 3]{DH}, so there is a negative correlation between fuel temperature and fuel reactivity. Liquid fuels also have a high thermal-expansion coefficient, so higher core temperatures lead to lower heavy metal density and lower macroscopic fission cross-section in the core \cite{PetersonMS}.
+
+Flow reactivity is driven by the advection of delayed neutron precursors \cite[Ch. 3]{Kerlin}. Not all fission neutrons are released promptly; sometimes an unstable nuclide which eventually decays by neutron emission produced instead. These unstable nuclides are called delayed neutron precursors and have half-lives ranging from less than a second to over a minute \cite[Ch. 7]{Lamarsh}. An example is given by \ref{rxn:delayed}
+
+\begin{reaction}\label{rxn:delayed}
+    {^{87}Br} \underset{56 sec}{\stackrel{\beta^-}{\longrightarrow}} {^{87}Kr^{*}} \to {^{86}Kr + n}
+\end{reaction}
+
+Since the fuel in a \acs{msnb} is flowing, there is a statistical probability that a delayed neutron precursor may leave the core by advection before the neutron is emitted in a much less reactive part of the reactor. When the temperature differential between the thermal center of the core and primary heat exchanger is increased, so too does the natural circulation flow rate. This decreases the likelihood of delayed neutrons being emitted in the core, and negatively contributes to core reactivity. Devices meant to elongate the in-core flow path may minimize delayed neutron losses \cite{CarterPHD}.
 
 Disturbance feedforward will not be utilized in the design of the controller outlined in this work. When the outlet temperature of the heat exchanger is decreased, it takes time for the cooler salt to reach the core. The disturbance transport delay is on the order of minutes. Contrastly, Doppler Broadening has a nearly instantaneous effect, so disturbance dynamics are on the order of milliseconds, governed by the mean neutron lifetime \cite[Ch. 7]{Lamarsh}. The effect of control actuation are similarly prompt. Even with a temperature sensor just at the inlet of the core it would be nearly impossible to reliably predict the exact moment that control reactivity would be need to be inserted to counteract the temperature reactivity. 
 
