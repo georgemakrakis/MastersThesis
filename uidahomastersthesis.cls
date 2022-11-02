@@ -285,6 +285,7 @@ This thesis of \@author, submitted for the degree of \@degree\ with a Major in \
 \newacronym{nrc}{NRC}{Nuclear Regulatory Commission}
 \newacronym{ans}{ANS}{American Nuclear Society}
 \newacronym{inl}{INL}{Idaho National Laboratory}
+\newacronym{hpc}{HPC}{High Performance Computing}
 \newacronym{nrel}{NREL}{National Renewable Energy Laboratory}
 \newacronym{oak}{ORNL}{Oak Ridge National Laboratory}
 \newacronym{lti}{LTI}{Linear Time-Invariant}
