@@ -159,7 +159,7 @@
 \def\LHead#1{\noindent{\LARGE\color{DarkBlue} #1}\bigskip}
 \def\CHead#1{\begin{center}\noindent{\LARGE\color{DarkBlue} #1}\end{center}}
 \def\Subhead#1{\noindent{\large\color{DarkBlue} #1}\bigskip}
-\def\Title#1{\noindent{\textbf{\veryHuge\color{DarkBlue} #1}}}
+\def\Title#1{\noindent{\textbf{\Huge\color{DarkBlue} #1}}}
 
 
 
@@ -323,7 +323,7 @@
 %%
 \begin{textblock}{46}(00,00)
 \begin{center}
-\Title{Molten Salt Microreactor Design Decisions}
+\Title{Molten Salt Microreactor Controller Design Decisions}
 \end{center}
 \end{textblock}
 
@@ -358,7 +358,7 @@
 
 
 
-%% Begin 1st row
+%% Left Column
 \begin{textblock}{10}(00,02.5)
 \CHead{Introduction}            %% \CHead creates a centered title
 \begin{itemize}
@@ -372,7 +372,7 @@
 
 \begin{textblock}{10}(00,6.5)
 \CHead{Thought Experiment}
-Start design process by discussing dynamics associated with anticipated transients:
+Start design process by investigating dynamics associated with anticipated transients:
 \begin{itemize*}
     \item Natural circulation flow mode
     \item Passive feedback mechanisms
@@ -401,7 +401,7 @@ When the cold salt from the heat exchanger arrives in the core, this is a positi
 \end{textblock}
 
 %Middle Columns
-\begin{textblock}{22}(12,4)
+\begin{textblock}{22}(12,3.5)
     \CHead{Molten Salt Microreactor Control Loop}
     \begin{center}
     \includegraphics[width=18in]{Loop.png}
@@ -412,15 +412,35 @@ When the cold salt from the heat exchanger arrives in the core, this is a positi
     \end{textblock}
 
 
-
-
-\begin{textblock}{10}(12,15)
+\begin{textblock}{10}(12,14.5)
 \CHead{Pre-Filter}
+\begin{equation*}\label{eqn:prefilter}
+    F(s)=\frac{1}{\tau_F s+1}    
+\end{equation*}
 
+Pre-filters are unity gain transfer functions that provide inertia against rapid changes. A pre-filter that reshapes the core set-point after a change to heat exchanger demand will make the initial hot edge more gradual. This will allow the temperature profile to equilibrate more quickly rather than settling into bi-stable resonance. Proper tuning of the pre-filter time-constant will allow the reactivity oscillations to decay more quickly. 
+
+\begin{center}
+\includegraphics[width=8in]{Prefilter.png}
+\end{center}
 \end{textblock}
 
-\begin{textblock}{10}(24,15)
+\begin{textblock}{10}(24,14.5)
 \CHead{Dead-band}
+A dead-band is a type of piecewise function where the output is null for inputs surrounding zero ($\pm \delta$) but has some other value for inputs with greater magnitude. It is common in thermostatic controls (where the furnace in a home only turns on when the temperature inside is sufficiently far from the setpoint). In process control, it is common for a controller gain ($K_C$) to be dead-banded to avoid swift periodic actuation.
+
+\begin{equation*}
+    K_C=
+        \begin{cases}
+            K_C & \text{if } e < -\delta \\
+            0 & \text{if } -\delta < e < \delta \\
+            K_C & \text{if } e > \delta 
+        \end{cases}
+\end{equation*}\\
+
+
+    Previous work \cite{CarterPHD} has shown that the passive feedback mechanisms (temperature and flow reactivity) are capable of autonomous load following for small transient, though not at the level of performance that may be required in certain applications. Still, this provides the opportunity to minimize fine and rapid actuation while dampening oscillations by using a dead-band; the `ringing out' of minor perturbations could be left to the passive feedback mechanisms after the active feedback controls the bulk of the power change.
+
 
 \end{textblock}
 
@@ -469,7 +489,7 @@ A nuclear reactor is controlled by manipulating the criticality of the core, mak
 
 
 
-\begin{textblock}{46}(00,26.5)
+\begin{textblock}{46}(00,26)
 \begin{center}
 {\footnotesize Acknowledgments: This work and my coursework in pursuit of an M.S. in Nuclear Engineering is being completed under a Graduate Fellowship funded by Nuclear Regulatory Commission }
 \end{center}
