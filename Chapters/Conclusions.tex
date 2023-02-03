@@ -11,9 +11,9 @@ Because microreactors are meant to be delivered in a fully or mostly assembled s
 \subsection{Neutron Source}
 A neutron source will be required to start the fission chain reaction after installation, and after any long periods of inactivity. \U[235] undergoes spontaneous fission \cite[Ch. 6]{Faw}, and at high enrichment may be used as the only neutron seed simply by putting the control actuators in a supercritical orientation. More commonly, a dedicated source is used, such as \Ca[252], which undergoes spontaneous fission much more rapidly, or a composite of a strong alpha-emitter (\eg \Pu[238], \Am[241], \Po[210], or \Ra[226]) and \Be[9] which emits a neutron according to \ref{rxn:Be-n} \cite[Ch. 2]{Handbook}. Dedicated neutron seed materials composed of these nuclides could be placed in the core through specialized mechanisms, though the introduction of the seed species as a soluble salt warrants a feasibility analysis.  
 
-\begin{equation}\label{rxn:Be-n}
+\begin{reaction}\label{rxn:Be-n}
     ^{9}Be + \alpha \to {^{12}C} + n + \gamma
-\end{equation}
+\end{reaction}
 
 \subsection{SCRAM System}
 The emergency shutdown (\ie SCRAM) system must be passive. In \acsp{lwr}, this is achieved by including large control rods which are actively held out of the core, so that a loss of power results in automatic insertion. Larger \acs{msr} designs may include a SCRAM tank into which the fuel/coolant salt drains in the event of power failure. These systems are often actuated by a freeze plug \cite{FreezePlug} and put the salt in a subcritical orientation by the inclusion of neutron control materials \cite[Ch. 1]{Charit} and high geometric buckling \cite[Ch. 6]{Lamarsh}.
