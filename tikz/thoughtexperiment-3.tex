@@ -4,13 +4,13 @@
     \draw[red, very thick] (0,0) rectangle (3,3);
     \filldraw[red,opacity=0.2] (0,0) rectangle (3,3) ;
     %Riser/Chimney
-    \draw[->] (1.5,3) -- (1.5,4) -- (4,4); \draw[->] (1.5,3) -- (1.5,4) -- (4,4);
+    \draw[->, ultra thin] (1.5,3) -- (1.5,4) -- (4,4); 
     \draw[->,ultra thick, red] (1.4,3) -- (1.4,4.1) -- (4,4.1);
     %HEX
     \draw node at (5.5,4) {Heat Exchanger};
     \draw[blue, very thick] (4,3.5) rectangle (7,4.5);
     \filldraw[blue,opacity=0.2] (4,3.5) rectangle (7,4.5) ;
     %Downcomer
-    \draw[->] (5.5,3.5) -- (5.5,-1) -- (1.5,-1) -- (1.5,-1) -- (1.5,0);
-    \draw[->,ultra thick, blue] (5.6,3.5) -- (5.6,0);
+    \draw[->, ultra thin] (5.5,3.5) -- (5.5,-1) -- (1.5,-1) -- (1.5,-1) -- (1.5,0);
+    \draw[->,ultra thick, blue] (5.6,1.5) -- (5.6,-1.1) -- (4.5,-1.1);
 \end{tikzpicture}

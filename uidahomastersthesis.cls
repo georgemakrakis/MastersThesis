@@ -36,6 +36,7 @@
 \setlist[itemize]{label=\textbullet}
 \RequirePackage{xargs}
 \RequirePackage{verbatim}
+\RequirePackage[bottom]{footmisc}
 
 
 % Set margins
@@ -44,6 +45,7 @@
 	right=1in,
 	bottom=1in}
 
+	
 % Set pagenumber to top right
 \pagestyle{fancy}
 \fancyhf{}
@@ -251,7 +253,7 @@ This thesis of \@author, submitted for the degree of \@degree\ with a Major in \
 \newcommand{\Be}[1][]{$^{#1}Be$ }
 \newcommand{\I}[1][135]{$^{#1}I$ }
 \newcommand{\Xe}[1][135]{$^{#1}Xe$ }
-\newcommand{\Nd}[1][149]{$^{#1}Nd$}
+\newcommand{\Nd}[1][149]{$^{#1}Nd$ }
 \newcommand{\Pm}[1][149]{$^{#1}Pm$ }
 \newcommand{\Sa}[1][149]{$^{#1}Sa$ }
 \newcommand{\Gd}[1][157]{$^{#1}Gd$ }

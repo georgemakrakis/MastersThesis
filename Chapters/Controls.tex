@@ -89,9 +89,9 @@ The control loop for a feedback system with a pre-filter is included as Fig. \re
 
 \begin{figure}[!ht]
     \centering
-    \subfloat[\centering Step-function]{{\resizebox{0.47\textwidth}{!}{\input{pgf/prefilter_step}}}}
+    \subfloat[\centering Step-function]{{\resizebox{0.4\textwidth}{!}{\input{pgf/prefilter_step}}}}
     \qquad
-    \subfloat[\centering Ramp-function]{\resizebox{0.47\textwidth}{!}{\input{pgf/prefilter_ramp}}}
+    \subfloat[\centering Ramp-function]{\resizebox{0.4\textwidth}{!}{\input{pgf/prefilter_ramp}}}
     \caption[Pre-filter on (a) step-function and (b) ramp-function]{Pre-filter on step-function and ramp-function. When the pre-filter acts on a step-function, it follows an exponential curve, reaching 63.2\% of the magnitude of the step in 1 time constant, 86.5\% in 2 time constants, 95.0\% in 3 time constants and so on. The ramp-function exhibits similar but more complicated dynamics due to the changing input.}
     \label{fig:pgf_prefilter}
 \end{figure}
@@ -101,7 +101,24 @@ By resisting instantaneous set-point changes, or step functions, the pre-filter 
 The area between the solid blue and dashed orange curves corresponds the net amount of energy expelled from the molten salt loop following the transient. This manifests as a drop in the average salt temperature. If the reactor begins to operate near thermophysical boundaries, it may be necessary for the core to over-produce in order to bring the temperature back up. An alternative approach could be to use a slightly under-damped second-order pre-filter so the core power generation briefly overshoots the heat exchanger power consumption to balance the energy inequality.
 
 \section{Transport Delay Problem} 
-A good place to start in the design of this controller is discussing the dynamics associated with anticipated transients. The prominent factors here are the natural circulation flow mode and the transport delay separating the heat exchanger and core. A common transient for the \acs{msnb} is a step-increase in power demand to a steady-state critical \acs{msnb} where the core power generation set-point is instantaneously equal to the heat exchanger power consumption. For this thought experiment, consider an ideal controller which produces rapid load following with minimal overshoot.\note{Need figure(s) here}
+A good place to start in the design of this controller is discussing the dynamics associated with anticipated transients. The prominent factors here are the natural circulation flow mode and the transport delay separating the heat exchanger and core. A common transient for the \acs{msnb} is a step-increase in power demand to a steady-state critical \acs{msnb} where the core power generation set-point is instantaneously equal to the heat exchanger power consumption. For this thought experiment, consider an ideal controller which produces rapid load following with minimal overshoot.
+
+\begin{figure}[!ht]
+    \centering
+    \subfloat[\centering Immediate Response]{{\resizebox{0.30\textwidth}{!}{\input{./tikz/thoughtexperiment-2}}}}
+    \qquad
+    \subfloat[\centering Heat Exchanger Perturbation]{\resizebox{0.30\textwidth}{!}{\input{./tikz/thoughtexperiment-3}}}
+    \subfloat[\centering Core Perturbations]{\resizebox{0.30\textwidth}{!}{\input{./tikz/thoughtexperiment-4}}}
+
+    \caption[Transport Delay Problem Schematics]{Simplified schematic drawings of the transport delay problem in a natural circulation \acs{msnb}. These figures illustrate how an ideal controller would create hot (shown in red) and cold (shown in blue) `edges' in the temperature profile of the primary loop. These edges result in periodic disturbances in the form of sharp temperature reactivity insertions to the core, and are caused by three key events:
+    \begin{enumerate*}[label=\alph*)]
+        \item The instantaneous power changes upsetting the outlet temperature of both the core and heat exchanger;
+        \item The first hot salt reaching the heat exchanger $\theta_{riser}$ after the power change; and
+        \item The first cold salt reaching the core $\theta_{downcomer}$ after the power change;
+    \end{enumerate*}
+    It would take a very long time for these periodic disturbances to dampen with a controller that very quickly counteracts reactivity feedback.}
+    \label{fig:thoughtexperiment}
+\end{figure}
 
 \subsection{Immediate Response}
 The heat-exchanger immediately rejects more thermal energy to the secondary loop and the core immediately generates more power. The core outlet temperature increases quite sharply, but since there is a transport delay between the core outlet and heat exchanger inlet ($\theta_{riser}$), this hot salt does not instantaneously reach the heat exchanger, and the heat exchanger outlet temperature drops sharply. Thus, the heat exchanger outlet temperature also drops. 
@@ -121,7 +138,7 @@ In control systems, it is typically preferred to work with \acf{lti} systems. Th
 
 \begin{itemize}
     \item The Control Drum Angle vs. Reactivity Curve, which describes the relationship between control actuation and system response, is not linear, but sinusoidal \cite{PetersonMS}. Over small changes to the control drum angle, the curve may be linearized using Taylor Series approximation \cite[Ch. 2]{Bequette};
-    \item The core reactivity decreases over the course of months and years due to the depletion of fissile nuclides and the build-up of non-equilibrium neutron poisons \cite[Ch. 7]{Lamarsh}. This means that the bias-point (or unity point) of the control drums will drift away from the absorber shield as the core life evolves. The bias-point, controller gain, and time constants will need to change with time. These parameters may be fit to time functions or, or gain-scheduled using a look-up table, similarly to how autopilot systems for high-altitude aircraft account for the different air properties and mach-number at different altitudes \cite{GainSchedule};
+    \item The core reactivity decreases over the course of months and years due to the depletion of fissile nuclides \cite[Ch. 7]{Lamarsh}. This means that the bias-point (or unity-point) of the control drums will drift to provide less negative control reactivity. The bias-point, controller gain, and time constants will need to change with time. These parameters will be gain-scheduled according to the core's burn-up level, similarly to how autopilot systems for high-altitude aircraft account for the different air properties and mach-number at different altitudes \cite{GainSchedule};
     \item The control drums manipulate the criticality of the core, making it supercritical to increase the power, and subcritical to decrease. This is a highly time dependant exponential control mechanism. The derivative control time constant will need to be carefully tuned to minimize the likelihood of significant overshoot following a power transient; 
 \end{itemize}
 
@@ -152,7 +169,7 @@ Prior to start-up, it is very likely that the molten salt fuel/coolant mixture w
         \underbrace{Xe(t)\sigma_{a}^{Xe}{\phi}(t)}_{\text{Radiative Capture}}
 \end{equation}
 
-Each nuclide is formed by \U[235] fission, and removed by beta-decay. Additionally, \Xe is formed by the beta-decay of \I and removed by radiative neutron capture \footnotemark. Each nuclide builds-up in the reactor until the formation terms, i.e. fission yield and precursor decay, equilibrate with the removal terms, beta decay and radiative capture. By setting the time derivatives to zero, the neutron flux dependent equilibrium concentrations (\ref{eqn:eqI} and \ref{eqn:eqXe}) may be derived algebraically \cite[Ch. 7]{Lamarsh} and can contribute over 2000 pcm of negative poison reactivity to the core. 
+Each nuclide is formed by \U[235] fission, and removed by beta-decay. Additionally, \Xe is formed by the beta-decay of \I and removed by radiative neutron capture\footnotemark. Each nuclide builds-up in the reactor until the formation terms, i.e. fission yield and precursor decay, equilibrate with the removal terms, beta decay and radiative capture. By setting the time derivatives to zero, the neutron flux dependent equilibrium concentrations (\ref{eqn:eqI} and \ref{eqn:eqXe}) may be derived algebraically \cite[Ch. 7]{Lamarsh} and can contribute over 2000 pcm of negative poison reactivity to the core. 
 
 \footnotetext{In reality, the decay chain is a bit more complicated than this. $^{135}Te$, the direct beta-precursor to \I is formed by \U[235] fission \cite{Roberson}. It's half-life is orders of magnitude shorter than \I, so it is common to neglect its formation and instead lump its fission yield with \I. \Xe[135m] is also formed by \I beta-decay and is neglected for similar reasons.}
  
@@ -196,7 +213,9 @@ This system too reaches an equilibrium which may be found algebraically where th
     \item Soluble poisons (\ie chemical shim) dissolved in the moderator/coolant to account for non-equilibrium fission product poison build-up and fissile material depletion.
 \end{enumerate*}
 
-\acsp{msr} may be able to use the intersection of these two concepts; a neutron absorber such as \B[10] or, \Gd[155], or \Gd may be added to the molten salt mixture to counter-act the poison reactivity built-up by equilibrium poisons like \Xe and \Sa. Boron could be added to the salt by dissolving $BF_3$ gas \cite{BF3} or sodium fluoroborates such as $NaBF_4$ \cite{ORNL-BoronHastelloy}, either of which could be natural composition or enriched in \B[10]. Gadolinium could be added as $GdF_3$.  As the concentration of the fission product poisons build up, the concentration of the burnable poison depletes, and unlike chemical shimming, the consumed poison would not be replenished. Making the average core reactivity equivalent upon cold-clean start-up and equilibrium would simplify the gain and bias scheduling early in the fuel lifetime, particularly if a burnable poison can be identified that is burnt at a similar rate as fission product poisons build up.
+\acsp{msr} may be able to use the intersection of these two concepts; a neutron poison may be added to the molten salt mixture to counter-act the poison reactivity built-up by equilibrium poisons like \Xe and \Sa. Enough poison would need be added to the fuel salt to equate the reactivity of fresh fuel to the reactivity fuel with \Xe and \Sa at their equilibrium levels. There are many candidates for such a soluble poison, including boron-10 and isotopes of gadolinium, hafnium, and other lanthanides.
+
+An ideal poison for this application should form a compound that is soluble in the molten salt at the desired level, and it should be burnt at a rate similar to the formation rate of its fission product counterpart. As the concentration of the fission product poisons build up, the concentration of the burnable poison depletes, and unlike chemical shimming, the consumed poison would not be replenished. Making the average core reactivity equivalent upon cold-clean start-up and equilibrium would simplify the gain and bias scheduling early in the fuel lifetime, particularly if the burnable poison has an appropriate effective half-life \cite{RootGd}.
 
 \subsection{Shut-down}
 Planned shut-down, either for scheduled maintenance or due to a lack of demand, is quite simple. The heat exchanger load is brought to zero or very low power, and the core set-point gradually follows. Careful tuning of the pre-filter time constant can alleviate potential thermal hydraulic (\eg stagnation or reverse-flow) and thermophysical (\eg salt precipitation, freezing, or vaporization) concerns \cite{CarterNumerical}. Whether the reactor is shut down for planned purposes or in an emergency, a decay heat \cite{TodreasKazimi1} removal system will need to be designed to keep the salt from vaporizing. The emergency shut-down (SCRAM) system and decay heat removal systems are briefly discussed in Chapter \ref{Chapter:Conclusions-FutureWork}.  
@@ -213,4 +232,4 @@ Compound dynamics in the \Xe decay chain result in the generation of a large poi
 
 This system of equations is not ideal, as it results in mandatory reactor dead time. Most nuclear reactors are not designed with enough excess control reactivity to overcome the iodine pit, so they must wait for the xenon to decay. Even if the control system does have the ability to restart during the xenon peak, it can be very unsafe to do so. When the fission chain reaction is restarted, the neutron flux increases and begins transmuting \Xe. The removal of poisons is akin to positive reactivity insertion \cite{Roberson}. Decreasing poison concentration increases the neutron population and therefore the rate of poison removal. This is a positive feedback system which could run away quickly if control reactivity is not removed to match. 
 
-The duration of the xenon spike may be shortened by adding an additional negative term to \ref{eqn:diffXe}. This is not physically realizable in cladded solid fuel reactors. It is however possible to remove a gaseous solvent from a liquid (such as \acs{msr} fuel) through a process called stripping \cite[Ch. 10]{Geankoplis}. Helium may be bubbled through the molten salt in a sparge tube, and the xenon (as well as any other fission gasses \cite{Offgas}) would preferentially transport into the gaseous phase which would later be separated in a cyclone or similar apparatus \cite{ORNL-masstransport}. This advective removal of \Xe would allow the \acs{msnb} to be restarted without having to wait for the poison to decay. \Sa is stable and strongly dissolved in the molten salt, so it is always `burnt off' during restart \cite[Ch. 7]{Lamarsh}.
+The duration of the xenon spike may be shortened by adding an additional negative term to \ref{eqn:diffXe}. This is not physically realizable in cladded solid fuel reactors. It is however possible to remove a gaseous solvent from a liquid (such as \acs{msr} fuel) through a process called stripping \cite[Ch. 10]{Geankoplis}. Helium may be bubbled through the molten salt in a sparge tube, and the xenon (as well as any other fission gasses \cite{Offgas}) would preferentially transport into the gaseous phase which would later be separated in a cyclone or similar apparatus \cite{ORNL-masstransport}. This advective removal of \Xe would allow the \acs{msnb} to be restarted without having to wait for the poison to decay \cite{RootXe}. \Sa is stable and strongly dissolved in the molten salt, so it is always `burnt off' during restart \cite[Ch. 7]{Lamarsh}.
