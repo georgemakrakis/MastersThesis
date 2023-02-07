@@ -28,7 +28,7 @@
 \RequirePackage{textcomp}
 \RequirePackage{gensymb}
 \RequirePackage{url,xurl}
-\RequirePackage{mypythonhighlight}
+\RequirePackage{slither} %custom package providing syntax highlighting for python and serpent, must have slither.sty in working directory
 \RequirePackage{hyperref}
 \RequirePackage[acronym,nomain,nonumberlist]{glossaries}
 \RequirePackage[inline]{enumitem}
