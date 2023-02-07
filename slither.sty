@@ -1,21 +1,22 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{slither}[2011/09/19 python code highlighting; provided by Olivier Verdier <olivier.verdier@gmail.com>]
-
+%%Modified by sjroot%%
 
 \RequirePackage{listings}
 \RequirePackage{xcolor}
 \RequirePackage{caption}
 \RequirePackage{float}
 
+%Initializing float environment (like table or figure) for code blocks
 \floatstyle{plaintop}
 \newfloat{code}{thp}{loc}
 \floatname{code}{Code}
-
 \renewcommand*{\lstlistlistingname}{Code Listings}
 \renewcommand*{\lstlistingname}{Code Listing}
 \definecolor{gray}{gray}{0.5}
-\colorlet{commentcolour}{gray!90!black}
 
+%Custom Colors for Syntax Highlighting
+\colorlet{commentcolour}{gray!90!black}
 \colorlet{stringcolour}{green!60!black}
 \colorlet{keywordcolour}{red!90!black}
 \colorlet{exceptioncolour}{yellow!50!red}
@@ -25,12 +26,12 @@
 \colorlet{promptcolour}{green!50!black}
 \colorlet{specmethodcolour}{violet}
 
+%Some Stuff That could be called later=
 \newcommand*{\framemargin}{3ex}
-
 \newcommand*{\literatecolour}{\textcolor{literatecolour}}
-
 \newcommand*{\pythonprompt}{\textcolor{promptcolour}{{>}{>}{>}}}
 
+%Defines the syntax highlighting for python code blocks
 \lstdefinestyle{mypython}{
 %\lstset{
 %keepspaces=true,
@@ -103,10 +104,13 @@ breakindent=.5\textwidth,frame=single,breaklines=true%
 %}
 }
 
+%provides a command to load in a .py file from the working directory directly, and place it in a code block.
 \newcommand*{\inputpython}[3]{\lstinputlisting[firstline=#2,lastline=#3,firstnumber=#2,frame=single,breakindent=.5\textwidth,frame=single,breaklines=true,style=mypython]{#1}}
 
+%Generates a code block from the text put in this environment with python syntax highlighting
 \lstnewenvironment{python}[1][]{\lstset{style=mypython}}{}
 
+%modifies the python code block styling for in-line python
 \lstdefinestyle{mypythoninline}{
 style=mypython,%
 basicstyle=\ttfamily,%
@@ -140,4 +144,49 @@ literate=*%
 %% emphstyle=\color{blue},%
 }
 
+%Command for inline python syntax highlighting
 \newcommand*{\pyth}{\lstinline[style=mypythoninline]}
+
+
+
+%Defines the syntax highlighting for serpent code blocks
+\lstdefinestyle{myserpent}{
+showtabs=true,
+numbers=left,
+tab=,
+tabsize=2,
+basicstyle=\ttfamily\footnotesize,%\setstretch{.5},
+%Making Strings work for double quotes and single quotes
+morestring=[b]",
+morestring=[b]',
+stringstyle=\color{stringcolour},
+showstringspaces=false,
+alsoletter={1234567890},
+%Add Control Words here.
+emph={[3]mat,set,pop,surf},
+emphstyle=[3]\color{keywordcolour},
+%Add Names here
+emph={[6]fuel,B4C},
+emphstyle=[6]\color{commandcolour}\bfseries,
+%Setting Up Comments
+morecomment=[s]{/*}{*/},
+morecomment=[l]\%,
+commentstyle=\color{commentcolour}\slshape,
+%Codeblock Setup
+frame=trbl,
+rulecolor=\color{black!40},
+backgroundcolor=\color{lime!10!cyan!10!white},
+breakindent=.5\textwidth,frame=single,breaklines=true%
+%}
+}
+
+
+
+%provides a command to load in a file from the working directory directly, and place it in a code block, with Serpent syntax highlighting.
+\newcommand*{\inputserpent}[3]{\lstinputlisting[firstline=#2,lastline=#3,firstnumber=#2,frame=single,breakindent=.5\textwidth,frame=single,breaklines=true,style=myserpent]{#1}}
+
+%Generates a code block from the text put in this environment with serpent syntax highlighting
+\lstnewenvironment{serpent}[1][]{\lstset{style=myserpent}}{}
+
+%Command for inline serpent syntax highlighting
+\newcommand*{\serp}{\lstinline[style=myserpent]}
