@@ -1,4 +1,4 @@
-% Control drum absorber pads, numbered clockwise from 9 o’clock
+% Control drum absorber pads, numbered clockwise from 9 o clock
 surf 80 pad -45.05 0 16 17 66.9 156.9 % drum 1
 surf 81 pad -31.8551605 31.8551605 16 17 111.9 201.9 % drum 2
 surf 82 pad 0 45.05 16 17 156.9 246.9 % drum 3
