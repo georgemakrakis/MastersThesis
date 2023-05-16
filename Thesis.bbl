@@ -1,0 +1,251 @@
+\begin{thebibliography}{10}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+\providecommand{\bibAnnoteFile}[1]{%
+  \IfFileExists{#1}{\begin{quotation}\noindent\textsc{Key:} #1\\
+  \textsc{Annotation:}\ \input{#1}\end{quotation}}{}}
+\providecommand{\bibAnnote}[2]{%
+  \begin{quotation}\noindent\textsc{Key:} #1\\
+  \textsc{Annotation:}\ #2\end{quotation}}
+
+\bibitem{ValluriPHD}
+Valluri, Sriram~Kumar, 2021.
+\newblock Carbon Capture and Utilization.
+\newblock Ph.D. thesis, Michigan Technological University.
+\bibAnnoteFile{ValluriPHD}
+
+\bibitem{NREL-partner}
+{\acs{nrel}}, 2021.
+\newblock Technology partnerships.
+\newblock Technical report, {\acf{nrel}}.
+\bibAnnoteFile{NREL-partner}
+
+\bibitem{AirForce}
+{Secretary of the Air Force, Public Affairs}, 2022.
+\newblock Request for propasal released for eielson air force base
+  micro-reactor pilot program.
+\newblock Energy Installations and Environment.
+\bibAnnoteFile{AirForce}
+
+\bibitem{DoD-remote}
+{Nuclear Energy Institute}, 2018.
+\newblock Roadmap for the deployment of micro-reactors for u.s. department of
+  defense domestic installations.
+\newblock Technical report, {Nuclear Energy Institute}.
+\bibAnnoteFile{DoD-remote}
+
+\bibitem{PetersonMS}
+Peterson, John, 2019 8.
+\newblock An Analysis of the Nuclear Characteristics of a Molten Salt
+  Microreactor.
+\newblock Master's thesis, University of Idaho.
+\bibAnnoteFile{PetersonMS}
+
+\bibitem{Kerlin}
+Kerlin, Thomas~W., Upadhyaya, Belle~R., 2019.
+\newblock Dynamics and Control of Nuclear Reactors.
+\newblock Elsevier Inc., Knoxville, Tennessee.
+\bibAnnoteFile{Kerlin}
+
+\bibitem{RoperReview}
+Roper, Robin, Harkema, Megan, Sabharwall, Piyush, Riddle, Catherine, Chisholm,
+  Brandon, Day, Brandon, Marotta, Paul, 2022.
+\newblock Molten salt for advanced energy applications: A review.
+\newblock Annals of Nuclear Energy 169, 108924.
+\newblock ISSN 0306-4549.
+\newblock \doi{https://doi.org/10.1016/j.anucene.2021.108924}.
+\bibAnnoteFile{RoperReview}
+\newline\urlprefix\url{https://www.sciencedirect.com/science/article/pii/S030645492100801X}
+
+\bibitem{Simpson}
+Simpson, Michael~F., 2012.
+\newblock Development of spent nuclear fuel pyroprocessing technology at
+  \acf{inl}.
+\newblock Technical report, \acf{inl}.
+\bibAnnoteFile{Simpson}
+
+\bibitem{RoperOverview}
+Roper, Robin~V., Sabharwall, Piyush, Christensen, Richard, 2019.
+\newblock Chemical overview of molten salts.
+\newblock {ANS} Annual Meeting.
+\bibAnnoteFile{RoperOverview}
+\newline\urlprefix\url{https://www.ans.org/pubs/transactions/article-45524/}
+
+\bibitem{MSRE}
+Haubenreich, P~N, Engel, J~R, Prince, B~E, Claiborne, H~C, 1964 2.
+\newblock Msre design and operations report. part iii. nuclear analysis.
+\newblock Technical report, \acl{oak}.
+\newblock \doi{10.2172/4114686}.
+\bibAnnoteFile{MSRE}
+\newline\urlprefix\url{https://www.osti.gov/biblio/4114686}
+
+\bibitem{china}
+{World Nuclear News}, 2022.
+\newblock Chinese molten-salt reactor cleared for start up.
+\newblock {World Nuclear News}.
+\bibAnnoteFile{china}
+\newline\urlprefix\url{https://www.world-nuclear-news.org/articles/chinese-molten-salt-reactor-cleared-for-start-up}
+
+\bibitem{CarterNumerical}
+Carter, John~P., Christensen, Richard, Yoon, Sujong, 2022.
+\newblock Numerical analysis of dynamic load following response in a natural
+  circulation molten salt power reactor system.
+\newblock Nuclear Engineering and Design .
+\bibAnnoteFile{CarterNumerical}
+
+\bibitem{TodreasKazimi1}
+Todreas, Neil~E., Kazimi, Mujid~S., 1990.
+\newblock Nuclear Systems Volume I: Thermal Hydraulic Fundamentals.
+\newblock Taylor and Francis, USA.
+\bibAnnoteFile{TodreasKazimi1}
+
+\bibitem{RoperRedox}
+Roper, Robin~V., Christensen, Richard, 2019.
+\newblock Redox potential control for the molten salt reactor concept.
+\newblock {ANS} Winter Meeting.
+\bibAnnoteFile{RoperRedox}
+\newline\urlprefix\url{https://www.ans.org/pubs/transactions/article-47571/}
+
+\bibitem{HolcombOffgas}
+Andrews, Hunter~B., McFarlane, Joanna, Chapel, A.~Shay, Ezell, N. Dianne~Bull,
+  Holcomb, David~E., {de Wet}, Dane, Greenwood, Michael~S., Myhre, Kristian~G.,
+  Bryan, Samuel~A., Lines, Amanda, Riley, Brian~J., Felmy, Heather~M.,
+  Humrickhouse, Paul~W., 2021.
+\newblock Review of molten salt reactor off-gas management considerations.
+\newblock Nuclear Engineering and Design 385, 111529.
+\newblock ISSN 0029-5493.
+\newblock \doi{https://doi.org/10.1016/j.nucengdes.2021.111529}.
+\bibAnnoteFile{HolcombOffgas}
+\newline\urlprefix\url{https://www.sciencedirect.com/science/article/pii/S0029549321004817}
+
+\bibitem{CarterPHD}
+Carter, John~P., 2022.
+\newblock Multi-Physics Investigation of a Natural Circulation Molten Salt
+  Micro-Reactor that Utilizes an Experimental In-pile Device to Improve Core
+  Physics and System Thermal-Hydraulic Performance.
+\newblock Ph.D. thesis, Univesity of Idaho.
+\bibAnnoteFile{CarterPHD}
+
+\bibitem{RoperPHD}
+Roper, Robin, 2022.
+\newblock The Effect of Impurities and Geometry on the Corrosion and
+  Thermodynamic Behavior of Molten Salts.
+\newblock Ph.D. thesis, Univesity of Idaho.
+\bibAnnoteFile{RoperPHD}
+
+\bibitem{Bequette}
+Bequette, B.~Wayne, 2003.
+\newblock Process Control: Modeling Design and Simulation.
+\newblock Pretice Hall, Upper Sadle River, New Jersey.
+\bibAnnoteFile{Bequette}
+
+\bibitem{DH}
+Duderstadt, James~J., Hamilton, Louis~J., 1976.
+\newblock Nuclear Reactor Analysis.
+\newblock Wiley \& Sons, New York, NY, 1st edition.
+\bibAnnoteFile{DH}
+
+\bibitem{Lamarsh}
+Lamarsh, John~R., Baratta, Anthony~J., 2001.
+\newblock Introduction to Nuclear Engineering.
+\newblock Pretice Hall, Upper Sadle River, New Jersey, 3rd edition.
+\bibAnnoteFile{Lamarsh}
+
+\bibitem{GainSchedule}
+Gahinet, Pascal~M., Apkarian, Pierre, 2013.
+\newblock Automated tuning of gain-scheduled control systems.
+\newblock IEEE Conference on Decision and Control.
+\bibAnnoteFile{GainSchedule}
+\newline\urlprefix\url{https://ieeexplore.ieee.org/document/6760297}
+
+\bibitem{Roberson}
+Al~Rashdan, Ahmad, Roberson, Dakota, 2019.
+\newblock A frequency domain control perspective on xenon resistance for load
+  following of thermal nuclear reactors.
+\newblock IEEE Transactions on Nuclear Science 66(9), 2034.
+\newblock \doi{10.1109/TNS.2019.2934171}.
+\bibAnnoteFile{Roberson}
+
+\bibitem{Bateman}
+Ding, Zechaun, 2019.
+\newblock Solving bateman equation for xenon transient analysis using numerical
+  methods.
+\newblock Nuclear Engineering and Technology .
+\bibAnnoteFile{Bateman}
+
+\bibitem{Geankoplis}
+Geankoplis, Christie~J., 1993.
+\newblock Transport Processes and Unit Operations.
+\newblock Pretice Hall, Englewood Cliffs, New Jersey, 3rd edition.
+\bibAnnoteFile{Geankoplis}
+
+\bibitem{Offgas}
+Andrews, Hunter~B., McFarlane, Joanna, Chapel, A.~Shay, Ezell, N. Dianne~Bull,
+  Holcomb, David~Eugene, de~Wet, Dane, Greenwood, Michael~S., Myhre,
+  Kristian~G., Bryan, Samuel~A., Lines, Amanda, Riley, Brian~J., Felmy,
+  Heather~M., Humrickhouse, Paul~W., 2021 10.
+\newblock Review of molten salt reactor off-gas management considerations.
+\newblock Nuclear Engineering and Design 385.
+\newblock \doi{10.1016/j.nucengdes.2021.111529}.
+\bibAnnoteFile{Offgas}
+
+\bibitem{ORNL-masstransport}
+Peebles, F.N., 1968.
+\newblock Removal of xenon-135 from circulating fuel salt of the msbr by mass
+  transfer to helium bubbles.
+\newblock U.S. Atomic Energy Commission .
+\bibAnnoteFile{ORNL-masstransport}
+
+\bibitem{Thawing}
+Bohlander, Thomas~W., 1963.
+\newblock Electrical method for thawing frozen pipes.
+\newblock Journal AWWA 55(5), 602.
+\newblock \doi{https://doi.org/10.1002/j.1551-8833.1963.tb01056.x}.
+\bibAnnoteFile{Thawing}
+\newline\urlprefix\url{https://awwa.onlinelibrary.wiley.com/doi/abs/10.1002/j.1551-8833.1963.tb01056.x}
+
+\bibitem{Faw}
+Shultis, J.~Kenneth, Faw, Richard~E., 2002.
+\newblock Fundamentals of Nuclear science and Engineering.
+\newblock Marcel Dekker Inc., New York City, New York, 1st edition.
+\bibAnnoteFile{Faw}
+
+\bibitem{Handbook}
+Kok, Kenneth~D., 2009.
+\newblock Nuclear Engineering Handbook.
+\newblock Taylor \& Francis Group, Boca Raton, Florida, 1st edition.
+\bibAnnoteFile{Handbook}
+
+\bibitem{FreezePlug}
+Tiberga, Marco, Shafer, Devaja, Lathouwers, Danny, Rohde, Martin, Kloosterman,
+  Jan~Leen, 2019.
+\newblock Preliminary investigation on the melting behavior of a freeze-valve
+  for the molten salt fast reactor.
+\newblock Annals of Nuclear Energy 132, 544.
+\newblock ISSN 0306-4549.
+\newblock \doi{https://doi.org/10.1016/j.anucene.2019.06.039}.
+\bibAnnoteFile{FreezePlug}
+\newline\urlprefix\url{https://www.sciencedirect.com/science/article/pii/S0306454919303573}
+
+\bibitem{Charit}
+Murty, K.~Linga, Charit, Indrajit, 2013.
+\newblock An Introduction to Nuclear Materials: Fundamentals and Applications.
+\newblock Wiley-VCH, Raliegh, NC.
+\bibAnnoteFile{Charit}
+
+\bibitem{DecayHeat}
+Wang, Shisheng, Massone, Mattia, Rineiski, Andrei, Merle-Lucotte, E., Laureau,
+  A., Gérardin, D., Heuer, D., Allibert, M., 2019.
+\newblock A passive decay heat removal system for emergency draining tanks of
+  molten salt reactors.
+\newblock Nuclear Engineering and Design 341, 423.
+\newblock ISSN 0029-5493.
+\newblock \doi{https://doi.org/10.1016/j.nucengdes.2018.11.021}.
+\bibAnnoteFile{DecayHeat}
+\newline\urlprefix\url{https://www.sciencedirect.com/science/article/pii/S0029549318309567}
+
+\end{thebibliography}

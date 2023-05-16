@@ -1,5 +1,5 @@
 \chapter{Reactor Characterization}
-To design an operational controller for the \acl{msnb}, the many components of the reactor needed to be characterized. The reactor was modeled in Serpent 2 to characterize the control drums using a series of criticality models. Depletion models were also used observe how the control drum characterization changes as the fuel is burned.
+To design a reactivity controller for the \acl{msnb}, many components of the reactor needed to be characterized. The reactor was modeled in Serpent 2 to characterize the control drums using a series of criticality models. Depletion models were also used observe how the control drum characterization changes as the fuel is burned.
 
 
 \label{Chapter:Modeling}
@@ -12,8 +12,36 @@ To design an operational controller for the \acl{msnb}, the many components of t
 
 
 \section{Reactor Design}
-The \acs{msnb} is self contained in a 145 cm diameter, 242 cm tall cylindrical rector vessel that is buried in the ground or concrete for shielding purposes. The core is a concentric 166 cm tall cylinder 50 cm in diameter surrounded by a large reflector into which 8 equally spaced control drums are embedded.
-\note{Accident tolerant control drums}
+The \acs{msnb} is self contained in a 145 cm diameter, 242 cm tall cylindrical rector vessel that is buried in the ground or concrete for shielding purposes. The core is a concentric 166 cm tall cylinder 50 cm in diameter surrounded by a large reflector into which 8 equally spaced control drums are embedded. A neutron trap sits above the reflector to separate the riser, where fission caused by delayed neutrons occurs at a significant rate, from the heat exchanger. The downcomer is an annular gap between the outer part of the reflector and the outer reactor vessel. 
+
+\subsection{Molten Salt}
+The molten salt in the \acs{msnb} serves as both the primary coolant and the fuel. It is composed of 18 mol\% \acs{haleu} \UF \; (enriched to 19.75\%) dissolved in eutectic \flinak (enriched to 99.99\% \Li[7]). It is composed of about 1.4 atom\% \U[235]. The remaining composition is listed in Table \ref{tab:saltcomp}.
+
+\begin{table}[!ht]
+    \caption[Molten salt composition]{Composition of molten salt prior to burn-up}
+    \centering
+    \begin{tabular}{rl|cc}
+     Element&Isotope&Atom Percent & Weight Percent \\ \hline
+     Fluorine  & 19  & 60.63 \%  & 32.40 \% \\  \hline
+     Lithium   & 6   & 15 ppm    & 2.5 ppm  \\
+               & 7   & 15.01 \%  & 2.96 \%  \\ \hline
+     Sodium    & 23  &  3.71 \%  & 2.40 \%  \\ \hline
+     Potassium & 39  & 12.61 \%  & 13.82 \% \\
+               & 41  & 0.95 \%  & 1.09 \%  \\ \hline
+    Uranium    & 235 & 1.40 \%   & 9.25 \%  \\
+               & 238 & 5.69 \%   & 38.08 \% \\
+    \end{tabular}
+    \label{tab:saltcomp}
+\end{table}
+
+\subsection{Control Drums}\note{Accident tolerant control drums, ATR}
+
+
+\subsection{In-Pile Moderator}
+
+
+\subsection{Structural Materials}
+The reactor vessel, along with supplementary structural materials such as reflector and moderator supports, heat exchangers, and control drum driveshaft sheaths are made from 316 stainless steel. Control drum driveshafts are made from Hasteloy-N, a nickel-chromium-molybdenum alloy that is resistant to corrosion from high temperature fluoride salts. The reactor vessel is encased in barite concrete for added radiation shielding.
 
 \section{Neutronics Modeling}
 Alternating criticality and burn-up modeling - poisoning and burn-up

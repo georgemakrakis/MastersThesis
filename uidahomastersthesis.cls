@@ -249,6 +249,7 @@ This thesis of \@author, submitted for the degree of \@degree\ with a Major in \
 
 %Nuclides!
 %\newcommand{\<call>}[<mass number (optional)>][default]{$^{#1}A$}
+\newcommand{\Li}[1][]{$^{#1}Li$ }
 \newcommand{\B}[1][]{$^{#1}B$ }
 \newcommand{\Be}[1][]{$^{#1}Be$ }
 \newcommand{\I}[1][135]{$^{#1}I$ }
@@ -265,8 +266,8 @@ This thesis of \@author, submitted for the degree of \@degree\ with a Major in \
 \newcommand{\Ra}[1][]{$^{#1}Ra$ }
 
 \newcommand{\UF}[1][4]{$UF_{#1}$}
-\newcommand{\flinak}{$FLiNaK$ }
-\newcommand{\flibe}{$FLiBe$ }
+\newcommand{\flinak}{$FLiNaK$}
+\newcommand{\flibe}{$FLiBe$}
 
 %Acronyms
 \newcommand{\acf}{\acrfull} %full acronym
@@ -293,3 +294,4 @@ This thesis of \@author, submitted for the degree of \@degree\ with a Major in \
 \newacronym{lti}{LTI}{Linear Time-Invariant}
 \newacronym{mm}{MIMO}{Multi-Input Multi-Output}
 \newacronym{ss}{SISO}{Single-Input Single-Output}
+\newacronym{haleu}{HALEU}{High-Assay Low-Enriched Uranium}
