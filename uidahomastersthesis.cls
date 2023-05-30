@@ -256,7 +256,7 @@ This thesis of \@author, submitted for the degree of \@degree\ with a Major in \
 \newcommand{\Xe}[1][135]{$^{#1}Xe$ }
 \newcommand{\Nd}[1][149]{$^{#1}Nd$ }
 \newcommand{\Pm}[1][149]{$^{#1}Pm$ }
-\newcommand{\Sa}[1][149]{$^{#1}Sa$ }
+\newcommand{\Sm}[1][149]{$^{#1}Sm$ }
 \newcommand{\Gd}[1][157]{$^{#1}Gd$ }
 \newcommand{\U}[1][]{$^{#1}U$ }
 \newcommand{\Pu}[1][239]{$^{#1}Pu$ }

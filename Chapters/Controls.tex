@@ -147,7 +147,7 @@ In addition to the relatively slow time variance of fissile fuel depletion durin
 \begin{enumerate*}
 \item Start-up; \item Shut-down; and \item Re-start.
 \end{enumerate*}
-\note{Samarium is Sm not Sa}
+
 \subsection{Start-up}
 Prior to start-up, it is very likely that the molten salt fuel/coolant mixture will need to be thawed. Initial start-up will also require a neutron source as a seed for the fission chain reaction \cite[Ch. 2]{DH}. Each of these systems are important considerations for the design of the \acs{msnb} and warrant further investigation, but are out of scope for this work and are briefly discussed in Chapter \ref{Chapter:Conclusions-FutureWork}. The key consideration regarding the start-up control system is the build-up of fission product neutron poisons in the first hours and days of operation.
 
@@ -181,7 +181,7 @@ Each nuclide is formed by \U[235] fission, and removed by beta-decay. Additional
 \end{equation}
 
 \subsubsection{Samarium Poisoning}
-The second most important neutron poison to consider after \Xe is \Sa. \Pm is formed by fission\footnotemark and decays to \Sa, which is stable, and has a large neutron capture cross-section \cite[Ch. 7]{Lamarsh}. \ref{eqn:diffPm} looks identical to \ref{eqn:diffI}, but \ref{eqn:diffSa} is simpler than \ref{eqn:diffXe} as \Sa is stable and is not a direct fission product.
+The second most important neutron poison to consider after \Xe is \Sm. \Pm is formed by fission\footnotemark and decays to \Sm, which is stable, and has a large neutron capture cross-section \cite[Ch. 7]{Lamarsh}. \ref{eqn:diffPm} looks identical to \ref{eqn:diffI}, but \ref{eqn:diffSa} is simpler than \ref{eqn:diffXe} as \Sm is stable and is not a direct fission product.
 
 \footnotetext{As with \I, \Pm actually comes from the decay of a much shorter lived nuclide \Nd. Because neither \Pm nor \Nd are strong neutron absorbers, the presence of \Nd may be neglected in favor of its longer lived daughter product.}
 
@@ -213,7 +213,7 @@ This system too reaches an equilibrium which may be found algebraically where th
     \item Soluble poisons (\ie chemical shim) dissolved in the moderator/coolant to account for non-equilibrium fission product poison build-up and fissile material depletion.
 \end{enumerate*}
 
-\acsp{msr} may be able to use the intersection of these two concepts; a neutron poison may be added to the molten salt mixture to counter-act the poison reactivity built-up by equilibrium poisons like \Xe and \Sa. Enough poison would need be added to the fuel salt to equate the reactivity of fresh fuel to the reactivity fuel with \Xe and \Sa at their equilibrium levels. There are many candidates for such a soluble poison, including boron-10 and isotopes of gadolinium, hafnium, and other lanthanides.
+\acsp{msr} may be able to use the intersection of these two concepts; a neutron poison may be added to the molten salt mixture to counter-act the poison reactivity built-up by equilibrium poisons like \Xe and \Sm. Enough poison would need be added to the fuel salt to equate the reactivity of fresh fuel to the reactivity fuel with \Xe and \Sm at their equilibrium levels. There are many candidates for such a soluble poison, including boron-10 and isotopes of gadolinium, hafnium, and other lanthanides.
 
 An ideal poison for this application should form a compound that is soluble in the molten salt at the desired level, and it should be burnt at a rate similar to the formation rate of its fission product counterpart. As the concentration of the fission product poisons build up, the concentration of the burnable poison depletes, and unlike chemical shimming, the consumed poison would not be replenished. Making the average core reactivity equivalent upon cold-clean start-up and equilibrium would simplify the gain and bias scheduling early in the fuel lifetime, particularly if the burnable poison has an appropriate effective half-life \cite{RootGd}.
 
@@ -232,4 +232,4 @@ Compound dynamics in the \Xe decay chain result in the generation of a large poi
 
 This system of equations is not ideal, as it results in mandatory reactor dead time. Most nuclear reactors are not designed with enough excess control reactivity to overcome the iodine pit, so they must wait for the xenon to decay. Even if the control system does have the ability to restart during the xenon peak, it can be very unsafe to do so. When the fission chain reaction is restarted, the neutron flux increases and begins transmuting \Xe. The removal of poisons is akin to positive reactivity insertion \cite{Roberson}. Decreasing poison concentration increases the neutron population and therefore the rate of poison removal. This is a positive feedback system which could run away quickly if control reactivity is not removed to match. 
 
-The duration of the xenon spike may be shortened by adding an additional negative term to \ref{eqn:diffXe}. This is not physically realizable in cladded solid fuel reactors. It is however possible to remove a gaseous solvent from a liquid (such as \acs{msr} fuel) through a process called stripping \cite[Ch. 10]{Geankoplis}. Helium may be bubbled through the molten salt in a sparge tube, and the xenon (as well as any other fission gasses \cite{Offgas}) would preferentially transport into the gaseous phase which would later be separated in a cyclone or similar apparatus \cite{ORNL-masstransport}. This advective removal of \Xe would allow the \acs{msnb} to be restarted without having to wait for the poison to decay \cite{RootXe}. \Sa is stable and strongly dissolved in the molten salt, so it is always `burnt off' during restart \cite[Ch. 7]{Lamarsh}.
+The duration of the xenon spike may be shortened by adding an additional negative term to \ref{eqn:diffXe}. This is not physically realizable in cladded solid fuel reactors. It is however possible to remove a gaseous solvent from a liquid (such as \acs{msr} fuel) through a process called stripping \cite[Ch. 10]{Geankoplis}. Helium may be bubbled through the molten salt in a sparge tube, and the xenon (as well as any other fission gasses \cite{Offgas}) would preferentially transport into the gaseous phase which would later be separated in a cyclone or similar apparatus \cite{ORNL-masstransport}. This advective removal of \Xe would allow the \acs{msnb} to be restarted without having to wait for the poison to decay \cite{RootXe}. \Sm is stable and strongly dissolved in the molten salt, so it is always `burnt off' during restart \cite[Ch. 7]{Lamarsh}.
