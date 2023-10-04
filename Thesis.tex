@@ -2,6 +2,7 @@
 \makeatletter
 
 \usepackage[latin1]{inputenc}
+\usepackage{times}
 \makenoidxglossaries
 
 %Preamble
@@ -10,12 +11,11 @@
 \pgfplotsset{compat=newest}
 \usepgfplotslibrary{patchplots}
 
-
 \graphicspath{ {./img/} }
 
-\usepackage[PetersLenny]{fncychap} %This makes the chapter titles fancy: If you don't want it fancy, delete this line and the chapter title formatting under the \frontmatter below
-	\ChNameVar{\LARGE\scshape}
-	\ChTitleVar{\Huge\scshape}
+%\usepackage[PetersLenny]{fncychap} %This makes the chapter titles fancy: If you don't want it fancy, delete this line and the chapter title formatting under the \frontmatter below
+	%\ChNameVar{\LARGE\scshape}
+	%\ChTitleVar{\Huge\scshape}
 
 %Make post-it notes!
 \usepackage[colorinlistoftodos,prependcaption,textsize=tiny]{todonotes}
@@ -31,7 +31,7 @@
 \cmone{Dakota Roberson, Ph.D.}
 \cmtwo{Robert A. Borrelli, Ph.D.}
 \deptadmin{Indrajit Charit, Ph.D.}
-\graddate{December, 2023}
+\graddate{December 2023}
 % -------------------------------------------------------------------------
 
 \linespread{1.3}%1.3 is on-and-a-half-spacing
@@ -88,14 +88,15 @@ pdfprintscaling={AppDefault}}
 
 \frontmatter
 
-%\titleformat{\chapter}[block]{\scshape\LARGE}{\centering\chaptertitlename\  \thechapter:}{1ex}{\centering}{}\titlespacing{\chapter}{0pt}{-40pt}{20pt}
+%Chapter/Section title format and spacing
+\titleformat{\chapter}{\large}{\centering\textbf\chaptertitlename\  \textbf\thechapter\textbf{:}}{1ex}{\centering\textbf}{}\titlespacing{\chapter}{0pt}{-40pt}{10pt}
 
-\titleformat{\section}[hang]{\scshape\Large}{\thesection}{1ex}{}
-    \titlespacing{\section}{0pt}{0pt}{10pt}
+\titleformat{\section}[hang]{\bfseries\itshape}{\thesection}{1ex}{}
+   \titlespacing{\section}{0pt}{8pt}{2pt}
 	%\titlespacing*{\section}{0pt}{-50pt}{40pt}
 
-\titleformat{\subsection}[hang]{\scshape\large}{\thesection}{1ex}{}
-    \titlespacing{\subsection}{0pt}{0pt}{10pt}
+\titleformat{\subsection}[hang]{\itshape}{\thesubsection}{1ex}{}
+    \titlespacing{\subsection}{0pt}{6pt}{2pt}
 	%\titlespacing*{\subsection}{0pt}{-50pt}{40pt}
 
 
@@ -105,16 +106,15 @@ pdfprintscaling={AppDefault}}
 
 % -- Abstract --
 \frontmattersection{Abstract}
-\include{Preface/Abstract}
+\include{Frontmatter/Abstract}
 
 % -- Acknowledgements --
  \frontmattersection{Acknowledgements}
-\include{Preface/Acknowledgements}
+\include{Frontmatter/Acknowledgements}
 
 % -- Dedication --
  \frontmattersection{Dedication}
- \include{Preface/Dedication}
-
+ \include{Frontmatter/Dedication}
 % ------------------------------------------------------------
 % -- Table of Contents --
 \frontmattersection{Table of Contents}
@@ -143,7 +143,7 @@ pdfprintscaling={AppDefault}}
 
 % ------------------------------------------------------------
 \mainmatter  % Starts the content part of the thesis
-\setcounter{secnumdepth}{1}  % Sets depth section numbers go to.
+\setcounter{secnumdepth}{2}  % Sets depth section numbers go to.
 % NOTE !! : There is a bug currently where they will not work at depth of 3, e.g section 1.2.3 will not display, but 1.2 will.
 
 % ------------------------------------------------------------
@@ -170,7 +170,7 @@ pdfprintscaling={AppDefault}}
 
 \clearpage
 \renewcommand\bibname{References}
-\addcontentsline{toc}{chapter}{\textsc{\bibname}}
+\addcontentsline{toc}{chapter}{\bibname}
 \bibliographystyle{nsf}
 \bibliography{References.bib}
 

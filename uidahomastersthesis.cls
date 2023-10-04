@@ -16,6 +16,7 @@
 \RequirePackage{setspace} % Allows fcns like doublespace, singlespace, and singlehalfspacing of text
 \RequirePackage{listings} % For code listings
 \RequirePackage{titlesec}
+\RequirePackage{ulem}
 \RequirePackage{caption}
 \RequirePackage{subcaption}
 \RequirePackage{adjustbox}
@@ -41,9 +42,10 @@
 
 % Set margins
 \geometry{letterpaper,
-	left= 1.2in,
+	left= 1.25in,
 	right=1in,
-	bottom=1in}
+	bottom=1in,
+	top=1in}
 
 	
 % Set pagenumber to top right
@@ -52,13 +54,13 @@
 \fancyfoot{}
 \fancyhead{}
 \renewcommand{\headrulewidth}{0pt}
-\fancyhead[R]{Pg. \thepage}
+\fancyhead[R]{\thepage}
 
 \fancypagestyle{plain}{\fancyhf{}
 \fancyfoot{}
 \fancyhead{}
 \renewcommand{\headrulewidth}{0pt}
-\fancyhead[R]{Pg. \thepage}}
+\fancyhead[R]{\thepage}}
 
 
 \makeatletter  % DO NOT REMOVE THIS (unless you know what you are doing)
@@ -99,20 +101,20 @@
 \titlecontents{chapter}% <section-type>
 [0pt]% <left>
 {}% <above-code>
-{\scshape\chaptername\ \thecontentslabel:\ }% <numbered-entry-format>
+{\chaptername\ \thecontentslabel:\ }% <numbered-entry-format>
 {}% <numberless-entry-format>
 {\Dotfill\contentspage}% <filler-page-format>
 
 \titlecontents{section}% <section-type>
 [10pt]% <left>
-{\scshape}% <above-code>
+{}% <above-code>
 {}% <numbered-entry-format>
 {\contentslabel}% <numberless-entry-format>
 {\Dotfill\contentspage}% <filler-page-format>
 
 \titlecontents{subsection}%
 [20pt]%
-{\scshape}%
+{}%
 {}%
 {\contentslabel}%
 {\Dotfill\contentspage}%
@@ -159,8 +161,9 @@
 }%
 
 \newcommand\frontmattersection[1]{%
-	\addcontentsline{toc}{chapter}{\scshape#1}%
-	\chaptermark{#1}}
+	\addcontentsline{toc}{chapter}{#1}%
+	\chaptermark{#1}
+	}
 
 
 % --------------------------------------------------------------------------
@@ -168,8 +171,8 @@
 \newcommand{\thesistitlepage}{\thispagestyle{empty}
 	\vspace*{0.5in}
 		\begin{center}
-			\textsc{\@title}\\
-			\vspace{48pt}
+			\Large\textbf{\@title}\\ 
+			\vspace{48pt}\normalsize
 			A Thesis\\
 			Presented in Partial Fulfillment of the Requirements for the\\
 			Degree of \@degree\\
@@ -181,6 +184,7 @@
 			by\\
 			\@author\\
 			\vspace{60pt}
+			Approved by:\\
 			Major Professor: \@advisor\\
 			Committee Members: \@cmone; \@cmtwo\\
 			Department Administrator: \@deptadmin\\
