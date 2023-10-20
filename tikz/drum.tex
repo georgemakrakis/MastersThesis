@@ -1,0 +1,19 @@
+\begin{tikzpicture}
+    %Reflector
+    \draw[blue, very thick] (0,0) circle (3);
+    \draw[blue, very thick] (0,0) circle (1.05);
+    \filldraw[blue,opacity=0.2, even odd rule] (0,0) circle (3) circle (1);
+    %Core
+    \draw[red, very thick] (0,0) circle (1);
+    \filldraw[red,opacity=0.2] (0,0) circle (1);
+    %Drums
+    \draw[blue, very thick] (2,0) circle (0.7);
+    \draw[blue, very thick] (-2,0) circle (0.7);
+    \draw[blue, very thick] (0,2) circle (0.7);
+    \draw[blue, very thick] (0,-2) circle (0.7);
+    \draw[blue, very thick] (1.41,1.41) circle (0.7);
+    \draw[blue, very thick] (-1.41,1.41) circle (0.7);
+    \draw[blue, very thick] (1.41,-1.41) circle (0.7);
+    \draw[blue, very thick] (-1.41,-1.41) circle (0.7);
+
+\end{tikzpicture}

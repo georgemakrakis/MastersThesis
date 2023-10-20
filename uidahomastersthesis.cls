@@ -270,8 +270,8 @@ This thesis of \@author, submitted for the degree of \@degree\ with a Major in \
 \newcommand{\Ra}[1][]{$^{#1}Ra$ }
 
 \newcommand{\UF}[1][4]{$UF_{#1}$}
-\newcommand{\flinak}{$FLiNaK$}
-\newcommand{\flibe}{$FLiBe$}
+\newcommand{\flinak}{FLiNaK }
+\newcommand{\flibe}{FLiBe }
 
 %Acronyms
 \newcommand{\acf}{\acrfull} %full acronym
