@@ -10,7 +10,7 @@
 \RequirePackage[table]{xcolor}
 \RequirePackage{amsmath,amsfonts,amssymb,nicefrac}
 \RequirePackage[eulergreek]{sansmath}
-\RequirePackage{geometry}
+\RequirePackage[showframe]{geometry}
 \RequirePackage{array}
 \RequirePackage{graphicx} % Allows placement of graphics
 \RequirePackage{setspace} % Allows fcns like doublespace, singlespace, and singlehalfspacing of text
@@ -29,6 +29,7 @@
 \RequirePackage{textcomp}
 \RequirePackage{gensymb}
 \RequirePackage{url,xurl}
+\urlstyle{same}
 \RequirePackage{slither} %custom package providing syntax highlighting for python and serpent, must have slither.sty in working directory
 \RequirePackage{hyperref}
 \RequirePackage[acronym,nomain,nonumberlist]{glossaries}
