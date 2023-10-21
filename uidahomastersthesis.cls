@@ -10,7 +10,8 @@
 \RequirePackage[table]{xcolor}
 \RequirePackage{amsmath,amsfonts,amssymb,nicefrac}
 \RequirePackage[eulergreek]{sansmath}
-\RequirePackage[showframe]{geometry}
+%\RequirePackage[showframe]{geometry}
+\RequirePackage{geometry}
 \RequirePackage{array}
 \RequirePackage{graphicx} % Allows placement of graphics
 \RequirePackage{setspace} % Allows fcns like doublespace, singlespace, and singlehalfspacing of text
