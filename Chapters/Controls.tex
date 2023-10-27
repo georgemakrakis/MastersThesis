@@ -47,7 +47,7 @@ In this case, \ref{eqn:pid} is rewritten as:
 \end{equation}
 
 \section{Feedforward}
-The term `Feedforward' can be used to refer to any element in the control block diagram that exists outside of the feedback loop. In process control, feedforward controllers are almost always implemented alongside, not instead of feedback controllers because a standalone feedforward controller is not guaranteed to reach the set-point.  
+The term `Feedforward' can be used to refer to any element in the control block diagram that exists outside of the feedback loop. In process control, feedforward controllers are almost always implemented alongside, not instead of feedback controllers because a standalone feedforward controller is not guaranteed to reach the set-point.
 
 \subsection{Disturbance Feedforward}
 \begin{figure}[!ht]
@@ -61,7 +61,7 @@ In many processes, the process variable is effected by phenomena other than the 
 
 The most prevalent disturbances that would effect the power output of the core of a \acs{msnb} are the temperature reactivity feedback effect common to all nuclear reactors and the flow reactivity specific to natural circulation driven  liquid fueled \acsp{msr} \cite{CarterNumerical}. 
 
-Temperature reactivity feedback is dominated by Doppler Broadening, where the radiative capture resonance peaks of nuclides such as \U[238] are depressed to cover a wider epithermal neutron spectrum \cite[Ch. 2]{DH}. This results in a lower resonance escape probability \cite[Ch. 3]{DH} and a negative correlation between fuel temperature and fuel reactivity. Liquid fuels also have a high thermal-expansion coefficient, so higher core temperatures lead to lower heavy metal density and lower macroscopic fission cross-section in the core \cite{PetersonMS}.
+Temperature reactivity feedback is dominated by Doppler broadening, where the radiative capture resonance peaks\footnote{Neutrons with energy that matches a quantum excitement energy of an incident nucleus are more likely to be captured.} of nuclides such as \U[238] are depressed to cover a wider epithermal neutron spectrum \cite[Ch. 2]{DH}. Higher temperature atoms by definition have larger velocity in random direction. This means that for a given neutron energy, a wider range of relative (\eg center-of-mass frame of reference) energies are observed based on the velocity component of the target nucleus in the direction of neutron incident \cite[Ch. 7]{Kerlin}. Neutrons with proper energy near a resonance energy are then more likely to have relative energy that resonates. This results in a lower resonance escape probability (\ie, a larger percentage of neutrons are absorbed while slowing down) and a negative correlation between fuel temperature and fuel reactivity\cite[Ch. 3]{DH}. Liquid fuels also have a high thermal-expansion coefficient, so higher core temperatures lead to lower heavy metal density and lower macroscopic fission cross-section in the core \cite{PetersonMS}. With less fission targets in the core, neutrons must travel further to have the same number of chances to cause a subsequent fission, increasing the odds of being captured by a non-fissile nuclide and impeding the fission chain reaction.
 
 Flow reactivity is driven by the advection of delayed neutron precursors \cite[Ch. 3]{Kerlin}. Not all fission neutrons are released promptly; sometimes an unstable nuclide which eventually decays by neutron emission produced instead. These unstable nuclides are called delayed neutron precursors and have half-lives ranging from less than a second to over a minute \cite[Ch. 7]{Lamarsh}. An example is given by \ref{rxn:delayed}
 
@@ -153,7 +153,7 @@ In addition to the relatively slow time variance of fissile fuel depletion durin
 Prior to start-up, it is very likely that the molten salt fuel/coolant mixture will need to be thawed. Initial start-up will also require a neutron source as a seed for the fission chain reaction \cite[Ch. 2]{DH}. Each of these systems are important considerations for the design of the \acs{msnb} and warrant further investigation, but are out of scope for this work and are briefly discussed in Chapter \ref{Chapter:Conclusions-FutureWork}. The key consideration regarding the start-up control system is the build-up of fission product neutron poisons in the first hours and days of operation.
 
 \subsubsection{Xenon Poisoning}
-\Xe is the strongest known neutron poison, with a microscopic neutron capture cross-section of 2.65 Mb \cite[Table II.2]{Lamarsh}. The concentration of \Xe is described by a system of differential equations which quantifies the generation, consumption, and decay of itself and its beta-precursor \I. Equations \ref{eqn:diffI} and \ref{eqn:diffXe} can be used to track the concentrations of iodine-135 and xenon-135 during start-up, steady-state operation, power transients, shut-down, and dead-time \cite[Ch. 7]{Lamarsh}.
+\Xe is the strongest known neutron poison, with a microscopic neutron capture cross-section of 2.65 Mb \cite[Table II.2]{Lamarsh}. The concentration of \Xe is described by a system of differential equations which quantifies the generation, consumption, and decay of itself and its beta-precursor \I:
 \begin{equation}\label{eqn:diffI}
     \frac{dI}{dt} =
     \underbrace{\gamma_{I}\Sigma_{f}^{F}{\phi}(t)}_{\text{Fission Yield}}
@@ -170,63 +170,36 @@ Prior to start-up, it is very likely that the molten salt fuel/coolant mixture w
         \underbrace{Xe(t)\sigma_{a}^{Xe}{\phi}(t)}_{\text{Radiative Capture}}
 \end{equation}
 
-Each nuclide is formed by \U[235] fission, and removed by beta-decay \cite{RootXe}. Additionally, \Xe is formed by the beta-decay of \I and removed by radiative neutron capture. Each nuclide builds-up in the reactor until the formation terms, i.e. fission yield and precursor decay, equilibrate with the removal terms, beta decay and radiative capture. By setting the time derivatives to zero, the neutron flux dependent equilibrium concentrations (\ref{eqn:eqI} and \ref{eqn:eqXe}) may be derived algebraically \cite[Ch. 7]{Lamarsh} and can contribute over 2000 pcm of negative poison reactivity to the core. 
- 
-\begin{equation}\label{eqn:eqI}
-    I_{\infty}(\phi) = \frac{\gamma_I \Sigma_f^F }{\lambda_I}\phi
-\end{equation}
-\begin{equation}\label{eqn:eqXe}
-    Xe_{\infty}(\phi) = \frac{(\gamma_I+\gamma_{Xe}) \Sigma_f^F }{\lambda_I+\sigma_a^{Xe}\phi}\phi
-\end{equation}
+The dynamics of this system are discussed in detail in Chapter \ref{Chapter:Xenon} \cite{RootXe}. To summarize, each nuclide builds-up in the reactor until the formation terms equilibrate with the removal terms, beta decay and radiative capture. At equilibrium, \Xe can contribute over 2000 pcm of negative poison reactivity to the core. This causes a time variance that must be understood and accounted for in the design of the controller.
 
 \subsubsection{Samarium Poisoning}
-The second most important neutron poison to consider after \Xe is \Sm. \Pm is formed by fission and decays to \Sm, which is stable, and has a large neutron capture cross-section \cite[Ch. 7]{Lamarsh}. \ref{eqn:diffPm} looks identical to \ref{eqn:diffI}, but \ref{eqn:diffSa} is simpler than \ref{eqn:diffXe} as \Sm is stable and is not a direct fission product.
+The second most important neutron poison to consider after \Xe is \Sm. \Pm is formed by fission and decays to \Sm, which is stable, and has a large neutron capture cross-section \cite[Ch. 7]{Lamarsh}. \ref{eqn:diffPm} looks identical to \ref{eqn:diffI}, but \ref{eqn:diffSm} is simpler than \ref{eqn:diffXe} as \Sm is stable and is not a direct fission product.
 
 \begin{equation}\label{eqn:diffPm}
     \frac{dPm}{dt} =
     \underbrace{\gamma_{Pm}\Sigma_{f}^{F}{\phi}(t)}_{\text{Fission Yield}}
     -\underbrace{\lambda_{Pm}Pm(t)}_{\text{Beta Decay}}
 \end{equation}
-\begin{equation}\label{eqn:diffSa}
+\begin{equation}\label{eqn:diffSm}
         \frac{dSm}{dt} =
         \underbrace{\lambda_{Pm}Pm(t)}_{\text{Precursor Decay}}
         -
-        \underbrace{Sa(t)\sigma_{a}^{Sm}{\phi}(t)}_{\text{Radiative Capture}}
+        \underbrace{Sm(t)\sigma_{a}^{Sm}{\phi}(t)}_{\text{Radiative Capture}}
 \end{equation}
 
-This system too reaches an equilibrium which may be found algebraically where the time derivatives are null. \ref{eqn:eqPm} is of the same form as \ref{eqn:eqI}. Interestingly \ref{eqn:eqSa} is independent of the neutron flux in the core. Because it is stable, it is only removed by the same neutron flux that forms it, and contributes a relatively constant 442 pcm of poison reactivity. 
+This system too reaches an equilibrium which may be found algebraically where the time derivatives are null. Interestingly \ref{eqn:eqSm} is independent of the neutron flux in the core. Because it is stable, it is only removed by the same neutron flux that forms it, and contributes a relatively constant 442 pcm of poison reactivity. 
 
 \begin{equation}\label{eqn:eqPm}
-    Pm_{\infty}(\phi) = \frac{\gamma_Pm \Sigma_f^F }{\lambda_{Pm}}\phi
+    Pm_{\infty}(\phi) = \frac{\gamma_{Pm} \Sigma_f^F }{\lambda_{Pm}}\phi
 \end{equation}
-\begin{equation}\label{eqn:eqSa}
-    Sa_{\infty}(\phi) = \frac{\gamma_{Pm} \Sigma_f^F }{\sigma_a^{Sm}}
+\begin{equation}\label{eqn:eqSm}
+    Sm_{\infty}(\phi) = \frac{\gamma_{Pm} \Sigma_f^F }{\sigma_a^{Sm}}
 \end{equation}
-
-\subsubsection{Burnable Poison Control}
-\acsp{lwr} are commonly controlled using neutron absorbing additives in two ways \cite[Ch. 8]{Kerlin}:
-\begin{enumerate*}
-    \item Burnable poisons (typically poisons who's daughter are neutron-transparent \cite[Ch. 14]{DH}) are placed in certain fuel rods to flatten the power profile; and 
-    \item Soluble poisons (\ie chemical shim) dissolved in the moderator/coolant to account for non-equilibrium fission product poison build-up and fissile material depletion.
-\end{enumerate*}
-
-\acsp{msr} may be able to use the intersection of these two concepts; a neutron poison may be added to the molten salt mixture to counter-act the poison reactivity built-up by equilibrium poisons like \Xe and \Sm. Enough poison would need be added to the fuel salt to equate the reactivity of fresh fuel to the reactivity fuel with \Xe and \Sm at their equilibrium levels. There are many candidates for such a soluble poison, including boron-10 and isotopes of gadolinium, hafnium, and other lanthanides.
-
-An ideal poison for this application should form a compound that is soluble in the molten salt at the desired level, and it should be burnt at a rate similar to the formation rate of its fission product counterpart. As the concentration of the fission product poisons build up, the concentration of the burnable poison depletes, and unlike chemical shimming, the consumed poison would not be replenished. Making the average core reactivity equivalent upon cold-clean start-up and equilibrium would simplify the gain and bias scheduling early in the fuel lifetime, particularly if the burnable poison has an appropriate effective half-life.
 
 \subsection{Shut-down}
-Planned shut-down, either for scheduled maintenance or due to a lack of demand, is quite simple. The heat exchanger load is brought to zero or very low power, and the core set-point gradually follows. Careful tuning of the pre-filter time constant can alleviate potential thermal hydraulic (\eg stagnation or reverse-flow) and thermophysical (\eg salt precipitation, freezing, or vaporization) concerns \cite{CarterNumerical}. Whether the reactor is shut down for planned purposes or in an emergency, a decay heat \cite{TodreasKazimi1} removal system will need to be designed to keep the salt from vaporizing. The emergency shut-down (SCRAM) system and decay heat removal systems are briefly discussed in Chapter \ref{Chapter:Conclusions-FutureWork}.  
+Planned shut-down, either for scheduled maintenance or due to a lack of demand, is quite simple. The heat exchanger is brought to very low power, and the core set-point gradually follows. Careful tuning of the pre-filter time constant can alleviate potential thermal hydraulic (\eg stagnation or reverse-flow) and thermophysical (\eg salt precipitation, freezing, or vaporization) concerns \cite{CarterNumerical}. Whether the reactor is shut down for planned purposes or in an emergency, a decay heat removal system is needed to keep the salt from vaporizing \cite{TodreasKazimi1}. The emergency shut-down (SCRAM) system and decay heat removal systems are briefly discussed in Chapter \ref{Chapter:Conclusions-FutureWork}.  
 
 \subsection{Re-start}
-Compound dynamics in the \Xe decay chain result in the generation of a large poison reactivity in the hours following a shut-down. This can make restarting the reactor difficult or impossible for a period of approximately two days. When the reactor is shut down, each flux-containing term in the system of ODEs (\ref{eqn:diffI} and \ref{eqn:diffXe}) goes to zero, and the concentrations of the two nuclides are described by the Bateman equations \cite{Bateman}, which have a readily available solution (\ref{eqn:I_inf} and \ref{eqn:Xe_inf}), given some initial condition \cite{Lamarsh}. \I follows simple exponential decay. \Xe has a longer half-life than \I, as well as a lower equilibrium concentration (owing to its huge radiative capture cross-section). This causes an inverse response, where the \Xe concentration initially spikes before its population grows and the \I population shrinks to the point that the rate of \Xe decay exceeds its formation. 
+Compound dynamics in the \Xe decay chain result in the generation of a large poison reactivity in the hours following a shut-down. This can make restarting the reactor difficult or impossible for a period of approximately two days. 
 
-\begin{equation}\label{eqn:I_inf}
-    I(t) = I_0e^{-\lambda_I t}
-\end{equation}
-\begin{equation}\label{eqn:Xe_inf}
-    Xe(t) = Xe_0e^{-\lambda_{Xe} t}+\frac{\lambda_I I_0}{\lambda_I - \lambda_{Xe}}(e^{\lambda_{Xe}t}-e^{\lambda_{I}t})
-\end{equation}
-
-Most nuclear reactors are not designed with enough excess control reactivity to overcome the iodine pit, so they must wait for the xenon to decay. If the control system does have the ability to restart during the xenon peak, it can require over actuation or disrupt downstream systems. When the fission chain reaction is restarted, the neutron flux increases and begins transmuting \Xe. The removal of poisons is akin to positive reactivity insertion \cite{Roberson}. Decreasing poison concentration increases the neutron population and therefore the rate of poison removal.  
-
-The duration of the xenon spike may be shortened by adding an additional negative term to \ref{eqn:diffXe}. This is not physically realizable in cladded solid fuel reactors. It is however possible to remove a gaseous solvent from a liquid (such as \acs{msr} fuel) through a process called stripping \cite[Ch. 10]{Geankoplis}. Helium may be bubbled through the molten salt in a sparge tube, and the xenon (as well as any other fission gasses \cite{Offgas}) would preferentially transport into the gaseous phase which would later be separated in a cyclone or similar apparatus \cite{ORNL-masstransport}. This advective removal of \Xe would allow the \acs{msnb} to be restarted without having to wait for the poison to decay \cite{RootXe}. \Sm is stable and strongly dissolved in the molten salt, so it is always `burnt off' during restart \cite[Ch. 7]{Lamarsh}.
+The duration of the xenon spike may be shortened by adding an additional negative term to \ref{eqn:diffXe}. This is not physically realizable in cladded solid fuel reactors but the concept of xenon stripping to do just this is studied numerically in Chapter \ref{Chapter:Xenon} \cite{RootXe}. \Sm is stable and strongly dissolved in the molten salt, so super-equilibrium samarium is always `burnt off' during restart \cite[Ch. 7]{Lamarsh}.
