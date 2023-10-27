@@ -115,7 +115,7 @@ It is however possible to strip a gaseous solvent from a liquid such as \acs{msr
 Instead of waiting for such a chance incident to occur, a bulk gas phase can be bubbled through the salt, which provides interfacial area across which and volume into which the xenon will preferentially transport through an operation called stripping \cite[Ch. 10]{Geankoplis}. \cite{ORIGEN} has studied the off-gassing of nobel gas fission products from liquid fueled \acs{msr}, including the \acs{msre}. This was modeled using flow blocks in SCALE's TRITON sequence by assuming or calculating a removal constant for fission gasses that transport into the off-gas. The present work extends upon this idea by deriving a removal constant composed from optionally time dependent parameters for a single stage equilibrium stripper, and implementing it in an open source solver. For this purpose \ref{eq:diffXe} is modified with the addition of the stripping term which will be derived in Section \ref{sec-masstransport} (\ref{eq:diffXe_strip_generic}).
 
 \section{Methodology}\label{sec-meth}
-A two pronged methodology is employed to model the xenon-iodine decay chain in an \acs{msr} with the addition of xenon stripping. A unique model was derived to describe the thermodynamic equilibrium products of a unit operation that removes dissolved and entrained xenon gas from a molten salt by preferential transport into a bulk helium stream (see Section \ref{sec-masstransport}). This model is combined with the well understood model of the \Xe system described in Section \ref{sec-decay} to form: 
+A two pronged methodology is employed to model the xenon-iodine decay chain in an \acs{msr} with the addition of xenon stripping. A unique model was derived to describe the thermodynamic equilibrium products of a unit operation that removes dissolved and entrained xenon gas from a molten salt by preferential transport into a bulk helium stream (see Section \ref{sec-masstransport}). This model is combined with the well understood model of the \Xe system described in Section \ref{sec-decay} to form \ref{eq:diffXe_strip}, which is the basis for this work and is solved numerically in Section \ref{sec-script}. 
 
 \begin{equation} \label{eq:diffXe_strip_generic}
     \frac{dXe}{dt} =
@@ -125,8 +125,6 @@ A two pronged methodology is employed to model the xenon-iodine decay chain in a
         \;-\left(\frac{dXe}{dt}\right)_{strip}
 \end{equation}
 
-which is the basis for this work and is solved numerically in Section \ref{sec-script}. 
-
 \subsection{Two-phase Equilibrium Mass Transport}\label{sec-masstransport}
 The stripping term from \ref{eq:diffXe_strip_generic} is derived in this section. Dissolved gasses follow Henry's law, at low concentration: 
 
@@ -134,9 +132,7 @@ The stripping term from \ref{eq:diffXe_strip_generic} is derived in this section
     C_{\ell} = Hp
 \end{equation}
 
- This describes a relationship between the concentration of the solute in the liquid phase ($C_{\ell}$) and the partial pressure of the solute in the cover gas ($p$) when the two phases are in equilibrium \cite[Ch. 10]{Geankoplis}. Fresh cover gas can be supplied to strip the solute into the cover gas.
-
-By considering total pressure of the cover gas and assuming an equation of state, Henry's law can be modified to be expressed in terms of gas phase concentration instead of partial pressure, as shown by: 
+ This describes a relationship between the concentration of the solute in the liquid phase ($C_{\ell}$) and the partial pressure of the solute in the cover gas ($p$) when the two phases are in equilibrium \cite[Ch. 10]{Geankoplis}. Fresh cover gas can be supplied to strip the solute into the cover gas. By considering total pressure of the cover gas and assuming an equation of state, Henry's law can be modified to be expressed in terms of gas phase concentration instead of partial pressure, as shown by: 
 
 \begin{equation}\label{eq:henry-modified}
     C_{\ell} = H^{*}C_g
@@ -193,7 +189,7 @@ This derivation neglects the positional variance of xenon-135 concentration resu
 The stripping term in \ref{eq:diffXe_strip} is mathematically undefined at zero helium flow rate. It can logically be inferred (and shown by taking the limit of the term as $\dot{V}_{He}$ approaches zero) that such a case corresponds to zero stripping change.
 
 \subsection{Numerical Solver} \label{sec-script}
-A numerical solver was derived in Python 3.10 to track the time dependent \I and \Xe concentrations while giving the user control over the neutron flux and helium flow rate throughout the process\footnote{The numerical solver is available at \href{https://github.com/sjroot97/NumericalSolverXe135}{https://github.com/sjroot97/NumericalSolverXe135}. Users are permitted free use of the solver with the condition that any refinements, advancements, or plug-ins built-on also be shared freely.}\note{put solver in appendix and add mention in footnote or text} This allows the user to investigate the change in xenon poisoning after a power change, and the effectiveness of the equilibrium stripper characterized in Section \ref{sec-masstransport} in shortening the post-scram restart time in an \acs{msr}. Euler's forward method is applied, where the nuclide concentrations for the next time step are calculated 
+A numerical solver was derived in Python 3.10 to track the time dependent \I and \Xe concentrations while giving the user control over the neutron flux and helium flow rate throughout the process\footnote{The numerical solver is available at \href{https://github.com/sjroot97/NumericalSolverXe135}{https://github.com/sjroot97/NumericalSolverXe135}. The version of the solver used to plot \cref{fig:PeakRestart} is included in Appendix \ref{app:solver} as an example. Users are permitted free use of the solver with the condition that any refinements, advancements, or plug-ins built-on also be shared freely.} This allows the user to investigate the change in xenon poisoning after a power change, and the effectiveness of the equilibrium stripper characterized in Section \ref{sec-masstransport} in shortening the post-scram restart time in an \acs{msr}. Euler's forward method is applied, where the nuclide concentrations for the next time step are calculated 
 using the current concentrations and the current rates of change, given by \ref{eq:diffI} and \ref{eq:diffXe_strip}:
 
 \begin{equation}\label{eq:I_Euler}

@@ -1,10 +1,16 @@
-\contentsline {code}{\numberline {1}{\ignorespaces drum.py\relax }}{36}{code.1}%
-\contentsline {code}{\numberline {2}{\ignorespaces salt.py\relax }}{36}{code.2}%
-\contentsline {code}{\numberline {3}{\ignorespaces makedeck.py\relax }}{37}{code.3}%
-\contentsline {code}{\numberline {4}{\ignorespaces cell.txt\relax }}{38}{code.4}%
-\contentsline {code}{\numberline {5}{\ignorespaces surface.txt\relax }}{40}{code.5}%
-\contentsline {code}{\numberline {6}{\ignorespaces drum.txt\relax }}{42}{code.6}%
-\contentsline {code}{\numberline {7}{\ignorespaces salt.txt\relax }}{43}{code.7}%
-\contentsline {code}{\numberline {8}{\ignorespaces material.txt\relax }}{45}{code.8}%
-\contentsline {code}{\numberline {9}{\ignorespaces physics.txt\relax }}{47}{code.9}%
-\contentsline {code}{\numberline {10}{\ignorespaces plot.txt\relax }}{47}{code.10}%
+\contentsline {code}{\numberline {1}{\ignorespaces Library Imports\relax }}{36}{code.1}%
+\contentsline {code}{\numberline {2}{\ignorespaces Class Core\relax }}{36}{code.2}%
+\contentsline {code}{\numberline {3}{\ignorespaces Class Nuclide\relax }}{38}{code.3}%
+\contentsline {code}{\numberline {4}{\ignorespaces Solver Functions\relax }}{40}{code.4}%
+\contentsline {code}{\numberline {5}{\ignorespaces Instantiate Solver\relax }}{41}{code.5}%
+\contentsline {code}{\numberline {6}{\ignorespaces Run Solver\relax }}{42}{code.6}%
+\contentsline {code}{\numberline {7}{\ignorespaces drum.py\relax }}{43}{code.7}%
+\contentsline {code}{\numberline {8}{\ignorespaces salt.py\relax }}{43}{code.8}%
+\contentsline {code}{\numberline {9}{\ignorespaces makedeck.py\relax }}{44}{code.9}%
+\contentsline {code}{\numberline {10}{\ignorespaces cell.txt\relax }}{45}{code.10}%
+\contentsline {code}{\numberline {11}{\ignorespaces surface.txt\relax }}{47}{code.11}%
+\contentsline {code}{\numberline {12}{\ignorespaces drum.txt\relax }}{49}{code.12}%
+\contentsline {code}{\numberline {13}{\ignorespaces salt.txt\relax }}{50}{code.13}%
+\contentsline {code}{\numberline {14}{\ignorespaces material.txt\relax }}{52}{code.14}%
+\contentsline {code}{\numberline {15}{\ignorespaces physics.txt\relax }}{54}{code.15}%
+\contentsline {code}{\numberline {16}{\ignorespaces plot.txt\relax }}{54}{code.16}%
