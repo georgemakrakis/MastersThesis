@@ -24,6 +24,8 @@
 \usepackage[colorinlistoftodos,prependcaption,textsize=tiny]{todonotes}
 \newcommandx{\note}[2][1=]{\todo[linecolor=orange,backgroundcolor=yellow!25,bordercolor=orange,#1]{#2}}
 
+
+\usepackage[capitalise,noabbrev]{cleveref}
 % --------------------------------------------------------------------------
 % Thesis Information
 \title{Dynamic System Modeling \& \acs{pid} Controller Design \\for a Molten Salt Microreactor}
@@ -160,6 +162,11 @@ pdfprintscaling={AppDefault}}
 \printnoidxglossary[title={List of Acronyms}]
 \newpage
 
+% -- Statement of Contribution --
+\frontmattersection{Statement of Contribution}
+\include{Frontmatter/Contribution}
+\newpage
+
 % ------------------------------------------------------------
 \mainmatter  % Starts the content part of the thesis
 \setcounter{secnumdepth}{2}  % Sets depth section numbers go to.
@@ -171,6 +178,9 @@ pdfprintscaling={AppDefault}}
 
 % -- Process Control Engineering --
 \include{Chapters/Controls}
+
+% -- Xenon Paper --
+\include{Chapters/Xenon}
 
 % -- Reactor Characterization --
 \include{Chapters/Modeling}

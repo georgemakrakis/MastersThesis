@@ -301,3 +301,6 @@ This thesis of \@author, submitted for the degree of \@degree\ with a Major in \
 \newacronym{mm}{MIMO}{Multi-Input Multi-Output}
 \newacronym{ss}{SISO}{Single-Input Single-Output}
 \newacronym{haleu}{HALEU}{High-Assay Low-Enriched Uranium}
+\newacronym{ies}{IES}{Integrated Energy System}
+\newacronym{ode}{ODE}{Ordinary Differential Equation}
+\newacronym{ess}{ESS}{Energy Storage System}
