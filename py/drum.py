@@ -1,3 +1,4 @@
+#./drum.py
 def card(deg):
     with open('cards/drum.txt','w') as drumcards:
         drumcards.write(f'% Control drum absorber pads, numbered clockwise from 9 o clock\n')

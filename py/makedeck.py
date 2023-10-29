@@ -1,3 +1,4 @@
+#./makedeck.py
 import datetime,os
 import salt, drum
 now =datetime.date.today()

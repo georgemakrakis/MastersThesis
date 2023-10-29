@@ -1,3 +1,4 @@
+%./cards/physics.txt
 % ______________________Physics cards_____
 set power 1e7 %10MWth
 set pop 1000000 500 100 1

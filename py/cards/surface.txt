@@ -1,3 +1,4 @@
+%./cards/surface.txt
 % _________________SURFACE CARDS_______________
 %
 % Reactor planes
@@ -63,7 +64,7 @@ surf 76 cyl 0 -45.05 2 % drum drive tube inner 7
 surf 67 cyl -31.8551605 -31.8551605 2.5 % drum drive tube outer 8
 surf 77 cyl -31.8551605 -31.8551605 2 % drum drive tube inner 8
 %
-WRITE_PADS
+WRITE_PADS %This line tells the python code to write the pads
 %
 % Control drums, likewise
 surf 90 cyl -45.05 0 17   % drum 1
