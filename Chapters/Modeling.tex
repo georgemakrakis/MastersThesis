@@ -39,7 +39,16 @@ Figure \ref{fig:Plotter-YZ} is an axial cross-section of the \acs{msnb}. Figure 
 \end{figure}
 
 \subsection{Molten Salt}
-The molten salt in the \acs{msnb} serves as both the primary coolant and the fuel. It is composed of 18 mol\% \acs{haleu} \UF \; (enriched to 19.75\%) dissolved in eutectic \flinak (enriched to 99.99\% \Li[7]). It is composed of about 1.4 atom\% \U[235]. The remaining composition is listed in Table \ref{tab:saltcomp}.
+The molten salt in the \acs{msnb} serves as both the primary coolant and the fuel. It is composed of 18 mol\% \acs{haleu} \UF \; (enriched to 19.75\%) dissolved in eutectic \flinak (enriched to 99.99\% \Li[7]). It is composed of about 1.4 atom\% \U[235]. The remaining composition is listed in Table \ref{tab:saltcomp}. This molten salt fuel system has been studied in previous work \cite{CarterPHD}. The present work leverages intermediate calculations, such as the thermophysical property temperature functions of the salt.
+
+\begin{equation}\label{eq:saltdens}
+    \rho = 
+\end{equation}
+\begin{equation}\label{eq:saltcp}
+    c_p = 
+\end{equation}
+
+\flinak was selected for study due to its thermal properties and prevalence in \acs{msr} research, and \UF \; was selected as it is soluble in \flinak to a concentration that has a wide liquidus range, supports criticality in the reactor geometry necessary to fit into a shipping container, and provides adequate power density for thermalhydraulic design. 
 
 \begin{table}[ht!]
     \caption[Molten salt composition]{Composition of molten salt prior to burn-up}
@@ -77,3 +86,4 @@ Stratification
 \subsection{Neutron Spectra}
 
 \section{Process Simulation}\label{Section:Python}
+First principle physics were implemented 
