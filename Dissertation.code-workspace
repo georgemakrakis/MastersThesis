@@ -6,7 +6,8 @@
 	],
 	"settings": {
 		"cSpell.words": [
-			"dottedtocline"
+			"dottedtocline",
+			"strans"
 		],
 		"workbench.colorCustomizations": {
 			"activityBar.activeBackground": "#e9ca00",

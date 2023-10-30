@@ -1,4 +1,4 @@
-%
+% ./cards/material.txt
 % 304 Stainless Steel
 mat SS304 -7.5983 tmp 923 rgb 192 192 192
 26054.06c -0.037589 %54-Fe

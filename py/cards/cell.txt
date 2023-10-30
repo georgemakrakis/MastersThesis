@@ -1,3 +1,4 @@
+%./cards/cell.txt
 % ________________CELL CARDS____________________
 %
 % Fuel in Inlet, Outlet, and Downcomer

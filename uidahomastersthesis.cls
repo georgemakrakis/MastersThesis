@@ -10,8 +10,8 @@
 \RequirePackage[table]{xcolor}
 \RequirePackage{amsmath,amsfonts,amssymb,nicefrac}
 \RequirePackage[eulergreek]{sansmath}
-%\RequirePackage[showframe]{geometry}
-\RequirePackage{geometry}
+\RequirePackage[showframe]{geometry} %use showframe to check that nothing infringes on margins
+%\RequirePackage{geometry}
 \RequirePackage{array}
 \RequirePackage{graphicx} % Allows placement of graphics
 \RequirePackage{setspace} % Allows fcns like doublespace, singlespace, and singlehalfspacing of text
@@ -271,7 +271,7 @@ This thesis of \@author, submitted for the degree of \@degree\ with a Major in \
 \newcommand{\Po}[1][]{$^{#1}Po$ }
 \newcommand{\Ra}[1][]{$^{#1}Ra$ }
 
-\newcommand{\UF}[1][4]{$UF_{#1}$}
+\newcommand{\UF}[1][4]{UF\textsubscript{#1}}
 \newcommand{\flinak}{FLiNaK }
 \newcommand{\flibe}{FLiBe }
 

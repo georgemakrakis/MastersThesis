@@ -1,3 +1,4 @@
+#./salt.py
 def uranium(enrich):
     total = 1.40246e-2 + 5.69859e-2
     u235 = total*enrich/100

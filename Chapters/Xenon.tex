@@ -7,7 +7,7 @@ Xenon-135 is the strongest known neutron poison; its precursor chain is prominen
 The concentration of Xenon-135 in nuclear reactor fuel  has a large influence on core reactivity. Its effect is most prevalent after a reactor is shut-down. When the neutron flux is cut-off, the poison is no longer formed from fission reactions, nor removed by neutron absorption. Iodine-135 continues to decay, however, and acts as a residual source of \Xe. For the first several hours after the shutdown, \Xe is formed by precursor decay faster than it decays. This results in a spike in the fuel \Xe concentration. Nuclear reactors are not typically designed with enough excess reactivity to overcome this `iodine pit', and must wait for the excess xenon to decay.  Even if the control system does have the ability to restart during the xenon peak, it may be hazardous to do so, and is against regulation \cite{ChernobylNRC,CFR}.
 
 \subsection{Motivation}
-At utility scale baseload power plants, shut-down often precedes maintenance, where the reactor needs to remain off for this time period regardless of the iodine pit. Microreactors may not have this luxury \cite{micro}. These are small reactors often considered to fit well into microgrids \cite{BikashMicro} and \acfp{ies} \cite{AmeyIES}. Such systems tend to rely on batteries and thermal storage for fast demand response, which allows the microreactor to operate on a `nuclear island'. These \acfp{ess} come with a significant additional footprint and economic cost. Cost is already a large factor hampering the defossilization of microgrids and power peaking. Eliminating the need for an \acs{ess} by building a more dynamic nuclear reactor system would increase the number of applications where microreactors are economically viable.
+At utility scale base-load power plants, shut-down often precedes maintenance, where the reactor needs to remain off for this time period regardless of the iodine pit. Microreactors may not have this luxury \cite{micro}. These are small reactors often considered to fit well into microgrids \cite{BikashMicro} and \acfp{ies} \cite{AmeyIES}. Such systems tend to rely on batteries and thermal storage for fast demand response, which allows the microreactor to operate on a `nuclear island'. These \acfp{ess} come with a significant additional footprint and economic cost. Cost is already a large factor hampering the defossilization of microgrids and power peaking. Eliminating the need for an \acs{ess} by building a more dynamic nuclear reactor system would increase the number of applications where microreactors are economically viable.
  
 The relative ease of fluid phase separation engineering gives molten salt microreactors an advantage over their solid fueled counterparts \cite{CarterPHD,PetersonMS}; negative poison reactivity may be expelled from the core rather than counteracted with a huge amount of positive control reactivity \cite{ORNL-xenonbehavior}. The application of transport phenomenon to manipulate a macroscopic equilibrium is the essence of the unit-operation discipline of chemical engineering. Implementing this concept on an \acs{msr} contributes to the goal of studying how a certain Generation-IV reactor design lends itself to a specific function. Many companies are competing on the frontier of small nuclear reactor development, and several of them are using molten salts. They may be able to achieve significant market penetration in highly dynamic environments and non-traditional markets by accelerating \Xe removal. Furthermore, the ability to remove poison from the core without refueling offers the opportunity to achieve deeper burn-up and increased fuel longevity, which supports the goal of building decade scale microreactors. 
 
@@ -93,9 +93,7 @@ When the reactor is scrammed, each flux-containing term in the system of \acsp{o
     Xe(t) = Xe_{\infty}e^{-\lambda_{Xe} t}+I_{\infty}\frac{\lambda_I}{\lambda_I - \lambda_{Xe}}(e^{-\lambda_{Xe}t}-e^{-\lambda_{I}t})
 \end{equation}
 
-In this case the initial conditions are the equilibrium levels described by \ref{eq:I_eq} and \ref{eq:Xe_eq}. \I follows simple exponential decay. \Xe has a longer half-life than \I, as well as a lower equilibrium concentration (owing to its huge radiative capture cross-section). This results in an inverse response, where the \Xe concentration initially spikes before its decay rate exceeds its formation. \Cref{tab:params} contains literature values for the constants relevant to the iodine-xenon system. 
-
-The time between the scram and the peak \Xe concentration, can be calculated by setting the derivative of \ref{eq:Xe_bateman} to zero:
+In this case the initial conditions are the equilibrium levels described by \ref{eq:I_eq} and \ref{eq:Xe_eq}. \I follows simple exponential decay. \Xe has a longer half-life than \I, as well as a lower equilibrium concentration (owing to its huge radiative capture cross-section). This results in an inverse response, where the \Xe concentration initially spikes before its decay rate exceeds its formation. \Cref{tab:params} contains literature values for the constants relevant to the iodine-xenon system. The time between the scram and the peak \Xe concentration, can be calculated by setting the derivative of \ref{eq:Xe_bateman} to zero:
 
 \begin{equation}\label{eq:Xe_peak}
     t_{max} = \frac{ln\left(\frac{\lambda_{Xe}}{\lambda_{I}^2}\frac{Xe_{\infty}}{I_{\infty}}\right)\left(\lambda_{I}-\lambda_{Xe}\right)+\frac{\lambda_{Xe}}{\lambda_{I}}}{\lambda_{Xe}-\lambda_{I}}
@@ -143,11 +141,11 @@ An early study conducted at \acs{oak} predicted such a unitless Henry's Law cons
 Consider a co-current sparge pipe stripper that uses fresh helium to remove dissolved and entrained xenon from molten salt fuel. The helium does not react and simply provides a bulk gas phase for macroscopic-scale xenon transport. If the interfacial area in the pipe is sufficient, the xenon concentration in the outlet-gas stream will be in equilibrium with that of the liquid outlet. \cref{fig:strip} is a schematic drawing of such a stripper and shows the xenon concentration at the inlet and outlet of the molten salt and gas streams, as well as the volumetric flow rate of each stream. 
 
 \begin{figure}[ht!]\centering
-    \resizebox*{0.95\textwidth}{!}{\input{./tikz/stripper}}
-    \caption[Schematic Drawing of Xenon Stripping Module]{Schematic Drawing of Xenon Stripping Module. Fresh helium and molten salt with a given} \Xe concentration enters on the left. Dissolved and entrained xenon preferentially transports from the liquid phase to the gaseous stream. Loaded helium and molten salt with a lower \Xe concentration exit on the right. The exiting streams are in equilibrium with each other according to Henry's Law. 
+    \resizebox*{0.75\textwidth}{!}{\input{./tikz/stripper}}
+     \caption[Schematic Drawing of Xenon Stripping Module]{Schematic Drawing of Xenon Stripping Module. Fresh helium and molten salt with a given} \Xe concentration enters on the left. Dissolved and entrained xenon preferentially transports from the liquid phase to the gaseous stream. Loaded helium and molten salt with a lower \Xe concentration exit on the right. The exiting streams are in equilibrium with each other according to Henry's Law. 
     \label{fig:strip}
 \end{figure}
-
+\note{why is the caption centered}
 The salt enters with \Xe concentration equal to that of the xenon level in the core, and exits at some lower value. The helium enters with no xenon, and exits with a \Xe concentration in equilibrium with the salt's outlet concentration. This analysis is based on the horizontal co-current sparge pipe designed at \acs{oak} during the \acf{msre} \cite{ORNL-masstransport}. A counter-current design may allow for greater stripping effectiveness by maintaining a more constant (and therefore a larger log-mean average) driving force, but it makes the separation of phases more challenging. The horizontal design also eliminates hydrostatic pressure differential across the unit operation, so a constant volumetric gas-phase flow rate constant across the module can be assumed.
 
 
@@ -212,7 +210,7 @@ Class method `scram' can optionally call a subroutine (class method delayed\_neu
     \phi^{d}(t) = \phi_{0} \vec{\beta} \cdot e^{-t\vec{\lambda}}
 \end{equation}
 
-The solver then checks if the list contains values, and removes the zeroth value, assigning it to be the new flux using the `pop' method. This approach can be used to treat any parameter assumped to be constant in this paper as a time-variable.
+The solver then checks if the list contains values, and removes the zeroth value, assigning it to be the new flux using the `pop' method. This approach can be used to treat any parameter assumed to be constant in this paper as a time-variable.
 
 \begin{table}[ht!]
     \caption[Delayed neutron data]{Delayed neutron fraction ($\beta$) and decay constant ($\lambda$) for \U[235] \cite{Kerlin}. The total delayed neutron fraction is 0.67\%}
@@ -245,12 +243,27 @@ Natural circulation systems in the fully developed turbulent flow regime have a 
 
 First, a base case study was conducted where the xenon stripping module remained off for the entire experiment. The reactor is started, operates until \I and \Xe levels equilibrate, and is scrammed. The results given by the numerical solver are compared with characteristic stationary points of the analytical solutions so that the model can be benchmarked before moving on to studies where the stripping term is required.
 
-\begin{figure}[b!]
+The \Xe and \I concentration profiles during a clean start-up are depicted by \cref{fig:startup}. The \I level rises to an equilibrium concentration of 28.4 $\nicefrac{mmol}{m^3}$ as a first order response over the course of two days. The \Xe level follows an over-damped second order response to the its equilibrium level (denoted by the horizontal dashed line) of 20.0 $\nicefrac{mmol}{m^3}$. Using \ref{eq:Xe_poison}, equilibrium xenon accounts for -1.38\% of poison reactivity. The `shoulder' during the first few hours is formed because its primary source, precursor decay, is initially null. Similarly, the elongation of the curve is caused by the changing formation rate as the \I concentration rises. 
+
+\begin{figure}[ht!]
     \centering
     \includegraphics[width=0.75\textwidth]{Xenon/start-up}
     \caption[Concentration of \I and \Xe vs. time following start-up]{Concentration of \I and \Xe vs. time following cold/clean start-up. \I and \Xe are formed by fission as soon as the reactor starts. Soon after, \I decays to \Xe, and \Xe captures neutrons, being transmuted to \Xe[136]. These two species reach equilibrium values when generation and consumption are equal.}
     \label{fig:startup}
 \end{figure}
+
+After \I and \Xe equilibrate, the reactor is scrammed by setting the prompt neutron flux to zero, subsequently producing the behavior shown in  \cref{fig:Control}. The \I concentration falls by simple exponential decay, while the \Xe concentration undergoes a second order response with numerator dynamics, peaking at 23.11 $\nicefrac{mmol}{m^3}$ 7 hours after the scram. The -1.60\% xenon reactivity at the peak represents a 16\% super-equilibrium. The \Xe concentration crosses its full power equilibrium 12.4 hours after the scram, which is denoted by a vertical dashed line. Delayed neutrons make a small contribution over the hours following shutdown, decaying from 0.67\% to 1 ppm of the full power flux in under 8 minutes. Impact to the \Xe concentration profile was estimated to be at the part-per-billion order by inspection of results with and without the delayed neutron subroutine.
+
+\subsubsection{Verification of the Numerical Solver} 
+For the given inputs, \ref{eq:I_eq} and \ref{eq:Xe_eq} predict an equilibrium \I concentration of 28.4 $\nicefrac{mmol}{m^3}$, and an equilibrium \Xe concentration of 19.96 $\nicefrac{mmol}{m^3}$. \ref{eq:Xe_peak} predicts that the peak of the inverse response occurs 5.1 hours and 3 minutes after the reactor is scrammed, with a magnitude of 23.1 $\nicefrac{mmol}{m^3}$ obtained by inserting the peak time into \ref{eq:Xe_bateman}. The analytic solutions of characteristic stationary points of the system of \acsp{ode} give identical results with respect to the numerical solver, verifying the results of the model for the benchmark study. 
+
+To further verify the numerical solver, the path by which nuclide concentration approaches equilibrium can be compared to analytical solutions. By making the simplification of constant (time-independent) neutron flux, an analytical solution can be obtained for the \I concentration:
+
+\begin{equation}\label{eq:I_analytical}
+\left.I(t)\right\rvert_\phi = (I_o-I_\infty)e^{-\lambda_I t}+I_\infty
+\end{equation}
+
+The accuracy of the numerical solver was quantified by comparing the \I concentration array to \ref{eq:I_analytical}. An $1-r^2$ score of $1.46\times10^{-8}$ was obtained over the first 48 hours of start-up. This value is not sensitive to the initial condition, with approximately the same $r^2$ value being observed regardless of the \I level at start-up. This was tested over a range from 10\% to 5 times the equilibrium value.
 
 \begin{figure}[ht!]
     \centering
@@ -258,20 +271,6 @@ First, a base case study was conducted where the xenon stripping module remained
     \caption[Concentration of \I and \Xe vs. time following reactor scram]{Concentration of \I and \Xe vs. time following reactor scram. When the reactor is scrammed, fission and transmutation cease. \I and \Xe each continue decaying. Initially, \I decays at a higher rate due to the shorter half-life and larger population. The \Xe concentration reaches its peak when the rate of \I decay drops below the rate of \Xe decay. After the equilibrium value is passed, the reactor may be restarted safely.}
     \label{fig:Control}
 \end{figure}
-
-The \Xe and \I concentration profiles during a clean start-up are depicted by \cref{fig:startup}. The \I level rises to an equilibrium concentration of 28.4 $\nicefrac{mmol}{m^3}$ as a first order response over the course of two days. The \Xe level follows an over-damped second order response to the its equilibrium level (denoted by the horizontal dashed line) of 20.0 $\nicefrac{mmol}{m^3}$. Using \ref{eq:Xe_poison}, equilibrium xenon accounts for -1.38\% of poison reactivity. The `shoulder' during the first few hours is formed because its primary source, precursor decay, is initially null. Similarly, the elongation of the curve is caused by the changing formation rate as the \I concentration rises. 
-
-After \I and \Xe equilibrate, the reactor is scrammed by setting the prompt neutron flux to zero, subsequently producing the behavior shown in  \cref{fig:Control}. The \I concentration falls by simple exponential decay, while the \Xe concentration undergoes a second order response with numerator dynamics, peaking at 23.11 $\nicefrac{mmol}{m^3}$ 7 hours after the scram. The -1.60\% xenon reactivity at the peak represents a 16\% super-equilibrium. The \Xe concentration crosses its full power equilibrium 12.4 hours after the scram, which is denoted by a vertical dashed line. Delayed neutrons make a relatively small contribution over the hours following shutdown, decaying from 0.67\% to 1 ppm of the full power flux in under 8 minutes. Minimal impact to the \Xe concentration profile was estimated to be at the part-per-billion order by inspection of results with and without the delayed neutron subroutine.
-
-\subsubsection{Verification of the Numerical Solver} 
-For the given inputs, \ref{eq:I_eq} and \ref{eq:Xe_eq} predict an equilibrium \I concentration of 28.4 $\nicefrac{mmol}{m^3}$, and an equilibrium \Xe concentration of 19.96 $\nicefrac{mmol}{m^3}$. \ref{eq:Xe_peak} predicts that the peak of the inverse response occurs 5.1 hours and 3 minutes after the reactor is scrammed, with a magnitude of 23.1 $\nicefrac{mmol}{m^3}$ obtained by inserting the peak time into \ref{eq:Xe_bateman}. The analytic solutions of characteristic stationary points of the system of \acsp{ode} give identical results with respect to the numerical solver, verifying the results of the model for the benchmark study.
-
-To further verify the numerical solver, the path by which nuclide concentration approaches equilibrium can be compared to analytical solutions. By making the simplification of constant (time-independent) neutron flux, an analytical solution can be obtained for the \I concentration:
-\begin{equation}\label{eq:I_analytical}
-\left.I(t)\right\rvert_\phi = (I_o-I_\infty)e^{-\lambda_I t}+I_\infty
-\end{equation}
-
-The accuracy of the numerical solver was quantified by comparing the \I concentration array to \ref{eq:I_analytical}. An $1-r^2$ score of $1.46\times10^{-8}$ was obtained over the first 48 hours of start-up. This value is not sensitive to the initial condition, with approximately the same $r^2$ value being observed regardless of the \I level at start-up. This was tested over a range from 10\% to 5 times the equilibrium value.
 
 The \Xe rise to equilibrium is more difficult to analytically solve, owing to the variable generation rate caused by the changing decay rate of \I. Because $I_\infty$ is already known, we can choose this as $I_o$, which makes the \I concentration and \Xe generation rate constant at $\gamma_{Xe}\Sigma_{f}^{F}{\phi}$ and the ODE separable. This is not a physically meaningful calculation, but it does hold mathematical meaning, and the solver is capable of computing it. The solution to this simplified ODE has the same form as \ref{eq:I_analytical}, with the effective decay constant, $\lambda_{Xe}+\sigma_a^{Xe}\phi$, in the exponent. By replicating the assumptions of the simplified ODE, the numerical solver was found to have an $r^2$ value of essentially 1. During normal operation of the solver, some error propagation is expected which would cause the numerical \Xe solution to be slightly less precise. However the low error calculated in the \I verification limits the effect of error propagation.
 
@@ -308,7 +307,7 @@ A more traditional method for accelerating the effective half-life below what is
 \subsubsection{Demand Response}
 Power-peaking is another dynamic energy sector that must be decarbonized. An \acs{msnb} acting in this capacity will need to be able to black-start within minutes of a call for power. To return the \Xe concentration from its peak at 7.0 hours after shut-down to its equilibrium level in 390 seconds (3 hot-standby flow periods) requires a helium flow rate of 2.9 $\nicefrac{mL}{min}$, totalling 19 mL over the entire start-up procedure. \cref{fig:Standby} displays the \I and \Xe as calculated by the numerical solver with these settings. It is identical to \cref{fig:Control} until the peak poison level, when the xenon stripping module is activated and the \Xe level drops rapidly. 
 
-If this standby restart was conducted every day for 10 years, it would require only 1 mole of helium gas. This is a conservative estimate due to the short duration that the xenon-stripping module is active. The solver instantly distributes the effect of the stripped xenon across the entire reactor. This prematurely depresses the mass transport driving force and therefore predicts a lower separation efficacy than would be observed in practice. Expansion of the solver to a 1D+time or multi-region lumped parameter model could improve the accuracy for this case study, at the expense of significanty more computational expense.
+If this standby restart was conducted every day for 10 years, it would require only 1 mole of helium gas. This is a conservative estimate due to the short duration that the xenon-stripping module is active. The solver instantly distributes the effect of the stripped xenon across the entire reactor. This prematurely depresses the mass transport driving force and therefore predicts a lower separation efficacy than would be observed in practice. Expansion of the solver to a 1D+time or multi-region lumped parameter model could improve the accuracy for this case study, at the expense of significantly more computational expense.
 
 \begin{figure}[ht!]
     \centering
@@ -317,7 +316,6 @@ If this standby restart was conducted every day for 10 years, it would require o
     \label{fig:Standby}
 \end{figure}
 
-\newpage
 Operators of an \acs{msr} that is implemented in a power-peaking application will not know exactly when it needs to be restarted, but will need to have the reactor on standby. If this is the case, the xenon stripping module could remain off until the start-up signal comes. The module could then operate at a much higher helium flow rate than seen in the previous experiment for a short period of time similar to the start up time of our current natural gas peaking generators \cite{GE} before the \acs{msnb} is black-started. 
 
 \subsubsection{End of Life Fuel}\label{sec-EOL}

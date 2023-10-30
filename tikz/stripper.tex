@@ -1,18 +1,22 @@
-
-
 \begin{tikzpicture}
-\draw[green, very thick] (-1,-1) rectangle (1,1);
-\filldraw[green!10] (-1,-1) rectangle (1,1);
-%Bottom
-\draw[->] (0,-2)--(0,-1);
-\draw node at (-0.15,-2.15) {\small{$c_{He}^{in} = 0$}};
-%Top
-\draw[->] (0,1)--(0,2);
-\draw node at (0.15,2.15) {\small{$c_{He}^{out} = \nicefrac{c_{salt}^{out}}{H^*}$}};
-%Left
-\draw[->] (-2.75,0)--(-1,0);
-\draw node at (-1.0,0.5) [anchor=east]{\small{$c_{salt}^{in} = Xe(t)$}} ;
-%Right
-\draw[->] (1,0)--(4,0);
-\draw node at (1.0,0.5) [anchor = west]{\small{$c_{salt}^{out} = c_{salt}^{in}-c_{He}^{out}\frac{\dot{V}_{He}}{\dot{V}_{salt}}$}};
-\end{tikzpicture}
+    \draw[green, very thick] (-2,-0.5) rectangle (2,0.5) ;
+    \filldraw[green!10] (-2,-0.5) rectangle (2,0.5);
+    \draw node at (0,0) {\small Xenon Stripper};
+    %Bottom
+    \draw[->,blue] (-1.5,-2)--(-1.5,-0.5);
+    \draw node at (-1.35,-1.55) [anchor=west]{\small{$C_{He}^{in} = 0$}};
+    \draw node at (-1.65,-1.55) [anchor=east]{\small{$\dot{V}_{He}$}};
+    %Top
+    \draw[->,blue] (1.5,0.5)--(1.5,2);
+    \draw node at (1.65,1.55) [anchor=west]{\small{$C_{He}^{out} = \nicefrac{C_{salt}^{out}}{H^*}$}};
+    \draw node at (1.35,1.55) [anchor=east]{\small{$\dot{V}_{He}$}};
+    %Left
+    \draw[->,red] (-3.75,0)--(-2,0);
+    \draw node at (-2.0,0.5) [anchor=east]{\small{$C_{salt}^{in} = Xe(t)$}} ;
+    \draw node at (-3.0,-0.5) {\small{$\dot{V}_{salt}$}} ;
+    %Right
+    \draw[->,red] (2,0)--(5,0);
+    \draw node at (2.0,0.5) [anchor = west]{\small{$C_{salt}^{out} = C_{salt}^{in}-C_{He}^{out}\frac{\dot{V}_{He}}{\dot{V}_{salt}}$}};
+    \draw node at (3.0,-0.5) [anchor=west]{\small{$\dot{V}_{salt}$}} ;
+    \end{tikzpicture}
+    
