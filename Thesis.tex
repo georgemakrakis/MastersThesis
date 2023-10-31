@@ -1,4 +1,4 @@
-\documentclass[12pt]{UIdahoMastersThesis}
+\documentclass[12pt]{./rcs/UIdahoMastersThesis}
 \makeatletter
 
 %\includeonly{Chapters/Introduction}
@@ -200,8 +200,8 @@ pdfprintscaling={AppDefault}}
 \clearpage
 \renewcommand\bibname{References}
 \addcontentsline{toc}{chapter}{\bibname}
-\bibliographystyle{nsf}
-\bibliography{References.bib}
+\bibliographystyle{./rcs/nsf}
+\bibliography{./rcs/References.bib}
 
 % ------------------------------------------------------------
 % -- Appendices --
@@ -211,6 +211,7 @@ pdfprintscaling={AppDefault}}
 %Test
 \input{Appendix/XenonSolver}
 \input{Appendix/Deck}
+\input{Appendix/Simulator}
 
 \end{document}
 

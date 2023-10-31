@@ -31,7 +31,7 @@
 \RequirePackage{gensymb}
 \RequirePackage{url,xurl}
 \urlstyle{same}
-\RequirePackage{slither} %custom package providing syntax highlighting for python and serpent, must have slither.sty in working directory
+\RequirePackage{./rcs/slither} %custom package providing syntax highlighting for python and serpent, must have slither.sty in ./rcs/ directory
 \RequirePackage{hyperref}
 \RequirePackage[acronym,nomain,nonumberlist]{glossaries}
 \RequirePackage[inline]{enumitem}

@@ -104,7 +104,7 @@ The reactor described in Section \ref{Section:Design} was modeled in Serpent 2, 
  
  To approximate the flowing and electrolytic nature of the \acs{msnb} that disperses fission products over time, the burn-up studies were completed without fuel stratification. This is in contrast to how solid fueled burn-up studies are often conducted, where depletion zones are employed to resolve the effects of the spatial neutron flux profile. This provided the new molten salt and boron carbide compositions for the next set of criticality models.
 
-
-
 \section{Process Simulation}\label{Section:Python}
-First principle physics were implemented 
+A multiphysics transient simulation was written in Python to study the \acs{msnb} in dynamic operations by the coupling of the natural circulation flow mode and the passive reactor point kinetic feedback mechanisms. First principle physics were implemented to approximate the expected behavior of the reactor. It is not meant to be a digital twin, but rather a responsive tool for the design of the power controller.
+
+\footnote{The input file writing script is available at \href{https://github.com/sjroot97/MsNB-Simulator/}{https://github.com/sjroot97/MsNB-Simulator/} and is also included in Appendix \ref{app:Simulator}.}
