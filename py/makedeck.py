@@ -3,7 +3,7 @@ import datetime,os
 import salt, drum
 now =datetime.date.today()
 
-deg = float(input(''))
+deg = 112#float(input('')), take input to interact with Bash
 enrich = 19.75 #percentage
 folder = f'./results/{deg}'
 

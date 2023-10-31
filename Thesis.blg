@@ -1,0 +1,70 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: Thesis.aux
+Reallocating 'name_of_file' (item size: 1) to 25 items.
+A level-1 auxiliary file: Frontmatter/Abstract.aux
+Reallocating 'name_of_file' (item size: 1) to 33 items.
+A level-1 auxiliary file: Frontmatter/Acknowledgements.aux
+Reallocating 'name_of_file' (item size: 1) to 27 items.
+A level-1 auxiliary file: Frontmatter/Dedication.aux
+Reallocating 'name_of_file' (item size: 1) to 29 items.
+A level-1 auxiliary file: Frontmatter/Contribution.aux
+Reallocating 'name_of_file' (item size: 1) to 26 items.
+A level-1 auxiliary file: Chapters/Introduction.aux
+Reallocating 'name_of_file' (item size: 1) to 22 items.
+A level-1 auxiliary file: Chapters/Controls.aux
+Reallocating 'name_of_file' (item size: 1) to 19 items.
+A level-1 auxiliary file: Chapters/Xenon.aux
+Reallocating 'name_of_file' (item size: 1) to 22 items.
+A level-1 auxiliary file: Chapters/Modeling.aux
+Reallocating 'name_of_file' (item size: 1) to 20 items.
+A level-1 auxiliary file: Chapters/Design.aux
+Reallocating 'name_of_file' (item size: 1) to 21 items.
+A level-1 auxiliary file: Chapters/Results.aux
+Reallocating 'name_of_file' (item size: 1) to 25 items.
+A level-1 auxiliary file: Chapters/Conclusions.aux
+Reallocating 'name_of_file' (item size: 1) to 4 items.
+The style file: nsf.bst
+Reallocating 'name_of_file' (item size: 1) to 15 items.
+Database file #1: References.bib
+You've used 53 entries,
+            2823 wiz_defined-function locations,
+            1414 strings with 22986 characters,
+and the built_in function-call counts, 16095 in all, are:
+= -- 872
+> -- 544
+< -- 5
++ -- 215
+- -- 162
+* -- 739
+:= -- 1870
+add.period$ -- 178
+call.type$ -- 53
+change.case$ -- 60
+chr.to.int$ -- 15
+cite$ -- 106
+duplicate$ -- 1771
+empty$ -- 1573
+format.name$ -- 196
+if$ -- 3440
+int.to.chr$ -- 0
+int.to.str$ -- 53
+missing$ -- 588
+newline$ -- 368
+num.names$ -- 53
+pop$ -- 936
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 283
+stack$ -- 0
+substring$ -- 193
+swap$ -- 1016
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 70
+width$ -- 55
+write$ -- 680
