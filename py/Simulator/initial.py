@@ -26,7 +26,7 @@ def Power(Th,Tc):                 #Input Celcius
 
 def algorithm(Q): #performs a binary search
     '''
-    This function is called by the <Calculate Initial Conditions> block of simulation.py. It first checks the power from 700 to 600. Then uses binary search to change the cold temperature until the desired power is obtained, to a defined number of sig figs. Change variables Tmax and Tmin in this file to adjust the starting cold temp or hot temp
+    This function is called by the <Calculate Initial Conditions> block of simulation.py. It first checks the power from 700 to 600. Then uses binary search to change the cold temperature until the desired power is obtained. Change variables Tmax and Tmin in this file to adjust the starting cold temp or hot temp
     '''
     dT = dTmax
     T_cold = Tmax-dT 

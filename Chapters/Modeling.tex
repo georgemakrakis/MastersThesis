@@ -51,7 +51,7 @@ The molten salt in the \acs{msnb} serves as both the primary coolant and the fue
 \flinak was selected for study due to its thermal properties and prevalence in \acs{msr} research, and \UF \; was selected as it is soluble in \flinak to a concentration that has a wide liquidus range, supports criticality in the reactor geometry necessary to fit into a shipping container, and provides adequate power density for thermal hydraulic design. 
 
 \begin{table}[ht!]
-    \caption[Molten salt composition]{Composition of molten salt prior to burn-up}
+    \caption[Molten salt composition]{\raggedright Composition of molten salt prior to burn-up}
     \centering
     \begin{tabular}{rl|cc}
      Element&Isotope&Atom Percent & Weight Percent \\ \hline
@@ -117,7 +117,141 @@ The simulation is built on three physics principles:
 \begin{figure}[ht!]
     \centering
     \includegraphics[width=0.5\textwidth]{FlowDiagram}
-    \caption[Process simulator logic flow diagram]{Logic flow diagram for the finite element \acs{msnb} transient process simulator.}
+    \caption[Process simulator logic flow diagram]{\raggedright Logic flow diagram for the \acs{msnb} transient process simulator.}
     \label{fig:PythonFlowDiagram}
 \end{figure}
 
+Figure \ref{fig:PythonFlowDiagram} is a logic flow diagram that describes how the code simulates the dynamic operation of the \acs{msnb}. Similar to previous work, the flow loop of the reactor was simplified into a 1-dimensional flow loop with equal flow area throughout \cite{CarterNumerical,CarterPHD,Root}. The simulator is broken up into two different sections - first the problem is set-up, then the transient is simulated in a finite element time loop with time steps of 1 second. The model is described in Sections \ref{Section:initial} and \ref{Section:advance}, and rely on the parameters listed in Table \ref{tab:FEMparams}
+
+\begin{table}[ht!]
+    \caption[\acs{msnb} simulation parameters]{\raggedright System parameters used in the simulation of the \acs{msnb} \cite{CarterNumerical}. }
+    \centering\begin{tabular}{r|ccl}
+        &  Value &  Unit &  Description \\ \hline
+    $\alpha_T$ & $-3.5$ & pcm/K & Temperature reactivity feedback coefficient \\
+    $\ell^*$ & $1.63 \times 10^{-4}$  & sec & Mean neutron generation time \\
+    $\beta_{eff}$ & $6.96 \times 10^{-3}$  & - & Effective delayed neutron fraction \\
+    $\lambda$ & $0.1$  & sec$^{-1}$ & One-group delayed neutron precursor decay constant \\
+    $\xi$ & $25$  & - & Pressure loss coefficient \\
+    $h$ & $1.09$  & m & Height between thermal centers \\
+    $\alpha_f$ & $-0.3398$ & s/cm & Flow reactivity feedback coefficient \\
+    $A_x$ & $0.4$  & m$^{2}$ & Cross-sectional flow area \\
+    $g$ & $9.81$  & m/s$^{2}$ & Acceleration due to gravity \\
+    $\delta t$ & $1$  & sec & Time-step duration  \\
+    $\delta x$ & $1$  & mm & Control volume length  \\
+    \end{tabular}
+    \label{tab:FEMparams}
+\end{table}
+
+\subsection{Model Initialization}\label{Section:initial}
+The code first takes inputs to define the heat exchanger power transient that is to be studied. The reactor is initially assumed to be steady-state and critical, so the temperature is constant in the chimney and downcomer, and heating/cooling are uniform and equal in the core and heat exchanger. A binary search algorithm is used to iteratively find the cold leg ($T_{cold}$) temperature that corresponds to the initial power requirement with a hot leg temperature ($T_{hot}$) of 700 $^o$C. The heat exchanger power ($\dot{Q}_{HEX}$) is calculated by:
+
+\begin{equation}
+    \dot{Q}_{HEX} = \bar{\varrho}_{HEX} A_x v \bar{c_p}_{HEX} (T_{hot} - T_{cold})
+\end{equation}
+
+Where $\bar{\varrho}_{HEX}$ and $\bar{c_p}_{HEX}$ are the average density and heat capacity in the heat exchanger, $A_x$ is the cross-sectional flow area within the reactor, and $v$ is the velocity of the salt in the loop. The key assumption for this model is that the flow velocity during a given time-step is uniform throughout the flow loop, both during steady-state and unsteady-state time periods. This assumption allows for a simple spatial advancement, and an explicit total energy balance solution, which is described in detail in Section \ref{Section:advance}. The flow velocity is calculated based on the temperature profile, assuming a natural circulation flow mode:
+
+\begin{equation}\label{eq:saltvelo}
+    v = \sqrt{\nicefrac{2gh(\varrho_{cold}-\varrho_{hot})}{\xi\varrho}}
+\end{equation}
+
+where $g$ is the gravitational acceleration, $h$ is the height between thermal centers, $\xi$ is the pressure loss coefficient (estimated to be 25.0 by STAR-CCM+ \cite{CarterNumerical}), $\bar{\varrho}_{cold}$ and $\bar{\varrho}_{hot}$ are the average salt densities of the cold and hot leg, and $\bar{\varrho}$ is the average salt density of the entire reactor loop.
+
+The criticality assumption must be satisfied between the two passive feedback mechanisms. Flow reactivity ($\rho_f$) is calculated explicitly, while temperature reactivity ($\rho_T$) is calculated relatively \cite{Kerlin}:
+
+\begin{equation}\label{eq:flowreac}
+    \rho_f = -\frac{L}{L+H}\beta_{eff}\left(1-e^{-v\alpha_f}  \right)
+\end{equation}
+\begin{equation}
+    \Delta\rho_T = \alpha_T\Delta T
+\end{equation}
+
+where L and H are the out-of-core and in-core lengths, $\beta_{eff}$ is the effective delayed neutron fraction, and $\alpha_f$ and $\alpha_T$ are the flow reactivity feedback coefficient and temperature reactivity feedback coefficient. Table \ref{tab:flowloop} contains the loop coordinates for key points in the \acs{msnb} \cite{CarterNumerical}. 
+
+\begin{table}[ht!]
+    \caption[\acs{msnb} loop coordinates]{\raggedright \acs{msnb} loop coordinates for the transitions between equipment \cite{CarterNumerical}. }
+    \centering\begin{tabular}{ll}
+        Location in Reactor & Loop Coordinate (mm)\\\hline
+        Core Inlet & 0, 5710 \\
+        Core Outlet & 1660 \\
+        Top of Hot Leg & 2090 \\
+        Heat Exchanger Inlet & 2340 \\
+        Heat Exchanger outlet & 2825 \\
+        Bottom of Cold Leg & 4975 \\        
+    \end{tabular}
+    \label{tab:flowloop}
+\end{table}
+
+For a critical core, the initial temperature reactivity is defined as equal and opposite the initial flow reactivity. This is satisfied by orienting the control drums at their bias point, such that control reactivity ($\rho_C$) is null.
+
+\subsection{Discrete Time Step}\label{Section:advance}
+The process simulator uses two steps to simulate the passage of time:
+\begin{enumerate*}
+    \item The flow loop is advanced by the distance the molten salt travels during the discrete time step; and 
+    \item Time dependent parameters are updated.
+\end{enumerate*}
+
+\subsubsection{Spatial Advancement of Flow Loop}
+The spatial advancement of the flow loop is a 1D+time computational fluid dynamics problem, with each millimeter long slice ($\delta x$) of the entire cross-section of the flow loop being treated as a control volume. With the assumption of uniform flow velocity around the loop for each discrete time step, the continuity equation for the system can be expressed as:
+
+\begin{equation}
+    \delta x A_x \frac{d\varrho}{dt} = v A_x(\varrho_{in}-\varrho_{out})
+\end{equation}
+
+In solving the total energy balance for the time-step, it is useful to convert the temperature profile ($T_x$) to an energy profile ($mu_x$). This is done by using the temperature functions for density, \ref{eq:saltdens}  and heat capacity, \ref{eq:saltcp} and assuming a reference temperature ($T_r$) where the energy is defined as null:
+
+\begin{equation}\label{eq:T2mu}
+    mu_x = \varrho(T_x)\delta x A_x
+             c_p\left(\nicefrac{T_x+T_r}{2}\right)(T_x-T_r) 
+\end{equation}
+
+By neglecting gravimetric, kinetic, and pressure-volume differentials, and assuming the uniform-state uniform-flow condition, where the thermophysical and thermodynamic properties of the control volume are considered flat, the discrete total energy balance for each control volume becomes:
+
+\begin{equation}
+    \frac{d(mu)}{dt} = mu_{enter} - mu_{exit} + Q_{c.v.}
+\end{equation}
+
+In the simulator, the energy profile is stored as a numpy array, with the energy in each control volume being stored as a single element in the ordered series. During a discrete time-step, the salt described by the element corresponding to the control volume exits the control volume, the element lagging by $v\delta t$ enters the control volume, and every element in-between both enters and exits the control volume. As such, each of these interior elements can be neglected. $mu_x$ does not need to be modified to obtain $mu_{exit}$, and $mu_{enter}$ can be obtained by using the numpy `roll' method, passing a value of $v\delta t$ for the `shift' argument. The outlets the heat exchanger and core must be flattened to account for edge heating/cooling effects. 
+
+The control volume power  ($Q_{c.v.}$) is calculated ay assuming uniform heating/cooling and preserving the convention of negative heat rejection:
+
+\begin{equation}
+    Q_{c.v.} = \left\{ 
+        \begin{matrix*}[l]
+            \nicefrac{Q_{Core}}{l_{core}} &\;,\; Core\\
+            \;\;\;0                       &\;,\; Riser\\
+            \nicefrac{-Q_{HEX}}{l_{HEX}}  &\;,\; Heat Exchanger\\
+            \;\;\;0                       &\;,\; Downcomer
+        \end{matrix*}
+    \right.
+\end{equation}
+
+After the discrete time-step, the new energy profile is calculated using Euler's forward method:
+
+\begin{equation}
+    mu[t+\delta t] = mu[t] + \delta t\frac{d(mu)}{dt}[t]
+\end{equation}
+
+Then, the updated temperature profile can be obtained from the updated energy profile by inverting \ref{eq:T2mu}. This is not a readily separable function, so an expected range of temperatures was put through the forward function, and the results were fit to a 6th order polynomial to define an inverse function. With the updated temperature profile, the rest of the time variables can be updated to solve for the new core power.
+
+\subsubsection{Updating Time Variables}
+First, the updated temperature profile is used to calculate the new molten salt flow velocity using \ref{eq:saltvelo}, which is in turn used to calculate the new flow reactivity using \ref{eq:flowreac}. Then the change in average core temperature is used to calculate the new temperature reactivity:
+
+\begin{equation}
+    \rho_T[t+\delta t] = \rho_T[t] + \alpha_T\Delta T_{core}
+\end{equation}
+
+Each reactivity phenomenon is summed, and reactor period ($\tau$) is obtained using one group reactor point kinetics:
+
+\begin{equation}
+    \tau = \frac{\ell^{*}}{\rho}
+         +\frac{\beta_{eff}-\rho}{\lambda\rho + \dot{\rho}}
+\end{equation}
+
+where $\lambda$ is the delayed neutron precursor decay constant and $\dot{\rho}$ is the reactivity rate of change \cite[Ch. 6]{DH}. Finally, the updated power can be obtained from the e-folding equation:
+
+\begin{equation}
+    Q_{core}[t+\delta t] = Q_{core}[t] e^{\nicefrac{\delta t}{\tau}}
+\end{equation}
+
+With the new power, the entire sequence of calculations can be repeated for the next discrete time-step, repeating until the simulation is over. These steps result in a first principles based multiphysics model that simulates compound passive feedbacks to compute the approximate behavior of a natural circulation \acs{msnb} during dynamic operation.
