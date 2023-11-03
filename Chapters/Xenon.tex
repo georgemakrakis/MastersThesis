@@ -13,26 +13,28 @@ The relative ease of fluid phase separation engineering gives molten salt micror
 
 \subsection{Goals}
 This paper is a high level analysis investigating the thermodynamics of xenon stripping from molten salt by:
-\begin{enumerate}[topsep=3pt,itemsep=-0.75ex,partopsep=1ex,parsep=1ex,label=(\arabic*)]
+\begin{enumerate*}[topsep=3pt,itemsep=-0.75ex,partopsep=1ex,parsep=1ex,label=(\arabic*)]
     \item Deriving a model of an equilibrium xenon scrubber based on Henry's law;
     \item Incorporating this model into a numerical solver of the Bateman equations for \I and \Xe in a \acs{msr}; and 
     \item Analyzing the reactor's response to power changes and xenon stripping; 
-\end{enumerate}
+\end{enumerate*}
 
 During a transient, the \Xe concentration is determined with a low computation time, so parameters can be adjusted iteratively until the set of inputs that yield a desired result can be identified. Research goals based on this methodology are to:
-\begin{enumerate}[topsep=3pt,itemsep=-0.75ex,partopsep=1ex,parsep=1ex,label=(\arabic*)]
+\begin{enumerate*}[topsep=3pt,itemsep=-0.75ex,partopsep=1ex,parsep=1ex,label=(\arabic*)]
     \item Benchmark the numerical solver against the characteristic fixed points of known analytical solutions as well as simplified analytical solutions; and
     \item Provide an order of magnitude estimate of the flow rate of helium required to strip xenon at the rate required to produce a desired outcome, such as the time since a reactor shutdown that it can be restarted.
-\end{enumerate}
+\end{enumerate*}
 
 \subsection{Previous Work}
+\acf{oak} has studied a method of stripping xenon out of molten salt fuels during operation \cite{ORNL-masstransport}, in a way depicted by \cref{fig:BFD}. Helium bubbles are injected into the liquid fuel outside of the core and flow with the fuel before the phases are separated and a poison-poor stream returns to the core. This was primarily focused on the kinetics of a sparge tube stripper, and proposed an experiment to determine the mass transfer coefficients of dissolved xenon gas into fine helium bubbles. Such data is instrumental in the design of a mass transport unit operation, but unfortunately records of the experiment being conducted cannot be found. We seek to determine whether a return to the proposed experiment would be productive by conducting a thermodynamic analysis on the equilibrium system. More detailed design of such a stripper would be warranted if the thermodynamic analysis yields promising results.
+
+\vspace{\baselineskip}
+
 \begin{figure}[!ht]\centering
     \input{./tikz/bfd}
     \caption[Block Flow Diagram - Molten Salt Microreactor with Xenon Stripping Module]{Block Flow Diagram - Molten Salt Microreactor with Xenon Stripping Module. The fuel/coolant salt mixture is heated by fission in the core, rises to the heat exchanger where it gives up heat to the secondary coolant and sinks by natural circulation. }
     \label{fig:BFD}
 \end{figure}
-
-\acf{oak} has studied a method of stripping xenon out of molten salt fuels during operation \cite{ORNL-masstransport}, in a way depicted by \cref{fig:BFD}. Helium bubbles are injected into the liquid fuel outside of the core and flow with the fuel before the phases are separated and a poison-poor stream returns to the core. This was primarily focused on the kinetics of a sparge tube stripper, and proposed an experiment to determine the mass transfer coefficients of dissolved xenon gas into fine helium bubbles. Such data is instrumental in the design of a mass transport unit operation, but unfortunately records of the experiment being conducted cannot be found. We seek to determine whether a return to the proposed experiment would be productive by conducting a thermodynamic analysis on the equilibrium system. More detailed design of such a stripper would be warranted if the thermodynamic analysis yields promising results.
 
 It is worth noting the difference between the stripping operation described in this paper and off-gas management systems that all \acsp{msr} require \cite{Offgas}. Off-gas systems remove fission gases that naturally make their way into the head-spaces of the primary coolant loop of an \acs{msr}. Other work has concluded that a large fraction of fission gasses, including \Xe, fail to transport to the head-space, remaining dissolved due to poor liquid-gas interface, entrained due to the lack of nucleation sites, or flowing in circulating voids due to surface tension \cite{XeMSR}. Stripping greatly improves the kinetics of fission gas removal, and is more akin to fuel reprocessing, while the off-gas management system is more akin to the cladding gap in solid fuel designs.
 
@@ -55,7 +57,8 @@ One of the goals of this paper is to model xenon poison transients in \acsp{msr}
         -\underbrace{Xe(t)\sigma_{a}^{Xe}{\phi}(t)}_{\text{Radiative Capture}}
 \end{equation}
 
-\ref{eq:diffI} and \ref{eq:diffXe} can be used to track the concentrations of \I and \Xe during steady-state or dynamic operation \cite[Ch. 7]{Lamarsh}. Each nuclide is formed by \U[235] fission, and removed by beta-decay. Additionally, \Xe is formed by the beta-decay of \I and removed by radiative neutron capture. In reality, the decay chain is a bit more complicated than this. $^{135}Te$, the direct beta-precursor to \I is also formed by \U[235] fission \cite{Roberson}. Its half-life is orders of magnitude shorter than \I, so it is common to neglect its formation and instead lump its fission yield with \I. \Xe[135m] is also formed by \I beta-decay and is neglected for similar reasons. Neutron flux ($\phi$) exists on an energy spectrum, which effects the fuel-fission cross-section ($\Sigma_{f}^{F}$) and the \Xe poison cross-section $\sigma_{a}^{Xe}$. The form of \ref{eq:diffI} and \ref{eq:diffXe} in this work uses 1-group cross-sections and fluxes, which requires the use of neutron energy-integration, which is usually performed using a weighted-finite sum methodology. 
+\ref{eq:diffI} and \ref{eq:diffXe} can be used to track the concentrations of \I and \Xe during steady-state or dynamic operation \cite[Ch. 7]{Lamarsh}. Each nuclide is formed by \U[235] fission, and removed by beta-decay. Additionally, \Xe is formed by the beta-decay of \I and removed by radiative neutron capture. In reality, the decay chain is a bit more complicated than this. $^{135}Te$, the direct beta-precursor to \I is also formed by \U[235] fission \cite{Roberson}. Its half-life is orders of magnitude shorter than \I, so it is common to neglect its formation and instead lump its fission yield with \I. \Xe[135m] is also formed by \I beta-decay and is neglected for similar reasons. Neutron flux ($\phi$) exists on an energy spectrum, which effects the fuel-fission cross-section ($\Sigma_{f}^{F}$) and the \Xe poison cross-section $\sigma_{a}^{Xe}$. The form of \ref{eq:diffI} and \ref{eq:diffXe} in this work uses 1-group cross-sections and fluxes, which requires
+ neutron energy-integration, usually performed using a weighted-finite sum methodology. 
 
 \subsection{Equilibrium Poisoning}
 Following start-up, the nuclides builds-up in the reactor until the formation terms (i.e. fission yield and precursor decay) equilibrate with the removal terms (beta decay and radiative capture). By setting the time derivatives to zero in \ref{eq:diffI} and \ref{eq:diffXe}, the neutron flux dependent equilibrium concentrations may be derived algebraically \cite[Ch. 7]{Lamarsh}:
@@ -142,10 +145,10 @@ Consider a co-current sparge pipe stripper that uses fresh helium to remove diss
 
 \begin{figure}[ht!]\centering
     \resizebox*{0.75\textwidth}{!}{\input{./tikz/stripper}}
-     \caption[Schematic Drawing of Xenon Stripping Module]{Schematic Drawing of Xenon Stripping Module. Fresh helium and molten salt with a given} \Xe concentration enters on the left. Dissolved and entrained xenon preferentially transports from the liquid phase to the gaseous stream. Loaded helium and molten salt with a lower \Xe concentration exit on the right. The exiting streams are in equilibrium with each other according to Henry's Law. 
+     \caption[Schematic Drawing of Xenon Stripping Module]{Schematic Drawing of Xenon Stripping Module. Fresh helium and molten salt with a given \Xe concentration enters on the left. Dissolved and entrained xenon preferentially transports from the liquid phase to the gaseous stream. Loaded helium and molten salt with a lower \Xe concentration exit on the right. The exiting streams are in equilibrium with each other according to Henry's Law.} 
     \label{fig:strip}
 \end{figure}
-\note{why is the caption centered}
+
 The salt enters with \Xe concentration equal to that of the xenon level in the core, and exits at some lower value. The helium enters with no xenon, and exits with a \Xe concentration in equilibrium with the salt's outlet concentration. This analysis is based on the horizontal co-current sparge pipe designed at \acs{oak} during the \acf{msre} \cite{ORNL-masstransport}. A counter-current design may allow for greater stripping effectiveness by maintaining a more constant (and therefore a larger log-mean average) driving force, but it makes the separation of phases more challenging. The horizontal design also eliminates hydrostatic pressure differential across the unit operation, so a constant volumetric gas-phase flow rate constant across the module can be assumed.
 
 
