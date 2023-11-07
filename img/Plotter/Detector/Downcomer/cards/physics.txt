@@ -1,0 +1,7 @@
+% ______________________Physics cards_____
+set power 1e7
+set pop 1000000 500 50
+set acelib "endfb71r1_p2" "endfb71r1" "jeff31u"
+det EnergyDetector dm Salt0 dv 1.80108E+05 de EnergyGrid
+%det EnergyDetector dc 110 dv 3.56467E+05  de EnergyGrid
+ene EnergyGrid 3 500 1e-11 2e1

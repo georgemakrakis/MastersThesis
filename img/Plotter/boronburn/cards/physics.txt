@@ -1,0 +1,14 @@
+% ______________________Physics cards_____
+set power 1e8
+set pop 1000000 500 50
+dep daystep 3650 3650 3650 3650 3650 3650 3650 3650 3650 3650
+set mcvol 10000000
+set nbuf 10
+set printm 1 1e-10
+set inventory "all"
+set pcc leli 10 10
+set acelib "endfb71r1_p2" "endfb71r1" "jeff31u"
+set declib "sss_jeff31.dec"
+set nfylib "sss_jeff31.nfy"
+% Prints cross section data to [input]_xs0.m file.
+% set xsplot 100 1e-11 2.0 %comment out for temp sens

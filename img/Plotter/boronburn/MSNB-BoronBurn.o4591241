@@ -1,0 +1,18 @@
+cat: /home/rootsamu: Is a directory
+Enter the starting control drum angle in degrees
+Enter the ending control drum angle in degrees
+Enter the increment in degrees
+Loading Cross-Section Data
+DATAPATH=/hpc-common/data/serpent/xsdata
+Loading Serpent v2
+writing header to results
+cat: ASCII_Art.txt: No such file or directory
+Writing MSNB at 115 degrees:
+python3: can't open file 'makedeck.py': [Errno 2] No such file or directory
+tee: /MSNB.txt: Permission denied
+Input file "/MSNB" does not exist.
+python3: can't open file 'criticality.py': [Errno 2] No such file or directory
+sh: redo.sh: No such file or directory
+mv: missing destination file operand after ‘100MW’
+Try 'mv --help' for more information.
+All Done!

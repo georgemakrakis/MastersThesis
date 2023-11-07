@@ -1,0 +1,2694 @@
+Enter the starting control drum angle in degrees
+Loading Cross-Section Data
+DATAPATH=/hpc-common/data/serpent/xsdata
+Loading Serpent v2
+writing header to results
+Writing MSNB at 112 degrees:
+
+  _                   .-=-.           .-=-.          .-==-.       
+ { }      __        .' O o '.       .' O o '.       /  -<' )--<   
+ { }    .' O'.     / o .-. O \     / o .-. O \     /  .---`       
+ { }   / .-. o\   /O  /   \  o\   /O  /   \  o\   /O /            
+  \ `-` /   \ O`-'o  /     \  O`-'o  /     \  O`-`o /             
+   `-.-`     '.____.'       `._____.'       `.____.'              
+
+Serpent 2 beta
+
+A Continuous-energy Monte Carlo Reactor Physics Burnup Calculation Code
+
+ - Version 2.1.32 (February 24, 2021) -- Contact: serpent@vtt.fi
+
+ - Reference: J. Leppanen, et al. "The Serpent Monte Carlo code: Status,
+              development and applications in 2013." Ann. Nucl. Energy,
+              82 (2015) 142-150.
+
+ - Compiled Mar  8 2021 07:52:45
+
+ - MPI Parallel calculation mode available
+
+ - OpenMP Parallel calculation mode available
+
+ - Geometry and mesh plotting available
+
+ - Default data path set to: "/hpc-common/data/serpent/xsdata"
+
+ - Full command used to run Serpent:
+
+   sss2 ./results/112.0/MSNB -omp 12
+
+Begin calculation on Mon Mar 27 18:07:49 2023 at r3i0n1
+
+Reading input file "./results/112.0/MSNB"...
+
+Checking duplicate input definitions...
+OK.
+
+Dividing burnable materials...
+OK.
+
+Creating geometry...
+OK.
+
+Counting geometry zones...
+
+Processing cells...
+OK.
+
+Linking materials to geometry...
+OK.
+
+Processing detector definitions...
+OK.
+
+Allocating RESMAT matrices and associated arrays...
+OK.
+
+Counting cells...
+OK.
+
+Processing data for group constant generation:
+
+ - 70 energy groups in micro-group structure
+ - 2 energy groups in macro-group structure
+ - B1 fundamental mode calculation is not run
+ - Group constants generated in 1 universes
+ - Discontinuity factors are not calculated
+ - Pin-power distributions are not calculated
+ - Albedos are not calculated
+ - Poison cross sections are not calculated
+
+Plotting geometry:
+
+   0% complete
+  12% complete
+  25% complete
+  38% complete
+  50% complete
+  62% complete
+  75% complete
+  88% complete
+ 100% complete
+
+Reading ACE directory files...
+OK.
+
+Adding nuclides in material Salt0...
+
+Nuclide   9019.06c -- fluorine 19 at 873K (F-19)
+Nuclide   3006.06c -- lithium 6 at 873K (Li-6)
+Nuclide   3007.06c -- lithium 7 at 873K (Li-7)
+Nuclide  11023.06c -- sodium 23 at 873K (Na-23)
+Nuclide  19039.06c -- potassium 39 at 873K (K-39)
+Nuclide  19041.06c -- potassium 41 at 873K (K-41)
+Nuclide  92235.06c -- uranium 235 at 873K (U-235)
+Nuclide  92238.06c -- uranium 238 at 873K (U-238)
+
+Adding nuclides in material Salt1...
+
+Nuclide   9019.06c -- fluorine 19 at 890K (F-19)
+Nuclide   3006.06c -- lithium 6 at 890K (Li-6)
+Nuclide   3007.06c -- lithium 7 at 890K (Li-7)
+Nuclide  11023.06c -- sodium 23 at 890K (Na-23)
+Nuclide  19039.06c -- potassium 39 at 890K (K-39)
+Nuclide  19041.06c -- potassium 41 at 890K (K-41)
+Nuclide  92235.06c -- uranium 235 at 890K (U-235)
+Nuclide  92238.06c -- uranium 238 at 890K (U-238)
+
+Adding nuclides in material Salt2...
+
+Nuclide   9019.06c -- fluorine 19 at 898K (F-19)
+Nuclide   3006.06c -- lithium 6 at 898K (Li-6)
+Nuclide   3007.06c -- lithium 7 at 898K (Li-7)
+Nuclide  11023.06c -- sodium 23 at 898K (Na-23)
+Nuclide  19039.06c -- potassium 39 at 898K (K-39)
+Nuclide  19041.06c -- potassium 41 at 898K (K-41)
+Nuclide  92235.06c -- uranium 235 at 898K (U-235)
+Nuclide  92238.06c -- uranium 238 at 898K (U-238)
+
+Adding nuclides in material Salt3...
+
+Nuclide   9019.06c -- fluorine 19 at 906K (F-19)
+Nuclide   3006.06c -- lithium 6 at 906K (Li-6)
+Nuclide   3007.06c -- lithium 7 at 906K (Li-7)
+Nuclide  11023.06c -- sodium 23 at 906K (Na-23)
+Nuclide  19039.06c -- potassium 39 at 906K (K-39)
+Nuclide  19041.06c -- potassium 41 at 906K (K-41)
+Nuclide  92235.06c -- uranium 235 at 906K (U-235)
+Nuclide  92238.06c -- uranium 238 at 906K (U-238)
+
+Adding nuclides in material Salt4...
+
+Nuclide   9019.06c -- fluorine 19 at 915K (F-19)
+Nuclide   3006.06c -- lithium 6 at 915K (Li-6)
+Nuclide   3007.06c -- lithium 7 at 915K (Li-7)
+Nuclide  11023.06c -- sodium 23 at 915K (Na-23)
+Nuclide  19039.06c -- potassium 39 at 915K (K-39)
+Nuclide  19041.06c -- potassium 41 at 915K (K-41)
+Nuclide  92235.06c -- uranium 235 at 915K (U-235)
+Nuclide  92238.06c -- uranium 238 at 915K (U-238)
+
+Adding nuclides in material Salt5...
+
+Nuclide   9019.06c -- fluorine 19 at 923K (F-19)
+Nuclide   3006.06c -- lithium 6 at 923K (Li-6)
+Nuclide   3007.06c -- lithium 7 at 923K (Li-7)
+Nuclide  11023.06c -- sodium 23 at 923K (Na-23)
+Nuclide  19039.06c -- potassium 39 at 923K (K-39)
+Nuclide  19041.06c -- potassium 41 at 923K (K-41)
+Nuclide  92235.06c -- uranium 235 at 923K (U-235)
+Nuclide  92238.06c -- uranium 238 at 923K (U-238)
+
+Adding nuclides in material Salt6...
+
+Nuclide   9019.06c -- fluorine 19 at 931K (F-19)
+Nuclide   3006.06c -- lithium 6 at 931K (Li-6)
+Nuclide   3007.06c -- lithium 7 at 931K (Li-7)
+Nuclide  11023.06c -- sodium 23 at 931K (Na-23)
+Nuclide  19039.06c -- potassium 39 at 931K (K-39)
+Nuclide  19041.06c -- potassium 41 at 931K (K-41)
+Nuclide  92235.06c -- uranium 235 at 931K (U-235)
+Nuclide  92238.06c -- uranium 238 at 931K (U-238)
+
+Adding nuclides in material Salt7...
+
+Nuclide   9019.06c -- fluorine 19 at 940K (F-19)
+Nuclide   3006.06c -- lithium 6 at 940K (Li-6)
+Nuclide   3007.06c -- lithium 7 at 940K (Li-7)
+Nuclide  11023.06c -- sodium 23 at 940K (Na-23)
+Nuclide  19039.06c -- potassium 39 at 940K (K-39)
+Nuclide  19041.06c -- potassium 41 at 940K (K-41)
+Nuclide  92235.06c -- uranium 235 at 940K (U-235)
+Nuclide  92238.06c -- uranium 238 at 940K (U-238)
+
+Adding nuclides in material Salt8...
+
+Nuclide   9019.06c -- fluorine 19 at 948K (F-19)
+Nuclide   3006.06c -- lithium 6 at 948K (Li-6)
+Nuclide   3007.06c -- lithium 7 at 948K (Li-7)
+Nuclide  11023.06c -- sodium 23 at 948K (Na-23)
+Nuclide  19039.06c -- potassium 39 at 948K (K-39)
+Nuclide  19041.06c -- potassium 41 at 948K (K-41)
+Nuclide  92235.06c -- uranium 235 at 948K (U-235)
+Nuclide  92238.06c -- uranium 238 at 948K (U-238)
+
+Adding nuclides in material Salt9...
+
+Nuclide   9019.06c -- fluorine 19 at 956K (F-19)
+Nuclide   3006.06c -- lithium 6 at 956K (Li-6)
+Nuclide   3007.06c -- lithium 7 at 956K (Li-7)
+Nuclide  11023.06c -- sodium 23 at 956K (Na-23)
+Nuclide  19039.06c -- potassium 39 at 956K (K-39)
+Nuclide  19041.06c -- potassium 41 at 956K (K-41)
+Nuclide  92235.06c -- uranium 235 at 956K (U-235)
+Nuclide  92238.06c -- uranium 238 at 956K (U-238)
+
+Adding nuclides in material SS304...
+
+Nuclide  26054.06c -- iron 54 at 923K (Fe-54)
+Nuclide  26056.06c -- iron 56 at 923K (Fe-56)
+Nuclide  26057.06c -- iron 57 at 923K (Fe-57)
+Nuclide  26058.06c -- iron 58 at 923K (Fe-58)
+Nuclide   7014.06c -- nitrogen 14 at 923K (N-14)
+Nuclide   7015.06c -- nitrogen 15 at 923K (N-15)
+Nuclide  28058.06c -- nickel 58 at 923K (Ni-58)
+Nuclide  28060.06c -- nickel 60 at 923K (Ni-60)
+Nuclide  28061.06c -- nickel 61 at 923K (Ni-61)
+Nuclide  28062.06c -- nickel 62 at 923K (Ni-62)
+Nuclide  28064.06c -- nickel 64 at 923K (Ni-64)
+Nuclide  24050.06c -- chromium 50 at 923K (Cr-50)
+Nuclide  24052.06c -- chromium 52 at 923K (Cr-52)
+Nuclide  24053.06c -- chromium 53 at 923K (Cr-53)
+Nuclide  24054.06c -- chromium 54 at 923K (Cr-54)
+Nuclide  14028.06c -- silicon 28 at 923K (Si-28)
+Nuclide  14029.06c -- silicon 29 at 923K (Si-29)
+Nuclide  14030.06c -- silicon 30 at 923K (Si-30)
+Nuclide  16032.06c -- sulfur 32 at 923K (S-32)
+Nuclide  16033.06c -- sulfur 33 at 923K (S-33)
+Nuclide  16034.06c -- sulfur 34 at 923K (S-34)
+Nuclide  15031.06c -- phosphorus 31 at 923K (P-31)
+Nuclide  25055.06c -- manganese 55 at 923K (Mn-55)
+Nuclide   6000.06c -- natural carbon at 923K (C-nat)
+
+Adding nuclides in material GRPH...
+
+Adding nuclides in material B4C...
+
+Nuclide   5010.06c -- boron 10 at 923K (B-10)
+
+Adding nuclides in material Air...
+
+Nuclide   6000.50c -- natural carbon at 300K (C-nat)
+Nuclide   7014.50c -- nitrogen 14 at 300K (N-14)
+Nuclide   8016.50c -- oxygen 16 at 300K (O-16)
+Nuclide  18000.59c -- natural argon at 300K (Ar-nat)
+
+Adding nuclides in material BeO...
+
+Nuclide   4009.06c -- beryllium 9 at 923K (Be-9)
+Nuclide   8016.06c -- oxygen 16 at 923K (O-16)
+
+Adding nuclides in material NiCrMo...
+
+Nuclide  28058.06c -- nickel 58 at 956K (Ni-58)
+Nuclide  24052.06c -- chromium 52 at 956K (Cr-52)
+Nuclide  26056.06c -- iron 56 at 956K (Fe-56)
+Nuclide  14028.06c -- silicon 28 at 956K (Si-28)
+Nuclide  28060.06c -- nickel 60 at 956K (Ni-60)
+Nuclide  42092.06c -- molybdenum 92 at 956K (Mo-92)
+Nuclide  42094.06c -- molybdenum 94 at 956K (Mo-94)
+Nuclide  42095.06c -- molybdenum 95 at 956K (Mo-95)
+Nuclide  42096.06c -- molybdenum 96 at 956K (Mo-96)
+Nuclide  42097.06c -- molybdenum 97 at 956K (Mo-97)
+Nuclide  42098.06c -- molybdenum 98 at 956K (Mo-98)
+Nuclide  42100.06c -- molybdenum 100 at 956K (Mo-100)
+
+Adding nuclides in material Conc...
+
+Nuclide   1001.06c -- hydrogen at 600K (H-1)
+Nuclide   8016.06c -- oxygen 16 at 600K (O-16)
+Nuclide  12000.06c -- natural magnesium at 600K (Mg-nat)
+Nuclide  13027.06c -- aluminum 27 at 600K (Al-27)
+Nuclide  14000.06c -- natural silicon at 600K (Si-nat)
+Nuclide  16000.06c -- natural sulfur at 600K (S-nat)
+Nuclide  20000.06c -- natural calcium at 600K (Ca-nat)
+Nuclide  26000.06c -- natural iron at 600K (Fe-nat)
+Nuclide  56130.06c -- barium 130 at 600K (Ba-130)
+Nuclide  56132.06c -- barium 132 at 600K (Ba-132)
+Nuclide  56134.06c -- barium 134 at 600K (Ba-134)
+Nuclide  56135.06c -- barium 135 at 600K (Ba-135)
+Nuclide  56136.06c -- barium 136 at 600K (Ba-136)
+Nuclide  56137.06c -- barium 137 at 600K (Ba-137)
+Nuclide  56138.06c -- barium 138 at 600K (Ba-138)
+
+Running Doppler-broadening preprocessor:
+
+Adjusting nuclide   9019.06c temperature from 600K to 873K...
+Adjusting nuclide   3006.06c temperature from 600K to 873K...
+Adjusting nuclide   3007.06c temperature from 600K to 873K...
+Adjusting nuclide  11023.06c temperature from 600K to 873K...
+Adjusting nuclide  19039.06c temperature from 600K to 873K...
+Adjusting nuclide  19041.06c temperature from 600K to 873K...
+Adjusting nuclide  92235.06c temperature from 600K to 873K...
+Adjusting nuclide  92238.06c temperature from 600K to 873K...
+Adjusting nuclide   9019.06c temperature from 600K to 890K...
+Adjusting nuclide   3006.06c temperature from 600K to 890K...
+Adjusting nuclide   3007.06c temperature from 600K to 890K...
+Adjusting nuclide  11023.06c temperature from 600K to 890K...
+Adjusting nuclide  19039.06c temperature from 600K to 890K...
+Adjusting nuclide  19041.06c temperature from 600K to 890K...
+Adjusting nuclide  92235.06c temperature from 600K to 890K...
+Adjusting nuclide  92238.06c temperature from 600K to 890K...
+Adjusting nuclide   9019.06c temperature from 600K to 898K...
+Adjusting nuclide   3006.06c temperature from 600K to 898K...
+Adjusting nuclide   3007.06c temperature from 600K to 898K...
+Adjusting nuclide  11023.06c temperature from 600K to 898K...
+Adjusting nuclide  19039.06c temperature from 600K to 898K...
+Adjusting nuclide  19041.06c temperature from 600K to 898K...
+Adjusting nuclide  92235.06c temperature from 600K to 898K...
+Adjusting nuclide  92238.06c temperature from 600K to 898K...
+Adjusting nuclide   9019.06c temperature from 600K to 906K...
+Adjusting nuclide   3006.06c temperature from 600K to 906K...
+Adjusting nuclide   3007.06c temperature from 600K to 906K...
+Adjusting nuclide  11023.06c temperature from 600K to 906K...
+Adjusting nuclide  19039.06c temperature from 600K to 906K...
+Adjusting nuclide  19041.06c temperature from 600K to 906K...
+Adjusting nuclide  92235.06c temperature from 600K to 906K...
+Adjusting nuclide  92238.06c temperature from 600K to 906K...
+Adjusting nuclide   9019.06c temperature from 600K to 915K...
+Adjusting nuclide   3006.06c temperature from 600K to 915K...
+Adjusting nuclide   3007.06c temperature from 600K to 915K...
+Adjusting nuclide  11023.06c temperature from 600K to 915K...
+Adjusting nuclide  19039.06c temperature from 600K to 915K...
+Adjusting nuclide  19041.06c temperature from 600K to 915K...
+Adjusting nuclide  92235.06c temperature from 600K to 915K...
+Adjusting nuclide  92238.06c temperature from 600K to 915K...
+Adjusting nuclide   9019.06c temperature from 600K to 923K...
+Adjusting nuclide   3006.06c temperature from 600K to 923K...
+Adjusting nuclide   3007.06c temperature from 600K to 923K...
+Adjusting nuclide  11023.06c temperature from 600K to 923K...
+Adjusting nuclide  19039.06c temperature from 600K to 923K...
+Adjusting nuclide  19041.06c temperature from 600K to 923K...
+Adjusting nuclide  92235.06c temperature from 600K to 923K...
+Adjusting nuclide  92238.06c temperature from 600K to 923K...
+Adjusting nuclide   9019.06c temperature from 600K to 931K...
+Adjusting nuclide   3006.06c temperature from 600K to 931K...
+Adjusting nuclide   3007.06c temperature from 600K to 931K...
+Adjusting nuclide  11023.06c temperature from 600K to 931K...
+Adjusting nuclide  19039.06c temperature from 600K to 931K...
+Adjusting nuclide  19041.06c temperature from 600K to 931K...
+Adjusting nuclide  92235.06c temperature from 600K to 931K...
+Adjusting nuclide  92238.06c temperature from 600K to 931K...
+Adjusting nuclide   9019.06c temperature from 600K to 940K...
+Adjusting nuclide   3006.06c temperature from 600K to 940K...
+Adjusting nuclide   3007.06c temperature from 600K to 940K...
+Adjusting nuclide  11023.06c temperature from 600K to 940K...
+Adjusting nuclide  19039.06c temperature from 600K to 940K...
+Adjusting nuclide  19041.06c temperature from 600K to 940K...
+Adjusting nuclide  92235.06c temperature from 600K to 940K...
+Adjusting nuclide  92238.06c temperature from 600K to 940K...
+Adjusting nuclide   9019.06c temperature from 600K to 948K...
+Adjusting nuclide   3006.06c temperature from 600K to 948K...
+Adjusting nuclide   3007.06c temperature from 600K to 948K...
+Adjusting nuclide  11023.06c temperature from 600K to 948K...
+Adjusting nuclide  19039.06c temperature from 600K to 948K...
+Adjusting nuclide  19041.06c temperature from 600K to 948K...
+Adjusting nuclide  92235.06c temperature from 600K to 948K...
+Adjusting nuclide  92238.06c temperature from 600K to 948K...
+Adjusting nuclide   9019.06c temperature from 600K to 956K...
+Adjusting nuclide   3006.06c temperature from 600K to 956K...
+Adjusting nuclide   3007.06c temperature from 600K to 956K...
+Adjusting nuclide  11023.06c temperature from 600K to 956K...
+Adjusting nuclide  19039.06c temperature from 600K to 956K...
+Adjusting nuclide  19041.06c temperature from 600K to 956K...
+Adjusting nuclide  92235.06c temperature from 600K to 956K...
+Adjusting nuclide  92238.06c temperature from 600K to 956K...
+Adjusting nuclide  26054.06c temperature from 600K to 923K...
+Adjusting nuclide  26056.06c temperature from 600K to 923K...
+Adjusting nuclide  26057.06c temperature from 600K to 923K...
+Adjusting nuclide  26058.06c temperature from 600K to 923K...
+Adjusting nuclide   7014.06c temperature from 600K to 923K...
+Adjusting nuclide   7015.06c temperature from 600K to 923K...
+Adjusting nuclide  28058.06c temperature from 600K to 923K...
+Adjusting nuclide  28060.06c temperature from 600K to 923K...
+Adjusting nuclide  28061.06c temperature from 600K to 923K...
+Adjusting nuclide  28062.06c temperature from 600K to 923K...
+Adjusting nuclide  28064.06c temperature from 600K to 923K...
+Adjusting nuclide  24050.06c temperature from 600K to 923K...
+Adjusting nuclide  24052.06c temperature from 600K to 923K...
+Adjusting nuclide  24053.06c temperature from 600K to 923K...
+Adjusting nuclide  24054.06c temperature from 600K to 923K...
+Adjusting nuclide  14028.06c temperature from 600K to 923K...
+Adjusting nuclide  14029.06c temperature from 600K to 923K...
+Adjusting nuclide  14030.06c temperature from 600K to 923K...
+Adjusting nuclide  16032.06c temperature from 600K to 923K...
+Adjusting nuclide  16033.06c temperature from 600K to 923K...
+Adjusting nuclide  16034.06c temperature from 600K to 923K...
+Adjusting nuclide  15031.06c temperature from 600K to 923K...
+Adjusting nuclide  25055.06c temperature from 600K to 923K...
+Adjusting nuclide   6000.06c temperature from 600K to 923K...
+Adjusting nuclide   5010.06c temperature from 600K to 923K...
+Adjusting nuclide   6000.50c temperature from 294K to 300K...
+Adjusting nuclide   7014.50c temperature from 294K to 300K...
+Adjusting nuclide   8016.50c temperature from 294K to 300K...
+Adjusting nuclide  18000.59c temperature from 294K to 300K...
+Adjusting nuclide   4009.06c temperature from 600K to 923K...
+Adjusting nuclide   8016.06c temperature from 600K to 923K...
+Adjusting nuclide  28058.06c temperature from 600K to 956K...
+Adjusting nuclide  24052.06c temperature from 600K to 956K...
+Adjusting nuclide  26056.06c temperature from 600K to 956K...
+Adjusting nuclide  14028.06c temperature from 600K to 956K...
+Adjusting nuclide  28060.06c temperature from 600K to 956K...
+Adjusting nuclide  42092.06c temperature from 600K to 956K...
+Adjusting nuclide  42094.06c temperature from 600K to 956K...
+Adjusting nuclide  42095.06c temperature from 600K to 956K...
+Adjusting nuclide  42096.06c temperature from 600K to 956K...
+Adjusting nuclide  42097.06c temperature from 600K to 956K...
+Adjusting nuclide  42098.06c temperature from 600K to 956K...
+Adjusting nuclide  42100.06c temperature from 600K to 956K...
+
+Adding thermal scattering data...
+
+Nuclide   gre7.00t -- natural carbon at 294K (C-nat)
+Nuclide   gre7.26t -- natural carbon at 1999K (C-nat)
+
+Interpolating to 1010.00K...
+OK.
+
+
+Checking data and printing output...
+OK.
+
+Sharing input data to MPI tasks...
+OK.
+
+Generating unionize energy grids...
+
+Adding points:
+
+  1001.06c -- Points added in neutron grid: 592
+  3006.06c -- Points added in neutron grid: 279
+  3006.06c -- Points added in neutron grid: 0
+  3006.06c -- Points added in neutron grid: 0
+  3006.06c -- Points added in neutron grid: 0
+  3006.06c -- Points added in neutron grid: 0
+  3006.06c -- Points added in neutron grid: 0
+  3006.06c -- Points added in neutron grid: 0
+  3006.06c -- Points added in neutron grid: 0
+  3006.06c -- Points added in neutron grid: 0
+  3006.06c -- Points added in neutron grid: 0
+  3007.06c -- Points added in neutron grid: 88
+  3007.06c -- Points added in neutron grid: 0
+  3007.06c -- Points added in neutron grid: 0
+  3007.06c -- Points added in neutron grid: 0
+  3007.06c -- Points added in neutron grid: 0
+  3007.06c -- Points added in neutron grid: 0
+  3007.06c -- Points added in neutron grid: 0
+  3007.06c -- Points added in neutron grid: 0
+  3007.06c -- Points added in neutron grid: 0
+  3007.06c -- Points added in neutron grid: 0
+  4009.06c -- Points added in neutron grid: 121
+  5010.06c -- Points added in neutron grid: 226
+  6000.06c -- Points added in neutron grid: 681
+  6000.50c -- Points added in neutron grid: 192
+  6000.06s -- Points added in neutron grid: 1259
+  7014.06c -- Points added in neutron grid: 1080
+  7014.50c -- Points added in neutron grid: 581
+  7015.06c -- Points added in neutron grid: 307
+  8016.50c -- Points added in neutron grid: 718
+  8016.06c -- Points added in neutron grid: 1651
+  8016.06c -- Points added in neutron grid: 0
+  9019.06c -- Points added in neutron grid: 1714
+  9019.06c -- Points added in neutron grid: 0
+  9019.06c -- Points added in neutron grid: 0
+  9019.06c -- Points added in neutron grid: 0
+  9019.06c -- Points added in neutron grid: 0
+  9019.06c -- Points added in neutron grid: 0
+  9019.06c -- Points added in neutron grid: 0
+  9019.06c -- Points added in neutron grid: 0
+  9019.06c -- Points added in neutron grid: 0
+  9019.06c -- Points added in neutron grid: 0
+ 11023.06c -- Points added in neutron grid: 2749
+ 11023.06c -- Points added in neutron grid: 0
+ 11023.06c -- Points added in neutron grid: 0
+ 11023.06c -- Points added in neutron grid: 0
+ 11023.06c -- Points added in neutron grid: 0
+ 11023.06c -- Points added in neutron grid: 0
+ 11023.06c -- Points added in neutron grid: 0
+ 11023.06c -- Points added in neutron grid: 0
+ 11023.06c -- Points added in neutron grid: 0
+ 11023.06c -- Points added in neutron grid: 0
+ 12000.06c -- Points added in neutron grid: 1758
+ 13027.06c -- Points added in neutron grid: 4166
+ 14000.06c -- Points added in neutron grid: 2559
+ 14028.06c -- Points added in neutron grid: 6446
+ 14028.06c -- Points added in neutron grid: 0
+ 14029.06c -- Points added in neutron grid: 2146
+ 14030.06c -- Points added in neutron grid: 3163
+ 15031.06c -- Points added in neutron grid: 461
+ 16000.06c -- Points added in neutron grid: 5960
+ 16032.06c -- Points added in neutron grid: 8123
+ 16033.06c -- Points added in neutron grid: 1463
+ 16034.06c -- Points added in neutron grid: 1109
+ 18000.59c -- Points added in neutron grid: 145
+ 19039.06c -- Points added in neutron grid: 23840
+ 19039.06c -- Points added in neutron grid: 0
+ 19039.06c -- Points added in neutron grid: 0
+ 19039.06c -- Points added in neutron grid: 0
+ 19039.06c -- Points added in neutron grid: 0
+ 19039.06c -- Points added in neutron grid: 0
+ 19039.06c -- Points added in neutron grid: 0
+ 19039.06c -- Points added in neutron grid: 0
+ 19039.06c -- Points added in neutron grid: 0
+ 19039.06c -- Points added in neutron grid: 0
+ 19041.06c -- Points added in neutron grid: 26434
+ 19041.06c -- Points added in neutron grid: 0
+ 19041.06c -- Points added in neutron grid: 0
+ 19041.06c -- Points added in neutron grid: 0
+ 19041.06c -- Points added in neutron grid: 0
+ 19041.06c -- Points added in neutron grid: 0
+ 19041.06c -- Points added in neutron grid: 0
+ 19041.06c -- Points added in neutron grid: 0
+ 19041.06c -- Points added in neutron grid: 0
+ 19041.06c -- Points added in neutron grid: 0
+ 20000.06c -- Points added in neutron grid: 2098
+ 24050.06c -- Points added in neutron grid: 32361
+ 24052.06c -- Points added in neutron grid: 29347
+ 24052.06c -- Points added in neutron grid: 0
+ 24053.06c -- Points added in neutron grid: 22264
+ 24054.06c -- Points added in neutron grid: 13882
+ 25055.06c -- Points added in neutron grid: 12576
+ 26000.06c -- Points added in neutron grid: 10581
+ 26054.06c -- Points added in neutron grid: 19424
+ 26056.06c -- Points added in neutron grid: 27013
+ 26056.06c -- Points added in neutron grid: 0
+ 26057.06c -- Points added in neutron grid: 10136
+ 26058.06c -- Points added in neutron grid: 7721
+ 28058.06c -- Points added in neutron grid: 41246
+ 28058.06c -- Points added in neutron grid: 0
+ 28060.06c -- Points added in neutron grid: 36137
+ 28060.06c -- Points added in neutron grid: 0
+ 28061.06c -- Points added in neutron grid: 10697
+ 28062.06c -- Points added in neutron grid: 8429
+ 28064.06c -- Points added in neutron grid: 7076
+ 42092.06c -- Points added in neutron grid: 11525
+ 42094.06c -- Points added in neutron grid: 9613
+ 42095.06c -- Points added in neutron grid: 10737
+ 42096.06c -- Points added in neutron grid: 12336
+ 42097.06c -- Points added in neutron grid: 12018
+ 42098.06c -- Points added in neutron grid: 19490
+ 42100.06c -- Points added in neutron grid: 18796
+ 56130.06c -- Points added in neutron grid: 13109
+ 56132.06c -- Points added in neutron grid: 1740
+ 56134.06c -- Points added in neutron grid: 15124
+ 56135.06c -- Points added in neutron grid: 20109
+ 56136.06c -- Points added in neutron grid: 15724
+ 56137.06c -- Points added in neutron grid: 12155
+ 56138.06c -- Points added in neutron grid: 5538
+ 92235.06c -- Points added in neutron grid: 59464
+ 92235.06c -- Points added in neutron grid: 0
+ 92235.06c -- Points added in neutron grid: 0
+ 92235.06c -- Points added in neutron grid: 0
+ 92235.06c -- Points added in neutron grid: 0
+ 92235.06c -- Points added in neutron grid: 0
+ 92235.06c -- Points added in neutron grid: 0
+ 92235.06c -- Points added in neutron grid: 0
+ 92235.06c -- Points added in neutron grid: 0
+ 92235.06c -- Points added in neutron grid: 0
+ 92238.06c -- Points added in neutron grid: 130253
+ 92238.06c -- Points added in neutron grid: 0
+ 92238.06c -- Points added in neutron grid: 0
+ 92238.06c -- Points added in neutron grid: 0
+ 92238.06c -- Points added in neutron grid: 0
+ 92238.06c -- Points added in neutron grid: 0
+ 92238.06c -- Points added in neutron grid: 0
+ 92238.06c -- Points added in neutron grid: 0
+ 92238.06c -- Points added in neutron grid: 0
+ 92238.06c -- Points added in neutron grid: 0
+
+Generating unionized energy grid:
+
+ - Unionization performed without grid thinning
+   between 1.00E-11 and 20.0 MeV.
+
+ - Final neutron grid size: 757596 points.
+
+ - 32.95 Mb of memory allocated for grid data
+
+OK.
+
+Processing cross sections and ENDF reaction laws...
+
+Nuclide   1001.06c -- hydrogen at 600K (H-1)
+Nuclide   3006.06c -- lithium 6 at 873K (Li-6)
+Nuclide   3006.06c -- lithium 6 at 890K (Li-6)
+Nuclide   3006.06c -- lithium 6 at 898K (Li-6)
+Nuclide   3006.06c -- lithium 6 at 906K (Li-6)
+Nuclide   3006.06c -- lithium 6 at 915K (Li-6)
+Nuclide   3006.06c -- lithium 6 at 923K (Li-6)
+Nuclide   3006.06c -- lithium 6 at 931K (Li-6)
+Nuclide   3006.06c -- lithium 6 at 940K (Li-6)
+Nuclide   3006.06c -- lithium 6 at 948K (Li-6)
+Nuclide   3006.06c -- lithium 6 at 956K (Li-6)
+Nuclide   3007.06c -- lithium 7 at 873K (Li-7)
+Nuclide   3007.06c -- lithium 7 at 890K (Li-7)
+Nuclide   3007.06c -- lithium 7 at 898K (Li-7)
+Nuclide   3007.06c -- lithium 7 at 906K (Li-7)
+Nuclide   3007.06c -- lithium 7 at 915K (Li-7)
+Nuclide   3007.06c -- lithium 7 at 923K (Li-7)
+Nuclide   3007.06c -- lithium 7 at 931K (Li-7)
+Nuclide   3007.06c -- lithium 7 at 940K (Li-7)
+Nuclide   3007.06c -- lithium 7 at 948K (Li-7)
+Nuclide   3007.06c -- lithium 7 at 956K (Li-7)
+Nuclide   4009.06c -- beryllium 9 at 923K (Be-9)
+Nuclide   5010.06c -- boron 10 at 923K (B-10)
+Nuclide   6000.06c -- natural carbon at 923K (C-nat)
+Nuclide   6000.50c -- natural carbon at 300K (C-nat)
+Nuclide   6000.06s -- natural carbon at 923K (C-nat)
+Nuclide   7014.06c -- nitrogen 14 at 923K (N-14)
+Nuclide   7014.50c -- nitrogen 14 at 300K (N-14)
+Nuclide   7015.06c -- nitrogen 15 at 923K (N-15)
+Nuclide   8016.50c -- oxygen 16 at 300K (O-16)
+Nuclide   8016.06c -- oxygen 16 at 923K (O-16)
+Nuclide   8016.06c -- oxygen 16 at 600K (O-16)
+Nuclide   9019.06c -- fluorine 19 at 873K (F-19)
+Nuclide   9019.06c -- fluorine 19 at 890K (F-19)
+Nuclide   9019.06c -- fluorine 19 at 898K (F-19)
+Nuclide   9019.06c -- fluorine 19 at 906K (F-19)
+Nuclide   9019.06c -- fluorine 19 at 915K (F-19)
+Nuclide   9019.06c -- fluorine 19 at 923K (F-19)
+Nuclide   9019.06c -- fluorine 19 at 931K (F-19)
+Nuclide   9019.06c -- fluorine 19 at 940K (F-19)
+Nuclide   9019.06c -- fluorine 19 at 948K (F-19)
+Nuclide   9019.06c -- fluorine 19 at 956K (F-19)
+Nuclide  11023.06c -- sodium 23 at 873K (Na-23)
+Nuclide  11023.06c -- sodium 23 at 890K (Na-23)
+Nuclide  11023.06c -- sodium 23 at 898K (Na-23)
+Nuclide  11023.06c -- sodium 23 at 906K (Na-23)
+Nuclide  11023.06c -- sodium 23 at 915K (Na-23)
+Nuclide  11023.06c -- sodium 23 at 923K (Na-23)
+Nuclide  11023.06c -- sodium 23 at 931K (Na-23)
+Nuclide  11023.06c -- sodium 23 at 940K (Na-23)
+Nuclide  11023.06c -- sodium 23 at 948K (Na-23)
+Nuclide  11023.06c -- sodium 23 at 956K (Na-23)
+Nuclide  12000.06c -- natural magnesium at 600K (Mg-nat)
+Nuclide  13027.06c -- aluminum 27 at 600K (Al-27)
+Nuclide  14000.06c -- natural silicon at 600K (Si-nat)
+Nuclide  14028.06c -- silicon 28 at 923K (Si-28)
+Nuclide  14028.06c -- silicon 28 at 956K (Si-28)
+Nuclide  14029.06c -- silicon 29 at 923K (Si-29)
+Nuclide  14030.06c -- silicon 30 at 923K (Si-30)
+Nuclide  15031.06c -- phosphorus 31 at 923K (P-31)
+Nuclide  16000.06c -- natural sulfur at 600K (S-nat)
+Nuclide  16032.06c -- sulfur 32 at 923K (S-32)
+Nuclide  16033.06c -- sulfur 33 at 923K (S-33)
+Nuclide  16034.06c -- sulfur 34 at 923K (S-34)
+Nuclide  18000.59c -- natural argon at 300K (Ar-nat)
+Nuclide  19039.06c -- potassium 39 at 873K (K-39)
+Nuclide  19039.06c -- potassium 39 at 890K (K-39)
+Nuclide  19039.06c -- potassium 39 at 898K (K-39)
+Nuclide  19039.06c -- potassium 39 at 906K (K-39)
+Nuclide  19039.06c -- potassium 39 at 915K (K-39)
+Nuclide  19039.06c -- potassium 39 at 923K (K-39)
+Nuclide  19039.06c -- potassium 39 at 931K (K-39)
+Nuclide  19039.06c -- potassium 39 at 940K (K-39)
+Nuclide  19039.06c -- potassium 39 at 948K (K-39)
+Nuclide  19039.06c -- potassium 39 at 956K (K-39)
+Nuclide  19041.06c -- potassium 41 at 873K (K-41)
+Nuclide  19041.06c -- potassium 41 at 890K (K-41)
+Nuclide  19041.06c -- potassium 41 at 898K (K-41)
+Nuclide  19041.06c -- potassium 41 at 906K (K-41)
+Nuclide  19041.06c -- potassium 41 at 915K (K-41)
+Nuclide  19041.06c -- potassium 41 at 923K (K-41)
+Nuclide  19041.06c -- potassium 41 at 931K (K-41)
+Nuclide  19041.06c -- potassium 41 at 940K (K-41)
+Nuclide  19041.06c -- potassium 41 at 948K (K-41)
+Nuclide  19041.06c -- potassium 41 at 956K (K-41)
+Nuclide  20000.06c -- natural calcium at 600K (Ca-nat)
+Nuclide  24050.06c -- chromium 50 at 923K (Cr-50)
+Nuclide  24052.06c -- chromium 52 at 923K (Cr-52)
+Nuclide  24052.06c -- chromium 52 at 956K (Cr-52)
+Nuclide  24053.06c -- chromium 53 at 923K (Cr-53)
+Nuclide  24054.06c -- chromium 54 at 923K (Cr-54)
+Nuclide  25055.06c -- manganese 55 at 923K (Mn-55)
+Nuclide  26000.06c -- natural iron at 600K (Fe-nat)
+Nuclide  26054.06c -- iron 54 at 923K (Fe-54)
+Nuclide  26056.06c -- iron 56 at 923K (Fe-56)
+Nuclide  26056.06c -- iron 56 at 956K (Fe-56)
+Nuclide  26057.06c -- iron 57 at 923K (Fe-57)
+Nuclide  26058.06c -- iron 58 at 923K (Fe-58)
+Nuclide  28058.06c -- nickel 58 at 923K (Ni-58)
+Nuclide  28058.06c -- nickel 58 at 956K (Ni-58)
+Nuclide  28060.06c -- nickel 60 at 923K (Ni-60)
+Nuclide  28060.06c -- nickel 60 at 956K (Ni-60)
+Nuclide  28061.06c -- nickel 61 at 923K (Ni-61)
+Nuclide  28062.06c -- nickel 62 at 923K (Ni-62)
+Nuclide  28064.06c -- nickel 64 at 923K (Ni-64)
+Nuclide  42092.06c -- molybdenum 92 at 956K (Mo-92)
+Nuclide  42094.06c -- molybdenum 94 at 956K (Mo-94)
+Nuclide  42095.06c -- molybdenum 95 at 956K (Mo-95)
+Nuclide  42096.06c -- molybdenum 96 at 956K (Mo-96)
+Nuclide  42097.06c -- molybdenum 97 at 956K (Mo-97)
+Nuclide  42098.06c -- molybdenum 98 at 956K (Mo-98)
+Nuclide  42100.06c -- molybdenum 100 at 956K (Mo-100)
+Nuclide  56130.06c -- barium 130 at 600K (Ba-130)
+Nuclide  56132.06c -- barium 132 at 600K (Ba-132)
+Nuclide  56134.06c -- barium 134 at 600K (Ba-134)
+Nuclide  56135.06c -- barium 135 at 600K (Ba-135)
+Nuclide  56136.06c -- barium 136 at 600K (Ba-136)
+Nuclide  56137.06c -- barium 137 at 600K (Ba-137)
+Nuclide  56138.06c -- barium 138 at 600K (Ba-138)
+Nuclide  92235.06c -- uranium 235 at 873K (U-235)
+Nuclide  92235.06c -- uranium 235 at 890K (U-235)
+Nuclide  92235.06c -- uranium 235 at 898K (U-235)
+Nuclide  92235.06c -- uranium 235 at 906K (U-235)
+Nuclide  92235.06c -- uranium 235 at 915K (U-235)
+Nuclide  92235.06c -- uranium 235 at 923K (U-235)
+Nuclide  92235.06c -- uranium 235 at 931K (U-235)
+Nuclide  92235.06c -- uranium 235 at 940K (U-235)
+Nuclide  92235.06c -- uranium 235 at 948K (U-235)
+Nuclide  92235.06c -- uranium 235 at 956K (U-235)
+Nuclide  92238.06c -- uranium 238 at 873K (U-238)
+Nuclide  92238.06c -- uranium 238 at 890K (U-238)
+Nuclide  92238.06c -- uranium 238 at 898K (U-238)
+Nuclide  92238.06c -- uranium 238 at 906K (U-238)
+Nuclide  92238.06c -- uranium 238 at 915K (U-238)
+Nuclide  92238.06c -- uranium 238 at 923K (U-238)
+Nuclide  92238.06c -- uranium 238 at 931K (U-238)
+Nuclide  92238.06c -- uranium 238 at 940K (U-238)
+Nuclide  92238.06c -- uranium 238 at 948K (U-238)
+Nuclide  92238.06c -- uranium 238 at 956K (U-238)
+
+SUMMARY -- 139 nuclides included in calculation:
+
+ - 139 transport nuclides
+ - Neutron energy cut-offs at 1.00E-11 and 20.0 MeV
+ - 3869 transport reactions
+ - 1033 special reactions
+ - 5.88 Gb of memory allocated for data
+
+Normalizing compositions and processing mixtures...
+OK.
+
+Allocating memory for macroscopic cross section data...
+OK.
+
+Allocating memory for particle structures...
+OK.
+
+Calculating maximum densities...
+OK.
+
+Performing density cut-off...
+OK.
+
+Sorting material-wise reaction lists:
+
+   0% complete
+  12% complete
+ 100% complete
+
+Calculating macroscopic cross sections:
+
+   0% complete
+ 100% complete
+
+Waiting for results from other MPI tasks...
+OK.
+
+Calculating DT neutron majorant cross section:
+
+   0% complete
+  12% complete
+  76% complete
+ 100% complete
+
+Clearing results and statistics...
+OK.
+
+Sampling initial source...
+OK.
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 93
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - RNG history seed = 15755654779164022918
+ - Host name        = r3i5n2
+ - RNG history idx  = 652
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+Inactive cycle   1 /  50: k-eff = 1.00000
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 65
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - RNG history seed = 10359217025530583174
+ - MPI task         = 82
+ - Host name        = r3i3n2
+ - OpenMP thread    = 0
+ - RNG history idx  = 460
+
+ - RNG parent seed  = 1679962069126
+Fatal error in function NormalizeCritSrc:
+
+ - RNG history seed = 17110703186957621382
+Unable to initiate self-sustaining chain reaction - Host name        = r3i4n0
+
+
+ - RNG history idx  = 576
+
+Simulation aborted.
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+Fatal error in function NormalizeCritSrc:
+
+I
+***** Mon Mar 27 18:08:38 2023:
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 37
+ - MPI task         = 78
+Unable to initiate self-sustaining chain reactionnactive cycle  - MPI task         = 86
+ - MPI task         = 123
+ - OpenMP thread    = 0
+ - OpenMP thread    = 0
+
+
+  - OpenMP thread    = 0
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - RNG parent seed  = 1679962069126
+Simulation aborted.
+
+  - RNG parent seed  = 1679962069126
+ - RNG parent seed  = 1679962069126
+ - RNG history seed = 12827011049552730246
+ - Host name        = r3i3n5
+2 - Host name        = r3i4n17
+ - RNG history seed = 11995468711425988742
+ - Host name        = r3i0n19
+ /  - RNG history idx  = 0
+
+ - Host name        = r3i5n31
+ - RNG history idx  = 259
+
+ Fatal error in function NormalizeCritSrc:
+
+ - RNG history idx  = 864
+
+Fatal error in function NormalizeCritSrc:
+
+ - RNG history idx  = 0
+
+50Unable to initiate self-sustaining chain reactionFatal error in function NormalizeCritSrc:
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+Unable to initiate self-sustaining chain reactionFatal error in function NormalizeCritSrc:
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+:
+
+Unable to initiate self-sustaining chain reaction - MPI task         = 69
+
+
+Unable to initiate self-sustaining chain reaction - MPI task         = 98
+ - MPI task         = 73
+ Simulation aborted.
+
+
+
+ - OpenMP thread    = 0
+Simulation aborted.
+
+
+
+ - OpenMP thread    = 0
+ - OpenMP thread    = 0
+kSimulation aborted.
+
+ - RNG parent seed  = 1679962069126
+Simulation aborted.
+
+ - RNG parent seed  = 1679962069126
+ - RNG parent seed  = 1679962069126
+-eff = 
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 122
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - RNG history seed = 12477137184655726726
+ - RNG history seed = 16829420864892688518
+ - RNG history seed = 18408317689244211334
+ - Host name        = r3i3n4
+0 - Host name        = r3i5n31
+ - RNG history idx  = 856
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+ - Host name        = r3i3n3
+ - Host name        = r3i5n3
+ - RNG history idx  = 0
+
+. - RNG history idx  = 486
+
+ - RNG history idx  = 692
+
+Fatal error in function NormalizeCritSrc:
+
+4Fatal error in function NormalizeCritSrc:
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+Unable to initiate self-sustaining chain reaction2Unable to initiate self-sustaining chain reactionFatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+
+
+8
+
+ - MPI task         = 97
+Simulation aborted.
+
+5Simulation aborted.
+
+ - OpenMP thread    = 0
+
+***** Mon Mar 27 18:08:38 2023:
+
+7 - RNG parent seed  = 1679962069126
+
+ - RNG history seed = 8293591041379784838
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 66
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - Host name        = r3i3n2
+ - RNG history idx  = 0
+
+ - MPI task         = 62
+ - Host name        = r3i5n3
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+ - OpenMP thread    = 0
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - RNG history idx  = 681
+
+ - RNG parent seed  = 1679962069126
+Fatal error in function NormalizeCritSrc:
+
+ - RNG history seed = 13647791637404113030
+ - MPI task         = 100
+Unable to initiate self-sustaining chain reaction - Host name        = r3i3n1
+ - OpenMP thread    = 0
+
+
+ - RNG history idx  = 438
+
+ - RNG parent seed  = 1679962069126
+Simulation aborted.
+
+Fatal error in function NormalizeCritSrc:
+
+ - Host name        = r3i5n26
+Unable to initiate self-sustaining chain reaction - RNG history idx  = 0
+
+
+
+Fatal error in function NormalizeCritSrc:
+
+Simulation aborted.
+
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 47
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 96
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - RNG history seed = 9288670259071080582
+ - Host name        = r3i5n3
+ - RNG history idx  = 678
+
+Fatal error in function NormalizeCritSrc:
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - OpenMP thread    = 0
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+ - MPI task         = 3
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - RNG parent seed  = 1679962069126
+ - OpenMP thread    = 0
+ - Host name        = r3i0n31
+ - RNG parent seed  = 1679962069126
+ - MPI task         = 21
+ - RNG history idx  = 0
+
+ - RNG history seed = 15557434330366335110
+ - OpenMP thread    = 0
+Fatal error in function NormalizeCritSrc:
+
+ - Host name        = r3i0n1
+ - RNG parent seed  = 1679962069126
+Unable to initiate self-sustaining chain reaction - RNG history idx  = 21
+
+ - RNG history seed = 13317449361943812230
+
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 2
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - RNG history seed = 15440832059774392454
+ - Host name        = r3i0n1
+ - Host name        = r3i0n9
+Simulation aborted.
+
+ - RNG history idx  = 15
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+ - RNG history idx  = 150
+
+Fatal error in function NormalizeCritSrc:
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reactionUnable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+Simulation aborted.
+
+ - MPI task         = 18
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - RNG history seed = 1690139656089294982
+
+***** Mon Mar 27 18:08:38 2023:
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 10
+ - MPI task         = 57
+ - Host name        = r3i0n8
+ - OpenMP thread    = 0
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - OpenMP thread    = 0
+ - RNG history idx  = 130
+
+ - RNG parent seed  = 1679962069126
+ - MPI task         = 107
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 68
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - Host name        = r3i3n3
+ - RNG history idx  = 0
+
+Fatal error in function NormalizeCritSrc:
+
+ - RNG parent seed  = 1679962069126
+Fatal error in function NormalizeCritSrc:
+
+ - RNG history seed = 9750990285624105094
+ - OpenMP thread    = 0
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+ - Host name        = r3i3n0
+Unable to initiate self-sustaining chain reaction - Host name        = r3i0n5
+ - RNG parent seed  = 1679962069126
+ - RNG history idx  = 0
+
+
+
+ - RNG history idx  = 70
+
+ - Host name        = r3i5n27
+Fatal error in function NormalizeCritSrc:
+
+Simulation aborted.
+
+Fatal error in function NormalizeCritSrc:
+
+ - RNG history idx  = 0
+
+Unable to initiate self-sustaining chain reactionUnable to initiate self-sustaining chain reactionFatal error in function NormalizeCritSrc:
+
+
+
+
+
+Unable to initiate self-sustaining chain reaction
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 64
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - RNG history seed = 251701045595134086
+ - Host name        = r3i3n2
+ - RNG history idx  = 452
+
+Simulation aborted.
+
+Simulation aborted.
+
+
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 59
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - RNG history seed = 8663571975649351814
+ - Host name        = r3i3n0
+ - RNG history idx  = 419
+
+Simulation aborted.
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 115
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - Host name        = r3i5n29
+ - RNG history idx  = 0
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 108
+
+***** Mon Mar 27 18:08:38 2023:
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 83
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - Host name        = r3i4n0
+ - RNG history idx  = 0
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+***** Mon Mar 27 18:08:38 2023:
+
+ - OpenMP thread    = 0
+ - MPI task         = 14
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 43
+
+***** Mon Mar 27 18:08:38 2023:
+
+
+
+Simulation aborted.
+
+ - MPI task         = 9
+ - RNG parent seed  = 1679962069126
+ - OpenMP thread    = 0
+ - MPI task         = 126
+ - OpenMP thread    = 0
+ - MPI task         = 50
+ - OpenMP thread    = 0
+ - RNG history seed = 3148829853253294214
+ - RNG parent seed  = 1679962069126
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - RNG history seed = 10450097224589564038
+ - RNG parent seed  = 1679962069126
+ - RNG history seed = 7699186304653449350
+ - RNG parent seed  = 1679962069126
+ - RNG history seed = 814830189841602694
+ - Host name        = r3i5n28
+ - RNG history idx  = 762
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+ - Host name        = r3i0n7
+ - Host name        = r3i5n32
+ - Host name        = r3i0n27
+ - RNG history seed = 7236645426531719302
+ - Host name        = r3i0n5
+ - MPI task         = 110
+ - RNG history idx  = 101
+
+ - RNG history idx  = 0
+
+ - RNG history idx  = 307
+
+ - Host name        = r3i2n19
+ - RNG history idx  = 65
+
+ - OpenMP thread    = 0
+Fatal error in function NormalizeCritSrc:
+
+Fatal error in function NormalizeCritSrc:
+
+Fatal error in function NormalizeCritSrc:
+
+ - RNG history idx  = 351
+
+Fatal error in function NormalizeCritSrc:
+
+ - RNG parent seed  = 1679962069126
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 121
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - RNG history seed = 13315954701206149254
+Unable to initiate self-sustaining chain reaction
+***** Mon Mar 27 18:08:38 2023:
+
+Unable to initiate self-sustaining chain reactionUnable to initiate self-sustaining chain reactionFatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction - RNG history seed = 12028652494370691206
+ - Host name        = r3i5n31
+ - RNG history idx  = 850
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+
+
+ - MPI task         = 33
+
+
+
+
+Unable to initiate self-sustaining chain reaction
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 99
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - Host name        = r3i5n3
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 16
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - Host name        = r3i0n8
+ - RNG history idx  = 0
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+
+ - Host name        = r3i5n28
+Simulation aborted.
+
+ - OpenMP thread    = 0
+Simulation aborted.
+
+Simulation aborted.
+
+
+
+ - RNG history idx  = 0
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+
+
+Simulation aborted.
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+Simulation aborted.
+
+ - RNG history idx  = 776
+
+ - RNG parent seed  = 1679962069126
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 124
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - RNG history seed = 16558147992134015110
+Simulation aborted.
+
+ - MPI task         = 74
+Fatal error in function NormalizeCritSrc:
+
+ - RNG history seed = 11598430486360086662
+ - Host name        = r3i5n32
+ - RNG history idx  = 870
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 48
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - RNG history seed = 6636746254956812422
+ - OpenMP thread    = 0
+Unable to initiate self-sustaining chain reaction - Host name        = r3i0n18
+ - Host name        = r3i2n19
+ - RNG history idx  = 338
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+ - RNG parent seed  = 1679962069126
+
+
+ - RNG history idx  = 232
+
+ - Host name        = r3i3n4
+Simulation aborted.
+
+Fatal error in function NormalizeCritSrc:
+
+ - RNG history idx  = 0
+
+Unable to initiate self-sustaining chain reactionFatal error in function NormalizeCritSrc:
+
+
+***** Mon Mar 27 18:08:38 2023
+
+Input error:
+
+Insufficient neutron buffer size, increase value of
+parameter "nbuf" (currently set to 60.0)
+
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 58
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - Host name        = r3i3n0
+ - RNG history idx  = 0
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+
+
+Simulation aborted.
+
+
+***** Mon Mar 27 18:08:38 2023
+
+Input error:
+
+Error in normalization: zero fission power
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 71
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - Host name        = r3i3n3
+ - RNG history idx  = 0
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 46
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - RNG history seed = 15860432877978441862
+ - Host name        = r3i0n31
+ - RNG history idx  = 322
+
+Fatal error in function NormalizeCritSrc:
+
+ - MPI task         = 27
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - Host name        = r3i0n10
+ - RNG history idx  = 0
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 75
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - Host name        = r3i3n4
+ - RNG history idx  = 0
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+
+
+Simulation aborted.
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 29
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 13
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - RNG history seed = 14829072328452855942
+ - Host name        = r3i0n7
+ - RNG history idx  = 0
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+ - Host name        = r3i0n11
+ - RNG history idx  = 206
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+***** Mon Mar 27 18:08:38 2023
+
+Input error:
+
+
+
+Insufficient neutron buffer size, increase value of
+parameter "nbuf" (currently set to 60.0)
+
+Simulation aborted.
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 26
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - Host name        = r3i0n10
+ - RNG history idx  = 0
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 117
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - RNG history seed = 5863246012546144390
+ - Host name        = r3i5n30
+ - RNG history idx  = 821
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 53
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - Host name        = r3i2n35
+ - RNG history idx  = 0
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 51
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - Host name        = r3i2n19
+ - RNG history idx  = 0
+
+Fatal error in function NormalizeCritSrc:
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 92
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - RNG history seed = 17804059353336961158
+ - Host name        = r3i5n2
+ - RNG history idx  = 645
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reactionUnable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+
+
+Simulation aborted.
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 85
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - RNG history seed = 7487323294852044934
+ - Host name        = r3i4n17
+ - RNG history idx  = 597
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 94
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - RNG history seed = 2144814251827845254
+ - Host name        = r3i5n2
+ - RNG history idx  = 660
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 6
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - Host name        = r3i0n3
+ - RNG history idx  = 0
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 7
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - RNG history seed = 3958371927835269254
+ - Host name        = r3i0n3
+ - RNG history idx  = 55
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 1
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - RNG history seed = 4702407558192552070
+ - Host name        = r3i0n1
+ - RNG history idx  = 8
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+Inactive cycle   3 /  50: 
+***** Mon Mar 27 18:08:38 2023:
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 25
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - RNG history seed = 16419478933041698950
+ - MPI task         = 39
+
+***** Mon Mar 27 18:08:38 2023:
+
+k-eff = 0.79592
+ - MPI task         = 91
+ - Host name        = r3i0n10
+ - RNG history idx  = 175
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - OpenMP thread    = 0
+ - MPI task         = 76
+ - OpenMP thread    = 0
+Simulation aborted.
+
+ - MPI task         = 22
+ - RNG parent seed  = 1679962069126
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - OpenMP thread    = 0
+ - RNG history seed = 348508034443499654
+ - RNG parent seed  = 1679962069126
+ - Host name        = r3i5n1
+ - RNG parent seed  = 1679962069126
+ - Host name        = r3i0n19
+ - RNG history seed = 12192771689849739398
+ - RNG history idx  = 0
+
+ - RNG history seed = 17591037294235408518
+ - RNG history idx  = 278
+
+ - Host name        = r3i3n5
+Fatal error in function NormalizeCritSrc:
+
+ - Host name        = r3i0n9
+Fatal error in function NormalizeCritSrc:
+
+ - RNG history idx  = 538
+
+Unable to initiate self-sustaining chain reaction - RNG history idx  = 160
+
+Unable to initiate self-sustaining chain reactionFatal error in function NormalizeCritSrc:
+
+
+
+Fatal error in function NormalizeCritSrc:
+
+
+
+Unable to initiate self-sustaining chain reactionSimulation aborted.
+
+Unable to initiate self-sustaining chain reactionSimulation aborted.
+
+
+
+
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 112
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - RNG history seed = 3610885678983469190
+Simulation aborted.
+
+Simulation aborted.
+
+ - Host name        = r3i5n29
+ - RNG history idx  = 789
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 105
+ - OpenMP thread    = 0
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 101
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - RNG history seed = 10684902519305001094
+ - Host name        = r3i5n26
+ - RNG history idx  = 712
+
+Fatal error in function NormalizeCritSrc:
+
+ - RNG parent seed  = 1679962069126
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 80
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - RNG history seed = 16808068420669724806
+ - Host name        = r3i5n27
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 102
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - Host name        = r3i5n26
+ - RNG history idx  = 0
+
+ - Host name        = r3i4n0
+ - RNG history idx  = 564
+
+Fatal error in function NormalizeCritSrc:
+
+ - RNG history idx  = 0
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 116
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - RNG history seed = 12053082707641948294
+ - Host name        = r3i5n30
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+Fatal error in function NormalizeCritSrc:
+
+ - RNG history idx  = 812
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+Inactive cycle   4 /  50: k-eff = 0.90962
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 60
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - RNG history seed = 15347544312090908806
+ - Host name        = r3i3n1
+ - RNG history idx  = 422
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 23
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - RNG history seed = 6643327270044817542
+ - Host name        = r3i0n9
+ - RNG history idx  = 167
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 45
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - RNG history seed = 6583968729853450374
+ - Host name        = r3i0n31
+ - RNG history idx  = 320
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 11
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - RNG history seed = 5512353644462987398
+ - Host name        = r3i0n5
+ - RNG history idx  = 82
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction - MPI task         = 30
+
+
+Simulation aborted.
+
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - RNG history seed = 1812782818231900294
+ - Host name        = r3i0n11
+ - RNG history idx  = 214
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 5
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - RNG history seed = 4082369767602247814
+ - Host name        = r3i0n3
+ - RNG history idx  = 36
+
+
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+Simulation aborted.
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 114
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - RNG history seed = 3385377956743403654
+ - Host name        = r3i5n29
+ - RNG history idx  = 804
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 31
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - RNG history seed = 1760689062224058502
+ - Host name        = r3i0n11
+ - RNG history idx  = 217
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 89
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - RNG history seed = 12575686817517787270
+ - Host name        = r3i5n1
+ - RNG history idx  = 625
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 61
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - Host name        = r3i3n1
+ - RNG history idx  = 0
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+Inactive cycle   5 /  50: k-eff = 1.55935
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 12
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - Host name        = r3i0n7
+ - RNG history idx  = 0
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+
+***** Mon Mar 27 18:08:38 2023
+
+Input error:
+
+Insufficient neutron buffer size, increase value of
+parameter "nbuf" (currently set to 60.0)
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 24
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - RNG history seed = 10839449891891239046
+ - Host name        = r3i0n10
+ - RNG history idx  = 172
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 90
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - RNG history seed = 9304517258910423174
+ - Host name        = r3i5n1
+ - RNG history idx  = 634
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 36
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - RNG history seed = 4333895975756552326
+ - Host name        = r3i0n19
+ - RNG history idx  = 256
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reactionInactive cycle   6 /  50: k
+
+Simulation aborted.
+
+-eff = 0.44553
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 0
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - RNG history seed = 1679962069126
+ - Host name        = r3i0n1
+ - RNG history idx  = 0
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 95
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - RNG history seed = 1527296424927549574
+ - Host name        = r3i5n2
+ - RNG history idx  = 665
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 81
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - Host name        = r3i4n0
+ - RNG history idx  = 0
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 104
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - RNG history seed = 7590740522768193670
+ - Host name        = r3i5n27
+ - RNG history idx  = 732
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 119
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - RNG history seed = 4766314189168826502
+ - Host name        = r3i5n30
+ - RNG history idx  = 838
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 87
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - Host name        = r3i4n17
+ - RNG history idx  = 0
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 17
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - RNG history seed = 5738091619431602310
+ - Host name        = r3i0n8
+ - RNG history idx  = 125
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+
+***** Mon Mar 27 18:08:38 2023
+
+Input error:
+
+Insufficient neutron buffer size, increase value of
+parameter "nbuf" (currently set to 60.0)
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 79
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - Host name        = r3i3n5
+ - RNG history idx  = 0
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 15
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - Host name        = r3i0n7
+ - RNG history idx  = 0
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 20
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - Host name        = r3i0n9
+ - RNG history idx  = 0
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 72
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - RNG history seed = 8032998386110224518
+ - Host name        = r3i3n4
+ - RNG history idx  = 508
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+
+***** Mon Mar 27 18:08:38 2023
+
+Input error:
+
+Insufficient neutron buffer size, increase value of
+parameter "nbuf" (currently set to 60.0)
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 52
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - RNG history seed = 1467535140101478534
+ - Host name        = r3i2n35
+ - RNG history idx  = 367
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 42
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - RNG history seed = 10250880188469008518
+ - Host name        = r3i0n27
+ - RNG history idx  = 295
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 70
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - RNG history seed = 2247374207184590982
+ - Host name        = r3i3n3
+ - RNG history idx  = 491
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 118
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - RNG history seed = 4431854577661040774
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+ - Host name        = r3i5n30
+ - RNG history idx  = 826
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 125
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - RNG history seed = 4603860866727794822
+ - Host name        = r3i5n32
+ - MPI task         = 55
+ - RNG history idx  = 879
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - Host name        = r3i2n35
+ - RNG history idx  = 0
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 4
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - RNG history seed = 276917506484394118
+ - Host name        = r3i0n3
+ - RNG history idx  = 28
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 88
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - Host name        = r3i5n1
+ - RNG history idx  = 0
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+
+***** Mon Mar 27 18:08:38 2023
+
+Input error:
+
+Insufficient neutron buffer size, increase value of
+parameter "nbuf" (currently set to 60.0)
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 44
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - RNG history seed = 13453405286455761030
+ - Host name        = r3i0n31
+ - RNG history idx  = 310
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 56
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - RNG history seed = 4993391445192923270
+ - Host name        = r3i3n0
+ - RNG history idx  = 396
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+
+***** Mon Mar 27 18:08:38 2023
+
+Input error:
+
+Insufficient neutron buffer size, increase value of
+parameter "nbuf" (currently set to 60.0)
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 41
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - Host name        = r3i0n27
+ - RNG history idx  = 0
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+
+***** Mon Mar 27 18:08:38 2023
+
+Input error:
+
+Insufficient neutron buffer size, increase value of
+parameter "nbuf" (currently set to 60.0)
+
+
+***** Mon Mar 27 18:08:38 2023
+
+Input error:
+
+Insufficient neutron buffer size, increase value of
+parameter "nbuf" (currently set to 60.0)
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 106
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - Host name        = r3i5n27
+ - RNG history idx  = 0
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 54
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - RNG history seed = 17016804608609933446
+ - Host name        = r3i2n35
+ - RNG history idx  = 383
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 84
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - RNG history seed = 15842215266718505094
+ - Host name        = r3i4n17
+ - RNG history idx  = 590
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+
+***** Mon Mar 27 18:08:38 2023
+
+Input error:
+
+Insufficient neutron buffer size, increase value of
+parameter "nbuf" (currently set to 60.0)
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 67
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - RNG history seed = 2967403248861042822
+ - Host name        = r3i3n2
+ - RNG history idx  = 471
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 8
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - Host name        = r3i0n5
+ - RNG history idx  = 0
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 40
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - RNG history seed = 5928875280453261446
+ - Host name        = r3i0n27
+ - RNG history idx  = 284
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 19
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - RNG history seed = 14044986225046313094
+ - Host name        = r3i0n8
+ - RNG history idx  = 135
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+
+***** Mon Mar 27 18:08:38 2023:
+
+ - MPI task         = 77
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1679962069126
+ - RNG history seed = 8504276905553418374
+ - Host name        = r3i3n5
+ - RNG history idx  = 541
+
+Fatal error in function NormalizeCritSrc:
+
+Unable to initiate self-sustaining chain reaction
+
+Simulation aborted.
+
+
+***** Mon Mar 27 18:08:38 2023
+
+Input error:
+
+Insufficient neutron buffer size, increase value of
+parameter "nbuf" (currently set to 60.0)
+
+Rewriting criticality_results.txt
+octave: X11 DISPLAY environment variable not set
+octave: disabling GUI features
+error: no graphics toolkits are available!
+error: called from
+    figure at line 96 column 7
+    analyze at line 34 column 1
+octave: X11 DISPLAY environment variable not set
+octave: disabling GUI features
+octave: X11 DISPLAY environment variable not set
+octave: disabling GUI features
+error: no graphics toolkits are available!
+error: called from
+    figure at line 96 column 7
+    analyze at line 34 column 1
+octave: X11 DISPLAY environment variable not set
+octave: disabling GUI features
+error: no graphics toolkits are available!
+error: called from
+    figure at line 96 column 7
+    analyze at line 34 column 1
+All Done!

@@ -1,0 +1,76 @@
+Enter the starting control drum angle in degrees
+Loading Cross-Section Data
+DATAPATH=/hpc-common/data/serpent/xsdata
+Loading Serpent v2
+writing header to results
+Writing MSNB at 112 degrees:
+
+  _                   .-=-.           .-=-.          .-==-.       
+ { }      __        .' O o '.       .' O o '.       /  -<' )--<   
+ { }    .' O'.     / o .-. O \     / o .-. O \     /  .---`       
+ { }   / .-. o\   /O  /   \  o\   /O  /   \  o\   /O /            
+  \ `-` /   \ O`-'o  /     \  O`-'o  /     \  O`-`o /             
+   `-.-`     '.____.'       `._____.'       `.____.'              
+
+Serpent 2 beta
+
+A Continuous-energy Monte Carlo Reactor Physics Burnup Calculation Code
+
+ - Version 2.1.32 (February 24, 2021) -- Contact: serpent@vtt.fi
+
+ - Reference: J. Leppanen, et al. "The Serpent Monte Carlo code: Status,
+              development and applications in 2013." Ann. Nucl. Energy,
+              82 (2015) 142-150.
+
+ - Compiled Mar  8 2021 07:52:45
+
+ - MPI Parallel calculation mode available
+
+ - OpenMP Parallel calculation mode available
+
+ - Geometry and mesh plotting available
+
+ - Default data path set to: "/hpc-common/data/serpent/xsdata"
+
+ - Full command used to run Serpent:
+
+   sss2 ./results/112.0/MSNB -omp 12
+
+Begin calculation on Tue Mar 14 16:43:27 2023 at r6i2n0
+
+Reading input file "./results/112.0/MSNB"...
+
+Checking duplicate input definitions...
+OK.
+
+Dividing burnable materials...
+OK.
+
+Creating geometry...
+OK.
+
+Counting geometry zones...
+
+Processing cells...
+
+***** Tue Mar 14 16:43:27 2023
+
+Input error in parameter "cell" on line 17 in file "./results/112.0/MSNB":
+
+Surface 4 is not defined
+
+For parameter description, try Serpent Wiki:
+
+http://serpent.vtt.fi/mediawiki/index.php/Input_syntax_manual#cell
+
+[proxy:0:12@r6i2n13] proxy_upstream_control_cb (../../../../../src/pm/hydra2/proxy/proxy_cb.c:68): assert (!closed) failed
+[proxy:0:12@r6i2n13] HYDI_dmx_poll_wait_for_event (../../../../../src/pm/hydra2/libhydra/demux/hydra_demux_poll.c:75): callback returned error status
+[proxy:0:12@r6i2n13] main (../../../../../src/pm/hydra2/proxy/proxy.c:977): error waiting for event
+Rewriting criticality_results.txt
+octave: X11 DISPLAY environment variable not set
+octave: disabling GUI features
+error: source: error sourcing file '/home/rootsamu/MSNB/rootdesign/Detector/results/112.0/analyze.m'
+octave: X11 DISPLAY environment variable not set
+octave: disabling GUI features
+error: source: error sourcing file '/home/rootsamu/MSNB/rootdesign/Detector/results/112.0/m2py.m'
+All Done!

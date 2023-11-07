@@ -1,0 +1,62 @@
+Enter the starting control drum angle in degrees
+Loading Cross-Section Data
+DATAPATH=/hpc-common/data/serpent/xsdata
+Loading Serpent v2
+writing header to results
+Writing MSNB at 112 degrees:
+
+  _                   .-=-.           .-=-.          .-==-.       
+ { }      __        .' O o '.       .' O o '.       /  -<' )--<   
+ { }    .' O'.     / o .-. O \     / o .-. O \     /  .---`       
+ { }   / .-. o\   /O  /   \  o\   /O  /   \  o\   /O /            
+  \ `-` /   \ O`-'o  /     \  O`-'o  /     \  O`-`o /             
+   `-.-`     '.____.'       `._____.'       `.____.'              
+
+Serpent 2 beta
+
+A Continuous-energy Monte Carlo Reactor Physics Burnup Calculation Code
+
+ - Version 2.1.32 (February 24, 2021) -- Contact: serpent@vtt.fi
+
+ - Reference: J. Leppanen, et al. "The Serpent Monte Carlo code: Status,
+              development and applications in 2013." Ann. Nucl. Energy,
+              82 (2015) 142-150.
+
+ - Compiled Mar  8 2021 07:52:45
+
+ - MPI Parallel calculation mode available
+
+ - OpenMP Parallel calculation mode available
+
+ - Geometry and mesh plotting available
+
+ - Default data path set to: "/hpc-common/data/serpent/xsdata"
+
+ - Full command used to run Serpent:
+
+   sss2 ./results/112.0/MSNB -omp 12
+
+Begin calculation on Tue Mar 14 20:58:39 2023 at r5i4n0
+
+Reading input file "./results/112.0/MSNB"...
+
+***** Tue Mar 14 20:58:39 2023
+
+Input error in parameter "det" on line 393 in file "./results/112.0/MSNB":
+
+Invalid detector parameter "#"
+
+For parameter description, try Serpent Wiki:
+
+http://serpent.vtt.fi/mediawiki/index.php/Input_syntax_manual#det
+
+Rewriting criticality_results.txt
+octave: X11 DISPLAY environment variable not set
+octave: disabling GUI features
+error: no graphics toolkits are available!
+error: called from
+    figure at line 96 column 7
+    analyze at line 34 column 1
+octave: X11 DISPLAY environment variable not set
+octave: disabling GUI features
+All Done!

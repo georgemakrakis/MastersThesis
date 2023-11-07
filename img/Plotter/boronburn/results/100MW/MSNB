@@ -1,0 +1,410 @@
+set title "Root MSNB at 115.0 Degrees, 19.75 percent enrichment"
+%Revised 2023-04-04
+%
+% ________________CELL CARDS____________________
+%
+% Fuel in Inlet, Outlet, and Downcomer
+cell 101 0 Salt0 13 -16 45 -46 101 102 %Fuel in Downcomer
+cell 102 0 Salt0 12 -13 41 -46 101 102 %Fuel in Lower Spoke
+cell 103 0 Salt0 12 -13 -41 % Fuel Lower Plenum
+cell 104 0 Salt9 -18 31 -40 %Fuel in Riser
+cell 105 0 Salt9 18 -19 -40 %Fuel in Upper Plenum
+cell 106 0 Salt9 18 -19 -46 40 101 102 60 61 62 63 64 65 66 67 % Fuel in Upper Spoke
+cell 107 0 Salt0 13 -14 -40 101 102 % Fuel passing thru Lower Orifice Plate
+cell 108 0 Salt9 -31 15 -40 101 102 % Fuel passing thru Lower Orifice Plate
+%
+% Fuel in Core
+cell 111 0 Salt0 14 -21 -40 103 104
+cell 112 0 Salt1 21 -22 -40 103 104
+cell 113 0 Salt2 22 -23 -40 103 104
+cell 114 0 Salt3 23 -24 -40 103 104
+cell 115 0 Salt4 24 -25 -40 103 104
+cell 116 0 Salt5 25 -26 -40 103 104
+cell 117 0 Salt6 26 -27 -40 103 104
+cell 118 0 Salt7 27 -28 -40 103 104
+cell 119 0 Salt8 28 -15 -40 103 104
+%
+%Fuel in HEX
+cell 121 0 Salt1 16 -31 43 -46 101 102 
+cell 122 0 Salt2 31 -32 43 -46 101 102 
+cell 123 0 Salt3 32 -33 43 -46 101 102 
+cell 124 0 Salt4 33 -34 43 -46 101 102 
+cell 125 0 Salt5 34 -35 43 -46 101 102 
+cell 126 0 Salt6 35 -36 43 -46 101 102 
+cell 127 0 Salt7 36 -37 43 -46 101 102 
+cell 128 0 Salt8 37 -38 43 -46 101 102 
+cell 129 0 Salt9 38 -18 43 -46 101 102 
+%
+% Structure
+cell 200 0 SS304 11 -12 -46 % Base
+cell 201 0 SS304 13 -14 -45 40 % Reflector Bottom 
+cell 202 0 SS304 14 -15 44 -45 % Downcomer Pipe
+cell 203 0 SS304 15 -16 42 -45 % Reflector Topper
+cell 204 0 SS304 17 -18 40 -43 60 61 62 63 64 65 66 67 % Chimney Absorber Topper
+cell 205 0 SS304 16 -17 42 -43 % Chimney Absorber Pipe
+cell 206 0 SS304 10 -19 46 -47 % Reactor Vessel Pipe
+cell 207 0 SS304 19 -20 -47 60 61 62 63 64 65 66 67 %Lid
+%
+% Reflector/Absorber
+cell 300 0 BeO 10 -11 -46 % Bottom Reflector
+cell 301 0 BeO 15 -17 40 -41 % Chimney Reflector
+cell 302 0 BeO 14 -15 40 -48 90 91 92 93 94 95 96 97 % Interstitial Reflector
+cell 303 0 GRPH 14 -15 48 -44 % Safety Reflector Outer
+cell 304 0 B4C 15 -17 -42 41 60 61 62 63 64 65 66 67 % Chimney Absorber
+cell 305 0 BeO 14 -15 -40 (-103:-104) %In Core Moderator
+cell 306 0 BeO 15 -31 (-101:-102) -40 %Core Top Orifice Plate
+%
+% Control Drum Reflectors
+cell 401 0 BeO 14 -15 -90 80 60 % drum 1
+cell 402 0 BeO 14 -15 -91 81 61 % drum 2
+cell 403 0 BeO 14 -15 -92 82 62 % drum 3
+cell 404 0 BeO 14 -15 -93 83 63 % drum 4
+cell 405 0 BeO 14 -15 -94 84 64 % drum 5
+cell 406 0 BeO 14 -15 -95 85 65 % drum 6
+cell 407 0 BeO 14 -15 -96 86 66 % drum 7
+cell 408 0 BeO 14 -15 -97 87 67 % drum 8
+%
+% Control Drum Absorbers
+cell 501 0 B4C 14 -15 -80 60 % drum 1
+cell 502 0 B4C 14 -15 -81 61 % drum 2
+cell 503 0 B4C 14 -15 -82 62 % drum 3
+cell 504 0 B4C 14 -15 -83 63 % drum 4
+cell 505 0 B4C 14 -15 -84 64 % drum 5
+cell 506 0 B4C 14 -15 -85 65 % drum 6
+cell 507 0 B4C 14 -15 -86 66 % drum 7
+cell 508 0 B4C 14 -15 -87 67 % drum 8
+%
+% Control Drum Drive Shafts
+cell 601 0 SS304 -60 70 14 -20 % driveshaft tube 1
+cell 602 0 SS304 -61 71 14 -20 % driveshaft tube 2
+cell 603 0 SS304 -62 72 14 -20 % driveshaft tube 3
+cell 604 0 SS304 -63 73 14 -20 % driveshaft tube 4
+cell 605 0 SS304 -64 74 14 -20 % driveshaft tube 5
+cell 606 0 SS304 -65 75 14 -20 % driveshaft tube 6
+cell 607 0 SS304 -66 76 14 -20 % driveshaft tube 7
+cell 608 0 SS304 -67 77 14 -20 % driveshaft tube 8
+cell 701 0 NiCrMo -70 14 -20 % driveshaft tube 1 fill
+cell 702 0 NiCrMo -71 14 -20 % driveshaft tube 2 fill
+cell 703 0 NiCrMo -72 14 -20 % driveshaft tube 3 fill
+cell 704 0 NiCrMo -73 14 -20 % driveshaft tube 4 fill
+cell 705 0 NiCrMo -74 14 -20 % driveshaft tube 5 fill
+cell 706 0 NiCrMo -75 14 -20 % driveshaft tube 6 fill
+cell 707 0 NiCrMo -76 14 -20 % driveshaft tube 7 fill
+cell 708 0 NiCrMo -77 14 -20 % driveshaft tube 8 fill
+%
+% Flow separators
+cell 800 0 SS304 -101 12 -13 41 -46 % lower spoke dividers 1
+cell 801 0 SS304 -102 12 -13 41 -46 % lower spoke dividers 2
+cell 802 0 SS304 -101 13 -16 45 -46 % downcomer surround dividers 1
+cell 803 0 SS304 -102 13 -16 45 -46 % downcomer surround dividers 2
+cell 804 0 SS304 -101 16 -18 43 -46 % heat exchanger dividers 1
+cell 805 0 SS304 -102 16 -18 43 -46 % heat exchanger dividers 2
+cell 806 0 SS304 -101 18 -19 40 -46 % upper spoke dividers 1
+cell 807 0 SS304 -102 18 -19 40 -46 % upper spoke dividers 2
+cell 808 0 BeO (-101:-102) 13 -14 -40 % core bottom orifice plate dividers 1
+%
+% Outside
+cell 900 0 Conc -10 -100 %  below vessel
+cell 901 0 Conc 10 47 -20 -100 %  around vessel
+cell 902 0 Air 20 -100 %  above vessel
+cell 999 0 outside 100 %void
+%
+% _________________SURFACE CARDS_______________
+%
+% Reactor planes
+surf 10 pz -11 % Bottom
+surf 11 pz -1 % Reactor Vessel base bottom
+surf 12 pz 0 % Reactor Vessel base top
+surf 13 pz 12 % Reflector clad bottom 
+surf 14 pz 13 % Reflector clad top
+surf 15 pz 179 % core/chimney divider
+surf 16 pz 180 % step clad upper
+surf 17 pz 215 % Spoke clad bottom
+surf 18 pz 216 % Spoke clad top
+surf 19 pz 228 % Lid top
+surf 20 pz 231 % Lid top
+%
+% Core Stratification
+surf 21 pz 31.4444 %top of slice 1 
+surf 22 pz 49.8889 %top of slice 2 
+surf 23 pz 69.3333 %top of slice 3 
+surf 24 pz 86.7778 %top of slice 4 
+surf 25 pz 105.2222 %top of slice 5 
+surf 26 pz 123.6667 %top of slice 6 
+surf 27 pz 142.1111 %top of slice 7 
+surf 28 pz 160.5556 %top of slice 8
+%
+% HEX Stratification
+surf 31 pz 184 %top of slice 1 
+surf 32 pz 188 %top of slice 2 
+surf 33 pz 192 %top of slice 3 
+surf 34 pz 196 %top of slice 4 
+surf 35 pz 200 %top of slice 5 
+surf 36 pz 204 %top of slice 6 
+surf 37 pz 208 %top of slice 7 
+surf 38 pz 212 %top of slice 8
+%
+% Reactor cylinders
+surf 40 cyl 0 0 25 % riser inner
+surf 41 cyl 0 0 36.5 % chimney reflector outer 
+surf 42 cyl 0 0 48 % chimney absorber outer
+surf 43 cyl 0 0 49 % absorber liner 
+surf 44 cyl 0 0 66 % safety absorber outer
+surf 45 cyl 0 0 67 % reflector liner 
+surf 46 cyl 0 0 69.5 % RV inner
+surf 47 cyl 0 0 72.5 % RV outer
+surf 48 cyl 0 0 63.5 % reflector outer
+surf 49 cyl 0 0 2.0 % AS center stem
+%
+% Control drum driveshafts
+surf 60 cyl -45.05 0 2.5 % drum drive tube outer 1
+surf 70 cyl -45.05 0 2 % drum drive tube inner 1
+surf 61 cyl -31.8551605 31.8551605 2.5 % drum drive tube outer 2
+surf 71 cyl -31.8551605 31.8551605 2 % drum drive tube inner 2
+surf 62 cyl 0 45.05 2.5 % drum drive tube outer 3
+surf 72 cyl 0 45.05 2 % drum drive tube inner 3
+surf 63 cyl 31.8551605 31.8551605 2.5 % drum drive tube outer 4
+surf 73 cyl 31.8551605 31.8551605 2 % drum drive tube inner 4
+surf 64 cyl 45.05 0 2.5 % drum drive tube outer 5
+surf 74 cyl 45.05 0 2 % drum drive tube inner 5
+surf 65 cyl 31.8551605 -31.8551605 2.5 % drum drive tube outer 6
+surf 75 cyl 31.8551605 -31.8551605 2 % drum drive tube inner 6
+surf 66 cyl 0 -45.05 2.5 % drum drive tube outer 7
+surf 76 cyl 0 -45.05 2 % drum drive tube inner 7
+surf 67 cyl -31.8551605 -31.8551605 2.5 % drum drive tube outer 8
+surf 77 cyl -31.8551605 -31.8551605 2 % drum drive tube inner 8
+%
+% Control drum absorber pads, numbered clockwise from 9 oclock
+surf 80 pad -45.05 0 16 17 70.0 160.0 % drum 1
+surf 81 pad -31.8551605 31.8551605 16 17 115.0 205.0 % drum 2
+surf 82 pad 0 45.05 16 17 160.0 250.0 % drum 3
+surf 83 pad 31.8551605 31.8551605 16 17 205.0 295.0 % drum 4
+surf 84 pad 45.05 0 16 17 250.0 340.0 % drum 5
+surf 85 pad 31.8551605 -31.8551605 16 17 295.0 385.0 % drum 6
+surf 86 pad 0 -45.05 16 17 -20.0 70.0 % drum 7
+surf 87 pad -31.8551605 -31.8551605 16 17 25.0 115.0 % drum 8
+%
+% Control drums, likewise
+surf 90 cyl -45.05 0 17   % drum 1
+surf 91 cyl -31.8551605 31.8551605 17  % drum 2
+surf 92 cyl 0 45.05 17  % drum 3
+surf 93 cyl 31.8551605 31.8551605 17 % drum 4
+surf 94 cyl 45.05 0 17 % drum 5
+surf 95 cyl 31.8551605 -31.8551605 17  % drum 6
+surf 96 cyl 0 -45.05 17 % drum 7
+surf 97 cyl -31.8551605 -31.8551605 17 % drum 8
+%
+% Flow separators
+surf 101 cross 0 0 75.5 3
+surf 102 cross 0 0 75.5 3
+strans 101 0 0 1 0 0 22.5
+strans 102 0 0 1 0 0 -22.5
+%In Core Moderator
+surf 103 cross 0 0 27 1
+surf 104 cross 0 0 27 1
+strans 103 0 0 1 0 0 22.5
+strans 104 0 0 1 0 0 -22.5
+%
+%Extremeties
+surf 100 sph 0 0 0 300
+%
+%_____Material Cards_____
+%LiF-NaF-KF-UF4
+%18 mole percent UF4 at 19.75 percent enrichment
+mat Salt0 -3.643499 tmp 873 rgb 197 0 0
+9019.06c 6.06299e-01
+3006.06c 1.50118e-05
+3007.06c 1.50103e-01
+11023.06c 3.71260e-02
+19039.06c 1.26099e-01
+19041.06c 9.49134e-03
+92235.06c 1.39961e-02
+92238.06c 5.68701e-02
+mat Salt1 -3.628150 tmp 889.66 rgb 204 0 0
+9019.06c 6.06299e-01
+3006.06c 1.50118e-05
+3007.06c 1.50103e-01
+11023.06c 3.71260e-02
+19039.06c 1.26099e-01
+19041.06c 9.49134e-03
+92235.06c 1.39961e-02
+92238.06c 5.68701e-02
+mat Salt2 -3.620470 tmp 897.99 rgb 217 0 0
+9019.06c 6.06299e-01
+3006.06c 1.50118e-05
+3007.06c 1.50103e-01
+11023.06c 3.71260e-02
+19039.06c 1.26099e-01
+19041.06c 9.49134e-03
+92235.06c 1.39961e-02
+92238.06c 5.68701e-02
+mat Salt3 -3.612788 tmp 906.32 rgb 230 0 0
+9019.06c 6.06299e-01
+3006.06c 1.50118e-05
+3007.06c 1.50103e-01
+11023.06c 3.71260e-02
+19039.06c 1.26099e-01
+19041.06c 9.49134e-03
+92235.06c 1.39961e-02
+92238.06c 5.68701e-02
+mat Salt4 -3.605102 tmp 914.65 rgb 242 0 0
+9019.06c 6.06299e-01
+3006.06c 1.50118e-05
+3007.06c 1.50103e-01
+11023.06c 3.71260e-02
+19039.06c 1.26099e-01
+19041.06c 9.49134e-03
+92235.06c 1.39961e-02
+92238.06c 5.68701e-02
+mat Salt5 -3.597414 tmp 922.98 rgb 255 13 13
+9019.06c 6.06299e-01
+3006.06c 1.50118e-05
+3007.06c 1.50103e-01
+11023.06c 3.71260e-02
+19039.06c 1.26099e-01
+19041.06c 9.49134e-03
+92235.06c 1.39961e-02
+92238.06c 5.68701e-02
+mat Salt6 -3.589722 tmp 931.31 rgb 255 26 26
+9019.06c 6.06299e-01
+3006.06c 1.50118e-05
+3007.06c 1.50103e-01
+11023.06c 3.71260e-02
+19039.06c 1.26099e-01
+19041.06c 9.49134e-03
+92235.06c 1.39961e-02
+92238.06c 5.68701e-02
+mat Salt7 -3.582028 tmp 939.64 rgb 255 39 39
+9019.06c 6.06299e-01
+3006.06c 1.50118e-05
+3007.06c 1.50103e-01
+11023.06c 3.71260e-02
+19039.06c 1.26099e-01
+19041.06c 9.49134e-03
+92235.06c 1.39961e-02
+92238.06c 5.68701e-02
+mat Salt8 -3.574330 tmp 947.97 rgb 255 51 51
+9019.06c 6.06299e-01
+3006.06c 1.50118e-05
+3007.06c 1.50103e-01
+11023.06c 3.71260e-02
+19039.06c 1.26099e-01
+19041.06c 9.49134e-03
+92235.06c 1.39961e-02
+92238.06c 5.68701e-02
+mat Salt9 -3.566629 tmp 956.3 rgb 255 64 64
+9019.06c 6.06299e-01
+3006.06c 1.50118e-05
+3007.06c 1.50103e-01
+11023.06c 3.71260e-02
+19039.06c 1.26099e-01
+19041.06c 9.49134e-03
+92235.06c 1.39961e-02
+92238.06c 5.68701e-02
+%
+% 304 Stainless Steel
+mat SS304 -7.5983 tmp 923 rgb 192 192 192
+26054.06c -0.037589 %54-Fe
+26056.06c -0.611384 %56-Fe
+26057.06c -0.014379 %57-Fe
+26058.06c -0.001932 %58-Fe
+7014.06c -0.000995 %14-N
+7015.06c -0.000004 %15-N
+28058.06c -0.070485 %58-Ni
+28060.06c -0.028087 %60-Ni
+28061.06c -0.001241 %61-Ni
+28062.06c -0.004025 %62-Ni
+28064.06c -0.001058 %64-Ni
+24050.06c -0.008338 %50-Cr
+24052.06c -0.167231 %52-Cr
+24053.06c -0.019327 %53-Cr
+24054.06c -0.004902 %54-Cr
+14028.06c -0.006881 %28-Si
+14029.06c -0.000363 %29-Si
+14030.06c -0.000248 %30-Si
+16032.06c -0.000284 %32-S
+16033.06c -0.000002 %33-S
+16034.06c -0.000014 %34-S
+15031.06c -0.000020 %31-P
+25055.06c -0.019980 %55-Mn
+6000.06c -0.000799 %(Carbon)
+%
+% Graphite
+mat GRPH -2.12 tmp 923 moder
+grph 6000 rgb 250 250 0
+6000.06c -1 %(Carbon)
+therm grph 1010 gre7.00t gre7.26t
+%
+% Boron Carbide (10-B enriched) Absorber
+mat B4C -2.52 tmp 923 rgb 110 240 80 burn 1
+5010.06c 0.8 %10-B
+%5011.06c 0.4 %11-B
+6000.06c 0.2 %(Carbon)
+%
+% "Air"
+mat Air -0.001205 tmp 300 rgb 255 170 220
+6000.50c 0.000150
+7014.50c 0.784431
+8016.50c 0.210748
+18000.59c  0.004671
+%
+% Beryllium Oxide Reflector
+mat BeO -3.01 tmp 923 rgb 110 190 250
+4009.06c 0.5
+8016.06c 0.5
+%
+% Hastelloy CHIMNEY REFLECTOR
+mat NiCrMo -8.89 tmp 956 rgb 160 160 160
+28058.06c -0.48
+24052.06c -0.07
+26056.06c -0.05
+14028.06c -0.01
+28060.06c -0.23
+42092.06c -0.02344
+42094.06c -0.014704
+42095.06c -0.025392
+42096.06c -0.026672
+42097.06c -0.015328
+42098.06c -0.038864
+42100.06c -0.0156
+%
+% Barite Concrete
+mat Conc -3.35 tmp 600 rgb 90 100 90
+1001.06c 0.109602
+8016.06c 0.600189
+12000.06c 0.001515
+13027.06c 0.004777
+14000.06c 0.011473
+16000.06c 0.103654
+20000.06c 0.038593
+26000.06c 0.026213
+56130.06c 0.000114381
+56132.06c 0.000103983
+56134.06c 0.002516389
+56135.06c 0.00685248
+56136.06c 0.008162666
+56137.06c 0.011677291
+56138.06c 0.074555811 
+%% ______________________Physics cards_____
+set power 1e8
+set pop 1000000 500 50
+dep daystep 365 365 365 365 365 365 365 365 365 365
+set mcvol 10000000
+set nbuf 10
+set printm 1 1e-10
+set inventory "all"
+set pcc leli 10 10
+set acelib "endfb71r1_p2" "endfb71r1" "jeff31u"
+set declib "sss_jeff31.dec"
+set nfylib "sss_jeff31.nfy"
+% Prints cross section data to [input]_xs0.m file.
+% set xsplot 100 1e-11 2.0 %comment out for temp sens% _________________________Plotter_________
+%
+plot 22 1080 1800 [0 -100 100 -20 320] %Axial
+plot 31 640 640 [6 -100 100 -100 100] %Lower Plenum/Spoke
+plot 31 640 640 [12.5 -100 100 -100 100] %Lower Orifice
+plot 31 1080 1080 [100 -100 100 -100 100] %Core
+plot 31 640 640 [179.5 -100 100 -100 100] %HEX Bottom/Upper Orifice
+plot 31 640 640 [186 -100 100 -100 100] %Heat Exchanger
+plot 31 640 640 [215.5 -100 100 -100 100] %Heat Exchagner Top
+plot 31 640 640 [220 -100 100 -100 100] %Upper Plenum/Spoke

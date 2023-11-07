@@ -1,0 +1,27 @@
+
+  _                   .-=-.           .-=-.          .-==-.       
+ { }      __        .' O o '.       .' O o '.       /  -<' )--<   
+ { }    .' O'.     / o .-. O \     / o .-. O \     /  .---`       
+ { }   / .-. o\   /O  /   \  o\   /O  /   \  o\   /O /            
+  \ `-` /   \ O`-'o  /     \  O`-'o  /     \  O`-`o /             
+   `-.-`     '.____.'       `._____.'       `.____.'              
+
+Serpent 2 beta
+
+A Continuous-energy Monte Carlo Reactor Physics Burnup Calculation Code
+
+ - Version 2.1.31 (May 16, 2019) -- Contact: serpent@vtt.fi
+
+ - Reference: J. Leppanen, et al. "The Serpent Monte Carlo code: Status,
+              development and applications in 2013." Ann. Nucl. Energy,
+              82 (2015) 142-150.
+
+
+UNITY
+
+------------------------------------------------------------
+Title: "Root MSNB at 112.0 Degrees, 19.75 percent enrichment" 
+k-eff (analog)    = 1.00148 +/- 0.00066  [1.00019  1.00278]
+k-eff (implicit)  = 1.00162 +/- 0.00043  [1.00078  1.00247]
+Transport cycle completed in 2.2 minutes.
+------------------------------------------------------------
