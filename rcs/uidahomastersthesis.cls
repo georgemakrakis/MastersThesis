@@ -1,7 +1,7 @@
 % Sets up the class
 \LoadClass[oneside]{book}
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{UIdahoMastersThesis}[2017/04/03 University of Idaho Masters Thesis]
+\ProvidesClass{./rcs/UIdahoMastersThesis}[University of Idaho Masters Thesis]
 
 
 % --------------------------------------------------------------------------

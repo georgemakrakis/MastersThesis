@@ -1,11 +1,16 @@
 \chapter{Controller Design}
 \label{Chapter:Design}
 
+The process simulation was written in Python 3.10 and is modeled in the time-domain. One approach to the controller design would be to fit the autonomous dynamic response of the model to a second order transfer function and model the control loop in the Laplace domain using a software package such as Simulink. Despite using robust fitting heuristics, this method might sacrifice precision and potentially obscure certain features of the core power curve that arise due to the spatial dimensionality in the present work.  Notably, the acceleration of outlet responses, as observed in previous lumped parameter models, is likely to lead to inaccuracies during periods of changing dynamics \cite{msreSimulink}.
+
+\section{Pre-filter Implementation}
+
+
+\section{\texorpdfstring{\acs{pid}}{PID} Controller Implementation}
+
 \section{Core Power Transducer}
 
 \section{Actuator}
-
-\section{Reactor Transfer Function}
 
 \section{Tuning Methodology}
 
