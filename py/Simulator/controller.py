@@ -34,6 +34,7 @@ def drum(error):
     cumu_error += error
     global error_memory #preserve previous error
     roc_error = functions.RoC(error_memory, error)
+    error_memory = error
     
     angle = bias + KP*inst_error \
           + KI*cumu_error \
