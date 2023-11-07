@@ -1,13 +1,12 @@
+#./plots.py
 import matplotlib.pyplot as plt
-import matplotlib as mpl
-from matplotlib.ticker import FormatStrFormatter,ScalarFormatter,FuncFormatter
+from matplotlib.ticker import FormatStrFormatter
 from adjustText import adjust_text
-
 import numpy as np
 import glob
 from PIL import Image
 import os
-import TempProfile, functions, loop, control
+import TempProfile, loop, controller
 
 def x_vs_Tx(path,t,T_x,Tmin,Tmax):
     ymin=Tmin
@@ -27,14 +26,15 @@ def x_vs_Tx(path,t,T_x,Tmin,Tmax):
     plt.clf()
     plt.close()
 
-def t_vs_Q(t,Qhex,Qcore):
+def t_vs_Q(t,Qhex,Qcore,SP):
     plt.figure(figsize=(8,4.5))
     plt.gca().yaxis.set_major_formatter(FormatStrFormatter('%.2f MW'))
-    plt.plot(t/60,Qhex/1e3,label='Heat Exchanger')
+    plt.plot(t/60,Qhex/1e3,label='Heat Exchanger',color='blue')
+    plt.plot(t/60,np.array(SP)/1e3, label='Core Set-Point',color='orange',linestyle=':')
     if Qcore != None:
         Qcore = np.array(Qcore)
-        plt.plot(t/60,Qcore/1e3, label='Core')
-        plt.legend(loc='best')
+        plt.plot(t/60,Qcore/1e3, label='Core',color='orange')
+    plt.legend(loc='best')
     plt.xlabel('time, t (min)')
     plt.ylabel('Power duty and load vs. time')
     plt.savefig("img/t_vs_Qt.png")
@@ -54,14 +54,23 @@ def t_vs_reac(t,Flow,Temp,Total):
     plt.savefig("img/t_vs_reac.png")
     plt.clf()
     plt.close()
-    
-def reac_phase(Flow,Temp,Times):
+
+def t_vs_exp(t,exp):
+    plt.figure(figsize=(8,4.5))
+    plt.plot(t/60,exp)
+    plt.xlabel('time, t (min)')
+    plt.ylabel('dT (sec) per Reactor Period (sec)')
+    plt.savefig("img/t_vs_exponent.png")
+    plt.clf()
+    plt.close()
+
+def auto_reac_phase(Flow,Temp,Times):
     plt.figure()
     plt.gca().yaxis.set_major_formatter(FormatStrFormatter('%.d pcm'))
     plt.gca().xaxis.set_major_formatter(FormatStrFormatter('%.d pcm'))
     Flow,Temp = np.array(Flow)*1e5,np.array(Temp)*1e5
-    max = np.max(np.array([np.max(Temp),-np.max(Flow)]))
-    min = np.min(np.array([np.min(Temp),-np.min(Flow)]))
+    max = np.max(np.array([np.max(Temp),-np.min(Flow)]))
+    min = np.min(np.array([np.min(Temp),-np.max(Flow)]))
     pad = 3
     plt.xlim(min-pad,max+pad)
     plt.ylim(-max-pad,-min+pad)
@@ -71,10 +80,12 @@ def reac_phase(Flow,Temp,Times):
     timeslices = np.cumsum(np.trim_zeros(np.array(Times),'b'))
     plt.scatter(Temp[timeslices],Flow[timeslices],color='darkorange',zorder=5)
 
-    ts = []
+    ts,texts = [],[]
     for t,F,T in zip(timeslices,Flow[timeslices],Temp[timeslices]):
         text = f'  {t//60} min  '
-        ts.append(plt.text(T,F,text))
+        if text not in texts: 
+            texts.append(text)
+            ts.append(plt.text(T,F,text))
 
     plt.tight_layout()
     xavoid = np.concatenate((Temp,np.linspace(max,min,num=100)))
@@ -86,16 +97,46 @@ def reac_phase(Flow,Temp,Times):
     plt.gca().locator_params(axis='both', nbins=6)
     
     plt.title('Passive Feedback Phase Space')
-    plt.savefig("img/reac_phase.png",bbox_inches='tight')
+    plt.savefig("img/auto_reac_phase.png",bbox_inches='tight')
     plt.clf()
     plt.close()
+    
+def contr_reac_phase(Flow,Temp,Control,Times):
+    plt.figure()
+    plt.gca().yaxis.set_major_formatter(FormatStrFormatter('%.d pcm'))
+    plt.gca().xaxis.set_major_formatter(FormatStrFormatter('%.d pcm'))
+    Flow,Temp,Control = np.array(Flow)*1e5,np.array(Temp)*1e5,np.array(Control)*1e5
+    Passive = Flow+Temp
+    max = np.max(np.array([np.max(Passive),-np.min(Control)]))
+    min = np.min(np.array([np.min(Passive),-np.max(Control)]))
+    pad = 3
+    plt.xlim(min-pad,max+pad)
+    plt.ylim(-max-pad,-min+pad)
+    
+    plt.plot(Passive,Control,color='blue')
+    plt.plot([max,min],[-max,-min],linestyle=':',color='black',alpha=0.5)
+    timeslices = np.cumsum(np.trim_zeros(np.array(Times),'b'))
+    plt.scatter(Passive[timeslices],Control[timeslices],color='darkorange',zorder=5)
 
-def t_vs_exp(t,exp):
-    plt.figure(figsize=(8,4.5))
-    plt.plot(t/60,exp)
-    plt.xlabel('time, t (min)')
-    plt.ylabel('dT (sec) per Reactor Period (sec)')
-    plt.savefig("img/t_vs_exponent.png")
+    ts,texts = [],[]
+    for t,P,C in zip(timeslices,Passive[timeslices],Control[timeslices]):
+        text = f'  {t//60} min  '
+        if text not in texts: 
+            texts.append(text)
+            ts.append(plt.text(P,C,text))
+        
+
+    plt.tight_layout()
+    xavoid = np.concatenate((Passive,np.linspace(max,min,num=100)))
+    yavoid = np.concatenate((Control,np.linspace(-max,-min,num=100)))
+    adjust_text(ts,x=xavoid,y=yavoid,force_text=0.2,force_points=0.2,arrowprops={'arrowstyle':'->','color':'darkorange'})
+    plt.xlabel('Passive Reactivity')
+    plt.ylabel('Control Drum Reactivity')
+    
+    plt.gca().locator_params(axis='both', nbins=6)
+    
+    plt.title('Controlled Feedback Phase Space')
+    plt.savefig("img/contr_reac_phase.png",bbox_inches='tight')
     plt.clf()
     plt.close()
 
@@ -111,14 +152,16 @@ def t_vs_velo(t,v):
     plt.close()
 
 def t_vs_angle(t,theta):
-    offset = np.floor(control.bias)
+    offset = np.floor(controller.bias)
     theta -= offset
+    #dtheta = np.diff(theta,append=0)
     fig,ax = plt.subplots(figsize=(8,4.5))
     ax.yaxis.set_major_formatter(FormatStrFormatter('%.3f°'))
     #plt.ylim(np.floor(np.min(theta)),t[-1]/60)
     #plt.yticks(np.array([0,15,30,45,60,75,90,105,120,135,150,165,180]))
     plt.text(0,1.01,f'+{offset}°',transform=ax.transAxes)
     plt.plot(t/60,theta)
+    #plt.plot(t/60,dtheta)
 
     plt.xlabel('time, t (min)')
     plt.ylabel("Control Drum Orientation")
@@ -141,4 +184,5 @@ def kill():
     dir= 'img'
     for f in os.listdir(dir):
         if os.path.isfile(os.path.join(dir,f)):
-            os.remove(os.path.join(dir,f))
+            pass
+            #os.remove(os.path.join(dir,f))
