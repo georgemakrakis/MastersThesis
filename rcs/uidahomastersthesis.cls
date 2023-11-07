@@ -10,8 +10,8 @@
 \RequirePackage[table]{xcolor}
 \RequirePackage{amsmath,amsfonts,amssymb,nicefrac,mathtools}
 \RequirePackage[eulergreek]{sansmath}
-%\RequirePackage[showframe]{geometry} %use showframe to check that nothing infringes on margins
-\RequirePackage{geometry}
+\RequirePackage[showframe]{geometry} %use showframe to check that nothing infringes on margins
+%\RequirePackage{geometry}
 \RequirePackage{array}
 \RequirePackage{graphicx} % Allows placement of graphics
 \RequirePackage{setspace} % Allows fcns like doublespace, singlespace, and singlehalfspacing of text

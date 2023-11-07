@@ -201,11 +201,12 @@ The spatial advancement of the flow loop is a 1D+time computational fluid dynami
 In solving the total energy balance for the time-step, it is useful to convert the temperature profile ($T_x$) to an energy profile ($mu_x$). This is done by using the temperature functions for density, \ref{eq:saltdens}  and heat capacity, \ref{eq:saltcp} and assuming a reference temperature ($T_r$) where the energy is defined as null:
 
 \begin{equation}\label{eq:T2mu}
-    mu_x = \varrho(T_x)\delta x A_x
-             c_p\left(\nicefrac{T_x+T_r}{2}\right)(T_x-T_r) 
+    mu_x = \varrho(T_x)\delta x A_x c_p\left(\nicefrac{T_x+T_r}{2}\right)(T_x-T_r) 
 \end{equation}
 
-By neglecting gravimetric, kinetic, and pressure-volume differentials, and assuming the uniform-state uniform-flow condition, where the thermophysical and thermodynamic properties of the control volume are considered equal throughout, the discrete total energy balance for each control volume becomes:
+
+By neglecting gravimetric, kinetic, and pressure-volume differentials and assuming the uniform-state uniform-flow condition, where the thermophysical and thermodynamic properties of the control volume are considered equal throughout, the discrete total energy balance for each control volume becomes:
+
 
 \begin{equation}
     \frac{d(mu)}{dt} = mu_{enter} - mu_{exit} + Q_{c.v.}
