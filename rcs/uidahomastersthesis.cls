@@ -292,6 +292,7 @@ This thesis of \@author, submitted for the degree of \@degree\ with a Major in \
 \newacronym{lwr}{LWR}{Light Water Reactor}
 \newacronym{smr}{SMR}{Small Modular Reactor}
 \newacronym{nrc}{NRC}{Nuclear Regulatory Commission}
+\newacronym{iaea}{IAEA}{International Atomic Energy Agency}
 \newacronym{ans}{ANS}{American Nuclear Society}
 \newacronym{inl}{INL}{Idaho National Laboratory}
 \newacronym{hpc}{HPC}{High Performance Computing}

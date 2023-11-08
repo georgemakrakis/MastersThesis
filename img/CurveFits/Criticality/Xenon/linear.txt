@@ -1,0 +1,66 @@
+
+0.0Day
+Slope: 224.2444726625173 pcm/degree
+Root: 111.41092285851987 degrees
+
+0.25Day
+Slope: 221.34757958866615 pcm/degree
+Root: 111.71143548939376 degrees
+
+0.5Day
+Slope: 221.89294737639113 pcm/degree
+Root: 111.61209990936679 degrees
+
+0.75Day
+Slope: 224.23733076403911 pcm/degree
+Root: 111.62616028443085 degrees
+
+1.0Day
+Slope: 218.6220866796762 pcm/degree
+Root: 111.97341234860008 degrees
+
+1.25Day
+Slope: 222.27034751479275 pcm/degree
+Root: 111.94138309871627 degrees
+
+1.5Day
+Slope: 223.04222986178692 pcm/degree
+Root: 111.77277609108128 degrees
+
+1.75Day
+Slope: 217.91459459942 pcm/degree
+Root: 112.01737571329086 degrees
+
+2.0Day
+Slope: 217.57646077254083 pcm/degree
+Root: 112.08637096688153 degrees
+
+2.25Day
+Slope: 219.1182105008245 pcm/degree
+Root: 112.03642393039787 degrees
+
+2.5Day
+
+2.75Day
+Slope: 218.60368951927833 pcm/degree
+Root: 111.99813274080329 degrees
+
+3.0Day
+Slope: 217.5597698242125 pcm/degree
+Root: 112.07698347299535 degrees
+
+3.25Day
+Slope: 216.56650329926336 pcm/degree
+Root: 112.07146110452521 degrees
+
+3.5Day
+Slope: 217.40020218795618 pcm/degree
+Root: 111.98291444274516 degrees
+
+3.75Day
+Slope: 220.0872367633007 pcm/degree
+Root: 111.8839500087201 degrees
+
+4.0Day
+Slope: 219.42148204681655 pcm/degree
+Root: 112.05015519077054 degrees

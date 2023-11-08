@@ -1,0 +1,64 @@
+
+Year0.5
+Slope: 203.69581513034404 pcm/degree
+Root: 113.69014937448507 degrees
+
+Year1.0
+Slope: 189.71280588582425 pcm/degree
+Root: 115.79414101842568 degrees
+
+Year1.5
+Slope: 175.96836901869057 pcm/degree
+Root: 117.37599429738462 degrees
+
+Year2.0
+Slope: 161.06977965987326 pcm/degree
+Root: 119.45256557030443 degrees
+
+Year2.5
+Slope: 152.71557501266713 pcm/degree
+Root: 121.05556304741258 degrees
+
+Year3.0
+Slope: 146.0853341039344 pcm/degree
+Root: 122.67134410735702 degrees
+
+Year3.5
+Slope: 130.8520239589994 pcm/degree
+Root: 124.5789682418821 degrees
+
+Year4.0
+Slope: 120.67261395356036 pcm/degree
+Root: 126.4585460754718 degrees
+
+Year4.5
+Slope: 111.30862797083113 pcm/degree
+Root: 128.3470177058056 degrees
+
+Year5.0
+Slope: 102.04911195615465 pcm/degree
+Root: 130.54677257020103 degrees
+
+Year5.5
+Slope: 93.34971727908564 pcm/degree
+Root: 132.28840284074536 degrees
+
+Year6.0
+Slope: 83.9071463939703 pcm/degree
+Root: 134.95579420215265 degrees
+
+Year6.5
+Slope: 77.5684588003582 pcm/degree
+Root: 137.45113746749777 degrees
+
+Year7.0
+Slope: 69.73590242710311 pcm/degree
+Root: 139.19221780009863 degrees
+
+Year7.5
+Slope: 59.451952963553154 pcm/degree
+Root: 142.6924098714972 degrees
+
+Year8.0
+Slope: 55.6509235830626 pcm/degree
+Root: 144.61690875230957 degrees
