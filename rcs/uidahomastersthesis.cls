@@ -77,15 +77,6 @@
 
 
 
-
-% --------------------------------------------------------------------------
-% This fixes issues with table of contents for appendices (Source: https://tex.stackexchange.com/a/231875)
-\g@addto@macro{\appendix}{%
-  \renewcommand\chaptername{Appendix}%
-  \addtocontents{toc}{\protect\renewcommand*{\protect\chaptername}{\protect\appendixname}}%
-}
-
-
 % --------------------------------------------------------------------------
 % Configure Table of Contents (TOC)
 
@@ -110,8 +101,8 @@
 \titlecontents{section}% <section-type>
 [10pt]% <left>
 {}% <above-code>
-{}% <numbered-entry-format>
-{\contentslabel}% <numberless-entry-format>
+{\thecontentslabel:\ }% <numbered-entry-format>
+{ \contentslabel}% <numberless-entry-format>
 {\Dotfill\contentspage}% <filler-page-format>
 
 \titlecontents{subsection}%
@@ -255,7 +246,10 @@ This thesis of \@author, submitted for the degree of \@degree\ with a Major in \
 
 %Nuclides!
 %\newcommand{\<call>}[<mass number (optional)>][default]{$^{#1}A$}
+\newcommand{\F}[1][19]{$^{#1}F$ }
 \newcommand{\Li}[1][]{$^{#1}Li$ }
+\newcommand{\Na}[1][23]{$^{#1}Na$ }
+\newcommand{\K}[1][39]{$^{#1}K$ }
 \newcommand{\B}[1][]{$^{#1}B$ }
 \newcommand{\Be}[1][]{$^{#1}Be$ }
 \newcommand{\I}[1][135]{$^{#1}I$ }

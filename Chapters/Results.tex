@@ -49,7 +49,13 @@ After 100 MW-yr of heat output, just 0.22\% of the \B[10] was consumed. This cau
 By the end of the decade scale operation, 58 moles of helium have been formed by this pathway. This is a significant amount that will need to be off-gassed operation, and could cause swelling if the material is not properly qualified. Tritium is also formed both directly and indirectly by the $^{10}B(n,2\alpha){^{3}H}$ and $^{7}Li(n,n\alpha){^{3}H}$ reactions. At the end of the study, the control material of the \acs{msnb} contained 31.9 millimoles, or 95.7 mg of tritium. This will account for a small amount of the total radioactivity in the decommissioned \acs{msnb}.
 
 \subsection{Neutron Spectra}
-
+A detector code was used to study the volume average neutron flux in three concentric regions. A material detector card was specified for:
+\begin{enumerate*}
+    \item the molten salt in the core;
+    \item the reflector; and
+    \item the molten salt in the downcomer.
+\end{enumerate*}
+500 energy bins of equal lethargy\footnote{Neutron lethargy is a logarithmic energy ratio. Energy bins of equal lethargy width are uniformly distributed when plotted on a log-axis.} width from 10 $\mu$eV to 20 MeV. Figure \ref{fig:Spectrum} displays the neutron spectra in the three regions within the \acs{msnb}.
 
 \begin{figure}[ht!]
     \centering
@@ -57,6 +63,10 @@ By the end of the decade scale operation, 58 moles of helium have been formed by
     \caption[\acs{msnb} Neutron Energy Spectrum]{\raggedright \acs{msnb} neutron energy spectrum in core, reflector, and downcomer.}
     \label{fig:Spectrum}
 \end{figure}
+
+The \acs{msnb} is a fast/epithermal reactor. Most fission neutrons that are emitted at ~2 MeV are not fully thermalized, as they are in \acsp{lwr}. Within the core, The volume average flux generally diminishes as the neutron energy drops, with some discontinuities caused by major resonance peaks of \F, \Li[7], \Na, \K, \U[235], and \U[238], the major constituents of the molten salt fuel. For most neutron energies, the volume average flux in the downcomer is about 2 orders of magnitude, indicating leakage of approximately 1\%. 
+
+An epithermal peak of about 0.1 eV is observed in the downcomer and reflector. The corresponding peak is much smaller in the core spectrum. This implies that this design is not optimally moderating neutrons in the core, \ie the lower energy neutrons have small path length inside the core. This is likely because those neutrons that transport to the edge of the core, are slowed in the reflector, and re-enter the core do not penetrate deep into the core before inducing fission or being captured. Because the \acs{msnb} has ample shut-down margin and limited excess reactivity, it is recommended that in future work, a wider diameter core with smaller flow paths surrounded by in-pile moderation is designed. This will allow the core to make better use of the epithermal peak that is caused by the beryllium oxide reflector, increase the overall macroscopic fission cross-section, and produce a more reactive core.
 
 
 \subsection{Actuator Curve}\label{sec:actuator}
