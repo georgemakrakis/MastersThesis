@@ -244,6 +244,8 @@ This thesis of \@author, submitted for the degree of \@degree\ with a Major in \
 % --------------------------------------------------------------------------
 %% Put your additional LaTeX customizations and definitions here %%
 
+\newcommand{\sci}[1][]{$\times$ 10\textsuperscript{#1} }
+
 %Nuclides!
 %\newcommand{\<call>}[<mass number (optional)>][default]{$^{#1}A$}
 \newcommand{\F}[1][19]{$^{#1}F$ }
