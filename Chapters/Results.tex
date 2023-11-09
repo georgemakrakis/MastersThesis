@@ -13,18 +13,16 @@ Excess reactivity is calculated by orienting the \acs{msnb} in its most reactive
 
 After several iterations, the design used in this work was found to have an excess reactivity of 4.834\% $\pm$ 45.3 pcm with an average core temperature of 650 \textsuperscript{o}C. This is generally considered to be a slim margin, although the relatively low specific power reduces the equilibrium poison levels and the rate of fissile depletion, and aligns with previous work conducted on a similar design \cite{PetersonMS}. In this work, the initial batch of fuel lasted nearly 6 years before the total loss of excess reactivity was observed.
 
-
-
 \begin{figure}[!ht]
     \centering
-    \subfloat[\centering Single Misfire]{\includegraphics[width=0.49\textwidth]{Plotter/0.0shutdown7drum/MSNB_geom4}}
-    \subfloat[\centering Single Success]{\includegraphics[width=0.49\textwidth]{Plotter/0.0shutdown1drum/MSNB_geom4}}
+    \subfloat[\centering Single Misfire]{\includegraphics[width=0.48\textwidth]{Plotter/0.0shutdown7drum/MSNB_geom4}}
+    \subfloat[\centering Single Success]{\includegraphics[width=0.48\textwidth]{Plotter/0.0shutdown1drum/MSNB_geom4}}
     \caption[X-Y View of \acs{msnb} - Shut-Down Margin]{X-Y Views of \acs{msnb} with control drums in two shut-down margin failure modes:
     \begin{enumerate*}[label=\alph*)]
         \item Seven drums in least reactive orientation, one drum failed in most reactive orientation; and 
         \item One drum in least reactive orientation, seven drums failed in most reactive orientation; 
     \end{enumerate*}
-    }
+    The entire wedge of each control drum is colored for clarity. Only the outer rim is actually made from boron carbide.}
     \label{fig:Plotter-SDM}
 \end{figure}
 
@@ -51,6 +49,8 @@ After 100 MW-yr of heat output, just 0.22\% of the \B[10] was consumed. This cau
 By the end of the decade scale operation, 58 moles of helium have been formed by this pathway. This is a significant amount that will need to be off-gassed operation, and could cause swelling if the material is not properly qualified. Tritium is also formed both directly and indirectly by the $^{10}B(n,2\alpha){^{3}H}$ and $^{7}Li(n,n\alpha){^{3}H}$ reactions. At the end of the study, the control material of the \acs{msnb} contained 31.9 millimoles, or 95.7 mg of tritium. This will account for a small amount of the total radioactivity in the decommissioned \acs{msnb}.
 
 \subsection{Neutron Spectra}
+
+
 \begin{figure}[ht!]
     \centering
     \includegraphics[width=0.9\textwidth]{./Plotter/Detector/Spectrum}
@@ -60,6 +60,19 @@ By the end of the decade scale operation, 58 moles of helium have been formed by
 
 
 \subsection{Actuator Curve}\label{sec:actuator}
+
+\begin{figure}[!ht]
+    \centering
+    \subfloat[\centering Xenon-135 Build-up]{\includegraphics[width=0.49\textwidth]{/CurveFits/eqXe}}
+    \subfloat[\centering Depletion]{\includegraphics[width=0.49\textwidth]{/CurveFits/depletion}}
+    \caption[Control Reactivity Curve]{Control drum angle vs. reactivity curves. Each curve corresponds to a different burn-up level:
+    \begin{enumerate*}[label=\alph*)]
+        \item 6 hour increments until \Xe reaches equilibrium`'; and 
+        \item 6 month increments until the fuel is depleted enough that the \acs{msnb} has very little excess reactivity; 
+    \end{enumerate*}
+    }
+    \label{fig:ControlReactivityCurve}
+\end{figure}
 
 \section{Multi-physics Simulation}
 

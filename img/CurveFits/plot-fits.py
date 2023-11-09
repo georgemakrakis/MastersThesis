@@ -39,16 +39,21 @@ arrays=np.array(arrays)
 #print(len(times))
 #print(len(arrays[:,0]))
 
+zeroday=True
+gap = 0.01
 for array in arrays:
     rho = poly(theta,array)
     plt.plot(theta,rho*100)
+    if zeroday:
+        plt.annotate('0.0 Days',(theta[9],rho[9]*100+gap),xytext=(theta[6],rho[9]*100+1),arrowprops={'arrowstyle':'->','color':'black'})
+        zeroday = False
 
 plt.axhline(0,linestyle=':',color='black')
 plt.axvline(112,linestyle=':',color='black')
 #plt.axvline(145,linestyle=':',color='black')
 
 #plt.text(176,4,'0.5 Year')
-#plt.annotate('',(181,1),xytext=(181,3.9),arrowprops={'arrowstyle':'->','color':'black'})
+plt.annotate('4.0 Days',(theta[9],rho[9]*100-gap),xytext=(theta[10],rho[9]*100-1),arrowprops={'arrowstyle':'->','color':'black'})
 #plt.text(176,0.5,'8.0 Year')
 
 plt.xlim(None,188)
