@@ -84,10 +84,16 @@ An epithermal peak of about 0.1 eV is observed in the downcomer and reflector. T
     \label{fig:ControlReactivityCurve}
 \end{figure}
 
-4th order polynomial
+The controller that is tuned and studied in Section \ref{sec:simulation} depends on a detailed actuator characterization. The \acs{msnb}'s static response to the orientation of the control drums were studied over the life of the reactor in an alternating methodology of criticality and burn-up modeling, detailed in Section \ref{Section:Serpent}. Figure \ref{fig:ControlReactivityCurve} depicts the evolution of the core reactivity vs. the rotational angle of the control drum as the \Xe level rises to equilibrium, and as the \U[235] is depleted. The controller model treats the control drum as an \acs{lti} system. The figure clearly shows that the actuator response is neither linear nor time-invariant. Over time, the reactor's response to the actuator changes, however, these are not rapid changes; the \Xe worth at equilibrium for the specific power of study (10 MW) is small enough that the curves overlap, with only dozens of pcm separating the fresh and poisoned fuel. Furthermore it takes eight years for the unity point to drift by approximately 20 degrees. The evolution of the actuator response can easily be modeled using a look-up table. The controller will set a different bias and use a different gain depending on the length of time that the \acs{msnb} has operated. The data was fit to a series of fourth order polynomials which the process simulator can use to calculate the control reactivity ($\rho$) given the control drum orientation ($\theta$):
 
-\begin{table}[ht!]
-    \caption[Control Reactivity Curve Fit - Equilibrium Poisoning]{blep}
+\begin{equation}
+    \rho = c_0 + c_1\theta + c_2\theta^2 + c_3\theta^3 + c_4\theta^4
+\end{equation}
+
+During normal operation, the reactor will only be made slightly supercritical to power up or subcritical to power down, likely on the order of tens to hundreds of pcm. This corresponds to a small rotation of the control drums. For the purposes of controller design, the control-reactivity curve can be linearized simply by solving for the root of the polynomial and computing the derivative at that point. The root of the curve corresponding to the current depth of burn-up will be set as the controller bias, while the slope of the tangent line (in pcm/degree) can be used to scale the controller gain (in degree/kW) and obtain the desired combined controller-actuator gain (in pcm/kW). Notably, the root of all of the curves lies above its inflection point. As a result the actuator will insert less positive reactivity than the controller intends during an up-transient, land more negative reactivity than the controller intends during a down-transient. The deviation between the polynomial and linearization is small for the expected range of control drum orientations, but this may result in slightly better performance when increasing the power duty. The polynomial coefficients defining the curves and root/tangent slope are listed in Tables \ref{tab:Xefit} and \ref{tab:Depletionfit}. $c_0$ could be adjusted to account for a different operating temperature, which would shift the curve up or down according to $\alpha_t$, and require re-linearization around the new root. 
+
+\begin{table}[t!]
+    \caption[Control Reactivity Curve Fit - Equilibrium Poisoning]{Polynomial coefficients, root, and slope for the control drum vs. reactivity curves during equilbrium poisoning.}
     \centering\begin{tabular}{c|ccccc|cc}
     \hline
     Hours & c\textsubscript{4} \sci[9] & c\textsubscript{3} \sci[6] & c\textsubscript{2} \sci[4] & c\textsubscript{1} \sci[2] & c\textsubscript{0} & root ($^o$) & slope ($pcm/^o$) \\ \hline
@@ -112,8 +118,8 @@ An epithermal peak of about 0.1 eV is observed in the downcomer and reflector. T
     \label{tab:Xefit}
 \end{table}
 
-\begin{table}[ht!]
-    \caption[Control Reactivity Curve Fit - Fuel Depletion]{blep}
+\begin{table}[bh!]
+    \caption[Control Reactivity Curve Fit - Fuel Depletion]{Polynomial coefficients, root, and slope for the control drum vs. reactivity curves during fuel depletion.}
     \centering\begin{tabular}{c|ccccc|cc}
     \hline
     Years & c\textsubscript{4} \sci[9] & c\textsubscript{3} \sci[6] & c\textsubscript{2} \sci[4] & c\textsubscript{1} \sci[2] & c\textsubscript{0} & root ($^o$) & slope ($pcm/^o$) \\ \hline
@@ -138,7 +144,7 @@ An epithermal peak of about 0.1 eV is observed in the downcomer and reflector. T
     \label{tab:Depletionfit}
 \end{table}
 
-\section{Multi-physics Simulation}
+\section{Multi-physics Simulation}\label{sec:simulation}
 
 \subsection{Steady-State}
 
