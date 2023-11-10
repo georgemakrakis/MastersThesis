@@ -254,3 +254,23 @@ where $\lambda$ is the delayed neutron precursor decay constant and $\dot{\rho}$
 \end{equation}
 
 With the new power, the entire sequence of calculations can be repeated for the next discrete time-step, repeating until the simulation is over. These steps result in a first principles based multiphysics model that simulates compound passive feedbacks to compute the approximate behavior of a natural circulation \acs{msnb} during dynamic operation.
+
+\section{Controller Design}
+\label{Section:Design}
+
+The process simulation was written in Python 3.10 and is modeled in the time-domain. One approach to the controller design would be to fit the autonomous dynamic response of the model to a second order transfer function and model the control loop in the Laplace domain using a software package such as Simulink. Despite using robust fitting heuristics, this method might sacrifice precision and potentially obscure certain features of the core power curve that arise due to the spatial dimensionality in the present work.  Notably, the acceleration of outlet responses, as observed in previous lumped parameter models, is likely to lead to inaccuracies during periods of changing dynamics \cite{msreSimulink}. Instead, user-defined functions were developed to model the control loop natively.
+
+\subsection{Pre-filter Implementation}
+As a demand-response control loop, it is desired that the core power follows the heat-exchanger power. As discussed in Sections \ref{sec:prefilter} and \ref{sec:transport}, there are thermal-hydraulic and kinetic benefits to the use of a pre-filter. A first-order time constant of $\nicefrac{\ell_{downcomer}}{v}$ ensures that the controller allows temperature reactivity feedback to present as it matches the power output to the demand:
+
+\begin{equation}
+    Q_{core}^{SP} = \frac{v}{\ell_{downcomer}s+v} Q_{HEX}    
+\end{equation}
+
+where $v$ is the initial flow velocity in mm/s and $\ell_{downcomer}$ is the length of the downcomer in mm. The heat exchanger power array ($Q_{HEX}$) was reshaped into the core power set-point ($Q_{core}^{SP}$) using the Python control system library \cite{ct}. The `control.forced\_response' method extends the functionality of scipy's `TransferFunction' object to allow operation on user-defined input arrays.
+
+\subsection{\texorpdfstring{\acs{pid}}{PID} Controller and Actuator Implementation}
+When the controller is active, the control drum feedback is included in the reactivity summation. At each time step, the instantaneous error is passed to a function that calculates the cumulative error and rate-of-change of error using global variables. These values are used along with the controller bias, controller gain, and integral and derivative time constants to calculate the desired control drum orientation. The control drum reactivity is then obtained using this angle and the actuator curve fitted in Section \ref{sec:actuator}. 
+
+\subsection{Core Power Transducer}
+The power sensor/transmitter is not modeled in the present work, as it is calculated from reactor point kinetics. The physical realization of the power sensor will be comprised of an array of temperature and flow sensors, likely K-type thermocouples and thermal mass flow sensors \cite{Instrumentation}. These sensors will be distributed around the core, and their data will be synthesized using the energy balance $Q = mc_p\Delta T$. This sensor is expected to be very noisy. The integral controller will help reject this noise to some extent, however some type of signal processing, \eg a low-pass filter or a convolution will be needed. In future work, noise should be injected and processed. While the sensor will be noisy, the computational requirements are relatively modest; given that the simulator uses 1 second time-steps, the transducer is assumed to have fast-unity dynamics.
