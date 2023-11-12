@@ -1,9 +1,9 @@
-delay time (10%): 1.2 min
-rise time (90%): 2.3 min
-settling time (+/-5%): 40.5 min
-Time between peaks: 6.5 min
+delay time (10%):  min
+rise time (90%):  min
+settling time (+/-5%):  min
+Time between peaks:  min
 
-step: 2 MW
-inverse response: 0.55 MW
-overshoot 1st peak: 2.1 MW
-overshoot 2nd peak: 1.15 MW
+step:  MW
+inverse response:  MW
+overshoot 1st peak:  MW
+overshoot 2nd peak:  MW

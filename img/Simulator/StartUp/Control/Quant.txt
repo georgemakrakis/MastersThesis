@@ -1,0 +1,22 @@
+First Ramp:
+delay time (10%): 17 min
+rise time (90%): 19.5 min
+settling time (+/-5%): N/A min
+Time between peaks: 12 min
+
+step: 0.9 MW in 30 min
+inverse response: 0.1 MW
+overshoot 1st peak: 0.25 MW
+overshoot 2nd peak: N/A MW
+
+
+Second Ramp:
+delay time (10%): 5.5 min
+rise time (90%): 29.6 min
+settling time (+/-5%): 31 min
+Time between peaks: 6 min
+
+step: 9 MW in 30 min
+inverse response: N/A MW
+overshoot 1st peak: 0.08 MW
+overshoot 2nd peak: 0.06 MW
