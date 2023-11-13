@@ -2,11 +2,14 @@
 \label{Chapter:Conclusions}
 
 \section{Limitations}
+A number simplifications were made in the development of the neutronics model, including the use of a simplified geometry rather than a rigorous design, and the decoupling of criticality and temperature. Additionally, the burn-up modeling was conducted assuming the uniform dispersion of all species throughout the molten salt. Advanced techniques exist to study the spatial variability of burn-up in the core; these methods should be employed and coupled to diffusion modeling of key fission products to verify this assumption. 
 
--Velocity should be damped by inertia... First order vs. second order...
+The process simulation is a reduced-order-model that removed certain complexities to ease the solvability of the problem and reduce computation time at the expense of fidelity. The most consequential conjecture is that the flow loop can be reduced to a single spatial dimension and still exhibit behavior in line with what would be observed. This is likely a reasonable assumption for the well mixed and case modeled in this work. Previous work has compared a similar 1D+time simulation to STAR-CCM+ and observed comparable dynamics. The present simulation also does not consider fluid inertia nor thermal diffusion, each of which would likely dampen some of the fine grain oscillatory behavior of steady-state responses. Finally, the model assumes linear heat rejection from the heat exchanger and heat generation in the core, as well as a lumping of the reactor point kinetics that govern the core's response. The spatial power profiles could easily be reshaped to match rigorous calculations, however, discretizing the reactor point kinetics to the control volume level would likely introduce degrees of freedom requiring additional constraints.
+
+The 
 
 
-\section{Future Work}\label{Chapter:Conclusions-FutureWork}
+\section{Related Systems}\label{Chapter:Conclusions-FutureWork}
 \subsection{Fuel Salt Thawing}
 Because microreactors are meant to be delivered in a fully or mostly assembled state, it is likely that the \acs{msnb} will be shipped with the molten fuel/coolant salt mixture frozen \textit{in-situ}. The salt will need to be melted before initial start-up, and the heat source for melting the cannot be fission, as the \acs{msnb} requires advective heat removal caused by natural circulation; this is not possible if the flow channels between the core and heat exchanger are frozen. One possible method for salt thawing involves passing low-voltage high-current electricity through the pipes in contact with the salt, similar to how frozen water pipes are thawed \cite{Thawing}; this would be coupled with the introduction of hot secondary coolant into the heat exchanger to provide the necessary hot reservoir.
 
