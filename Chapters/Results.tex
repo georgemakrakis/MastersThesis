@@ -161,22 +161,211 @@ During normal operation, the reactor will only be made slightly supercritical to
     \caption[Steady state velocity response]{Core velocity response to a steady heat exchanger demand of 10 MW given the initial conditions.}
     \label{fig:SS-Velocity}
 \end{figure}
-
+\clearpage
 \subsection{Up-Step}
 
 \subsubsection{Autonomous Response}
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=0.9\textwidth]{Simulator/StepUp/Auto/t_vs_Qt}
+    \caption[Autonomous Up-Step Power Response]{Core power response to a heat exchanger demand step function from 8 MW to 10 MW.}
+    \label{fig:Up-Power-Auto}
+\end{figure}
 
-
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=0.9\textwidth]{Simulator/StepUp/Auto/t_vs_reac}
+    \caption[Autonomous Up-Step Reactivity Response]{Core reactivity response to a heat exchanger demand heat exchanger demand step function from 8 MW to 10 MW.}
+    \label{fig:Up-Reac-Auto}
+\end{figure}
+\clearpage
 \subsubsection{Controller Tuning}
 
 
 \subsubsection{Controller Response}
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=0.9\textwidth]{Simulator/StepUp/Control/t_vs_Qt}
+    \caption[Controlled Up-Step Power Response ]{Controlled core power response to a heat exchanger demand step function from 8 MW to 10 MW.}
+    \label{fig:Up-Power-Ctr}
+\end{figure}
 
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=0.9\textwidth]{Simulator/StepUp/Control/t_vs_angle}
+    \caption[Up-Step Actuator Response]{Control drum angle response to a heat exchanger demand step function from 8 MW to 10 MW.}
+    \label{fig:Up-Drum}
+\end{figure}
+\clearpage
 
 \subsection{Down-Step}
 
+\subsubsection{Autonomous Response}
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=0.9\textwidth]{Simulator/StepDown/Auto/t_vs_Qt}
+    \caption[Autonomous Down-Step Power Response]{Core power response to a heat exchanger demand step function from 10 MW to 8 MW.}
+    \label{fig:Down-Power-Auto}
+\end{figure}
+
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=0.9\textwidth]{Simulator/StepDown/Auto/auto_reac_phase}
+    \caption[Autonomous Down-Step Reactivity Phase Space]{Passive reactivity phase space response to a heat exchanger demand heat exchanger demand step function from 10 MW to 8 MW.}
+    \label{fig:Down-PassivePhase-Auto}
+\end{figure}
+\clearpage
+
+\subsubsection{Controller Response}
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=0.9\textwidth]{Simulator/StepDown/Control/t_vs_Qt}
+    \caption[Controlled Down-Step Power Response ]{Controlled core power response to a heat exchanger demand step function from 10 MW to 8 MW.}
+    \label{fig:Down-Power-Ctr}
+\end{figure}
+
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=0.9\textwidth]{Simulator/StepDown/Control/contr_reac_phase}
+    \caption[Controlled Down-Step Reactivity Phase Space]{Controlled reactivity phase space response to a heat exchanger demand heat exchanger demand step function from 10 MW to 8 MW.}
+    \label{fig:Down-ControlPhase-Ctr}
+\end{figure}
+\clearpage
+
+
 \subsection{Start-Up}
+
+\subsubsection{Autonomous Response}
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=0.9\textwidth]{Simulator/StartUp/Auto/t_vs_Qt}
+    \caption[Autonomous Start-Up Power Response]{Core power response for an autonomous start-up from hot-standby. The heat exchanger power is ramped from 100 kW to 1 MW over three hours, then to 10 MW in a subsequent hour.}
+    \label{fig:Start-Power-Auto}
+\end{figure}
+
+\begin{figure}[!ht]
+    \centering
+     \subfloat[\centering Hot-Standby]{\includegraphics[width=0.49\textwidth]{Simulator/StartUp/Auto/animateTx_t/t-1}}
+    \subfloat[\centering Low Power]{\includegraphics[width=0.49\textwidth]{Simulator/StartUp/Auto/animateTx_t/t-200}}
+    \quad
+    \subfloat[\centering Full-Power]{\includegraphics[width=0.49\textwidth]{Simulator/StartUp/Auto/animateTx_t/t-300}}
+    \subfloat[\centering Steady State]{\includegraphics[width=0.49\textwidth]{Simulator/StartUp/Auto/animateTx_t/t-900}}
+    \caption[Autonomous Start-Up Temperature Profile Response]{Temperature profile response to an autonomous start-up from hot-standby.
+    \begin{enumerate*}[label=\alph*)]
+        \item \acs{msnb} is at hot-standby;
+        \item \acs{msnb} has equilibrated at 1 MW;
+        \item \acs{msnb} has just reached 10 MW; 
+        \item \acs{msnb} has equilibrated at 10 MW;
+    \end{enumerate*}}
+    \label{fig:Start-Temp-Auto}
+\end{figure}
+
+\clearpage
+
+\subsubsection{Controller Response}
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=0.9\textwidth]{Simulator/StartUp/Control/t_vs_Qt}
+    \caption[Controlled Start-Up Power Response]{Core power response for a controlled start-up from hot-standby. The heat exchanger power is ramped from 100 kW to 1 MW, then to 10 MW over consecutive 30 minute periods.}
+    \label{fig:Start-Power-Ctr}
+\end{figure}
+
+\begin{figure}[!ht]
+    \centering
+     \subfloat[\centering Hot-Standby]{\includegraphics[width=0.49\textwidth]{Simulator/StartUp/Control/animateTx_t/t-1}}
+    \subfloat[\centering Low Power]{\includegraphics[width=0.49\textwidth]{Simulator/StartUp/Control/animateTx_t/t-50}}
+    \quad
+    \subfloat[\centering Full-Power]{\includegraphics[width=0.49\textwidth]{Simulator/StartUp/Control/animateTx_t/t-90}}
+    \subfloat[\centering Steady State]{\includegraphics[width=0.49\textwidth]{Simulator/StartUp/Control/animateTx_t/t-120}}
+    \caption[Controlled Start-Up Temperature Profile Response]{Temperature profile response to a controlled start-up from hot-standby.
+    \begin{enumerate*}[label=\alph*)]
+        \item \acs{msnb} is at hot-standby;
+        \item \acs{msnb} has equilibrated at 1 MW;
+        \item \acs{msnb} has just reached 10 MW; 
+        \item \acs{msnb} has equilibrated at 10 MW;
+    \end{enumerate*}}
+    \label{fig:Start-Temp-Auto}
+\end{figure}
+\clearpage
+
 
 \subsection{Shut-Down}
 
+\subsubsection{Autonomous Response}
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=0.9\textwidth]{Simulator/ShutDown/Auto/t_vs_Qt}
+    \caption[Autonomous Shut-Down Power Response]{Core power response for a shut-down from full-power to hot-standby. The heat exchanger power is ramped from 10 MW to 1 MW, then to 100 kW over two separate thirty minute periods.}
+    \label{fig:Stop-Power-Auto}
+\end{figure}
+
+\begin{figure}[!ht]
+    \centering
+    \subfloat[\centering Full-Power]{\includegraphics[width=0.49\textwidth]{Simulator/ShutDown/Auto/animateTx_t/t-1}}
+    \subfloat[\centering Low Power]{\includegraphics[width=0.49\textwidth]{Simulator/ShutDown/Auto/animateTx_t/t-60}}
+    \quad
+    \subfloat[\centering Heat Exchanger at Hot-Standby]{\includegraphics[width=0.49\textwidth]{Simulator/ShutDown/Auto/animateTx_t/t-120}}
+    \subfloat[\centering Core at Hot-Standby]{\includegraphics[width=0.49\textwidth]{Simulator/ShutDown/Auto/animateTx_t/t-140}}
+    \caption[Autonomous Shut-Down Temperature Profile Response]{Temperature profile response to a shut-down from full-power to hot-standby.
+    \begin{enumerate*}[label=\alph*)]
+        \item \acs{msnb} is at full-power;
+        \item \acs{msnb} has equilibrated at 1 MW;
+        \item Heat exchanger has just reached hot-standby; 
+        \item Core has equilibrated at hot-standby;
+    \end{enumerate*}}
+    \label{fig:Stop-Temp-Auto}
+\end{figure}
+
+\clearpage
+
+\subsubsection{Controller Response}
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=0.9\textwidth]{Simulator/ShutDown/Control/t_vs_Qt}
+    \caption[Controlled Shut-Down Power Response]{Core power response for a shut-down from full-power to hot-standby. The heat exchanger power is ramped from 10 MW to 1 MW, then to 100 kW over consecutive 30 minute periods.}
+    \label{fig:Stop-Power-Ctr}
+\end{figure}
+
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=0.9\textwidth]{Simulator/ShutDown/Control/contr_reac_phase}
+    \caption[Controlled Shut-Down Reactivity Phase Space]{\raggedright Reactivity phase space response for a shut-down from full-power to hot-standby}
+    \label{fig:Stop-ControlPhase-Ctr}
+\end{figure}
+\clearpage
+
+
+
 \subsection{Demand-Response}
+
+\subsubsection{Autonomous Response}
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=0.9\textwidth]{Simulator/DemandResponse/Auto/t_vs_Qt}
+    \caption[Autonomous Demand-Response Power Response]{Core power response to a heat exchanger demand transient. The \acs{msnb} is ramped from 8 MW to 10 MW over 5 minutes, holds for 10 minutes, then is ramped back to 8 MW in 10 minutes.}
+    \label{fig:Demand-Power-Auto}
+\end{figure}
+
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=0.9\textwidth]{Simulator/DemandResponse/Auto/auto_reac_phase}
+    \caption[Autonomous Demand-Response Reactivity Phase Space]{Passive reactivity phase space response to a heat exchanger demand heat exchanger demand transient. The \acs{msnb} is ramped from 8 MW to 10 MW over 5 minutes, holds for 10 minutes, then is ramped back to 8 MW in 10 minutes.}
+    \label{fig:Demand-PassivePhase-Auto}
+\end{figure}
+\clearpage
+
+\subsubsection{Controller Response}
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=0.9\textwidth]{Simulator/DemandResponse/Control/t_vs_Qt}
+    \caption[Controlled Demand-Response Power Response ]{Controlled core power response to a heat exchanger demand transient. The \acs{msnb} is ramped from 8 MW to 10 MW over 5 minutes, holds for 10 minutes, then is ramped back to 8 MW in 10 minutes.}
+    \label{fig:Demand-Power-Ctr}
+\end{figure}
+
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=0.9\textwidth]{Simulator/DemandResponse/Control/contr_reac_phase}
+    \caption[Controlled Demand-Response Reactivity Phase Space]{Controlled reactivity phase space response to a heat exchanger demand heat exchanger demand transient. The \acs{msnb} is ramped from 8 MW to 10 MW over 5 minutes, holds for 10 minutes, then is ramped back to 8 MW in 10 minutes.}
+    \label{fig:Demand-ControlPhase-Ctr}
+\end{figure}
+\clearpage
