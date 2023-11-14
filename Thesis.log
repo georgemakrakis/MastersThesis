@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.9.1)  14 NOV 2023 01:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.9.1)  14 NOV 2023 15:55
 entering extended mode
 **c:/Users/sjroo/OneDrive/Documents/UIdaho/Thesis/Dissertation/Thesis.tex
 (c:/Users/sjroo/OneDrive/Documents/UIdaho/Thesis/Dissertation/Thesis.tex
@@ -1517,7 +1517,7 @@ Chapter 6.
 
 
 
-] [58] [59] [60]) [61] (Appendix/XenonSolver.tex
+] [58] [59]) [60] (Appendix/XenonSolver.tex
 Appendix A.
 Package hyperref Info: bookmark level for unknown code defaults to 0 on input line 4.
 (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
@@ -1528,16 +1528,20 @@ LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 5.
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 ) (py/XenonSolver/solver.py) (py/XenonSolver/solver.py
 consecutive:
-) [62
+) [61
 
 
 ] (py/XenonSolver/solver.py
 consecutive:
 ) (py/XenonSolver/solver.py
 consecutive:
-) [63
+) [62
 
-] [64] (py/XenonSolver/solver.py
+] [63] (py/XenonSolver/solver.py
+consecutive:
+) [64
+
+] (py/XenonSolver/solver.py
 consecutive:
 ) [65
 
@@ -1547,74 +1551,70 @@ consecutive:
 
 ] (py/XenonSolver/solver.py
 consecutive:
-) [67
-
-] (py/XenonSolver/solver.py
-consecutive:
-)) (Appendix/Deck.tex [68
+)) (Appendix/Deck.tex [67
 
 ]
 Appendix B.
-(py/Deck/drum.py) (py/Deck/salt.py) (py/Deck/makedeck.py) (py/Deck/cards/cell.txt) [69
+(py/Deck/drum.py) (py/Deck/salt.py) (py/Deck/makedeck.py) (py/Deck/cards/cell.txt) [68
 
-] [70] [71] (py/Deck/cards/cell.txt
+] [69] [70] (py/Deck/cards/cell.txt
 consecutive:
-) [72
+) [71
 
 ] (py/Deck/cards/cell.txt
 consecutive:
-) (py/Deck/cards/surface.txt) [73
+) (py/Deck/cards/surface.txt) [72
 
 ] (py/Deck/cards/surface.txt
 consecutive:
-) [74
+) [73
 
 ] (py/Deck/cards/surface.txt
 consecutive:
-) (py/Deck/cards/drum.txt) (py/Deck/cards/salt.txt) [75
+) (py/Deck/cards/drum.txt) (py/Deck/cards/salt.txt) [74
 
-] [76] (py/Deck/cards/salt.txt
+] [75] (py/Deck/cards/salt.txt
 consecutive:
-) (py/Deck/cards/material.txt) [77
+) (py/Deck/cards/material.txt) [76
 
-] [78] (py/Deck/cards/material.txt
+] [77] (py/Deck/cards/material.txt
 consecutive:
-) (py/Deck/cards/physics.txt) (py/Deck/cards/plot.txt)) (Appendix/Simulator.tex [79
+) (py/Deck/cards/physics.txt) (py/Deck/cards/plot.txt)) (Appendix/Simulator.tex [78
 
-] [80]
+] [79]
 Appendix C.
-(py/Simulator/simulation.py) [81
+(py/Simulator/simulation.py) [80
 
 ] (py/Simulator/simulation.py
+consecutive:
+) [81] (py/Simulator/simulation.py
 consecutive:
 ) [82] (py/Simulator/simulation.py
 consecutive:
 ) [83] (py/Simulator/simulation.py
 consecutive:
-) [84] (py/Simulator/simulation.py
+) (py/Simulator/functions.py) [84] [85] (py/Simulator/functions.py
 consecutive:
-) (py/Simulator/functions.py) [85] [86] (py/Simulator/functions.py
-consecutive:
-) (py/Simulator/loop.py) (py/Simulator/params.py) (py/Simulator/TempProfile.py) [87] [88] (py/Simulator/TempProfile.py
+) (py/Simulator/loop.py) (py/Simulator/params.py) (py/Simulator/TempProfile.py) [86] [87] (py/Simulator/TempProfile.py
 consecutive:
 ) (py/Simulator/initial.py) (py/Simulator/plots.py
 LaTeX Font Info:    Trying to load font information for TS1+pcr on input line 22.
  (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1pcr.fd
 File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
-)) [89] [90] [91] (py/Simulator/plots.py
+)) [88] [89] [90] (py/Simulator/plots.py
+consecutive:
+) [91] (py/Simulator/plots.py
 consecutive:
 ) [92] (py/Simulator/plots.py
 consecutive:
-) [93] (py/Simulator/plots.py
-consecutive:
-) (py/Simulator/controller.py)) [94] [95] (Thesis.aux (Frontmatter/Abstract.aux) (Frontmatter/Acknowledgements.aux) (Frontmatter/Dedication.aux) (Frontmatter/Contribution.aux) (Chapters/Introduction.aux) (Chapters/Controls.aux) (Chapters/Xenon.aux) (Chapters/Modeling.aux) (Chapters/Results.aux) (Chapters/Conclusions.aux))
+) (py/Simulator/controller.py)) [93] [94] (Thesis.aux (Frontmatter/Abstract.aux) (Frontmatter/Acknowledgements.aux) (Frontmatter/Dedication.aux) (Frontmatter/Contribution.aux) (Chapters/Introduction.aux) (Chapters/Controls.aux) (Chapters/Xenon.aux) (Chapters/Modeling.aux) (Chapters/Results.aux) (Chapters/Conclusions.aux))
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
 (rerunfilecheck)             Checksum: 7A3D684AB03992B5656C9A5CF85DDF39;6164.
  ) 
 Here is how much of TeX's memory you used:
- 51467 strings out of 478927
- 1100858 string characters out of 2852536
- 2635884 words of memory out of 3000000
+ 51466 strings out of 478927
+ 1100851 string characters out of 2852536
+ 2635942 words of memory out of 3000000
  66242 multiletter control sequences out of 15000+600000
  440181 words of font info for 111 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1636,9 +1636,9 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist,
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
 
 {C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi8.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eurm10.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrb8a.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrro8a.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Thesis.pdf (107 pages, 2592172 bytes).
+Output written on Thesis.pdf (106 pages, 2586906 bytes).
 PDF statistics:
- 3791 PDF objects out of 4296 (max. 8388607)
- 1891 named destinations out of 2073 (max. 500000)
+ 3769 PDF objects out of 4296 (max. 8388607)
+ 1890 named destinations out of 2073 (max. 500000)
  604 words of extra memory for PDF output out of 10000 (max. 10000000)
 
