@@ -25,14 +25,12 @@ Root, Sam~J., Zhao, Haiyan, Borrelli, R.A., McKellar, Michael~G., 2023.
 \bibitem{NREL-partner}
 {\acs{nrel}}, 2021.
 \newblock Technology partnerships.
-\newblock Technical report, {\acf{nrel}}.
 \bibAnnoteFile{NREL-partner}
 
 \bibitem{DoD-remote}
 {Nuclear Energy Institute}, 2018.
 \newblock Roadmap for the deployment of micro-reactors for u.s. department of
   defense domestic installations.
-\newblock Technical report, {Nuclear Energy Institute}.
 \bibAnnoteFile{DoD-remote}
 
 \bibitem{AirForce}
@@ -84,13 +82,11 @@ Roper, Robin, Harkema, Megan, Sabharwall, Piyush, Riddle, Catherine, Chisholm,
 Simpson, Michael~F., 2012.
 \newblock Development of spent nuclear fuel pyroprocessing technology at
   \acf{inl}.
-\newblock Technical report, \acf{inl}.
 \bibAnnoteFile{Simpson}
 
 \bibitem{MSRE}
 Haubenreich, P~N, Engel, J~R, Prince, B~E, Claiborne, H~C, 1964 2.
 \newblock Msre design and operations report. part iii. nuclear analysis.
-\newblock Technical report, \acl{oak}.
 \newblock \doi{10.2172/4114686}.
 \bibAnnoteFile{MSRE}
 \newline\urlprefix\url{https://www.osti.gov/biblio/4114686}
@@ -179,7 +175,6 @@ Gahinet, Pascal~M., Apkarian, Pierre, 2013.
 \bibitem{micro}
 {DOE}, 2021.
 \newblock The u.s. doe microreactor program.
-\newblock Technical report, U.S. Department of Energy.
 \bibAnnoteFile{micro}
 
 \bibitem{BikashMicro}
@@ -386,7 +381,6 @@ Sabharwall, Piyush, Ebner, Matt, Sohal, Manohar, Sharpe, Phil, Anderson, Mark,
 \newblock Molten salts for high temperature reactors: University of wisconsin
   molten salt corrosion and flow loop experiments: Issues identified and path
   forward.
-\newblock Technical report, \acf{inl}.
 \newblock INL/EXT-10-18090.
 \bibAnnoteFile{Instrumentation}
 

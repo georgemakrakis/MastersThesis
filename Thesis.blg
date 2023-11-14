@@ -28,36 +28,36 @@ Database file #1: ./rcs/References.bib
 You've used 58 entries,
             2823 wiz_defined-function locations,
             1444 strings with 24038 characters,
-and the built_in function-call counts, 17560 in all, are:
-= -- 949
+and the built_in function-call counts, 17374 in all, are:
+= -- 925
 > -- 603
 < -- 5
 + -- 238
 - -- 180
-* -- 808
-:= -- 2040
-add.period$ -- 195
+* -- 802
+:= -- 1998
+add.period$ -- 189
 call.type$ -- 58
-change.case$ -- 68
+change.case$ -- 62
 chr.to.int$ -- 15
 cite$ -- 116
-duplicate$ -- 1926
-empty$ -- 1708
+duplicate$ -- 1878
+empty$ -- 1732
 format.name$ -- 217
-if$ -- 3745
+if$ -- 3727
 int.to.chr$ -- 0
 int.to.str$ -- 58
-missing$ -- 641
-newline$ -- 403
+missing$ -- 623
+newline$ -- 397
 num.names$ -- 58
-pop$ -- 1021
+pop$ -- 1016
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 304
+skip$ -- 321
 stack$ -- 0
 substring$ -- 209
-swap$ -- 1114
+swap$ -- 1084
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
@@ -65,4 +65,4 @@ type$ -- 0
 warning$ -- 0
 while$ -- 76
 width$ -- 60
-write$ -- 744
+write$ -- 726
