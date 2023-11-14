@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.9.1)  14 NOV 2023 15:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.9.1)  14 NOV 2023 18:23
 entering extended mode
 **c:/Users/sjroo/OneDrive/Documents/UIdaho/Thesis/Dissertation/Thesis.tex
 (c:/Users/sjroo/OneDrive/Documents/UIdaho/Thesis/Dissertation/Thesis.tex
@@ -1161,37 +1161,37 @@ Chapter 3.
 
 
 ] (tikz/bfd.tex) [12] [13] [14] [15] (tikz/stripper.tex) [16] [17] [18] [19]
-<./img//Xenon/start-up.png, id=1105, 462.528pt x 346.896pt>
+<./img//Xenon/start-up.png, id=1108, 462.528pt x 346.896pt>
 File: ./img//Xenon/start-up.png Graphic file (type png)
 <use ./img//Xenon/start-up.png>
 Package pdftex.def Info: ./img//Xenon/start-up.png  used on input line 253.
 (pdftex.def)             Requested size: 338.76563pt x 254.08417pt.
  [20 <./img//Xenon/start-up.png>]
-<./img//Xenon/noHe.png, id=1121, 462.528pt x 346.896pt>
+<./img//Xenon/noHe.png, id=1124, 462.528pt x 346.896pt>
 File: ./img//Xenon/noHe.png Graphic file (type png)
 <use ./img//Xenon/noHe.png>
 Package pdftex.def Info: ./img//Xenon/noHe.png  used on input line 273.
 (pdftex.def)             Requested size: 338.76563pt x 254.08417pt.
  [21 <./img//Xenon/noHe.png>]
-<./img//Xenon/peakrestart.png, id=1132, 462.528pt x 346.896pt>
+<./img//Xenon/peakrestart.png, id=1135, 462.528pt x 346.896pt>
 File: ./img//Xenon/peakrestart.png Graphic file (type png)
 <use ./img//Xenon/peakrestart.png>
 Package pdftex.def Info: ./img//Xenon/peakrestart.png  used on input line 287.
 (pdftex.def)             Requested size: 338.76563pt x 254.08417pt.
  [22 <./img//Xenon/peakrestart.png>]
-<./img//Xenon/8hr_restart.png, id=1146, 462.528pt x 346.896pt>
+<./img//Xenon/8hr_restart.png, id=1149, 462.528pt x 346.896pt>
 File: ./img//Xenon/8hr_restart.png Graphic file (type png)
 <use ./img//Xenon/8hr_restart.png>
 Package pdftex.def Info: ./img//Xenon/8hr_restart.png  used on input line 301.
 (pdftex.def)             Requested size: 338.76563pt x 254.08417pt.
  [23 <./img//Xenon/8hr_restart.png>]
-<./img//Xenon/standby_restart.png, id=1158, 462.528pt x 346.896pt>
+<./img//Xenon/standby_restart.png, id=1161, 462.528pt x 346.896pt>
 File: ./img//Xenon/standby_restart.png Graphic file (type png)
 <use ./img//Xenon/standby_restart.png>
 Package pdftex.def Info: ./img//Xenon/standby_restart.png  used on input line 317.
 (pdftex.def)             Requested size: 338.76563pt x 254.08417pt.
  [24 <./img//Xenon/standby_restart.png>]
-<./img//Xenon/EOL-startup.png, id=1177, 462.528pt x 346.896pt>
+<./img//Xenon/EOL-startup.png, id=1180, 462.528pt x 346.896pt>
 File: ./img//Xenon/EOL-startup.png Graphic file (type png)
 <use ./img//Xenon/EOL-startup.png>
 Package pdftex.def Info: ./img//Xenon/EOL-startup.png  used on input line 332.
@@ -1202,7 +1202,7 @@ Package pdftex.def Info: ./img//Xenon/EOL-startup.png  used on input line 332.
  (Chapters/Modeling.tex
 Chapter 4.
 (tikz/ReactorControlLoop.tex)
-<./img//Plotter/0.0/MSNB_geom1.png, id=1205, 1084.05pt x 1806.75pt>
+<./img//Plotter/0.0/MSNB_geom1.png, id=1209, 1084.05pt x 1806.75pt>
 File: ./img//Plotter/0.0/MSNB_geom1.png Graphic file (type png)
 <use ./img//Plotter/0.0/MSNB_geom1.png>
 Package pdftex.def Info: ./img//Plotter/0.0/MSNB_geom1.png  used on input line 19.
@@ -1213,22 +1213,22 @@ Package pdftex.def Info: ./img//Plotter/0.0/MSNB_geom1.png  used on input line 1
 
 
 ] [28 <./img//Plotter/0.0/MSNB_geom1.png>]
-<./img//Plotter/0.0/MSNB_geom2.png, id=1218, 642.4pt x 642.4pt>
+<./img//Plotter/0.0/MSNB_geom2.png, id=1222, 642.4pt x 642.4pt>
 File: ./img//Plotter/0.0/MSNB_geom2.png Graphic file (type png)
 <use ./img//Plotter/0.0/MSNB_geom2.png>
 Package pdftex.def Info: ./img//Plotter/0.0/MSNB_geom2.png  used on input line 26.
 (pdftex.def)             Requested size: 221.32936pt x 221.32437pt.
-<./img//Plotter/0.0/MSNB_geom4.png, id=1219, 813.0375pt x 813.0375pt>
+<./img//Plotter/0.0/MSNB_geom4.png, id=1223, 813.0375pt x 813.0375pt>
 File: ./img//Plotter/0.0/MSNB_geom4.png Graphic file (type png)
 <use ./img//Plotter/0.0/MSNB_geom4.png>
 Package pdftex.def Info: ./img//Plotter/0.0/MSNB_geom4.png  used on input line 27.
 (pdftex.def)             Requested size: 221.32936pt x 221.32191pt.
-<./img//Plotter/0.0/MSNB_geom6.png, id=1220, 642.4pt x 642.4pt>
+<./img//Plotter/0.0/MSNB_geom6.png, id=1224, 642.4pt x 642.4pt>
 File: ./img//Plotter/0.0/MSNB_geom6.png Graphic file (type png)
 <use ./img//Plotter/0.0/MSNB_geom6.png>
 Package pdftex.def Info: ./img//Plotter/0.0/MSNB_geom6.png  used on input line 29.
 (pdftex.def)             Requested size: 221.32936pt x 221.32437pt.
-<./img//Plotter/0.0/MSNB_geom8.png, id=1221, 642.4pt x 642.4pt>
+<./img//Plotter/0.0/MSNB_geom8.png, id=1225, 642.4pt x 642.4pt>
 File: ./img//Plotter/0.0/MSNB_geom8.png Graphic file (type png)
 <use ./img//Plotter/0.0/MSNB_geom8.png>
 Package pdftex.def Info: ./img//Plotter/0.0/MSNB_geom8.png  used on input line 30.
@@ -1240,18 +1240,18 @@ File: ./img//Plotter/0.0/MSNB_geom4.png Graphic file (type png)
 <use ./img//Plotter/0.0/MSNB_geom4.png>
 Package pdftex.def Info: ./img//Plotter/0.0/MSNB_geom4.png  used on input line 75.
 (pdftex.def)             Requested size: 149.0577pt x 149.05733pt.
-<./img//Plotter/112.0/MSNB_geom4.png, id=1246, 813.0375pt x 813.0375pt>
+<./img//Plotter/112.0/MSNB_geom4.png, id=1250, 813.0375pt x 813.0375pt>
 File: ./img//Plotter/112.0/MSNB_geom4.png Graphic file (type png)
 <use ./img//Plotter/112.0/MSNB_geom4.png>
 Package pdftex.def Info: ./img//Plotter/112.0/MSNB_geom4.png  used on input line 76.
 (pdftex.def)             Requested size: 149.0577pt x 149.05733pt.
-<./img//Plotter/180.0/MSNB_geom4.png, id=1247, 813.0375pt x 813.0375pt>
+<./img//Plotter/180.0/MSNB_geom4.png, id=1251, 813.0375pt x 813.0375pt>
 File: ./img//Plotter/180.0/MSNB_geom4.png Graphic file (type png)
 <use ./img//Plotter/180.0/MSNB_geom4.png>
 Package pdftex.def Info: ./img//Plotter/180.0/MSNB_geom4.png  used on input line 77.
 (pdftex.def)             Requested size: 149.0577pt x 149.05733pt.
  [30 <./img//Plotter/112.0/MSNB_geom4.png> <./img//Plotter/180.0/MSNB_geom4.png>] [31]
-<./img//Simulator/FlowDiagram.png, id=1289, 463.7325pt x 734.745pt>
+<./img//Simulator/FlowDiagram.png, id=1295, 463.7325pt x 734.745pt>
 File: ./img//Simulator/FlowDiagram.png Graphic file (type png)
 <use ./img//Simulator/FlowDiagram.png>
 Package pdftex.def Info: ./img//Simulator/FlowDiagram.png  used on input line 119.
@@ -1261,12 +1261,12 @@ Package pdftex.def Info: ./img//Simulator/FlowDiagram.png  used on input line 11
 
  (Chapters/Results.tex
 Chapter 5.
-<./img//Plotter/0.0shutdown7drum/MSNB_geom4.png, id=1386, 813.0375pt x 813.0375pt>
+<./img//Plotter/0.0shutdown7drum/MSNB_geom4.png, id=1395, 813.0375pt x 813.0375pt>
 File: ./img//Plotter/0.0shutdown7drum/MSNB_geom4.png Graphic file (type png)
 <use ./img//Plotter/0.0shutdown7drum/MSNB_geom4.png>
 Package pdftex.def Info: ./img//Plotter/0.0shutdown7drum/MSNB_geom4.png  used on input line 18.
 (pdftex.def)             Requested size: 216.80807pt x 216.80615pt.
-<./img//Plotter/0.0shutdown1drum/MSNB_geom4.png, id=1387, 813.0375pt x 813.0375pt>
+<./img//Plotter/0.0shutdown1drum/MSNB_geom4.png, id=1396, 813.0375pt x 813.0375pt>
 File: ./img//Plotter/0.0shutdown1drum/MSNB_geom4.png Graphic file (type png)
 <use ./img//Plotter/0.0shutdown1drum/MSNB_geom4.png>
 Package pdftex.def Info: ./img//Plotter/0.0shutdown1drum/MSNB_geom4.png  used on input line 19.
@@ -1277,24 +1277,24 @@ Package pdftex.def Info: ./img//Plotter/0.0shutdown1drum/MSNB_geom4.png  used on
 
 
  <./img//Plotter/0.0shutdown7drum/MSNB_geom4.png> <./img//Plotter/0.0shutdown1drum/MSNB_geom4.png>]
-<./img//./Plotter/boronburn/AtomDens.png, id=1409, 578.16pt x 325.215pt>
+<./img//./Plotter/boronburn/AtomDens.png, id=1418, 578.16pt x 325.215pt>
 File: ./img//./Plotter/boronburn/AtomDens.png Graphic file (type png)
 <use ./img//./Plotter/boronburn/AtomDens.png>
 Package pdftex.def Info: ./img//./Plotter/boronburn/AtomDens.png  used on input line 38.
 (pdftex.def)             Requested size: 406.516pt x 228.66127pt.
  [38 <./img//./Plotter/boronburn/AtomDens.png>]
-<./img//./Plotter/Detector/Spectrum.png, id=1424, 578.16pt x 325.215pt>
+<./img//./Plotter/Detector/Spectrum.png, id=1433, 578.16pt x 325.215pt>
 File: ./img//./Plotter/Detector/Spectrum.png Graphic file (type png)
 <use ./img//./Plotter/Detector/Spectrum.png>
 Package pdftex.def Info: ./img//./Plotter/Detector/Spectrum.png  used on input line 62.
 (pdftex.def)             Requested size: 406.516pt x 228.66127pt.
  [39 <./img//./Plotter/Detector/Spectrum.png>]
-<./img///CurveFits/eqXe.png, id=1442, 462.528pt x 346.896pt>
+<./img///CurveFits/eqXe.png, id=1451, 462.528pt x 346.896pt>
 File: ./img///CurveFits/eqXe.png Graphic file (type png)
 <use ./img///CurveFits/eqXe.png>
 Package pdftex.def Info: ./img///CurveFits/eqXe.png  used on input line 76.
 (pdftex.def)             Requested size: 221.32936pt x 166.00003pt.
-<./img///CurveFits/depletion.png, id=1443, 462.528pt x 346.896pt>
+<./img///CurveFits/depletion.png, id=1452, 462.528pt x 346.896pt>
 File: ./img///CurveFits/depletion.png Graphic file (type png)
 <use ./img///CurveFits/depletion.png>
 Package pdftex.def Info: ./img///CurveFits/depletion.png  used on input line 77.
@@ -1316,23 +1316,23 @@ l.89 \begin{equation}
                    \relax 
 l.89 \begin{equation}
                       [40 <./img///CurveFits/eqXe.png> <./img///CurveFits/depletion.png>] [41]
-<./img//Simulator/SteadyState/t_vs_Qt.png, id=1467, 578.16pt x 325.215pt>
+<./img//Simulator/SteadyState/t_vs_Qt.png, id=1476, 578.16pt x 325.215pt>
 File: ./img//Simulator/SteadyState/t_vs_Qt.png Graphic file (type png)
 <use ./img//Simulator/SteadyState/t_vs_Qt.png>
 Package pdftex.def Info: ./img//Simulator/SteadyState/t_vs_Qt.png  used on input line 153.
 (pdftex.def)             Requested size: 406.516pt x 228.66127pt.
-<./img//Simulator/SteadyState/t_vs_velocity.png, id=1468, 578.16pt x 325.215pt>
+<./img//Simulator/SteadyState/t_vs_velocity.png, id=1477, 578.16pt x 325.215pt>
 File: ./img//Simulator/SteadyState/t_vs_velocity.png Graphic file (type png)
 <use ./img//Simulator/SteadyState/t_vs_velocity.png>
 Package pdftex.def Info: ./img//Simulator/SteadyState/t_vs_velocity.png  used on input line 160.
 (pdftex.def)             Requested size: 406.516pt x 228.66127pt.
  [42 <./img//Simulator/SteadyState/t_vs_Qt.png> <./img//Simulator/SteadyState/t_vs_velocity.png>]
-<./img//Simulator/StepUp/Auto/t_vs_Qt.png, id=1477, 578.16pt x 325.215pt>
+<./img//Simulator/StepUp/Auto/t_vs_Qt.png, id=1486, 578.16pt x 325.215pt>
 File: ./img//Simulator/StepUp/Auto/t_vs_Qt.png Graphic file (type png)
 <use ./img//Simulator/StepUp/Auto/t_vs_Qt.png>
 Package pdftex.def Info: ./img//Simulator/StepUp/Auto/t_vs_Qt.png  used on input line 170.
 (pdftex.def)             Requested size: 406.516pt x 228.66127pt.
-<./img//Simulator/StepUp/Auto/t_vs_reac.png, id=1478, 578.16pt x 325.215pt>
+<./img//Simulator/StepUp/Auto/t_vs_reac.png, id=1487, 578.16pt x 325.215pt>
 File: ./img//Simulator/StepUp/Auto/t_vs_reac.png Graphic file (type png)
 <use ./img//Simulator/StepUp/Auto/t_vs_reac.png>
 Package pdftex.def Info: ./img//Simulator/StepUp/Auto/t_vs_reac.png  used on input line 177.
@@ -1340,12 +1340,12 @@ Package pdftex.def Info: ./img//Simulator/StepUp/Auto/t_vs_reac.png  used on inp
  [43
 
  <./img//Simulator/StepUp/Auto/t_vs_Qt.png> <./img//Simulator/StepUp/Auto/t_vs_reac.png>]
-<./img//Simulator/StepUp/Control/t_vs_Qt.png, id=1488, 578.16pt x 325.215pt>
+<./img//Simulator/StepUp/Control/t_vs_Qt.png, id=1497, 578.16pt x 325.215pt>
 File: ./img//Simulator/StepUp/Control/t_vs_Qt.png Graphic file (type png)
 <use ./img//Simulator/StepUp/Control/t_vs_Qt.png>
 Package pdftex.def Info: ./img//Simulator/StepUp/Control/t_vs_Qt.png  used on input line 188.
 (pdftex.def)             Requested size: 406.516pt x 228.66127pt.
-<./img//Simulator/StepUp/Control/t_vs_angle.png, id=1489, 578.16pt x 325.215pt>
+<./img//Simulator/StepUp/Control/t_vs_angle.png, id=1498, 578.16pt x 325.215pt>
 File: ./img//Simulator/StepUp/Control/t_vs_angle.png Graphic file (type png)
 <use ./img//Simulator/StepUp/Control/t_vs_angle.png>
 Package pdftex.def Info: ./img//Simulator/StepUp/Control/t_vs_angle.png  used on input line 195.
@@ -1353,12 +1353,12 @@ Package pdftex.def Info: ./img//Simulator/StepUp/Control/t_vs_angle.png  used on
  [44
 
  <./img//Simulator/StepUp/Control/t_vs_Qt.png> <./img//Simulator/StepUp/Control/t_vs_angle.png>]
-<./img//Simulator/StepDown/Auto/t_vs_Qt.png, id=1498, 578.16pt x 325.215pt>
+<./img//Simulator/StepDown/Auto/t_vs_Qt.png, id=1507, 578.16pt x 325.215pt>
 File: ./img//Simulator/StepDown/Auto/t_vs_Qt.png Graphic file (type png)
 <use ./img//Simulator/StepDown/Auto/t_vs_Qt.png>
 Package pdftex.def Info: ./img//Simulator/StepDown/Auto/t_vs_Qt.png  used on input line 206.
 (pdftex.def)             Requested size: 406.516pt x 228.66127pt.
-<./img//Simulator/StepDown/Auto/auto_reac_phase.png, id=1499, 584.6643pt x 347.6187pt>
+<./img//Simulator/StepDown/Auto/auto_reac_phase.png, id=1508, 584.6643pt x 347.6187pt>
 File: ./img//Simulator/StepDown/Auto/auto_reac_phase.png Graphic file (type png)
 <use ./img//Simulator/StepDown/Auto/auto_reac_phase.png>
 Package pdftex.def Info: ./img//Simulator/StepDown/Auto/auto_reac_phase.png  used on input line 213.
@@ -1366,12 +1366,12 @@ Package pdftex.def Info: ./img//Simulator/StepDown/Auto/auto_reac_phase.png  use
  [45
 
  <./img//Simulator/StepDown/Auto/t_vs_Qt.png> <./img//Simulator/StepDown/Auto/auto_reac_phase.png>]
-<./img//Simulator/StepDown/Control/t_vs_Qt.png, id=1508, 578.16pt x 325.215pt>
+<./img//Simulator/StepDown/Control/t_vs_Qt.png, id=1517, 578.16pt x 325.215pt>
 File: ./img//Simulator/StepDown/Control/t_vs_Qt.png Graphic file (type png)
 <use ./img//Simulator/StepDown/Control/t_vs_Qt.png>
 Package pdftex.def Info: ./img//Simulator/StepDown/Control/t_vs_Qt.png  used on input line 222.
 (pdftex.def)             Requested size: 406.516pt x 228.66127pt.
-<./img//Simulator/StepDown/Control/contr_reac_phase.png, id=1509, 584.6643pt x 344.7279pt>
+<./img//Simulator/StepDown/Control/contr_reac_phase.png, id=1518, 584.6643pt x 344.7279pt>
 File: ./img//Simulator/StepDown/Control/contr_reac_phase.png Graphic file (type png)
 <use ./img//Simulator/StepDown/Control/contr_reac_phase.png>
 Package pdftex.def Info: ./img//Simulator/StepDown/Control/contr_reac_phase.png  used on input line 229.
@@ -1379,27 +1379,27 @@ Package pdftex.def Info: ./img//Simulator/StepDown/Control/contr_reac_phase.png 
  [46
 
  <./img//Simulator/StepDown/Control/t_vs_Qt.png> <./img//Simulator/StepDown/Control/contr_reac_phase.png>]
-<./img//Simulator/StartUp/Auto/t_vs_Qt.png, id=1519, 578.16pt x 325.215pt>
+<./img//Simulator/StartUp/Auto/t_vs_Qt.png, id=1528, 578.16pt x 325.215pt>
 File: ./img//Simulator/StartUp/Auto/t_vs_Qt.png Graphic file (type png)
 <use ./img//Simulator/StartUp/Auto/t_vs_Qt.png>
 Package pdftex.def Info: ./img//Simulator/StartUp/Auto/t_vs_Qt.png  used on input line 241.
 (pdftex.def)             Requested size: 406.516pt x 228.66127pt.
-<./img//Simulator/StartUp/Auto/animateTx_t/t-1.png, id=1520, 578.16pt x 325.215pt>
+<./img//Simulator/StartUp/Auto/animateTx_t/t-1.png, id=1529, 578.16pt x 325.215pt>
 File: ./img//Simulator/StartUp/Auto/animateTx_t/t-1.png Graphic file (type png)
 <use ./img//Simulator/StartUp/Auto/animateTx_t/t-1.png>
 Package pdftex.def Info: ./img//Simulator/StartUp/Auto/animateTx_t/t-1.png  used on input line 248.
 (pdftex.def)             Requested size: 221.32936pt x 124.49605pt.
-<./img//Simulator/StartUp/Auto/animateTx_t/t-200.png, id=1521, 578.16pt x 325.215pt>
+<./img//Simulator/StartUp/Auto/animateTx_t/t-200.png, id=1530, 578.16pt x 325.215pt>
 File: ./img//Simulator/StartUp/Auto/animateTx_t/t-200.png Graphic file (type png)
 <use ./img//Simulator/StartUp/Auto/animateTx_t/t-200.png>
 Package pdftex.def Info: ./img//Simulator/StartUp/Auto/animateTx_t/t-200.png  used on input line 249.
 (pdftex.def)             Requested size: 221.32936pt x 124.49605pt.
-<./img//Simulator/StartUp/Auto/animateTx_t/t-300.png, id=1522, 578.16pt x 325.215pt>
+<./img//Simulator/StartUp/Auto/animateTx_t/t-300.png, id=1531, 578.16pt x 325.215pt>
 File: ./img//Simulator/StartUp/Auto/animateTx_t/t-300.png Graphic file (type png)
 <use ./img//Simulator/StartUp/Auto/animateTx_t/t-300.png>
 Package pdftex.def Info: ./img//Simulator/StartUp/Auto/animateTx_t/t-300.png  used on input line 251.
 (pdftex.def)             Requested size: 221.32936pt x 124.49605pt.
-<./img//Simulator/StartUp/Auto/animateTx_t/t-900.png, id=1523, 578.16pt x 325.215pt>
+<./img//Simulator/StartUp/Auto/animateTx_t/t-900.png, id=1532, 578.16pt x 325.215pt>
 File: ./img//Simulator/StartUp/Auto/animateTx_t/t-900.png Graphic file (type png)
 <use ./img//Simulator/StartUp/Auto/animateTx_t/t-900.png>
 Package pdftex.def Info: ./img//Simulator/StartUp/Auto/animateTx_t/t-900.png  used on input line 252.
@@ -1407,27 +1407,27 @@ Package pdftex.def Info: ./img//Simulator/StartUp/Auto/animateTx_t/t-900.png  us
  [47
 
  <./img//Simulator/StartUp/Auto/t_vs_Qt.png>] [48 <./img//Simulator/StartUp/Auto/animateTx_t/t-1.png> <./img//Simulator/StartUp/Auto/animateTx_t/t-200.png> <./img//Simulator/StartUp/Auto/animateTx_t/t-300.png> <./img//Simulator/StartUp/Auto/animateTx_t/t-900.png>]
-<./img//Simulator/StartUp/Control/t_vs_Qt.png, id=1551, 578.16pt x 325.215pt>
+<./img//Simulator/StartUp/Control/t_vs_Qt.png, id=1560, 578.16pt x 325.215pt>
 File: ./img//Simulator/StartUp/Control/t_vs_Qt.png Graphic file (type png)
 <use ./img//Simulator/StartUp/Control/t_vs_Qt.png>
 Package pdftex.def Info: ./img//Simulator/StartUp/Control/t_vs_Qt.png  used on input line 268.
 (pdftex.def)             Requested size: 406.516pt x 228.66127pt.
-<./img//Simulator/StartUp/Control/animateTx_t/t-1.png, id=1552, 578.16pt x 325.215pt>
+<./img//Simulator/StartUp/Control/animateTx_t/t-1.png, id=1561, 578.16pt x 325.215pt>
 File: ./img//Simulator/StartUp/Control/animateTx_t/t-1.png Graphic file (type png)
 <use ./img//Simulator/StartUp/Control/animateTx_t/t-1.png>
 Package pdftex.def Info: ./img//Simulator/StartUp/Control/animateTx_t/t-1.png  used on input line 275.
 (pdftex.def)             Requested size: 221.32936pt x 124.49605pt.
-<./img//Simulator/StartUp/Control/animateTx_t/t-50.png, id=1553, 578.16pt x 325.215pt>
+<./img//Simulator/StartUp/Control/animateTx_t/t-50.png, id=1562, 578.16pt x 325.215pt>
 File: ./img//Simulator/StartUp/Control/animateTx_t/t-50.png Graphic file (type png)
 <use ./img//Simulator/StartUp/Control/animateTx_t/t-50.png>
 Package pdftex.def Info: ./img//Simulator/StartUp/Control/animateTx_t/t-50.png  used on input line 276.
 (pdftex.def)             Requested size: 221.32936pt x 124.49605pt.
-<./img//Simulator/StartUp/Control/animateTx_t/t-90.png, id=1554, 578.16pt x 325.215pt>
+<./img//Simulator/StartUp/Control/animateTx_t/t-90.png, id=1563, 578.16pt x 325.215pt>
 File: ./img//Simulator/StartUp/Control/animateTx_t/t-90.png Graphic file (type png)
 <use ./img//Simulator/StartUp/Control/animateTx_t/t-90.png>
 Package pdftex.def Info: ./img//Simulator/StartUp/Control/animateTx_t/t-90.png  used on input line 278.
 (pdftex.def)             Requested size: 221.32936pt x 124.49605pt.
-<./img//Simulator/StartUp/Control/animateTx_t/t-120.png, id=1555, 578.16pt x 325.215pt>
+<./img//Simulator/StartUp/Control/animateTx_t/t-120.png, id=1564, 578.16pt x 325.215pt>
 File: ./img//Simulator/StartUp/Control/animateTx_t/t-120.png Graphic file (type png)
 <use ./img//Simulator/StartUp/Control/animateTx_t/t-120.png>
 Package pdftex.def Info: ./img//Simulator/StartUp/Control/animateTx_t/t-120.png  used on input line 279.
@@ -1435,27 +1435,27 @@ Package pdftex.def Info: ./img//Simulator/StartUp/Control/animateTx_t/t-120.png 
  [49
 
  <./img//Simulator/StartUp/Control/t_vs_Qt.png> <./img//Simulator/StartUp/Control/animateTx_t/t-1.png> <./img//Simulator/StartUp/Control/animateTx_t/t-50.png> <./img//Simulator/StartUp/Control/animateTx_t/t-90.png> <./img//Simulator/StartUp/Control/animateTx_t/t-120.png>]
-<./img//Simulator/ShutDown/Auto/t_vs_Qt.png, id=1579, 578.16pt x 325.215pt>
+<./img//Simulator/ShutDown/Auto/t_vs_Qt.png, id=1588, 578.16pt x 325.215pt>
 File: ./img//Simulator/ShutDown/Auto/t_vs_Qt.png Graphic file (type png)
 <use ./img//Simulator/ShutDown/Auto/t_vs_Qt.png>
 Package pdftex.def Info: ./img//Simulator/ShutDown/Auto/t_vs_Qt.png  used on input line 297.
 (pdftex.def)             Requested size: 406.516pt x 228.66127pt.
-<./img//Simulator/ShutDown/Auto/animateTx_t/t-1.png, id=1580, 578.16pt x 325.215pt>
+<./img//Simulator/ShutDown/Auto/animateTx_t/t-1.png, id=1589, 578.16pt x 325.215pt>
 File: ./img//Simulator/ShutDown/Auto/animateTx_t/t-1.png Graphic file (type png)
 <use ./img//Simulator/ShutDown/Auto/animateTx_t/t-1.png>
 Package pdftex.def Info: ./img//Simulator/ShutDown/Auto/animateTx_t/t-1.png  used on input line 304.
 (pdftex.def)             Requested size: 221.32936pt x 124.49605pt.
-<./img//Simulator/ShutDown/Auto/animateTx_t/t-60.png, id=1581, 578.16pt x 325.215pt>
+<./img//Simulator/ShutDown/Auto/animateTx_t/t-60.png, id=1590, 578.16pt x 325.215pt>
 File: ./img//Simulator/ShutDown/Auto/animateTx_t/t-60.png Graphic file (type png)
 <use ./img//Simulator/ShutDown/Auto/animateTx_t/t-60.png>
 Package pdftex.def Info: ./img//Simulator/ShutDown/Auto/animateTx_t/t-60.png  used on input line 305.
 (pdftex.def)             Requested size: 221.32936pt x 124.49605pt.
-<./img//Simulator/ShutDown/Auto/animateTx_t/t-120.png, id=1582, 578.16pt x 325.215pt>
+<./img//Simulator/ShutDown/Auto/animateTx_t/t-120.png, id=1591, 578.16pt x 325.215pt>
 File: ./img//Simulator/ShutDown/Auto/animateTx_t/t-120.png Graphic file (type png)
 <use ./img//Simulator/ShutDown/Auto/animateTx_t/t-120.png>
 Package pdftex.def Info: ./img//Simulator/ShutDown/Auto/animateTx_t/t-120.png  used on input line 307.
 (pdftex.def)             Requested size: 221.32936pt x 124.49605pt.
-<./img//Simulator/ShutDown/Auto/animateTx_t/t-140.png, id=1583, 578.16pt x 325.215pt>
+<./img//Simulator/ShutDown/Auto/animateTx_t/t-140.png, id=1592, 578.16pt x 325.215pt>
 File: ./img//Simulator/ShutDown/Auto/animateTx_t/t-140.png Graphic file (type png)
 <use ./img//Simulator/ShutDown/Auto/animateTx_t/t-140.png>
 Package pdftex.def Info: ./img//Simulator/ShutDown/Auto/animateTx_t/t-140.png  used on input line 308.
@@ -1463,12 +1463,12 @@ Package pdftex.def Info: ./img//Simulator/ShutDown/Auto/animateTx_t/t-140.png  u
  [50
 
  <./img//Simulator/ShutDown/Auto/t_vs_Qt.png>] [51 <./img//Simulator/ShutDown/Auto/animateTx_t/t-1.png> <./img//Simulator/ShutDown/Auto/animateTx_t/t-60.png> <./img//Simulator/ShutDown/Auto/animateTx_t/t-120.png> <./img//Simulator/ShutDown/Auto/animateTx_t/t-140.png>]
-<./img//Simulator/ShutDown/Control/t_vs_Qt.png, id=1607, 578.16pt x 325.215pt>
+<./img//Simulator/ShutDown/Control/t_vs_Qt.png, id=1616, 578.16pt x 325.215pt>
 File: ./img//Simulator/ShutDown/Control/t_vs_Qt.png Graphic file (type png)
 <use ./img//Simulator/ShutDown/Control/t_vs_Qt.png>
 Package pdftex.def Info: ./img//Simulator/ShutDown/Control/t_vs_Qt.png  used on input line 324.
 (pdftex.def)             Requested size: 406.516pt x 228.66127pt.
-<./img//Simulator/ShutDown/Control/contr_reac_phase.png, id=1608, 583.2189pt x 346.1733pt>
+<./img//Simulator/ShutDown/Control/contr_reac_phase.png, id=1617, 583.2189pt x 346.1733pt>
 File: ./img//Simulator/ShutDown/Control/contr_reac_phase.png Graphic file (type png)
 <use ./img//Simulator/ShutDown/Control/contr_reac_phase.png>
 Package pdftex.def Info: ./img//Simulator/ShutDown/Control/contr_reac_phase.png  used on input line 331.
@@ -1476,12 +1476,12 @@ Package pdftex.def Info: ./img//Simulator/ShutDown/Control/contr_reac_phase.png 
  [52
 
  <./img//Simulator/ShutDown/Control/t_vs_Qt.png> <./img//Simulator/ShutDown/Control/contr_reac_phase.png>]
-<./img//Simulator/DemandResponse/Auto/t_vs_Qt.png, id=1616, 578.16pt x 325.215pt>
+<./img//Simulator/DemandResponse/Auto/t_vs_Qt.png, id=1625, 578.16pt x 325.215pt>
 File: ./img//Simulator/DemandResponse/Auto/t_vs_Qt.png Graphic file (type png)
 <use ./img//Simulator/DemandResponse/Auto/t_vs_Qt.png>
 Package pdftex.def Info: ./img//Simulator/DemandResponse/Auto/t_vs_Qt.png  used on input line 344.
 (pdftex.def)             Requested size: 406.516pt x 228.66127pt.
-<./img//Simulator/DemandResponse/Auto/auto_reac_phase.png, id=1619, 575.9919pt x 345.4506pt>
+<./img//Simulator/DemandResponse/Auto/auto_reac_phase.png, id=1628, 575.9919pt x 345.4506pt>
 File: ./img//Simulator/DemandResponse/Auto/auto_reac_phase.png Graphic file (type png)
 <use ./img//Simulator/DemandResponse/Auto/auto_reac_phase.png>
 Package pdftex.def Info: ./img//Simulator/DemandResponse/Auto/auto_reac_phase.png  used on input line 351.
@@ -1489,12 +1489,12 @@ Package pdftex.def Info: ./img//Simulator/DemandResponse/Auto/auto_reac_phase.pn
  [53
 
  <./img//Simulator/DemandResponse/Auto/t_vs_Qt.png> <./img//Simulator/DemandResponse/Auto/auto_reac_phase.png>]
-<./img//Simulator/DemandResponse/Control/t_vs_Qt.png, id=1630, 578.16pt x 325.215pt>
+<./img//Simulator/DemandResponse/Control/t_vs_Qt.png, id=1639, 578.16pt x 325.215pt>
 File: ./img//Simulator/DemandResponse/Control/t_vs_Qt.png Graphic file (type png)
 <use ./img//Simulator/DemandResponse/Control/t_vs_Qt.png>
 Package pdftex.def Info: ./img//Simulator/DemandResponse/Control/t_vs_Qt.png  used on input line 360.
 (pdftex.def)             Requested size: 406.516pt x 228.66127pt.
-<./img//Simulator/DemandResponse/Control/contr_reac_phase.png, id=1633, 584.6643pt x 347.6187pt>
+<./img//Simulator/DemandResponse/Control/contr_reac_phase.png, id=1642, 584.6643pt x 347.6187pt>
 File: ./img//Simulator/DemandResponse/Control/contr_reac_phase.png Graphic file (type png)
 <use ./img//Simulator/DemandResponse/Control/contr_reac_phase.png>
 Package pdftex.def Info: ./img//Simulator/DemandResponse/Control/contr_reac_phase.png  used on input line 367.
@@ -1512,12 +1512,12 @@ Chapter 6.
 
 
 
-]) [56] (Thesis.bbl [57
+] [56]) [57] (Thesis.bbl [58
 
 
 
 
-] [58] [59]) [60] (Appendix/XenonSolver.tex
+] [59] [60]) [61] (Appendix/XenonSolver.tex
 Appendix A.
 Package hyperref Info: bookmark level for unknown code defaults to 0 on input line 4.
 (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
@@ -1528,20 +1528,16 @@ LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 5.
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 ) (py/XenonSolver/solver.py) (py/XenonSolver/solver.py
 consecutive:
-) [61
+) [62
 
 
 ] (py/XenonSolver/solver.py
 consecutive:
 ) (py/XenonSolver/solver.py
 consecutive:
-) [62
+) [63
 
-] [63] (py/XenonSolver/solver.py
-consecutive:
-) [64
-
-] (py/XenonSolver/solver.py
+] [64] (py/XenonSolver/solver.py
 consecutive:
 ) [65
 
@@ -1551,71 +1547,75 @@ consecutive:
 
 ] (py/XenonSolver/solver.py
 consecutive:
-)) (Appendix/Deck.tex [67
+) [67
+
+] (py/XenonSolver/solver.py
+consecutive:
+)) (Appendix/Deck.tex [68
 
 ]
 Appendix B.
-(py/Deck/drum.py) (py/Deck/salt.py) (py/Deck/makedeck.py) (py/Deck/cards/cell.txt) [68
+(py/Deck/drum.py) (py/Deck/salt.py) (py/Deck/makedeck.py) (py/Deck/cards/cell.txt) [69
 
-] [69] [70] (py/Deck/cards/cell.txt
+] [70] [71] (py/Deck/cards/cell.txt
 consecutive:
-) [71
+) [72
 
 ] (py/Deck/cards/cell.txt
 consecutive:
-) (py/Deck/cards/surface.txt) [72
+) (py/Deck/cards/surface.txt) [73
 
 ] (py/Deck/cards/surface.txt
 consecutive:
-) [73
+) [74
 
 ] (py/Deck/cards/surface.txt
 consecutive:
-) (py/Deck/cards/drum.txt) (py/Deck/cards/salt.txt) [74
+) (py/Deck/cards/drum.txt) (py/Deck/cards/salt.txt) [75
 
-] [75] (py/Deck/cards/salt.txt
+] [76] (py/Deck/cards/salt.txt
 consecutive:
-) (py/Deck/cards/material.txt) [76
+) (py/Deck/cards/material.txt) [77
 
-] [77] (py/Deck/cards/material.txt
+] [78] (py/Deck/cards/material.txt
 consecutive:
-) (py/Deck/cards/physics.txt) (py/Deck/cards/plot.txt)) (Appendix/Simulator.tex [78
+) (py/Deck/cards/physics.txt) (py/Deck/cards/plot.txt)) (Appendix/Simulator.tex [79
 
-] [79]
+] [80]
 Appendix C.
-(py/Simulator/simulation.py) [80
+(py/Simulator/simulation.py) [81
 
 ] (py/Simulator/simulation.py
-consecutive:
-) [81] (py/Simulator/simulation.py
 consecutive:
 ) [82] (py/Simulator/simulation.py
 consecutive:
 ) [83] (py/Simulator/simulation.py
 consecutive:
-) (py/Simulator/functions.py) [84] [85] (py/Simulator/functions.py
+) [84] (py/Simulator/simulation.py
 consecutive:
-) (py/Simulator/loop.py) (py/Simulator/params.py) (py/Simulator/TempProfile.py) [86] [87] (py/Simulator/TempProfile.py
+) (py/Simulator/functions.py) [85] [86] (py/Simulator/functions.py
+consecutive:
+) (py/Simulator/loop.py) (py/Simulator/params.py) (py/Simulator/TempProfile.py) [87] [88] (py/Simulator/TempProfile.py
 consecutive:
 ) (py/Simulator/initial.py) (py/Simulator/plots.py
 LaTeX Font Info:    Trying to load font information for TS1+pcr on input line 22.
  (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1pcr.fd
 File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
-)) [88] [89] [90] (py/Simulator/plots.py
-consecutive:
-) [91] (py/Simulator/plots.py
+)) [89] [90] [91] (py/Simulator/plots.py
 consecutive:
 ) [92] (py/Simulator/plots.py
 consecutive:
-) (py/Simulator/controller.py)) [93] [94] (Thesis.aux (Frontmatter/Abstract.aux) (Frontmatter/Acknowledgements.aux) (Frontmatter/Dedication.aux) (Frontmatter/Contribution.aux) (Chapters/Introduction.aux) (Chapters/Controls.aux) (Chapters/Xenon.aux) (Chapters/Modeling.aux) (Chapters/Results.aux) (Chapters/Conclusions.aux))
+) [93] (py/Simulator/plots.py
+consecutive:
+) (py/Simulator/controller.py)) [94] [95] (Thesis.aux (Frontmatter/Abstract.aux) (Frontmatter/Acknowledgements.aux) (Frontmatter/Dedication.aux) (Frontmatter/Contribution.aux) (Chapters/Introduction.aux) (Chapters/Controls.aux) (Chapters/Xenon.aux) (Chapters/Modeling.aux) (Chapters/Results.aux) (Chapters/Conclusions.aux))
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
 (rerunfilecheck)             Checksum: 7A3D684AB03992B5656C9A5CF85DDF39;6164.
  ) 
 Here is how much of TeX's memory you used:
- 51466 strings out of 478927
- 1100851 string characters out of 2852536
- 2635942 words of memory out of 3000000
- 66242 multiletter control sequences out of 15000+600000
+ 51563 strings out of 478927
+ 1102176 string characters out of 2852536
+ 2637387 words of memory out of 3000000
+ 66335 multiletter control sequences out of 15000+600000
  440181 words of font info for 111 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  106i,22n,108p,1874b,2327s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1636,9 +1636,9 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist,
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
 
 {C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi8.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eurm10.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrb8a.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrro8a.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Thesis.pdf (106 pages, 2586906 bytes).
+Output written on Thesis.pdf (107 pages, 2592627 bytes).
 PDF statistics:
- 3769 PDF objects out of 4296 (max. 8388607)
- 1890 named destinations out of 2073 (max. 500000)
+ 3795 PDF objects out of 4296 (max. 8388607)
+ 1894 named destinations out of 2073 (max. 500000)
  604 words of extra memory for PDF output out of 10000 (max. 10000000)
 

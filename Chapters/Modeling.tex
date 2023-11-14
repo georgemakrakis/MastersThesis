@@ -1,6 +1,6 @@
 \chapter{Reactor Characterization}
 \label{Chapter:Modeling}
-To design a reactivity controller for the \acl{msnb}, many components of the reactor needed to be characterized. The reactor was modeled in Serpent 2 to characterize the control drums using a series of criticality models. Depletion models were also used observe how the control drum characterization changes as the fuel is burned. Finally, a 1-dimension (spatial) uniform-state uniform-flow finite element model was developed in Python. This serves as the thermohydraulic process simulation needed to approximate the autonomous dynamic operation of the reactor during transients as well as study the performance improvement gained by application of the controller. 
+To design a reactivity controller for the \acl{msnb}, many components of the reactor needed to be characterized. The reactor was modeled in Serpent 2 to characterize the control drums using a series of criticality models. Depletion models were also used observe how the control drum characterization changes as the fuel is burned. Finally, a 1-dimension (spatial) uniform-state uniform-flow \acs{fem} was developed in Python. This serves as the thermohydraulic process simulation needed to approximate the autonomous dynamic operation of the reactor during transients as well as study the performance improvement gained by application of the controller. 
 
 \begin{figure}[!ht]
     \centering
@@ -105,7 +105,7 @@ The reactor described in Section \ref{Section:RxDesign} was modeled in Serpent 2
  To approximate the flowing and electrolytic nature of the \acs{msnb} that disperses fission products over time, the burn-up studies were completed without fuel stratification. This is in contrast to how solid fueled burn-up studies are often conducted, where depletion zones are employed to resolve the effects of the spatial neutron flux profile. This provided the new molten salt and boron carbide compositions for the next set of criticality models.
 
 \section{Process Simulation}\label{Section:Python}
-A multiphysics transient simulation was written in Python to study the \acs{msnb} in dynamic operations by the coupling of thermal hydraulics and neutronics. First principle physics were implemented to approximate the expected behavior of the reactor. It is not meant to be a digital twin, but rather a responsive tool for the design of the power controller\footnote{The input file writing script is available at \href{https://github.com/sjroot97/MsNB-Simulator/}{https://github.com/sjroot97/MsNB-Simulator/} and is also included in Appendix \ref{app:Simulator}.}.
+A multiphysics transient simulation was written in Python to study the \acs{msnb} in dynamic operations by the coupling of \acf{cfd} and neutronics. First principle physics were implemented to approximate the expected behavior of the reactor. It is not meant to be a digital twin, but rather a responsive tool for the design of the power controller\footnote{The input file writing script is available at \href{https://github.com/sjroot97/MsNB-Simulator/}{https://github.com/sjroot97/MsNB-Simulator/} and is also included in Appendix \ref{app:Simulator}.}.
 
 The simulation is built on three physics principles: 
 \begin{enumerate*}
@@ -121,7 +121,7 @@ The simulation is built on three physics principles:
     \label{fig:PythonFlowDiagram}
 \end{figure}
 
-Figure \ref{fig:PythonFlowDiagram} is a logic flow diagram that describes how the code simulates the dynamic operation of the \acs{msnb}. Similar to previous work, the flow loop of the reactor was simplified into a 1-dimensional flow loop with equal flow area throughout \cite{CarterNumerical,CarterPHD,Root}. The simulator is broken up into two different sections - first the problem is set-up, then the transient is simulated in a finite element time loop with time steps of 1 second. The model is described in Sections \ref{Section:initial} and \ref{Section:advance}, and rely on the parameters listed in Table \ref{tab:FEMparams}
+Figure \ref{fig:PythonFlowDiagram} is a logic flow diagram that describes how the code simulates the dynamic operation of the \acs{msnb}. Similar to previous work, the flow loop of the reactor was simplified into a 1-dimensional flow loop with equal flow area throughout \cite{CarterNumerical,CarterPHD,Root}. The simulator is broken up into two different sections - first the problem is set-up, then the transient is simulated in a \acf{fem} loop with time steps of 1 second. The model is described in Sections \ref{Section:initial} and \ref{Section:advance}, and rely on the parameters listed in Table \ref{tab:FEMparams}
 
 \begin{table}[ht!]
     \caption[\acs{msnb} simulation parameters]{\raggedright System parameters used in the simulation of the \acs{msnb} \cite{CarterNumerical}. }
@@ -192,7 +192,7 @@ The process simulator uses two steps to simulate the passage of time:
 \end{enumerate*}
 
 \subsubsection{Spatial Advancement of Flow Loop}
-The spatial advancement of the flow loop is a 1D+time computational fluid dynamics problem, with each millimeter long slice ($\delta x$) of the entire cross-section of the flow loop being treated as a control volume. With the assumption of uniform flow velocity around the loop for each discrete time step, the continuity equation for the system can be expressed as:
+The spatial advancement of the flow loop is a 1D+time \acs{fem} problem, with each millimeter long slice ($\delta x$) of the entire cross-section of the flow loop being treated as a control volume. With the assumption of uniform flow velocity around the loop for each discrete time step, the continuity equation for the system can be expressed as:
 
 \begin{equation}
     \delta x A_x \frac{d\varrho}{dt} = v A_x(\varrho_{in}-\varrho_{out})

@@ -100,10 +100,10 @@
 \contentsline {subsection}{\numberline {6.2.3}SCRAM System}{56}{subsection.6.2.3}%
 \contentsline {subsection}{\numberline {6.2.4}Decay Heat Removal}{56}{subsection.6.2.4}%
 \contentsline {subsection}{\numberline {6.2.5}Flow Rate Control}{56}{subsection.6.2.5}%
-\contentsline {section}{\numberline {6.3}Summary Remarks}{56}{section.6.3}%
-\contentsline {chapter}{References}{57}{section.6.3}%
+\contentsline {section}{\numberline {6.3}Summary Remarks}{57}{section.6.3}%
+\contentsline {chapter}{References}{58}{section.6.3}%
 \renewcommand *{\chaptername }{\appendixname }
-\contentsline {chapter}{\numberline {A}Xenon-135 Numerical Solver with Fission-Gas Stripping}{61}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Serpent Deck Writing Script}{68}{appendix.B}%
-\contentsline {chapter}{\numberline {C}\acrshort {msnb} Transient Simulator}{80}{appendix.C}%
+\contentsline {chapter}{\numberline {A}Xenon-135 Numerical Solver with Fission-Gas Stripping}{62}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Serpent Deck Writing Script}{69}{appendix.B}%
+\contentsline {chapter}{\numberline {C}\acrshort {msnb} Transient Simulator}{81}{appendix.C}%
 \contentsfinish 

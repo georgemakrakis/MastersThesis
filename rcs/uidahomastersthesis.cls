@@ -267,7 +267,7 @@ This thesis of \@author, submitted for the degree of \@degree\ with a Major in \
 \newcommand{\Po}[1][]{$^{#1}Po$ }
 \newcommand{\Ra}[1][]{$^{#1}Ra$ }
 
-\newcommand{\UF}[1][4]{UF\textsubscript{#1}}
+\newcommand{\UF}[1][4]{UF\textsubscript{#1} }
 \newcommand{\flinak}{FLiNaK }
 \newcommand{\flibe}{FLiBe }
 
@@ -281,6 +281,7 @@ This thesis of \@author, submitted for the degree of \@degree\ with a Major in \
 
 %Acronyms
 \newacronym{pid}{PID}{Proportional-Integral-Derivative}
+\newacronym{pi}{PI}{Proportional-Integral}
 \newacronym{npp}{NPP}{Nuclear Power Plant}
 \newacronym{msnb}{MSNB}{Molten Salt Nuclear Battery}
 \newacronym{msr}{MSR}{Molten Salt Reactor}
@@ -301,3 +302,5 @@ This thesis of \@author, submitted for the degree of \@degree\ with a Major in \
 \newacronym{ies}{IES}{Integrated Energy System}
 \newacronym{ode}{ODE}{Ordinary Differential Equation}
 \newacronym{ess}{ESS}{Energy Storage System}
+\newacronym{cfd}{CFD}{Computational Fluid Dynamics}
+\newacronym{fem}{FEM}{Finite Element Model}
