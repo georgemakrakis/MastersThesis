@@ -145,9 +145,23 @@ During normal operation, the reactor will only be made slightly supercritical to
 \end{table}
 
 \section{Multi-physics Simulation}\label{sec:simulation}
-\footnote{All figures generated for each case study are available at https://github.com/sjroot97/MsNB-Simulator/tree/main/CaseStudies}
-\subsection{Steady-State}
+A series of case studies were conducted on the \acs{msnb} using the multi-physics process simulation. For each case study, the autonomous response was observed to use as a base case against the controlled response. In the autonomous response, the core to responds to heat exchanger transients only by passive (temperature and flow reactivity) feedback mechanisms, as the controller is turned off. In the controlled response, the control drums insert active feedback in response to error. The passive feedback mechanisms alone are then compared with the addition of the \acs{pid} controller quantitatively by analyzing the relative magnitude of the inverse response and first two overshoot peaks, as well as the delay time, rise time, settling time, and oscillation period. 
 
+The delay time and rise time are the times it takes for the core power to change by 10\% and 90\% of the heat exchanger step size, respectively. The settling time is the time it takes for the core power oscillations to converge to a bandwidth of $\pm$5\% of the heat exchanger step size centered on the new set-point. The oscillation period is recorded as the time between the first and second overshoot peak. These metrics capture the shape of the response curve, and allow for quantitative comparisons of a rather intuitive nature; to facilitate high-fidelity load-following in the operation of the \acs{msnb}, a short delay time, rise time, and settling time, as well as a small inverse response and small overshoot. 
+
+In addition to the trivial steady-state base case, five transients are studied:
+\begin{enumerate*}
+    \item A step from 8 MW to 10 MW;
+    \item A step from 10 MW to 8 MW;
+    \item A start-up, where the \acs{msnb} is ramped from hot-standby (100 kW) to low-power (1 MW), then from low-power to full-power (10 MW);
+    \item A shut-down, where the \acs{msnb} is ramped from full-power to low-power, then to hot-standby;
+    \item A demand response, where the \acs{msnb} is ramped from 8 MW to 10 MW, then back to 8 MW;
+\end{enumerate*}
+
+Each of these transients is studied below, and key figures are presented for discussion. The process simulator plots many data sets each time it is run. Each of these plots are available for further observation on GitHub\footnote[2]{All figures generated for each case study are available at https://github.com/sjroot97/MsNB-Simulator/tree/main/CaseStudies}
+
+
+\subsection{Steady-State}
 \begin{figure}[ht!]
     \centering
     \includegraphics[width=0.9\textwidth]{Simulator/SteadyState/t_vs_Qt}
@@ -155,13 +169,19 @@ During normal operation, the reactor will only be made slightly supercritical to
     \label{fig:SS-Power}
 \end{figure}
 
+Before studying transients, steady-state operation was tested. The \acs{msnb} was held constant at 10 MW for a full hour. The slight error between the initial temperature profile guess and the temperature profile to which simulation converges kicks off core power oscillation, as shown by Figure \ref{fig:SS-Power}. The first peak results in a momentary offset of nearly 200 kW (0.2\% nominal error), and roughly one-third wave decay is observed with a period of approximately 6 minutes. The offset is essentially `rung-out' within 40 minutes.
+
+Figure \ref{fig:SS-Velocity} shows that the initial velocity guess is about 0.8 mm/s slower than the convergent velocity. This is caused by minor disturbances to the temperature profile. The assumption of uniform temperature rise in the core and uniform temperature decrease in the heat exchanger is not completely accurate due to the temperature functions of specific heat and density. A more accurate initial guess may to assume uniform change to the internal energy of each control volume, however the stability of the curves implies that the assumption is adequate. Approaching steady-state core output, the velocity profile has quite a high frequency; this is likely due to the way that the velocity is calculated. Buoyant forces are negated by frictional losses for each time-step. This is a first-order approach. A second-order approach would consider the net force resultant from changing buoyancy and accelerate the fluid according to Newton's second law. The fluid inertia would increase the oscillatory period and likely dampen the response. The sustained oscillation of the power profile, as well as the `kick' at 56 minutes are likely a result of the `advection only' approach to heat convection employed by the simulator. Thermal diffusion would smooth out the temperature profile and eliminate the anomalies that delay the simulated \acs{msnb} from fully reaching steady-state operation.
+
 \begin{figure}[ht!]
     \centering
     \includegraphics[width=0.9\textwidth]{Simulator/SteadyState/t_vs_velocity}
     \caption[Steady state velocity response]{Core velocity response to a steady heat exchanger demand of 10 MW given the initial conditions.}
     \label{fig:SS-Velocity}
 \end{figure}
-\clearpage
+
+Even with these limiting assumptions, the trivial case study provides confidence that the multi-physics model adequately describes the stable passive feedback mechanisms that couples the nuclear kinetics of the \acs{msnb} to its thermal hydraulic phenomena. The simulation is self-stabilizing against small excursions, and can reasonably be expected to respond to larger transient studies so long as the magnitude is not de-stabilizing.
+
 \subsection{Up-Step}
 
 \subsubsection{Autonomous Response}
