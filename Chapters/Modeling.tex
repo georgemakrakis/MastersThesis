@@ -116,7 +116,7 @@ The simulation is built on three physics principles:
 
 \begin{figure}[ht!]
     \centering
-    \includegraphics[width=0.5\textwidth]{Simulator/FlowDiagram}
+    \includegraphics[width=0.55\textwidth]{Simulator/FlowDiagram}
     \caption[Process simulator logic flow diagram]{\raggedright Logic flow diagram for the \acs{msnb} transient process simulator.}
     \label{fig:PythonFlowDiagram}
 \end{figure}
@@ -128,7 +128,7 @@ Figure \ref{fig:PythonFlowDiagram} is a logic flow diagram that describes how th
     \centering\begin{tabular}{r|ccl}
         &  Value &  Unit &  Description \\ \hline
     $\alpha_T$ & $-3.5$ & pcm/K & Temperature reactivity feedback coefficient \\
-    $\ell^*$ & $1.63 \times 10^{-4}$  & sec & Mean neutron generation time \\
+    $l^*$ & $1.63 \times 10^{-4}$  & sec & Mean neutron generation time \\
     $\beta_{eff}$ & $6.96 \times 10^{-3}$  & - & Effective delayed neutron fraction \\
     $\lambda$ & $0.1$  & sec$^{-1}$ & One-group delayed neutron precursor decay constant \\
     $\xi$ & $25$  & - & Pressure loss coefficient \\
@@ -231,7 +231,7 @@ After the discrete time-step, the new energy profile is calculated using Euler's
     mu[t+\delta t] = mu[t] + \delta t\frac{d(mu)}{dt}[t]
 \end{equation}
 
-Then, the updated temperature profile can be obtained from the updated energy profile by inverting \ref{eq:T2mu}. This is not a readily separable function, so an expected range of temperatures was put through the forward function, and the results were fit to a 6th order polynomial to define an inverse function. With the updated temperature profile, the rest of the time variables can be updated to solve for the new core power.
+Then, the updated temperature profile can be obtained from the updated energy profile by inverting \ref{eq:T2mu}. This is not a readily separable function, so an expected range of temperatures was put through the forward function, and the results were fit to a 6th order polynomial to define an inverse function. Calling the inverse function on the updated energy profile provides the updated temperature profile, and the rest of the time variables can be updated to solve for the new core power.
 
 \subsubsection{Updating Time Variables}
 First, the updated temperature profile is used to calculate the new molten salt flow velocity using \ref{eq:saltvelo}, which is in turn used to calculate the new flow reactivity using \ref{eq:flowreac}. Then the change in average core temperature is used to calculate the new temperature reactivity:
@@ -243,11 +243,11 @@ First, the updated temperature profile is used to calculate the new molten salt 
 Each reactivity phenomenon is summed, and reactor period ($\tau$) is obtained using one group reactor point kinetics:
 
 \begin{equation}
-    \tau = \frac{\ell^{*}}{\rho}
+    \tau = \frac{l^{*}}{\rho}
          +\frac{\beta_{eff}-\rho}{\lambda\rho + \dot{\rho}}
 \end{equation}
 
-where $\lambda$ is the delayed neutron precursor decay constant and $\dot{\rho}$ is the reactivity rate of change \cite[Ch. 6]{DH}. Finally, the updated power can be obtained from the e-folding equation:
+where $l^{*}$ is the mean neutron generation time, $\lambda$ is the delayed neutron precursor decay constant and $\dot{\rho}$ is the reactivity rate of change \cite[Ch. 6]{DH}. Finally, the updated power can be obtained from the e-folding equation:
 
 \begin{equation}
     Q_{core}[t+\delta t] = Q_{core}[t] e^{\nicefrac{\delta t}{\tau}}
