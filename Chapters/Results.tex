@@ -299,8 +299,6 @@ Again, inspection of Figure \ref{fig:Down-Power-Ctr} tells us that the controlle
     \item Second Overshoot - 17.5\%;
 \end{itemize}
 
-In this case study, the second overshoot is more than double the magnitude of the first. This is  due to a variety of factors, which can be understood with the help of Figure \ref{fig:Down-ControlPhase-Ctr}. 
-
 \begin{figure}[ht!]
     \centering
     \includegraphics[width=0.9\textwidth]{Simulator/StepDown/Control/t_vs_Qt}
@@ -308,7 +306,9 @@ In this case study, the second overshoot is more than double the magnitude of th
     \label{fig:Down-Power-Ctr}
 \end{figure}
 
-This figure is similar to Figure \ref{fig:Down-PassivePhase-Auto}. The total passive reactivity is combined onto the x-axis, and the active reactivity is placed on the y-axis. Again, a curve below the diagonal corresponds to subcritical operation. When the heat exchanger is stepped, the pre-filter begins moving the core power set-point, and the \acs{pi} controller immediately responds to the error, making the reactor subcritical. As the cumulative and instantaneous error continue to grow, the passive feedback mechanisms (primary flow reactivity) first resist the controller. When the core power crosses over the set-point, the control drums reverse their direction of rotation as the core accumulates sensible heat. This sequence draws a large loop in Figure \ref{fig:Down-ControlPhase-Ctr} and a steep line in Figure \ref{fig:Down-Power-Ctr} at about 6 minutes. Eventually,  first overshoot peak cools and slows the salt enough to momentarily bring the \acs{msnb} back above unity. As the instantaneous error shrinks, the controller backs off just as the salt is heated and accelerated enough to drop the core power one more time. The controlled feedback phase space line then finally follows a swirling path towards unity as the core power oscillations ring out. 
+In this case study, the second overshoot is more than double the magnitude of the first. This is due to a variety of factors, which can be understood with the help of Figure \ref{fig:Down-ControlPhase-Ctr}. This figure is similar to Figure \ref{fig:Down-PassivePhase-Auto}. The total passive reactivity is combined onto the x-axis, and the active reactivity is placed on the y-axis. Again, a curve below the diagonal corresponds to subcritical operation. When the heat exchanger is stepped, the pre-filter begins moving the core power set-point, and the \acs{pi} controller immediately responds to the error, making the reactor subcritical. As the cumulative and instantaneous error continue to grow, the passive feedback mechanisms (primary flow reactivity) first resist the controller. When the core power crosses over the set-point, the control drums reverse their direction of rotation as the core accumulates sensible heat. 
+
+This sequence draws a large loop in Figure \ref{fig:Down-ControlPhase-Ctr} and a steep line in Figure \ref{fig:Down-Power-Ctr} at about 6 minutes. Eventually,  first overshoot peak cools and slows the salt enough to momentarily bring the \acs{msnb} back above unity. As the instantaneous error shrinks, the controller backs off just as the salt is heated and accelerated enough to drop the core power one more time. The controlled feedback phase space line then finally follows a swirling path towards unity as the core power oscillations ring out. 
 
 
 
@@ -414,11 +414,21 @@ This figure is similar to Figure \ref{fig:Down-PassivePhase-Auto}. The total pas
     \label{fig:Stop-Power-Ctr}
 \end{figure}
 
-\begin{figure}[ht!]
+\begin{figure}[!ht]
     \centering
-    \includegraphics[width=0.9\textwidth]{Simulator/ShutDown/Control/contr_reac_phase}
-    \caption[Controlled Shut-Down Reactivity Phase Space]{\raggedright Reactivity phase space response for a shut-down from full-power to hot-standby}
-    \label{fig:Stop-ControlPhase-Ctr}
+    \subfloat[\centering Full-Power]{\includegraphics[width=0.49\textwidth]{Simulator/ShutDown/Control/animateTx_t/t-1}}
+    \subfloat[\centering Low Power]{\includegraphics[width=0.49\textwidth]{Simulator/ShutDown/Control/animateTx_t/t-40}}
+    \quad
+    \subfloat[\centering Heat Exchanger at Hot-Standby]{\includegraphics[width=0.49\textwidth]{Simulator/ShutDown/Control/animateTx_t/t-60}}
+    \subfloat[\centering Core at Hot-Standby]{\includegraphics[width=0.49\textwidth]{Simulator/ShutDown/Control/animateTx_t/t-120}}
+    \caption[Controlled Shut-Down Temperature Profile Response]{Temperature profile response to a controlled shut-down from full-power to hot-standby.
+    \begin{enumerate*}[label=\alph*)]
+        \item \acs{msnb} is at full-power;
+        \item \acs{msnb} has reached 1 MW;
+        \item Heat exchanger has just reached hot-standby; 
+        \item Core has equilibrated at hot-standby;
+    \end{enumerate*}}
+    \label{fig:Stop-Temp-Auto}
 \end{figure}
 \clearpage
 

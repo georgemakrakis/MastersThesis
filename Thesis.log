@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.9.1)  18 NOV 2023 01:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.9.1)  18 NOV 2023 01:18
 entering extended mode
 **c:/Users/sjroo/OneDrive/Documents/UIdaho/Thesis/Dissertation/Thesis.tex
 (c:/Users/sjroo/OneDrive/Documents/UIdaho/Thesis/Dissertation/Thesis.tex
@@ -920,7 +920,14 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 68.
 LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 92.
  (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
-) (Thesis.aux (Frontmatter/Abstract.aux) (Frontmatter/Acknowledgements.aux) (Frontmatter/Dedication.aux) (Frontmatter/Contribution.aux) (Chapters/Introduction.aux) (Chapters/Controls.aux) (Chapters/Xenon.aux) (Chapters/Modeling.aux) (Chapters/Results.aux) (Chapters/Conclusions.aux))
+) (Thesis.aux (Frontmatter/Abstract.aux) (Frontmatter/Acknowledgements.aux) (Frontmatter/Dedication.aux) (Frontmatter/Contribution.aux) (Chapters/Introduction.aux) (Chapters/Controls.aux) (Chapters/Xenon.aux) (Chapters/Modeling.aux) (Chapters/Results.aux
+
+LaTeX Warning: Label `fig:Stop-Temp-Auto' multiply defined.
+
+
+LaTeX Warning: Label `fig:Stop-Temp-Auto@cref' multiply defined.
+
+) (Chapters/Conclusions.aux))
 \openout1 = `Thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 92.
@@ -1368,10 +1375,10 @@ Package pdftex.def Info: ./img//Simulator/StepDown/Auto/auto_reac_phase.png  use
 (pdftex.def)             Requested size: 406.516pt x 241.69772pt.
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 287.
  [47 <./img//Simulator/StepUp/Control/t_vs_angle.png>] [48 <./img//Simulator/StepDown/Auto/t_vs_Qt.png> <./img//Simulator/StepDown/Auto/auto_reac_phase.png>]
-<./img//Simulator/StepDown/Control/t_vs_Qt.png, id=1570, 578.16pt x 325.215pt>
+<./img//Simulator/StepDown/Control/t_vs_Qt.png, id=1569, 578.16pt x 325.215pt>
 File: ./img//Simulator/StepDown/Control/t_vs_Qt.png Graphic file (type png)
 <use ./img//Simulator/StepDown/Control/t_vs_Qt.png>
-Package pdftex.def Info: ./img//Simulator/StepDown/Control/t_vs_Qt.png  used on input line 306.
+Package pdftex.def Info: ./img//Simulator/StepDown/Control/t_vs_Qt.png  used on input line 304.
 (pdftex.def)             Requested size: 406.516pt x 228.66127pt.
  [49 <./img//Simulator/StepDown/Control/t_vs_Qt.png>]
 <./img//Simulator/StepDown/Control/contr_reac_phase.png, id=1583, 584.6643pt x 344.7279pt>
@@ -1466,36 +1473,51 @@ File: ./img//Simulator/ShutDown/Control/t_vs_Qt.png Graphic file (type png)
 <use ./img//Simulator/ShutDown/Control/t_vs_Qt.png>
 Package pdftex.def Info: ./img//Simulator/ShutDown/Control/t_vs_Qt.png  used on input line 412.
 (pdftex.def)             Requested size: 406.516pt x 228.66127pt.
-<./img//Simulator/ShutDown/Control/contr_reac_phase.png, id=1675, 583.2189pt x 346.1733pt>
-File: ./img//Simulator/ShutDown/Control/contr_reac_phase.png Graphic file (type png)
-<use ./img//Simulator/ShutDown/Control/contr_reac_phase.png>
-Package pdftex.def Info: ./img//Simulator/ShutDown/Control/contr_reac_phase.png  used on input line 419.
-(pdftex.def)             Requested size: 406.516pt x 241.30019pt.
+<./img//Simulator/ShutDown/Control/animateTx_t/t-1.png, id=1675, 578.16pt x 325.215pt>
+File: ./img//Simulator/ShutDown/Control/animateTx_t/t-1.png Graphic file (type png)
+<use ./img//Simulator/ShutDown/Control/animateTx_t/t-1.png>
+Package pdftex.def Info: ./img//Simulator/ShutDown/Control/animateTx_t/t-1.png  used on input line 419.
+(pdftex.def)             Requested size: 221.32936pt x 124.49605pt.
+<./img//Simulator/ShutDown/Control/animateTx_t/t-40.png, id=1676, 578.16pt x 325.215pt>
+File: ./img//Simulator/ShutDown/Control/animateTx_t/t-40.png Graphic file (type png)
+<use ./img//Simulator/ShutDown/Control/animateTx_t/t-40.png>
+Package pdftex.def Info: ./img//Simulator/ShutDown/Control/animateTx_t/t-40.png  used on input line 420.
+(pdftex.def)             Requested size: 221.32936pt x 124.49605pt.
+<./img//Simulator/ShutDown/Control/animateTx_t/t-60.png, id=1677, 578.16pt x 325.215pt>
+File: ./img//Simulator/ShutDown/Control/animateTx_t/t-60.png Graphic file (type png)
+<use ./img//Simulator/ShutDown/Control/animateTx_t/t-60.png>
+Package pdftex.def Info: ./img//Simulator/ShutDown/Control/animateTx_t/t-60.png  used on input line 422.
+(pdftex.def)             Requested size: 221.32936pt x 124.49605pt.
+<./img//Simulator/ShutDown/Control/animateTx_t/t-120.png, id=1678, 578.16pt x 325.215pt>
+File: ./img//Simulator/ShutDown/Control/animateTx_t/t-120.png Graphic file (type png)
+<use ./img//Simulator/ShutDown/Control/animateTx_t/t-120.png>
+Package pdftex.def Info: ./img//Simulator/ShutDown/Control/animateTx_t/t-120.png  used on input line 423.
+(pdftex.def)             Requested size: 221.32936pt x 124.49605pt.
  [55
 
- <./img//Simulator/ShutDown/Control/t_vs_Qt.png> <./img//Simulator/ShutDown/Control/contr_reac_phase.png>]
-<./img//Simulator/DemandResponse/Auto/t_vs_Qt.png, id=1684, 578.16pt x 325.215pt>
+ <./img//Simulator/ShutDown/Control/t_vs_Qt.png> <./img//Simulator/ShutDown/Control/animateTx_t/t-1.png> <./img//Simulator/ShutDown/Control/animateTx_t/t-40.png> <./img//Simulator/ShutDown/Control/animateTx_t/t-60.png> <./img//Simulator/ShutDown/Control/animateTx_t/t-120.png>]
+<./img//Simulator/DemandResponse/Auto/t_vs_Qt.png, id=1698, 578.16pt x 325.215pt>
 File: ./img//Simulator/DemandResponse/Auto/t_vs_Qt.png Graphic file (type png)
 <use ./img//Simulator/DemandResponse/Auto/t_vs_Qt.png>
-Package pdftex.def Info: ./img//Simulator/DemandResponse/Auto/t_vs_Qt.png  used on input line 432.
+Package pdftex.def Info: ./img//Simulator/DemandResponse/Auto/t_vs_Qt.png  used on input line 442.
 (pdftex.def)             Requested size: 406.516pt x 228.66127pt.
-<./img//Simulator/DemandResponse/Auto/auto_reac_phase.png, id=1687, 575.9919pt x 345.4506pt>
+<./img//Simulator/DemandResponse/Auto/auto_reac_phase.png, id=1701, 575.9919pt x 345.4506pt>
 File: ./img//Simulator/DemandResponse/Auto/auto_reac_phase.png Graphic file (type png)
 <use ./img//Simulator/DemandResponse/Auto/auto_reac_phase.png>
-Package pdftex.def Info: ./img//Simulator/DemandResponse/Auto/auto_reac_phase.png  used on input line 439.
+Package pdftex.def Info: ./img//Simulator/DemandResponse/Auto/auto_reac_phase.png  used on input line 449.
 (pdftex.def)             Requested size: 406.516pt x 243.81152pt.
  [56
 
  <./img//Simulator/DemandResponse/Auto/t_vs_Qt.png> <./img//Simulator/DemandResponse/Auto/auto_reac_phase.png>]
-<./img//Simulator/DemandResponse/Control/t_vs_Qt.png, id=1698, 578.16pt x 325.215pt>
+<./img//Simulator/DemandResponse/Control/t_vs_Qt.png, id=1712, 578.16pt x 325.215pt>
 File: ./img//Simulator/DemandResponse/Control/t_vs_Qt.png Graphic file (type png)
 <use ./img//Simulator/DemandResponse/Control/t_vs_Qt.png>
-Package pdftex.def Info: ./img//Simulator/DemandResponse/Control/t_vs_Qt.png  used on input line 448.
+Package pdftex.def Info: ./img//Simulator/DemandResponse/Control/t_vs_Qt.png  used on input line 458.
 (pdftex.def)             Requested size: 406.516pt x 228.66127pt.
-<./img//Simulator/DemandResponse/Control/contr_reac_phase.png, id=1701, 584.6643pt x 347.6187pt>
+<./img//Simulator/DemandResponse/Control/contr_reac_phase.png, id=1715, 584.6643pt x 347.6187pt>
 File: ./img//Simulator/DemandResponse/Control/contr_reac_phase.png Graphic file (type png)
 <use ./img//Simulator/DemandResponse/Control/contr_reac_phase.png>
-Package pdftex.def Info: ./img//Simulator/DemandResponse/Control/contr_reac_phase.png  used on input line 455.
+Package pdftex.def Info: ./img//Simulator/DemandResponse/Control/contr_reac_phase.png  used on input line 465.
 (pdftex.def)             Requested size: 406.516pt x 241.69772pt.
  [57
 
@@ -1606,14 +1628,17 @@ consecutive:
 ) [96] (py/Simulator/plots.py
 consecutive:
 ) (py/Simulator/controller.py)) [97] [98] (Thesis.aux (Frontmatter/Abstract.aux) (Frontmatter/Acknowledgements.aux) (Frontmatter/Dedication.aux) (Frontmatter/Contribution.aux) (Chapters/Introduction.aux) (Chapters/Controls.aux) (Chapters/Xenon.aux) (Chapters/Modeling.aux) (Chapters/Results.aux) (Chapters/Conclusions.aux))
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
 (rerunfilecheck)             Checksum: 7A3D684AB03992B5656C9A5CF85DDF39;6164.
  ) 
 Here is how much of TeX's memory you used:
- 51644 strings out of 478927
- 1104169 string characters out of 2852536
- 2641300 words of memory out of 3000000
- 66402 multiletter control sequences out of 15000+600000
+ 51683 strings out of 478927
+ 1106138 string characters out of 2852536
+ 2641443 words of memory out of 3000000
+ 66433 multiletter control sequences out of 15000+600000
  441259 words of font info for 112 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  106i,22n,108p,1874b,2327s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1636,9 +1661,9 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist,
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
 
 {C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi8.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eurm10.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrb8a.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrro8a.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Thesis.pdf (110 pages, 2705687 bytes).
+Output written on Thesis.pdf (110 pages, 2763443 bytes).
 PDF statistics:
- 3857 PDF objects out of 4296 (max. 8388607)
- 1904 named destinations out of 2073 (max. 500000)
- 609 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3871 PDF objects out of 4296 (max. 8388607)
+ 1908 named destinations out of 2073 (max. 500000)
+ 624 words of extra memory for PDF output out of 10000 (max. 10000000)
 
