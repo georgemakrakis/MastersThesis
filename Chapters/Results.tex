@@ -183,50 +183,99 @@ Figure \ref{fig:SS-Velocity} shows that the initial velocity guess is about 0.8 
 Even with these limiting assumptions, the trivial case study provides confidence that the multi-physics model adequately describes the stable passive feedback mechanisms that couples the nuclear kinetics of the \acs{msnb} to its thermal hydraulic phenomena. The simulation is self-stabilizing against small excursions, and can reasonably be expected to respond to larger transient studies so long as the magnitude is not de-stabilizing.
 
 \subsection{Up-Step}
+The first transient of study is a simple step from 8 MW to 10 MW. This is an instantaneous change of 25\%, and is likely much more aggressive than will ever actually be required in practice. Step functions are, however, useful for controller tuning and performance assessment, making this a valuable study even if it is more likely for this system to respond to ramp functions.
 
 \subsubsection{Autonomous Response}
+Figure \ref{fig:Up-Power-Auto} displays the core response to the heat exchanger up-step that results from only passive feedback. The defining feature of this plot is the inverse response immediately after the heat exchanger step that is caused by the increased natural circulation flow rate as the cold leg cools. Faster flow causes a negative flow reactivity insertion and makes the \acs{msnb} subcritical until the cold salt reaches the core and temperature reactivity ramps up the core power. 
+
+These dynamics are readily apparent on Figure \ref{fig:Up-Reac-Auto}, where the initial dip in total reactivity appears only on the flow reactivity line. As the core power increases, hotter and hotter salt propagates around the flow loop, eventually raising the average core temperature enough that the reactor goes subcritical, and the core power rounds the first overshoot peak. 
+
 \begin{figure}[ht!]
     \centering
     \includegraphics[width=0.9\textwidth]{Simulator/StepUp/Auto/t_vs_Qt}
-    \caption[Autonomous Up-Step Power Response]{Core power response to a heat exchanger demand step function from 8 MW to 10 MW.}
+    \caption[Autonomous Up-Step Power Response]{\raggedright Autonomous core power response to a heat exchanger demand step function from 8 MW to 10 MW.}
     \label{fig:Up-Power-Auto}
 \end{figure}
+
+When the core power dips below the heat exchanger power, salt cooling, governed by the transport delay problem, begins to ramp the core power back up, and the dynamics repeat, with smaller and smaller overshoot peaks each cycle. The key metrics obtained from analyzing Figure \ref{fig:Up-Power-Auto} are:
+
+\begin{itemize}
+    \item Delay Time - 1.2 min;
+    \item Rise Time - 2.3 min;
+    \item Settling Time - 40.5 min;
+    \item Oscillation Period - 6.5 min;
+    \item Inverse Response - 27.5\%;
+    \item First Overshoot - 105.0\%;
+    \item Second Overshoot - 57.5\%;
+\end{itemize}
+
+The large overshoots, roughly half-wave decay, and long settling time are indicative of a rather poor autonomous response to this transient. Notably, the reactor handles this poor response without being destabilized, causing reverse flow, or approaching thermophysical limits of the molten salt. 
 
 \begin{figure}[ht!]
     \centering
     \includegraphics[width=0.9\textwidth]{Simulator/StepUp/Auto/t_vs_reac}
-    \caption[Autonomous Up-Step Reactivity Response]{Core reactivity response to a heat exchanger demand heat exchanger demand step function from 8 MW to 10 MW.}
+    \caption[Autonomous Up-Step Reactivity Response]{Autonomous core reactivity response to a heat exchanger demand heat exchanger demand step function from 8 MW to 10 MW.}
     \label{fig:Up-Reac-Auto}
 \end{figure}
-\clearpage
-\subsubsection{Controller Tuning}
 
+\subsubsection{Controller Tuning}
+The controller was tuned using the Ziegler-Nichols methodology. This common closed loop tuning methodology requires placing the controller in P-only mode and increasing the proportional gain ($K_p$) until the response exhibits sustained oscillations. The gain at which this occurs is defined as the ultimate gain, and the period of oscillation is the ultimate period. Recommended \acs{pid} gains and time constants can be obtained from these values. The desired behavior was approached with a $K_p$ of 3 $\times$ 10\textsuperscript{-4} degree/kW and the fresh fuel control-reactivity curve, and resulted in an ultimate period of 45 seconds. 
+
+Several of the recommended \acs{pid} gains were tested, and it was observed that all with a significant derivative time constant destabilized the \acs{msnb}. Therefore, it was decided to use the \acs{pi} controller recommendations, effectively setting the derivative time constant to zero. A $K_p$ of 1.35 $\times$ 10\textsuperscript{-4} degree/kW (which corresponds to a combined controller-actuator gain 30.3 pcm/MW) and $\tau_I$ of 37.5 seconds provided a stable response to all of the transients of study with acceptable performance. It is likely that finer tuning of these parameters could slightly improve the performance of the controller, however a more refined loop shaping analysis focused on the poles and zeros of the overall loop transfer function would be a better approach likely to yield superior results. A publication investigating an advanced controller design of this nature will follow this thesis.
 
 \subsubsection{Controller Response}
+The case study was repeated with the Ziegler-Nichols tuned \acs{pi} controller. In observing Figure \ref{fig:Up-Power-Ctr}, it is apparent that the inverse response is completely eliminated and the peak overshoot is significantly reduced. The simulation length has been reduced to display greater detail of the response, as the settling time and oscillation period are both greatly reduced:
+
+\begin{itemize}
+    \item Delay Time - 0.6 min;
+    \item Rise Time - 1.1 min;
+    \item Settling Time - 5.3 min;
+    \item Oscillation Period - 1 min;
+    \item Inverse Response - 0.0\%;
+    \item First Overshoot - 11.5\%;
+    \item Second Overshoot - 14.5\%;
+\end{itemize}
+
 \begin{figure}[ht!]
     \centering
     \includegraphics[width=0.9\textwidth]{Simulator/StepUp/Control/t_vs_Qt}
-    \caption[Controlled Up-Step Power Response ]{Controlled core power response to a heat exchanger demand step function from 8 MW to 10 MW.}
+    \caption[Controlled Up-Step Power Response ]{\raggedright Controlled core power response to a heat exchanger demand step function from 8 MW to 10 MW.}
     \label{fig:Up-Power-Ctr}
 \end{figure}
+
+This represents nearly a 100\% improvement to the delay and rise time (which is limited by the pre-filter) and an order of magnitude improvement to the settling time and first overshoot. The second overshoot is greater than the first, but is still significantly smaller than the second peak of the autonomous response, and minor oscillations follow. These oscillations are a result of over-actuation. After the core power settles around the set-point, the control drums are slightly rotated back and forth by 1.5 arc-minutes with a period of about 1 minute. This behavior, displayed by Figure \ref{fig:Up-Drum-Ctr}, is unnecessary and can lead lead to premature wear to the control drum drive motors. In the future, the error and actuator signals could be processed in an effort to stabilize the controller output.
 
 \begin{figure}[ht!]
     \centering
     \includegraphics[width=0.9\textwidth]{Simulator/StepUp/Control/t_vs_angle}
-    \caption[Up-Step Actuator Response]{Control drum angle response to a heat exchanger demand step function from 8 MW to 10 MW.}
-    \label{fig:Up-Drum}
+    \caption[Up-Step Actuator Response]{\raggedright Control drum angle response to a heat exchanger demand step function from 8 MW to 10 MW.}
+    \label{fig:Up-Drum-Ctr}
 \end{figure}
-\clearpage
 
 \subsection{Down-Step}
+To further study the controller, the opposite step function was also studied. Very similar dynamics are expected for a step from 10 MW to 8 MW.
 
 \subsubsection{Autonomous Response}
+Figure \ref{fig:Down-Power-Auto} looks very similar to the mirror image of Figure \ref{fig:Up-Power-Auto}, but the inverse response is appreciably larger. This is an artifact of the exponential formula used to calculate flow reactivity. When the heat exchanger power is reduced, the cold leg begins to warm up and the natural circulation flow rate reduces. A reduction in velocity changes the flow reactivity more than an equivalent velocity increase for a given starting velocity. Following the inverse response, the down-step response behaves very similarly to the up-step:
+
+\begin{itemize}
+    \item Delay Time - 1.1 min;
+    \item Rise Time - 2.2 min;
+    \item Settling Time - 38 min;
+    \item Oscillation Period - 7.5 min;
+    \item Inverse Response - 45.0\%;
+    \item First Overshoot - 90.0\%;
+    \item Second Overshoot - 50.0\%;
+\end{itemize}
+
 \begin{figure}[ht!]
     \centering
     \includegraphics[width=0.9\textwidth]{Simulator/StepDown/Auto/t_vs_Qt}
-    \caption[Autonomous Down-Step Power Response]{Core power response to a heat exchanger demand step function from 10 MW to 8 MW.}
+    \caption[Autonomous Down-Step Power Response]{\raggedright Autonomous core power response to a heat exchanger demand step function from 10 MW to 8 MW.}
     \label{fig:Down-Power-Auto}
 \end{figure}
+
+A convenient way to represent the passive reactivity feedback is by leveraging phase-space. Figure \ref{fig:Down-PassivePhase-Auto} plots the temperature reactivity on the x-axis and the flow reactivity on the y-axis. Along the diagonal, the reactor is critical, and the distance from the diagonal that the time-parametric curve is proportional to the degree of sub/supercriticality. 
 
 \begin{figure}[ht!]
     \centering
@@ -234,15 +283,34 @@ Even with these limiting assumptions, the trivial case study provides confidence
     \caption[Autonomous Down-Step Reactivity Phase Space]{Passive reactivity phase space response to a heat exchanger demand heat exchanger demand step function from 10 MW to 8 MW.}
     \label{fig:Down-PassivePhase-Auto}
 \end{figure}
-\clearpage
+
+\note{I'll fix the annotations on the above figure}From the starting point, the \acs{msnb} quivers around unity until the step function occurs, when positive flow reactivity is inserted. The phase space shows how this response leads to salt warming and negative temperature reactivity which brings the reactor back to unity. The flow rate quickly equilibrates around the new velocity, after which the average core temperature is the dominant passive feedback mechanism that delays steady state operation.
 
 \subsubsection{Controller Response}
+Again, inspection of Figure \ref{fig:Down-Power-Ctr} tells us that the controller eliminates the inverse response and reduces the overshoot and required timescale:
+
+\begin{itemize}
+    \item Delay Time - 0.3 min;
+    \item Rise Time - 1.2 min;
+    \item Settling Time - 5.2 min;
+    \item Oscillation Period - 1 min;
+    \item Inverse Response - 0.0\%;
+    \item First Overshoot - 8.5\%;
+    \item Second Overshoot - 17.5\%;
+\end{itemize}
+
+In this case study, the second overshoot is more than double the magnitude of the first. This is  due to a variety of factors, which can be understood with the help of Figure \ref{fig:Down-ControlPhase-Ctr}. 
+
 \begin{figure}[ht!]
     \centering
     \includegraphics[width=0.9\textwidth]{Simulator/StepDown/Control/t_vs_Qt}
-    \caption[Controlled Down-Step Power Response ]{Controlled core power response to a heat exchanger demand step function from 10 MW to 8 MW.}
+    \caption[Controlled Down-Step Power Response ]{\raggedright Controlled core power response to a heat exchanger demand step function from 10 MW to 8 MW.}
     \label{fig:Down-Power-Ctr}
 \end{figure}
+
+This figure is similar to Figure \ref{fig:Down-PassivePhase-Auto}. The total passive reactivity is combined onto the x-axis, and the active reactivity is placed on the y-axis. Again, a curve below the diagonal corresponds to subcritical operation. When the heat exchanger is stepped, the pre-filter begins moving the core power set-point, and the \acs{pi} controller immediately responds to the error, making the reactor subcritical. As the cumulative and instantaneous error continue to grow, the passive feedback mechanisms (primary flow reactivity) first resist the controller. When the core power crosses over the set-point, the control drums reverse their direction of rotation as the core accumulates sensible heat. This sequence draws a large loop in Figure \ref{fig:Down-ControlPhase-Ctr} and a steep line in Figure \ref{fig:Down-Power-Ctr} at about 6 minutes. Eventually,  first overshoot peak cools and slows the salt enough to momentarily bring the \acs{msnb} back above unity. As the instantaneous error shrinks, the controller backs off just as the salt is heated and accelerated enough to drop the core power one more time. The controlled feedback phase space line then finally follows a swirling path towards unity as the core power oscillations ring out. 
+
+
 
 \begin{figure}[ht!]
     \centering
@@ -250,7 +318,7 @@ Even with these limiting assumptions, the trivial case study provides confidence
     \caption[Controlled Down-Step Reactivity Phase Space]{Controlled reactivity phase space response to a heat exchanger demand heat exchanger demand step function from 10 MW to 8 MW.}
     \label{fig:Down-ControlPhase-Ctr}
 \end{figure}
-\clearpage
+
 
 
 \subsection{Start-Up}
