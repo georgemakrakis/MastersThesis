@@ -584,6 +584,8 @@ The key metrics for the second ramp are shaped by fact that the core power happe
 Figure \ref{fig:Demand-PassivePhase-Auto} is a passive feedback phase space representation of the transient. The \acs{msnb} hovers around unity until the heat exchanger begins delivering more power to the secondary working fluid. Flow reactivity then makes the core subcritical, causing the inverse response, before the cold salt reaches the core and it ramps up. When the heat exchanger ramp stops, the reactor twice circulates a different point along the diagonal in a large loop primarily driven by thermal density wave oscillations traversing the flow loop. When the heat rejected begins ramping back down, the passive reactivity phase space curve happens to be below the diagonal, otherwise it would take some additional time for the deceleration of the salt to ramp the reactor back down to low power. Once the heat exchanger settles back to 80\% of full power, the core spirals around the original unity point as it settles back to the original power level.
 
 \subsubsection{Controller Response}
+The inclusion of the \acs{pi} controller makes the \acs{msnb} a viable option for demand-response profiles such as this. The set-point is tracked essentially perfectly while it is changing, and Figure \ref{fig:Demand-Power-Ctr} shows only as tiny overshoot and nearly immediate settling after both ramps. 
+
 \begin{figure}[ht!]
     \centering
     \includegraphics[width=0.9\textwidth]{Simulator/DemandResponse/Control/t_vs_Qt}
@@ -591,10 +593,35 @@ Figure \ref{fig:Demand-PassivePhase-Auto} is a passive feedback phase space repr
     \label{fig:Demand-Power-Ctr}
 \end{figure}
 
+The key metrics for the first ramp are:
+
+\begin{itemize}
+    \item Delay Time - 1.3 min;
+    \item Rise Time - 5.2 min;
+    \item Settling Time - 5.5 min;
+    \item Oscillation Period - 2.5 min;
+    \item Inverse Response - 0.0\%;
+    \item First Overshoot - 2.5\%;
+    \item Second Overshoot - 0.0\%;
+\end{itemize}
+
+The key metrics for the second ramp are:
+
+\begin{itemize}
+    \item Delay Time - 1.3 min;
+    \item Rise Time - 5.5 min;
+    \item Settling Time - 6.1 min;
+    \item Oscillation Period - 2.9 min;
+    \item Inverse Response - 0.0\%;
+    \item First Overshoot - 3.0\%;
+    \item Second Overshoot - 0.0\%;
+\end{itemize}
+
 \begin{figure}[ht!]
     \centering
     \includegraphics[width=0.9\textwidth]{Simulator/DemandResponse/Control/contr_reac_phase}
     \caption[Controlled Demand-Response Reactivity Phase Space]{Controlled reactivity phase space response to a heat exchanger demand heat exchanger demand transient. The \acs{msnb} is ramped from 8 MW to 10 MW over 5 minutes, holds for 10 minutes, then is ramped back to 8 MW in 10 minutes.}
     \label{fig:Demand-ControlPhase-Ctr}
 \end{figure}
-\clearpage
+
+Figure \ref{fig:Demand-ControlPhase-Ctr} is a passive feedback vs. active feedback phase space representation of the transient. In comparison to Figure \ref{fig:Demand-PassivePhase-Auto}, the controller keeps the reactor much closer to unity throughout, provides tighter spirals that correspond to smaller overshoots and faster decay, and more quickly returns the \acs{msnb} to criticality after the conclusion of the transients. At the end of the simulation, the reactor is about 1.5 \textsuperscript{o}C hotter than initially, providing the -5 pcm of passive feedback where the phase space curve ends.
