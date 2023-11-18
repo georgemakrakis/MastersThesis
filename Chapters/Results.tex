@@ -431,14 +431,41 @@ Figure \ref{fig:Start-Temp-Ctr} demonstrates that while the power response is gr
 \end{figure}
 
 \subsection{Shut-Down}
+The next transient of study is a non-emergency shut-down. The \acs{msnb} is ramped from full-power to low-power, then to hot-standby over the course of 2.5 hours. 
 
 \subsubsection{Autonomous Response}
+Figure \ref{fig:Stop-Power-Auto} depicts a rather responsive shut-down, initially. However, as the power decreases, the flow rate slows and flow reactivity resists, and the core power lags behind the heat exchanger. This occurs both during the first ramp and the second ramp. As the core lags the heat exchanger, the salt accumulates sensible heat, which can be observed by the temperature profile rising as is flattens in Figure \ref{fig:Stop-Temp-Auto} and the animation in the supplementary materials\footnotemark[2]. The key metrics for the first ramp are:
+
+\begin{itemize}
+    \item Delay Time - 4 min;
+    \item Rise Time - 33 min;
+    \item Settling Time - 61 min;
+    \item Oscillation Period - 22 min;
+    \item Inverse Response - 0.0\%;
+    \item First Overshoot - 6.2\%;
+    \item Second Overshoot -  2.6\%;
+\end{itemize}
+
+The second ramp is not as responsive as the first. The temperature profile (see Figure \ref{fig:Stop-Temp-Auto} (b)) has already flattened significantly, so the flow feedback response is very sensitive to subsequent deceleration, and the descent to hot-standby is resisted for the entire duration of the ramp.  The key metrics for the second ramp are:
+
+\begin{itemize}
+    \item Delay Time - 14 min;
+    \item Rise Time - 33 min;
+    \item Settling Time - 45 min;
+    \item Oscillation Period - 100 min;
+    \item Inverse Response - 22.2\%;
+    \item First Overshoot - 8.9\%;
+    \item Second Overshoot -  3.3\%;
+\end{itemize}
+
 \begin{figure}[ht!]
     \centering
     \includegraphics[width=0.9\textwidth]{Simulator/ShutDown/Auto/t_vs_Qt}
     \caption[Autonomous Shut-Down Power Response]{Core power response for a shut-down from full-power to hot-standby. The heat exchanger power is ramped from 10 MW to 1 MW, then to 100 kW over two separate thirty minute periods.}
     \label{fig:Stop-Power-Auto}
 \end{figure}
+
+It would be preferable to counteract the increased flow reactivity with control reactivity instead of temperature reactivity. The flow loop heats up to about 80 \textsuperscript{o}C hotter than the desired core outlet temperature to stabilize the \acs{msnb} as it approaches hot-standby. Allowing this could potentially require requalification of structural materials or even selection of more exotic alloys.
 
 \begin{figure}[!ht]
     \centering
@@ -457,7 +484,6 @@ Figure \ref{fig:Start-Temp-Ctr} demonstrates that while the power response is gr
     \label{fig:Stop-Temp-Auto}
 \end{figure}
 
-\clearpage
 
 \subsubsection{Controller Response}
 \begin{figure}[ht!]
@@ -481,7 +507,7 @@ Figure \ref{fig:Start-Temp-Ctr} demonstrates that while the power response is gr
         \item Heat exchanger has just reached hot-standby; 
         \item Core has equilibrated at hot-standby;
     \end{enumerate*}}
-    \label{fig:Stop-Temp-Auto}
+    \label{fig:Stop-Temp-Control}
 \end{figure}
 \clearpage
 
