@@ -539,8 +539,10 @@ Figure \ref{fig:Stop-Temp-Ctr} and the animation in the supplementary materials 
 
 
 \subsection{Demand-Response}
+The final transient of study is a demand-response that may be required of an \acs{msnb} that is coupled to a solar farm. On a cloudy day,photovoltaic solar panels reduce their effectiveness to between 20\% and 70\% depending on how cloudy the sky is. If a single cloud passes over the sun, it is assumed that the effectiveness drops to the high end of that spectrum, and a 2 MW solar power plant may reduce its output by about 600 kW. Assuming a power conversion efficiency of about 30\%, the \acs{msnb} may then be asked to ramp up by 2 MW for a short period so that the entire system can meet demand.  It is assumed that it takes 5 minutes for the cloud to fully cover the sun, it passes over in 10 minutes, and it takes another 5 minutes to uncover the sun.
 
-\subsubsection{Autonomous Response}
+\subsubsection{Autonomous Response} 
+
 \begin{figure}[ht!]
     \centering
     \includegraphics[width=0.9\textwidth]{Simulator/DemandResponse/Auto/t_vs_Qt}
@@ -548,13 +550,38 @@ Figure \ref{fig:Stop-Temp-Ctr} and the animation in the supplementary materials 
     \label{fig:Demand-Power-Auto}
 \end{figure}
 
+The passive feedback mechanisms alone are not sufficient to follow such a load profile. Though the transient does not destabilize the reactor, Figure \ref{fig:Demand-Power-Auto} displays large overshoots that do not lend themselves to power peaking. The \acs{msnb} never settles at the temporarily required full-power. The key metrics for the first ramp are:
+
+\begin{itemize}
+    \item Delay Time - 3 min;
+    \item Rise Time - 5 min;
+    \item Settling Time - N/A min;
+    \item Oscillation Period - 7 min;
+    \item Inverse Response -2.5\%;
+    \item First Overshoot - 41.0\%;
+    \item Second Overshoot - 23.0\%;
+\end{itemize}
+
 \begin{figure}[ht!]
     \centering
     \includegraphics[width=0.9\textwidth]{Simulator/DemandResponse/Auto/auto_reac_phase}
     \caption[Autonomous Demand-Response Reactivity Phase Space]{Passive reactivity phase space response to a heat exchanger demand heat exchanger demand transient. The \acs{msnb} is ramped from 8 MW to 10 MW over 5 minutes, holds for 10 minutes, then is ramped back to 8 MW in 10 minutes.}
     \label{fig:Demand-PassivePhase-Auto}
 \end{figure}
-\clearpage
+
+The key metrics for the second ramp are shaped by fact that the core power happens to be dropping when the sun begins exiting the cloud. If it were rising, the response to the ramp-down, particularly until the first overshoot, may look very different:
+
+\begin{itemize}
+    \item Delay Time - 0.5 min;
+    \item Rise Time - 5.2 min;
+    \item Settling Time - 33 min;
+    \item Oscillation Period - 8 min;
+    \item Inverse Response - 0.0\%;
+    \item First Overshoot - 32.0\%;
+    \item Second Overshoot - 18.5\%;
+\end{itemize}
+
+Figure \ref{fig:Demand-PassivePhase-Auto} is a passive feedback phase space representation of the transient. The \acs{msnb} hovers around unity until the heat exchanger begins delivering more power to the secondary working fluid. Flow reactivity then makes the core subcritical, causing the inverse response, before the cold salt reaches the core and it ramps up. When the heat exchanger ramp stops, the reactor twice circulates a different point along the diagonal in a large loop primarily driven by thermal density wave oscillations traversing the flow loop. When the heat rejected begins ramping back down, the passive reactivity phase space curve happens to be below the diagonal, otherwise it would take some additional time for the deceleration of the salt to ramp the reactor back down to low power. Once the heat exchanger settles back to 80\% of full power, the core spirals around the original unity point as it settles back to the original power level.
 
 \subsubsection{Controller Response}
 \begin{figure}[ht!]
