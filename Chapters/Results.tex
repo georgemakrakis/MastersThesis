@@ -486,12 +486,25 @@ It would be preferable to counteract the increased flow reactivity with control 
 
 
 \subsubsection{Controller Response}
+
 \begin{figure}[ht!]
     \centering
     \includegraphics[width=0.9\textwidth]{Simulator/ShutDown/Control/t_vs_Qt}
     \caption[Controlled Shut-Down Power Response]{Core power response for a shut-down from full-power to hot-standby. The heat exchanger power is ramped from 10 MW to 1 MW, then to 100 kW over consecutive 30 minute periods.}
     \label{fig:Stop-Power-Ctr}
 \end{figure}
+
+As evidenced by the overlapping orange and blue lines in Figure \ref{fig:Stop-Power-Ctr}, the controller is able to track the set-point nearly perfectly for this shut-down, and is able to eliminate the low-power hold as it brings the \acs{msnb} down to hot-standby. For each ramp, the core power follows the heat exchanger tightly, and settles almost immediately after the heat exchanger transient concludes. The key metrics for the first ramp are:
+
+\begin{itemize}
+    \item Delay Time - 4 min;
+    \item Rise Time - 28 min;
+    \item Settling Time - 30 min;
+    \item Oscillation Period - 10 min;
+    \item Inverse Response - 0.0\%;
+    \item First Overshoot - 2.8\%;
+    \item Second Overshoot -  0.0\%;
+\end{itemize}
 
 \begin{figure}[!ht]
     \centering
@@ -507,10 +520,22 @@ It would be preferable to counteract the increased flow reactivity with control 
         \item Heat exchanger has just reached hot-standby; 
         \item Core has equilibrated at hot-standby;
     \end{enumerate*}}
-    \label{fig:Stop-Temp-Control}
+    \label{fig:Stop-Temp-Ctr}
 \end{figure}
-\clearpage
 
+The key metrics for the first ramp are:
+
+\begin{itemize}
+    \item Delay Time - 2 min;
+    \item Rise Time - 33 min;
+    \item Settling Time - 38 min;
+    \item Oscillation Period - 29 min;
+    \item Inverse Response - 0.0\%;
+    \item First Overshoot - 4.4\%;
+    \item Second Overshoot - 3.3\%;
+\end{itemize}
+
+Figure \ref{fig:Stop-Temp-Ctr} and the animation in the supplementary materials show that the more responsive shut-down caused by the controller led to more favorable temperature profile dynamics. The hot-standby temperature was implicitly controlled to exceed the full-power core outlet temperature by just 9 \textsuperscript{o}C, which is well within normal operating range, and represents a significant improvement over the autonomous response.
 
 
 \subsection{Demand-Response}
