@@ -1,0 +1,792 @@
+%\documentclass[10pt,notes,aspectratio=169]{beamer}
+%\documentclass[10pt,notes=only,aspectratio=169]{beamer}   % only notes
+\documentclass[10pt,aspectratio=169]{beamer}              % only frames
+
+\usetheme[right]{Berkeley}
+%\geometry{paper=letterpaper,landscape}
+
+
+\makeatletter
+\setlength{\beamer@headheight}{0.75cm}
+\makeatother
+\setbeamertemplate{navigation symbols}{}
+% \setbeamertemplate{footline}[frame number]
+\setbeamertemplate{sidebar right}[sidebar theme]
+\addtobeamertemplate{sidebar right}{}{%
+    \vspace{10pt}
+    \hspace{20pt}
+    \insertframenumber
+    \vspace{10pt}
+    }
+
+% Current section
+\AtBeginSection[ ]
+{
+\begin{frame}{}
+    \tableofcontents[currentsection]
+\end{frame}
+}
+
+% required packages
+\usepackage{wrapfig}
+\usepackage{textgreek}
+
+% colors
+\definecolor{PrideGold}{RGB}{241,179,0}
+\definecolor{Silver}{RGB}{128,128,128}
+\definecolor{White}{RGB}{255,255,255}
+\definecolor{Black}{RGB}{25,25,25}
+
+\setbeamercolor{background canvas}{bg=Black!08}
+
+\setbeamercolor{block title}{bg=PrideGold,fg=Black}
+\setbeamercolor{block body}{bg=PrideGold!20,fg=Black}
+
+\setbeamercolor{block title alerted}{bg=Black, fg=PrideGold}
+\setbeamercolor{block body alerted}{bg=Silver, fg=Black}
+
+\setbeamercolor*{block title example}{bg=PrideGold, fg = Black}
+\setbeamercolor*{block body example}{bg=PrideGold!20, fg = Black}
+
+\setbeamercolor*{palette primary}{bg = PrideGold}
+\setbeamercolor*{palette secondary}{bg = PrideGold, fg = White}
+\setbeamercolor*{palette tertiary}{bg = PrideGold, fg = White}
+\setbeamercolor*{titlelike}{fg = PrideGold}
+\setbeamercolor*{title}{bg = Black, fg = PrideGold}
+\setbeamercolor*{item}{fg = PrideGold}
+\setbeamercolor*{caption name}{fg = PrideGold}
+
+\setbeamercolor*{sidebar}{fg=PrideGold,bg=Black}
+\setbeamercolor*{title in sidebar}{fg=PrideGold}
+\setbeamercolor*{author in sidebar}{fg=PrideGold}
+
+\setbeamercolor{section in toc}{fg=Black}
+\setbeamercolor{subsection in toc}{fg=Black}
+
+\setbeamercolor{page number in head/foot}{fg=PrideGold,bg=Black}
+\setbeamercolor{footline}{bg=Black}
+
+\setbeamercolor{bibliography entry author}{fg=Black}
+\setbeamercolor{bibliography entry note}{fg=Black}
+\setbeamercolor{bibliography entry title}{fg=Black}
+
+% Font Information
+
+\usefonttheme{professionalfonts}
+
+\setbeamerfont{title}{size=\large}
+\setbeamerfont{subtitle}{size=\small}
+\setbeamerfont{author}{size=\small}
+\setbeamerfont{date}{size=\small}
+\setbeamerfont{institute}{size=\small}
+\setbeamerfont{caption}{size=\tiny}
+
+%%% Title Page %%%
+\titlegraphic{\includegraphics[height=1.5cm]{christensen.defense/defense.images/UI_Nuclear_Eng_Indust_Mngmt_stacked_pms_3514.png}} 
+
+\title[Ph.D. Dissertation]{Advancements in the Evaluation of Heterogeneity for Nuclear Criticality Safety in High-Assay Low-Enriched Uranium Systems}
+\author{Joseph A. Christensen}
+\institute[U of I]{University of Idaho \\ Department of Nuclear Engineering \& Industrial Management}
+\date{April 19, 2023}
+
+%%% Bibliography %%%
+\usepackage[style=numeric, sorting=none]{biblatex}
+
+\addbibresource{./christensen.defense/defense.bib}
+
+\AtEveryCitekey{
+    \clearfield{url}
+    \clearfield{eprint}
+    }
+
+\begin{document}
+
+\frame{\titlepage}
+
+\section{Introduction}
+
+\begin{frame}{Introduction and Origin Story}
+     \begin{columns}
+        \column{0.6\textwidth}
+            \begin{block}{About the Author}
+                Mr. Christensen is a nuclear safety professional and former Navy submarine officer.
+            \end{block}
+            \vspace{0.3cm}
+            \centering
+            \includegraphics[width=0.5\textwidth,keepaspectratio]{christensen.defense/defense.images/Gold_Dolphins.png}
+            \vspace{0.3cm}
+            \begin{block}{Not a Quick Study}
+                Ph.D. work on this project began in 2011, following completion of a master's degree.
+            \end{block}
+        \column{0.4\textwidth}
+            \begin{figure}
+            \includegraphics[width=0.8\textwidth,keepaspectratio]{christensen.defense/defense.images/article.PNG}
+            \caption{\fullcite{if_magazine}}
+            \end{figure}
+    \end{columns}
+    \note[item]{There will be time for questions at the end. We have a lot of ground to cover, so I'd prefer not to have interruptions.}
+    \note[item]{Generally speaking, if a slide has words on it, I won't be talking about it much. They are intended to recap what I've already talked about.}
+    \note[item]{I'll apologize in advance. Several of these slides are very wordy. I have done my best to simplify these concepts as much as possible, and I will be talking through them quickly. If I miss something, or if you want a better explanation, please feel free to ask!}
+    \note[item]{I know we exist in a world of AI-generated portraits. Unfortunately, I did, in fact, look like this just a few months ago when I started this PhD.}
+\end{frame}
+
+\begin{frame}{Background}
+    \begin{block}{High-Assay Low-Enriched Uranium (HALEU)}
+        HALEU is uranium whose U-235 content is increased from natural levels (0.7 percent) to between five and twenty percent by weight.
+    \end{block}
+    \begin{block}{History}
+        Most uranium applications use either low-enriched uranium (five percent or less) or high-enriched uranium (greater than ninety percent). New reactor designs and nuclear systems are becoming reliant on HALEU for a variety of reasons.
+    \end{block}
+    \begin{block}{The Problem}
+        In order to support the burgeoning HALEU industry, nuclear criticality safety needs reliable information to support fuel-cycle applications: enrichment, conversion, de-conversion, fuel fabrication, transportation, and disposal.
+    \end{block}
+    \note[item]{Historical applications of uranium include light-water reactors (low-enriched) and weapons (high-enriched). The available literature primarily focuses on these applications, with very little academic or practical research and experimentation in the middle.}
+    \note[item]{A particular challenge in HALEU applications is: ``how do you handle heterogeneity''.}
+    \note[item]{Heterogeneity is the property where you have distributed `chunks' of fuel in a moderating matrix, rather than a uniform distribution across a region.}
+\end{frame}
+
+\begin{frame}{Motivation}
+    \begin{block}{Nuclear Criticality Safety}
+        Nuclear criticality safety is a specialized discipline which aims to prevent a nuclear criticality accident from occurring during operations with fissile material.
+    \end{block}
+    \begin{block}{Trade-offs}
+        \begin{itemize}
+            \item Because the hazards associated with a nuclear criticality accident cannot be eliminated, rules must be established which necessarily restrict the ways in which fissile material may be handled.
+            \item Safety drives the rules toward smaller batches and smaller throughput; operational needs tend to drive the opposite direction.
+            \item As a consequence, nuclear criticality safety is a discipline of trade-offs, where safety is balanced against operational needs.
+        \end{itemize}
+    \end{block}
+    \note[item]{Nuclear safety is always the overriding priority; if an operation cannot be demonstrated to be safe, it will not be performed.}
+    \note[item]{The trade-off occurs when safety margins are established. If process conditions are known with a high degree of certainty, safety margins can be reduced without compromising safety. The opposite is also true - if an operation has large uncertainty, safety margins must be large.}
+    \note[item]{The goal is to establish \textit{enough} safety through the use of adequate margins to account for process uncertainties without unnecessarily restricting the needs of the operation. Without this balance, most operations with fissile material would be impossible.}
+    \note[item]{22 process criticality accidents have claimed the lives of many workers in nuclear fuel cycle facilities. At least five of these accidents are attributable to the effect of heterogeneity, and all of them were preventable.}
+    \note[item]{Specific examples of heterogeneity creating issues: precipitation of solids from a solution containing fissile material, buildup of solids in low-flow areas due to evaporation, accumulation of solids in catch basins for cooling fluid or lubricants.}
+\end{frame}
+
+\begin{frame}{Research Objectives}
+    \begin{block}{Reduce Safety Margins for High-Assay Low-Enriched Uranium}
+        This work demonstrates new methods to reduce the uncertainty for specific nuclear criticality safety parameters which are validated against appropriate relevant literature, thereby enabling nuclear criticality safety practitioners the opportunity to reduce safety margins without compromising safety.
+    \end{block}
+    \begin{block}{Demonstrate an Alternative Use of Nuclear Criticality Safety Benchmarks}
+        The new methods developed in this work are used in conjunction with evaluated nuclear criticality safety benchmarks to show additional areas of study and previously-unidentified correlations which may be used to further enhance nuclear criticality safety for HALEU applications.
+    \end{block}
+\end{frame}
+
+\section[Scope of Work 1]{Scope of Work 1 - Establish Research Baseline for use of Nuclear Criticality Safety Benchmarks}
+
+\begin{frame}{Scope of Work 1 Publications}
+    \begin{block}{}
+        \textbf{\fullcite{lmt-004}}
+    \end{block}
+\end{frame}
+
+\begin{frame}{Benchmark Evaluation of a Critical Experiment}
+    \begin{block}{Task 1 - Develop Detailed Experimental Model}
+        Using historical experiment records and available literature, develop a detailed MCNP model of the subject experimental configurations.
+    \end{block}
+    \begin{block}{Task 2 - Evaluate Experimental Uncertainties}
+        Using appropriate statistical methods and ICSBEP handbook guidance, evaluate and quantify the effect of parametric uncertainties in the detailed experimental model.
+    \end{block}
+\end{frame}
+
+\begin{frame}{Oak Ridge Critical Experiments}
+    \begin{columns}
+        \column{0.5\textwidth}
+            \begin{itemize}
+                \item A series of experiments performed at Oak Ridge National Laboratory in the 1960s was evaluated
+                \item The experiments themselves were a classic ``pins-in-water'' series which used low-enriched uranium metal in a variable-pitch lattice
+                \item More than a dozen critical configurations were evaluated by the experimenter
+            \end{itemize}
+        \column{0.5\textwidth}
+            \centering
+            \includegraphics[width=\textwidth,keepaspectratio]{christensen.dissertation/LMT-004/figures/LMT-004_figure_1.png}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Detailed Experimental Model}
+    \begin{columns}
+        \column{0.5\textwidth}
+            \centering
+            \includegraphics[width=\textwidth,keepaspectratio]{christensen.dissertation/LMT-004/figures/LMT-004_figure_2.png}
+        \column{0.5\textwidth}
+            \begin{itemize}
+                \item Using historical records found in the experimental logbooks, letters, and publications, a detailed Monte Carlo neutronics model was developed
+                \item Eight critical configurations were included in the evaluation: 4 different pitch and two different fuel rod lengths
+            \end{itemize}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Detailed Experimental Model}
+    \centering
+    \includegraphics[height=0.9\textwidth,keepaspectratio,angle=-90]{christensen.dissertation/LMT-004/figures/lmt-004_figure_3a.jpg}
+\end{frame}
+
+\begin{frame}{Detailed Experimental Model}
+    \centering
+    \includegraphics[height=0.9\textwidth,keepaspectratio,angle=-90]{christensen.dissertation/LMT-004/figures/lmt-004_figure_3b.jpg}
+\end{frame}
+
+\begin{frame}{Experimental Uncertainty Determination}
+    \begin{itemize}
+        \item A total of twenty material and dimensional parameters were perturbed in the detailed model to evaluate the experimental uncertainty
+        \item The magnitude of the perturbations was determined based on known or assumed tolerances derived from (1) available records, (2) similar material data sheets, or (3) conservative engineering judgment
+        \item The overall experimental uncertainty was determined to be sufficiently low to support continued evaluation of the experiment series as a criticality safety benchmark
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Benchmark Evaluation of a Critical Experiment}
+    \begin{block}{Task 3 - Develop Simplified Benchmark Model}
+         Develop a simplified model of the subject experiments which meets acceptance criteria established in the ICSBEP handbook.
+    \end{block}
+        
+    \begin{block}{Task 4 - Quantify and Evaluate Benchmark Simplification Biases}
+        Using the detailed and simplified experimental models, quantify and evaluate simplification biases, including an analysis of the overall simplification bias.
+    \end{block}
+\end{frame}
+
+\begin{frame}{Simplified Benchmark Model}
+    \begin{columns}
+        \column{0.3\textwidth}
+            \centering
+            \includegraphics[width=\textwidth,keepaspectratio]{christensen.dissertation/LMT-004/figures/LMT-004_figure_4b.png}
+        \column{0.7\textwidth}
+            \begin{itemize}
+                \item Individual details of the experimental model were evaluated and removed if the change did not have a significant bias.
+                \item The total bias between the experimental model and the simplified model was determined.
+                \item The important characteristics of each critical configuration were maintained to ensure relevant experimental data were saved
+            \end{itemize}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Benchmark Evaluation Results}
+    \footnotesize
+    \centering
+    \renewcommand{\arraystretch}{1.5}
+    \begin{tabular}{cccc}
+        Case & Experimental k\textsubscript{eff} $\pm$ 1\textsigma\ & Simplification Bias & Benchmark k\textsubscript{eff} $\pm$ 1\textsigma\ \\
+        \hline
+        1 & 1.0000 $\pm$ 0.0017 & -0.0002 $\pm$ \textless0.0001 & 0.9998 $\pm$ 0.0017 \\
+        2 & 1.0000 $\pm$ 0.0018 & -0.0022 $\pm$ \textless0.0001 & 0.9978 $\pm$ 0.0018 \\
+        3 & 1.0000 $\pm$ 0.0018 & -0.0007 $\pm$ \textless0.0001 & 0.9993 $\pm$ 0.0009 \\
+        4 & 1.0000 $\pm$ 0.0010 & -0.0028 $\pm$ \textless0.0001 & 0.9972 $\pm$ 0.0010 \\
+        5 & 1.0000 $\pm$ 0.0009 & -0.0014 $\pm$ \textless0.0001 & 0.9983 $\pm$ 0.0010 \\
+        6 & 1.0000 $\pm$ 0.0010 & -0.0030 $\pm$ \textless0.0001 & 0.9970 $\pm$ 0.0010 \\
+        7 & 1.0000 $\pm$ 0.0018 & -0.0016 $\pm$ \textless0.0001 & 0.9984 $\pm$ 0.0018 \\
+        8 & 1.0000 $\pm$ 0.0019 & -0.0032 $\pm$ \textless0.0001 & 0.9968 $\pm$ 0.0019 \\
+    \hline
+    \end{tabular}
+\end{frame}
+
+\note{Generally speaking, I don't throw up a wall of numbers, but there is something hidden here. Let's see if you can spot it. Don't worry; we'll talk about it later!}
+
+\begin{frame}{Comparative Benchmark Results}
+    \footnotesize
+    \centering
+    \renewcommand{\arraystretch}{1.5}
+    \begin{tabular}{cccc}
+        Case & Benchmark k\textsubscript{eff} $\pm$ 1\textsigma\ & KENO-VI k\textsubscript{eff} $\pm$ 1\textsigma\ & (C-E)/E (\%) \\
+        \hline
+        1    & 0.9998 $\pm$ 0.0017 & 0.9994 $\pm$ 0.0001 & -0.04 \\
+        2    & 0.9978 $\pm$ 0.0018 & 0.9968 $\pm$ 0.0001 & -0.10 \\
+        3    & 0.9993 $\pm$ 0.0019 & 0.9993 $\pm$ 0.0001 &  0.00 \\
+        4    & 0.9972 $\pm$ 0.0010 & 0.9971 $\pm$ 0.0001 & -0.01 \\
+        5    & 0.9983 $\pm$ 0.0010 & 0.9991 $\pm$ 0.0001 & +0.08 \\
+        6    & 0.9970 $\pm$ 0.0010 & 0.9968 $\pm$ 0.0001 & -0.02 \\
+        7    & 0.9984 $\pm$ 0.0018 & 0.9974 $\pm$ 0.0001 & -0.10 \\
+        8    & 0.9968 $\pm$ 0.0019 & 0.9959 $\pm$ 0.0001 & -0.09 \\
+        \hline
+    \end{tabular}
+\end{frame}
+
+\begin{frame}{Scope of Work 1 Conclusions}
+        \begin{itemize}
+        \item The task objectives were completed
+        \begin{itemize}
+            \item An acceptable benchmark model was developed which accurately describes the critical experiments under examination.
+            \item The experimental uncertainties and model biases were evaluated and recorded to support use of the benchmark model in other applications.
+        \end{itemize}
+        \item An important observation relevant to the following work was made.
+        \begin{itemize}
+            \item During evaluation of possible simplifications, a particular correlation was observed.
+            \item This correlation was unfortunately discarded at the time of the evaluation and not explored further until later in the project.
+        \end{itemize} 
+    \end{itemize}
+        \begin{alertblock}{Importance of this Scope of Work}
+        \begin{itemize}
+            \item The benchmark evaluation preserves historical critical experiment data in a form useful for nuclear criticality safety applications.
+            \item Identification of trends in the simplification biases leads to the follow-on investigations into the effects of heterogeneity in critical systems.
+        \end{itemize}
+    \end{alertblock}
+\end{frame}
+
+\section[Scope of Work 2]{Scope of Work 2 - Complete an Evaluation of Historical Data to Demonstrate the Effects of Heterogeneity}
+
+\begin{frame}{Scope of Work 2 Publications}
+    \begin{block}{}
+        \textbf{\fullcite{doi:10.1080/00295639.2021.1940066}}
+    \end{block}
+\end{frame}
+
+\begin{frame}{Evaluate the Effect of Heterogeneity}
+    \begin{block}{Task 1 - Methodology}
+        Describe a methodology by which the minimum critical volume of uranium-water systems may be systematically examined in both homogeneous and heterogeneous systems.
+    \end{block}
+    \begin{block}{Task 2 - Evaluation}
+        Using the described methodology, examine the effect of uranium mass and particle size on the minimum critical volume of uranium-water systems of 20\% enriched uranium.
+    \end{block}
+    \begin{block}{Task 3 - Compare Results to Available Literature}
+        Several assumptions present in current literature regarding particle size and the difference in critical volume between homogeneous and heterogeneous systems are tested and compared to the results derived using the described algorithms.
+    \end{block}
+\end{frame}
+
+\begin{frame}{Methodology}
+    \centering
+    \includegraphics[width=0.8\textwidth,keepaspectratio]{christensen.defense/defense.images/algorithm.png}
+\end{frame}
+
+\begin{frame}{Methodology}
+    \begin{columns}
+        \column{0.4\textwidth}
+        \begin{itemize}
+            \item Using the uranium mass, water mass, and fuel particle size inputs, an MCNP model is generated and used as input to determine the k\textsubscript{eff}.
+            \item A wide range of each parameter was used to cover the entire range of interest.
+            \item Uncertainties in k\textsubscript{eff} were driven very low by using a substantial number of particle histories.
+        \end{itemize}
+        \column{0.6\textwidth}
+            \centering
+            \includegraphics[width=0.9\textwidth,keepaspectratio]{christensen.dissertation/NSE20-128/figures/model.pdf}
+    \end{columns}
+    \note[item]{This diagram shows the system being modeled. Important features are the lattice parameter, the fueled volume diameter, and the reflector diameter. The lattice parameter was determined automatically to conserve uranium and water mass simultaneously. The fueled region volume and reflector distances were updated dynamically between models to ensure conservation of mass and a uniform reflector thickness.}
+    \note[item]{Edge effects on the surface of the fueled region were evaluated and determined to be negligible. For an un-reflected or higher-energy neutron spectrum, this effect is known to be non-trivial.}
+\end{frame}
+
+\begin{frame}{Results}
+    \begin{columns}
+        \column{0.5\textwidth}
+            \centering
+            \includegraphics[width=\textwidth,keepaspectratio]{christensen.dissertation/NSE20-128/figures/volume-versus-particle-size-low.pdf}
+        \column{0.5\textwidth}
+            \includegraphics[width=\textwidth,keepaspectratio]{christensen.dissertation/NSE20-128/figures/volume-versus-particle-size-high.pdf}
+    \end{columns}
+    \begin{itemize}
+                \item The effect of particle size in the models can been seen in these figures with the fit lines shown.
+                \item Each curve is a particular uranium [U(20)] mass, from 5,000 grams to 25,000 grams.
+                \item Critical systems below 5,000 grams could not be generated.
+            \end{itemize}
+    \note[item]{5,000 grams as a lower limit is significant for validating the model. The minimum critical mass of U-235 with a keff of 0.98 is stated in ANSI/ANS-8.1 as 700 grams. This correlates to a U(20) mass of 3,500 grams. It is known that the relationship between enrichment and minimum critical mass is non-linear, so the actual correction factor (NUREG/CR-0095, Fig. 3.4) is 6.4. Accounting for the non-linear relationship and the difference in keff (0.98 versus 1.00), 5,000 grams is effectively spot on. (6.4 x 700 = 4,480).}
+    \note[item]{The left axis of the graph is the homogeneous model.}
+    \note[item]{This chart shows the minimum particle size for each mass which minimizes the volume. The absolute minimum particle size determined was 400 microns, which correlates quite well to the 508 micron value established in literature. It is important to note that the model becomes increasingly insensitive to particle size changes as the mass increases.}
+\end{frame}
+
+\begin{frame}{Minimum Critical Volume}
+    \centering
+    \includegraphics[width=0.75\textwidth,keepaspectratio]{christensen.dissertation/NSE20-128/figures/minimum-critical-volume.pdf}
+    \note[item]{Using the minimum values generated from the particle-size evaluations and the polynomial fit function, the minimum volume for each uranium mass was determined.}
+    \note[item]{The homogeneous volumes are also shown, for comparison. The difference in volume correlates with predictions in literature.}
+\end{frame}
+
+\begin{frame}{Comparative Analysis}
+    \begin{columns}
+        \column{0.4\textwidth}
+            \begin{figure}
+                \centering
+                \includegraphics[width=\textwidth,keepaspectratio]{christensen.dissertation/NSE20-128/figures/pnnl-19176-fig-11.png}
+                \caption{Figure 11 from \fullcite{pnnl-19176}}
+            \end{figure}
+        \column{0.6\textwidth}
+        \centering
+        \includegraphics[width=\textwidth,keepaspectratio]{christensen.dissertation/NSE20-128/figures/minimum-critical-volume.pdf}
+    \end{columns}
+    \note[item]{A comparison between the prediction of lower heterogeneous system volume and the results of this analysis.}
+    \note[item]{The results in this work expand the 2-point prediction into a third dimension which evaluates both mass and particle size.}
+\end{frame}
+
+\begin{frame}{Comparisons to Literature}
+    \begin{itemize}
+        \item Particle Size
+            \begin{itemize}
+                \item The particle size which delineates the difference between a heterogeneous system and a homogeneous system is described in literature as 127 microns.
+                \begin{itemize}
+                    \item This value is likely to be derived from an experiment which used 0.02 inch (508 microns) fuel rods in water.
+                    \item It is assumed that 127 microns was arbitrarily chosen as a conservative lower bound because it is precisely one-quarter of 508 microns.
+                \end{itemize}
+                \item This new work shows that 400 microns is the smallest particle size at which a difference between the system types is observable. Smaller particle sizes produce larger critical volumes for a given mass.
+        \end{itemize}
+        \item Volume
+            \begin{itemize}
+                \item The minimum heterogeneous and homogeneous critical volumes correlate well with values found in literature for twenty-percent enriched uranium.
+            \end{itemize}
+        \item Safety Margin
+            \begin{itemize}
+                \item European safety guides recommend a twenty-five percent safety margin between the homogeneous and heterogeneous critical volume.
+                \item This work shows that the modeled difference is approximately fifteen percent.
+            \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Scope of Work 2 Conclusions}
+\begin{itemize}
+    \item The task objectives were completed:
+    \begin{itemize}
+        \item A methodology by which the minimum critical volume of uranium-water systems may be systematically examined in both homogeneous and heterogeneous systems is described.
+        \item The effect of uranium mass and particle size on the minimum critical volume of uranium-water systems of 20\% enriched uranium were examined using the described methodology.
+        \item Several assumptions present in current literature regarding particle size and the difference in critical volume between homogeneous and heterogeneous systems were tested and compared to the results derived using the described algorithms.
+    \end{itemize}
+    \begin{alertblock}{Importance of this Scope of Work}
+        \begin{itemize}
+            \item Improved knowledge of the precise limiting particle size enables a wider range of use for nuclear criticality safety. Instead of limiting systems to 127 microns, limits can be established to increase operational flexibility without sacrificing safety.
+            \item Improved knowledge of the volume difference between heterogeneous systems and homogeneous systems (15 percent versus 25 percent) enables larger batch sizes when volume controls are implemented, again, reducing safety margin without compromise to safety.
+        \end{itemize}
+    \end{alertblock}
+\end{itemize}
+    
+\end{frame}
+
+\section[Scope of Work 3]{Scope of Work 3 \textendash Investigate the Effects of Heterogeneity Using Critical Benchmarks}
+
+\begin{frame}{Scope of Work 3 Publications}
+    \begin{block}{}
+        \textbf{\fullcite{doi:10.1080/00295639.2020.1819143}}
+    \end{block}    
+    \begin{block}{}
+        \textbf{\fullcite{doi:10.1080/00295639.2022.2087832}}
+    \end{block}
+\end{frame}
+
+\subsection{Scope of Work 3a \textendash Identify Candidate Benchmarks}
+
+\begin{frame}{Scope of Work 3a \textendash Identify Candidate Benchmarks}
+    In order to further evaluate the effects of heterogeneity, baseline data were gathered using the Handbook of the International Criticality Safety Benchmark Evaluation Project (ICSBEP). This collection of reports contains the same type of work as reported in Scope of Work 1 and includes a vast library of evaluated critical experiments, some of which were applicable for the evaluation of heterogeneity in HALEU.
+    \begin{block}{Task 1 \textendash Selection Criteria}
+        Establish and explain selection criteria for the identification of candidate benchmark evaluations.
+    \end{block}
+    \begin{block}{Task 2 \textendash Select Benchmarks}
+        Identify and describe the selected benchmarks.
+    \end{block}
+    \begin{block}{Task 3 \textendash Propose Modifications}
+        Propose modifications to the evaluated benchmark models that will aid in the evaluation of the effects of heterogeneity.
+    \end{block}
+    \note[item]{The methodology for Scopes of Work 3a and 3b were developed after it was determined that it would not be practical to expand and adapt the benchmark evaluation described in Scope of Work 1 to include the methodology described in Scope of Work 2. While not the initially-intended path to complete the overall research objectives, the results of this scope turned out to be quite remarkable.}
+    \note[item]{This work scope was less technical than the other scope found in this project. It is, however, a necessary and important \textit{allez} to the next Scope's \textit{h\^{o}p}.}
+    \note[item]{Use of existing benchmarks is important, because a pure modeling approach would not necessarily survive validation in order to provide useful results. Thinking about the actual meaning of the word 'benchmark', one can consider the application of this method as a 'jig'. Benchmarks are used in woodworking and other crafts to provide a reliable, known reference point from which you can work.}
+\end{frame}
+
+\begin{frame}{Selection Criteria}
+    \begin{itemize}
+    	\item \textbf{Enrichment} in the appropriate enrichment range: nine to forty percent U-235; 
+    	\item Appropriate \textbf{geometry} which can be used to introduce heterogeneity if the benchmark model is homogeneous, or vice versa - to homogenize a heterogeneous benchmark model;
+    	\item \textbf{Fuel compositions and mixtures} which are compatible with comparison to other systems within the scope of this work; and
+    	\item Benchmarks which contain \textbf{evaluations of heterogeneity} as part of the evaluation report.
+    \end{itemize}
+    \note[item]{Criterion 1 should be obvious. The interest in HALEU is the primary motivation for this work. Selection of enrichment surrounding the target value of twenty percent is straightforward.}
+    \note[item]{Appropriate geometry was necessary because of the type of modifications being proposed. Systems which were overly complex or contained significant heterogeneity in themselves would be rejected. Similarly, overly-simple benchmarks were to be rejected as well (LOPO is an example, where the simplified model is a sphere, which had been previously evaluated.}
+    \note[item]{Fuel compositions and mixtures were considered to ensure that the neutronic properties of the systems were sufficiently similar to provide valid comparisons. No fast-spectrum benchmarks, for example.}
+    \note[item]{Bonus points for benchmarks which already included some discussion on heterogeneity.}
+\end{frame}
+
+\begin{frame}{Selected Benchmarks}
+    \begin{block}{IEU-MET-FAST Benchmarks from the Zero-Power Physics Reactor (ZPPR)}
+        \begin{itemize}
+            \item A series of six benchmark evaluations from the ZPPR, which was operated at the Idaho National Laboratory over approximately thirty years.
+            \item Includes an explicit evaluation of transformation biases (heterogeneous to homogeneous).
+            \item Initially selected as a candidate evaluation, but rejected for final consideration due to neutron spectrum.
+        \end{itemize}
+    \end{block}
+    \begin{block}{IEU-COMP-THERM-001 and IEU-COMP-MIXED-001}
+        \begin{itemize}
+            \item Split-table apparatus at Los Alamos National Laboratory operated following World War II.
+            \item Used uranium fluoride particles embedded in polytetrafluoroethylene.
+            \item Met all selection parameters and were specifically designed to study heterogeneity.
+            \item Includes a discussion on particle size distribution.
+        \end{itemize}
+    \end{block}
+    \note[item]{A note on nomenclature: the ICSBEP handbook uses a three-term identifier to distinguish benchmark evaluations. The first set of digits (e.g. IEU) is ``intermediate-enriched uranium'', the second set is the fuel material type (metal), and the third set is the neutron spectrum.}
+\end{frame}
+
+\begin{frame}{Selected Benchmarks}
+    \begin{block}{IEU-COMP-THERM-015}
+        \begin{itemize}
+            \item Experiments conducted at Aldermaston and Dounreay in the United Kingdom which used solid uranium oxide and wax cubes
+            \item Includes an explicit evaluation of transformation biases (heterogeneous to homogeneous).
+            \item Includes a discussion of the effect of particle size on the transformation bias.
+        \end{itemize}
+    \end{block}
+    \begin{block}{IEU-COMP-MIXED-002, IEU-COMP-MIXED-003, and IEU-COMP-INTER-003}
+        \begin{itemize}
+            \item Twenty-three critical experiments using mixtures of uranium tetrafluoride and Teflon.
+            \item Split-table apparatus at the Oak Ridge National Laboratory Critical Experiments Facility in the late 1950s.
+            \item The experiments met all selection parameters.
+            \item Particularly useful because there is a range of fuel-to-moderator ratio and a range of enrichment.
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+\begin{frame}{Proposed Modifications}
+    \begin{block}{Benchmark Model Transformations}
+        The methods described in the previous Scope of Work 2 are applied to the benchmark models identified for further evaluation to introduce heterogeneity and examine the results.
+    \end{block}
+    \begin{itemize}
+        \item For each of the selected benchmarks, the homogeneous fuel regions will be replaced with an equivalent region of heterogeneous fuel-moderator mixtures.
+        \item The benchmark and modified benchmark models will be compared and examined to determine if:
+        \begin{itemize}
+            \item The effect of heterogeneity can be observed.
+            \item The effect of heterogeneity can be correlated to other system parameters.
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Scope of Work 3a Conclusions}
+The task objectives were completed:
+    \begin{itemize}
+        \item Establish and explain selection criteria for the identification of candidate benchmark evaluations.
+        \item Identify and describe the selected benchmarks.
+        \item Propose modifications to the evaluated benchmark models that will aid in the evaluation of the effects of heterogeneity.
+    \end{itemize}
+    \begin{alertblock}{Importance of this Scope of Work}
+        \begin{itemize}
+            \item The ICSBEP handbook is \textit{huge} (tens of thousands of evaluated critical experiments). Down-selection to relevant benchmarks using pre-defined criteria was necessary to ensure the results of the next Scope of Work are valid.
+            \item The selection of benchmark evaluations specifically for the purpose of transformation is a new concept and new application of the database.
+        \end{itemize}
+    \end{alertblock}
+    \note[item]{The typical uses of benchmark evaluations for nuclear criticality safety are generally limited to validation of neutronics codes and evaluation of nuclear data. Uses of the database similar to this work were not encountered in the literature.}
+\end{frame}
+
+\subsection{Scope of Work 3b \textendash Evaluate Selected Benchmarks}
+
+\begin{frame}{Scope of Work 3b \textendash Evaluate Selected Benchmarks}
+    \begin{columns}
+        \column{0.5\textwidth}
+        \begin{alertblock}{Scope of Work 2}
+            Describes transformations 
+        \end{alertblock}
+        \column{0.5\textwidth}
+        \begin{alertblock}{Scope of Work 3b}
+            Applies transformations to Scope of Work 3a
+        \end{alertblock}
+    \end{columns}
+    \begin{block}{Task 1 \textendash Transform and Evaluate}
+        Using evaluated critical benchmarks, determine whether or not a change in the fuel geometry from homogeneous to heterogeneous produces a meaningful change in system multiplication.
+    \end{block}
+    \begin{block}{Task 2 \textendash Compare Results}
+        If a change in multiplication is determined to exist, evaluate the magnitude of the change against other system parameters in search of useful correlations.
+    \end{block}
+    \begin{block}{Task 3 \textendash Search for Meaning}
+        Evaluate the presence or lack of correlation.
+    \end{block}
+    \note[item]{The Main Event! Now we see what happens when the methodology described in Scope 2 is combined with the selected benchmarks described in Scope 3a.}
+\end{frame}
+
+\begin{frame}{Methodology}
+    \begin{block}{Transformations}
+        \begin{itemize}
+            \item The applied transformations used effectively the same methodology described earlier.
+            \item Homogeneous fuel regions were converted into particle lattices where all the fuel material is consolidated.
+            \item 500 micron particles were used because of the known 400-micron lower bound.
+            \item Fuel and moderator mass and gross geometry were conserved.
+        \end{itemize} 
+    \end{block}
+    \begin{block}{Analysis}
+        \begin{itemize}
+            \item Graphical analysis was used at first, due to its simplicity. It is not, however, rigorous enough to rely on for conclusory statements.
+            \item Pearson's linear correlation coefficient was selected to test presumed correlations identified in graphical analysis.
+        \end{itemize}
+    \end{block}
+    \note[item]{Pearson's coefficient tests linearity. An R-value of 1 or -1 is perfectly correlated, and 0 is not correlated. Critical values based on sample size are determined and can give confidence intervals.}
+\end{frame}
+
+\begin{frame}{IEU-COMP-THERM-001}
+    \centering
+    \includegraphics[width=\textwidth,keepaspectratio]{christensen.dissertation/NSE22-49/figures/NSE22-49_fig_4.png}
+    Pearson's R-Value: -.94552 (99.9\% critical value = .7604)
+    \note[item]{This series shows a very strong graphical correlation over the entire range of fuel-to-moderator ratio.}
+    \note[item]{The apparent linear correlation in the graphical analysis is strongly supported by the statistical analysis.}
+\end{frame}
+
+\begin{frame}{IEU-COMP-THERM-015}
+    \centering
+    \includegraphics[width=\textwidth,keepaspectratio]{christensen.dissertation/NSE22-49/figures/NSE22-49_fig_5.png}
+    Pearson's R-Value: .62058 (99.9\% critical value = .5974)
+    \note[item]{This series shows a very strong graphical correlation over the entire range of fuel-to-moderator ratio.}
+    \note[item]{The apparent linear correlation in the graphical analysis is strongly supported by the statistical analysis.}
+\end{frame}
+
+\begin{frame}{IEU-COMP-MIXED-002}
+    \begin{block}{}
+        IEU-COMP-MIXED-002 consisted of experiments with different enrichments.
+    \end{block}
+    \begin{columns}
+        \column{0.5\textwidth}
+            \centering
+            \includegraphics[width=\textwidth,keepaspectratio]{christensen.dissertation/NSE22-49/figures/NSE22-49_fig_2.png}
+            \begin{footnotesize}
+                IEU-COMP-MIXED-002 with 12.5\% enrichment \\
+                R-Value: -.89959 (80\% critical value = .9511)
+            \end{footnotesize}
+            \column{0.5\textwidth}
+            \centering
+            \includegraphics[width=\textwidth,keepaspectratio]{christensen.dissertation/NSE22-49/figures/NSE22-49_fig_3.png}
+            \begin{footnotesize}
+                IEU-COMP-MIXED-002 with 18.8\% enrichment \\
+                R-Value: -.97393 (95\% critical value = .9500)
+            \end{footnotesize}
+            \end{columns}
+\end{frame}
+
+\begin{frame}{IEU-COMP-MIXED-002}
+    \centering
+    \includegraphics[width=\textwidth,keepaspectratio]{christensen.dissertation/NSE22-49/figures/NSE22-49_fig_6.png}
+    Pearson's R-Value: .75872 (80\% critical value = .8000)
+    \note[item]{This series shows a very strong graphical correlation over the entire range of enrichment at a near-constant fuel-to-moderator ratio.}
+    \note[item]{The apparent linear correlation in the graphical analysis is strongly supported by the statistical analysis.}
+\end{frame}
+
+\begin{frame}{IEU-COMP-INTER-003}
+    \centering
+    \includegraphics[width=\textwidth,keepaspectratio]{christensen.dissertation/NSE22-49/figures/NSE22-49_fig_1.png}
+    Pearson's R-Value: -.14723 (80\% critical value = .3646)
+    \note[item]{This series shows a poor graphical correlation}
+    \note[item]{The apparent lack of linear correlation in the graphical analysis is supported by the statistical analysis.}
+    \note[item]{The lack of correlation for this system is explained by examination of Figure 11 from Anomalies (next frame).}
+    \note[item]{The differential k\textsubscript{eff} is effectively constant across the entire range of fuel-to-moderator ratio. This demonstrates that the system is effectively insensitive to the introduction of heterogeneity.}
+\end{frame}
+
+\begin{frame}{Explanation}
+    \begin{columns}
+        \column{0.6\textwidth}
+            \begin{figure}
+                \centering
+                \includegraphics[width=0.7\textwidth,keepaspectratio]{christensen.dissertation/NSE20-128/figures/pnnl-19176-fig-11.png}
+                \caption{Figure 11 from \fullcite{pnnl-19176}}
+            \end{figure}
+        \column{0.4\textwidth}
+        \begin{itemize}
+            \item Recalling the previous graph, from \textit{Anomalies}, it appears that the effect of heterogeneity disappears above 34\% enrichment.
+            \item This result, while unsuccessful in showing the predicted correlation, is important to validate the method.
+        \end{itemize}
+    \end{columns}
+    \note[item]{A comparison between the prediction of lower heterogeneous system volume and the results of this analysis.}
+    \note[item]{The results in this work expand the 2-point prediction into a third dimension which evaluates both mass and particle size.}
+\end{frame}
+
+\begin{frame}{Scope of Work 3b Conclusions}
+The task objectives were completed:
+    \begin{itemize}
+        \item Using evaluated critical benchmarks, determine whether or not a change in the fuel geometry from homogeneous to heterogeneous produces a meaningful change in system multiplication.
+        \item If a change in multiplication is determined to exist, evaluate the magnitude of the change against other system parameters in search of useful correlations.
+        \item Evaluate the presence or lack of correlation.
+    \end{itemize}
+    \begin{alertblock}{Importance of this Scope of Work}
+        \begin{itemize}
+            \item This work shows that the effects of heterogeneity in critical systems are both quantifiable and correlated with system parameters, specifically both fuel-to-moderator ratio and enrichment.
+            \item The lack of heterogeneity effects above 34\% enrichment were additionally confirmed, which enhances the value of the literature and provides validation to the overall method.
+        \end{itemize}
+    \end{alertblock}
+    \note[item]{}
+\end{frame}
+
+\section{Closing Remarks}
+
+\begin{frame}{Closing Remarks}
+    \begin{block}{Recap \textendash\ Scope of Work 1}
+        In the first scope of work, the criticality safety benchmark evaluation process was used to capture and evaluate data of an historical critical experiment.
+    \end{block}
+    \begin{alertblock}{Importance}
+        \begin{itemize}
+            \item Preservation of important data in a retrievable format for use in nuclear data, nuclear criticality safety, and neutronics code validation applications.
+            \item Development of this benchmark evaluation established the skills necessary to complete the follow-on work and provided a key insight regarding transformation bias between heterogeneous and homogeneous critical systems.
+        \end{itemize}
+    \end{alertblock}
+\end{frame}
+
+\begin{frame}{Closing Remarks}
+    \begin{block}{Recap \textendash\ Scope of Work 2}
+        The second part of this project was the development of a new methodology to enable a precise evaluation of the bias between a homogeneous and an equivalent heterogeneous system.
+    \end{block}
+    \begin{itemize}
+        \item Several important historical assumptions were tested by the new methodology, and the degree of precision for two key parameters was improved.
+        \begin{itemize}
+            \item Homogeneous versus Heterogeneous Particle Size
+            \item Volumetric Safety Margin
+        \end{itemize}
+        \item The methodology was validated by comparison to literature.
+    \end{itemize}
+    \begin{alertblock}{Importance}
+        Having a valid methodology which can safely reduce margins will allow more flexibility in operations and manufacturing which uses HALEU. Improved flexibility can reduce costs and improve throughput for fuel cycle facilities.
+    \end{alertblock}
+\end{frame}
+
+\begin{frame}{Closing Remarks}
+    \begin{block}{Recap \textendash\ Scope of Work 3}
+        The final part of this project was application of the methodology to a number of established benchmark evaluations to further quantify the effect of heterogeneity.
+    \end{block}
+    \begin{itemize}
+        \item Application of the method showed two distinct correlations between the heterogeneity bias and nuclear system parameters:
+        \begin{itemize}
+            \item Moderator\textendash to\textendash Fuel ratio (H/\textsuperscript{235}U)
+            \item Enrichment
+        \end{itemize}
+        \item The bias disappeared for systems above 34\% enrichment, which is an historical prediction which helps to further validate the method.
+    \end{itemize}
+    \begin{alertblock}{Importance}
+        \begin{itemize}
+            \item Further validation of the method described in Scope of Work 2 reveals specific correlations between system parameters and the heterogeneity bias.
+            \item Knowledge of these correlations can aid nuclear criticality safety practitioners during the evaluation of HALEU systems.
+        \end{itemize}
+    \end{alertblock}
+\end{frame}
+
+\begin{frame}{Future Work \textendash\ Good}
+     The most basic applications of this work are straightforward:
+    \begin{block}{Use of Benchmarks}
+        This project demonstrates a useful and non-traditional use of benchmark evaluation data. Demonstration of this sort of use may lead to further discovery and applications for the database.
+     \end{block}
+     \begin{block}{Use and Expansion of Methodology}
+        \begin{itemize}
+            \item The method described in this work involves a very ``artisanal'' set of computer codes and manual database management. Formal development of the methodology into a coherent code system will improve validation and use.
+            \item The bulk of this work was performed using systems around 20\% enrichment and at a fixed particle size. A clear next step would be the development of a complete database across a full range of enrichment and particle sizes.
+            \item Another clear step for use of the methodology is evaluation of other system geometries: cylinders, slabs, et cetera.
+        \end{itemize}
+     \end{block}
+     \note[item]{When this work is accepted, a recommendation can be made to the ICSBEP to advise researchers to look for correlations in their simplification biases.}
+     \note[item]{If (when?) artificial intelligence applications come knocking at the nuclear door, having a validated database of critical values, perhaps derived from this methodology, may prove useful. Some AI work has already begun in this area; several presentations have been made in the last year at technical meetings.}
+\end{frame}
+
+\begin{frame}{Future Work \textendash\ Better}
+In order to support the nuclear industry's expanded production and use of HALEU, this work provides real-world benefits:
+
+    \begin{block}{Improved Safety Margins}
+        Use of this methodology across a wider range of inputs will create a database which can be used across the fuel cycle industry to improve process safety and throughput.
+    \end{block}
+    \begin{block}{Data Development and Retention}
+        Replacement of decades-old, OCR-scanned safety guides and handbooks with reliable, repeatable, and retrievable data from a secure database will enable the extension of knowledge throughout the field of nuclear criticality safety.
+    \end{block}
+    \note[item]{Many of the handbooks in nuclear criticality safety today are copies of copies of scanned documents and are not particularly well-maintained. Use of my methodology can create a complete database which can be distributed and referenced in perpetuity.}
+\end{frame}
+
+\begin{frame}{Future Work \textendash\ Best}
+    Applications of this work extend into the future:
+    \begin{block}{Micro-Reactors}
+        The method described by this work can be extended for reactor analysis methods for small reactors being developed today for future deployment.
+    \end{block}
+    \begin{block}{Critical Experiments}
+        At the least, this work informs the need for critical experimentation for HALEU. The number of available benchmarks in the appropriate enrichment range is very small relative to the total number available. At best, this work serves as a foundation for critical experiments to be performed in the future.
+    \end{block}
+    \begin{block}{Methodology Improvements}
+        As part of the effort to standardize the method using a modern, coherent software development process, a few definite improvements are needed:
+        \begin{itemize}
+            \item Add the ability to use randomized unit cells instead of a regular fixed lattice.
+            \item Develop a way to pass Monte Carlo uncertainties into the results.
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+\begin{frame}{Questions}
+    Are there any questions?
+\end{frame}
+
+\begin{frame}[allowframebreaks]{References}
+    \printbibliography
+\end{frame}
+
+
+\end{document}
