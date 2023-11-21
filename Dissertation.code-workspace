@@ -7,7 +7,9 @@
 	"settings": {
 		"cSpell.words": [
 			"dottedtocline",
-			"strans"
+			"labelformat",
+			"strans",
+			"titlelike"
 		],
 		"workbench.colorCustomizations": {
 			"activityBar.activeBackground": "#e9ca00",

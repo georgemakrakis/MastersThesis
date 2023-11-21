@@ -58,7 +58,7 @@
 
 
 \makeatletter
-\setlength{\beamer@headheight}{0.75cm}
+\setlength{\beamer@headheight}{1cm}
 \renewcommand{\@biblabel}[1]{#1.\hfill} %bibliography ordered list has numbers left flush
 \makeatother
 \setbeamertemplate{navigation symbols}{}
@@ -71,18 +71,69 @@
     \vspace{10pt}
     }
 
-% Current section
+% Current section in TOC
 \AtBeginSection[ ]
 {
-\begin{frame}{}
+\begin{frame}{Outline}
     \tableofcontents[currentsection]
 \end{frame}
 }
 
+
+% colors
+\definecolor{PrideGold}{RGB}{241,179,0}
+\definecolor{Silver}{RGB}{128,128,128}
+\definecolor{White}{RGB}{255,255,255}
+\definecolor{Black}{RGB}{25,25,25}
+
+\setbeamercolor{background canvas}{bg=Black!08}
+\setbeamercolor{block title}{bg=PrideGold,fg=Black}
+\setbeamercolor{block body}{bg=PrideGold!20,fg=Black}
+
+\setbeamercolor{block title alerted}{bg=Black, fg=PrideGold}
+\setbeamercolor{block body alerted}{bg=Silver, fg=Black}
+
+\setbeamercolor*{block title example}{bg=PrideGold, fg = Black}
+\setbeamercolor*{block body example}{bg=PrideGold!20, fg = Black}
+
+\setbeamercolor*{palette primary}{bg = PrideGold}
+\setbeamercolor*{palette secondary}{bg = PrideGold, fg = White}
+\setbeamercolor*{palette tertiary}{bg = PrideGold, fg = White}
+\setbeamercolor*{titlelike}{fg = PrideGold}
+\setbeamercolor*{title}{bg = Black, fg = PrideGold}
+\setbeamercolor*{item}{fg = PrideGold}
+\setbeamercolor*{caption name}{fg = PrideGold}
+
+\setbeamercolor*{sidebar}{fg=PrideGold,bg=Black}
+\setbeamercolor*{title in sidebar}{fg=PrideGold}
+\setbeamercolor*{author in sidebar}{fg=PrideGold}
+\setbeamercolor*{section in sidebar}{fg=PrideGold}
+
+\setbeamercolor{section in toc}{fg=Black}
+\setbeamercolor{subsection in toc}{fg=Black}
+
+\setbeamercolor{page number in head/foot}{fg=PrideGold,bg=Black}
+\setbeamercolor{footline}{bg=Black}
+
+\setbeamercolor{bibliography entry author}{fg=Black}
+\setbeamercolor{bibliography entry note}{fg=Black}
+\setbeamercolor{bibliography entry title}{fg=Black}
+
+% Font Information
+
+\usefonttheme{professionalfonts}
+
+\setbeamerfont{title}{size=\large}
+\setbeamerfont{subtitle}{size=\small}
+\setbeamerfont{author}{size=\small}
+\setbeamerfont{date}{size=\small}
+\setbeamerfont{institute}{size=\small}
+\setbeamerfont{caption}{size=\tiny}
+
 \newcommand{\edit}[1]{\textcolor{blue}{#1}} %shortcut for changing font color on revised text
 \newcommand{\fn}[1]{\footnote{#1}} %shortcut for footnote tag
 \newcommand*\sq{\mathbin{\vcenter{\hbox{\rule{.3ex}{.3ex}}}}} %makes a small square as a separator $\sq$
-\newcommand{\sk}[1]{\sout{#1}} %shortcut for strikethrough
+\newcommand{\sk}[1]{\sout{#1}} %shortcut for strike-through
 \newcommand{\x}{\cellcolor{lightgray}\textbf{X}} %use to shade in table cell
 
 \newcommand{\acf}{\acrfull} %full acronym
@@ -133,36 +184,28 @@
 
 
 
-\title[\acs{pid} Controller Design: \acs{msnb}]{Design of a \acs{pid} Controller for a Molten Salt Microreactor}
-\subtitle{Master's Plan}
-\author[Root]{Sam J. Root,\textsuperscript{1}\\
-    Major Professor: Michael McKellar,\textsuperscript{1}\\
-    Committee Members: Robert A. Borrelli\textsuperscript{1}, 
-    Dakota Roberson\textsuperscript{2}
-    }
-\institute[Idaho Falls Center]{\vspace{0.5cm}\\
-    University of Idaho $\sq$ Idaho Falls Center for Higher Education\\
-    \textsuperscript{1}Department of Nuclear Engineering and Industrial Management\\
-    \textsuperscript{2}Department of Electrical and Computer Engineering\\
-    \vspace{0.10in}
-    %\includegraphics[width=0.20\textwidth]{ne-logo.jpg}
+\title[\acs{msnb} Modeling \& Control]{Dynamic System Modeling \& \acs{pid} Controller Design \\for a Molten Salt Microreactor}
+\author{Sam J. Root}
+\institute[Idaho Falls Center]{University of Idaho $\sq$ Idaho Falls Center for Higher Education\\
+    Department of Nuclear Engineering and Industrial Management\\
     }
 
-\date{2022.10.13}
-    
+\date{December 6\textsuperscript{th}, 2023}    
 
-\AtBeginSection[]{
-    \begin{frame}
-        \vfill
-        \centering
-        \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
-            \usebeamerfont{title}\insertsectionhead\par
-        \end{beamercolorbox}
+\titlegraphic{\includegraphics[width=0.20\textwidth]{logo}}
+
+% \AtBeginSection[]{
+%     \begin{frame}
+%         \vfill
+%         \centering
+%         \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
+%             \usebeamerfont{title}\insertsectionhead\par
+%         \end{beamercolorbox}
         
-        \vfill
+%         \vfill
         
-    \end{frame}
-}
+%     \end{frame}
+% }
 
 \begin{document}
     \nobibliography*
@@ -172,9 +215,27 @@
     \end{frame}
 } 
 
+\begin{frame}{About the Author}
+    \begin{block}{Experience}
+      B.S Chemical Engineering (2015-2019) - Michigan Technological University\\
+      M.S. Nuclear Engineering (2021-2023) - University of Idaho - NRC Fellow\\
+      Modeling and Simulation Intern at Idaho National Lab
+
+    \end{block}
+    
+    \begin{block}{Select Publications}
+    \bibentry{RootXe}\\
+    \bibentry{RootWSC}
+            
+    \end{block}
+
+\end{frame}
+
 \begin{frame}{Outline}
     \tableofcontents
 \end{frame}
+
+
 
 \section{Scope}
 \begin{frame}{\acf{msnb}}
@@ -505,7 +566,7 @@
 \end{frame}
 
 
-\begin{frame}{References}
+\begin{frame}[allowframebreaks]{References}
     \bibliographystyle{./rcs/neup}
     \footnotesize
     \bibliography{./rcs/References}

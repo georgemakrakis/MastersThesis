@@ -965,8 +965,6 @@ FUNCTION {article}
     { format.journal.pages }
     { format.journal.eid }
   if$
-  format.issn output
-  format.doi output
   new.block
   format.note output
   fin.entry
