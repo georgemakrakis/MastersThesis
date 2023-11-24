@@ -1,5 +1,5 @@
 \documentclass[aspectratio=169,pdftex,dvipsnames]{beamer}
-\usetheme[right]{Berkeley}
+\usetheme[right,hideallsubsections]{Berkeley}
 \usecolortheme{seahorse}
 \beamertemplatenavigationsymbolsempty 
 \addtobeamertemplate{footnote}{\hskip -2em}{}
@@ -74,10 +74,23 @@
 % Current section in TOC
 \AtBeginSection[ ]
 {
-\begin{frame}{Outline}
-    \tableofcontents[currentsection]
+\begin{frame}{}
+    \tableofcontents[currentsection,hideothersubsections]
 \end{frame}
 }
+
+ \AtBeginSubsection[]{
+     \begin{frame}
+         \vfill
+         \centering
+         \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
+             \usebeamerfont{title}\insertsectionhead\par
+         \end{beamercolorbox}
+       
+         \vfill
+       
+     \end{frame}
+ }
 
 
 % colors
@@ -194,18 +207,7 @@
 
 \titlegraphic{\includegraphics[width=0.20\textwidth]{logo}}
 
-% \AtBeginSection[]{
-%     \begin{frame}
-%         \vfill
-%         \centering
-%         \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
-%             \usebeamerfont{title}\insertsectionhead\par
-%         \end{beamercolorbox}
-        
-%         \vfill
-        
-%     \end{frame}
-% }
+
 
 \begin{document}
     \nobibliography*
@@ -216,28 +218,92 @@
 } 
 
 \begin{frame}{About the Author}
+    \vfill
     \begin{block}{Experience}
       B.S Chemical Engineering (2015-2019) - Michigan Technological University\\
-      M.S. Nuclear Engineering (2021-2023) - University of Idaho - NRC Fellow\\
+      M.S. Nuclear Engineering (2021-2023) - University of Idaho - \acs{nrc} Fellow\\
       Modeling and Simulation Intern at Idaho National Lab
-
     \end{block}
-    
+    \vfill
     \begin{block}{Select Publications}
-    \bibentry{RootXe}\\
-    \bibentry{RootWSC}
-            
+    \bibentry{RootXe}\;\\
+    \bibentry{RootWSC}   
     \end{block}
-
+    \vfill
 \end{frame}
 
 \begin{frame}{Outline}
-    \tableofcontents
+    \tableofcontents[hideallsubsections]
+\end{frame}
+
+\section{The Molten Salt Nuclear Battery}
+
+\begin{frame}{Background}
+    \begin{block}{Gen-IV}
+        \only<1>{
+
+        }
+    \end{block}
+    
+    \begin{block}{Molten Salt Reactors}
+        \only<2>{
+
+        }
+    \end{block}
+    
+    \begin{block}{Microreactors}
+        \only<3>{
+
+        }
+    \end{block}
+\end{frame}
+    
+\section{Process Control Engineering}
+\subsection{Control Theory}
+
+\subsection{Transport Delay Problem}
+
+\section{Reactor Characterization}
+\subsection{Neutronics Modeling}
+
+\subsection{Process Simulation}
+
+
+\section{Results and Analysis}
+\subsection{Control-Reactivity Curve}
+
+\subsection{Controller Tuning}
+
+\subsection{Demand Response}
+
+\section{Conclusions}
+
+
+\begin{frame}{Acknowledgements}
+    \centering
+    This work and my coursework is being completed under a Graduate Fellowship funded by \acf{nrc}.
+
+    This research made use of the resources of the High Performance Computing Center at Idaho National Laboratory, which is supported by the Office of Nuclear Energy of the U.S. Department of Energy and the Nuclear Science User Facilities under Contract No. DE-AC07-05ID14517.
+\end{frame}
+
+\begin{frame}[plain]{}
+    \addtolength\textwidth{2cm} 
+    \setlength\hsize{\textwidth} 
+    \setlength\columnwidth{\textwidth}
+    \vfill\centering
+    \includegraphics[height=0.9\textheight]{logo}
+    \vfill
 \end{frame}
 
 
+\begin{frame}[allowframebreaks]{References}
+    \bibliographystyle{./rcs/neup}
+    \footnotesize
+    \bibliography{./rcs/References}
+\end{frame}
 
-\section{Scope}
+
+\section{Endmatter/Old}
 \begin{frame}{\acf{msnb}}
 \begin{columns}
     %Column 1
@@ -305,7 +371,6 @@
     \blfootnote{\tiny\cite{CarterPHD} \tiny\bibentry{CarterPHD}}
 \end{frame}
 
-\section{Applied Literature Review}
 
 \begin{frame}{Passive Feedback}{\only<2>{Temperature Reactivity}\only<3>{Flow Reactivity}}
    \only<1>{
@@ -467,7 +532,6 @@
 
 \end{frame}
 
-\section{Future Work}
 
 \begin{frame}{Control Drum Characterization}{MCNP}
     \begin{itemize}
@@ -535,7 +599,6 @@
 
 \end{frame}
 
-\section{Final Remarks}
 \begin{frame}{Other Considerations}
     \begin{itemize}
         \item Poison perturbations following power transients \cite{Roberson}
@@ -560,17 +623,7 @@
     
 \end{frame}
 
-\begin{frame}{Acknowledgements}
-    \centering
-    This work and my coursework is being completed under a Graduate Fellowship funded by \acf{nrc}
-\end{frame}
 
-
-\begin{frame}[allowframebreaks]{References}
-    \bibliographystyle{./rcs/neup}
-    \footnotesize
-    \bibliography{./rcs/References}
-\end{frame}
 
 
 \end{document}

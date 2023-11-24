@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.9.1)  20 NOV 2023 17:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.9.1)  24 NOV 2023 16:15
 entering extended mode
 **c:/Users/sjroo/OneDrive/Documents/UIdaho/Thesis/Dissertation/Defense.tex
 (c:/Users/sjroo/OneDrive/Documents/UIdaho/Thesis/Dissertation/Defense.tex
@@ -1394,35 +1394,35 @@ LaTeX Font Info:    Overwriting symbol font `EulerGreek' in version `sans'
 ) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerfontthemeprofessionalfonts.sty)
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\acrshort' on input line 210.
+(hyperref)                removing `\acrshort' on input line 212.
 
 (Defense.aux)
 \openout1 = `Defense.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 210.
-LaTeX Font Info:    ... okay on input line 210.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 210.
-LaTeX Font Info:    ... okay on input line 210.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 210.
-LaTeX Font Info:    ... okay on input line 210.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 210.
-LaTeX Font Info:    ... okay on input line 210.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 210.
-LaTeX Font Info:    ... okay on input line 210.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 210.
-LaTeX Font Info:    ... okay on input line 210.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 210.
-LaTeX Font Info:    ... okay on input line 210.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 210.
-LaTeX Font Info:    ... okay on input line 210.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 210.
-LaTeX Font Info:    ... okay on input line 210.
-LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 210.
-LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 210.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 212.
+LaTeX Font Info:    ... okay on input line 212.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 212.
+LaTeX Font Info:    ... okay on input line 212.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 212.
+LaTeX Font Info:    ... okay on input line 212.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 212.
+LaTeX Font Info:    ... okay on input line 212.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 212.
+LaTeX Font Info:    ... okay on input line 212.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 212.
+LaTeX Font Info:    ... okay on input line 212.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 212.
+LaTeX Font Info:    ... okay on input line 212.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 212.
+LaTeX Font Info:    ... okay on input line 212.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 212.
+LaTeX Font Info:    ... okay on input line 212.
+LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 212.
+LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 212.
  (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/cbfonts-fd\lgrcmr.fd
 File: lgrcmr.fd 2017/07/29 v1.2 Greek European Computer Regular
 )
-LaTeX Font Info:    ... okay on input line 210.
+LaTeX Font Info:    ... okay on input line 212.
 
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -1476,7 +1476,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 210.
+Package hyperref Info: Link coloring OFF on input line 212.
  (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
@@ -1486,9 +1486,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count435
 )
-LaTeX Info: Redefining \ref on input line 210.
-LaTeX Info: Redefining \pageref on input line 210.
-LaTeX Info: Redefining \nameref on input line 210.
+LaTeX Info: Redefining \ref on input line 212.
+LaTeX Info: Redefining \pageref on input line 212.
+LaTeX Info: Redefining \nameref on input line 212.
  (Defense.out) (Defense.out)
 \@outlinefile=\write5
 \openout5 = `Defense.out'.
@@ -1519,12 +1519,12 @@ File: fc-english.def 2016/01/12
 )
 Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
-LaTeX Info: Redefining \microtypecontext on input line 210.
-Package microtype Info: Applying patch `item' on input line 210.
-Package microtype Info: Applying patch `toc' on input line 210.
-Package microtype Info: Applying patch `eqnum' on input line 210.
+LaTeX Info: Redefining \microtypecontext on input line 212.
+Package microtype Info: Applying patch `item' on input line 212.
+Package microtype Info: Applying patch `toc' on input line 212.
+Package microtype Info: Applying patch `eqnum' on input line 212.
 
-Package microtype Warning: Unable to apply patch `footnote' on input line 210.
+Package microtype Warning: Unable to apply patch `footnote' on input line 212.
 
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
@@ -1532,7 +1532,7 @@ Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 210.
+LaTeX Info: Redefining \showhyphens on input line 212.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1543,237 +1543,168 @@ Package microtype Info: Loading generic protrusion settings for font family
 (Defense.nav) (Defense.bbl) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 215.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 217.
  (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 215.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 217.
  (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+eur on input line 215.
+LaTeX Font Info:    Trying to load font information for U+eur on input line 217.
  (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\ueur.fd
 File: ueur.fd 2013/01/14 v3.01 Euler Roman
 ) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-eur.cfg
 File: mt-eur.cfg 2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
 )
-<./img//logo.png, id=33, 791.95876pt x 542.025pt>
+<./img//logo.png, id=69, 791.95876pt x 542.025pt>
 File: ./img//logo.png Graphic file (type png)
 <use ./img//logo.png>
-Package pdftex.def Info: ./img//logo.png  used on input line 215.
+Package pdftex.def Info: ./img//logo.png  used on input line 217.
 (pdftex.def)             Requested size: 76.3571pt x 52.2538pt.
- [1{C:/Users/sjroo/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
 
- <./img//logo.png>] [2
+Overfull \hbox (0.70425pt too wide) has occurred while \output is active
+ []\OT1/cmss/m/n/6 (-20) Endmatter/Old  
+ []
 
-] (Defense.toc) [3
+[1{C:/Users/sjroo/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
 
-] (Defense.toc) [4
+ <./img//logo.png>]
+Overfull \hbox (0.70425pt too wide) has occurred while \output is active
+ []\OT1/cmss/m/n/6 (-20) Endmatter/Old  
+ []
+
+[2
+
+] (Defense.toc)
+Overfull \hbox (0.70425pt too wide) has occurred while \output is active
+ []\OT1/cmss/m/n/6 (-20) Endmatter/Old  
+ []
+
+[3
+
+] (Defense.toc)
+Overfull \hbox (0.70425pt too wide) has occurred while \output is active
+ []\OT1/cmss/m/n/6 (-20) Endmatter/Old  
+ []
+
+[4
 
 ]
-LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 272.
- (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmss.fd
-File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `cmss' (encoding: TS1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
- (tikz/msnb.tex) [5
+Overfull \hbox (0.70425pt too wide) has occurred while \output is active
+ []\OT1/cmss/m/n/6 (-20) Endmatter/Old  
+ []
 
-] (tikz/msnb.tex) [6
+[5
 
 ]
-<./img/Plotter/drum/XY-0.png, id=147, 813.0375pt x 813.0375pt>
-File: ./img/Plotter/drum/XY-0.png Graphic file (type png)
-<use ./img/Plotter/drum/XY-0.png>
-Package pdftex.def Info: ./img/Plotter/drum/XY-0.png  used on input line 272.
-(pdftex.def)             Requested size: 414.69795pt x 699.22482pt.
- <./img/Plotter/drum/XY-0.png> <a0,fr0>
-<./img/Plotter/drum/XY-1.png, id=156, 813.0375pt x 813.0375pt>
-File: ./img/Plotter/drum/XY-1.png Graphic file (type png)
-<use ./img/Plotter/drum/XY-1.png>
-Package pdftex.def Info: ./img/Plotter/drum/XY-1.png  used on input line 272.
-(pdftex.def)             Requested size: 414.69795pt x 699.22482pt.
- <./img/Plotter/drum/XY-1.png> <a0,fr1>
-<./img/Plotter/drum/XY-2.png, id=165, 813.0375pt x 813.0375pt>
-File: ./img/Plotter/drum/XY-2.png Graphic file (type png)
-<use ./img/Plotter/drum/XY-2.png>
-Package pdftex.def Info: ./img/Plotter/drum/XY-2.png  used on input line 272.
-(pdftex.def)             Requested size: 414.69795pt x 699.22482pt.
- <./img/Plotter/drum/XY-2.png> <a0,fr2>
-Overfull \vbox (85.95384pt too high) detected at line 272
+Overfull \hbox (0.70425pt too wide) has occurred while \output is active
+ []\OT1/cmss/m/n/6 (-20) Endmatter/Old  
+ []
+
+[6
+
+]
+Overfull \hbox (0.70425pt too wide) has occurred while \output is active
+ []\OT1/cmss/m/n/6 (-20) Endmatter/Old  
  []
 
 [7
 
-] [8
-
-]pdfTeX warning (ext4): destination with the same identifier (name{cite.PetersonMS}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.306 \end{frame}
-                 pdfTeX warning (ext4): destination with the same identifier (name{cite.CarterPHD}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.306 \end{frame}
-                  [9
-
-]pdfTeX warning (ext4): destination with the same identifier (name{cite.PetersonMS}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.306 \end{frame}
-                 pdfTeX warning (ext4): destination with the same identifier (name{cite.CarterPHD}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.306 \end{frame}
-                  [10
-
-] (Defense.toc) [11
-
-] (tikz/passive.tex)
-Overfull \hbox (3.98529pt too wide) in paragraph at lines 19--346
- [] 
+] (Defense.toc)
+Overfull \hbox (0.70425pt too wide) has occurred while \output is active
+ []\OT1/cmss/m/n/6 (-20) Endmatter/Old  
  []
 
+[8
 
-Overfull \vbox (2.14738pt too high) detected at line 346
+]
+Overfull \hbox (0.70425pt too wide) has occurred while \output is active
+ []\OT1/cmss/m/n/6 (-20) Endmatter/Old  
+ []
+
+[9
+
+]
+Overfull \hbox (0.70425pt too wide) has occurred while \output is active
+ []\OT1/cmss/m/n/6 (-20) Endmatter/Old  
+ []
+
+[10
+
+] (Defense.toc)
+Overfull \hbox (0.70425pt too wide) has occurred while \output is active
+ []\OT1/cmss/m/n/6 (-20) Endmatter/Old  
+ []
+
+[11
+
+]
+Overfull \hbox (0.70425pt too wide) has occurred while \output is active
+ []\OT1/cmss/m/n/6 (-20) Endmatter/Old  
  []
 
 [12
 
-]pdfTeX warning (ext4): destination with the same identifier (name{cite.PetersonMS}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.346 \end{frame}
-                 
-Overfull \vbox (2.14738pt too high) detected at line 346
+]
+Overfull \hbox (0.70425pt too wide) has occurred while \output is active
+ []\OT1/cmss/m/n/6 (-20) Endmatter/Old  
  []
 
 [13
 
-]
-Overfull \vbox (2.14738pt too high) detected at line 346
+] (Defense.toc)
+Overfull \hbox (0.70425pt too wide) has occurred while \output is active
+ []\OT1/cmss/m/n/6 (-20) Endmatter/Old  
  []
 
 [14
 
 ]
-Overfull \vbox (2.14738pt too high) detected at line 397
+Overfull \hbox (0.70425pt too wide) has occurred while \output is active
+ []\OT1/cmss/m/n/6 (-20) Endmatter/Old  
  []
 
 [15
 
-] (tikz/thoughtexperiment-1.tex)
-Overfull \vbox (2.14738pt too high) detected at line 397
+]
+Overfull \hbox (0.70425pt too wide) has occurred while \output is active
+ []\OT1/cmss/m/n/6 (-20) Endmatter/Old  
  []
 
 [16
 
-] (tikz/thoughtexperiment-2.tex)
-Overfull \vbox (2.14738pt too high) detected at line 397
+]
+Overfull \hbox (0.70425pt too wide) has occurred while \output is active
+ []\OT1/cmss/m/n/6 (-20) Endmatter/Old  
  []
 
 [17
 
-] (tikz/thoughtexperiment-3.tex)
-Overfull \vbox (2.14738pt too high) detected at line 397
+] (Defense.toc)
+Overfull \hbox (0.70425pt too wide) has occurred while \output is active
+ []\OT1/cmss/m/n/6 (-20) Endmatter/Old  
  []
 
 [18
 
-] (tikz/thoughtexperiment-4.tex)
-Overfull \vbox (2.14738pt too high) detected at line 397
+]
+Overfull \hbox (0.70425pt too wide) has occurred while \output is active
+ []\OT1/cmss/m/n/6 (-20) Endmatter/Old  
  []
 
 [19
 
-] (tikz/pgf/prefilter_step.tex) (tikz/pgf/prefilter_ramp.tex)
-Overfull \vbox (2.14738pt too high) detected at line 438
- []
-
-[20
-
 ]
-Overfull \vbox (2.14738pt too high) detected at line 438
- []
-
-[21
-
-]pdfTeX warning (ext4): destination with the same identifier (name{cite.Lamarsh}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.438 \end{frame}
-                 
-Overfull \vbox (2.14738pt too high) detected at line 438
- []
-
-[22
-
-]pdfTeX warning (ext4): destination with the same identifier (name{cite.Bequette}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.468 \end{frame}
-                 
-Overfull \vbox (2.14738pt too high) detected at line 468
- []
-
-[23
-
-]
-Overfull \vbox (2.14738pt too high) detected at line 468
- []
-
-[24
-
-] (Defense.toc) [25
-
-]
-Overfull \vbox (2.14738pt too high) detected at line 485
- []
-
-[26
-
-]
-Overfull \vbox (2.14738pt too high) detected at line 498
- []
-
-[27
-
-]
-Overfull \vbox (2.14738pt too high) detected at line 507
- []
-
-[28
-
-]
-Overfull \vbox (2.14738pt too high) detected at line 516
- []
-
-[29
-
-] [30
-
-] (Defense.toc) [31
-
-] [32
-
-] (tikz/SimpleControlLoop.tex)
-Overfull \hbox (47.81816pt too wide) in paragraph at lines 29--561
- [] 
- []
-
-
-Overfull \vbox (2.14738pt too high) detected at line 561
- []
-
-[33
-
-] [34
+File: ./img//logo.png Graphic file (type png)
+<use ./img//logo.png>
+Package pdftex.def Info: ./img//logo.png  used on input line 296.
+(pdftex.def)             Requested size: 294.0594pt x 201.25848pt.
+ [20
 
 ] (Defense.bbl
 
@@ -1788,46 +1719,386 @@ l.9 \bibitem{RootXe}
 <to be read again> 
                    \relax 
 l.15 \bibitem{RootWSC}
-                      pdfTeX warning (ext4): destination with the same identifier (name{cite.PetersonMS}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.21 \bibitem{PetersonMS}
-                         pdfTeX warning (ext4): destination with the same identifier (name{cite.CarterPHD}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.27 \bibitem{CarterPHD}
-                        pdfTeX warning (ext4): destination with the same identifier (name{cite.DH}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.34 \bibitem{DH}
-                 pdfTeX warning (ext4): destination with the same identifier (name{cite.Kerlin}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.39 \bibitem{Kerlin}
-                     pdfTeX warning (ext4): destination with the same identifier (name{cite.Lamarsh}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.44 \bibitem{Lamarsh}
-                      pdfTeX warning (ext4): destination with the same identifier (name{cite.Bequette}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.49 \bibitem{Bequette}
-                       pdfTeX warning (ext4): destination with the same identifier (name{cite.GainSchedule}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.54 \bibitem{GainSchedule}
-                           pdfTeX warning (ext4): destination with the same identifier (name{cite.Roberson}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.59 \bibitem{Roberson}
-                       pdfTeX warning (ext4): destination with the same identifier (name{cite.DecayHeat}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.65 \bibitem{DecayHeat}
-                        ) [35
+                      )
+Overfull \hbox (0.70425pt too wide) has occurred while \output is active
+ []\OT1/cmss/m/n/6 (-20) Endmatter/Old  
+ []
 
-] [36
+[21
 
+]
+Overfull \hbox (0.70425pt too wide) has occurred while \output is active
+ []\OT1/cmss/m/n/6 (-20) Endmatter/Old  
+ []
+
+[22
+
+
+] (Defense.toc)
+Overfull \hbox (0.70425pt too wide) has occurred while \output is active
+ []\OT1/cmss/m/n/6 (-20) Endmatter/Old  
+ []
+
+[23
+
+]
+LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 338.
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmss.fd
+File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `cmss' (encoding: TS1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+ (tikz/msnb.tex)
+Overfull \hbox (0.70425pt too wide) has occurred while \output is active
+ []\OT1/cmss/m/n/6 (-20) Endmatter/Old  
+ []
+
+[24
+
+] (tikz/msnb.tex)
+Overfull \hbox (0.70425pt too wide) has occurred while \output is active
+ []\OT1/cmss/m/n/6 (-20) Endmatter/Old  
+ []
+
+[25
+
+]
+<./img/Plotter/drum/XY-0.png, id=604, 813.0375pt x 813.0375pt>
+File: ./img/Plotter/drum/XY-0.png Graphic file (type png)
+<use ./img/Plotter/drum/XY-0.png>
+Package pdftex.def Info: ./img/Plotter/drum/XY-0.png  used on input line 338.
+(pdftex.def)             Requested size: 414.69795pt x 699.22482pt.
+ <./img/Plotter/drum/XY-0.png> <a0,fr0>
+<./img/Plotter/drum/XY-1.png, id=613, 813.0375pt x 813.0375pt>
+File: ./img/Plotter/drum/XY-1.png Graphic file (type png)
+<use ./img/Plotter/drum/XY-1.png>
+Package pdftex.def Info: ./img/Plotter/drum/XY-1.png  used on input line 338.
+(pdftex.def)             Requested size: 414.69795pt x 699.22482pt.
+ <./img/Plotter/drum/XY-1.png> <a0,fr1>
+<./img/Plotter/drum/XY-2.png, id=622, 813.0375pt x 813.0375pt>
+File: ./img/Plotter/drum/XY-2.png Graphic file (type png)
+<use ./img/Plotter/drum/XY-2.png>
+Package pdftex.def Info: ./img/Plotter/drum/XY-2.png  used on input line 338.
+(pdftex.def)             Requested size: 414.69795pt x 699.22482pt.
+ <./img/Plotter/drum/XY-2.png> <a0,fr2>
+Overfull \vbox (85.95384pt too high) detected at line 338
+ []
+
+
+Overfull \hbox (0.70425pt too wide) has occurred while \output is active
+ []\OT1/cmss/m/n/6 (-20) Endmatter/Old  
+ []
+
+[26
+
+]pdfTeX warning (ext4): destination with the same identifier (name{cite.PetersonMS}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.372 \end{frame}
+                 pdfTeX warning (ext4): destination with the same identifier (name{cite.CarterPHD}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.372 \end{frame}
+                 
+Overfull \hbox (0.70425pt too wide) has occurred while \output is active
+ []\OT1/cmss/m/n/6 (-20) Endmatter/Old  
+ []
+
+[27
+
+]pdfTeX warning (ext4): destination with the same identifier (name{cite.PetersonMS}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.372 \end{frame}
+                 pdfTeX warning (ext4): destination with the same identifier (name{cite.CarterPHD}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.372 \end{frame}
+                 
+Overfull \hbox (0.70425pt too wide) has occurred while \output is active
+ []\OT1/cmss/m/n/6 (-20) Endmatter/Old  
+ []
+
+[28
+
+]pdfTeX warning (ext4): destination with the same identifier (name{cite.PetersonMS}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.372 \end{frame}
+                 pdfTeX warning (ext4): destination with the same identifier (name{cite.CarterPHD}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.372 \end{frame}
+                 
+Overfull \hbox (0.70425pt too wide) has occurred while \output is active
+ []\OT1/cmss/m/n/6 (-20) Endmatter/Old  
+ []
+
+[29
+
+] (tikz/passive.tex)
+Overfull \hbox (3.98529pt too wide) in paragraph at lines 19--411
+ [] 
+ []
+
+
+Overfull \vbox (2.14738pt too high) detected at line 411
+ []
+
+
+Overfull \hbox (0.70425pt too wide) has occurred while \output is active
+ []\OT1/cmss/m/n/6 (-20) Endmatter/Old  
+ []
+
+[30
+
+]pdfTeX warning (ext4): destination with the same identifier (name{cite.DH}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.411 \end{frame}
+                 pdfTeX warning (ext4): destination with the same identifier (name{cite.PetersonMS}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.411 \end{frame}
+                 
+Overfull \vbox (2.14738pt too high) detected at line 411
+ []
+
+
+Overfull \hbox (0.70425pt too wide) has occurred while \output is active
+ []\OT1/cmss/m/n/6 (-20) Endmatter/Old  
+ []
+
+[31
+
+]pdfTeX warning (ext4): destination with the same identifier (name{cite.Kerlin}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.411 \end{frame}
+                 pdfTeX warning (ext4): destination with the same identifier (name{cite.Lamarsh}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.411 \end{frame}
+                 
+Overfull \vbox (2.14738pt too high) detected at line 411
+ []
+
+
+Overfull \hbox (0.70425pt too wide) has occurred while \output is active
+ []\OT1/cmss/m/n/6 (-20) Endmatter/Old  
+ []
+
+[32
+
+]
+Overfull \vbox (2.14738pt too high) detected at line 462
+ []
+
+
+Overfull \hbox (0.70425pt too wide) has occurred while \output is active
+ []\OT1/cmss/m/n/6 (-20) Endmatter/Old  
+ []
+
+[33
+
+] (tikz/thoughtexperiment-1.tex)
+Overfull \vbox (2.14738pt too high) detected at line 462
+ []
+
+
+Overfull \hbox (0.70425pt too wide) has occurred while \output is active
+ []\OT1/cmss/m/n/6 (-20) Endmatter/Old  
+ []
+
+[34
+
+] (tikz/thoughtexperiment-2.tex)
+Overfull \vbox (2.14738pt too high) detected at line 462
+ []
+
+
+Overfull \hbox (0.70425pt too wide) has occurred while \output is active
+ []\OT1/cmss/m/n/6 (-20) Endmatter/Old  
+ []
+
+[35
+
+] (tikz/thoughtexperiment-3.tex)
+Overfull \vbox (2.14738pt too high) detected at line 462
+ []
+
+
+Overfull \hbox (0.70425pt too wide) has occurred while \output is active
+ []\OT1/cmss/m/n/6 (-20) Endmatter/Old  
+ []
+
+[36
+
+] (tikz/thoughtexperiment-4.tex)
+Overfull \vbox (2.14738pt too high) detected at line 462
+ []
+
+
+Overfull \hbox (0.70425pt too wide) has occurred while \output is active
+ []\OT1/cmss/m/n/6 (-20) Endmatter/Old  
+ []
+
+[37
+
+] (tikz/pgf/prefilter_step.tex) (tikz/pgf/prefilter_ramp.tex)
+Overfull \vbox (2.14738pt too high) detected at line 503
+ []
+
+
+Overfull \hbox (0.70425pt too wide) has occurred while \output is active
+ []\OT1/cmss/m/n/6 (-20) Endmatter/Old  
+ []
+
+[38
+
+]
+Overfull \vbox (2.14738pt too high) detected at line 503
+ []
+
+
+Overfull \hbox (0.70425pt too wide) has occurred while \output is active
+ []\OT1/cmss/m/n/6 (-20) Endmatter/Old  
+ []
+
+[39
+
+]pdfTeX warning (ext4): destination with the same identifier (name{cite.Lamarsh}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.503 \end{frame}
+                 pdfTeX warning (ext4): destination with the same identifier (name{cite.Bequette}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.503 \end{frame}
+                 
+Overfull \vbox (2.14738pt too high) detected at line 503
+ []
+
+
+Overfull \hbox (0.70425pt too wide) has occurred while \output is active
+ []\OT1/cmss/m/n/6 (-20) Endmatter/Old  
+ []
+
+[40
+
+]pdfTeX warning (ext4): destination with the same identifier (name{cite.GainSchedule}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.533 \end{frame}
+                 pdfTeX warning (ext4): destination with the same identifier (name{cite.Bequette}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.533 \end{frame}
+                 
+Overfull \vbox (2.14738pt too high) detected at line 533
+ []
+
+
+Overfull \hbox (0.70425pt too wide) has occurred while \output is active
+ []\OT1/cmss/m/n/6 (-20) Endmatter/Old  
+ []
+
+[41
+
+]
+Overfull \vbox (2.14738pt too high) detected at line 533
+ []
+
+
+Overfull \hbox (0.70425pt too wide) has occurred while \output is active
+ []\OT1/cmss/m/n/6 (-20) Endmatter/Old  
+ []
+
+[42
+
+]
+Overfull \vbox (2.14738pt too high) detected at line 549
+ []
+
+
+Overfull \hbox (0.70425pt too wide) has occurred while \output is active
+ []\OT1/cmss/m/n/6 (-20) Endmatter/Old  
+ []
+
+[43
+
+]
+Overfull \vbox (2.14738pt too high) detected at line 562
+ []
+
+
+Overfull \hbox (0.70425pt too wide) has occurred while \output is active
+ []\OT1/cmss/m/n/6 (-20) Endmatter/Old  
+ []
+
+[44
+
+]
+Overfull \vbox (2.14738pt too high) detected at line 571
+ []
+
+
+Overfull \hbox (0.70425pt too wide) has occurred while \output is active
+ []\OT1/cmss/m/n/6 (-20) Endmatter/Old  
+ []
+
+[45
+
+]
+Overfull \vbox (2.14738pt too high) detected at line 580
+ []
+
+
+Overfull \hbox (0.70425pt too wide) has occurred while \output is active
+ []\OT1/cmss/m/n/6 (-20) Endmatter/Old  
+ []
+
+[46
+
+]
+Overfull \hbox (0.70425pt too wide) has occurred while \output is active
+ []\OT1/cmss/m/n/6 (-20) Endmatter/Old  
+ []
+
+[47
+
+]pdfTeX warning (ext4): destination with the same identifier (name{cite.Roberson}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.613 \end{frame}
+                 pdfTeX warning (ext4): destination with the same identifier (name{cite.DecayHeat}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.613 \end{frame}
+                 
+Overfull \hbox (0.70425pt too wide) has occurred while \output is active
+ []\OT1/cmss/m/n/6 (-20) Endmatter/Old  
+ []
+
+[48
+
+] (tikz/SimpleControlLoop.tex)
+Overfull \hbox (47.81816pt too wide) in paragraph at lines 29--624
+ [] 
+ []
+
+
+Overfull \vbox (2.14738pt too high) detected at line 624
+ []
+
+
+Overfull \hbox (0.70425pt too wide) has occurred while \output is active
+ []\OT1/cmss/m/n/6 (-20) Endmatter/Old  
+ []
+
+[49
 
 ]
 \tf@nav=\write6
@@ -1841,30 +2112,30 @@ l.65 \bibitem{DecayHeat}
 
  (Defense.aux)
 Package rerunfilecheck Info: File `Defense.out' has not changed.
-(rerunfilecheck)             Checksum: 532ADB2A51F8CB6A9E13FC7B9EA29B52;547.
+(rerunfilecheck)             Checksum: 0EB84132FFEE98B24A21F09D184CC3D5;2092.
  ) 
 Here is how much of TeX's memory you used:
- 51317 strings out of 478927
- 1166789 string characters out of 2852536
- 1719162 words of memory out of 3000000
- 67925 multiletter control sequences out of 15000+600000
- 422706 words of font info for 138 fonts, out of 8000000 for 9000
+ 51497 strings out of 478927
+ 1170660 string characters out of 2852536
+ 1727970 words of memory out of 3000000
+ 68064 multiletter control sequences out of 15000+600000
+ 422771 words of font info for 139 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,23n,124p,1083b,2779s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{glo:nrc} has been referenced but does not exist, replaced by a fixed one
+ 128i,23n,124p,1083b,2780s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{glo:lwr} has been referenced but does not exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{glo:msr} has been referenced but does not exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{glo:lwr} has been referenced but does not exist, replaced by a fixed one
+pdfTeX warning (dest): name{glo:nrc} has been referenced but does not exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{glo:pid} has been referenced but does not exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{glo:msnb} has been referenced but does not exist, replaced by a fixed one
 
  <C:\Users\sjroo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcss1095.pk><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss9.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi10.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi8.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eurm10.pfb>
-Output written on Defense.pdf (36 pages, 447004 bytes).
+Output written on Defense.pdf (49 pages, 533500 bytes).
 PDF statistics:
- 770 PDF objects out of 1000 (max. 8388607)
- 97 named destinations out of 1000 (max. 500000)
- 45275 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 1181 PDF objects out of 1200 (max. 8388607)
+ 132 named destinations out of 1000 (max. 500000)
+ 45569 words of extra memory for PDF output out of 51595 (max. 10000000)
 
