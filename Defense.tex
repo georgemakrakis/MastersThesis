@@ -56,11 +56,13 @@
   \endgroup
 }
 
+%Fix centering on titleslide which doesn't have a sidebar [plain]
 \newcommand\noside{\addtolength\textwidth{2cm} 
 \setlength\hsize{\textwidth} 
 \setlength\columnwidth{\textwidth}
 \vfill\centering}
 
+%Make sidebar background color so it appears invisible
 \newcommand\outlineframe{
     \setbeamercolor{sidebar}{fg=Chrome,bg=Chrome}
 \setbeamercolor{title in sidebar}{fg=Chrome}
@@ -68,6 +70,7 @@
 \setbeamercolor{section in sidebar}{fg=Chrome}
 }
 
+%Make sidebar original color so it appears again
 \newcommand\stopoutlineframe{
     \setbeamercolor*{sidebar}{fg=PrideGold,bg=Black}
 \setbeamercolor*{title in sidebar}{fg=PrideGold}
@@ -98,7 +101,7 @@
 \stopoutlineframe}
 
  \AtBeginSubsection[]{
-     \begin{frame}
+     \begin{frame}{}
          \vfill
          \centering
          \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
@@ -112,19 +115,21 @@
 
 \logo{\includegraphics[width=40pt]{logocorner}}
 
+
 % colors
 \definecolor{PrideGold}{RGB}{241,179,0}
-\definecolor{Silver}{RGB}{128,128,128}
+\definecolor{Silver}{RGB}{165,169,180}
 \definecolor{White}{RGB}{255,255,255}
 \definecolor{Black}{RGB}{25,25,25}
 \definecolor{Chrome}{RGB}{245,245,245}
 
 \setbeamercolor{background canvas}{bg=Chrome}
-\setbeamercolor{block title}{bg=PrideGold,fg=Black}
-\setbeamercolor{block body}{bg=PrideGold!20,fg=Black}
+\setbeamercolor{block title}{bg=Silver,fg=Black}
+\setbeamercolor{block body}{bg=Silver!20,fg=Black}
 
 \setbeamercolor{block title alerted}{bg=Black, fg=Silver}
 \setbeamercolor{block body alerted}{bg=PrideGold, fg=Black}
+\setbeamercolor{alerted text}{fg=Silver}
 
 \setbeamercolor*{block title example}{bg=PrideGold, fg = Black}
 \setbeamercolor*{block body example}{bg=PrideGold!20, fg = Black}
@@ -215,8 +220,6 @@
 %%%%%
 
 %%%%%
-
-
 
 \title[\acs{msnb} Modeling \& Control]{Dynamic System Modeling \& \acs{pid} Controller Design \\for a Molten Salt Microreactor}
 \author{Sam J. Root}

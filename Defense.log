@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.9.1)  24 NOV 2023 21:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.9.1)  24 NOV 2023 22:27
 entering extended mode
 **c:/Users/sjroo/OneDrive/Documents/UIdaho/Thesis/Dissertation/Defense.tex
 (c:/Users/sjroo/OneDrive/Documents/UIdaho/Thesis/Dissertation/Defense.tex
@@ -1394,35 +1394,35 @@ LaTeX Font Info:    Overwriting symbol font `EulerGreek' in version `sans'
 ) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerfontthemeprofessionalfonts.sty)
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\acrshort' on input line 233.
+(hyperref)                removing `\acrshort' on input line 236.
 
 (Defense.aux)
 \openout1 = `Defense.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 233.
-LaTeX Font Info:    ... okay on input line 233.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 233.
-LaTeX Font Info:    ... okay on input line 233.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 233.
-LaTeX Font Info:    ... okay on input line 233.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 233.
-LaTeX Font Info:    ... okay on input line 233.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 233.
-LaTeX Font Info:    ... okay on input line 233.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 233.
-LaTeX Font Info:    ... okay on input line 233.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 233.
-LaTeX Font Info:    ... okay on input line 233.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 233.
-LaTeX Font Info:    ... okay on input line 233.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 233.
-LaTeX Font Info:    ... okay on input line 233.
-LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 233.
-LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 233.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 236.
+LaTeX Font Info:    ... okay on input line 236.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 236.
+LaTeX Font Info:    ... okay on input line 236.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 236.
+LaTeX Font Info:    ... okay on input line 236.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 236.
+LaTeX Font Info:    ... okay on input line 236.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 236.
+LaTeX Font Info:    ... okay on input line 236.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 236.
+LaTeX Font Info:    ... okay on input line 236.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 236.
+LaTeX Font Info:    ... okay on input line 236.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 236.
+LaTeX Font Info:    ... okay on input line 236.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 236.
+LaTeX Font Info:    ... okay on input line 236.
+LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 236.
+LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 236.
  (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/cbfonts-fd\lgrcmr.fd
 File: lgrcmr.fd 2017/07/29 v1.2 Greek European Computer Regular
 )
-LaTeX Font Info:    ... okay on input line 233.
+LaTeX Font Info:    ... okay on input line 236.
 
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -1476,7 +1476,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 233.
+Package hyperref Info: Link coloring OFF on input line 236.
  (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
@@ -1486,9 +1486,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count435
 )
-LaTeX Info: Redefining \ref on input line 233.
-LaTeX Info: Redefining \pageref on input line 233.
-LaTeX Info: Redefining \nameref on input line 233.
+LaTeX Info: Redefining \ref on input line 236.
+LaTeX Info: Redefining \pageref on input line 236.
+LaTeX Info: Redefining \nameref on input line 236.
  (Defense.out) (Defense.out)
 \@outlinefile=\write5
 \openout5 = `Defense.out'.
@@ -1519,12 +1519,12 @@ File: fc-english.def 2016/01/12
 )
 Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
-LaTeX Info: Redefining \microtypecontext on input line 233.
-Package microtype Info: Applying patch `item' on input line 233.
-Package microtype Info: Applying patch `toc' on input line 233.
-Package microtype Info: Applying patch `eqnum' on input line 233.
+LaTeX Info: Redefining \microtypecontext on input line 236.
+Package microtype Info: Applying patch `item' on input line 236.
+Package microtype Info: Applying patch `toc' on input line 236.
+Package microtype Info: Applying patch `eqnum' on input line 236.
 
-Package microtype Warning: Unable to apply patch `footnote' on input line 233.
+Package microtype Warning: Unable to apply patch `footnote' on input line 236.
 
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
@@ -1532,7 +1532,7 @@ Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 233.
+LaTeX Info: Redefining \showhyphens on input line 236.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1544,26 +1544,26 @@ Package microtype Info: Loading generic protrusion settings for font family
 <./img//logocorner.png, id=68, 505.89pt x 137.5539pt>
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 233.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 236.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
 
 No file Defense.bbl.
 (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 239.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 242.
  (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 239.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 242.
  (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+eur on input line 239.
+LaTeX Font Info:    Trying to load font information for U+eur on input line 242.
  (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\ueur.fd
 File: ueur.fd 2013/01/14 v3.01 Euler Roman
 ) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-eur.cfg
@@ -1572,190 +1572,190 @@ File: mt-eur.cfg 2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
 <./img//logo.png, id=71, 791.95876pt x 542.025pt>
 File: ./img//logo.png Graphic file (type png)
 <use ./img//logo.png>
-Package pdftex.def Info: ./img//logo.png  used on input line 239.
+Package pdftex.def Info: ./img//logo.png  used on input line 242.
 (pdftex.def)             Requested size: 87.73802pt x 60.04472pt.
  [1
 
 {C:/Users/sjroo/AppData/Local/MiKTeX/pdftex/config/pdftex.map} <./img//logo.png>]
 
-Package natbib Warning: Citation `RootXe' undefined on input line 255.
+Package natbib Warning: Citation `RootXe' undefined on input line 258.
 
 
-Package natbib Warning: Citation `RootWSC' undefined on input line 255.
+Package natbib Warning: Citation `RootWSC' undefined on input line 258.
 
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 255.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 258.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
 [2
 
  <./img//logocorner.png>] (Defense.toc)
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 260.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 263.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
  [3
 
 ] (Defense.toc)
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 263.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 266.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
  [4
 
 ]
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 264.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 267.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
  [5
 
 ]
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 284.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 287.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
  [6
 
 ]
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 284.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 287.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
  [7
 
 ]
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 284.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 287.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
  [8
 
 ]
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 286.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 289.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
  [9
 
 ] (tikz/xs1.tex)
-Overfull \vbox (130.35175pt too high) detected at line 298
+Overfull \vbox (158.80449pt too high) detected at line 301
  []
 
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 298.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 301.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
 [10
 
 ] (tikz/xs2.tex)
-Overfull \vbox (130.35175pt too high) detected at line 298
+Overfull \vbox (158.80449pt too high) detected at line 301
  []
 
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 298.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 301.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
 [11
 
 ] (tikz/xs3.tex)
-Overfull \vbox (130.35175pt too high) detected at line 298
+Overfull \vbox (158.80449pt too high) detected at line 301
  []
 
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 298.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 301.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
 [12
 
 ] (Defense.toc)
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 301.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 304.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
  [13
 
 ]
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 302.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 305.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
  [14
 
 ]
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 304.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 307.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
  [15
 
 ] (Defense.toc)
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 306.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 309.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
  [16
 
 ]
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 307.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 310.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
  [17
 
 ]
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 309.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 312.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
  [18
 
 ] (Defense.toc)
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 312.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 315.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
  [19
 
 ]
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 313.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 316.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
  [20
 
 ]
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 315.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 318.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
  [21
 
 ]
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 317.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 320.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
  [22
 
 ] (Defense.toc)
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 319.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 322.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
  [23
 
 ]
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 327.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 330.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
  [24
 
 ]
 File: ./img//logo.png Graphic file (type png)
 <use ./img//logo.png>
-Package pdftex.def Info: ./img//logo.png  used on input line 333.
+Package pdftex.def Info: ./img//logo.png  used on input line 336.
 (pdftex.def)             Requested size: 294.0594pt x 201.25848pt.
  [25
 
@@ -1763,12 +1763,12 @@ Package pdftex.def Info: ./img//logo.png  used on input line 333.
 No file Defense.bbl.
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 340.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 343.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
 [26
 
 ]
-LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 374.
+LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 377.
  (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmss.fd
 File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
@@ -1779,14 +1779,14 @@ Package microtype Info: Loading generic protrusion settings for font family
  (tikz/msnb.tex)
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 374.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 377.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
  [27
 
 ] (tikz/msnb.tex)
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 374.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 377.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
  [28
 
@@ -1794,433 +1794,444 @@ Package pdftex.def Info: ./img//logocorner.png  used on input line 374.
 <./img/Plotter/drum/XY-0.png, id=592, 813.0375pt x 813.0375pt>
 File: ./img/Plotter/drum/XY-0.png Graphic file (type png)
 <use ./img/Plotter/drum/XY-0.png>
-Package pdftex.def Info: ./img/Plotter/drum/XY-0.png  used on input line 374.
+Package pdftex.def Info: ./img/Plotter/drum/XY-0.png  used on input line 377.
 (pdftex.def)             Requested size: 414.69795pt x 699.22482pt.
  <./img/Plotter/drum/XY-0.png> <a0,fr0>
 <./img/Plotter/drum/XY-1.png, id=601, 813.0375pt x 813.0375pt>
 File: ./img/Plotter/drum/XY-1.png Graphic file (type png)
 <use ./img/Plotter/drum/XY-1.png>
-Package pdftex.def Info: ./img/Plotter/drum/XY-1.png  used on input line 374.
+Package pdftex.def Info: ./img/Plotter/drum/XY-1.png  used on input line 377.
 (pdftex.def)             Requested size: 414.69795pt x 699.22482pt.
  <./img/Plotter/drum/XY-1.png> <a0,fr1>
 <./img/Plotter/drum/XY-2.png, id=610, 813.0375pt x 813.0375pt>
 File: ./img/Plotter/drum/XY-2.png Graphic file (type png)
 <use ./img/Plotter/drum/XY-2.png>
-Package pdftex.def Info: ./img/Plotter/drum/XY-2.png  used on input line 374.
+Package pdftex.def Info: ./img/Plotter/drum/XY-2.png  used on input line 377.
 (pdftex.def)             Requested size: 414.69795pt x 699.22482pt.
  <./img/Plotter/drum/XY-2.png> <a0,fr2>
-Overfull \vbox (85.95384pt too high) detected at line 374
+Overfull \vbox (114.40659pt too high) detected at line 377
  []
 
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 374.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 377.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
 [29
 
 ]
 
-Package natbib Warning: Citation `PetersonMS' on page 30 undefined on input line 408.
+Package natbib Warning: Citation `PetersonMS' on page 30 undefined on input line 411.
 
 
-Package natbib Warning: Citation `CarterPHD' on page 30 undefined on input line 408.
+Package natbib Warning: Citation `CarterPHD' on page 30 undefined on input line 411.
 
 
-Package natbib Warning: Citation `PetersonMS' on page 30 undefined on input line 408.
+Package natbib Warning: Citation `PetersonMS' on page 30 undefined on input line 411.
 
 
-Package natbib Warning: Citation `PetersonMS' undefined on input line 408.
+Package natbib Warning: Citation `PetersonMS' undefined on input line 411.
 
 
-Package natbib Warning: Citation `CarterPHD' on page 30 undefined on input line 408.
+Package natbib Warning: Citation `CarterPHD' on page 30 undefined on input line 411.
 
 
-Package natbib Warning: Citation `CarterPHD' undefined on input line 408.
+Package natbib Warning: Citation `CarterPHD' undefined on input line 411.
+
+
+Overfull \vbox (2.65134pt too high) detected at line 411
+ []
 
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 408.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 411.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
 [30
 
 ]
 
-Package natbib Warning: Citation `PetersonMS' on page 31 undefined on input line 408.
+Package natbib Warning: Citation `PetersonMS' on page 31 undefined on input line 411.
 
 
-Package natbib Warning: Citation `CarterPHD' on page 31 undefined on input line 408.
+Package natbib Warning: Citation `CarterPHD' on page 31 undefined on input line 411.
 
 
-Package natbib Warning: Citation `PetersonMS' on page 31 undefined on input line 408.
+Package natbib Warning: Citation `PetersonMS' on page 31 undefined on input line 411.
 
 
-Package natbib Warning: Citation `PetersonMS' undefined on input line 408.
+Package natbib Warning: Citation `PetersonMS' undefined on input line 411.
 
 pdfTeX warning (ext4): destination with the same identifier (name{cite.PetersonMS}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.408 \end{frame}
+l.411 \end{frame}
                  
 
-Package natbib Warning: Citation `CarterPHD' on page 31 undefined on input line 408.
+Package natbib Warning: Citation `CarterPHD' on page 31 undefined on input line 411.
 
 
-Package natbib Warning: Citation `CarterPHD' undefined on input line 408.
+Package natbib Warning: Citation `CarterPHD' undefined on input line 411.
 
 pdfTeX warning (ext4): destination with the same identifier (name{cite.CarterPHD}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.408 \end{frame}
+l.411 \end{frame}
                  
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 408.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 411.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
  [31
 
 ]
 
-Package natbib Warning: Citation `PetersonMS' on page 32 undefined on input line 408.
+Package natbib Warning: Citation `PetersonMS' on page 32 undefined on input line 411.
 
 
-Package natbib Warning: Citation `CarterPHD' on page 32 undefined on input line 408.
+Package natbib Warning: Citation `CarterPHD' on page 32 undefined on input line 411.
 
 
-Package natbib Warning: Citation `PetersonMS' on page 32 undefined on input line 408.
+Package natbib Warning: Citation `PetersonMS' on page 32 undefined on input line 411.
 
 
-Package natbib Warning: Citation `PetersonMS' undefined on input line 408.
+Package natbib Warning: Citation `PetersonMS' undefined on input line 411.
 
 pdfTeX warning (ext4): destination with the same identifier (name{cite.PetersonMS}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.408 \end{frame}
+l.411 \end{frame}
                  
 
-Package natbib Warning: Citation `CarterPHD' on page 32 undefined on input line 408.
+Package natbib Warning: Citation `CarterPHD' on page 32 undefined on input line 411.
 
 
-Package natbib Warning: Citation `CarterPHD' undefined on input line 408.
+Package natbib Warning: Citation `CarterPHD' undefined on input line 411.
 
 pdfTeX warning (ext4): destination with the same identifier (name{cite.CarterPHD}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.408 \end{frame}
+l.411 \end{frame}
                  
+Overfull \vbox (3.25966pt too high) detected at line 411
+ []
+
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 408.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 411.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
- [32
+[32
 
 ] (tikz/passive.tex)
-Overfull \hbox (3.98529pt too wide) in paragraph at lines 19--447
+Overfull \hbox (3.98529pt too wide) in paragraph at lines 19--450
  [] 
  []
 
 
-Overfull \vbox (2.14738pt too high) detected at line 447
+Overfull \vbox (2.14738pt too high) detected at line 450
  []
 
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 447.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 450.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
 [33
 
 ]
 
-Package natbib Warning: Citation `DH' on page 34 undefined on input line 447.
+Package natbib Warning: Citation `DH' on page 34 undefined on input line 450.
 
 
-Package natbib Warning: Citation `PetersonMS' on page 34 undefined on input line 447.
+Package natbib Warning: Citation `PetersonMS' on page 34 undefined on input line 450.
 
 
-Package natbib Warning: Citation `DH' on page 34 undefined on input line 447.
+Package natbib Warning: Citation `DH' on page 34 undefined on input line 450.
 
 
-Package natbib Warning: Citation `DH' undefined on input line 447.
+Package natbib Warning: Citation `DH' undefined on input line 450.
 
 
-Package natbib Warning: Citation `PetersonMS' on page 34 undefined on input line 447.
+Package natbib Warning: Citation `PetersonMS' on page 34 undefined on input line 450.
 
 
-Package natbib Warning: Citation `PetersonMS' undefined on input line 447.
+Package natbib Warning: Citation `PetersonMS' undefined on input line 450.
 
 pdfTeX warning (ext4): destination with the same identifier (name{cite.PetersonMS}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.447 \end{frame}
+l.450 \end{frame}
                  
-Overfull \vbox (2.14738pt too high) detected at line 447
+Overfull \vbox (2.14738pt too high) detected at line 450
  []
 
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 447.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 450.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
 [34
 
 ]
 
-Package natbib Warning: Citation `Kerlin' on page 35 undefined on input line 447.
+Package natbib Warning: Citation `Kerlin' on page 35 undefined on input line 450.
 
 
-Package natbib Warning: Citation `Lamarsh' on page 35 undefined on input line 447.
+Package natbib Warning: Citation `Lamarsh' on page 35 undefined on input line 450.
 
 
-Package natbib Warning: Citation `Kerlin' on page 35 undefined on input line 447.
+Package natbib Warning: Citation `Kerlin' on page 35 undefined on input line 450.
 
 
-Package natbib Warning: Citation `Kerlin' undefined on input line 447.
+Package natbib Warning: Citation `Kerlin' undefined on input line 450.
 
 
-Package natbib Warning: Citation `Lamarsh' on page 35 undefined on input line 447.
+Package natbib Warning: Citation `Lamarsh' on page 35 undefined on input line 450.
 
 
-Package natbib Warning: Citation `Lamarsh' undefined on input line 447.
+Package natbib Warning: Citation `Lamarsh' undefined on input line 450.
 
 
-Overfull \vbox (2.14738pt too high) detected at line 447
+Overfull \vbox (2.14738pt too high) detected at line 450
  []
 
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 447.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 450.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
 [35
 
 ]
-Overfull \vbox (2.14738pt too high) detected at line 498
+Overfull \vbox (2.14738pt too high) detected at line 501
  []
 
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 498.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 501.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
 [36
 
 ] (tikz/thoughtexperiment-1.tex)
-Overfull \vbox (2.14738pt too high) detected at line 498
+Overfull \vbox (2.14738pt too high) detected at line 501
  []
 
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 498.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 501.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
 [37
 
 ] (tikz/thoughtexperiment-2.tex)
-Overfull \vbox (2.14738pt too high) detected at line 498
+Overfull \vbox (2.14738pt too high) detected at line 501
  []
 
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 498.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 501.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
 [38
 
 ] (tikz/thoughtexperiment-3.tex)
-Overfull \vbox (2.14738pt too high) detected at line 498
+Overfull \vbox (2.14738pt too high) detected at line 501
  []
 
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 498.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 501.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
 [39
 
 ] (tikz/thoughtexperiment-4.tex)
-Overfull \vbox (2.14738pt too high) detected at line 498
+Overfull \vbox (2.14738pt too high) detected at line 501
  []
 
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 498.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 501.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
 [40
 
 ] (tikz/pgf/prefilter_step.tex) (tikz/pgf/prefilter_ramp.tex)
-Overfull \vbox (2.14738pt too high) detected at line 539
+Overfull \vbox (2.14738pt too high) detected at line 542
  []
 
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 539.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 542.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
 [41
 
 ]
-Overfull \vbox (2.14738pt too high) detected at line 539
+Overfull \vbox (2.14738pt too high) detected at line 542
  []
 
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 539.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 542.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
 [42
 
 ]
 
-Package natbib Warning: Citation `Lamarsh' on page 43 undefined on input line 539.
+Package natbib Warning: Citation `Lamarsh' on page 43 undefined on input line 542.
 
 
-Package natbib Warning: Citation `Bequette' on page 43 undefined on input line 539.
+Package natbib Warning: Citation `Bequette' on page 43 undefined on input line 542.
 
 
-Package natbib Warning: Citation `Lamarsh' on page 43 undefined on input line 539.
+Package natbib Warning: Citation `Lamarsh' on page 43 undefined on input line 542.
 
 
-Package natbib Warning: Citation `Lamarsh' undefined on input line 539.
+Package natbib Warning: Citation `Lamarsh' undefined on input line 542.
 
 pdfTeX warning (ext4): destination with the same identifier (name{cite.Lamarsh}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.539 \end{frame}
+l.542 \end{frame}
                  
 
-Package natbib Warning: Citation `Bequette' on page 43 undefined on input line 539.
+Package natbib Warning: Citation `Bequette' on page 43 undefined on input line 542.
 
 
-Package natbib Warning: Citation `Bequette' undefined on input line 539.
+Package natbib Warning: Citation `Bequette' undefined on input line 542.
 
 
-Overfull \vbox (2.14738pt too high) detected at line 539
+Overfull \vbox (2.14738pt too high) detected at line 542
  []
 
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 539.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 542.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
 [43
 
 ]
 
-Package natbib Warning: Citation `Bequette' on page 44 undefined on input line 569.
+Package natbib Warning: Citation `Bequette' on page 44 undefined on input line 572.
 
 
-Package natbib Warning: Citation `GainSchedule' on page 44 undefined on input line 569.
+Package natbib Warning: Citation `GainSchedule' on page 44 undefined on input line 572.
 
 
-Package natbib Warning: Citation `GainSchedule' on page 44 undefined on input line 569.
+Package natbib Warning: Citation `GainSchedule' on page 44 undefined on input line 572.
 
 
-Package natbib Warning: Citation `GainSchedule' undefined on input line 569.
+Package natbib Warning: Citation `GainSchedule' undefined on input line 572.
 
 
-Package natbib Warning: Citation `Bequette' on page 44 undefined on input line 569.
+Package natbib Warning: Citation `Bequette' on page 44 undefined on input line 572.
 
 
-Package natbib Warning: Citation `Bequette' undefined on input line 569.
+Package natbib Warning: Citation `Bequette' undefined on input line 572.
 
 pdfTeX warning (ext4): destination with the same identifier (name{cite.Bequette}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.569 \end{frame}
+l.572 \end{frame}
                  
-Overfull \vbox (2.14738pt too high) detected at line 569
+Overfull \vbox (2.14738pt too high) detected at line 572
  []
 
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 569.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 572.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
 [44
 
 ]
-Overfull \vbox (2.14738pt too high) detected at line 569
+Overfull \vbox (2.14738pt too high) detected at line 572
+ []
+
+
+Overfull \vbox (1.09744pt too high) detected at line 572
  []
 
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 569.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 572.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
 [45
 
 ]
-Overfull \vbox (2.14738pt too high) detected at line 585
+Overfull \vbox (2.14738pt too high) detected at line 588
  []
 
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 585.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 588.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
 [46
 
 ]
-Overfull \vbox (2.14738pt too high) detected at line 598
+Overfull \vbox (2.14738pt too high) detected at line 601
  []
 
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 598.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 601.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
 [47
 
 ]
-Overfull \vbox (2.14738pt too high) detected at line 607
+Overfull \vbox (2.14738pt too high) detected at line 610
  []
 
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 607.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 610.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
 [48
 
 ]
-Overfull \vbox (2.14738pt too high) detected at line 616
+Overfull \vbox (2.14738pt too high) detected at line 619
  []
 
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 616.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 619.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
 [49
 
 ]
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 636.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 639.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
  [50
 
 ]
 
-Package natbib Warning: Citation `Roberson' on page 51 undefined on input line 649.
+Package natbib Warning: Citation `Roberson' on page 51 undefined on input line 652.
 
 
-Package natbib Warning: Citation `DecayHeat' on page 51 undefined on input line 649.
+Package natbib Warning: Citation `DecayHeat' on page 51 undefined on input line 652.
 
 
-Package natbib Warning: Citation `Roberson' on page 51 undefined on input line 649.
+Package natbib Warning: Citation `Roberson' on page 51 undefined on input line 652.
 
 
-Package natbib Warning: Citation `Roberson' undefined on input line 649.
+Package natbib Warning: Citation `Roberson' undefined on input line 652.
 
 
-Package natbib Warning: Citation `DecayHeat' on page 51 undefined on input line 649.
+Package natbib Warning: Citation `DecayHeat' on page 51 undefined on input line 652.
 
 
-Package natbib Warning: Citation `DecayHeat' undefined on input line 649.
+Package natbib Warning: Citation `DecayHeat' undefined on input line 652.
 
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 649.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 652.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
 [51
 
 ] (tikz/SimpleControlLoop.tex)
-Overfull \hbox (47.81816pt too wide) in paragraph at lines 29--660
+Overfull \hbox (47.81816pt too wide) in paragraph at lines 29--663
  [] 
  []
 
 
-Overfull \vbox (2.14738pt too high) detected at line 660
+Overfull \vbox (2.14738pt too high) detected at line 663
  []
 
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 660.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 663.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
 [52
 
@@ -2245,7 +2256,7 @@ Package rerunfilecheck Info: File `Defense.out' has not changed.
 Here is how much of TeX's memory you used:
  51495 strings out of 478927
  1170413 string characters out of 2852536
- 1728402 words of memory out of 3000000
+ 1728430 words of memory out of 3000000
  68056 multiletter control sequences out of 15000+600000
  422985 words of font info for 139 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2259,7 +2270,7 @@ pdfTeX warning (dest): name{glo:msnb} has been referenced but does not exist, re
 pdfTeX warning (dest): name{glo:pid} has been referenced but does not exist, replaced by a fixed one
 
  <C:\Users\sjroo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcss1095.pk><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss9.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi10.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi8.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eurm10.pfb>
-Output written on Defense.pdf (52 pages, 570431 bytes).
+Output written on Defense.pdf (52 pages, 570627 bytes).
 PDF statistics:
  1105 PDF objects out of 1200 (max. 8388607)
  137 named destinations out of 1000 (max. 500000)
