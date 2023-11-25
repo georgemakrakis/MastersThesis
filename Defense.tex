@@ -56,6 +56,24 @@
   \endgroup
 }
 
+\newcommand\noside{\addtolength\textwidth{2cm} 
+\setlength\hsize{\textwidth} 
+\setlength\columnwidth{\textwidth}
+\vfill\centering}
+
+\newcommand\outlineframe{
+    \setbeamercolor{sidebar}{fg=Chrome,bg=Chrome}
+\setbeamercolor{title in sidebar}{fg=Chrome}
+\setbeamercolor{author in sidebar}{fg=Chrome}
+\setbeamercolor{section in sidebar}{fg=Chrome}
+}
+
+\newcommand\stopoutlineframe{
+    \setbeamercolor*{sidebar}{fg=PrideGold,bg=Black}
+\setbeamercolor*{title in sidebar}{fg=PrideGold}
+\setbeamercolor*{author in sidebar}{fg=PrideGold}
+\setbeamercolor*{section in sidebar}{fg=PrideGold}
+}
 
 \makeatletter
 \setlength{\beamer@headheight}{1cm}
@@ -73,11 +91,11 @@
 
 % Current section in TOC
 \AtBeginSection[ ]
-{
+{\outlineframe
 \begin{frame}{}
     \tableofcontents[currentsection,hideothersubsections]
 \end{frame}
-}
+\stopoutlineframe}
 
  \AtBeginSubsection[]{
      \begin{frame}
@@ -92,19 +110,21 @@
      \end{frame}
  }
 
+\logo{\includegraphics[width=40pt]{logocorner}}
 
 % colors
 \definecolor{PrideGold}{RGB}{241,179,0}
 \definecolor{Silver}{RGB}{128,128,128}
 \definecolor{White}{RGB}{255,255,255}
 \definecolor{Black}{RGB}{25,25,25}
+\definecolor{Chrome}{RGB}{245,245,245}
 
-\setbeamercolor{background canvas}{bg=Black!08}
+\setbeamercolor{background canvas}{bg=Chrome}
 \setbeamercolor{block title}{bg=PrideGold,fg=Black}
 \setbeamercolor{block body}{bg=PrideGold!20,fg=Black}
 
-\setbeamercolor{block title alerted}{bg=Black, fg=PrideGold}
-\setbeamercolor{block body alerted}{bg=Silver, fg=Black}
+\setbeamercolor{block title alerted}{bg=Black, fg=Silver}
+\setbeamercolor{block body alerted}{bg=PrideGold, fg=Black}
 
 \setbeamercolor*{block title example}{bg=PrideGold, fg = Black}
 \setbeamercolor*{block body example}{bg=PrideGold!20, fg = Black}
@@ -122,10 +142,11 @@
 \setbeamercolor*{author in sidebar}{fg=PrideGold}
 \setbeamercolor*{section in sidebar}{fg=PrideGold}
 
+
 \setbeamercolor{section in toc}{fg=Black}
 \setbeamercolor{subsection in toc}{fg=Black}
 
-\setbeamercolor{page number in head/foot}{fg=PrideGold,bg=Black}
+\setbeamercolor{page number in head/foot}{fg=Silver,bg=Black}
 \setbeamercolor{footline}{bg=Black}
 
 \setbeamercolor{bibliography entry author}{fg=Black}
@@ -212,7 +233,8 @@
 \begin{document}
     \nobibliography*
 {    \setbeamertemplate{footline}{} 
-    \begin{frame}
+    \begin{frame}[plain]{}
+        \noside
         \titlepage
     \end{frame}
 } 
@@ -232,9 +254,11 @@
     \vfill
 \end{frame}
 
+{\outlineframe
 \begin{frame}{Outline}
     \tableofcontents[hideallsubsections]
 \end{frame}
+\stopoutlineframe}
 
 \section{The Molten Salt Nuclear Battery}
 \subsection{Introduction}
@@ -303,10 +327,7 @@
 \end{frame}
 
 \begin{frame}[plain]{}
-    \addtolength\textwidth{2cm} 
-    \setlength\hsize{\textwidth} 
-    \setlength\columnwidth{\textwidth}
-    \vfill\centering
+    \noside
     \includegraphics[height=0.9\textheight]{logo}
     \vfill
 \end{frame}
