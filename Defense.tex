@@ -344,7 +344,7 @@
         \begin{column}{0.5\textwidth}
             \begin{figure}[ht!]
                 \centering
-                \includegraphics[width=\textwidth]{Xenon/8hr_restart}{Concentration of \I and \Xe vs. time following reactor scram - Restart Mode}
+                \includegraphics[width=\textwidth]{Xenon/8hr_restart}\caption{Concentration of \I and \Xe vs. time following reactor scram - Restart Mode}
             \end{figure}
         \end{column}
         \begin{column}{0.5\textwidth}
@@ -362,7 +362,7 @@
 \subsection{Control Theory}
 
 \subsection{Transport Delay Problem}
-\begin{frame}{Passive Feedback\only<2-3>{\ST}}{\only<1>{\cST}\only<2>{Temperature Reactivity}\only<3>{Flow Reactivity}}
+\begin{frame}{Passive Feedback\only<2->{\ST}}{\only<1>{\cST}\only<2-3>{Temperature Reactivity}\only<4>{Flow Reactivity}}
     \only<1>{
      \begin{figure}[!ht]
          \centering
@@ -371,51 +371,72 @@
          \label{fig:tikz_passive}
      \end{figure}
      }
-     \only<2>{
-         \begin{itemize}
-             \item Doppler broadening of resonance peaks results in more epithermal neutrons absorbed by \U[238] etc. \cite[Ch. 6]{DH}
-             \item Molten salt fuels have high thermal expansion coefficient \cite{PetersonMS}
-             \item Increased temperature leads to lower heavy metal density and smaller macroscopic fission cross-section at high temperature
-             \item Similar to moderator thinning in \acsp{lwr}
-             \item These two effects combine to result in less power production at higher temperature
-         \end{itemize}
- 
-         \blfootnote{\tiny\cite{DH} \tiny\bibentry{DH}}
-         \blfootnote{\tiny\cite{PetersonMS} \tiny\bibentry{PetersonMS}}
+     \only<2-3>{
+         \begin{block}{Doppler broadening}
+            \only<2>{\begin{itemize}
+                \item Resonance peaks lower and broaden with increased temperature
+                \item High kinetic energy of target nucleus introduces more relative uncertainty of the center-of-mass energy \cite[Ch. 7]{Kerlin}
+                \item More epithermal neutrons absorbed by \U[238] etc. \cite[Ch. 6]{DH}
+            \end{itemize}}
+            
+         \end{block}
+            
+         \begin{block}{Thermal Expansion}
+            \only<3>{\begin{itemize}
+                \item Increased temperature leads to lower heavy metal density and smaller macroscopic fission cross-section at high temperature \cite{PetersonMS}
+                \item Similar to moderator thinning in \acsp{lwr}
+            \end{itemize}}
+         \end{block}
+
+         \only<2>{\blfootnote{\tiny\cite{Kerlin} \tiny\bibentry{Kerlin}}
+         \blfootnote{\tiny\cite{DH} \tiny\bibentry{DH}}}
+         \only<3>{\blfootnote{\tiny\cite{PetersonMS} \tiny\bibentry{PetersonMS}}}
      }
-     \only<3>{
-         \begin{itemize}
-             \item Driven by advection of delayed neutron precursors \cite[Ch. 3]{Kerlin}
-             \begin{itemize}
-                 \item Most fission events release daughter neutrons \textit{promptly}
-                 \item Sometimes, unstable nuclides which decay by neutron emission are produced instead
-                 \item $t_{\nicefrac{1}{2}}$ from less than a second to over a minute \cite[Ch. 6]{Lamarsh}
-             \end{itemize}
-             \item Precursors produced near the core exit and long lived precursors may emit their neutrons outside of the core, so they are effectively \textit{lost} from the fission chain reaction
-             \item In natural circulation, larger power transport requires a higher flow rate, and greater delayed neutron losses
-         \end{itemize}
+     \only<4-5>{
+             \begin{block}{Delayed Neutron Precursors}
+                \only<4>{\begin{itemize}
+                    \item Most fission events release daughter neutrons \textit{promptly}
+                    \item Sometimes, unstable nuclides which decay by neutron emission are produced instead
+                    \item $t_{\nicefrac{1}{2}}$ from less than a second to over a minute \cite[Ch. 6]{Lamarsh}
+                \end{itemize}
+                \begin{equation*}
+                    {^{87}Br} \underset{56 sec}{\stackrel{\beta^-}{\longrightarrow}} {^{87}Kr^{*}} \to {^{86}Kr + n}
+                \end{equation*}}
+             \end{block}
+             
+             \begin{block}{Flowing Fuel}
+                \only<5>{\begin{itemize}
+                    \item Precursors produced near the core exit and long lived precursors may emit their neutrons outside of the core 
+                    \item These neutrons are effectively lost from the fission chain reaction \cite[Ch. 3]{Kerlin}
+                    \item Larger power transport requires a higher flow rate
+                    \item Greater delayed neutron losses 
+                    \item Negative feedback
+                \end{itemize}}
+             \end{block}
+              
+         
  
-         \blfootnote{\tiny\cite{Kerlin} \tiny\bibentry{Kerlin}}
-         \blfootnote{\tiny\cite{Lamarsh} \tiny\bibentry{Lamarsh}}
+             \only<4>{\blfootnote{\tiny\cite{Lamarsh} \tiny\bibentry{Lamarsh}}}
+             \only<5>{\blfootnote{\tiny\cite{Kerlin} \tiny\bibentry{Kerlin}}}
      }
  \end{frame}
 
 \begin{frame}{Main Operational Control Problem - Transport Delay\only<3-5>{\ST}}{\only<1-2>{\cST}\only<3>{Immediate Response}\only<4>{Heat Exchanger Perturbation}\only<5>{Core Perturbation}}
     \only<1>{
-        \begin{itemize}
-            \item Start design process by discussing dynamics associated with anticipated transients
+        \begin{block}{Dynamics associated with anticipated transients}
             \begin{itemize}
                 \item Natural circulation flow mode
                 \item Passive feedback mechanisms
                 \item Transport delays separating heat exchanger and core
             \end{itemize}
-            \item Thought Experiment
+        \end{block}
+            \begin{block}{Thought Experiment}
             \begin{itemize}
                 \item Step increase in power demand to a steady-state critical \acs{msnb}
                 \item Set-point is instantaneously equal to heat exchanger power consumption
                 \item Ideal controller which produces rapid load following with minimal overshoot
             \end{itemize}
-        \end{itemize}
+        \end{block}
     }
     \only<2>{
         \begin{figure}[!ht]
