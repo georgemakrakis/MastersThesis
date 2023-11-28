@@ -4,12 +4,9 @@
 \beamertemplatenavigationsymbolsempty 
 \addtobeamertemplate{footnote}{\hskip -2em}{}
 
-\definecolor{BackGround}{RGB}{255,250,240}
-%\setbeamercolor{background canvas}{bg=BackGround}
-
 
 \usepackage{caption}
-\captionsetup[figure]{labelformat=empty}
+\captionsetup[figure]{labelformat=empty,font=small}
 
 %packages and definitions
 \usepackage{wrapfig}
@@ -174,6 +171,10 @@
 \newcommand{\sk}[1]{\sout{#1}} %shortcut for strike-through
 \newcommand{\x}{\cellcolor{lightgray}\textbf{X}} %use to shade in table cell
 
+%fix spacing for frames with subtitles
+\newcommand\cST{\vspace{-0.5cm}} %Center title when no subtitle
+\newcommand\ST{\vspace{-0.15cm}}  %Make subtitles fix in top bar
+
 \newcommand{\acf}{\acrfull} %full acronym
 \newcommand{\acl}{\acrlong} %long acronym
 \newcommand{\acs}{\acrshort} %short acronym
@@ -299,11 +300,173 @@
         \end{figure}}
 \end{frame}
 
+\setbeamercolor{background canvas}{bg=White}
+\begin{frame}{Xenon Dynamics}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{figure}[ht!]
+                \centering
+                \includegraphics[width=\textwidth]{Xenon/start-up}
+                \caption{Concentration of \I and \Xe vs. time following start-up}
+            \end{figure}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{figure}[ht!]
+                \centering
+                \includegraphics[width=\textwidth]{Xenon/noHe}
+                \caption{Concentration of \I and \Xe vs. time following reactor scram}
+            \end{figure}
+        \end{column}
+    \end{columns}
+\end{frame}
+\setbeamercolor{background canvas}{bg=Chrome}
+
+\begin{frame}{Xenon Stripper}
+    \begin{figure}[ht!]\centering
+        \resizebox*{0.95\textwidth}{!}{\input{./tikz/stripper}}
+         \caption{Schematic Drawing of Xenon Stripping Module}
+    \end{figure}
+\only<2>{\small
+    \begin{equation*}\label{eq:diffXe_strip}
+        \frac{dXe}{dt} =
+        \underbrace{\gamma_{Xe}\Sigma_{f}^{F}{\phi}(t)}_{\text{Fission Yield}}
+        +\underbrace{\lambda_{I}I(t)}_{\text{Precursor Decay}}
+        -\underbrace{\lambda_{Xe}Xe(t)}_{\text{Beta Decay}}
+        -\underbrace{Xe(t)\sigma_{a}^{Xe}{\phi}(t)}_{\text{Radiative Capture}}
+        -\underbrace{ \frac{Xe(t)}{\tau_{salt}}\left( H^*\frac{\dot{V}_{salt}}{\dot{V}_{He}}+1 \right)^{-1}}_{\text{Stripping}}
+\end{equation*}
+}
+\end{frame}
+
+\setbeamercolor{background canvas}{bg=White}
+\begin{frame}{Xenon Stripping Dynamics}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{figure}[ht!]
+                \centering
+                \includegraphics[width=\textwidth]{Xenon/8hr_restart}{Concentration of \I and \Xe vs. time following reactor scram - Restart Mode}
+            \end{figure}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{figure}[ht!]
+                \centering
+                \includegraphics[width=\textwidth]{Xenon/standby_restart}
+                \caption{Concentration of \I and \Xe vs. time following reactor scram - Standby Mode}
+            \end{figure}
+        \end{column}
+    \end{columns}
+\end{frame}
+\setbeamercolor{background canvas}{bg=Chrome}
 
 \section{Process Control Engineering}
 \subsection{Control Theory}
 
 \subsection{Transport Delay Problem}
+\begin{frame}{Passive Feedback\only<2-3>{\ST}}{\only<1>{\cST}\only<2>{Temperature Reactivity}\only<3>{Flow Reactivity}}
+    \only<1>{
+     \begin{figure}[!ht]
+         \centering
+         \input{./tikz/passive}
+         \caption{Simplified block diagram of two primary passive feedback mechanisms in an \acs{msnb}}
+         \label{fig:tikz_passive}
+     \end{figure}
+     }
+     \only<2>{
+         \begin{itemize}
+             \item Doppler broadening of resonance peaks results in more epithermal neutrons absorbed by \U[238] etc. \cite[Ch. 6]{DH}
+             \item Molten salt fuels have high thermal expansion coefficient \cite{PetersonMS}
+             \item Increased temperature leads to lower heavy metal density and smaller macroscopic fission cross-section at high temperature
+             \item Similar to moderator thinning in \acsp{lwr}
+             \item These two effects combine to result in less power production at higher temperature
+         \end{itemize}
+ 
+         \blfootnote{\tiny\cite{DH} \tiny\bibentry{DH}}
+         \blfootnote{\tiny\cite{PetersonMS} \tiny\bibentry{PetersonMS}}
+     }
+     \only<3>{
+         \begin{itemize}
+             \item Driven by advection of delayed neutron precursors \cite[Ch. 3]{Kerlin}
+             \begin{itemize}
+                 \item Most fission events release daughter neutrons \textit{promptly}
+                 \item Sometimes, unstable nuclides which decay by neutron emission are produced instead
+                 \item $t_{\nicefrac{1}{2}}$ from less than a second to over a minute \cite[Ch. 6]{Lamarsh}
+             \end{itemize}
+             \item Precursors produced near the core exit and long lived precursors may emit their neutrons outside of the core, so they are effectively \textit{lost} from the fission chain reaction
+             \item In natural circulation, larger power transport requires a higher flow rate, and greater delayed neutron losses
+         \end{itemize}
+ 
+         \blfootnote{\tiny\cite{Kerlin} \tiny\bibentry{Kerlin}}
+         \blfootnote{\tiny\cite{Lamarsh} \tiny\bibentry{Lamarsh}}
+     }
+ \end{frame}
+
+\begin{frame}{Main Operational Control Problem - Transport Delay\only<3-5>{\ST}}{\only<1-2>{\cST}\only<3>{Immediate Response}\only<4>{Heat Exchanger Perturbation}\only<5>{Core Perturbation}}
+    \only<1>{
+        \begin{itemize}
+            \item Start design process by discussing dynamics associated with anticipated transients
+            \begin{itemize}
+                \item Natural circulation flow mode
+                \item Passive feedback mechanisms
+                \item Transport delays separating heat exchanger and core
+            \end{itemize}
+            \item Thought Experiment
+            \begin{itemize}
+                \item Step increase in power demand to a steady-state critical \acs{msnb}
+                \item Set-point is instantaneously equal to heat exchanger power consumption
+                \item Ideal controller which produces rapid load following with minimal overshoot
+            \end{itemize}
+        \end{itemize}
+    }
+    \only<2>{
+        \begin{figure}[!ht]
+            \centering
+            \input{./tikz/thoughtexperiment-1}
+            \caption{Simplified schematic drawing of a natural circulation \acs{msnb}}
+            \label{fig:tikz_thoughtexperiment-1}
+        \end{figure}
+    }
+    \only<3>{
+        \begin{figure}[!ht]
+            \centering
+            \input{./tikz/thoughtexperiment-2}
+            \caption{Simplified schematic drawing of a natural circulation \acs{msnb}}
+            \label{fig:tikz_thoughtexperiment-2}
+        \end{figure}
+    }
+    \only<4>{
+        \begin{figure}[!ht]
+            \centering
+            \input{./tikz/thoughtexperiment-3}
+            \caption{Simplified schematic drawing of a natural circulation \acs{msnb}}
+            \label{fig:tikz_thoughtexperiment-3}
+        \end{figure}
+    }
+    \only<5>{
+        \begin{figure}[!ht]
+            \centering
+            \input{./tikz/thoughtexperiment-4}
+            \caption{Simplified schematic drawing of a natural circulation \acs{msnb}}
+            \label{fig:tikz_thoughtexperiment-4}
+        \end{figure}
+    }
+\end{frame}
+
+\begin{frame}{Pre-Filter}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{figure}
+                \resizebox{\textwidth}{!}{\input{./tikz/pgf/prefilter_step-Prz}}
+                \caption{Pre-Filter on a step-function}
+            \end{figure}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{figure}
+                \resizebox{\textwidth}{!}{\input{./tikz/pgf/prefilter_ramp-Prz}}
+                \caption{Pre-Filter on a ramp-function}
+            \end{figure}
+        \end{column}
+    \end{columns}
+\end{frame}
 
 \section{Reactor Characterization}
 \subsection{Neutronics Modeling}
@@ -410,95 +573,6 @@
 \end{frame}
 
 
-\begin{frame}{Passive Feedback}{\only<2>{Temperature Reactivity}\only<3>{Flow Reactivity}}
-   \only<1>{
-    \begin{figure}[!ht]
-        \centering
-        \input{./tikz/passive}
-        \caption{Simplified block diagram of two primary passive feedback mechanisms in an \acs{msnb}}
-        \label{fig:tikz_passive}
-    \end{figure}
-    }
-    \only<2>{
-        \begin{itemize}
-            \item Doppler broadening of resonance peaks results in more epithermal neutrons absorbed by \U[238] etc. \cite[Ch. 6]{DH}
-            \item Molten salt fuels have high thermal expansion coefficient \cite{PetersonMS}
-            \item Increased temperature leads to lower heavy metal density and smaller macroscopic fission cross-section at high temperature
-            \item Similar to moderator thinning in \acsp{lwr}
-            \item These two effects combine to result in less power production at higher temperature
-        \end{itemize}
-
-        \blfootnote{\tiny\cite{DH} \tiny\bibentry{DH}}
-        \blfootnote{\tiny\cite{PetersonMS} \tiny\bibentry{PetersonMS}}
-    }
-    \only<3>{
-        \begin{itemize}
-            \item Driven by advection of delayed neutron precursors \cite[Ch. 3]{Kerlin}
-            \begin{itemize}
-                \item Most fission events release daughter neutrons \textit{promptly}
-                \item Sometimes, unstable nuclides which decay by neutron emission are produced instead
-                \item $t_{\nicefrac{1}{2}}$ from less than a second to over a minute \cite[Ch. 6]{Lamarsh}
-            \end{itemize}
-            \item Precursors produced near the core exit and long lived precursors may emit their neutrons outside of the core, so they are effectively \textit{lost} from the fission chain reaction
-            \item In natural circulation, larger power transport requires a higher flow rate, and greater delayed neutron losses
-        \end{itemize}
-
-        \blfootnote{\tiny\cite{Kerlin} \tiny\bibentry{Kerlin}}
-        \blfootnote{\tiny\cite{Lamarsh} \tiny\bibentry{Lamarsh}}
-    }
-\end{frame}
-
-\begin{frame}{Main Operational Control Problem - Transport Delay}{\only<3>{Immediate Response}\only<4>{Heat Exchanger Perturbation}\only<5>{Core Perturbation}}
-    \only<1>{
-        \begin{itemize}
-            \item Start design process by discussing dynamics associated with anticipated transients
-            \begin{itemize}
-                \item Natural circulation flow mode
-                \item Passive feedback mechanisms
-                \item Transport delays separating heat exchanger and core
-            \end{itemize}
-            \item Thought Experiment
-            \begin{itemize}
-                \item Step increase in power demand to a steady-state critical \acs{msnb}
-                \item Set-point is instantaneously equal to heat exchanger power consumption
-                \item Ideal controller which produces rapid load following with minimal overshoot
-            \end{itemize}
-        \end{itemize}
-    }
-    \only<2>{
-        \begin{figure}[!ht]
-            \centering
-            \input{./tikz/thoughtexperiment-1}
-            \caption{Simplified schematic drawing of a natural circulation \acs{msnb}}
-            \label{fig:tikz_thoughtexperiment-1}
-        \end{figure}
-    }
-    \only<3>{
-        \begin{figure}[!ht]
-            \centering
-            \input{./tikz/thoughtexperiment-2}
-            \caption{Simplified schematic drawing of a natural circulation \acs{msnb}}
-            \label{fig:tikz_thoughtexperiment-2}
-        \end{figure}
-    }
-    \only<4>{
-        \begin{figure}[!ht]
-            \centering
-            \input{./tikz/thoughtexperiment-3}
-            \caption{Simplified schematic drawing of a natural circulation \acs{msnb}}
-            \label{fig:tikz_thoughtexperiment-3}
-        \end{figure}
-    }
-    \only<5>{
-        \begin{figure}[!ht]
-            \centering
-            \input{./tikz/thoughtexperiment-4}
-            \caption{Simplified schematic drawing of a natural circulation \acs{msnb}}
-            \label{fig:tikz_thoughtexperiment-4}
-        \end{figure}
-    }
-\end{frame}
-
 \begin{frame}{Design Decisions}{\only<1>{Pre-Filter}\only<2>{Dead-band}\only<3>{Disturbance Feedforward}}
         \only<1>{
         \begin{columns}
@@ -537,7 +611,6 @@
             \blfootnote{\tiny\cite{Lamarsh} \tiny\bibentry{Lamarsh}}
             \blfootnote{\tiny\cite{Bequette} \tiny\bibentry{Bequette}}
         }
-
 \end{frame}
 
 \begin{frame}{Time-Variance and Non-Linearity}{\only<1>{Operational Control}\only<2>{Special Cases}}

@@ -1,0 +1,14 @@
+\beamer@sectionintoc {1}{The Molten Salt Nuclear Battery}{4}{0}{1}
+\beamer@subsectionintoc {1}{1}{Introduction}{5}{0}{1}
+\beamer@subsectionintoc {1}{2}{Xenon-135 Stripping In-Brief}{9}{0}{1}
+\beamer@sectionintoc {2}{Process Control Engineering}{17}{0}{2}
+\beamer@subsectionintoc {2}{1}{Control Theory}{18}{0}{2}
+\beamer@subsectionintoc {2}{2}{Transport Delay Problem}{19}{0}{2}
+\beamer@sectionintoc {3}{Reactor Characterization}{29}{0}{3}
+\beamer@subsectionintoc {3}{1}{Neutronics Modeling}{30}{0}{3}
+\beamer@subsectionintoc {3}{2}{Process Simulation}{31}{0}{3}
+\beamer@sectionintoc {4}{Results and Analysis}{32}{0}{4}
+\beamer@subsectionintoc {4}{1}{Control-Reactivity Curve}{33}{0}{4}
+\beamer@subsectionintoc {4}{2}{Controller Tuning}{34}{0}{4}
+\beamer@subsectionintoc {4}{3}{Demand Response}{35}{0}{4}
+\beamer@sectionintoc {5}{Conclusions}{36}{0}{5}
