@@ -16,8 +16,7 @@
 \usepackage{amsmath,cancel,nicefrac}
 \usepackage{ulem}
 \usepackage{graphicx,animate}
-%\usepackage{mypythonhighlight}% allows inclusion of graphics
-\graphicspath{{./img/}} %path to graphics
+\graphicspath{{./img/},{}} %path to graphics
 \usepackage[yyyymmdd]{datetime} %date format
 \renewcommand{\dateseparator}{.}
 
@@ -26,7 +25,7 @@
 \usepackage{tikz,grffile} % required for drawing custom shapes
 \usetikzlibrary{shapes,arrows,automata,trees}
 \pgfplotsset{compat=newest}
-\usepgfplotslibrary{patchplots}
+%\usepgfplotslibrary{patchplots}
 %%%%%
 
 \usepackage{booktabs} % nice rules (thick lines) for tables
@@ -53,7 +52,7 @@
   \endgroup
 }
 
-%Fix centering on titleslide which doesn't have a sidebar [plain]
+%Fix centering on title slide which doesn't have a sidebar [plain]
 \newcommand\noside{\addtolength\textwidth{2cm} 
 \setlength\hsize{\textwidth} 
 \setlength\columnwidth{\textwidth}
@@ -221,7 +220,7 @@
 
 %%%%%
 
-\title[\acs{msnb} Modeling \& Control]{Dynamic System Modeling \& \acs{pid} Controller Design \\for a Molten Salt Microreactor}
+\title[MSNB Modeling \& Control]{Dynamic System Modeling \& PID Controller Design \\for a Molten Salt Microreactor}
 \author{Sam J. Root}
 \institute[Idaho Falls Center]{University of Idaho $\sq$ Idaho Falls Center for Higher Education\\
     Department of Nuclear Engineering and Industrial Management\\
@@ -230,8 +229,6 @@
 \date{December 6\textsuperscript{th}, 2023}    
 
 \titlegraphic{\includegraphics[width=0.20\textwidth]{logo}}
-
-
 
 \begin{document}
     \nobibliography*
@@ -286,6 +283,39 @@
     \end{block}
 \end{frame}
 
+\begin{frame}{Previous and Present Work}
+    \begin{block}{Neutronics \cite{PetersonMS}}
+        \only<1>{
+        \begin{itemize}
+            \item Control drums give a uniform axial and radial flux profile for all reactivity insertions
+            \item Control drum vs. reactivity curve is sinusoidal
+        \end{itemize}    
+        }
+    \end{block}
+    
+    \begin{block}{Thermal Hydraulics \cite{CarterPHD}}
+        \only<2>{
+            \begin{itemize}
+                \item Transient simulations can be reduced to 1D and still correspond to STAR-CCM+
+                \item Stable autonomous load following for relatively small ramp function power demand transients
+            \end{itemize}    
+            }
+    \end{block}
+    
+    \begin{block}{Process Control}
+        \only<3>{
+            \begin{itemize}
+                \item Design controller \textit{compliment} the autonomous capabilities provided by the passive feedback mechanisms
+                \item Allow larger faster, more aggressive power changes
+                \item Additional focus on time periods with a high degree of time variance (start-up, shut-down, re-start)
+            \end{itemize}    
+            }
+    \end{block}
+
+    \blfootnote{\tiny\cite{PetersonMS} \tiny\bibentry{PetersonMS}}
+    \blfootnote{\tiny\cite{CarterPHD} \tiny\bibentry{CarterPHD}}
+\end{frame}
+
 \subsection{Xenon-135 Stripping In-Brief}
 
 \begin{frame}{Fission Product Poisoning}
@@ -306,14 +336,14 @@
         \begin{column}{0.5\textwidth}
             \begin{figure}[ht!]
                 \centering
-                \includegraphics[width=\textwidth]{Xenon/start-up}
+                \includegraphics[width=0.99\textwidth]{Xenon/start-up}
                 \caption{Concentration of \I and \Xe vs. time following start-up}
             \end{figure}
         \end{column}
         \begin{column}{0.5\textwidth}
             \begin{figure}[ht!]
                 \centering
-                \includegraphics[width=\textwidth]{Xenon/noHe}
+                \includegraphics[width=0.99\textwidth]{Xenon/noHe}
                 \caption{Concentration of \I and \Xe vs. time following reactor scram}
             \end{figure}
         \end{column}
@@ -326,7 +356,7 @@
         \resizebox*{0.95\textwidth}{!}{\input{./tikz/stripper}}
          \caption{Schematic Drawing of Xenon Stripping Module}
     \end{figure}
-\only<2>{\small
+\only<2>{\tiny
     \begin{equation*}\label{eq:diffXe_strip}
         \frac{dXe}{dt} =
         \underbrace{\gamma_{Xe}\Sigma_{f}^{F}{\phi}(t)}_{\text{Fission Yield}}
@@ -344,13 +374,13 @@
         \begin{column}{0.5\textwidth}
             \begin{figure}[ht!]
                 \centering
-                \includegraphics[width=\textwidth]{Xenon/8hr_restart}\caption{Concentration of \I and \Xe vs. time following reactor scram - Restart Mode}
+                \includegraphics[width=0.99\textwidth]{Xenon/8hr_restart}\caption{Concentration of \I and \Xe vs. time following reactor scram - Restart Mode}
             \end{figure}
         \end{column}
         \begin{column}{0.5\textwidth}
             \begin{figure}[ht!]
                 \centering
-                \includegraphics[width=\textwidth]{Xenon/standby_restart}
+                \includegraphics[width=0.99\textwidth]{Xenon/standby_restart}
                 \caption{Concentration of \I and \Xe vs. time following reactor scram - Standby Mode}
             \end{figure}
         \end{column}
@@ -362,7 +392,7 @@
 \subsection{Control Theory}
 
 \subsection{Transport Delay Problem}
-\begin{frame}{Passive Feedback\only<2->{\ST}}{\only<1>{\cST}\only<2-3>{Temperature Reactivity}\only<4>{Flow Reactivity}}
+\begin{frame}{Passive Feedback\only<2->{\ST}}{\only<1>{\cST}\only<2-3>{Temperature Reactivity}\only<4-5>{Flow Reactivity}}
     \only<1>{
      \begin{figure}[!ht]
          \centering
@@ -526,7 +556,7 @@
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{\acf{msnb}}
+\begin{frame}{Molten Salt Nuclear Battery}
 \begin{columns}
     %Column 1
     \begin{column}{0.5\textwidth}
@@ -551,211 +581,12 @@
         }
         \only<3>{
             \begin{figure}
-                \animategraphics[width=0.8\textwidth, controls, loop, trim=12cm 1.5cm 2cm 2.5cm]{1}{./img/Plotter/drum/XY-}{0}{2}
+                %\animategraphics[width=0.8\textwidth, controls, loop, trim=12cm 1.5cm 2cm 2.5cm]{1}{./img/Plotter/drum/XY-}{0}{2}
                 \caption{MsNB Control Drums}
             \end{figure}
         }
     \end{column}
 \end{columns}
 \end{frame}
-
-\begin{frame}{Background on \acs{msnb}}
-    \begin{block}{Neutronics \cite{PetersonMS}}
-        \only<1>{
-        \begin{itemize}
-            \item Control drums give a uniform axial and radial flux profile for all reactivity insertions
-            \item Fission product poisoning is the biggest challenge to reach the desired 10-year lifespan
-            \item Control drum vs. reactivity curve is sinusoidal
-        \end{itemize}    
-        }
-    \end{block}
-    
-    \begin{block}{Thermal Hydraulics \cite{CarterPHD}}
-        \only<2>{
-            \begin{itemize}
-                \item The counteracting passive feedback effects of temperature reactivity and flow reactivity produce stable autonomous load following for relatively small ramp function power demand transients
-                \item An in-core helix device can be used to manipulate temperature and power profiles in the core, as well as minimize advective loss of delayed-neutron precursors
-            \end{itemize}    
-            }
-    \end{block}
-    
-    \begin{block}{Process Control}
-        \only<3>{
-            \begin{itemize}
-                \item Design controller \textit{compliment} the autonomous capabilities provided by the passive feedback mechanisms
-                \item Allow larger faster, more aggressive power changes
-                \item Additional focus on time periods with a high degree of time variance (start-up, shut-down, re-start)
-            \end{itemize}    
-            }
-    \end{block}
-
-    \blfootnote{\tiny\cite{PetersonMS} \tiny\bibentry{PetersonMS}}
-    \blfootnote{\tiny\cite{CarterPHD} \tiny\bibentry{CarterPHD}}
-\end{frame}
-
-
-\begin{frame}{Design Decisions}{\only<1>{Pre-Filter}\only<2>{Dead-band}\only<3>{Disturbance Feedforward}}
-        \only<1>{
-        \begin{columns}
-            \begin{column}{0.5\textwidth}
-                \begin{figure}
-                    \resizebox{0.95\textwidth}{!}{\input{./tikz/pgf/prefilter_step}}
-                    \caption{Pre-Filter on a step-function}
-                \end{figure}
-            \end{column}
-            \begin{column}{0.5\textwidth}
-                \begin{figure}
-                    \resizebox{0.95\textwidth}{!}{\input{./tikz/pgf/prefilter_ramp}}
-                    \caption{Pre-Filter on a ramp-function}
-                \end{figure}
-            \end{column}
-        \end{columns}
-        }
-
-        \only<2>{
-            \begin{itemize}
-                \item Minor perturbations will cause power fluctuations
-                \item Fine grain and constant control actuation would burn out servos prematurely
-                \item When the error is small, allow the passive feedback mechanisms to fine tune
-            \end{itemize}
-        }
-
-        \only<3>{
-            \begin{itemize}
-                \item Disturbances, particularly temperature reactivity, are extremely high frequency - On order of mean neutron lifetime \cite[Ch. 7]{Lamarsh}
-                \item Control actuation is similarly quick
-                \item Time delays on the order of dozens of seconds to minutes
-                \item Inserting control reactivity to counteract temperature reactivity at the exact right moment would be difficult or impossible, so it is unlikely that a disturbance feedforward controller could reject the disturbance before it causes error \cite[Ch. 10]{Bequette}
-                \item Disturbance rejection best left to feedback \acs{pid} controller
-            \end{itemize}
-            
-            \blfootnote{\tiny\cite{Lamarsh} \tiny\bibentry{Lamarsh}}
-            \blfootnote{\tiny\cite{Bequette} \tiny\bibentry{Bequette}}
-        }
-\end{frame}
-
-\begin{frame}{Time-Variance and Non-Linearity}{\only<1>{Operational Control}\only<2>{Special Cases}}
-    \only<1>{\begin{itemize}
-        \item Sinusoidal control drum angle vs. reactivity curve - non-linear reactivity actuation - Taylor Series approximation to linearize around the operating point \cite[Ch. 2]{Bequette}
-        \item Fissile depletion changes the amount of control reactivity required to make the core critical - time-variant controller bias - Bias and gain schedule \cite{GainSchedule}
-        \item Control drums manipulate \textit{criticality}, not power directly - highly time-dependent control actuation
-    \end{itemize}
-
-    \blfootnote{\tiny\cite{GainSchedule} \tiny\bibentry{GainSchedule}}
-    \blfootnote{\tiny\cite{Bequette} \tiny\bibentry{Bequette}}
-    }
-    \only<2>{\begin{itemize}
-        \item Equilibrium Poisoning
-        \begin{itemize}
-            \item Poisons like \Xe and \Sa build-up after the reactor starts - this causes a negative reactivity insertion
-            \item Reach equilibrium over the first \~100 hours
-            \item Gain/Bias schedule may be used
-            \item Alternatively, a burnable poison with appropriate \textit{effective} half-life could be selected - \Gd[157] shows promise to counteract \Xe build-up
-        \end{itemize}
-        \item Restart Poisoning
-        \begin{itemize}
-            \item \Xe levels increase following shut-down because its beta-precursor (\I) decays faster
-            \item Requires a lot of excess control reactivity and very good control to counteract the positive reactivity insertion of poison burn-out after restart
-            \item  Low-flux burn-out instead of full shut-down
-            \item Stripping \Xe and other fission gasses before re-start
-        \end{itemize}
-    \end{itemize}
-    }
-
-\end{frame}
-
-
-\begin{frame}{Control Drum Characterization}{MCNP}
-    \begin{itemize}
-        \item Use KCODE to develop control drum vs. reactivity curve at various points in the core lifespan
-        \item Use Burn-up routine to study how the core criticality at different conditions effects the control drum vs. reactivity
-        \begin{itemize}
-            \item Cold/clean start-up
-            \item Burnable poison start-up
-            \item Equilibrium poisoning
-            \item Long-term depletion of fissile isotopes
-        \end{itemize} 
-        \item Develop bias/unity point schedule 
-        \item Will to use HPC or Falcon
-    \end{itemize}
-\end{frame}
-
-\begin{frame}{Process Simulation}{Python}
-    \begin{itemize}
-        \item 1D$+$time finite element model that accounts for passive feedback mechanisms during unsteady state subcritical, critical, and supercritical modes to calculate the core power and flow loop temperature profile over time
-        \item Simulate system response to:
-        \begin{itemize}
-            \item Control actuation
-            \item Heat exchanger transients
-        \end{itemize}
-        \item Empirical fitting of reactor transfer function
-        \item Studies can be conducted locally or with cluster resources
-    \end{itemize}
-\end{frame}
-
-\begin{frame}{Controller Tuning}{MATLAB-Simulink}
-    \begin{itemize}
-        \item Model control loop in Simulink
-        \item Investigate system stability using frequency response tests
-        \item Use built-in numerical methods to implement a PID controller tuning method
-        \item Repeat for different core conditions to develop gain-schedule and/or look-up table for the controller parameters
-    \end{itemize}
-\end{frame}
-
-\begin{frame}{Implementation and Testing}{Python}
-    \begin{itemize}
-        \item Implement control drum reactivity, pre-filter, and PID controller into the process simulation
-        \item Test autonomous response to heat exchanger power demand transients
-        \item Repeat with controller active
-        \item Quantitatively compare response using settling time, dampening ratio, peak overshoot ratio etc.
-    \end{itemize}
-\end{frame}
-
-\begin{frame}{Timeline}
-
-    \begin{table}
-        \centering
-        \caption{Timeframe for Execution of Project}
-        \begin{tabular}{c|c|c|c|c|c|c|c}
-            \textbf{Tasks} & Oct. & Nov. & Dec. & Jan. & Feb. & Mar. & Apr.\\\hline
-            \textbf{Control Drums} & \x & \x & \x &  &  &  & \\\hline
-            \textbf{Process Simulation} &  & \x & \x & \x &  &  & \\\hline
-            \textbf{Controller Tuning} &  &  &  & \x & \x &  & \\\hline
-            \textbf{Implementation} &  &  &  &  & \x & \x & \\\hline
-            \textbf{Cross-Cutting} &  &  &  &  &  & \x & \x\\\hline
-            \textbf{Defend} &  &  &  &  &  &  & \x \\
-
-        \end{tabular}
-    \end{table}
-        
-
-\end{frame}
-
-\begin{frame}{Other Considerations}
-    \begin{itemize}
-        \item Poison perturbations following power transients \cite{Roberson}
-        \item Melting of \textit{in-situ} frozen salt
-        \item SCRAM system must be passive
-        \item Decay heat system \cite{DecayHeat}
-        \item Flow rate control
-    \end{itemize}
-
-    \blfootnote{\tiny\cite{Roberson} \tiny\bibentry{Roberson}}
-    \blfootnote{\tiny\cite{DecayHeat} \tiny\bibentry{DecayHeat}}
-\end{frame}
-
-\begin{frame}{Discussion}{Control Loop}
-
-        \begin{figure}[!ht]
-            \centering
-            \input{./tikz/SimpleControlLoop}
-            \caption{Simplified control loop of a natural circulation \acs{msnb}}
-            \label{fig:SimpleControlLoop}
-        \end{figure}
-    
-\end{frame}
-
-
-
 
 \end{document}
