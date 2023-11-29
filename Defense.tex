@@ -390,6 +390,57 @@
 
 \section{Process Control Engineering}
 \subsection{Control Theory}
+\begin{frame}{Feedback Control}
+    \begin{figure}[!ht]
+        \centering
+        \resizebox{\textwidth}{!}{\input{tikz/feedback}}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Feedforward Control}
+    \begin{figure}[!ht]
+        \centering
+        \resizebox{\textwidth}{!}{\input{tikz/feedforward}}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{PID Control}
+    \begin{equation*}
+        u(t) 
+        = \underbrace{K_P e(t)}_{\text{Proportional}} 
+        + \underbrace{K_I \int_0^t e(t)dt}_{\text{Integral}} 
+        + \underbrace{K_D \frac{de(t)}{dt}}_{\text{Derivative}}
+    \end{equation*}
+    \only<2->{
+    \begin{block}{Proportional}
+        \only<2>{
+        \begin{itemize}
+            \item Control output is manipulated in proportion to the error defined by the proportional gain constant
+            \item High gain yields an aggressive controller that is prone to overshooting the set-point
+            \item Low gain may result in steady-state offset
+        \end{itemize}    
+        }
+    \end{block}
+
+    \begin{block}{Integral}
+        \only<3>{\begin{itemize} 
+            \item Considers cumulative error to help eliminate steady-state offset 
+            \item As the process variable settles around the set-point, the cumulative error approaches a constant value and the effect of the integral controller diminishes.
+        \end{itemize}
+        }
+    \end{block}
+
+    \begin{block}{Derivative}
+        \only<4>{\begin{itemize}
+            \item Estimates the time rate of change of the error to dampen overshoot
+            \item Backs-off the proportional response when the process variable rapidly approaches the set-point
+            \item Can be difficult to tune
+        \end{itemize}
+        }
+    \end{block}
+    }
+\end{frame}
+
 
 \subsection{Transport Delay Problem}
 \begin{frame}{Passive Feedback\only<2->{\ST}}{\only<1>{\cST}\only<2-3>{Temperature Reactivity}\only<4-5>{Flow Reactivity}}
@@ -520,7 +571,21 @@
 \end{frame}
 
 \section{Reactor Characterization}
+\begin{frame}{MSNB Control Loop}
+    \begin{figure}[!ht]
+        \centering
+        \resizebox{\textwidth}{!}{\input{tikz/ReactorControlLoop}}
+    \end{figure}
+\end{frame}
+
 \subsection{Neutronics Modeling}
+\begin{frame}{Serpent Modeling}
+    \begin{figure}[!ht]
+        \centering
+        \resizebox{\textwidth}{!}{\input{tikz/sketch}}
+    \end{figure}
+\end{frame}
+
 
 \subsection{Process Simulation}
 

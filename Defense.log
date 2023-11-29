@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.9.1)  28 NOV 2023 17:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.9.1)  28 NOV 2023 22:35
 entering extended mode
 **c:/Users/sjroo/OneDrive/Documents/UIdaho/Thesis/Dissertation/Defense.tex
 (c:/Users/sjroo/OneDrive/Documents/UIdaho/Thesis/Dissertation/Defense.tex
@@ -1753,171 +1753,241 @@ Package pdftex.def Info: ./img//logocorner.png  used on input line 392.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
  [21
 
-]
+] (tikz/feedback.tex)
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 394.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 398.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
  [22
 
-] (tikz/passive.tex)
-Overfull \hbox (3.98529pt too wide) in paragraph at lines 19--452
- [] 
+] (tikz/feedforward.tex)
+File: ./img//logocorner.png Graphic file (type png)
+<use ./img//logocorner.png>
+Package pdftex.def Info: ./img//logocorner.png  used on input line 405.
+(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
+ [23
+
+]
+File: ./img//logocorner.png Graphic file (type png)
+<use ./img//logocorner.png>
+Package pdftex.def Info: ./img//logocorner.png  used on input line 442.
+(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
+ [24
+
+]
+Overfull \vbox (3.69789pt too high) detected at line 442
  []
 
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 452.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 442.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
-[23
+[25
 
 ]
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 452.
-(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
- [24
-
-]pdfTeX warning (ext4): destination with the same identifier (name{cite.PetersonMS}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.452  \end{frame}
-                  
-File: ./img//logocorner.png Graphic file (type png)
-<use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 452.
-(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
- [25
-
-]
-File: ./img//logocorner.png Graphic file (type png)
-<use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 452.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 442.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
  [26
 
-]pdfTeX warning (ext4): destination with the same identifier (name{cite.Kerlin}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.452  \end{frame}
-                  
+]
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 452.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 442.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
  [27
 
 ]
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 503.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 445.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
  [28
 
-] (tikz/thoughtexperiment-1.tex)
+] (tikz/passive.tex)
+Overfull \hbox (3.98529pt too wide) in paragraph at lines 19--503
+ [] 
+ []
+
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
 Package pdftex.def Info: ./img//logocorner.png  used on input line 503.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
- [29
+[29
 
-] (tikz/thoughtexperiment-2.tex)
+]
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
 Package pdftex.def Info: ./img//logocorner.png  used on input line 503.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
  [30
 
-] (tikz/thoughtexperiment-3.tex)
+]pdfTeX warning (ext4): destination with the same identifier (name{cite.PetersonMS}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.503  \end{frame}
+                  
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
 Package pdftex.def Info: ./img//logocorner.png  used on input line 503.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
  [31
 
-] (tikz/thoughtexperiment-4.tex)
+]
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
 Package pdftex.def Info: ./img//logocorner.png  used on input line 503.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
  [32
 
-] (tikz/pgf/prefilter_step-Prz.tex) (tikz/pgf/prefilter_ramp-Prz.tex)
+]pdfTeX warning (ext4): destination with the same identifier (name{cite.Kerlin}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.503  \end{frame}
+                  
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 520.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 503.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
  [33
 
-] (Defense.toc)
+]
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 522.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 554.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
  [34
 
-]
+] (tikz/thoughtexperiment-1.tex)
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 523.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 554.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
  [35
 
-]
+] (tikz/thoughtexperiment-2.tex)
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 525.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 554.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
  [36
 
-] (Defense.toc)
+] (tikz/thoughtexperiment-3.tex)
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 528.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 554.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
  [37
 
-]
+] (tikz/thoughtexperiment-4.tex)
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 529.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 554.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
  [38
 
-]
+] (tikz/pgf/prefilter_step-Prz.tex) (tikz/pgf/prefilter_ramp-Prz.tex)
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 531.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 571.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
  [39
-
-]
-File: ./img//logocorner.png Graphic file (type png)
-<use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 533.
-(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
- [40
 
 ] (Defense.toc)
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 535.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 573.
+(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
+ [40
+
+] (tikz/ReactorControlLoop.tex)
+File: ./img//logocorner.png Graphic file (type png)
+<use ./img//logocorner.png>
+Package pdftex.def Info: ./img//logocorner.png  used on input line 579.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
  [41
 
 ]
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 543.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 581.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
  [42
+
+] (tikz/sketch.tex
+<./img//sketch/Sawtooth.png, id=789, 1065.9825pt x 499.8675pt>
+File: ./img//sketch/Sawtooth.png Graphic file (type png)
+<use ./img//sketch/Sawtooth.png>
+Package pdftex.def Info: ./img//sketch/Sawtooth.png  used on input line 31.
+(pdftex.def)             Requested size: 212.36317pt x 99.58464pt.
+<./img//sketch/serpent.png, id=790, 386.94562pt x 91.84312pt>
+File: ./img//sketch/serpent.png Graphic file (type png)
+<use ./img//sketch/serpent.png>
+Package pdftex.def Info: ./img//sketch/serpent.png  used on input line 32.
+(pdftex.def)             Requested size: 299.70853pt x 71.13188pt.
+)
+File: ./img//logocorner.png Graphic file (type png)
+<use ./img//logocorner.png>
+Package pdftex.def Info: ./img//logocorner.png  used on input line 587.
+(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
+ [43
+
+ <./img//sketch/Sawtooth.png> <./img//sketch/serpent.png>]
+File: ./img//logocorner.png Graphic file (type png)
+<use ./img//logocorner.png>
+Package pdftex.def Info: ./img//logocorner.png  used on input line 590.
+(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
+ [44
+
+] (Defense.toc)
+File: ./img//logocorner.png Graphic file (type png)
+<use ./img//logocorner.png>
+Package pdftex.def Info: ./img//logocorner.png  used on input line 593.
+(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
+ [45
+
+]
+File: ./img//logocorner.png Graphic file (type png)
+<use ./img//logocorner.png>
+Package pdftex.def Info: ./img//logocorner.png  used on input line 594.
+(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
+ [46
+
+]
+File: ./img//logocorner.png Graphic file (type png)
+<use ./img//logocorner.png>
+Package pdftex.def Info: ./img//logocorner.png  used on input line 596.
+(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
+ [47
+
+]
+File: ./img//logocorner.png Graphic file (type png)
+<use ./img//logocorner.png>
+Package pdftex.def Info: ./img//logocorner.png  used on input line 598.
+(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
+ [48
+
+] (Defense.toc)
+File: ./img//logocorner.png Graphic file (type png)
+<use ./img//logocorner.png>
+Package pdftex.def Info: ./img//logocorner.png  used on input line 600.
+(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
+ [49
+
+]
+File: ./img//logocorner.png Graphic file (type png)
+<use ./img//logocorner.png>
+Package pdftex.def Info: ./img//logocorner.png  used on input line 608.
+(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
+ [50
 
 ]
 File: ./img//logo.png Graphic file (type png)
 <use ./img//logo.png>
-Package pdftex.def Info: ./img//logo.png  used on input line 549.
+Package pdftex.def Info: ./img//logo.png  used on input line 614.
 (pdftex.def)             Requested size: 294.0594pt x 201.25848pt.
- [43
+ [51
 
 ] (Defense.bbl
 
@@ -1955,30 +2025,30 @@ l.44 \bibitem{Lamarsh}
                       )
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 556.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 621.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
- [44
+ [52
 
 ] (tikz/msnb.tex)
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 590.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 655.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
- [45
+ [53
 
 ] (tikz/msnb.tex)
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 590.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 655.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
- [46
+ [54
 
 ]
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 590.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 655.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
- [47
+ [55
 
 ]
 \tf@nav=\write6
@@ -1992,14 +2062,14 @@ Package pdftex.def Info: ./img//logocorner.png  used on input line 590.
 
  (Defense.aux)
 Package rerunfilecheck Info: File `Defense.out' has not changed.
-(rerunfilecheck)             Checksum: E309C479FF429B7E5A4637C327DF5EF0;2307.
+(rerunfilecheck)             Checksum: 69BDA0561BB2C533E8ED49FFCD580994;2307.
  ) 
 Here is how much of TeX's memory you used:
- 51023 strings out of 478927
- 1155242 string characters out of 2852536
- 1700070 words of memory out of 3000000
- 67589 multiletter control sequences out of 15000+600000
- 426319 words of font info for 152 fonts, out of 8000000 for 9000
+ 51143 strings out of 478927
+ 1157532 string characters out of 2852536
+ 1700390 words of memory out of 3000000
+ 67657 multiletter control sequences out of 15000+600000
+ 427673 words of font info for 163 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,23n,124p,1083b,2783s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{glo:lwr} has been referenced but does not exist, replaced by a fixed one
@@ -2008,10 +2078,10 @@ pdfTeX warning (dest): name{glo:msnb} has been referenced but does not exist, re
 
 pdfTeX warning (dest): name{glo:nrc} has been referenced but does not exist, replaced by a fixed one
 
- <C:\Users\sjroo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcss1095.pk><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss17.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss9.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi10.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi12.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eurm10.pfb>
-Output written on Defense.pdf (47 pages, 641494 bytes).
+ <C:\Users\sjroo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcss1095.pk><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss17.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss9.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi10.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi12.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eurm10.pfb>
+Output written on Defense.pdf (55 pages, 1377042 bytes).
 PDF statistics:
- 1035 PDF objects out of 1200 (max. 8388607)
- 122 named destinations out of 1000 (max. 500000)
- 47579 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 1152 PDF objects out of 1200 (max. 8388607)
+ 138 named destinations out of 1000 (max. 500000)
+ 53733 words of extra memory for PDF output out of 61914 (max. 10000000)
 
