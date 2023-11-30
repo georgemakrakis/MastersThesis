@@ -1,0 +1,2080 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.9.1)  29 NOV 2023 19:19
+entering extended mode
+**c:/Users/sjroo/OneDrive/Documents/UIdaho/Thesis/Dissertation/Defense.tex
+(c:/Users/sjroo/OneDrive/Documents/UIdaho/Thesis/Dissertation/Defense.tex
+LaTeX2e <2021-06-01> patch level 1
+L3 programming layer <2021-08-27> (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamer.cls
+Document Class: beamer 2021/10/18 v3.64 A class for typesetting presentations
+(C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasemodes.sty (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count182
+)
+\beamer@tempbox=\box50
+\beamer@tempcount=\count183
+\c@beamerpauses=\count184
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasedecode.sty
+\beamer@slideinframe=\count185
+\beamer@minimum=\count186
+\beamer@decode@box=\box51
+)
+\beamer@commentbox=\box52
+\beamer@modecount=\count187
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifpdf.sty
+Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+))
+\headdp=\dimen138
+\footheight=\dimen139
+\sidebarheight=\dimen140
+\beamer@tempdim=\dimen141
+\beamer@finalheight=\dimen142
+\beamer@animht=\dimen143
+\beamer@animdp=\dimen144
+\beamer@animwd=\dimen145
+\beamer@leftmargin=\dimen146
+\beamer@rightmargin=\dimen147
+\beamer@leftsidebar=\dimen148
+\beamer@rightsidebar=\dimen149
+\beamer@boxsize=\dimen150
+\beamer@vboxoffset=\dimen151
+\beamer@descdefault=\dimen152
+\beamer@descriptionwidth=\dimen153
+\beamer@lastskip=\skip47
+\beamer@areabox=\box53
+\beamer@animcurrent=\box54
+\beamer@animshowbox=\box55
+\beamer@sectionbox=\box56
+\beamer@logobox=\box57
+\beamer@linebox=\box58
+\beamer@sectioncount=\count188
+\beamer@subsubsectionmax=\count189
+\beamer@subsectionmax=\count190
+\beamer@sectionmax=\count191
+\beamer@totalheads=\count192
+\beamer@headcounter=\count193
+\beamer@partstartpage=\count194
+\beamer@sectionstartpage=\count195
+\beamer@subsectionstartpage=\count196
+\beamer@animationtempa=\count197
+\beamer@animationtempb=\count198
+\beamer@xpos=\count199
+\beamer@ypos=\count266
+\beamer@ypos@offset=\count267
+\beamer@showpartnumber=\count268
+\beamer@currentsubsection=\count269
+\beamer@coveringdepth=\count270
+\beamer@sectionadjust=\count271
+\beamer@toclastsection=\count272
+\beamer@tocsectionnumber=\count273
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbaseoptions.sty (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+))
+\beamer@paperwidth=\skip48
+\beamer@paperheight=\skip49
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count274
+\Gm@cntv=\count275
+\c@Gm@tempcnt=\count276
+\Gm@bindingoffset=\dimen154
+\Gm@wd@mp=\dimen155
+\Gm@odd@mp=\dimen156
+\Gm@even@mp=\dimen157
+\Gm@layoutwidth=\dimen158
+\Gm@layoutheight=\dimen159
+\Gm@layouthoffset=\dimen160
+\Gm@layoutvoffset=\dimen161
+\Gm@dimlist=\toks17
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/base\size11.clo
+File: size11.clo 2021/02/12 v1.4n Standard LaTeX file (size option)
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.sty (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2020/12/05 v1.2c Enhanced LaTeX Graphics (DPC,SPQR)
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen162
+\Gin@req@width=\dimen163
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.sty (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.sty (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-common.tex
+\pgfutil@everybye=\toks18
+\pgfutil@tempdima=\dimen164
+\pgfutil@tempdimb=\dimen165
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-common-lists.tex)) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-latex.def
+\pgfutil@abb=\box59
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.code.tex (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
+Package: pgfrcs 2021/05/15 v3.1.9a (3.1.9a)
+)) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys.code.tex
+Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks19
+\pgfkeys@temptoks=\toks20
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks21
+))
+\pgf@x=\dimen166
+\pgf@y=\dimen167
+\pgf@xa=\dimen168
+\pgf@ya=\dimen169
+\pgf@xb=\dimen170
+\pgf@yb=\dimen171
+\pgf@xc=\dimen172
+\pgf@yc=\dimen173
+\pgf@xd=\dimen174
+\pgf@yd=\dimen175
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count277
+\c@pgf@countb=\count278
+\c@pgf@countc=\count279
+\c@pgf@countd=\count280
+\t@pgf@toka=\toks22
+\t@pgf@tokb=\toks23
+\t@pgf@tokc=\toks24
+\pgf@sys@id@count=\count281
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.cfg
+File: pgf.cfg 2021/05/15 v3.1.9a (3.1.9a)
+)
+Driver file for pgf: pgfsys-pdftex.def
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2021/05/15 v3.1.9a (3.1.9a)
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2021/05/15 v3.1.9a (3.1.9a)
+))) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfsyssoftpath@smallbuffer@items=\count282
+\pgfsyssoftpath@bigbuffer@items=\count283
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/graphics\dvipsnam.def
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+)) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore.code.tex
+Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc.code.tex (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil.code.tex) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparser.code.tex
+\pgfmath@dimen=\dimen176
+\pgfmath@count=\count284
+\pgfmath@box=\box60
+\pgfmath@toks=\toks25
+\pgfmath@stack@operand=\toks26
+\pgfmath@stack@operation=\toks27
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.code.tex (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.basic.code.tex) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.trigonometric.code.tex) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.random.code.tex) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.comparison.code.tex) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.base.code.tex) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.round.code.tex) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.misc.code.tex) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.integerarithmetics.code.tex))) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count285
+)) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.tex) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@picminx=\dimen177
+\pgf@picmaxx=\dimen178
+\pgf@picminy=\dimen179
+\pgf@picmaxy=\dimen180
+\pgf@pathminx=\dimen181
+\pgf@pathmaxx=\dimen182
+\pgf@pathminy=\dimen183
+\pgf@pathmaxy=\dimen184
+\pgf@xx=\dimen185
+\pgf@xy=\dimen186
+\pgf@yx=\dimen187
+\pgf@yy=\dimen188
+\pgf@zx=\dimen189
+\pgf@zy=\dimen190
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@path@lastx=\dimen191
+\pgf@path@lasty=\dimen192
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@shorten@end@additional=\dimen193
+\pgf@shorten@start@additional=\dimen194
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfpic=\box61
+\pgf@hbox=\box62
+\pgf@layerbox@main=\box63
+\pgf@picture@serial@count=\count286
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgflinewidth=\dimen195
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@pt@x=\dimen196
+\pgf@pt@y=\dimen197
+\pgf@pt@temp=\dimen198
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfarrowsep=\dimen199
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@max=\dimen256
+\pgf@sys@shading@range@num=\count287
+\pgf@shadingcount=\count288
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfexternal@startupbox=\box64
+)) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\xxcolor.sty
+Package: xxcolor 2003/10/24 ver 0.1
+\XC@nummixins=\count289
+\XC@countmixins=\count290
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
+Package: hyperref 2021-06-07 v7.00m Hypertext links for LaTeX
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/kvsetkeys\kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/letltxmacro\letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+)
+\@linkdim=\dimen257
+\Hy@linkcounter=\count291
+\Hy@pagecounter=\count292
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
+File: pd1enc.def 2021-06-07 v7.00m Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref-langpatches.def
+File: hyperref-langpatches.def 2021-06-07 v7.00m Hyperref: patches for babel languages
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count293
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
+File: puenc.def 2021-06-07 v7.00m Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Option `bookmarks' set `true' on input line 4073.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 4073.
+Package hyperref Info: Option `implicit' set `false' on input line 4073.
+Package hyperref Info: Hyper figures OFF on input line 4192.
+Package hyperref Info: Link nesting OFF on input line 4197.
+Package hyperref Info: Hyper index ON on input line 4200.
+Package hyperref Info: Plain pages OFF on input line 4207.
+Package hyperref Info: Backreferencing OFF on input line 4212.
+Package hyperref Info: Implicit mode OFF; no redefinition of LaTeX internals.
+Package hyperref Info: Bookmarks ON on input line 4445.
+\c@Hy@tempcnt=\count294
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4804.
+\XeTeXLinkMargin=\dimen258
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
+))
+\Fld@menulength=\count295
+\Field@Width=\dimen259
+\Fld@charsize=\dimen260
+Package hyperref Info: Hyper figures OFF on input line 6076.
+Package hyperref Info: Link nesting OFF on input line 6081.
+Package hyperref Info: Hyper index ON on input line 6084.
+Package hyperref Info: backreferencing OFF on input line 6091.
+Package hyperref Info: Link coloring OFF on input line 6096.
+Package hyperref Info: Link coloring with OCG OFF on input line 6101.
+Package hyperref Info: PDF/A mode OFF on input line 6106.
+LaTeX Info: Redefining \ref on input line 6146.
+LaTeX Info: Redefining \pageref on input line 6150.
+\Hy@abspage=\count296
+
+
+Package hyperref Message: Stopped early.
+
+)
+Package hyperref Info: Driver: hpdftex.
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
+File: hpdftex.def 2021-06-07 v7.00m Hyperref driver for pdfTeX
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/base\atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery package
+with kernel methods
+)
+\Fld@listcount=\count297
+\c@bookmark@seq@number=\count298
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 286.
+)) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbaserequires.sty (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasecompatibility.sty) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasefont.sty (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks28
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/sansmathaccent\sansmathaccent.sty
+Package: sansmathaccent 2020/01/31
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrlfile.sty
+Package: scrlfile 2021/11/13 v3.35 KOMA-Script package (file load hooks)
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrlfile-hook-3.34.sty
+Package: scrlfile-hook-3.34 2021/11/13 v3.35 KOMA-Script package (using LaTeX hooks)
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrlogo.sty
+Package: scrlogo 2021/11/13 v3.35 KOMA-Script package (logo)
+))))) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasetranslator.sty (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator.sty
+Package: translator 2021-05-31 v1.12d Easy translation of strings in LaTeX
+)) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasemisc.sty) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasetwoscreens.sty) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbaseoverlay.sty
+\beamer@argscount=\count299
+\beamer@lastskipcover=\skip50
+\beamer@trivlistdepth=\count300
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasetitle.sty) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasesection.sty
+\c@lecture=\count301
+\c@part=\count302
+\c@section=\count303
+\c@subsection=\count304
+\c@subsubsection=\count305
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbaseframe.sty
+\beamer@framebox=\box65
+\beamer@frametitlebox=\box66
+\beamer@zoombox=\box67
+\beamer@zoomcount=\count306
+\beamer@zoomframecount=\count307
+\beamer@frametextheight=\dimen261
+\c@subsectionslide=\count308
+\beamer@frametopskip=\skip51
+\beamer@framebottomskip=\skip52
+\beamer@frametopskipautobreak=\skip53
+\beamer@framebottomskipautobreak=\skip54
+\beamer@envbody=\toks29
+\framewidth=\dimen262
+\c@framenumber=\count309
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbaseverbatim.sty
+\beamer@verbatimfileout=\write4
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbaseframesize.sty
+\beamer@splitbox=\box68
+\beamer@autobreakcount=\count310
+\beamer@autobreaklastheight=\dimen263
+\beamer@frametitletoks=\toks30
+\beamer@framesubtitletoks=\toks31
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbaseframecomponents.sty
+\beamer@footins=\box69
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasecolor.sty) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasenotes.sty
+\beamer@frameboxcopy=\box70
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasetoc.sty) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasetemplates.sty
+\beamer@sbttoks=\toks32
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbaseauxtemplates.sty (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbaseboxes.sty
+\bmb@box=\box71
+\bmb@colorbox=\box72
+\bmb@boxwidth=\dimen264
+\bmb@boxheight=\dimen265
+\bmb@prevheight=\dimen266
+\bmb@temp=\dimen267
+\bmb@dima=\dimen268
+\bmb@dimb=\dimen269
+\bmb@prevheight=\dimen270
+)
+\beamer@blockheadheight=\dimen271
+)) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbaselocalstructure.sty (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/tools\enumerate.sty
+Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
+\@enLab=\toks33
+)
+\beamer@bibiconwidth=\skip55
+\c@figure=\count311
+\c@table=\count312
+\abovecaptionskip=\skip56
+\belowcaptionskip=\skip57
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasenavigation.sty
+\beamer@section@min@dim=\dimen272
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasetheorems.sty (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2021/04/20 v2.17j AMS math features
+\@mathmargin=\skip58
+
+For additional information on amsmath, use the `?' option.
+(C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks34
+\ex@=\dimen273
+)) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen274
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count313
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count314
+\leftroot@=\count315
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count316
+\DOTSCASE@=\count317
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box73
+\strutbox@=\box74
+\big@size=\dimen275
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count318
+\c@MaxMatrixCols=\count319
+\dotsspace@=\muskip17
+\c@parentequation=\count320
+\dspbrk@lvl=\count321
+\tag@help=\toks35
+\row@=\count322
+\column@=\count323
+\maxfields@=\count324
+\andhelp@=\toks36
+\eqnshift@=\dimen276
+\alignsep@=\dimen277
+\tagshift@=\dimen278
+\tagwidth@=\dimen279
+\totwidth@=\dimen280
+\lineht@=\dimen281
+\@envbody=\toks37
+\multlinegap=\skip59
+\multlinetaggap=\skip60
+\mathdisplay@stack=\toks38
+LaTeX Info: Redefining \[ on input line 2923.
+LaTeX Info: Redefining \] on input line 2924.
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/amscls\amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks39
+\thm@bodyfont=\toks40
+\thm@headfont=\toks41
+\thm@notefont=\toks42
+\thm@headpunct=\toks43
+\thm@preskip=\skip61
+\thm@postskip=\skip62
+\thm@headsep=\skip63
+\dth@everypar=\toks44
+)
+\c@theorem=\count325
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasethemes.sty)) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerthemedefault.sty (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerfontthemedefault.sty) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamercolorthemedefault.sty) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerinnerthemedefault.sty
+\beamer@dima=\dimen282
+\beamer@dimb=\dimen283
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerouterthemedefault.sty))) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerthemeBerkeley.sty (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerouterthemesidebar.sty
+\beamer@sidebarwidth=\dimen284
+\beamer@headheight=\dimen285
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerinnerthemerectangles.sty) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamercolorthemewhale.sty) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamercolorthemeorchid.sty)) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamercolorthemeseahorse.sty) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+Package: caption 2020/10/26 v3.5g Customizing captions (AR)
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
+Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
+\captionmargin=\dimen286
+\captionmargin@=\dimen287
+\captionwidth=\dimen288
+\caption@tempdima=\dimen289
+\caption@indent=\dimen290
+\caption@parindent=\dimen291
+\caption@hangindent=\dimen292
+Package caption Info: beamer document class detected.
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption-beamer.sto
+File: caption-beamer.sto 2020/08/22 v2.0 Adaption of the caption package to the beamer document classes (AR)
+))
+\c@caption@flags=\count326
+\c@continuedfloat=\count327
+Package caption Info: hyperref package is loaded.
+Package caption Info: Hyperref support is turned off
+(caption)             because hyperref has stopped early.
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/wrapfig\wrapfig.sty
+\wrapoverhang=\dimen293
+\WF@size=\dimen294
+\c@WF@wrappedlines=\count328
+\WF@box=\box75
+\WF@everypar=\toks45
+Package: wrapfig 2003/01/31  v 3.6
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/textgreek\textgreek.sty
+Package: textgreek 2011/10/09 v0.7 Greek symbols in text
+Package textgreek Info: Loading the definitions for the Greek fontencoding. on input line 39.
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/greek-fontenc\lgrenc.def
+File: lgrenc.def 2023-09-12 2.5 LGR Greek font encoding definitions
+Now handling font encoding LGR ...
+... processing UTF-8 mapping file for font encoding LGR
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/greek-inputenc\lgrenc.dfu
+File: lgrenc.dfu 2023-03-21 1.9 UTF-8 support for Greek
+   defining Unicode char U+00A8 (decimal 168)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00AF (decimal 175)
+   defining Unicode char U+00B4 (decimal 180)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+0259 (decimal 601)
+   defining Unicode char U+02D8 (decimal 728)
+   defining Unicode char U+0374 (decimal 884)
+   defining Unicode char U+0375 (decimal 885)
+   defining Unicode char U+037A (decimal 890)
+   defining Unicode char U+037E (decimal 894)
+   defining Unicode char U+0384 (decimal 900)
+   defining Unicode char U+0385 (decimal 901)
+   defining Unicode char U+0386 (decimal 902)
+   defining Unicode char U+0387 (decimal 903)
+   defining Unicode char U+0388 (decimal 904)
+   defining Unicode char U+0389 (decimal 905)
+   defining Unicode char U+038A (decimal 906)
+   defining Unicode char U+038C (decimal 908)
+   defining Unicode char U+038E (decimal 910)
+   defining Unicode char U+038F (decimal 911)
+   defining Unicode char U+0390 (decimal 912)
+   defining Unicode char U+0391 (decimal 913)
+   defining Unicode char U+0392 (decimal 914)
+   defining Unicode char U+0393 (decimal 915)
+   defining Unicode char U+0394 (decimal 916)
+   defining Unicode char U+0395 (decimal 917)
+   defining Unicode char U+0396 (decimal 918)
+   defining Unicode char U+0397 (decimal 919)
+   defining Unicode char U+0398 (decimal 920)
+   defining Unicode char U+0399 (decimal 921)
+   defining Unicode char U+039A (decimal 922)
+   defining Unicode char U+039B (decimal 923)
+   defining Unicode char U+039C (decimal 924)
+   defining Unicode char U+039D (decimal 925)
+   defining Unicode char U+039E (decimal 926)
+   defining Unicode char U+039F (decimal 927)
+   defining Unicode char U+03A0 (decimal 928)
+   defining Unicode char U+03A1 (decimal 929)
+   defining Unicode char U+03A3 (decimal 931)
+   defining Unicode char U+03A4 (decimal 932)
+   defining Unicode char U+03A5 (decimal 933)
+   defining Unicode char U+03A6 (decimal 934)
+   defining Unicode char U+03A7 (decimal 935)
+   defining Unicode char U+03A8 (decimal 936)
+   defining Unicode char U+03A9 (decimal 937)
+   defining Unicode char U+03AA (decimal 938)
+   defining Unicode char U+03AB (decimal 939)
+   defining Unicode char U+03AC (decimal 940)
+   defining Unicode char U+03AD (decimal 941)
+   defining Unicode char U+03AE (decimal 942)
+   defining Unicode char U+03AF (decimal 943)
+   defining Unicode char U+03B0 (decimal 944)
+   defining Unicode char U+03B1 (decimal 945)
+   defining Unicode char U+03B2 (decimal 946)
+   defining Unicode char U+03B3 (decimal 947)
+   defining Unicode char U+03B4 (decimal 948)
+   defining Unicode char U+03B5 (decimal 949)
+   defining Unicode char U+03B6 (decimal 950)
+   defining Unicode char U+03B7 (decimal 951)
+   defining Unicode char U+03B8 (decimal 952)
+   defining Unicode char U+03B9 (decimal 953)
+   defining Unicode char U+03BA (decimal 954)
+   defining Unicode char U+03BB (decimal 955)
+   defining Unicode char U+03BC (decimal 956)
+   defining Unicode char U+03BD (decimal 957)
+   defining Unicode char U+03BE (decimal 958)
+   defining Unicode char U+03BF (decimal 959)
+   defining Unicode char U+03C0 (decimal 960)
+   defining Unicode char U+03C1 (decimal 961)
+   defining Unicode char U+03C2 (decimal 962)
+   defining Unicode char U+03C3 (decimal 963)
+   defining Unicode char U+03C4 (decimal 964)
+   defining Unicode char U+03C5 (decimal 965)
+   defining Unicode char U+03C6 (decimal 966)
+   defining Unicode char U+03C7 (decimal 967)
+   defining Unicode char U+03C8 (decimal 968)
+   defining Unicode char U+03C9 (decimal 969)
+   defining Unicode char U+03CA (decimal 970)
+   defining Unicode char U+03CB (decimal 971)
+   defining Unicode char U+03CC (decimal 972)
+   defining Unicode char U+03CD (decimal 973)
+   defining Unicode char U+03CE (decimal 974)
+   defining Unicode char U+03D0 (decimal 976)
+   defining Unicode char U+03D1 (decimal 977)
+   defining Unicode char U+03D5 (decimal 981)
+   defining Unicode char U+03D6 (decimal 982)
+   defining Unicode char U+03D8 (decimal 984)
+   defining Unicode char U+03D9 (decimal 985)
+   defining Unicode char U+03DA (decimal 986)
+   defining Unicode char U+03DB (decimal 987)
+   defining Unicode char U+03DC (decimal 988)
+   defining Unicode char U+03DD (decimal 989)
+   defining Unicode char U+03DE (decimal 990)
+   defining Unicode char U+03DF (decimal 991)
+   defining Unicode char U+03E0 (decimal 992)
+   defining Unicode char U+03E1 (decimal 993)
+   defining Unicode char U+03F0 (decimal 1008)
+   defining Unicode char U+03F1 (decimal 1009)
+   defining Unicode char U+03F4 (decimal 1012)
+   defining Unicode char U+03F5 (decimal 1013)
+   defining Unicode char U+1F00 (decimal 7936)
+   defining Unicode char U+1F01 (decimal 7937)
+   defining Unicode char U+1F02 (decimal 7938)
+   defining Unicode char U+1F03 (decimal 7939)
+   defining Unicode char U+1F04 (decimal 7940)
+   defining Unicode char U+1F05 (decimal 7941)
+   defining Unicode char U+1F06 (decimal 7942)
+   defining Unicode char U+1F07 (decimal 7943)
+   defining Unicode char U+1F08 (decimal 7944)
+   defining Unicode char U+1F09 (decimal 7945)
+   defining Unicode char U+1F0A (decimal 7946)
+   defining Unicode char U+1F0B (decimal 7947)
+   defining Unicode char U+1F0C (decimal 7948)
+   defining Unicode char U+1F0D (decimal 7949)
+   defining Unicode char U+1F0E (decimal 7950)
+   defining Unicode char U+1F0F (decimal 7951)
+   defining Unicode char U+1F10 (decimal 7952)
+   defining Unicode char U+1F11 (decimal 7953)
+   defining Unicode char U+1F12 (decimal 7954)
+   defining Unicode char U+1F13 (decimal 7955)
+   defining Unicode char U+1F14 (decimal 7956)
+   defining Unicode char U+1F15 (decimal 7957)
+   defining Unicode char U+1F18 (decimal 7960)
+   defining Unicode char U+1F19 (decimal 7961)
+   defining Unicode char U+1F1A (decimal 7962)
+   defining Unicode char U+1F1B (decimal 7963)
+   defining Unicode char U+1F1C (decimal 7964)
+   defining Unicode char U+1F1D (decimal 7965)
+   defining Unicode char U+1F20 (decimal 7968)
+   defining Unicode char U+1F21 (decimal 7969)
+   defining Unicode char U+1F22 (decimal 7970)
+   defining Unicode char U+1F23 (decimal 7971)
+   defining Unicode char U+1F24 (decimal 7972)
+   defining Unicode char U+1F25 (decimal 7973)
+   defining Unicode char U+1F26 (decimal 7974)
+   defining Unicode char U+1F27 (decimal 7975)
+   defining Unicode char U+1F28 (decimal 7976)
+   defining Unicode char U+1F29 (decimal 7977)
+   defining Unicode char U+1F2A (decimal 7978)
+   defining Unicode char U+1F2B (decimal 7979)
+   defining Unicode char U+1F2C (decimal 7980)
+   defining Unicode char U+1F2D (decimal 7981)
+   defining Unicode char U+1F2E (decimal 7982)
+   defining Unicode char U+1F2F (decimal 7983)
+   defining Unicode char U+1F30 (decimal 7984)
+   defining Unicode char U+1F31 (decimal 7985)
+   defining Unicode char U+1F32 (decimal 7986)
+   defining Unicode char U+1F33 (decimal 7987)
+   defining Unicode char U+1F34 (decimal 7988)
+   defining Unicode char U+1F35 (decimal 7989)
+   defining Unicode char U+1F36 (decimal 7990)
+   defining Unicode char U+1F37 (decimal 7991)
+   defining Unicode char U+1F38 (decimal 7992)
+   defining Unicode char U+1F39 (decimal 7993)
+   defining Unicode char U+1F3A (decimal 7994)
+   defining Unicode char U+1F3B (decimal 7995)
+   defining Unicode char U+1F3C (decimal 7996)
+   defining Unicode char U+1F3D (decimal 7997)
+   defining Unicode char U+1F3E (decimal 7998)
+   defining Unicode char U+1F3F (decimal 7999)
+   defining Unicode char U+1F40 (decimal 8000)
+   defining Unicode char U+1F41 (decimal 8001)
+   defining Unicode char U+1F42 (decimal 8002)
+   defining Unicode char U+1F43 (decimal 8003)
+   defining Unicode char U+1F44 (decimal 8004)
+   defining Unicode char U+1F45 (decimal 8005)
+   defining Unicode char U+1F48 (decimal 8008)
+   defining Unicode char U+1F49 (decimal 8009)
+   defining Unicode char U+1F4A (decimal 8010)
+   defining Unicode char U+1F4B (decimal 8011)
+   defining Unicode char U+1F4C (decimal 8012)
+   defining Unicode char U+1F4D (decimal 8013)
+   defining Unicode char U+1F50 (decimal 8016)
+   defining Unicode char U+1F51 (decimal 8017)
+   defining Unicode char U+1F52 (decimal 8018)
+   defining Unicode char U+1F53 (decimal 8019)
+   defining Unicode char U+1F54 (decimal 8020)
+   defining Unicode char U+1F55 (decimal 8021)
+   defining Unicode char U+1F56 (decimal 8022)
+   defining Unicode char U+1F57 (decimal 8023)
+   defining Unicode char U+1F59 (decimal 8025)
+   defining Unicode char U+1F5B (decimal 8027)
+   defining Unicode char U+1F5D (decimal 8029)
+   defining Unicode char U+1F5F (decimal 8031)
+   defining Unicode char U+1F60 (decimal 8032)
+   defining Unicode char U+1F61 (decimal 8033)
+   defining Unicode char U+1F62 (decimal 8034)
+   defining Unicode char U+1F63 (decimal 8035)
+   defining Unicode char U+1F64 (decimal 8036)
+   defining Unicode char U+1F65 (decimal 8037)
+   defining Unicode char U+1F66 (decimal 8038)
+   defining Unicode char U+1F67 (decimal 8039)
+   defining Unicode char U+1F68 (decimal 8040)
+   defining Unicode char U+1F69 (decimal 8041)
+   defining Unicode char U+1F6A (decimal 8042)
+   defining Unicode char U+1F6B (decimal 8043)
+   defining Unicode char U+1F6C (decimal 8044)
+   defining Unicode char U+1F6D (decimal 8045)
+   defining Unicode char U+1F6E (decimal 8046)
+   defining Unicode char U+1F6F (decimal 8047)
+   defining Unicode char U+1F70 (decimal 8048)
+   defining Unicode char U+1F71 (decimal 8049)
+   defining Unicode char U+1F72 (decimal 8050)
+   defining Unicode char U+1F73 (decimal 8051)
+   defining Unicode char U+1F74 (decimal 8052)
+   defining Unicode char U+1F75 (decimal 8053)
+   defining Unicode char U+1F76 (decimal 8054)
+   defining Unicode char U+1F77 (decimal 8055)
+   defining Unicode char U+1F78 (decimal 8056)
+   defining Unicode char U+1F79 (decimal 8057)
+   defining Unicode char U+1F7A (decimal 8058)
+   defining Unicode char U+1F7B (decimal 8059)
+   defining Unicode char U+1F7C (decimal 8060)
+   defining Unicode char U+1F7D (decimal 8061)
+   defining Unicode char U+1F80 (decimal 8064)
+   defining Unicode char U+1F81 (decimal 8065)
+   defining Unicode char U+1F82 (decimal 8066)
+   defining Unicode char U+1F83 (decimal 8067)
+   defining Unicode char U+1F84 (decimal 8068)
+   defining Unicode char U+1F85 (decimal 8069)
+   defining Unicode char U+1F86 (decimal 8070)
+   defining Unicode char U+1F87 (decimal 8071)
+   defining Unicode char U+1F88 (decimal 8072)
+   defining Unicode char U+1F89 (decimal 8073)
+   defining Unicode char U+1F8A (decimal 8074)
+   defining Unicode char U+1F8B (decimal 8075)
+   defining Unicode char U+1F8C (decimal 8076)
+   defining Unicode char U+1F8D (decimal 8077)
+   defining Unicode char U+1F8E (decimal 8078)
+   defining Unicode char U+1F8F (decimal 8079)
+   defining Unicode char U+1F90 (decimal 8080)
+   defining Unicode char U+1F91 (decimal 8081)
+   defining Unicode char U+1F92 (decimal 8082)
+   defining Unicode char U+1F93 (decimal 8083)
+   defining Unicode char U+1F94 (decimal 8084)
+   defining Unicode char U+1F95 (decimal 8085)
+   defining Unicode char U+1F96 (decimal 8086)
+   defining Unicode char U+1F97 (decimal 8087)
+   defining Unicode char U+1F98 (decimal 8088)
+   defining Unicode char U+1F99 (decimal 8089)
+   defining Unicode char U+1F9A (decimal 8090)
+   defining Unicode char U+1F9B (decimal 8091)
+   defining Unicode char U+1F9C (decimal 8092)
+   defining Unicode char U+1F9D (decimal 8093)
+   defining Unicode char U+1F9E (decimal 8094)
+   defining Unicode char U+1F9F (decimal 8095)
+   defining Unicode char U+1FA0 (decimal 8096)
+   defining Unicode char U+1FA1 (decimal 8097)
+   defining Unicode char U+1FA2 (decimal 8098)
+   defining Unicode char U+1FA3 (decimal 8099)
+   defining Unicode char U+1FA4 (decimal 8100)
+   defining Unicode char U+1FA5 (decimal 8101)
+   defining Unicode char U+1FA6 (decimal 8102)
+   defining Unicode char U+1FA7 (decimal 8103)
+   defining Unicode char U+1FA8 (decimal 8104)
+   defining Unicode char U+1FA9 (decimal 8105)
+   defining Unicode char U+1FAA (decimal 8106)
+   defining Unicode char U+1FAB (decimal 8107)
+   defining Unicode char U+1FAC (decimal 8108)
+   defining Unicode char U+1FAD (decimal 8109)
+   defining Unicode char U+1FAE (decimal 8110)
+   defining Unicode char U+1FAF (decimal 8111)
+   defining Unicode char U+1FB0 (decimal 8112)
+   defining Unicode char U+1FB1 (decimal 8113)
+   defining Unicode char U+1FB2 (decimal 8114)
+   defining Unicode char U+1FB3 (decimal 8115)
+   defining Unicode char U+1FB4 (decimal 8116)
+   defining Unicode char U+1FB6 (decimal 8118)
+   defining Unicode char U+1FB7 (decimal 8119)
+   defining Unicode char U+1FB8 (decimal 8120)
+   defining Unicode char U+1FB9 (decimal 8121)
+   defining Unicode char U+1FBA (decimal 8122)
+   defining Unicode char U+1FBB (decimal 8123)
+   defining Unicode char U+1FBC (decimal 8124)
+   defining Unicode char U+1FBD (decimal 8125)
+   defining Unicode char U+1FBE (decimal 8126)
+   defining Unicode char U+1FBF (decimal 8127)
+   defining Unicode char U+1FC0 (decimal 8128)
+   defining Unicode char U+1FC1 (decimal 8129)
+   defining Unicode char U+1FC2 (decimal 8130)
+   defining Unicode char U+1FC3 (decimal 8131)
+   defining Unicode char U+1FC4 (decimal 8132)
+   defining Unicode char U+1FC6 (decimal 8134)
+   defining Unicode char U+1FC7 (decimal 8135)
+   defining Unicode char U+1FC8 (decimal 8136)
+   defining Unicode char U+1FC9 (decimal 8137)
+   defining Unicode char U+1FCA (decimal 8138)
+   defining Unicode char U+1FCB (decimal 8139)
+   defining Unicode char U+1FCC (decimal 8140)
+   defining Unicode char U+1FCD (decimal 8141)
+   defining Unicode char U+1FCE (decimal 8142)
+   defining Unicode char U+1FCF (decimal 8143)
+   defining Unicode char U+1FD0 (decimal 8144)
+   defining Unicode char U+1FD1 (decimal 8145)
+   defining Unicode char U+1FD2 (decimal 8146)
+   defining Unicode char U+1FD3 (decimal 8147)
+   defining Unicode char U+1FD6 (decimal 8150)
+   defining Unicode char U+1FD7 (decimal 8151)
+   defining Unicode char U+1FD8 (decimal 8152)
+   defining Unicode char U+1FD9 (decimal 8153)
+   defining Unicode char U+1FDA (decimal 8154)
+   defining Unicode char U+1FDB (decimal 8155)
+   defining Unicode char U+1FDD (decimal 8157)
+   defining Unicode char U+1FDE (decimal 8158)
+   defining Unicode char U+1FDF (decimal 8159)
+   defining Unicode char U+1FE0 (decimal 8160)
+   defining Unicode char U+1FE1 (decimal 8161)
+   defining Unicode char U+1FE2 (decimal 8162)
+   defining Unicode char U+1FE3 (decimal 8163)
+   defining Unicode char U+1FE4 (decimal 8164)
+   defining Unicode char U+1FE5 (decimal 8165)
+   defining Unicode char U+1FE6 (decimal 8166)
+   defining Unicode char U+1FE7 (decimal 8167)
+   defining Unicode char U+1FE8 (decimal 8168)
+   defining Unicode char U+1FE9 (decimal 8169)
+   defining Unicode char U+1FEA (decimal 8170)
+   defining Unicode char U+1FEB (decimal 8171)
+   defining Unicode char U+1FEC (decimal 8172)
+   defining Unicode char U+1FED (decimal 8173)
+   defining Unicode char U+1FEE (decimal 8174)
+   defining Unicode char U+1FEF (decimal 8175)
+   defining Unicode char U+1FF2 (decimal 8178)
+   defining Unicode char U+1FF3 (decimal 8179)
+   defining Unicode char U+1FF4 (decimal 8180)
+   defining Unicode char U+1FF6 (decimal 8182)
+   defining Unicode char U+1FF7 (decimal 8183)
+   defining Unicode char U+1FF8 (decimal 8184)
+   defining Unicode char U+1FF9 (decimal 8185)
+   defining Unicode char U+1FFA (decimal 8186)
+   defining Unicode char U+1FFB (decimal 8187)
+   defining Unicode char U+1FFC (decimal 8188)
+   defining Unicode char U+1FFD (decimal 8189)
+   defining Unicode char U+1FFE (decimal 8190)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201A (decimal 8218)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2039 (decimal 8249)
+   defining Unicode char U+203A (decimal 8250)
+   defining Unicode char U+20AC (decimal 8364)
+   defining Unicode char U+2126 (decimal 8486)
+   defining Unicode char U+10144 (decimal 65860)
+   defining Unicode char U+10145 (decimal 65861)
+   defining Unicode char U+10146 (decimal 65862)
+   defining Unicode char U+10147 (decimal 65863)
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/greek-fontenc\greek-fontenc.def
+File: greek-fontenc.def 2023-09-12 2.5 Common Greek font encoding definitions
+))
+Package textgreek Info: Loaded fontmap: {eur/*/*}{U/eur/*/*} {phv/*/*}{U/psy/*/*}. on input line 69.
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip64
+\enit@outerparindent=\dimen295
+\enit@toks=\toks46
+\enit@inbox=\box76
+\enit@count@id=\count329
+\enitdp@description=\count330
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/cancel\cancel.sty
+Package: cancel 2013/04/12 v2.2 Cancel math terms
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/units\nicefrac.sty
+Package: nicefrac 1998/08/04 v0.9b Nice fractions
+\L@UnitsRaiseDisplaystyle=\skip65
+\L@UnitsRaiseTextstyle=\skip66
+\L@UnitsRaiseScriptstyle=\skip67
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
+)) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/ulem\ulem.sty
+\UL@box=\box77
+\UL@hyphenbox=\box78
+\UL@skip=\skip68
+\UL@hook=\toks47
+\UL@height=\dimen296
+\UL@pe=\count331
+\UL@pixel=\dimen297
+\ULC@box=\box79
+Package: ulem 2019/11/18
+\ULdepth=\dimen298
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/animate\animate.sty
+Package: animate 2021/09/02 PDF & SVG animations from files and inline graphics
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
+Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.tex (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.tex
+\XKV@toks=\toks48
+\XKV@tempa@toks=\toks49
+)
+\XKV@depth=\count332
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/oberdiek\ifdraft.sty
+Package: ifdraft 2016/05/16 v1.4 Detect class options draft and final (HO)
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count333
+\calc@Bcount=\count334
+\calc@Adimen=\dimen299
+\calc@Bdimen=\dimen300
+\calc@Askip=\skip69
+\calc@Bskip=\skip70
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count335
+\calc@Cskip=\skip71
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/zref\zref-abspage.sty
+Package: zref-abspage 2020-07-03 v2.32 Module abspage for zref (HO)
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/zref\zref-base.sty
+Package: zref-base 2020-07-03 v2.32 Module base for zref (HO)
+Package zref Info: New property list: main on input line 764.
+Package zref Info: New property: default on input line 765.
+Package zref Info: New property: page on input line 766.
+)
+\c@abspage=\count336
+Package zref Info: New property: abspage on input line 66.
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/media9\pdfbase.sty (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/l3keys2e\l3keys2e.sty (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2021-08-27 L3 programming layer (loader) 
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2021-08-04 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count337
+\l__pdf_internal_box=\box80
+))
+Package: l3keys2e 2021-08-27 LaTeX2e option processing using LaTeX3 keys
+)
+Package: pdfbase 2021/09/12 v0.53 driver independent access to low-level PDF features
+\g_pbs_page_int=\count338
+\g_pbs_oc_int=\count339
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/ocgx2\ocgbase.sty
+Package: ocgbase 2021/06/11 v0.20 support package for ocgx2.sty
+\g_ocgbase_nd_int=\count340
+)
+\@anim@box=\box81
+\@anim@measbox=\box82
+\@anim@tmpdima=\dimen301
+\@anim@tmpdimb=\dimen302
+\@anim@num=\count341
+\@anim@curframe=\count342
+\@anim@curframe@zb=\count343
+\@anim@resizeflags=\count344
+\@anim@skipfram=\count345
+\@anim@mulframecnt=\count346
+\@anim@@tmlnfile=\read3
+\@anim@tmpcnt=\count347
+\c@@anim@ltxcnt=\count348
+\@anim@curlayer=\count349
+\@anim@lineno=\count350
+\@anim@curfield=\count351
+\@anim@@resizeflags=\count352
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/datetime\datetime.sty
+Package: datetime 2015/03/20 v2.60 Date Time Package
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/fmtcount\fmtcount.sty
+Package: fmtcount 2020/01/30 v3.07
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/fmtcount\fcprefix.sty
+Package: fcprefix 2012/09/28
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/fmtcount\fcnumparser.sty
+Package: fcnumparser 2017/06/15
+\fc@digit@counter=\count353
+))
+\c@padzeroesN=\count354
+\fc@tmpcatcode=\count355
+\@DT@modctr=\count356
+\@ordinalctr=\count357
+\@orgargctr=\count358
+\@strctr=\count359
+\@tmpstrctr=\count360
+\@DT@loopN=\count361
+\@DT@X=\count362
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/datetime\datetime-defaults.sty
+Package: datetime-defaults 2013/09/10
+)
+\@day=\count363
+\@month=\count364
+\@year=\count365
+\c@HOUR=\count366
+\c@HOURXII=\count367
+\c@MINUTE=\count368
+\c@TOHOUR=\count369
+\c@TOMINUTE=\count370
+\c@SECOND=\count371
+\currenthour=\count372
+\currentminute=\count373
+\currentsecond=\count374
+Package datetime Info: No datetime.cfg file found, using default settings on input line 308.
+\@dtctr=\count375
+\dayofyear=\count376
+\dayofweek=\count377
+LaTeX Info: Redefining \today on input line 736.
+\dt@a=\toks50
+\dt@b=\toks51
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty
+Package: pgf 2021/05/15 v3.1.9a (3.1.9a)
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfnodeparttextbox=\box83
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@nodesepstart=\dimen303
+\pgf@nodesepend=\dimen304
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2021/05/15 v3.1.9a (3.1.9a)
+)) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/pgfplots\pgfplots.sty (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.revision.tex)
+Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.sty (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.sty (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkeys.sty (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex)) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex)) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor.code.tex
+Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex)
+\pgffor@iter=\dimen305
+\pgffor@skip=\dimen306
+\pgffor@stack=\toks52
+\pgffor@toks=\toks53
+)) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz\tikz.code.tex
+Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@plot@mark@count=\count378
+\pgfplotmarksize=\dimen307
+)
+\tikz@lastx=\dimen308
+\tikz@lasty=\dimen309
+\tikz@lastxsaved=\dimen310
+\tikz@lastysaved=\dimen311
+\tikz@lastmovetox=\dimen312
+\tikz@lastmovetoy=\dimen313
+\tikzleveldistance=\dimen314
+\tikzsiblingdistance=\dimen315
+\tikz@figbox=\box84
+\tikz@figbox@bg=\box85
+\tikz@tempbox=\box86
+\tikz@tempbox@bg=\box87
+\tikztreelevel=\count379
+\tikznumberofchildren=\count380
+\tikznumberofcurrentchild=\count381
+\tikz@fig@count=\count382
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfmatrixcurrentrow=\count383
+\pgfmatrixcurrentcolumn=\count384
+\pgf@matrix@numberofcolumns=\count385
+)
+\tikz@expandcount=\count386
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.code.tex (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotscore.code.tex
+\t@pgfplots@toka=\toks54
+\t@pgfplots@tokb=\toks55
+\t@pgfplots@tokc=\toks56
+\pgfplots@tmpa=\dimen316
+\c@pgfplots@coordindex=\count387
+\c@pgfplots@scanlineindex=\count388
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/sys\pgfplotssysgeneric.code.tex)) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\pgfplotslibrary.code.tex) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/oldpgfcompatib\pgfplotsoldpgfsupp_loader.code.tex (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryfpu.code.tex)) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotsutil.code.tex (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsliststructure.code.tex) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsliststructureext.code.tex) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsarray.code.tex
+\c@pgfplotsarray@tmp=\count389
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsmatrix.code.tex) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/numtable\pgfplotstableshared.code.tex
+\c@pgfplotstable@counta=\count390
+\t@pgfplotstable@a=\toks57
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsdeque.code.tex) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotsbinary.code.tex (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotsbinary.data.code.tex)) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotsutil.verb.code.tex) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\pgflibrarypgfplots.surfshading.code.tex
+\c@pgfplotslibrarysurf@no=\count391
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/sys\pgflibrarypgfplots.surfshading.pgfsys-pdftex.def))) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotscolormap.code.tex (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotscolor.code.tex)) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsstackedplots.code.tex) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsplothandlers.code.tex (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsmeshplothandler.code.tex (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsmeshplotimage.code.tex))) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.scaling.code.tex) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotscoordprocessing.code.tex) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.errorbars.code.tex) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.markers.code.tex) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsticks.code.tex) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.paths.code.tex) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.code.tex (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduledecorations.code.tex
+\pgfdecoratedcompleteddistance=\dimen317
+\pgfdecoratedremainingdistance=\dimen318
+\pgfdecoratedinputsegmentcompleteddistance=\dimen319
+\pgfdecoratedinputsegmentremainingdistance=\dimen320
+\pgf@decorate@distancetomove=\dimen321
+\pgf@decorate@repeatstate=\count392
+\pgfdecorationsegmentamplitude=\dimen322
+\pgfdecorationsegmentlength=\dimen323
+)
+\tikz@lib@dec@box=\box88
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.pathmorphing.code.tex (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/decorations\pgflibrarydecorations.pathmorphing.code.tex)) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.pathreplacing.code.tex (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/decorations\pgflibrarydecorations.pathreplacing.code.tex)) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\tikzlibrarypgfplots.contourlua.code.tex)
+\pgfplots@numplots=\count393
+\pgfplots@xmin@reg=\dimen324
+\pgfplots@xmax@reg=\dimen325
+\pgfplots@ymin@reg=\dimen326
+\pgfplots@ymax@reg=\dimen327
+\pgfplots@zmin@reg=\dimen328
+\pgfplots@zmax@reg=\dimen329
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryplotmarks.code.tex
+File: tikzlibraryplotmarks.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryplotmarks.code.tex
+File: pgflibraryplotmarks.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/grffile\grffile.sty
+Package: grffile 2019/11/11 v2.1 Extended file name support for graphics (legacy)
+Package grffile Info: This package is an empty stub for compatibility on input line 40.
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.code.tex
+File: tikzlibraryshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.misc.code.tex
+File: tikzlibraryshapes.misc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.misc.code.tex
+File: pgflibraryshapes.misc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.symbols.code.tex
+File: tikzlibraryshapes.symbols.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.symbols.code.tex
+File: pgflibraryshapes.symbols.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.arrows.code.tex
+File: tikzlibraryshapes.arrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.arrows.code.tex
+File: pgflibraryshapes.arrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.callouts.code.tex (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.callouts.code.tex)) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.multipart.code.tex
+File: tikzlibraryshapes.multipart.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.multipart.code.tex
+File: pgflibraryshapes.multipart.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfnodepartlowerbox=\box89
+\pgfnodeparttwobox=\box90
+\pgfnodepartthreebox=\box91
+\pgfnodepartfourbox=\box92
+\pgfnodeparttwentybox=\box93
+\pgfnodepartnineteenbox=\box94
+\pgfnodeparteighteenbox=\box95
+\pgfnodepartseventeenbox=\box96
+\pgfnodepartsixteenbox=\box97
+\pgfnodepartfifteenbox=\box98
+\pgfnodepartfourteenbox=\box99
+\pgfnodepartthirteenbox=\box100
+\pgfnodeparttwelvebox=\box101
+\pgfnodepartelevenbox=\box102
+\pgfnodeparttenbox=\box103
+\pgfnodepartninebox=\box104
+\pgfnodeparteightbox=\box105
+\pgfnodepartsevenbox=\box106
+\pgfnodepartsixbox=\box107
+\pgfnodepartfivebox=\box108
+))) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryarrows.code.tex
+File: tikzlibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryarrows.code.tex
+File: pgflibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\arrowsize=\dimen330
+)) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryautomata.code.tex
+File: tikzlibraryautomata.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarytrees.code.tex
+File: tikzlibrarytrees.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen331
+\lightrulewidth=\dimen332
+\cmidrulewidth=\dimen333
+\belowrulesep=\dimen334
+\belowbottomsep=\dimen335
+\aboverulesep=\dimen336
+\abovetopsep=\dimen337
+\cmidrulesep=\dimen338
+\cmidrulekern=\dimen339
+\defaultaddspace=\dimen340
+\@cmidla=\count394
+\@cmidlb=\count395
+\@aboverulesep=\dimen341
+\@belowrulesep=\dimen342
+\@thisruleclass=\count396
+\@lastruleclass=\count397
+\@thisrulewidth=\dimen343
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype.sty
+Package: microtype 2021/12/10 v3.0b Micro-typographical refinements (RS)
+\MT@toks=\toks58
+\MT@count=\count398
+\MT@tempbox=\box109
+LaTeX Info: Redefining \leftprotrusion on input line 1010.
+LaTeX Info: Redefining \rightprotrusion on input line 1018.
+LaTeX Info: Redefining \textls on input line 1173.
+\MT@outer@kern=\dimen344
+LaTeX Info: Redefining \textmicrotypecontext on input line 1759.
+\MT@listname@count=\count399
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype-pdftex.def
+File: microtype-pdftex.def 2021/12/10 v3.0b Definitions specific to pdftex (RS)
+LaTeX Info: Redefining \lsstyle on input line 897.
+LaTeX Info: Redefining \lslig on input line 897.
+\MT@outer@space=\skip72
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype.cfg
+File: microtype.cfg 2021/12/10 v3.0b microtype main configuration file (RS)
+)) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/base\glossaries.sty
+Package: glossaries 2020/03/19 v4.46 (NLCT)
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/mfirstuc\mfirstuc.sty
+Package: mfirstuc 2017/11/14 v2.06 (NLCT)
+\@glsmfirst=\toks59
+\@glsmrest=\toks60
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/textcase\textcase.sty
+Package: textcase 2019/09/14 v1.00 Text only upper/lower case changing (DPC)
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/xfor\xfor.sty
+Package: xfor 2009/02/05 v1.05 (NLCT)
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/datatool\datatool-base.sty
+Package: datatool-base 2019/09/27 v2.32 (NLCT)
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/substr\substr.sty
+Package: substr 2009/10/20 v1.2 Handle substrings
+\c@su@anzahl=\count400
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/datatool\datatool-fp.sty
+Package: datatool-fp 2019/09/27 v2.32 (NLCT)
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp.sty
+Package: fp 1995/04/02
+ `Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/fp\defpattern.sty
+Package: defpattern 1994/10/12
+\actioncount=\count401
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-basic.sty
+Package: fp-basic 1996/05/13
+\FP@xs=\count402
+\FP@xia=\count403
+\FP@xib=\count404
+\FP@xfa=\count405
+\FP@xfb=\count406
+\FP@rega=\count407
+\FP@regb=\count408
+\FP@regs=\count409
+\FP@times=\count410
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-addons.sty
+Package: fp-addons 1995/03/15
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-snap.sty
+Package: fp-snap 1995/04/05
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-exp.sty
+Package: fp-exp 1995/04/03
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-trigo.sty
+Package: fp-trigo 1995/04/14
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-pas.sty
+Package: fp-pas 1994/08/29
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-random.sty
+Package: fp-random 1995/02/23
+\FPseed=\count411
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-eqn.sty
+Package: fp-eqn 1995/04/03
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-upn.sty
+Package: fp-upn 1996/10/21
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-eval.sty
+Package: fp-eval 1995/04/03
+)))
+\@dtl@toks=\toks61
+\@dtl@tmpcount=\count412
+\dtl@tmplength=\skip73
+\dtl@sortresult=\count413
+\@dtl@numgrpsepcount=\count414
+\@dtl@datatype=\count415
+\dtl@codeA=\count416
+\dtl@codeB=\count417
+\@dtl@foreach@level=\count418
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/base\glossaries-compatible-307.sty
+Package: glossaries-compatible-307 2020/03/19 v4.46 (NLCT)
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/tracklang\tracklang.sty
+Package: tracklang 2020/06/30 v1.5 (NLCT) Track Languages
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/tracklang\tracklang.tex)) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/glossaries-english\glossaries-english.ldf
+File: glossaries-english.ldf 2014/11/23 v1.0
+)
+\gls@level=\count419
+\@gls@tmpb=\toks62
+\gls@tmplen=\skip74
+\glskeylisttok=\toks63
+\glslabeltok=\toks64
+\glsshorttok=\toks65
+\glslongtok=\toks66
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/styles\glossary-hypernav.sty
+Package: glossary-hypernav 2020/03/19 v4.46 (NLCT)
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/styles\glossary-list.sty
+Package: glossary-list 2020/03/19 v4.46 (NLCT)
+\glslistdottedwidth=\skip75
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/styles\glossary-long.sty
+Package: glossary-long 2020/03/19 v4.46 (NLCT)
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/tools\longtable.sty
+Package: longtable 2021-05-07 v4.16 Multi-page Table package (DPC)
+\LTleft=\skip76
+\LTright=\skip77
+\LTpre=\skip78
+\LTpost=\skip79
+\LTchunksize=\count420
+\LTcapwidth=\dimen345
+\LT@head=\box110
+\LT@firsthead=\box111
+\LT@foot=\box112
+\LT@lastfoot=\box113
+\LT@gbox=\box114
+\LT@cols=\count421
+\LT@rows=\count422
+\c@LT@tables=\count423
+\c@LT@chunks=\count424
+\LT@p@ftn=\toks67
+)
+\glsdescwidth=\skip80
+\glspagelistwidth=\skip81
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/styles\glossary-super.sty
+Package: glossary-super 2020/03/19 v4.46 (NLCT)
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/supertabular\supertabular.sty
+Package: supertabular 2020/02/02 v4.1g the supertabular environment
+\c@tracingst=\count425
+\ST@wd=\dimen346
+\ST@rightskip=\skip82
+\ST@leftskip=\skip83
+\ST@parfillskip=\skip84
+\ST@pageleft=\dimen347
+\ST@headht=\dimen348
+\ST@tailht=\dimen349
+\ST@pagesofar=\dimen350
+\ST@pboxht=\dimen351
+\ST@lineht=\dimen352
+\ST@prevht=\dimen353
+\ST@toadd=\dimen354
+\ST@dimen=\dimen355
+\ST@pbox=\box115
+)) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/styles\glossary-tree.sty
+Package: glossary-tree 2020/03/19 v4.46 (NLCT)
+\glstreeindent=\skip85
+)) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/colortbl\colortbl.sty
+Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+Package: array 2021/04/20 v2.5e Tabular extension package (FMi)
+\col@sep=\dimen356
+\ar@mcellbox=\box116
+\extrarowheight=\dimen357
+\NC@list=\toks68
+\extratabsurround=\skip86
+\backup@length=\skip87
+\ar@cellbox=\box117
+)
+\everycr=\toks69
+\minrowclearance=\skip88
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/natbib\natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip89
+\bibsep=\skip90
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count426
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/natbib\bibentry.sty
+Package: bibentry 2007/10/30 1.5 (PWD)
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/sansmath\sansmath.sty
+Package: sansmath 2007/02/28  ver 1.1 Donald Arseneau
+\c@mv@sans=\count427
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `sans'
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 103.
+LaTeX Font Info:    Overwriting math alphabet `\mathsfsl' in version `sans'
+(Font)                  OT1/cmss/m/sl --> OT1/cmss/m/sl on input line 104.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `sans'
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 105.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `sans'
+(Font)                  OML/cmm/m/it --> OML/cmm/m/it on input line 109.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `sans'
+(Font)                  OMS/cmsy/m/n --> OMS/cmsy/m/n on input line 110.
+LaTeX Font Info:    Overwriting math alphabet `\mathsfbf' in version `sans'
+(Font)                  OT1/cmss/bx/sl --> OT1/cmss/bx/n on input line 112.
+\symEulerGreek=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `EulerGreek' in version `sans'
+(Font)                  U/eur/m/n --> U/eur/m/n on input line 136.
+\@eugreekOffset=\count428
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerfontthemeprofessionalfonts.sty) (Defense.aux)
+\openout1 = `Defense.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 233.
+LaTeX Font Info:    ... okay on input line 233.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 233.
+LaTeX Font Info:    ... okay on input line 233.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 233.
+LaTeX Font Info:    ... okay on input line 233.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 233.
+LaTeX Font Info:    ... okay on input line 233.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 233.
+LaTeX Font Info:    ... okay on input line 233.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 233.
+LaTeX Font Info:    ... okay on input line 233.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 233.
+LaTeX Font Info:    ... okay on input line 233.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 233.
+LaTeX Font Info:    ... okay on input line 233.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 233.
+LaTeX Font Info:    ... okay on input line 233.
+LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 233.
+LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 233.
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/cbfonts-fd\lgrcmr.fd
+File: lgrcmr.fd 2017/07/29 v1.2 Greek European Computer Regular
+)
+LaTeX Font Info:    ... okay on input line 233.
+
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: includehead includefoot 
+* h-part:(L,W,R)=(14.22636pt, 381.79135pt, 59.22636pt)
+* v-part:(T,H,B)=(0.0pt, 256.0748pt, 0.0pt)
+* \paperwidth=455.24408pt
+* \paperheight=256.0748pt
+* \textwidth=381.79135pt
+* \textheight=227.62207pt
+* \oddsidemargin=-58.04362pt
+* \evensidemargin=-58.04362pt
+* \topmargin=-72.26999pt
+* \headheight=14.22636pt
+* \headsep=0.0pt
+* \topskip=11.0pt
+* \footskip=14.22636pt
+* \marginparwidth=4.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count429
+\scratchdimen=\dimen358
+\scratchbox=\box118
+\nofMPsegments=\count430
+\nofMParguments=\count431
+\everyMPshowfont=\toks70
+\MPscratchCnt=\count432
+\MPscratchDim=\dimen359
+\MPnumerator=\count433
+\makeMPintoPDFobject=\count434
+\everyMPtoPDFconversion=\toks71
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+Package hyperref Info: Link coloring OFF on input line 233.
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count435
+)
+LaTeX Info: Redefining \ref on input line 233.
+LaTeX Info: Redefining \pageref on input line 233.
+LaTeX Info: Redefining \nameref on input line 233.
+ (Defense.out) (Defense.out)
+\@outlinefile=\write5
+\openout5 = `Defense.out'.
+
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator-basic-dictionary-English.dict
+Dictionary: translator-basic-dictionary, Language: English 
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator-bibliography-dictionary-English.dict
+Dictionary: translator-bibliography-dictionary, Language: English 
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator-environment-dictionary-English.dict
+Dictionary: translator-environment-dictionary, Language: English 
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator-months-dictionary-English.dict
+Dictionary: translator-months-dictionary, Language: English 
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator-numbers-dictionary-English.dict
+Dictionary: translator-numbers-dictionary, Language: English 
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator-theorem-dictionary-English.dict
+Dictionary: translator-theorem-dictionary, Language: English 
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: longtable package is loaded.
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/caption\ltcaption.sty
+Package: ltcaption 2020/05/30 v1.4b longtable captions (AR)
+)
+Package caption Info: supertabular package is loaded.
+Package caption Info: wrapfig package is loaded.
+Package caption Info: End \AtBeginDocument code.
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/fmtcount\fc-english.def
+File: fc-english.def 2016/01/12
+)
+Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
+
+LaTeX Info: Redefining \microtypecontext on input line 233.
+Package microtype Info: Applying patch `item' on input line 233.
+Package microtype Info: Applying patch `toc' on input line 233.
+Package microtype Info: Applying patch `eqnum' on input line 233.
+
+Package microtype Warning: Unable to apply patch `footnote' on input line 233.
+
+Package microtype Info: Generating PDF output.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: Automatic font expansion enabled (level 2),
+(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
+Package microtype Info: Using default expansion set `alltext-nott'.
+LaTeX Info: Redefining \showhyphens on input line 233.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of interword spacing.
+Package microtype Info: No adjustment of character kerning.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `cmss' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+(Defense.nav)
+<./img//logocorner.png, id=72, 505.89pt x 137.5539pt>
+File: ./img//logocorner.png Graphic file (type png)
+<use ./img//logocorner.png>
+Package pdftex.def Info: ./img//logocorner.png  used on input line 233.
+(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
+ (Defense.bbl) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
+)
+LaTeX Font Info:    Trying to load font information for U+msa on input line 239.
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 239.
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+LaTeX Font Info:    Trying to load font information for U+eur on input line 239.
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\ueur.fd
+File: ueur.fd 2013/01/14 v3.01 Euler Roman
+) (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-eur.cfg
+File: mt-eur.cfg 2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
+)
+<./img//logo.png, id=74, 791.95876pt x 542.025pt>
+File: ./img//logo.png Graphic file (type png)
+<use ./img//logo.png>
+Package pdftex.def Info: ./img//logo.png  used on input line 239.
+(pdftex.def)             Requested size: 87.73802pt x 60.04472pt.
+ [1
+
+{C:/Users/sjroo/AppData/Local/MiKTeX/pdftex/config/pdftex.map} <./img//logo.png>]
+File: ./img//logocorner.png Graphic file (type png)
+<use ./img//logocorner.png>
+Package pdftex.def Info: ./img//logocorner.png  used on input line 255.
+(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
+ [2
+
+ <./img//logocorner.png>] (Defense.toc)
+File: ./img//logocorner.png Graphic file (type png)
+<use ./img//logocorner.png>
+Package pdftex.def Info: ./img//logocorner.png  used on input line 260.
+(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
+ [3
+
+] (Defense.toc)
+File: ./img//logocorner.png Graphic file (type png)
+<use ./img//logocorner.png>
+Package pdftex.def Info: ./img//logocorner.png  used on input line 263.
+(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
+ [4
+
+]
+File: ./img//logocorner.png Graphic file (type png)
+<use ./img//logocorner.png>
+Package pdftex.def Info: ./img//logocorner.png  used on input line 264.
+(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
+ [5
+
+]
+LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 297.
+ (C:\Users\sjroo\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmss.fd
+File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `cmss' (encoding: TS1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+File: ./img//logocorner.png Graphic file (type png)
+<use ./img//logocorner.png>
+Package pdftex.def Info: ./img//logocorner.png  used on input line 297.
+(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
+ [6
+
+]
+File: ./img//logocorner.png Graphic file (type png)
+<use ./img//logocorner.png>
+Package pdftex.def Info: ./img//logocorner.png  used on input line 297.
+(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
+ [7
+
+]
+File: ./img//logocorner.png Graphic file (type png)
+<use ./img//logocorner.png>
+Package pdftex.def Info: ./img//logocorner.png  used on input line 297.
+(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
+ [8
+
+] (tikz/msnb.tex)
+File: ./img//logocorner.png Graphic file (type png)
+<use ./img//logocorner.png>
+Package pdftex.def Info: ./img//logocorner.png  used on input line 346.
+(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
+ [9
+
+] (tikz/drum.tex)
+File: ./img//logocorner.png Graphic file (type png)
+<use ./img//logocorner.png>
+Package pdftex.def Info: ./img//logocorner.png  used on input line 346.
+(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
+ [10
+
+]
+File: ./img//logocorner.png Graphic file (type png)
+<use ./img//logocorner.png>
+Package pdftex.def Info: ./img//logocorner.png  used on input line 379.
+(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
+ [11
+
+]pdfTeX warning (ext4): destination with the same identifier (name{cite.PetersonMS}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.379 \end{frame}
+                 pdfTeX warning (ext4): destination with the same identifier (name{cite.CarterPHD}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.379 \end{frame}
+                 
+File: ./img//logocorner.png Graphic file (type png)
+<use ./img//logocorner.png>
+Package pdftex.def Info: ./img//logocorner.png  used on input line 379.
+(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
+ [12
+
+]pdfTeX warning (ext4): destination with the same identifier (name{cite.PetersonMS}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.379 \end{frame}
+                 pdfTeX warning (ext4): destination with the same identifier (name{cite.CarterPHD}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.379 \end{frame}
+                 
+File: ./img//logocorner.png Graphic file (type png)
+<use ./img//logocorner.png>
+Package pdftex.def Info: ./img//logocorner.png  used on input line 379.
+(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
+ [13
+
+]
+File: ./img//logocorner.png Graphic file (type png)
+<use ./img//logocorner.png>
+Package pdftex.def Info: ./img//logocorner.png  used on input line 381.
+(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
+ [14
+
+] (tikz/xs1.tex)
+File: ./img//logocorner.png Graphic file (type png)
+<use ./img//logocorner.png>
+Package pdftex.def Info: ./img//logocorner.png  used on input line 393.
+(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
+ [15
+
+] (tikz/xs2.tex)
+File: ./img//logocorner.png Graphic file (type png)
+<use ./img//logocorner.png>
+Package pdftex.def Info: ./img//logocorner.png  used on input line 393.
+(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
+ [16
+
+] (tikz/xs3.tex)
+File: ./img//logocorner.png Graphic file (type png)
+<use ./img//logocorner.png>
+Package pdftex.def Info: ./img//logocorner.png  used on input line 393.
+(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
+ [17
+
+]
+<./img//Xenon/start-up.png, id=372, 462.528pt x 346.896pt>
+File: ./img//Xenon/start-up.png Graphic file (type png)
+<use ./img//Xenon/start-up.png>
+Package pdftex.def Info: ./img//Xenon/start-up.png  used on input line 413.
+(pdftex.def)             Requested size: 188.98776pt x 141.7413pt.
+<./img//Xenon/noHe.png, id=373, 462.528pt x 346.896pt>
+File: ./img//Xenon/noHe.png Graphic file (type png)
+<use ./img//Xenon/noHe.png>
+Package pdftex.def Info: ./img//Xenon/noHe.png  used on input line 413.
+(pdftex.def)             Requested size: 188.98776pt x 141.7413pt.
+File: ./img//logocorner.png Graphic file (type png)
+<use ./img//logocorner.png>
+Package pdftex.def Info: ./img//logocorner.png  used on input line 413.
+(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
+ [18
+
+ <./img//Xenon/start-up.png> <./img//Xenon/noHe.png>] (tikz/stripper.tex)
+File: ./img//logocorner.png Graphic file (type png)
+<use ./img//logocorner.png>
+Package pdftex.def Info: ./img//logocorner.png  used on input line 431.
+(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
+ [19
+
+] (tikz/stripper.tex)
+File: ./img//logocorner.png Graphic file (type png)
+<use ./img//logocorner.png>
+Package pdftex.def Info: ./img//logocorner.png  used on input line 431.
+(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
+ [20
+
+]
+<./img//Xenon/8hr_restart.png, id=424, 462.528pt x 346.896pt>
+File: ./img//Xenon/8hr_restart.png Graphic file (type png)
+<use ./img//Xenon/8hr_restart.png>
+Package pdftex.def Info: ./img//Xenon/8hr_restart.png  used on input line 450.
+(pdftex.def)             Requested size: 188.98776pt x 141.7413pt.
+<./img//Xenon/standby_restart.png, id=425, 462.528pt x 346.896pt>
+File: ./img//Xenon/standby_restart.png Graphic file (type png)
+<use ./img//Xenon/standby_restart.png>
+Package pdftex.def Info: ./img//Xenon/standby_restart.png  used on input line 450.
+(pdftex.def)             Requested size: 188.98776pt x 141.7413pt.
+File: ./img//logocorner.png Graphic file (type png)
+<use ./img//logocorner.png>
+Package pdftex.def Info: ./img//logocorner.png  used on input line 450.
+(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
+ [21
+
+ <./img//Xenon/8hr_restart.png> <./img//Xenon/standby_restart.png>] (Defense.toc)
+File: ./img//logocorner.png Graphic file (type png)
+<use ./img//logocorner.png>
+Package pdftex.def Info: ./img//logocorner.png  used on input line 453.
+(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
+ [22
+
+]
+File: ./img//logocorner.png Graphic file (type png)
+<use ./img//logocorner.png>
+Package pdftex.def Info: ./img//logocorner.png  used on input line 454.
+(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
+ [23
+
+] (tikz/feedback.tex)
+File: ./img//logocorner.png Graphic file (type png)
+<use ./img//logocorner.png>
+Package pdftex.def Info: ./img//logocorner.png  used on input line 460.
+(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
+ [24
+
+] (tikz/feedforward.tex)
+File: ./img//logocorner.png Graphic file (type png)
+<use ./img//logocorner.png>
+Package pdftex.def Info: ./img//logocorner.png  used on input line 467.
+(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
+ [25
+
+]
+File: ./img//logocorner.png Graphic file (type png)
+<use ./img//logocorner.png>
+Package pdftex.def Info: ./img//logocorner.png  used on input line 504.
+(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
+ [26
+
+]
+Overfull \vbox (3.69789pt too high) detected at line 504
+ []
+
+File: ./img//logocorner.png Graphic file (type png)
+<use ./img//logocorner.png>
+Package pdftex.def Info: ./img//logocorner.png  used on input line 504.
+(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
+[27
+
+]
+File: ./img//logocorner.png Graphic file (type png)
+<use ./img//logocorner.png>
+Package pdftex.def Info: ./img//logocorner.png  used on input line 504.
+(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
+ [28
+
+]
+File: ./img//logocorner.png Graphic file (type png)
+<use ./img//logocorner.png>
+Package pdftex.def Info: ./img//logocorner.png  used on input line 504.
+(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
+ [29
+
+]
+File: ./img//logocorner.png Graphic file (type png)
+<use ./img//logocorner.png>
+Package pdftex.def Info: ./img//logocorner.png  used on input line 507.
+(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
+ [30
+
+] (tikz/passive.tex)
+Overfull \hbox (3.98529pt too wide) in paragraph at lines 19--565
+ [] 
+ []
+
+File: ./img//logocorner.png Graphic file (type png)
+<use ./img//logocorner.png>
+Package pdftex.def Info: ./img//logocorner.png  used on input line 565.
+(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
+[31
+
+]
+File: ./img//logocorner.png Graphic file (type png)
+<use ./img//logocorner.png>
+Package pdftex.def Info: ./img//logocorner.png  used on input line 565.
+(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
+ [32
+
+]pdfTeX warning (ext4): destination with the same identifier (name{cite.PetersonMS}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.565  \end{frame}
+                  
+File: ./img//logocorner.png Graphic file (type png)
+<use ./img//logocorner.png>
+Package pdftex.def Info: ./img//logocorner.png  used on input line 565.
+(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
+ [33
+
+]
+File: ./img//logocorner.png Graphic file (type png)
+<use ./img//logocorner.png>
+Package pdftex.def Info: ./img//logocorner.png  used on input line 565.
+(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
+ [34
+
+]pdfTeX warning (ext4): destination with the same identifier (name{cite.Kerlin}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.565  \end{frame}
+                  
+File: ./img//logocorner.png Graphic file (type png)
+<use ./img//logocorner.png>
+Package pdftex.def Info: ./img//logocorner.png  used on input line 565.
+(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
+ [35
+
+]
+File: ./img//logocorner.png Graphic file (type png)
+<use ./img//logocorner.png>
+Package pdftex.def Info: ./img//logocorner.png  used on input line 616.
+(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
+ [36
+
+] (tikz/thoughtexperiment-1.tex)
+File: ./img//logocorner.png Graphic file (type png)
+<use ./img//logocorner.png>
+Package pdftex.def Info: ./img//logocorner.png  used on input line 616.
+(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
+ [37
+
+] (tikz/thoughtexperiment-2.tex)
+File: ./img//logocorner.png Graphic file (type png)
+<use ./img//logocorner.png>
+Package pdftex.def Info: ./img//logocorner.png  used on input line 616.
+(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
+ [38
+
+] (tikz/thoughtexperiment-3.tex)
+File: ./img//logocorner.png Graphic file (type png)
+<use ./img//logocorner.png>
+Package pdftex.def Info: ./img//logocorner.png  used on input line 616.
+(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
+ [39
+
+] (tikz/thoughtexperiment-4.tex)
+File: ./img//logocorner.png Graphic file (type png)
+<use ./img//logocorner.png>
+Package pdftex.def Info: ./img//logocorner.png  used on input line 616.
+(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
+ [40
+
+] (tikz/pgf/prefilter_step-Prz.tex) (tikz/pgf/prefilter_ramp-Prz.tex)
+File: ./img//logocorner.png Graphic file (type png)
+<use ./img//logocorner.png>
+Package pdftex.def Info: ./img//logocorner.png  used on input line 633.
+(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
+ [41
+
+] (Defense.toc)
+File: ./img//logocorner.png Graphic file (type png)
+<use ./img//logocorner.png>
+Package pdftex.def Info: ./img//logocorner.png  used on input line 635.
+(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
+ [42
+
+] (tikz/ReactorControlLoop.tex)
+File: ./img//logocorner.png Graphic file (type png)
+<use ./img//logocorner.png>
+Package pdftex.def Info: ./img//logocorner.png  used on input line 641.
+(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
+ [43
+
+]
+File: ./img//logocorner.png Graphic file (type png)
+<use ./img//logocorner.png>
+Package pdftex.def Info: ./img//logocorner.png  used on input line 643.
+(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
+ [44
+
+] (tikz/sketch.tex
+<./img//sketch/Sawtooth.png, id=820, 1065.9825pt x 499.8675pt>
+File: ./img//sketch/Sawtooth.png Graphic file (type png)
+<use ./img//sketch/Sawtooth.png>
+Package pdftex.def Info: ./img//sketch/Sawtooth.png  used on input line 31.
+(pdftex.def)             Requested size: 212.36317pt x 99.58464pt.
+<./img//sketch/serpent.png, id=821, 386.94562pt x 91.84312pt>
+File: ./img//sketch/serpent.png Graphic file (type png)
+<use ./img//sketch/serpent.png>
+Package pdftex.def Info: ./img//sketch/serpent.png  used on input line 32.
+(pdftex.def)             Requested size: 299.70853pt x 71.13188pt.
+)
+File: ./img//logocorner.png Graphic file (type png)
+<use ./img//logocorner.png>
+Package pdftex.def Info: ./img//logocorner.png  used on input line 649.
+(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
+ [45
+
+ <./img//sketch/Sawtooth.png> <./img//sketch/serpent.png>]
+File: ./img//logocorner.png Graphic file (type png)
+<use ./img//logocorner.png>
+Package pdftex.def Info: ./img//logocorner.png  used on input line 652.
+(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
+ [46
+
+] (Defense.toc)
+File: ./img//logocorner.png Graphic file (type png)
+<use ./img//logocorner.png>
+Package pdftex.def Info: ./img//logocorner.png  used on input line 655.
+(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
+ [47
+
+]
+File: ./img//logocorner.png Graphic file (type png)
+<use ./img//logocorner.png>
+Package pdftex.def Info: ./img//logocorner.png  used on input line 656.
+(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
+ [48
+
+]
+File: ./img//logocorner.png Graphic file (type png)
+<use ./img//logocorner.png>
+Package pdftex.def Info: ./img//logocorner.png  used on input line 658.
+(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
+ [49
+
+]
+File: ./img//logocorner.png Graphic file (type png)
+<use ./img//logocorner.png>
+Package pdftex.def Info: ./img//logocorner.png  used on input line 660.
+(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
+ [50
+
+] (Defense.toc)
+File: ./img//logocorner.png Graphic file (type png)
+<use ./img//logocorner.png>
+Package pdftex.def Info: ./img//logocorner.png  used on input line 662.
+(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
+ [51
+
+]
+File: ./img//logocorner.png Graphic file (type png)
+<use ./img//logocorner.png>
+Package pdftex.def Info: ./img//logocorner.png  used on input line 670.
+(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
+ [52
+
+]
+File: ./img//logo.png Graphic file (type png)
+<use ./img//logo.png>
+Package pdftex.def Info: ./img//logo.png  used on input line 676.
+(pdftex.def)             Requested size: 294.0594pt x 201.25848pt.
+ [53
+
+] (Defense.bbl
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\translate ' on input line 1.
+
+pdfTeX warning (ext4): destination with the same identifier (name{cite.RootXe}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.9 \bibitem{RootXe}
+                    pdfTeX warning (ext4): destination with the same identifier (name{cite.RootWSC}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.15 \bibitem{RootWSC}
+                      pdfTeX warning (ext4): destination with the same identifier (name{cite.PetersonMS}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.21 \bibitem{PetersonMS}
+                         pdfTeX warning (ext4): destination with the same identifier (name{cite.CarterPHD}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.27 \bibitem{CarterPHD}
+                        pdfTeX warning (ext4): destination with the same identifier (name{cite.Kerlin}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.34 \bibitem{Kerlin}
+                     pdfTeX warning (ext4): destination with the same identifier (name{cite.DH}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.39 \bibitem{DH}
+                 pdfTeX warning (ext4): destination with the same identifier (name{cite.Lamarsh}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.44 \bibitem{Lamarsh}
+                      )
+File: ./img//logocorner.png Graphic file (type png)
+<use ./img//logocorner.png>
+Package pdftex.def Info: ./img//logocorner.png  used on input line 683.
+(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
+ [54
+
+]
+\tf@nav=\write6
+\openout6 = `Defense.nav'.
+
+\tf@toc=\write7
+\openout7 = `Defense.toc'.
+
+\tf@snm=\write8
+\openout8 = `Defense.snm'.
+
+ (Defense.aux)
+Package rerunfilecheck Info: File `Defense.out' has not changed.
+(rerunfilecheck)             Checksum: 5A34F459B463C7F82D0E326C184DEE8D;2307.
+ ) 
+Here is how much of TeX's memory you used:
+ 51170 strings out of 478927
+ 1158215 string characters out of 2852536
+ 1700490 words of memory out of 3000000
+ 67683 multiletter control sequences out of 15000+600000
+ 427738 words of font info for 164 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 128i,23n,124p,1083b,2783s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{glo:lwr} has been referenced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{glo:msnb} has been referenced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{glo:nrc} has been referenced but does not exist, replaced by a fixed one
+
+ <C:\Users\sjroo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcss1095.pk><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss17.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss9.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi10.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi12.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eurm10.pfb>
+Output written on Defense.pdf (54 pages, 1374944 bytes).
+PDF statistics:
+ 1137 PDF objects out of 1200 (max. 8388607)
+ 136 named destinations out of 1000 (max. 500000)
+ 53733 words of extra memory for PDF output out of 61914 (max. 10000000)
+

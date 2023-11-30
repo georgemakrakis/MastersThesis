@@ -296,6 +296,55 @@
     \end{block}
 \end{frame}
 
+\begin{frame}{Molten Salt Nuclear Battery}
+    \begin{columns}
+        %Column 1
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Fuel/Primary Coolant}
+                \only<1>{
+                    \begin{itemize}
+                        \item Self-Contained liquid fueled molten salt micro-reactor 
+                        \item 10 year design
+                        \item 10 MWth using HALEU \UF \; dissolved in \flinak
+                        \item Natural circulation driven
+                    \end{itemize}
+                }
+            \end{block}
+            \begin{block}{Control Drums}
+                \only<2>{
+                    \begin{itemize}
+                        \item Criticality is manipulated using axial control drums 
+                        \item Neutron absorber plate covering cylinders of neutron reflector
+                        \item Drums are rotated to point more absorber towards the core to insert negative control reactivity
+                    \end{itemize}
+                }
+            \end{block}
+            
+                
+                
+                
+        \end{column}
+        %Column 2
+        \begin{column}{0.5\textwidth}
+            \only<1>{
+            \begin{figure}[!ht]
+                \centering
+                \input{./tikz/msnb}
+                \caption{Simplified schematic drawing of an \acs{msnb}}
+                \label{fig:tikz_msnb}
+            \end{figure}
+            }
+            \only<2>{
+                \begin{figure}
+                    %\animategraphics[width=0.8\textwidth, controls, loop, trim=12cm 1.5cm 2cm 2.5cm]{1}{./img/Plotter/drum/XY-}{0}{2}+
+                    \resizebox*{\textwidth}{!}{\input{./tikz/drum}}
+                    \caption{MsNB Control Drums}
+                \end{figure}
+            }
+        \end{column}
+    \end{columns}
+    \end{frame}
+
 \begin{frame}{Previous and Present Work}
     \begin{block}{Neutronics \cite{PetersonMS}}
         \only<1>{
@@ -633,38 +682,5 @@
     \bibliography{./rcs/References}
 \end{frame}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{Molten Salt Nuclear Battery}
-\begin{columns}
-    %Column 1
-    \begin{column}{0.5\textwidth}
-        \begin{itemize}
-            \item Self-Contained liquid fueled molten salt micro-reactor - 10 year design
-            \item 1 MW design using HALEU \UF  dissolved in \flinak
-            \item Criticality is manipulated using axial control drums \begin{itemize}
-                \item Neutron absorber plate covering cylinders of neutron reflector
-                \item Drums are rotated to point more absorber towards the core to insert negative control reactivity
-            \end{itemize}
-        \end{itemize}
-    \end{column}
-    %Column 2
-    \begin{column}{0.5\textwidth}
-        \only<1-2>{
-        \begin{figure}[!ht]
-            \centering
-            \input{./tikz/msnb}
-            \caption{Simplified schematic drawing of an \acs{msnb}}
-            \label{fig:tikz_msnb}
-        \end{figure}
-        }
-        \only<3>{
-            \begin{figure}
-                %\animategraphics[width=0.8\textwidth, controls, loop, trim=12cm 1.5cm 2cm 2.5cm]{1}{./img/Plotter/drum/XY-}{0}{2}
-                \caption{MsNB Control Drums}
-            \end{figure}
-        }
-    \end{column}
-\end{columns}
-\end{frame}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
