@@ -30,6 +30,7 @@
 
 \usepackage{booktabs} % nice rules (thick lines) for tables
 \usepackage{microtype} % improves typography for PDF
+\usepackage{verbatim}
 
 \usepackage[acronym,nomain,nonumberlist]{glossaries}
 %\makenoidxglossaries
@@ -261,8 +262,6 @@
 \stopoutlineframe}
 
 \section{The Molten Salt Nuclear Battery}
-\subsection{Introduction}
-
 \begin{frame}{Background}
     \begin{block}{Gen-IV}
         \only<1>{
@@ -377,78 +376,6 @@
     \blfootnote{\tiny\cite{PetersonMS} \tiny\bibentry{PetersonMS}}
     \blfootnote{\tiny\cite{CarterPHD} \tiny\bibentry{CarterPHD}}
 \end{frame}
-
-\subsection{Xenon-135 Stripping In-Brief}
-
-\begin{frame}{Fission Product Poisoning}
-    \only<1>{\begin{figure}[h]\centering
-        \resizebox{0.9\textwidth}{!}{\input{./tikz/xs1}}
-        \end{figure}}
-    \only<2>{\begin{figure}[h]\centering
-        \resizebox{0.9\textwidth}{!}{\input{./tikz/xs2}}
-        \end{figure}}
-    \only<3>{\begin{figure}[h]\centering
-        \resizebox{0.9\textwidth}{!}{\input{./tikz/xs3}}
-        \end{figure}}
-\end{frame}
-
-\setbeamercolor{background canvas}{bg=White}
-\begin{frame}{Xenon Dynamics}
-    \begin{columns}
-        \begin{column}{0.5\textwidth}
-            \begin{figure}[ht!]
-                \centering
-                \includegraphics[width=0.99\textwidth]{Xenon/start-up}
-                \caption{Concentration of \I and \Xe vs. time following start-up}
-            \end{figure}
-        \end{column}
-        \begin{column}{0.5\textwidth}
-            \begin{figure}[ht!]
-                \centering
-                \includegraphics[width=0.99\textwidth]{Xenon/noHe}
-                \caption{Concentration of \I and \Xe vs. time following reactor scram}
-            \end{figure}
-        \end{column}
-    \end{columns}
-\end{frame}
-\setbeamercolor{background canvas}{bg=Chrome}
-
-\begin{frame}{Xenon Stripper}
-    \begin{figure}[ht!]\centering
-        \resizebox*{0.95\textwidth}{!}{\input{./tikz/stripper}}
-         \caption{Schematic Drawing of Xenon Stripping Module}
-    \end{figure}
-\only<2>{\tiny
-    \begin{equation*}\label{eq:diffXe_strip}
-        \frac{dXe}{dt} =
-        \underbrace{\gamma_{Xe}\Sigma_{f}^{F}{\phi}(t)}_{\text{Fission Yield}}
-        +\underbrace{\lambda_{I}I(t)}_{\text{Precursor Decay}}
-        -\underbrace{\lambda_{Xe}Xe(t)}_{\text{Beta Decay}}
-        -\underbrace{Xe(t)\sigma_{a}^{Xe}{\phi}(t)}_{\text{Radiative Capture}}
-        -\underbrace{ \frac{Xe(t)}{\tau_{salt}}\left( H^*\frac{\dot{V}_{salt}}{\dot{V}_{He}}+1 \right)^{-1}}_{\text{Stripping}}
-\end{equation*}
-}
-\end{frame}
-
-\setbeamercolor{background canvas}{bg=White}
-\begin{frame}{Xenon Stripping Dynamics}
-    \begin{columns}
-        \begin{column}{0.5\textwidth}
-            \begin{figure}[ht!]
-                \centering
-                \includegraphics[width=0.99\textwidth]{Xenon/8hr_restart}\caption{Concentration of \I and \Xe vs. time following reactor scram - Restart Mode}
-            \end{figure}
-        \end{column}
-        \begin{column}{0.5\textwidth}
-            \begin{figure}[ht!]
-                \centering
-                \includegraphics[width=0.99\textwidth]{Xenon/standby_restart}
-                \caption{Concentration of \I and \Xe vs. time following reactor scram - Standby Mode}
-            \end{figure}
-        \end{column}
-    \end{columns}
-\end{frame}
-\setbeamercolor{background canvas}{bg=Chrome}
 
 \section{Process Control Engineering}
 \subsection{Control Theory}
@@ -648,6 +575,44 @@
     \end{figure}
 \end{frame}
 
+\begin{frame}{Geometry Specification}
+    \begin{columns}
+    \begin{column}{0.6\textwidth}
+    \begin{figure}
+        \only<1>{\includegraphics[width=0.95\textwidth]{Plotter/0.0/MSNB_geom2}}
+        \only<2>{\includegraphics[width=0.95\textwidth]{Plotter/boronburn/results/10MW/MSNB_geom4}}
+        \only<3>{\includegraphics[width=00.95\textwidth]{Plotter/0.0/MSNB_geom6}}
+        \only<4>{\includegraphics[width=0.95\textwidth]{Plotter/0.0/MSNB_geom8}}
+        \only<5>{\includegraphics[width=00.95\textwidth]{Plotter/0.0/MSNB_geom4}}
+        \only<6>{\includegraphics[width=00.95\textwidth]{Plotter/180.0/MSNB_geom4}}
+        \only<7>{\includegraphics[width=00.95\textwidth]{Plotter/112.0/MSNB_geom4}}
+    \end{figure}
+    \end{column}
+    \begin{column}{0.4\textwidth}
+        \begin{figure}[ht!]
+            \centering
+            \includegraphics[height=0.95\textheight]{Plotter/0.0/MSNB_geom1.png}
+        \end{figure}
+    \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Physics Cards}
+    \begin{block}{Criticality}
+        \begin{itemize}
+            \item Set Pop 1,000,000 500 100 1
+            \item Set Power 1e7 \%10MWth
+        \end{itemize}
+    \end{block}
+    \begin{block}{Burn-Up}
+        \begin{itemize}
+            \item Set mcvol 10,000,000
+            \item Set nbuf
+            \item Set printm 1 1e-10
+            \item Set inventory "all"
+        \end{itemize}
+    \end{block}
+\end{frame}
 
 \subsection{Process Simulation}
 
@@ -683,4 +648,79 @@
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{comment}
+    \begin{frame}{Fission Product Poisoning}
+    \only<1>{\begin{figure}[h]\centering
+        \resizebox{0.9\textwidth}{!}{\input{./tikz/xs1}}
+        \end{figure}}
+    \only<2>{\begin{figure}[h]\centering
+        \resizebox{0.9\textwidth}{!}{\input{./tikz/xs2}}
+        \end{figure}}
+    \only<3>{\begin{figure}[h]\centering
+        \resizebox{0.9\textwidth}{!}{\input{./tikz/xs3}}
+        \end{figure}}
+\end{frame}
+
+\setbeamercolor{background canvas}{bg=White}
+\begin{frame}{Xenon Dynamics}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{figure}[ht!]
+                \centering
+                \includegraphics[width=0.99\textwidth]{Xenon/start-up}
+                \caption{Concentration of \I and \Xe vs. time following start-up}
+            \end{figure}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{figure}[ht!]
+                \centering
+                \includegraphics[width=0.99\textwidth]{Xenon/noHe}
+                \caption{Concentration of \I and \Xe vs. time following reactor scram}
+            \end{figure}
+        \end{column}
+    \end{columns}
+\end{frame}
+\setbeamercolor{background canvas}{bg=Chrome}
+
+\begin{frame}{Xenon Stripper}
+    \begin{figure}[ht!]\centering
+        \resizebox*{0.95\textwidth}{!}{\input{./tikz/stripper}}
+         \caption{Schematic Drawing of Xenon Stripping Module}
+    \end{figure}
+\only<2>{\tiny
+    \begin{equation*}\label{eq:diffXe_strip}
+        \frac{dXe}{dt} =
+        \underbrace{\gamma_{Xe}\Sigma_{f}^{F}{\phi}(t)}_{\text{Fission Yield}}
+        +\underbrace{\lambda_{I}I(t)}_{\text{Precursor Decay}}
+        -\underbrace{\lambda_{Xe}Xe(t)}_{\text{Beta Decay}}
+        -\underbrace{Xe(t)\sigma_{a}^{Xe}{\phi}(t)}_{\text{Radiative Capture}}
+        -\underbrace{ \frac{Xe(t)}{\tau_{salt}}\left( H^*\frac{\dot{V}_{salt}}{\dot{V}_{He}}+1 \right)^{-1}}_{\text{Stripping}}
+\end{equation*}
+}
+\end{frame}
+
+\setbeamercolor{background canvas}{bg=White}
+\begin{frame}{Xenon Stripping Dynamics}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{figure}[ht!]
+                \centering
+                \includegraphics[width=0.99\textwidth]{Xenon/8hr_restart}\caption{Concentration of \I and \Xe vs. time following reactor scram - Restart Mode}
+            \end{figure}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{figure}[ht!]
+                \centering
+                \includegraphics[width=0.99\textwidth]{Xenon/standby_restart}
+                \caption{Concentration of \I and \Xe vs. time following reactor scram - Standby Mode}
+            \end{figure}
+        \end{column}
+    \end{columns}
+\end{frame}
+\setbeamercolor{background canvas}{bg=Chrome}
+\end{comment}
+
 \end{document}
+
+
