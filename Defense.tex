@@ -218,7 +218,7 @@
 \newcommand{\Po}[1][]{$^{#1}Po$ }
 \newcommand{\Ra}[1][]{$^{#1}Ra$ }
 %%%%%
-
+\newcommand{\sci}[1][]{$\times$ 10\textsuperscript{#1} }
 %%%%%
 
 \title[MSNB Modeling \& Control]{Dynamic System Modeling \& PID Controller Design \\for a Molten Salt Microreactor}
@@ -571,7 +571,7 @@
 \begin{frame}{Serpent Modeling}
     \begin{figure}[!ht]
         \centering
-        \resizebox{\textwidth}{!}{\input{tikz/sketch}}
+        \resizebox{\textwidth}{!}{\input{tikz/sketch-serpent}}
     \end{figure}
 \end{frame}
 
@@ -615,17 +615,260 @@
 \end{frame}
 
 \subsection{Process Simulation}
+\begin{frame}{Process Simulation}
+    \begin{figure}[!ht]
+        \centering
+        \resizebox{\textwidth}{!}{\input{tikz/sketch-python}}
+    \end{figure}
+\end{frame}
 
+\begin{frame}{Multi-Physics Approach}
+    \begin{block}{Natural Circulation (NC)}
+        \only<1>{
+            Updates flow rate by equating buoyant and frictional forces
+            \begin{equation*}\label{eq:saltvelo}
+                v = \sqrt{\nicefrac{2gh(\varrho_{cold}-\varrho_{hot})}{\xi\varrho}}
+            \end{equation*}
+            }
+    \end{block}
+    \begin{block}{Reactor Point Kinetics (RPK)}
+        \only<2>{
+            Updates core power by summing passive reactivity feedback
+            \begin{equation*}\label{eq:flowreac}
+                \rho_f = -\frac{L}{L+H}\beta_{eff}\left(1-e^{-v\alpha_f}  \right)
+            \end{equation*}
+            \begin{equation*}
+                \Delta\rho_T = \alpha_T\Delta T
+            \end{equation*}
+            \begin{equation*}
+                \tau = \frac{l^{*}}{\rho}
+                     +\frac{\beta_{eff}-\rho}{\lambda\rho + \dot{\rho}}
+            \end{equation*}
+            \begin{equation*}
+                Q_{core}[t+\delta t] = Q_{core}[t] e^{\nicefrac{\delta t}{\tau}}
+            \end{equation*}
+        }
+    \end{block}
+    \begin{block}{Uniform-State Uniform-Flow (USUF)}
+        \only<3>{
+            Updates temperature profile based on flow rate and core/heat-exchanger powers
+
+            \begin{equation*}
+                \delta x A_x \frac{d\varrho}{dt} = v A_x(\varrho_{in}-\varrho_{out})
+            \end{equation*}
+            \begin{equation*}\label{eq:T2mu}
+                mu_x = \varrho(T_x)\delta x A_x c_p\left(\nicefrac{T_x+T_r}{2}\right)(T_x-T_r) 
+            \end{equation*}
+            \begin{equation*}
+                \frac{d(mu)}{dt} = mu_{enter} - mu_{exit} + Q_{c.v.}
+            \end{equation*}
+            \begin{equation*}
+                mu[t+\delta t] = mu[t] + \delta t\frac{d(mu)}{dt}[t]
+            \end{equation*}
+        }
+    \end{block}
+\end{frame}
+
+\begin{frame}{Logic Flow}
+    \begin{figure}[!ht]
+        \centering
+        \resizebox{!}{\textheight}{\input{tikz/peace}}
+    \end{figure}
+\end{frame}
 
 \section{Results and Analysis}
 \subsection{Control-Reactivity Curve}
+\begin{frame}{Control-Reactivity Curve}
+    \begin{figure}[!ht]
+        \centering
+        \only<1>{\includegraphics[height=0.9\textheight]{/CurveFits/eqXe}}
+        \only<2-3>{\includegraphics[height=0.9\textheight]{/CurveFits/depletion}}
+    \end{figure}
+    \only<3>{
+        \begin{equation*}
+            \rho = c_0 + c_1\theta + c_2\theta^2 + c_3\theta^3 + c_4\theta^4
+        \end{equation*}
+    }
+\end{frame}
 
-\subsection{Controller Tuning}
+\begin{frame}{Curve Fits}
+    \begin{table}[bh!]
+        \centering\footnotesize
+        \begin{tabular}{c|ccccc|cc}
+        \hline
+        Years & c\textsubscript{4} \sci[9] & c\textsubscript{3} \sci[6] & c\textsubscript{2} \sci[4] & c\textsubscript{1} \sci[2] & c\textsubscript{0} & root ($^o$) & slope ($pcm/^o$) \\ \hline
+        0.0 & -2.797 & 1.789 & -4.361 & 4.829 & -2.009 & 111.41 & 224.24 \\
+        0.5 & -2.755 & 1.755 & -4.272 & 4.732 & -1.976 & 113.69 & 203.69 \\
+        1.0 & -1.838 & 1.253 & -3.253 & 3.826 & -1.682 & 115.79 & 189.71 \\
+        1.5 & -2.533 & 1.632 & -3.253 & 4.507 & -1.909 & 117.38 & 175.96 \\
+        2.0 & -2.418 & 1.578 & -3.930 & 4.440 & -1.895 & 119.45 & 161.06 \\\hline
+        2.5 & -1.461 & 1.026 & -2.750 & 3.337 & -1.515 & 121.06 & 152.71 \\
+        3.0 & -1.137 & 0.856 & -2.425 & 3.070 & -1.440 & 122.67 & 146.08 \\
+        3.5 & -2.054 & 1.357 & -3.433 & 3.953 & -1.727 & 124.58 & 130.85 \\
+        4.0 & -2.527 & 1.617 & -3.967 & 4.438 & -1.892 & 126.46 & 120.67 \\\hline
+        4.5 & -2.869 & 1.831 & -4.460 & 4.935 & -2.081 & 128.35 & 111.30 \\
+        5.0 & -2.338 & 1.520 & -3.785 & 4.291 & -1.855 & 130.55 & 102.04 \\
+        5.5 & -1.471 & 1.054 & -2.852 & 3.467 & -1.585 & 132.29 & 93.34 \\
+        6.0 & -2.626 & 1.702 & -4.211 & 4.729 & -2.027 & 134.96 & 83.90 \\\hline
+        6.5 & -1.672 & 1.141 & -2.985 & 3.550 & -1.607 & 137.45 & 77.56 \\
+        7.0 & -3.321 & 2.095 & -5.036 & 5.492 & -2.292 & 139.19 & 69.73 \\
+        7.5 & -2.419 & 1.579 & -3.936 & 4.459 & -1.932 & 142.69 & 59.45 \\
+        8.0 & -7.991 & 0.648 & -1.960 & 2.623 & -1.305 & 144.62 & 55.65 \\
+        \end{tabular}
+        \label{tab:Depletionfit}
+    \end{table}
+\end{frame}
 
-\subsection{Demand Response}
+\subsection{Up-Step}
+\begin{frame}{Autonomous Response}
+    \begin{figure}[ht!]
+        \centering
+        \only<1>{\includegraphics[width=\textwidth]{Simulator/StepUp/Auto/t_vs_Qt}}
+        \only<2>{\includegraphics[width=\textwidth]{Simulator/StepUp/Auto/t_vs_reac}}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Controller Tuning}
+    \begin{block}{Ziegler Nichols Tuning Methodology}
+        \only<1-2>{
+            \begin{itemize}
+                \item P-Only Control
+                \item Increase gain until sustained oscillations
+                \item<2> Ultimate gain - 3 $\times$ 10\textsuperscript{-4} degree/kW
+                \item<2> Ultimate period - 45 seconds
+            \end{itemize}
+        }
+    \end{block}
+    \begin{block}{Controller Parameters}
+        \only<3->{
+            \begin{itemize}
+                \item Controller gain - 1.35 $\times$ 10\textsuperscript{-4} degree/kW at 0 years 
+                \item Controller-Actuator gain - 30.3 pcm/MW
+                \item Integral time-constant - 37.5 seconds
+                \item Derivative time-constant - 0 sec
+                \item Controller bias - 111.41$^o$ at zero years, 144.62$^o$ at eight years
+            \end{itemize}
+        }
+        
+    \end{block}
+\end{frame}
+
+\begin{frame}{Controlled Response}
+    \begin{figure}[ht!]
+        \centering
+        \only<1>{\includegraphics[width=\textwidth]{Simulator/StepUp/Control/t_vs_Qt}}
+        \only<2>{\includegraphics[width=\textwidth]{Simulator/StepUp/Control/t_vs_angle}}
+    \end{figure}
+\end{frame}
+
+\subsection{Down-Step}
+\begin{frame}{Autonomous Response}
+    \begin{figure}[ht!]
+        \centering
+        \only<1>{\includegraphics[width=\textwidth]{Simulator/StepDown/Auto/t_vs_Qt}}
+        \only<2>{\includegraphics[width=\textwidth]{Simulator/StepDown/Auto/auto_reac_phase}}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Controlled Response}
+    \begin{figure}[ht!]
+        \centering
+        \only<1>{\includegraphics[width=\textwidth]{Simulator/StepDown/Control/t_vs_Qt}}
+        \only<2>{\includegraphics[width=\textwidth]{Simulator/StepDown/Control/contr_reac_phase}}
+    \end{figure}
+\end{frame}
+
+\subsection{Start-Up}
+\begin{frame}{Autonomous Response}
+    \begin{figure}[ht!]
+        \centering
+        \only<1>{\includegraphics[width=\textwidth]{Simulator/StartUp/Auto/t_vs_Qt}}
+        \only<2>{\includegraphics[width=\textwidth]{Simulator/StartUp/Auto/animateTx_t/t-1}}
+        \only<3>{\includegraphics[width=\textwidth]{Simulator/StartUp/Auto/animateTx_t/t-200}}
+        \only<4>{\includegraphics[width=\textwidth]{Simulator/StartUp/Auto/animateTx_t/t-300}}
+        \only<5>{\includegraphics[width=\textwidth]{Simulator/StartUp/Auto/animateTx_t/t-900}}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Controlled Response}
+    \begin{figure}[ht!]
+        \centering
+        \only<1>{\includegraphics[width=\textwidth]{Simulator/StartUp/Control/t_vs_Qt}}
+        \only<2>{\includegraphics[width=\textwidth]{Simulator/StartUp/Control/animateTx_t/t-1}}
+        \only<3>{\includegraphics[width=\textwidth]{Simulator/StartUp/Control/animateTx_t/t-50}}
+        \only<4>{\includegraphics[width=\textwidth]{Simulator/StartUp/Control/animateTx_t/t-90}}
+        \only<5>{\includegraphics[width=\textwidth]{Simulator/StartUp/Control/animateTx_t/t-120}}
+    \end{figure}
+\end{frame}
+
+
+\subsection{Shut-Down}
+\begin{frame}{Autonomous Response}
+    \begin{figure}[ht!]
+        \centering
+        \only<1>{\includegraphics[width=\textwidth]{Simulator/ShutDown/Auto/t_vs_Qt}}
+        \only<2>{\includegraphics[width=\textwidth]{Simulator/ShutDown/Auto/animateTx_t/t-1}}
+        \only<3>{\includegraphics[width=\textwidth]{Simulator/ShutDown/Auto/animateTx_t/t-60}}
+        \only<4>{\includegraphics[width=\textwidth]{Simulator/ShutDown/Auto/animateTx_t/t-120}}
+        \only<5>{\includegraphics[width=\textwidth]{Simulator/ShutDown/Auto/animateTx_t/t-140}}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Controlled Response}
+    \begin{figure}[ht!]
+        \centering
+        \only<1>{\includegraphics[width=\textwidth]{Simulator/ShutDown/Control/t_vs_Qt}}
+        \only<2>{\includegraphics[width=\textwidth]{Simulator/ShutDown/Control/animateTx_t/t-1}}
+        \only<3>{\includegraphics[width=\textwidth]{Simulator/ShutDown/Control/animateTx_t/t-40}}
+        \only<4>{\includegraphics[width=\textwidth]{Simulator/ShutDown/Control/animateTx_t/t-60}}
+        \only<5>{\includegraphics[width=\textwidth]{Simulator/ShutDown/Control/animateTx_t/t-120}}
+    \end{figure}
+\end{frame}
+
+\subsection{Demand-Response}
+\begin{frame}{Autonomous Response}
+    \begin{figure}[ht!]
+        \centering
+        \only<1>{\includegraphics[width=\textwidth]{Simulator/DemandResponse/Auto/t_vs_Qt}}
+        \only<2>{\includegraphics[width=\textwidth]{Simulator/DemandResponse/Auto/auto_reac_phase}}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Controlled Response}
+    \begin{figure}[ht!]
+        \centering
+        \only<1>{\includegraphics[width=\textwidth]{Simulator/DemandResponse/Control/t_vs_Qt}}
+        \only<2>{\includegraphics[width=\textwidth]{Simulator/DemandResponse/Control/contr_reac_phase}}
+    \end{figure}
+\end{frame}
+
 
 \section{Conclusions}
-
+\begin{frame}{Conclusions}
+    \begin{block}{Summary of Models Completed}
+        \only<1>{
+            \begin{itemize}
+                \item Alternating criticality and burn-up models were developed in Serpent 2 to study the evolution of the control-reactivity curve over the life of the MSNB
+        \item Mass and energy conservation were coupled to reactor point kinetics in a Python 3.10 code to predict the flow rate and power of the \acs{msnb}
+        \item Time and spatial advancement routine simulates heat and mass advection according to uniform-state uniform-flow
+        \item A pre-filter reshapes the heat exchanger demand
+        \item A PI controller compliments the passive feedback mechanisms inherent to the \acs{msnb}
+            \end{itemize}
+        }
+        \begin{block}{Results In-Brief}
+            \only<2>{
+                \begin{itemize}
+                    \item The \acs{msnb} design studied in this work has an excess reactivity of 4.834\% at hot-standby
+                    \item After 8 full-power years, the \acs{msnb} fuel is depleted enough to no longer provide enough excess reactivity for effective operation
+                    \item The autonomous response is stable, but significantly under-damped for 20\% step functions and ramp functions of up to 400 kW/min
+                    \item The PI controller with improves the settling time by an order of magnitude for step functions, and essentially eliminates overshoot for ramp functions
+                    \item With a robust controller, the MSNB is suitable for load-following
+                \end{itemize}
+            }
+            
+        \end{block}
+    \end{block}
+\end{frame}
 
 \begin{frame}{Acknowledgements}
     \centering
@@ -639,7 +882,6 @@
     \includegraphics[height=0.9\textheight]{logo}
     \vfill
 \end{frame}
-
 
 \begin{frame}[allowframebreaks]{References}
     \bibliographystyle{./rcs/neup}

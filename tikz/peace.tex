@@ -1,0 +1,17 @@
+\begin{tikzpicture}
+    %blocks
+    \draw (-2,-0.5) rectangle (-1,0.5) node[pos=0.5]{NC};
+    \draw (1,-0.5) rectangle (2,0.5) node[pos=0.5]{RPK};
+    \draw (-0.5,1.9) rectangle (0.5,2.9) node[pos=0.5]{USUF};
+    
+    %inner arrows
+    \draw[->] (0,1.9) -- (0,0.85);
+    \draw node at (0,0.7) {\tiny Temp-Profile};
+    \draw[->] (-0.2,0.55) -- (-0.95,0);
+    \draw[->] (0.2,0.55) -- (0.95,0);
+
+    %outer arrows
+    \draw[->] (-1.75,0.5) arc (180:112.5:2) node[midway,sloped,above]{\tiny Flow Rate};
+    \draw[->] (-1.5,-0.5) arc (225:315:2) node[midway,sloped,below]{\tiny Flow Rate};
+    \draw[->] (1.75,0.5) arc (0:67.5:2) node[midway,sloped,above]{\tiny Core Power};
+\end{tikzpicture}

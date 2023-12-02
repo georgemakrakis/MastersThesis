@@ -1,0 +1,34 @@
+\begin{tikzpicture}
+    %Pre-filter
+    \draw[->] (-6,0)node[anchor=east]{$\dot{Q}_{HEX}$} -- (-4,0);
+    \draw (-4,-0.5) rectangle (-3,0.5) node[pos=0.5]{$F(s)$};
+    %Sum
+    \draw[->] (-3,0) -- (-2,0) node[pos=0.5,anchor=south]{$\dot{Q}_{Core}^{SP}$};
+    \draw (-1.75,0) circle (0.25) node{\scriptsize$-$};
+    %Controller
+    \draw[->] (-1.5,0) -- (-0.5,0)node[pos=0.5,anchor=south]{$e(s)$};
+    \draw (-0.5,-0.5) rectangle (0.5,0.5) node[pos=0.5]{$C(s)$};
+    \draw[->] (0.5,0) -- (1.5,0) node[pos=0.5,anchor=south]{$u(s)$};
+    %Actuator
+    \draw (1.5,-0.5) rectangle (2.5,0.5) node[pos=0.5]{$A(s)$};
+    \draw[->] (2.5,0) -- (3.5,0);
+    %Process
+    \draw (3.5,-0.5) rectangle (4.5,0.5) node[pos=0.5]{$P(s)$};
+    \draw[->] (4.5,0) -- (6.5,0) node[anchor=west]{$\dot{Q}_{Core}$};
+    %Transducer
+    \draw[->] (5.5,0) -- (5.5,-1.5) -- (2.5,-1.5);
+    \draw (1.5,-2) rectangle (2.5,-1) node[pos=0.5]{$H(s)$} ;
+    \draw[->] (1.5,-1.5) -- (-1.75,-1.5) -- (-1.75,-0.25);
+    %Passive Feedback
+    \draw[->] (5.5,0) -- (5.5,1.5) -- (4.5,1.5);
+    \draw[->] (-5,0) -- (-5,1.5) -- (3.5,1.5);
+    \draw (3.5,1) rectangle (4.5,2) node[pos=0.5]{$G(s)$};
+    \draw[->] (4,1) -- (4,0.5);
+
+    \node at (0,4) {\includegraphics[height=2.5cm]{sketch/py}};
+    \node at (5.5,4) {\includegraphics[height=2.5cm]{sketch/laptop}};
+
+    \draw[red,very thick] (4,0.75) circle (1.5);
+    \draw[->,red,thick] (1.4,3.5) -- (3.3,2.1);
+    \draw[->,red,thick] (5.2,2.7) -- (4.7,2.1);
+\end{tikzpicture}
