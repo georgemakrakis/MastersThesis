@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.9.1)  4 DEC 2023 19:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.9.1)  5 DEC 2023 17:21
 entering extended mode
 **c:/Users/sjroo/OneDrive/Documents/UIdaho/Thesis/Dissertation/Defense.tex
 (c:/Users/sjroo/OneDrive/Documents/UIdaho/Thesis/Dissertation/Defense.tex
@@ -2139,581 +2139,501 @@ Package pdftex.def Info: ./img//logocorner.png  used on input line 723.
 <./img//Simulator/StepUp/Auto/t_vs_Qt.png, id=1021, 578.16pt x 325.215pt>
 File: ./img//Simulator/StepUp/Auto/t_vs_Qt.png Graphic file (type png)
 <use ./img//Simulator/StepUp/Auto/t_vs_Qt.png>
-Package pdftex.def Info: ./img//Simulator/StepUp/Auto/t_vs_Qt.png  used on input line 730.
+Package pdftex.def Info: ./img//Simulator/StepUp/Auto/t_vs_Qt.png  used on input line 731.
 (pdftex.def)             Requested size: 381.79135pt x 214.7567pt.
 
-Overfull \vbox (16.47215pt too high) detected at line 730
+Overfull \vbox (16.47215pt too high) detected at line 731
  []
 
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 730.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 731.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
 [57
 
  <./img//Simulator/StepUp/Auto/t_vs_Qt.png>]
-<./img//Simulator/StepUp/Auto/t_vs_reac.png, id=1036, 578.16pt x 325.215pt>
-File: ./img//Simulator/StepUp/Auto/t_vs_reac.png Graphic file (type png)
-<use ./img//Simulator/StepUp/Auto/t_vs_reac.png>
-Package pdftex.def Info: ./img//Simulator/StepUp/Auto/t_vs_reac.png  used on input line 730.
-(pdftex.def)             Requested size: 381.79135pt x 214.7567pt.
+<./img//Simulator/StepUp/Auto/note-t_vs_Qt.png, id=1036, 836.799pt x 470.631pt>
+File: ./img//Simulator/StepUp/Auto/note-t_vs_Qt.png Graphic file (type png)
+<use ./img//Simulator/StepUp/Auto/note-t_vs_Qt.png>
+Package pdftex.def Info: ./img//Simulator/StepUp/Auto/note-t_vs_Qt.png  used on input line 731.
+(pdftex.def)             Requested size: 381.79135pt x 214.72629pt.
 
-Overfull \vbox (2.87215pt too high) detected at line 730
+Overfull \vbox (16.44174pt too high) detected at line 731
  []
 
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 730.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 731.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
 [58
+
+ <./img//Simulator/StepUp/Auto/note-t_vs_Qt.png>]
+<./img//Simulator/StepUp/Auto/t_vs_reac.png, id=1051, 578.16pt x 325.215pt>
+File: ./img//Simulator/StepUp/Auto/t_vs_reac.png Graphic file (type png)
+<use ./img//Simulator/StepUp/Auto/t_vs_reac.png>
+Package pdftex.def Info: ./img//Simulator/StepUp/Auto/t_vs_reac.png  used on input line 731.
+(pdftex.def)             Requested size: 381.79135pt x 214.7567pt.
+
+Overfull \vbox (2.87215pt too high) detected at line 731
+ []
+
+File: ./img//logocorner.png Graphic file (type png)
+<use ./img//logocorner.png>
+Package pdftex.def Info: ./img//logocorner.png  used on input line 731.
+(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
+[59
 
  <./img//Simulator/StepUp/Auto/t_vs_reac.png>]
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 755.
-(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
- [59
-
-]
-File: ./img//logocorner.png Graphic file (type png)
-<use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 755.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 756.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
  [60
 
 ]
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 755.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 756.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
  [61
 
 ]
-<./img//Simulator/StepUp/Control/t_vs_Qt.png, id=1091, 578.16pt x 325.215pt>
+File: ./img//logocorner.png Graphic file (type png)
+<use ./img//logocorner.png>
+Package pdftex.def Info: ./img//logocorner.png  used on input line 756.
+(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
+ [62
+
+]
+<./img//Simulator/StepUp/Control/t_vs_Qt.png, id=1106, 578.16pt x 325.215pt>
 File: ./img//Simulator/StepUp/Control/t_vs_Qt.png Graphic file (type png)
 <use ./img//Simulator/StepUp/Control/t_vs_Qt.png>
-Package pdftex.def Info: ./img//Simulator/StepUp/Control/t_vs_Qt.png  used on input line 763.
+Package pdftex.def Info: ./img//Simulator/StepUp/Control/t_vs_Qt.png  used on input line 765.
 (pdftex.def)             Requested size: 381.79135pt x 214.7567pt.
 
-Overfull \vbox (16.47215pt too high) detected at line 763
+Overfull \vbox (16.47215pt too high) detected at line 765
  []
 
-File: ./img//logocorner.png Graphic file (type png)
-<use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 763.
-(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
-[62
-
- <./img//Simulator/StepUp/Control/t_vs_Qt.png>]
-<./img//Simulator/StepUp/Control/t_vs_angle.png, id=1106, 578.16pt x 325.215pt>
-File: ./img//Simulator/StepUp/Control/t_vs_angle.png Graphic file (type png)
-<use ./img//Simulator/StepUp/Control/t_vs_angle.png>
-Package pdftex.def Info: ./img//Simulator/StepUp/Control/t_vs_angle.png  used on input line 763.
-(pdftex.def)             Requested size: 381.79135pt x 214.7567pt.
-
-Overfull \vbox (2.87215pt too high) detected at line 763
- []
-
-File: ./img//logocorner.png Graphic file (type png)
-<use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 763.
-(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
-[63
-
- <./img//Simulator/StepUp/Control/t_vs_angle.png>]
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
 Package pdftex.def Info: ./img//logocorner.png  used on input line 765.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
- [64
+[63
 
-]
-<./img//Simulator/StepDown/Auto/t_vs_Qt.png, id=1143, 578.16pt x 325.215pt>
-File: ./img//Simulator/StepDown/Auto/t_vs_Qt.png Graphic file (type png)
-<use ./img//Simulator/StepDown/Auto/t_vs_Qt.png>
-Package pdftex.def Info: ./img//Simulator/StepDown/Auto/t_vs_Qt.png  used on input line 772.
-(pdftex.def)             Requested size: 381.79135pt x 214.7567pt.
+ <./img//Simulator/StepUp/Control/t_vs_Qt.png>]
+<./img//Simulator/StepUp/Control/note-t_vs_Qt.png, id=1121, 866.802pt x 487.494pt>
+File: ./img//Simulator/StepUp/Control/note-t_vs_Qt.png Graphic file (type png)
+<use ./img//Simulator/StepUp/Control/note-t_vs_Qt.png>
+Package pdftex.def Info: ./img//Simulator/StepUp/Control/note-t_vs_Qt.png  used on input line 765.
+(pdftex.def)             Requested size: 381.79135pt x 214.72118pt.
 
-Overfull \vbox (16.47215pt too high) detected at line 772
+Overfull \vbox (16.43663pt too high) detected at line 765
  []
 
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 772.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 765.
+(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
+[64
+
+ <./img//Simulator/StepUp/Control/note-t_vs_Qt.png>]
+<./img//Simulator/StepUp/Control/t_vs_angle.png, id=1136, 578.16pt x 325.215pt>
+File: ./img//Simulator/StepUp/Control/t_vs_angle.png Graphic file (type png)
+<use ./img//Simulator/StepUp/Control/t_vs_angle.png>
+Package pdftex.def Info: ./img//Simulator/StepUp/Control/t_vs_angle.png  used on input line 765.
+(pdftex.def)             Requested size: 381.79135pt x 214.7567pt.
+
+Overfull \vbox (2.87215pt too high) detected at line 765
+ []
+
+File: ./img//logocorner.png Graphic file (type png)
+<use ./img//logocorner.png>
+Package pdftex.def Info: ./img//logocorner.png  used on input line 765.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
 [65
 
- <./img//Simulator/StepDown/Auto/t_vs_Qt.png>]
-<./img//Simulator/StepDown/Auto/auto_reac_phase.png, id=1158, 584.6643pt x 347.6187pt>
-File: ./img//Simulator/StepDown/Auto/auto_reac_phase.png Graphic file (type png)
-<use ./img//Simulator/StepDown/Auto/auto_reac_phase.png>
-Package pdftex.def Info: ./img//Simulator/StepDown/Auto/auto_reac_phase.png  used on input line 772.
-(pdftex.def)             Requested size: 343.60988pt x 204.2976pt.
+ <./img//Simulator/StepUp/Control/t_vs_angle.png>]
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 772.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 767.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
  [66
 
- <./img//Simulator/StepDown/Auto/auto_reac_phase.png>]
-<./img//Simulator/StepDown/Control/t_vs_Qt.png, id=1173, 578.16pt x 325.215pt>
-File: ./img//Simulator/StepDown/Control/t_vs_Qt.png Graphic file (type png)
-<use ./img//Simulator/StepDown/Control/t_vs_Qt.png>
-Package pdftex.def Info: ./img//Simulator/StepDown/Control/t_vs_Qt.png  used on input line 780.
+]
+<./img//Simulator/StepDown/Auto/t_vs_Qt.png, id=1173, 578.16pt x 325.215pt>
+File: ./img//Simulator/StepDown/Auto/t_vs_Qt.png Graphic file (type png)
+<use ./img//Simulator/StepDown/Auto/t_vs_Qt.png>
+Package pdftex.def Info: ./img//Simulator/StepDown/Auto/t_vs_Qt.png  used on input line 774.
 (pdftex.def)             Requested size: 381.79135pt x 214.7567pt.
 
-Overfull \vbox (16.47215pt too high) detected at line 780
+Overfull \vbox (16.47215pt too high) detected at line 774
  []
 
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 780.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 774.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
 [67
 
- <./img//Simulator/StepDown/Control/t_vs_Qt.png>]
-<./img//Simulator/StepDown/Control/contr_reac_phase.png, id=1189, 584.6643pt x 344.7279pt>
-File: ./img//Simulator/StepDown/Control/contr_reac_phase.png Graphic file (type png)
-<use ./img//Simulator/StepDown/Control/contr_reac_phase.png>
-Package pdftex.def Info: ./img//Simulator/StepDown/Control/contr_reac_phase.png  used on input line 780.
-(pdftex.def)             Requested size: 343.60988pt x 202.59868pt.
+ <./img//Simulator/StepDown/Auto/t_vs_Qt.png>]
+<./img//Simulator/StepDown/Auto/auto_reac_phase.png, id=1189, 584.6643pt x 347.6187pt>
+File: ./img//Simulator/StepDown/Auto/auto_reac_phase.png Graphic file (type png)
+<use ./img//Simulator/StepDown/Auto/auto_reac_phase.png>
+Package pdftex.def Info: ./img//Simulator/StepDown/Auto/auto_reac_phase.png  used on input line 774.
+(pdftex.def)             Requested size: 343.60988pt x 204.2976pt.
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 780.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 774.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
  [68
 
- <./img//Simulator/StepDown/Control/contr_reac_phase.png>]
+ <./img//Simulator/StepDown/Auto/auto_reac_phase.png>]
+<./img//Simulator/StepDown/Control/t_vs_Qt.png, id=1204, 578.16pt x 325.215pt>
+File: ./img//Simulator/StepDown/Control/t_vs_Qt.png Graphic file (type png)
+<use ./img//Simulator/StepDown/Control/t_vs_Qt.png>
+Package pdftex.def Info: ./img//Simulator/StepDown/Control/t_vs_Qt.png  used on input line 782.
+(pdftex.def)             Requested size: 381.79135pt x 214.7567pt.
+
+Overfull \vbox (16.47215pt too high) detected at line 782
+ []
+
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
 Package pdftex.def Info: ./img//logocorner.png  used on input line 782.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
- [69
+[69
+
+ <./img//Simulator/StepDown/Control/t_vs_Qt.png>]
+<./img//Simulator/StepDown/Control/contr_reac_phase.png, id=1219, 584.6643pt x 344.7279pt>
+File: ./img//Simulator/StepDown/Control/contr_reac_phase.png Graphic file (type png)
+<use ./img//Simulator/StepDown/Control/contr_reac_phase.png>
+Package pdftex.def Info: ./img//Simulator/StepDown/Control/contr_reac_phase.png  used on input line 782.
+(pdftex.def)             Requested size: 343.60988pt x 202.59868pt.
+File: ./img//logocorner.png Graphic file (type png)
+<use ./img//logocorner.png>
+Package pdftex.def Info: ./img//logocorner.png  used on input line 782.
+(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
+ [70
+
+ <./img//Simulator/StepDown/Control/contr_reac_phase.png>]
+File: ./img//logocorner.png Graphic file (type png)
+<use ./img//logocorner.png>
+Package pdftex.def Info: ./img//logocorner.png  used on input line 784.
+(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
+ [71
 
 ]
-<./img//Simulator/StartUp/Auto/t_vs_Qt.png, id=1226, 578.16pt x 325.215pt>
+<./img//Simulator/StartUp/Auto/t_vs_Qt.png, id=1256, 578.16pt x 325.215pt>
 File: ./img//Simulator/StartUp/Auto/t_vs_Qt.png Graphic file (type png)
 <use ./img//Simulator/StartUp/Auto/t_vs_Qt.png>
-Package pdftex.def Info: ./img//Simulator/StartUp/Auto/t_vs_Qt.png  used on input line 792.
+Package pdftex.def Info: ./img//Simulator/StartUp/Auto/t_vs_Qt.png  used on input line 790.
 (pdftex.def)             Requested size: 381.79135pt x 214.7567pt.
 
-Overfull \vbox (16.47215pt too high) detected at line 792
+Overfull \vbox (2.87215pt too high) detected at line 790
  []
 
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 792.
-(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
-[70
-
- <./img//Simulator/StartUp/Auto/t_vs_Qt.png>]
-<./img//Simulator/StartUp/Auto/animateTx_t/t-1.png, id=1241, 578.16pt x 325.215pt>
-File: ./img//Simulator/StartUp/Auto/animateTx_t/t-1.png Graphic file (type png)
-<use ./img//Simulator/StartUp/Auto/animateTx_t/t-1.png>
-Package pdftex.def Info: ./img//Simulator/StartUp/Auto/animateTx_t/t-1.png  used on input line 792.
-(pdftex.def)             Requested size: 381.79135pt x 214.7567pt.
-
-Overfull \vbox (16.47215pt too high) detected at line 792
- []
-
-File: ./img//logocorner.png Graphic file (type png)
-<use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 792.
-(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
-[71
-
- <./img//Simulator/StartUp/Auto/animateTx_t/t-1.png>]
-<./img//Simulator/StartUp/Auto/animateTx_t/t-200.png, id=1256, 578.16pt x 325.215pt>
-File: ./img//Simulator/StartUp/Auto/animateTx_t/t-200.png Graphic file (type png)
-<use ./img//Simulator/StartUp/Auto/animateTx_t/t-200.png>
-Package pdftex.def Info: ./img//Simulator/StartUp/Auto/animateTx_t/t-200.png  used on input line 792.
-(pdftex.def)             Requested size: 381.79135pt x 214.7567pt.
-
-Overfull \vbox (16.47215pt too high) detected at line 792
- []
-
-File: ./img//logocorner.png Graphic file (type png)
-<use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 792.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 790.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
 [72
 
- <./img//Simulator/StartUp/Auto/animateTx_t/t-200.png>]
-<./img//Simulator/StartUp/Auto/animateTx_t/t-300.png, id=1271, 578.16pt x 325.215pt>
-File: ./img//Simulator/StartUp/Auto/animateTx_t/t-300.png Graphic file (type png)
-<use ./img//Simulator/StartUp/Auto/animateTx_t/t-300.png>
-Package pdftex.def Info: ./img//Simulator/StartUp/Auto/animateTx_t/t-300.png  used on input line 792.
+ <./img//Simulator/StartUp/Auto/t_vs_Qt.png>]
+<./img//Simulator/StartUp/Control/t_vs_Qt.png, id=1271, 578.16pt x 325.215pt>
+File: ./img//Simulator/StartUp/Control/t_vs_Qt.png Graphic file (type png)
+<use ./img//Simulator/StartUp/Control/t_vs_Qt.png>
+Package pdftex.def Info: ./img//Simulator/StartUp/Control/t_vs_Qt.png  used on input line 798.
 (pdftex.def)             Requested size: 381.79135pt x 214.7567pt.
 
-Overfull \vbox (16.47215pt too high) detected at line 792
+Overfull \vbox (16.47215pt too high) detected at line 798
  []
 
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 792.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 798.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
 [73
 
- <./img//Simulator/StartUp/Auto/animateTx_t/t-300.png>]
-<./img//Simulator/StartUp/Auto/animateTx_t/t-900.png, id=1287, 578.16pt x 325.215pt>
-File: ./img//Simulator/StartUp/Auto/animateTx_t/t-900.png Graphic file (type png)
-<use ./img//Simulator/StartUp/Auto/animateTx_t/t-900.png>
-Package pdftex.def Info: ./img//Simulator/StartUp/Auto/animateTx_t/t-900.png  used on input line 792.
-(pdftex.def)             Requested size: 381.79135pt x 214.7567pt.
+ <./img//Simulator/StartUp/Control/t_vs_Qt.png>]
+<./img//Simulator/StartUp/Control/note-t_vs_Qt.png, id=1287, 780.516pt x 439.095pt>
+File: ./img//Simulator/StartUp/Control/note-t_vs_Qt.png Graphic file (type png)
+<use ./img//Simulator/StartUp/Control/note-t_vs_Qt.png>
+Package pdftex.def Info: ./img//Simulator/StartUp/Control/note-t_vs_Qt.png  used on input line 798.
+(pdftex.def)             Requested size: 381.79135pt x 214.78322pt.
 
-Overfull \vbox (2.87215pt too high) detected at line 792
+Overfull \vbox (2.89867pt too high) detected at line 798
  []
 
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 792.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 798.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
 [74
 
- <./img//Simulator/StartUp/Auto/animateTx_t/t-900.png>]
-<./img//Simulator/StartUp/Control/t_vs_Qt.png, id=1302, 578.16pt x 325.215pt>
-File: ./img//Simulator/StartUp/Control/t_vs_Qt.png Graphic file (type png)
-<use ./img//Simulator/StartUp/Control/t_vs_Qt.png>
-Package pdftex.def Info: ./img//Simulator/StartUp/Control/t_vs_Qt.png  used on input line 803.
-(pdftex.def)             Requested size: 381.79135pt x 214.7567pt.
-
-Overfull \vbox (16.47215pt too high) detected at line 803
- []
-
+ <./img//Simulator/StartUp/Control/note-t_vs_Qt.png>]
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 803.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 800.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
-[75
+ [75
 
- <./img//Simulator/StartUp/Control/t_vs_Qt.png>]
-<./img//Simulator/StartUp/Control/animateTx_t/t-1.png, id=1317, 578.16pt x 325.215pt>
-File: ./img//Simulator/StartUp/Control/animateTx_t/t-1.png Graphic file (type png)
-<use ./img//Simulator/StartUp/Control/animateTx_t/t-1.png>
-Package pdftex.def Info: ./img//Simulator/StartUp/Control/animateTx_t/t-1.png  used on input line 803.
+]
+<./img//Simulator/ShutDown/Auto/t_vs_Qt.png, id=1324, 578.16pt x 325.215pt>
+File: ./img//Simulator/ShutDown/Auto/t_vs_Qt.png Graphic file (type png)
+<use ./img//Simulator/ShutDown/Auto/t_vs_Qt.png>
+Package pdftex.def Info: ./img//Simulator/ShutDown/Auto/t_vs_Qt.png  used on input line 810.
 (pdftex.def)             Requested size: 381.79135pt x 214.7567pt.
 
-Overfull \vbox (16.47215pt too high) detected at line 803
+Overfull \vbox (16.47215pt too high) detected at line 810
  []
 
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 803.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 810.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
 [76
 
- <./img//Simulator/StartUp/Control/animateTx_t/t-1.png>]
-<./img//Simulator/StartUp/Control/animateTx_t/t-50.png, id=1332, 578.16pt x 325.215pt>
-File: ./img//Simulator/StartUp/Control/animateTx_t/t-50.png Graphic file (type png)
-<use ./img//Simulator/StartUp/Control/animateTx_t/t-50.png>
-Package pdftex.def Info: ./img//Simulator/StartUp/Control/animateTx_t/t-50.png  used on input line 803.
+ <./img//Simulator/ShutDown/Auto/t_vs_Qt.png>]
+<./img//Simulator/ShutDown/Auto/animateTx_t/t-1.png, id=1339, 578.16pt x 325.215pt>
+File: ./img//Simulator/ShutDown/Auto/animateTx_t/t-1.png Graphic file (type png)
+<use ./img//Simulator/ShutDown/Auto/animateTx_t/t-1.png>
+Package pdftex.def Info: ./img//Simulator/ShutDown/Auto/animateTx_t/t-1.png  used on input line 810.
 (pdftex.def)             Requested size: 381.79135pt x 214.7567pt.
 
-Overfull \vbox (16.47215pt too high) detected at line 803
+Overfull \vbox (16.47215pt too high) detected at line 810
  []
 
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 803.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 810.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
 [77
 
- <./img//Simulator/StartUp/Control/animateTx_t/t-50.png>]
-<./img//Simulator/StartUp/Control/animateTx_t/t-90.png, id=1347, 578.16pt x 325.215pt>
-File: ./img//Simulator/StartUp/Control/animateTx_t/t-90.png Graphic file (type png)
-<use ./img//Simulator/StartUp/Control/animateTx_t/t-90.png>
-Package pdftex.def Info: ./img//Simulator/StartUp/Control/animateTx_t/t-90.png  used on input line 803.
+ <./img//Simulator/ShutDown/Auto/animateTx_t/t-1.png>]
+<./img//Simulator/ShutDown/Auto/animateTx_t/t-60.png, id=1354, 578.16pt x 325.215pt>
+File: ./img//Simulator/ShutDown/Auto/animateTx_t/t-60.png Graphic file (type png)
+<use ./img//Simulator/ShutDown/Auto/animateTx_t/t-60.png>
+Package pdftex.def Info: ./img//Simulator/ShutDown/Auto/animateTx_t/t-60.png  used on input line 810.
 (pdftex.def)             Requested size: 381.79135pt x 214.7567pt.
 
-Overfull \vbox (16.47215pt too high) detected at line 803
+Overfull \vbox (16.47215pt too high) detected at line 810
  []
 
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 803.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 810.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
 [78
 
- <./img//Simulator/StartUp/Control/animateTx_t/t-90.png>]
-<./img//Simulator/StartUp/Control/animateTx_t/t-120.png, id=1362, 578.16pt x 325.215pt>
-File: ./img//Simulator/StartUp/Control/animateTx_t/t-120.png Graphic file (type png)
-<use ./img//Simulator/StartUp/Control/animateTx_t/t-120.png>
-Package pdftex.def Info: ./img//Simulator/StartUp/Control/animateTx_t/t-120.png  used on input line 803.
+ <./img//Simulator/ShutDown/Auto/animateTx_t/t-60.png>]
+<./img//Simulator/ShutDown/Auto/animateTx_t/t-120.png, id=1369, 578.16pt x 325.215pt>
+File: ./img//Simulator/ShutDown/Auto/animateTx_t/t-120.png Graphic file (type png)
+<use ./img//Simulator/ShutDown/Auto/animateTx_t/t-120.png>
+Package pdftex.def Info: ./img//Simulator/ShutDown/Auto/animateTx_t/t-120.png  used on input line 810.
 (pdftex.def)             Requested size: 381.79135pt x 214.7567pt.
 
-Overfull \vbox (2.87215pt too high) detected at line 803
+Overfull \vbox (16.47215pt too high) detected at line 810
  []
 
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 803.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 810.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
 [79
 
- <./img//Simulator/StartUp/Control/animateTx_t/t-120.png>]
-File: ./img//logocorner.png Graphic file (type png)
-<use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 805.
-(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
- [80
-
-]
-<./img//Simulator/ShutDown/Auto/t_vs_Qt.png, id=1400, 578.16pt x 325.215pt>
-File: ./img//Simulator/ShutDown/Auto/t_vs_Qt.png Graphic file (type png)
-<use ./img//Simulator/ShutDown/Auto/t_vs_Qt.png>
-Package pdftex.def Info: ./img//Simulator/ShutDown/Auto/t_vs_Qt.png  used on input line 815.
+ <./img//Simulator/ShutDown/Auto/animateTx_t/t-120.png>]
+<./img//Simulator/ShutDown/Auto/animateTx_t/t-140.png, id=1385, 578.16pt x 325.215pt>
+File: ./img//Simulator/ShutDown/Auto/animateTx_t/t-140.png Graphic file (type png)
+<use ./img//Simulator/ShutDown/Auto/animateTx_t/t-140.png>
+Package pdftex.def Info: ./img//Simulator/ShutDown/Auto/animateTx_t/t-140.png  used on input line 810.
 (pdftex.def)             Requested size: 381.79135pt x 214.7567pt.
 
-Overfull \vbox (16.47215pt too high) detected at line 815
+Overfull \vbox (2.87215pt too high) detected at line 810
  []
 
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 815.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 810.
+(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
+[80
+
+ <./img//Simulator/ShutDown/Auto/animateTx_t/t-140.png>]
+<./img//Simulator/ShutDown/Control/t_vs_Qt.png, id=1400, 578.16pt x 325.215pt>
+File: ./img//Simulator/ShutDown/Control/t_vs_Qt.png Graphic file (type png)
+<use ./img//Simulator/ShutDown/Control/t_vs_Qt.png>
+Package pdftex.def Info: ./img//Simulator/ShutDown/Control/t_vs_Qt.png  used on input line 821.
+(pdftex.def)             Requested size: 381.79135pt x 214.7567pt.
+
+Overfull \vbox (16.47215pt too high) detected at line 821
+ []
+
+File: ./img//logocorner.png Graphic file (type png)
+<use ./img//logocorner.png>
+Package pdftex.def Info: ./img//logocorner.png  used on input line 821.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
 [81
 
- <./img//Simulator/ShutDown/Auto/t_vs_Qt.png>]
-<./img//Simulator/ShutDown/Auto/animateTx_t/t-1.png, id=1415, 578.16pt x 325.215pt>
-File: ./img//Simulator/ShutDown/Auto/animateTx_t/t-1.png Graphic file (type png)
-<use ./img//Simulator/ShutDown/Auto/animateTx_t/t-1.png>
-Package pdftex.def Info: ./img//Simulator/ShutDown/Auto/animateTx_t/t-1.png  used on input line 815.
+ <./img//Simulator/ShutDown/Control/t_vs_Qt.png>]
+<./img//Simulator/ShutDown/Control/animateTx_t/t-1.png, id=1415, 578.16pt x 325.215pt>
+File: ./img//Simulator/ShutDown/Control/animateTx_t/t-1.png Graphic file (type png)
+<use ./img//Simulator/ShutDown/Control/animateTx_t/t-1.png>
+Package pdftex.def Info: ./img//Simulator/ShutDown/Control/animateTx_t/t-1.png  used on input line 821.
 (pdftex.def)             Requested size: 381.79135pt x 214.7567pt.
 
-Overfull \vbox (16.47215pt too high) detected at line 815
+Overfull \vbox (16.47215pt too high) detected at line 821
  []
 
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 815.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 821.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
 [82
 
- <./img//Simulator/ShutDown/Auto/animateTx_t/t-1.png>]
-<./img//Simulator/ShutDown/Auto/animateTx_t/t-60.png, id=1430, 578.16pt x 325.215pt>
-File: ./img//Simulator/ShutDown/Auto/animateTx_t/t-60.png Graphic file (type png)
-<use ./img//Simulator/ShutDown/Auto/animateTx_t/t-60.png>
-Package pdftex.def Info: ./img//Simulator/ShutDown/Auto/animateTx_t/t-60.png  used on input line 815.
+ <./img//Simulator/ShutDown/Control/animateTx_t/t-1.png>]
+<./img//Simulator/ShutDown/Control/animateTx_t/t-40.png, id=1430, 578.16pt x 325.215pt>
+File: ./img//Simulator/ShutDown/Control/animateTx_t/t-40.png Graphic file (type png)
+<use ./img//Simulator/ShutDown/Control/animateTx_t/t-40.png>
+Package pdftex.def Info: ./img//Simulator/ShutDown/Control/animateTx_t/t-40.png  used on input line 821.
 (pdftex.def)             Requested size: 381.79135pt x 214.7567pt.
 
-Overfull \vbox (16.47215pt too high) detected at line 815
+Overfull \vbox (16.47215pt too high) detected at line 821
  []
 
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 815.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 821.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
 [83
 
- <./img//Simulator/ShutDown/Auto/animateTx_t/t-60.png>]
-<./img//Simulator/ShutDown/Auto/animateTx_t/t-120.png, id=1445, 578.16pt x 325.215pt>
-File: ./img//Simulator/ShutDown/Auto/animateTx_t/t-120.png Graphic file (type png)
-<use ./img//Simulator/ShutDown/Auto/animateTx_t/t-120.png>
-Package pdftex.def Info: ./img//Simulator/ShutDown/Auto/animateTx_t/t-120.png  used on input line 815.
+ <./img//Simulator/ShutDown/Control/animateTx_t/t-40.png>]
+<./img//Simulator/ShutDown/Control/animateTx_t/t-60.png, id=1445, 578.16pt x 325.215pt>
+File: ./img//Simulator/ShutDown/Control/animateTx_t/t-60.png Graphic file (type png)
+<use ./img//Simulator/ShutDown/Control/animateTx_t/t-60.png>
+Package pdftex.def Info: ./img//Simulator/ShutDown/Control/animateTx_t/t-60.png  used on input line 821.
 (pdftex.def)             Requested size: 381.79135pt x 214.7567pt.
 
-Overfull \vbox (16.47215pt too high) detected at line 815
+Overfull \vbox (16.47215pt too high) detected at line 821
  []
 
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 815.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 821.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
 [84
 
- <./img//Simulator/ShutDown/Auto/animateTx_t/t-120.png>]
-<./img//Simulator/ShutDown/Auto/animateTx_t/t-140.png, id=1460, 578.16pt x 325.215pt>
-File: ./img//Simulator/ShutDown/Auto/animateTx_t/t-140.png Graphic file (type png)
-<use ./img//Simulator/ShutDown/Auto/animateTx_t/t-140.png>
-Package pdftex.def Info: ./img//Simulator/ShutDown/Auto/animateTx_t/t-140.png  used on input line 815.
-(pdftex.def)             Requested size: 381.79135pt x 214.7567pt.
-
-Overfull \vbox (2.87215pt too high) detected at line 815
- []
-
-File: ./img//logocorner.png Graphic file (type png)
-<use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 815.
-(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
-[85
-
- <./img//Simulator/ShutDown/Auto/animateTx_t/t-140.png>]
-<./img//Simulator/ShutDown/Control/t_vs_Qt.png, id=1476, 578.16pt x 325.215pt>
-File: ./img//Simulator/ShutDown/Control/t_vs_Qt.png Graphic file (type png)
-<use ./img//Simulator/ShutDown/Control/t_vs_Qt.png>
-Package pdftex.def Info: ./img//Simulator/ShutDown/Control/t_vs_Qt.png  used on input line 826.
-(pdftex.def)             Requested size: 381.79135pt x 214.7567pt.
-
-Overfull \vbox (16.47215pt too high) detected at line 826
- []
-
-File: ./img//logocorner.png Graphic file (type png)
-<use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 826.
-(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
-[86
-
- <./img//Simulator/ShutDown/Control/t_vs_Qt.png>]
-<./img//Simulator/ShutDown/Control/animateTx_t/t-1.png, id=1491, 578.16pt x 325.215pt>
-File: ./img//Simulator/ShutDown/Control/animateTx_t/t-1.png Graphic file (type png)
-<use ./img//Simulator/ShutDown/Control/animateTx_t/t-1.png>
-Package pdftex.def Info: ./img//Simulator/ShutDown/Control/animateTx_t/t-1.png  used on input line 826.
-(pdftex.def)             Requested size: 381.79135pt x 214.7567pt.
-
-Overfull \vbox (16.47215pt too high) detected at line 826
- []
-
-File: ./img//logocorner.png Graphic file (type png)
-<use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 826.
-(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
-[87
-
- <./img//Simulator/ShutDown/Control/animateTx_t/t-1.png>]
-<./img//Simulator/ShutDown/Control/animateTx_t/t-40.png, id=1506, 578.16pt x 325.215pt>
-File: ./img//Simulator/ShutDown/Control/animateTx_t/t-40.png Graphic file (type png)
-<use ./img//Simulator/ShutDown/Control/animateTx_t/t-40.png>
-Package pdftex.def Info: ./img//Simulator/ShutDown/Control/animateTx_t/t-40.png  used on input line 826.
-(pdftex.def)             Requested size: 381.79135pt x 214.7567pt.
-
-Overfull \vbox (16.47215pt too high) detected at line 826
- []
-
-File: ./img//logocorner.png Graphic file (type png)
-<use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 826.
-(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
-[88
-
- <./img//Simulator/ShutDown/Control/animateTx_t/t-40.png>]
-<./img//Simulator/ShutDown/Control/animateTx_t/t-60.png, id=1521, 578.16pt x 325.215pt>
-File: ./img//Simulator/ShutDown/Control/animateTx_t/t-60.png Graphic file (type png)
-<use ./img//Simulator/ShutDown/Control/animateTx_t/t-60.png>
-Package pdftex.def Info: ./img//Simulator/ShutDown/Control/animateTx_t/t-60.png  used on input line 826.
-(pdftex.def)             Requested size: 381.79135pt x 214.7567pt.
-
-Overfull \vbox (16.47215pt too high) detected at line 826
- []
-
-File: ./img//logocorner.png Graphic file (type png)
-<use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 826.
-(pdftex.def)             Requested size: 40.0pt x 10.87439pt.
-[89
-
  <./img//Simulator/ShutDown/Control/animateTx_t/t-60.png>]
-<./img//Simulator/ShutDown/Control/animateTx_t/t-120.png, id=1536, 578.16pt x 325.215pt>
+<./img//Simulator/ShutDown/Control/animateTx_t/t-120.png, id=1460, 578.16pt x 325.215pt>
 File: ./img//Simulator/ShutDown/Control/animateTx_t/t-120.png Graphic file (type png)
 <use ./img//Simulator/ShutDown/Control/animateTx_t/t-120.png>
-Package pdftex.def Info: ./img//Simulator/ShutDown/Control/animateTx_t/t-120.png  used on input line 826.
+Package pdftex.def Info: ./img//Simulator/ShutDown/Control/animateTx_t/t-120.png  used on input line 821.
 (pdftex.def)             Requested size: 381.79135pt x 214.7567pt.
 
-Overfull \vbox (2.87215pt too high) detected at line 826
+Overfull \vbox (2.87215pt too high) detected at line 821
  []
 
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 826.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 821.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
-[90
+[85
 
  <./img//Simulator/ShutDown/Control/animateTx_t/t-120.png>]
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 828.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 823.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
- [91
+ [86
 
 ]
-<./img//Simulator/DemandResponse/Auto/t_vs_Qt.png, id=1574, 578.16pt x 325.215pt>
+<./img//Simulator/DemandResponse/Auto/t_vs_Qt.png, id=1498, 578.16pt x 325.215pt>
 File: ./img//Simulator/DemandResponse/Auto/t_vs_Qt.png Graphic file (type png)
 <use ./img//Simulator/DemandResponse/Auto/t_vs_Qt.png>
-Package pdftex.def Info: ./img//Simulator/DemandResponse/Auto/t_vs_Qt.png  used on input line 835.
+Package pdftex.def Info: ./img//Simulator/DemandResponse/Auto/t_vs_Qt.png  used on input line 830.
 (pdftex.def)             Requested size: 381.79135pt x 214.7567pt.
 
-Overfull \vbox (16.47215pt too high) detected at line 835
+Overfull \vbox (16.47215pt too high) detected at line 830
  []
 
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 835.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 830.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
-[92
+[87
 
  <./img//Simulator/DemandResponse/Auto/t_vs_Qt.png>]
-<./img//Simulator/DemandResponse/Auto/auto_reac_phase.png, id=1589, 580.3281pt x 345.4506pt>
+<./img//Simulator/DemandResponse/Auto/auto_reac_phase.png, id=1513, 580.3281pt x 345.4506pt>
 File: ./img//Simulator/DemandResponse/Auto/auto_reac_phase.png Graphic file (type png)
 <use ./img//Simulator/DemandResponse/Auto/auto_reac_phase.png>
-Package pdftex.def Info: ./img//Simulator/DemandResponse/Auto/auto_reac_phase.png  used on input line 835.
+Package pdftex.def Info: ./img//Simulator/DemandResponse/Auto/auto_reac_phase.png  used on input line 830.
 (pdftex.def)             Requested size: 343.60988pt x 204.5415pt.
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 835.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 830.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
- [93
+ [88
 
  <./img//Simulator/DemandResponse/Auto/auto_reac_phase.png>]
-<./img//Simulator/DemandResponse/Control/t_vs_Qt.png, id=1604, 578.16pt x 325.215pt>
+<./img//Simulator/DemandResponse/Control/t_vs_Qt.png, id=1528, 578.16pt x 325.215pt>
 File: ./img//Simulator/DemandResponse/Control/t_vs_Qt.png Graphic file (type png)
 <use ./img//Simulator/DemandResponse/Control/t_vs_Qt.png>
-Package pdftex.def Info: ./img//Simulator/DemandResponse/Control/t_vs_Qt.png  used on input line 843.
+Package pdftex.def Info: ./img//Simulator/DemandResponse/Control/t_vs_Qt.png  used on input line 838.
 (pdftex.def)             Requested size: 381.79135pt x 214.7567pt.
 
-Overfull \vbox (16.47215pt too high) detected at line 843
+Overfull \vbox (16.47215pt too high) detected at line 838
  []
 
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 843.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 838.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
-[94
+[89
 
  <./img//Simulator/DemandResponse/Control/t_vs_Qt.png>]
-<./img//Simulator/DemandResponse/Control/contr_reac_phase.png, id=1619, 584.6643pt x 347.6187pt>
+<./img//Simulator/DemandResponse/Control/contr_reac_phase.png, id=1543, 584.6643pt x 347.6187pt>
 File: ./img//Simulator/DemandResponse/Control/contr_reac_phase.png Graphic file (type png)
 <use ./img//Simulator/DemandResponse/Control/contr_reac_phase.png>
-Package pdftex.def Info: ./img//Simulator/DemandResponse/Control/contr_reac_phase.png  used on input line 843.
+Package pdftex.def Info: ./img//Simulator/DemandResponse/Control/contr_reac_phase.png  used on input line 838.
 (pdftex.def)             Requested size: 343.60988pt x 204.2976pt.
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 843.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 838.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
- [95
+ [90
 
  <./img//Simulator/DemandResponse/Control/contr_reac_phase.png>] (Defense.toc)
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 846.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 841.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
- [96
+ [91
 
 ]
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 871.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 866.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
- [97
+ [92
 
 ]
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 871.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 866.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
- [98
+ [93
 
 ]
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 878.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 873.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
- [99
+ [94
 
 ]
 File: ./img//logo.png Graphic file (type png)
 <use ./img//logo.png>
-Package pdftex.def Info: ./img//logo.png  used on input line 884.
+Package pdftex.def Info: ./img//logo.png  used on input line 879.
 (pdftex.def)             Requested size: 294.0594pt x 201.25848pt.
- [100
+ [95
 
 ] (Defense.bbl
 
@@ -2751,9 +2671,9 @@ l.44 \bibitem{Lamarsh}
                       )
 File: ./img//logocorner.png Graphic file (type png)
 <use ./img//logocorner.png>
-Package pdftex.def Info: ./img//logocorner.png  used on input line 890.
+Package pdftex.def Info: ./img//logocorner.png  used on input line 885.
 (pdftex.def)             Requested size: 40.0pt x 10.87439pt.
- [101
+ [96
 
 ]
 \tf@nav=\write6
@@ -2767,13 +2687,13 @@ Package pdftex.def Info: ./img//logocorner.png  used on input line 890.
 
  (Defense.aux)
 Package rerunfilecheck Info: File `Defense.out' has not changed.
-(rerunfilecheck)             Checksum: BFBCAF724C72F012839A8E5D40300426;2235.
+(rerunfilecheck)             Checksum: DED681AC3420E5DBFB3537AF619DE348;2235.
  ) 
 Here is how much of TeX's memory you used:
- 51877 strings out of 478927
- 1184187 string characters out of 2852536
- 1700778 words of memory out of 3000000
- 68204 multiletter control sequences out of 15000+600000
+ 51800 strings out of 478927
+ 1180625 string characters out of 2852536
+ 1700759 words of memory out of 3000000
+ 68149 multiletter control sequences out of 15000+600000
  427933 words of font info for 167 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,23n,124p,1083b,2783s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2784,9 +2704,9 @@ pdfTeX warning (dest): name{glo:msnb} has been referenced but does not exist, re
 pdfTeX warning (dest): name{glo:nrc} has been referenced but does not exist, replaced by a fixed one
 
  <C:\Users\sjroo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcss1095.pk><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss17.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss9.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi10.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi12.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/sjroo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eurm10.pfb>
-Output written on Defense.pdf (101 pages, 2895505 bytes).
+Output written on Defense.pdf (96 pages, 5033227 bytes).
 PDF statistics:
- 1859 PDF objects out of 2073 (max. 8388607)
- 233 named destinations out of 1000 (max. 500000)
- 53971 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 1782 PDF objects out of 2073 (max. 8388607)
+ 223 named destinations out of 1000 (max. 500000)
+ 53946 words of extra memory for PDF output out of 61914 (max. 10000000)
 

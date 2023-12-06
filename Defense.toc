@@ -8,8 +8,8 @@
 \beamer@sectionintoc {4}{Results and Analysis}{50}{0}{4}
 \beamer@subsectionintoc {4}{1}{Control-Reactivity Curve}{51}{0}{4}
 \beamer@subsectionintoc {4}{2}{Up-Step}{56}{0}{4}
-\beamer@subsectionintoc {4}{3}{Down-Step}{64}{0}{4}
-\beamer@subsectionintoc {4}{4}{Start-Up}{69}{0}{4}
-\beamer@subsectionintoc {4}{5}{Shut-Down}{80}{0}{4}
-\beamer@subsectionintoc {4}{6}{Demand-Response}{91}{0}{4}
-\beamer@sectionintoc {5}{Conclusions}{96}{0}{5}
+\beamer@subsectionintoc {4}{3}{Down-Step}{66}{0}{4}
+\beamer@subsectionintoc {4}{4}{Start-Up}{71}{0}{4}
+\beamer@subsectionintoc {4}{5}{Shut-Down}{75}{0}{4}
+\beamer@subsectionintoc {4}{6}{Demand-Response}{86}{0}{4}
+\beamer@sectionintoc {5}{Conclusions}{91}{0}{5}
