@@ -658,7 +658,7 @@
                 \delta x A_x \frac{d\varrho}{dt} = v A_x(\varrho_{in}-\varrho_{out})
             \end{equation*}
             \begin{equation*}\label{eq:T2mu}
-                mu_x = \varrho(T_x)\delta x A_x c_p\left(\nicefrac{T_x+T_r}{2}\right)(T_x-T_r) 
+                mu_x = \varrho\delta x A_x c_p(T_x-T_r) 
             \end{equation*}
             \begin{equation*}
                 \frac{d(mu)}{dt} = mu_{enter} - mu_{exit} + Q_{c.v.}
@@ -725,7 +725,8 @@
     \begin{figure}[ht!]
         \centering
         \only<1>{\includegraphics[width=\textwidth]{Simulator/StepUp/Auto/t_vs_Qt}}
-        \only<2>{\includegraphics[width=\textwidth]{Simulator/StepUp/Auto/t_vs_reac}}
+        \only<2>{\includegraphics[width=\textwidth]{Simulator/StepUp/Auto/note-t_vs_Qt}}
+        \only<3>{\includegraphics[width=\textwidth]{Simulator/StepUp/Auto/t_vs_reac}}
     \end{figure}
 \end{frame}
 
@@ -758,7 +759,8 @@
     \begin{figure}[ht!]
         \centering
         \only<1>{\includegraphics[width=\textwidth]{Simulator/StepUp/Control/t_vs_Qt}}
-        \only<2>{\includegraphics[width=\textwidth]{Simulator/StepUp/Control/t_vs_angle}}
+        \only<2>{\includegraphics[width=\textwidth]{Simulator/StepUp/Control/note-t_vs_Qt}}
+        \only<3>{\includegraphics[width=\textwidth]{Simulator/StepUp/Control/t_vs_angle}}
     \end{figure}
 \end{frame}
 
